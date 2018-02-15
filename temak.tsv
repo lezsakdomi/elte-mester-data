@@ -1,0 +1,55 @@
+id	szint	tema
+0 1	Kezdő	Elemi feladatok
+0 2	Kezdő	Elemi feladatok tömbökre
+0 3	Kezdő	Programozási tételek: megszámolás
+0 4	Kezdő	Programozási tételek: eldöntés
+0 5	Kezdő	Programozási tételek: keresés
+0 6	Kezdő	Programozási tételek: kiválogatás
+0 7	Kezdő	Programozási tételek: kiválasztás
+0 8	Kezdő	Programozási tételek: minimum, maximum számítás
+0 9	Kezdő	Programozási tételek: másolás
+0 10	Kezdő	Programozási tételek: rendezések
+0 11	Kezdő	Programozási tételek: összeépítése
+0 12	Kezdő	Programozási tételek: sorozatszámítás
+1 13	Középhaladó	Időjárás
+1 14	Középhaladó	Verseny
+1 15	Középhaladó	Szigetek
+1 16	Középhaladó	Szülők
+1 17	Középhaladó	Törzsek
+1 18	Középhaladó	Villamosjárat
+1 19	Középhaladó	Madármegfigyelés
+1 20	Középhaladó	Vasútvonal
+1 21	Középhaladó	Árvíz
+1 22	Középhaladó	Kutyaszépségverseny
+1 23	Középhaladó	Emeltszintű érettségi feladatok
+2 24	Haladó	Sorozatok
+2 25	Haladó	Rekurzív kiszámítás
+2 26	Haladó	Rekurzív adatszerkezetek
+2 27	Haladó	Mohó algoritmusok
+2 28	Haladó	Dinamikus programozás
+2 29	Haladó	Gráfok, elemi feladatok
+2 30	Haladó	Gráfok, körmentes gráfok
+2 31	Haladó	Gráfok, bejárás
+2 32	Haladó	Gráfok, szélességi bejárás
+2 33	Haladó	Gráfok, mélységi bejárás
+2 34	Haladó	Gráfok, legrövidebb utak
+2 35	Haladó	Gráfok, feszítőfák
+2 36	Haladó	Geometriai algoritmusok
+2 37	Haladó	Interaktív feladatok, kétszemélyes játékok
+2 38	Haladó	Interaktív feladatok, kitalálós feladatok
+2 39	Haladó	Interaktív feladatok, online algoritmusok
+2 40	Haladó	Visszalépéses keresés
+2 41	Haladó	Kombinatorikai algoritmusok
+2 42	Haladó	Szimuláció
+2 43	Haladó	Számelméleti algoritmusok
+2 44	Haladó	Egyéb feladatok
+3 45	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2016/2017 2. forduló
+3 46	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2016/2017 2. forduló
+3 47	Nemes T., OKTV, IOI Válogató	OKTV 2016/2017 2. forduló
+3 48	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2016/2017 3. forduló
+3 49	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2016/2017 3. forduló
+3 50	Nemes T., OKTV, IOI Válogató	OKTV 2016/2017 3. forduló
+3 51	Nemes T., OKTV, IOI Válogató	IOI Válogató 2017
+3 52	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2017/2018 2. forduló
+3 53	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2017/2018 2. forduló
+3 54	Nemes T., OKTV, IOI Válogató	OKTV 2017/2018 2. forduló
