@@ -1,0 +1,61 @@
+id	feladat	(nehezseg)
+1	Ádám és Éva kirándul	
+2	Biztonsági szolgálat *	
+3	Bűnöző elfogása *	
+4	Csomópontok körökben **	
+5	Duplán elérhető pontok *	
+6	Elárasztás *	
+7	Elfogó *	
+8	Erősen összefüggővé alakítás ***	
+9	Futár mindenhova *	
+10	Hálózat *	
+11	Hálózat kitüntetett csomóponttal **	
+12	Hálózat hiányzó vonal **	
+13	Hálózat kezdőpont ***	
+14	Hírek ***	
+15	Hírlánc ***	
+16	Járások *	
+17	Kannák *	
+18	Képtár **	
+19	Két út ***	
+20	Két út hálózatban ***	
+21	Koncert ***	
+22	Körben lévő pontok **	
+23	Körön kívüli pontok **	
+24	Körséta **	
+25	Központ kialakítás ***	
+26	Központi raktár **	
+27	Kritikus csomópontok ***	
+28	Kritikus ellenőrző pontok **	
+29	Kritikus pontok ***	
+30	Ládák sorbarendezése **	
+31	Legkevesebb végpont **	
+32	Biztonság ***	
+33	Mindenhova legyen út ***	
+34	Mindenhova vezessen út **	
+35	Négykannás öntögetés *	
+36	Nincs odaút **	
+37	Nincs visszaút **	
+38	Oda-vissza független út megadása ***	
+39	Oda-vissza független utak ***	
+40	Összefüggő egyirányú hálózat ***	
+41	Park **	
+42	Raktár ***	
+43	Tájékozódási verseny **	
+44	Út legfeljebb egy kritikus szakasszal *	
+45	Út mindenhova két pontból ***	
+46	Utcák egyirányúsítása ***	
+47	Utcaseprő *	
+48	Ültetés ***	
+49	Ültetés2 ***	
+50	Ádám és Éva közös kirándulása ***	
+51	Kritikus összekötések ****	
+52	Közösségi háló ***	
+53	Két hivatal ***	
+54	Hálózat ***	
+55	Legyen minden pár között út ****	
+56	Biztonság ***	
+57	Félig összefüggő	
+58	Hálózat felezés	
+59	Kémek	
+60	Séta	

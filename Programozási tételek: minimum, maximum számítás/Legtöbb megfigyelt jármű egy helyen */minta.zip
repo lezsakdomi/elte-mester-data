@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><title>Mester</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css" /></head>
+    
+<body id="fooldal">
+<div id="panel">
+<h1>Felhasználó: Lezsák Domonkos, Téma: </h1> 
+
+<div id="menu">
+    <input onclick="window.location.href='tema.xhtml'; return false;" value="Téma" type="button" />
+    <input onclick="window.location.href='feladat.xhtml'; return false;" value="Feladat" type="button" />
+    <input onclick="window.location.href='tananyag.xhtml'; return false;" value="Mintafeladat" type="button" />
+    <input onclick="window.location.href='megoldom.xhtml'; return false;" value="Megoldom" type="button" />
+    <input onclick="window.location.href='eredmeny.xhtml'; return false;" value="Eredmény" type="button" />
+    <input onclick="window.location.href='letolt.xhtml'; return false;" value="Letölt" type="button" />
+    <input onclick="window.location.href='visszatolt.xhtml'; return false;" value="Visszatölt" type="button" />
+    <input onclick="window.location.href='naplo.xhtml'; return false;" value="Napló" type="button" />
+    <input onclick="window.location.href='megoldasaim.xhtml'; return false;" value="Megoldásaim" type="button" />
+    <input onclick="window.location.href='eredmenylista.xhtml'; return false;" value="EredményLista" type="button" />
+    <br />
+    <hr />
+<form id="j_idt5" name="j_idt5" method="post" action="/faces/fooldal.xhtml" enctype="application/x-www-form-urlencoded" target="_blank">
+<input type="hidden" name="j_idt5" value="j_idt5" />
+    
+        <input onclick="window.open('tudni.xhtml'); return false;" value="Tudnivalók" type="button" />
+     <input onclick="window.open('gyik.html'); return false;" value="GyIK" type="button" />
+         <hr /><input type="submit" name="j_idt5:j_idt7" value="Kilép/Belép" /><br /><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-3034965962678330856:6478830802953313617" autocomplete="off" />
+</form>  
+</div>
+  
+  <div name="fopanel" id="fopanel">
+    <fieldset>
+        <legend>Témaleírás</legend>
+<form id="j_idt10" name="j_idt10" method="post" action="/faces/fooldal.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt10" value="j_idt10" />
+<input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-3034965962678330856:6478830802953313617" autocomplete="off" />
+</form>
+    </fieldset>
+  </div>
+</div>
+    <div id="impressum">Készült az "Országos koordinációval a pedagógusképzés megújításáért” című TÁMOP-4.1.2.B.2-13/1-2013-0007 pályázat keretében.</div>
+<ul id="javax_faces_developmentstage_messages" title="Project Stage[Development]: Unhandled Messages"><li style="Color: blue"><span>		Nem választott! </span></li></ul></body>
+</html>

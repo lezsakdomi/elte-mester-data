@@ -1,0 +1,58 @@
+id	feladat	(nehezseg)
+1	Állomásszakaszok száma, amit hosszú idő alatt tett meg *	
+2	Eddiginél hosszabb állomasszakaszok *	
+3	Eddiginél hosszabb menetidejű szakaszok *	
+4	Eddiginél nagyobb várakozási idejű megállók *	
+5	Eddiginél rövidebb állomásszakaszok *	
+6	Egymáshoz közel lévő villamosmegállók *	
+7	Egymastól távol lévő villamosmegállók *	
+8	Első állomás adott időn kívül *	
+9	Első villamosmegálló sok várakozási idővel *	
+10	Első villamosmegálló, ahol a villamos nem áll meg *	
+11	Hosszú állomásszakaszok száma *	
+12	Hosszú utazási idejű állomásszakaszok *	
+13	Hosszú várakozási idejű villamosmegállók *	
+14	Két egymáshoz legközelebb lévő villamosmegálló *	
+15	Két egymástól legmesszebb lévő villamosmegálló *	
+16	Leghosszabb szakasz megállás nélkül *	
+17	Leghosszabb villamosmegállókból álló szakasz *	
+18	Legkevesebb idő két villamosmegálló között *	
+19	Legkevesebb idő megállás nélkül *	
+20	Legkevesebb várakozási idő egy villamosmegállóban *	
+21	Legkisebb sebesség két villamosmegálló között *	
+22	Legközelebb lévő távoli állomás *	
+23	Legközelebb lévő távoli állomás a végállomástól *	
+24	Legközelebbi villamosmegállók *	
+25	Legnagyobb menetidő két állomás között *	
+26	Legnagyobb sebesség két villamosmegálló között *	
+27	Legtávolabb lévő közeli állomás *	
+28	Legtávolabb lévő közeli állomás a végállomástól *	
+29	Legtávolabbi állomás közelebb az induló állomáshoz *	
+30	Legtöbb idő két villamosmegálló között *	
+31	Legtöbb idő megállás nélkül *	
+32	Legtöbb várakozási idő egy villamosmegállóban *	
+33	Legtöbb villamosmegálló egymás után *	
+34	Legtöbb villamosmegálló megállás nélkül *	
+35	Magasabb utazási idejű állomasok *	
+36	Még induló állomáshoz közelebbi állomás *	
+37	Menetidők a villamosmegállók között *	
+38	Mindenhol megálló villamos *	
+39	Nem mindenhol megálló villamos *	
+40	Növekvő utazási idők *	
+41	Rakövetkező villamosmegálló közel van *	
+42	Rákövetkező villamosmegálló messze van *	
+43	Rövid állomásszakaszok száma *	
+44	Rövid várakozási idejű villamosmegállók *	
+45	Utolsó állomás adott idő alatt *	
+46	Várakozási idők a villamosmegállókban *	
+47	Végponthoz közelebbi nem megálló *	
+48	Villamos átlagos várakozási ideje *	
+49	Villamos menetideje *	
+50	Villamos útvonalának hossza *	
+51	Villamos várakozási ideje *	
+52	Villamosmegállók ahol megállt *	
+53	Villamosmegállók ahol nem állt meg *	
+54	Villamosmegállók száma ahol keveset várt *	
+55	Villamosmegállók száma ahol megáll *	
+56	Villamosmegállók száma ahol nem áll meg *	
+57	Villamosmegállók száma ahol sokat várt *	

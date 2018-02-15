@@ -1,0 +1,47 @@
+id	feladat	(nehezseg)
+1	A csúcsmagassága után leggyorsabban elapadó árvíz helye ***	
+2	A csúcsmagasságát leglassabban elérő árvíz ***	
+3	A csúcsmagasságát leglassabban elérő árvíz helye ***	
+4	A két legkozelebbi árvízmentes folyószakasz ***	
+5	A két legtávolabbi szomszédos árvízmentes folyószakasz ***	
+6	Árvizek áradása vagy apadása gyorsabb ***	
+7	Árvizek csúcsmagassága egyre alacsonyabb-e? ***	
+8	Árvizek csúcsmagassága növekszik-e? ***	
+9	Árvizek csúcsmagasságainak helyei és értékei ***	
+10	Árvizek hosszai **	
+11	Árvizek hosszai növekednek-e ***	
+12	Árvízmentes folyószakaszok teljes hossza ***	
+13	Árvízmentes szakaszok közötti elsőfokú árvizek **	
+14	Árvízvédelmi készültség csökkenésű árvizek ***	
+15	Az első harmadfokú árvizet is tartalmazó árvíz leghosszabb harmadfokú árvize ***	
+16	Azon helyek,ahol a készültség az előzőhöz képest legalább 2 fokozattal nőtt **	
+17	Egymáshoz legközelebbi harmadfokú folyószakaszok ***	
+18	Elsőfokú készültségű árvizek együttes hossza ***	
+19	Elsőfokú készültségű folyószakaszok csúcsmagasságainak helyei és értékei ***	
+20	Folyamatosan áradó, majd apadó árvizek ***	
+21	Harmadfokú készültségű folyószakaszok együttes hossza ***	
+22	Harmadfokú pontok között elsőfokút is tartalmazó árvizek ***	
+23	Harmadfokúval nem határos másodfokú árvizek együttes hossza ***	
+24	Hirtelen áradó árvizek **	
+25	Lassabban áradó, mint apadó árvizek ***	
+26	Legalább másodfokú készültségű árvizek csúcsmagasságai ***	
+27	Legfeljebb másodfokú árvizek **	
+28	Leghosszabb állandó vízmagasságot tartalmazó harmadfokú árvíz ***	
+29	Leghosszabb árvízmentes folyószakasz ***	
+30	Leghosszabb elsőfokú árvíz ***	
+31	Leghosszabb harmadfokú árvíz ***	
+32	Leghosszabb, legalább másodfokú árvíz ***	
+33	Legközelebbi árvízi csúcsmagasságok ***	
+34	Leglassabban apadó árvíz ***	
+35	Legmagasabb vízállású árvíz ***	
+36	Legrövidebb árvízmentes folyószakasz ***	
+37	Legrövidebb harmadfokú folyószakasz ***	
+38	Legrövidebb harmadfokú folyószakaszt tartalmazó árvíz ***	
+39	Legtöbb árvízvédelmi készültség csökkenést tartalmazó árviz ***	
+40	Legtöbb elsőfokú készültségű folyószakaszt tartalmazó árviz ***	
+41	Legtöbb harmadfokú készültségű folyószakaszt tartalmazó árviz ***	
+42	Leggyorsabb apadás ***	
+43	Leggyorsabb áradás ***	
+44	Milyen készültségű folyószakaszból volt a legtöbb ***	
+45	Mögötte majdnem árvíz kezdődik ***	
+46	Több, nem szomszédos csúcsmagasságot tartalmazó árvizek ***	

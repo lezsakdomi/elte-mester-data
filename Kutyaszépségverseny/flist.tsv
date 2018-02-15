@@ -1,0 +1,46 @@
+id	feladat	(nehezseg)
+1	Abszolút győztes, de minden szempont szerint van jobb *	
+2	Egy szempont szerint győztes, más szempont szerint nem nyert *	
+3	Egy szempont szerint sem nyertek, de mindenhol elérték a minimális pontszámot *	
+4	Egyik szempont szerint sem győztesek, sem utolsók *	
+5	Éppen minimális pontszámú kutyák *	
+6	Győztesek csak maximális pontszámmal *	
+7	Ha nyertek valamilyen szempont szerint, akkor azt holtversenyben nyerték *	
+8	Kieső kutyák pontszámai *	
+9	Kieső kutyák, amelyeknek 1 pont hiányzott a bentmaradáshoz *	
+10	Kutyapár egyike minden szempont szerint több pontot kapott a másiknál **	
+11	Kutyaszépségverseny -  *	
+12	Kutyaszépségverseny - az összetett verseny sorrendje *	
+13	Legmagasabb átlagpontszámú szempont *	
+14	Kiesők átlagpontszáma a legmagasabb *	
+15	Kiesők nélküli átlagpontszám a legmagasabb *	
+16	Legkevesebb kieső *	
+17	Legalább 2 kutya ért el maximális pontszámot *	
+18	Legalább két kutya maradt versenyben *	
+19	Legjobban megközelítették valamely maximális pontot *	
+20	Majdnem tökéletes, de nem nyert kutyák *	
+21	Másik kutyával holtversenyes kutyák *	
+22	Minden szempont szerint az utolsók *	
+23	Minden szempont szerint győztes kutya *	
+24	Minden szempont szerint kiesett kutya *	
+25	Minden szempont szerint kiestek *	
+26	Minden szempont szerint vagy győzött, vagy kiesett *	
+27	Minden szempont szerint vagy kiestek, vagy az értékeltek közül az utolsók lettek *	
+28	Szempont, ahol a kiesők nélküli átlagpontszám a legalacsonyabb volt *	
+29	Szempont, ahol a kiesők nélküli átlagpontszám a legmagasabb volt *	
+30	Szempont, ahol a legkevesebb kieső volt *	
+31	Szempont, ahol a legtöbb kieső volt *	
+32	Szempontok, ahol a résztvevök több mint fele kiesett *	
+33	Szempontok, ahol minden kutya kiesett *	
+34	Szempontok, ahol nem volt kieső kutya *	
+35	Szempontok, ahol nem volt tökéletes kutya *	
+36	Szempontok, amelyekben holtversenyt kellett hirdetni *	
+37	Szempontok, amelyekben volt tökéletes kutya *	
+38	Több szempont szerint is győztes kutya *	
+39	Több szempont szerint is győztesek *	
+40	Valamely szempont szerint győztesek *	
+41	Valamilyen szempont szerint győztesek, más szempont szerint pedig kiestek *	
+42	Valamilyen szempont szerint tökéletes kutyák *	
+43	Valamilyen szempontból kiesett kutyák *	
+44	Van kutya, amely egy szempont szerint tökéletes *	
+45	Van szempont, ahol holtversenyben győztek **	

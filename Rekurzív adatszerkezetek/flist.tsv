@@ -1,0 +1,59 @@
+id	feladat	(nehezseg)
+1	Aranyalma ***	
+2	Árvízvédelem ***	
+3	Banda átszervezése ***	
+4	Beépített ügynök *	
+5	Család *	
+6	Családfa *	
+7	Csatornatakarító **	
+8	DNS ismétlődés ***	
+9	DNS kezdőszeletek ***	
+10	DNS legtöbbször előforduló kezdőszelet ***	
+11	Fa elágazásai *	
+12	Fa magassága *	
+13	Fa zárójelezéssel *	
+14	Faágak letörése ***	
+15	Fában leghosszabb út ***	
+16	Farajz ***	
+17	Favágás ***	
+18	Fenyőfa zárójelezéssel *	
+19	Folyók *	
+20	Folyók összefolyása *	
+21	Harmadolás *	
+22	Jelentés *	
+23	Kamionok *	
+24	Kémek *	
+25	Kémszervezet **	
+26	Képlet ***	
+27	Képzés **	
+28	Kiegyensúlyozott keresőfa **	
+29	Kieséses csapatverseny *	
+30	Kieséses verseny *	
+31	Lovak ***	
+32	Őrhangyák ***	
+33	Raktár *	
+34	Sereg **	
+35	Szállítás **	
+36	Titkos társaság **	
+37	Titkos társaság 1 *	
+38	Titkos társaság 2 *	
+39	Titkos társaság 3 **	
+40	Titkos társaság 4 **	
+41	Trópusi fa ***	
+42	Túra *	
+43	Újság *	
+44	Ügynökök lecserélése **	
+45	Üzenetek *	
+46	Üzletek **	
+47	Vállalat – utasítások K lépésben *	
+48	Vállalat – üzenet az igazgatónak *	
+49	Vasút ***	
+50	Titkos társaság alcsoport ***	
+51	Bináris fa magassága és szélessége ***	
+52	Fa magassága és szélessége ***	
+53	Farajz ***	
+54	Körök	
+55	Titkos küldemény	
+56	Konverzió	
+57	Banda	
+58	DNS	

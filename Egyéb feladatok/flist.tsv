@@ -1,0 +1,54 @@
+id	feladat	(nehezseg)
+1	Átfedő intervallumok *	
+2	Átutalások *	
+3	Betűfelismerés *	
+4	Csillagtérkép *	
+5	Csoki *	
+6	Csőposta *	
+7	Délkert *	
+8	Dominó nyertes **	
+9	Fenyőfa **	
+10	Folt határa *	
+11	Fordítóprogram **	
+12	Futár *	
+13	Genetika **	
+14	Gyöngy *	
+15	Helyesírás *	
+16	Intervallumok **	
+17	Jegyek *	
+18	Jelek *	
+19	Kapcsoló *	
+20	Katonák *	
+21	Kavicsok *	
+22	Képben kép keresése *	
+23	Képtömörítés futammal *	
+24	Képtömörítés változással *	
+25	Kerekasztal **	
+26	Kísérlet *	
+27	Körút **	
+28	Lámpagyújtogató *	
+29	Lapok *	
+30	Lefedés két intervallummal *	
+31	Legnagyobb hasznú téglalap *	
+32	Legrövidebb szakasz **	
+33	Legsűrűbb fás terület *	
+34	Lineáris közelítés **	
+35	LOGO optimalizálás **	
+36	Mintakeresés **	
+37	Munka **	
+38	Négyzet **	
+39	Nyaklánc *	
+40	Nyelvi teszt *	
+41	Puffer **	
+42	Repterek ***	
+43	Sokszög területe **	
+44	Szálloda *	
+45	Szójáték **	
+46	Téglalap **	
+47	Töréspróba **	
+48	Tükörszó *	
+49	Üvegválogató robot *	
+50	Vitorlás *	
+51	Wagons *	
+52	Ütemezés	
+53	Ládapakolás	

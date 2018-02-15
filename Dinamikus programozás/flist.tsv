@@ -1,0 +1,106 @@
+id	feladat	(nehezseg)
+1	Ádám és Éva ismét játszik ***	
+2	Ádám és Éva játszik ***	
+3	Ádám és Éva megint játszik *	
+4	Alternáló részsorozat **	
+5	Bábuk **	
+6	Bélyeg *	
+7	Benzin *	
+8	Bérlet **	
+9	Csapdák kikerülése *	
+10	Csomagküldő szolgálat 2 kamionnal **	
+11	DNS **	
+12	Egyenletes felsorolás **	
+13	Egyenletes pakolás **	
+14	Egyszemélyes játek - lehető legtöbb pont **	
+15	Egyszemélyes játék 2 - lehető legtöbb pont **	
+16	Egyszemélyes számjáték **	
+17	Előadások beosztása **	
+18	Fazekas darabszám korláttal **	
+19	Fazekas kemence sor elejéről vagy végéről **	
+20	Fazekas kemence súlykorláttal **	
+21	Fazekas két kemencével **	
+22	Fehér és fekete korongok *	
+23	Gépek **	
+24	Gyongy csapdával, jobbra és lefelé lépve *	
+25	Gyöngy és csapda, jobbra,lefelé és felfelé lépve **	
+26	Gyöngy, jobbra és felfelé lépve *	
+27	Gyöngy, jobbra, lefelé és felfelé **	
+28	Gyűjtő robot **	
+29	Háromszög játek ***	
+30	Hegymászó **	
+31	Hegység **	
+32	Igazságos osztozkodás ***	
+33	Intervallum lefedés ***	
+34	Intervallum lefedés költsége **	
+35	Járműkölcsönzés **	
+36	Kamion pakolás **	
+37	Kemence darabszám és határidő korláttal **	
+38	Kemence darabszám korláttal **	
+39	Kemence súlykorláttal **	
+40	Kepatlo **	
+41	Kerítésfestés **	
+42	Két csoportra osztás **	
+43	Két raktár *	
+44	Kirandulas *	
+45	Kitalálós játék kérdésenként fizetve ***	
+46	Kitalálós játék nem-válasz korláttal ***	
+47	Kockákból legmagasabb torony **	
+48	Koncertre két egymás melletti jegy *	
+49	Konténer pakolás egymás mellé **	
+50	Kölcsönzés **	
+51	Kötélhúzás **	
+52	Központ **	
+53	Labor **	
+54	Leghosszabb körút ***	
+55	Leghosszabb tükörszó hossza **	
+56	Legmagasabb torony ***	
+57	Legtöbb csomag 2 kamionnal *	
+58	Legtöbb kockából építhatő torony ***	
+59	Licit **	
+60	Licit2 *	
+61	Malacpersely legkisebb értékre *	
+62	Malacpersely legnagyobb értéke **	
+63	Mars *	
+64	Mindent begyujto robot *	
+65	Mozijegyek ***	
+66	Munkagépek **	
+67	Munkák kezdő- és véghatáridővel *	
+68	Négyzetekre darabolás ***	
+69	Nem kifizethető címlet *	
+70	Parok **	
+71	Piramis **	
+72	Poharak **	
+73	Postabélyegek **	
+74	Raktár K helyre rendezése ***	
+75	Raktár pakolás a sor két végéről **	
+76	Rendezvény - ülőhelyek kiosztása ***	
+77	Rendőr **	
+78	Robot **	
+79	Robot, kincs, ado **	
+80	Rúd felvágása **	
+81	Szállítás **	
+82	Szállítás - minimális kegkevésbé terhelt kamionnal **	
+83	Szállítás - minimálisan legjobban terhelt kamionnal **	
+84	Számösszegzés **	
+85	Szavak **	
+86	Szerviz **	
+87	Szovegkirako **	
+88	Táblás játék csapdákkal és gyöngyökkel *	
+89	Táblás játék legkevesebb büntető mezővel *	
+90	Táblás játék legkevesebb lépéssel ***	
+91	Tukorszavakra bontas **	
+92	Túlélőverseny **	
+93	Tükörszó betűk beszúrásával **	
+94	Tükörszó kezdőszelete betűk törlésével **	
+95	Utazás vonattal **	
+96	Ülőhely igénylés **	
+97	Városnézés **	
+98	Hegymászó ***	
+99	Menekülés **	
+100	Hátizsák probléma – sok azonos súlyú tárgy	
+101	Hátizsák probléma – sok azonos súlyú tárgy	
+102	Tornyok kiegyenlítése	
+103	Függőhíd	
+104	Kincsek az épületben	
+105	Tábor	

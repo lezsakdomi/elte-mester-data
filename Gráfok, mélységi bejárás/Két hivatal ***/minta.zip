@@ -1,0 +1,192 @@
+<!--
+
+    DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+    Copyright (c) 1997-2010 Oracle and/or its affiliates. All rights reserved.
+
+    The contents of this file are subject to the terms of either the GNU
+    General Public License Version 2 only ("GPL") or the Common Development
+    and Distribution License("CDDL") (collectively, the "License").  You
+    may not use this file except in compliance with the License.  You can
+    obtain a copy of the License at
+    https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html
+    or packager/legal/LICENSE.txt.  See the License for the specific
+    language governing permissions and limitations under the License.
+
+    When distributing the software, include this License Header Notice in each
+    file and include the License file at packager/legal/LICENSE.txt.
+
+    GPL Classpath Exception:
+    Oracle designates this particular file as subject to the "Classpath"
+    exception as provided by Oracle in the GPL Version 2 section of the License
+    file that accompanied this code.
+
+    Modifications:
+    If applicable, add the following below the License Header, with the fields
+    enclosed by brackets [] replaced by your own identifying information:
+    "Portions Copyright [year] [name of copyright owner]"
+
+    Contributor(s):
+    If you wish your version of this file to be governed by only the CDDL or
+    only the GPL Version 2, indicate your decision by adding "[Contributor]
+    elects to include this software in this distribution under the [CDDL or GPL
+    Version 2] license."  If you don't indicate a single choice of license, a
+    recipient has the option to distribute your version of this file under
+    either the CDDL, the GPL Version 2 or to extend the choice of license to
+    its licensees as provided above.  However, if you add GPL Version 2 code
+    and therefore, elected the GPL Version 2 license, then the option applies
+    only if the new code is made subject to such option by the copyright
+    holder.
+
+
+    This file incorporates work covered by the following copyright and
+    permission notice:
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Error - java.io.FileNotFoundException: /Mester/T/109/53/minta.zip (No such file or directory)</title>
+<style type="text/css">
+body, div, span, td, th, caption { font-family: 'Trebuchet MS', Verdana, Arial, Sans-Serif; font-size: small; }
+ul, li, pre { padding: 0; margin: 0; }
+h1 { color: #900; }
+h2, h2 span { font-size: large; color: #339; }
+h2 a { text-decoration: none; color: #339; }
+.grayBox { padding: 8px; margin: 10px 0; border: 1px solid #CCC; background-color: #f9f9f9;  }
+#error { color: #900; font-weight: bold; font-size: medium; }
+#trace, #tree, #vars { display: none; }
+code { font-size: medium; }
+#tree dl { color: #006; }
+#tree dd { margin-top: 2px; margin-bottom: 2px; }
+#tree dt { border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: "Courier New", Courier, mono; font-size: small; }
+.uicText { color: #999;  }
+table { border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left; }
+td { border: 1px solid #CCC; }
+thead tr th { padding: 2px; color: #030; background-color: #F9F9F9; }
+tbody tr td { padding: 10px 6px; }
+table caption { text-align: left; padding: 10px 0; font-size: large; }
+</style>
+<style type="text/css" media="print">
+#trace, #tree, #vars { display: block; }
+</style>
+<script language="javascript" type="text/javascript">
+function faceletstoggle(id) {
+    var style = document.getElementById(id).style;
+    if ("block" == style.display) {
+        style.display = "none";
+        document.getElementById(id+"Off").style.display = "inline";
+        document.getElementById(id+"On").style.display = "none";
+    } else {
+        style.display = "block";
+        document.getElementById(id+"Off").style.display = "none";
+        document.getElementById(id+"On").style.display = "inline";
+    }
+}
+</script>
+</head>
+<body>
+<div id="javax.faces.error.xhtml">
+<h1>An Error Occurred:</h1>
+<div id="error" class="grayBox" style="border: 1px solid #900;">java.io.FileNotFoundException: /Mester/T/109/53/minta.zip (No such file or directory)</div>
+<h2><a href="#" onclick="faceletstoggle('trace'); return false;"><span id="traceOff">+</span><span id="traceOn" style="display: none;">-</span> Stack Trace</a></h2>
+<div id="trace" class="grayBox"><pre><code>javax.faces.el.EvaluationException: java.io.FileNotFoundException: /Mester/T/109/53/minta.zip (No such file or directory)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /Mester/T/109/53/minta.zip (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init>(FileInputStream.java:138)
+	at mester.MMainBean.downloadTask(MMainBean.java:570)
+	at sun.reflect.GeneratedMethodAccessor9950.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.el.parser.AstValue.invoke(AstValue.java:289)
+	at com.sun.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:304)
+	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
+	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
+	... 36 more
+</code></pre></div>
+<h2><a href="#" onclick="faceletstoggle('tree'); return false;"><span id="treeOff">+</span><span id="treeOn" style="display: none;">-</span> Component Tree</a></h2>
+<div id="tree" class="grayBox"><code><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;UIViewRoot id="j_id1" inView="true" locale="en_US" renderKitId="HTML_BASIC" rendered="true" transient="false" viewId="/letolt.xhtml"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;html xmlns="http://www.w3.org/1999/xhtml"></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;UIOutput id="j_idt2" inView="true" rendered="true" transient="false"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;title>Mester&lt;/title>
+&lt;link href="./css/styles.css" rel="stylesheet" type="text/css"/></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/UIOutput></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;body>
+&lt;div id="panel">
+&lt;h1>Felhasználó: #{mMainBean.nev}, Téma: #{mMainBean.temanev}, Feladat: #{mMainBean.feladatnev}&lt;/h1> 
+&lt;div id="menu">
+    &lt;input onclick="window.location.href='tema.xhtml'; return false;" value="Téma" type="button"/>
+    &lt;input onclick="window.location.href='feladat.xhtml'; return false;" value="Feladat" type="button"/>
+    &lt;input onclick="window.location.href='tananyag.xhtml'; return false;" value="Mintafeladat" type="button"/>
+    &lt;input onclick="window.location.href='megoldom.xhtml'; return false;" value="Megoldom" type="button"/>
+    &lt;input onclick="window.location.href='eredmeny.xhtml'; return false;" value="Eredmény" type="button"/>
+    &lt;input onclick="window.location.href='letolt.xhtml'; return false;" value="Letölt" type="button"/>
+    &lt;input onclick="window.location.href='visszatolt.xhtml'; return false;" value="Visszatölt" type="button"/>
+    &lt;input onclick="window.location.href='naplo.xhtml'; return false;" value="Napló" type="button"/>
+    &lt;input onclick="window.location.href='megoldasaim.xhtml'; return false;" value="Megoldásaim" type="button"/>
+    &lt;input onclick="window.location.href='eredmenylista.xhtml'; return false;" value="EredményLista" type="button"/>
+    &lt;br/>
+    &lt;hr/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlForm enctype="application/x-www-form-urlencoded" id="j_idt5" inView="true" prependId="true" rendered="true" submitted="false" target="_blank" transient="false"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;input onclick="window.open('tudni.xhtml'); return false;" value="Tudnivalók" type="button"/></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/HtmlForm></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlForm enctype="application/x-www-form-urlencoded" id="j_idt7" inView="true" prependId="true" rendered="true" submitted="false" transient="false"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlCommandButton action="#{mMainBean.logout}" actionExpression="#{mMainBean.logout}" disabled="false" id="j_idt8" immediate="true" inView="true" readonly="false" rendered="true" transient="false" type="submit" value="Kilép/Belép"/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;br/></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/HtmlForm></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;/div>
+&lt;div name="fopanel" id="fopanel"></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlForm enctype="application/x-www-form-urlencoded" id="j_idt11" inView="true" prependId="true" rendered="true" submitted="true" transient="false"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;fieldset> &lt;legend>Letöltési oldal&lt;/legend></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlOutputText escape="true" id="j_idt13" inView="true" rendered="true" transient="false" value="Dokumentum:"/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlSelectOneMenu disabled="false" id="minta" immediate="false" inView="true" localValueSet="false" readonly="false" rendered="true" required="true" title="Feladatnév:" transient="false" valid="true" value="zip"></dt><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;UISelectItem id="pdf" inView="true" itemDisabled="false" itemEscaped="true" itemLabel="Feladatleírás" itemValue="pdf" noSelectionOption="false" rendered="true" transient="false"/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;UISelectItem id="zip" inView="true" itemDisabled="false" itemEscaped="true" itemLabel="Minta bemenet" itemValue="zip" noSelectionOption="false" rendered="true" transient="false"/></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/HtmlSelectOneMenu></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlCommandButton action="#{mMainBean.downloadTask}" actionExpression="#{mMainBean.downloadTask}" disabled="false" id="j_idt14" immediate="false" inView="true" readonly="false" rendered="true" transient="false" type="submit" value="letölt"/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;p> &lt;/p>
+    &lt;/fieldset></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/HtmlForm></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;HtmlMessages globalOnly="true" id="j_idt16" inView="true" layout="list" redisplay="true" rendered="true" showDetail="true" showSummary="true" style="color:red;margin:8px;" tooltip="false" transient="false"/></dt></dl></dd><dd style="margin-top: 2px; margin-bottom: 2px;"><dl style="color: #006;"><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;color: #999;">&lt;/div>
+&lt;/div>
+&lt;div id="impressum">Készült az "Országos koordinációval a pedagógusképzés megújításáért” című TÁMOP-4.1.2.B.2-13/1-2013-0007 pályázat keretében.&lt;/div>
+&lt;/body>
+&lt;/html></dt></dl></dd><dt style="border: 1px solid #DDD; padding: 4px; border-left: 2px solid #666; font-family: 'Courier New', Courier, mono; font-size: small;">&lt;/UIViewRoot></dt></dl></code></div>
+<h2><a href="#" onclick="faceletstoggle('vars'); return false;"><span id="varsOff">+</span><span id="varsOn" style="display: none;">-</span> Scoped Variables</a></h2>
+<div id="vars"><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">Request Parameters</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">j_idt11</td><td>j_idt11</td></tr><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">j_idt11:j_idt14</td><td>letölt</td></tr><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">j_idt11:minta</td><td>zip</td></tr></tbody></table><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">View Attributes</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td colspan="2" style="padding: 10px 6px;"><em>None</em></td></tr></tbody></table><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">Request Attributes</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td colspan="2" style="padding: 10px 6px;"><em>None</em></td></tr></tbody></table><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">Flash Attributes</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td colspan="2" style="padding: 10px 6px;"><em>None</em></td></tr></tbody></table><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">Session Attributes</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">mMainBean</td><td>mester.MMainBean@47acad54</td></tr></tbody></table><table style="border: 1px solid #CCC; border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: left;"><caption style="text-align: left; padding: 10px 0; font-size: large;">Application Attributes</caption><thead stype="padding: 2px; color: #030; background-color: #F9F9F9;"><tr style="padding: 2px; color: #030; background-color: #F9F9F9;"><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 10%; ">Name</th><th style="padding: 2px; color: #030; background-color: #F9F9F9;width: 90%; ">Value</th></tr></thead><tbody style="padding: 10px 6px;"><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">csfcff</td><td>[
+]
+</td></tr><tr style="padding: 10px 6px;"><td style="padding: 10px 6px;">kKonfig</td><td>mester.KKonfig@5ebeb003</td></tr></tbody></table></div>
+<div class="grayBox" style="text-align: right; color: #666;">Feb 15, 2018 8:35:24 PM - Generated by Mojarra/Facelets</div>
+</div>
+</body>
+</html>
