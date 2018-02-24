@@ -1,0 +1,97 @@
+Interaktív feladatok – Kétszemélyes játékok                                                     ***
+
+
+                                            Dominó
+Tekintsük a dominó játéknak a következő kétszemélyes változatát. Először kiraknak egy sorban
+páros számú dominót, ez a választható dominósor, majd választanak egy kezdő dominót, amit kü-
+lön helyre leraknak. A két játékos felváltva lép, az első játékos kezd. Minden lépésben az aktuális
+játékos választ egy dominót a választható dominósor valamelyik végéről és azt a kirakott dominó-
+sor valamelyik végéhez illeszti. Az illesztés azt jelenti, hogy a választott dominónak egyik oldalán
+ugyanannyi pöttynek kell lennie, mint amihez illeszteni akarja. Ha nem tud illeszkedőt választani,
+akkor le kell vennie a választható dominósor valamelyik szélső dominóját, és félre kell raknia, de
+ekkor egy büntetőpontot kap. A játék akkor ér véget, ha elfogyott az összes választható dominó.
+A játékban az nyer, akinek kevesebb büntetőpontja lesz.
+Írj programot, amely az első játékos játékát valósítja meg és nyer!
+A bemenetekre teljesül, hogy az első játékosnak van nyerő stratégiája, azaz meg tudja verni a má-
+sodik játékost.
+Könyvtár
+A játék használatát a jatek könyvtár öt művelete biztosítja:
+     Meret: egyszer kell hívni a program elején, a dominók számát adja (2N100).
+     D1(i), D2(i): egy dominó sorszámát kell argumentumként megadni (0iN), a visz-
+      szaadott érték a dominó egyik, illetve másik oldalán lévő pöttyök száma. D1(0) és
+      D2(0) a kezdő dominót adja, amelynek bal oldalán D1(0), jobb oldalán D2(0) pötty
+      van.
+     EnLep(kód): Ezzel a művelettel kell közölni az első játékos lépését. A kódok a követ-
+      kezők:
+          1. A dominósor bal szélső dominóját választjuk és azt a kirakott dominósor bal vé-
+              géhez illesztjük.
+          2. A dominósor bal szélső dominóját választjuk és azt a kirakott dominósor jobb vé-
+              géhez illesztjük.
+          3. A dominósor jobb szélső dominóját választjuk és azt a kirakott dominósor bal vé-
+              géhez illesztjük.
+          4. A dominósor jobb szélső dominóját választjuk és azt a kirakott dominósor jobb
+              végéhez illesztjük.
+      Az első négy esetben a választott dominó valamelyik oldalának illeszkednie kell a kirakott
+      dominósor adott végéhez!
+      A következő két paraméter érték csak akkor adható meg, ha a választható dominósor
+      egyik végén sincs olyan dominó, amely illeszkedne a kirakott sor valamelyik végéhez!
+          5. Eltávolítja a dominósor bal szélső dominóját és 1 büntetőpontot ad a műveletet
+              végrehajtó játékosnak.
+          6. Eltávolítja a dominósor jobb szélső dominóját és 1 büntetőpontot ad a műveletet
+              végrehajtó játékosnak.
+     TeLep: Ezzel kérdezhető le a második játékos lépése. A második játékos utolsó lépésé-
+      nek a lekérdezése eredményezi a program befejezését, ezért csak az a szabályos játék,
+      amely a második játékos utolsó lépését is lekérdezi.
+Használat
+A műveletek Pascal deklarációja:
+   uses jatek;
+   function Meret: integer;
+
+
+                                              1. oldal
+Interaktív feladatok – Kétszemélyes játékok                                                     ***
+
+    function D1(i: integer): integer;
+    function D2(i: integer): integer;
+    procedure EnLep(i: integer);
+    function TeLep: integer;
+A műveletek C/C++ deklarációja:
+    #include ”jatek.h”
+    int Meret(void);
+    int D1(int i);
+    int D2(int i);
+    void EnLep(int i);
+    int TeLep(void);
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy min-
+ta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+A minta.zip-ben található jatek könyvtár eljárásai a standard kimenet első és egyet-
+len sorába az első, illetve a második játékosnak a játék során szerzett büntetőpontjainak számát ír-
+ják. A program és a könyvtár közötti dialógust a domino.log tartalmazza.
+Saját gépen próbáláskor a standard bemenet első sorában legyen a dominók száma, ami
+páros legyen! A második sorban a kezdő dominót megadó két, 0 és 9 közötti egész szám legyen!
+A további N sorban kell megadni a kezdeti játékállásban szereplő dominókat, soronként egyet,
+abban a sorrendben, ahogy a táblán vannak!
+Példa
+Bemenet
+6
+1   2
+1   2
+3   1
+3   4
+4   5
+2   3
+4   2
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.1 mp.
+Memórialimit: 64 MiB
+Pontozás: Ha a játék szabályosan fejeződik be és az első játékos által szerzett büntetőpontok
+száma kisebb, mint a második játékos által szerzett, akkor teljes pontszám (100%) jár, egyébként 0
+pont.
+
+
+
+
+                                              2. oldal
+

@@ -1,0 +1,40 @@
+Geometriai algoritmusok                                                                      ***
+
+
+                                        Szoborpark
+Egy szoborparkban N szobor áll. Ismerjük a szobrok koordinátáit, a szoborpark bejárata a (0,0)
+koordinátájú pont. Szeretnénk egy négyzet alakú fogadó-épületet építeni, melynek ismert az ol-
+dalhossza, valamint a bal alsó sarka koordinátáinak összege. Szobor az épület belsejében nem le-
+het (sőt az oldalfalán sem)!
+Készíts programot, amely megadja, hogy hova építsük az épületet, hogy a bejárat irányából a lehe-
+tő legtöbb szobrot takarja! (Amelyik szobor éppen az épület bal felső vagy jobb alsó sarka irányá-
+ban van, az épület azokat is takarja.)
+Bemenet
+A standard bemenet első sorában a szobrok száma (1≤N≤1 000 000), az épület oldal-
+hossza (1≤H≤1000) és a bal alsó sarka koordináta-összege (1≤S≤100 000) van. A következő
+N sorban az egyes szobrok koordinátái szerepelnek (0≤Xi,Yi≤1 000 000).
+Kimenet
+A standard kimenet első sorába a megépítendő épület által eltakart szobrok számát kell ír-
+ni, a második sorba pedig a bal alsó sarkának x- és y-koordinátáját! Ha nincs megoldás, akkor az
+egyetlen sorba egy -1-et kell kiírni! Több megoldás esetén azt kell kiírni, amelyiknek az x-
+koordinátája a legnagyobb.
+Példa
+Bemenet                                         Kimenet
+8 3 4                                           3
+1 7                                             3 1
+1 6
+1 5
+2 2
+10 3
+8 3
+2 6
+6 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

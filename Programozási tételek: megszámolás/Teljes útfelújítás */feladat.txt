@@ -1,0 +1,33 @@
+Programozási tételek – Megszámolás                                                             *
+
+
+                                     Teljes útfelújítás
+Egy N kilométer hosszú utat rossz állapota miatt szakaszonként újra aszfaltozták. Az aszfaltozást
+M alkalommal végezték. Minden alkalomról tudjuk, hogy melyik kilométertől (Ki) melyik kilomé-
+terig (Vi) terjedő szakaszt aszfaltoztak.
+Írj programot, amely megadja, hány kilométeren kellene még aszfaltozni, hogy az út teljesen fel
+legyen újítva!
+Bemenet
+A standard bemenet első sorában az út hossza (1≤N≤10 000) és a felújítások száma
+(1≤M≤100) van, alatta soronként egy-egy felújítás adatai (0≤Ki<Vi≤N).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, azon kilométerek számát,
+ahol még kéne aszfaltozni, hogy az út teljesen fel legyen újítva!
+Példa
+Bemenet                                         Kimenet
+100 5                                           63
+0 10
+0 5
+75 95
+12 17
+13 14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

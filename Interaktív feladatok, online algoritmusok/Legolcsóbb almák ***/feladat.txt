@@ -1,0 +1,60 @@
+Interaktív feladatok – Online algoritmusok                                                   ***
+
+
+                                   Legolcsóbb almák
+Egy piacon N egymást követő napon árulnak almát. Arra vagyunk kíváncsiak minden napon,
+hogy az addigi napok közül mely K napon lehetett a legolcsóbban almát venni!
+Írj programot, amely a K. naptól kezdve naponta meghatározza azon K nap sorszámát növekvő
+sorrendben, amelyeken addig a legolcsóbban lehetett almát venni!
+Könyvtár
+A program megvalósításához az alma könyvtár műveleteit kell használni.
+    getN: a programod elején egyszer kell meghívni, megadja a napok számát
+     (1≤N≤10 000).
+    getK: a getN után egyszer kell meghívni, megadja a K értékét (1≤K≤N).
+    ar: megadja a következő napi almaárat (1≤ar≤1000),
+    olcsobbak(X): a K. naptól kezdődően kell minden napra meghívni, az X tömbben
+     kell megadni a K legolcsóbb nap sorszámát, növekvő sorrendben!
+A műveletek Pascal deklarációja:
+   uses alma;
+   function getN: integer;
+   function getK: integer;
+   function ar: integer;
+   procedure olcsobbak(X: array[1..10000] of integer);
+A műveletek C/C++ deklarációja:
+   #include ”alma.h”
+   int getN();
+   int getK();
+   int ar();
+   void olcsobbak(int X[10000]);
+Használat
+Letölthető egy minta alma modul C++ és Pascal programja.
+Példa
+   getN  10
+   getK  4
+   ar  80
+   ar  70
+   ar  75
+   ar  90                    olcsobbak:       1   2    3   4
+   ar  100                   olcsobbak:       1   2    3   4
+   ar  60                    olcsobbak:       1   2    3   6
+   ar  77                    olcsobbak:       2   3    6   7
+   ar  80                    olcsobbak:       2   3    6   7
+   ar  77                    olcsobbak:       2   3    6   7, de a 2 3 6 9 is jó megoldás
+   ar  90                    olcsobbak:       2   3    6   7, de a 2 3 6 9 is jó megoldás
+
+
+
+                                             1. oldal
+Interaktív feladatok – Online algoritmusok                           ***
+
+
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             2. oldal
+

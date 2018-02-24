@@ -1,0 +1,35 @@
+Programozási tételek: másolás                                                                  *
+
+
+                                       Határátkelő
+Óriásországból Törpeországba egyetlen határátkelőhelyen, Manófalván keresztül lehet átjutni. A
+határon egyszerre egy autó léphet át, mivel mindig csak egy határőr van szolgálatban. Az útlevél-
+és vámvizsgálat minden autó esetén P percig tart.
+Írj programot, amely az Óriásországból érkező autók határra érkezési idejének és a vámvizsgálat
+P idejének ismeretében megadja az egyes autók Törpeországba való belépési idejét! Feltételezhe-
+tő, hogy az adott napon érkező autók még aznap átjutnak a határon.
+Bemenet
+A standard bemenet első sora az autók N számát (1≤N≤100) és a vámvizsgálat P idejét
+(1≤P≤120) tartalmazza két szóközzel elválasztott egész számként. A következő N sorban az
+Óriásországból érkező autók határra érkezési ideje (óra, perc) van megadva növekvő sorrendben.
+Kimenet
+A standard kimenetre N sort kell írni, amelyekben meg kell adni minden egyes autóra –
+határra érkezési idejük sorrendjében – azt, hogy mikor léptek be Törpeországba. Minden sor két
+egész számot, a belépés időpontjának óra és perc részét tartalmazza szóközzel elválasztva.
+Példa
+Bemenet                                         Kimenet
+4 30                                            10 45
+10 15                                           11 25
+10 55                                           11 55
+11 5                                            12 25
+11 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                            1. oldal
+

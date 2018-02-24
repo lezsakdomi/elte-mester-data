@@ -1,0 +1,44 @@
+Rekurzív adatszerkezetek
+
+
+                                     Fa zárójelezéssel
+A Kísérleti Fanemesítő Intézet újfajta fenyőfákat nemesített ki. A fenyőfa törzséből pontosan 2
+ág ágazik el, vagy egyetlenegy sem. Az egyes ágak ugyanolyan hosszúak és vastagok, mint a törzs,
+s a végükből legfeljebb újabb 2-2 ág ágazik el, vagy egy sem. Ezek megint ugyanolyan hosszúak,
+mint a törzs. A fának törzse biztosan van. Egy fát zárójelekkel és F betűkkel írunk le a számító-
+gép számára: (baloldali ág)F(jobboldali ág) formában.
+Készíts programot, amely meghatározza
+   1.) a fa magasságát (a leghosszabb út hosszát a gyökértől valamelyik ág végéig);
+   2.) a fa tömegét (feltételezve, hogy a törzs, illetve a vele azonos tömegű ágdarabok egységnyi
+       tömegűek);
+   3.) a fa elágazásainak számát!
+Bemenet
+A standard bemenet egyetlen sorában a fát leíró szöveg szerepel. A bemenet hossza legfel-
+jebb 100 000 karakter, és minden esetben egy # zárja.
+Kimenet
+A standard kimenet három sorába a fa magasságát, a fa tömegét, valamint a fa elágazásai-
+nak számát kell írni!
+Példa
+A három példabemenet egy ágnélküli, egy kétágú, végül egy bonyolultabb fa leírása.
+Bemenet                                          Kimenet
+F#                                               1
+                                                 1
+                                                 0
+Bemenet                                          Kimenet
+(F)F(F)#                                         2
+                                                 3
+                                                 1
+Bemenet                                          Kimenet
+((F)F(F))F(F)#                                   3
+                                                 5
+                                                 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤1000
+
+
+
+
+                                              1. oldal
+

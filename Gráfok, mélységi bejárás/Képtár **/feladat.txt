@@ -1,0 +1,39 @@
+Gráfok – Mélységi bejárás                                                                      **
+
+
+                                            Képtár
+A piripócsi kastély termeiben egy képkiállítást rendeztek be. N terem falain helyeztek el képeket.
+Egy bejárási útvonalat kell tervezni, amely az 1. teremből indul és az összes termen végighalad
+úgy, hogy a látogatók az összes képet pontosan egyszer láthassák, majd az 1. teremben ér véget.
+Ha egy teremből egy szomszéd terembe átmegyünk, akkor csak a jobb oldalon, a bejárat és a kijá-
+rat közötti falon levő képeket látja a látogató.
+Készíts programot, amely az 1. teremből kiindulva megadja a bejárási útvonalat!
+Bemenet:
+A standard bemenet első sorában a termek száma (1N1000) van. A következő N sor
+az egyes termekkel szomszédos termek sorszámát tartalmazza (1SiN), az óramutató járásával
+ellentétes sorrendben, maximum 20-at. Minden sorban annyi szám van, egy-egy szóközzel elvá-
+lasztva, ahány teremmel szomszédos az illető terem.
+Kimenet:
+A standard kimenet egyetlen sorába a bejárás során érintett termek sorszámát kell írni, a
+bejárás sorrendjében!
+Példa
+Bemenet                       Kimenet
+5                             1 2 3 4 3 2 1 5 1
+2   3 4 5
+1   3
+1
+1
+    4 2
+    3                                                                                 3
+1
+                                                                                  4
+Korlátok
+                                                        5            1
+Időlimit: 0.1 mp.                                                                 2
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

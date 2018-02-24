@@ -1,0 +1,33 @@
+Dinamikus programozás                                                                           ***
+
+
+                        Legtöbb kockából építhető torony
+Építőkockákból úgy lehet stabil tornyot építeni, hogy kisebb kockára nem lehet nagyobbat, illetve
+könnyebb kockára nem lehet nehezebbet tenni.
+Készíts programot, amely adott N kocka alapján megadja a belőlük építhető legtöbb kockát tar-
+talmazó stabil tornyot!
+Bemenet
+A standard bemenet első sorában a kockák száma van (1N1000). A további N sor
+mindegyike egy kocka oldalhosszát (1Hi2000) és súlyát (1Si2000) tartalmazza. Nincs két
+kocka, amelynek oldalhossza és súlya is megegyezne.
+Kimenet
+A standard kimenet első sorába a legtöbb kockát tartalmazó stabil torony kockáinak M
+számát kell írni! A második sorba a stabil tornyot alkotó M kocka sorszámát kell írni alulról felfelé
+haladva! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+5                                                 3
+10   3                                            2 1 5
+20   5
+15   6
+15   1
+10   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,33 @@
+Elemi feladatok                                                                                **
+
+
+                                           Pakolás
+Egymás mellé N darab ládát helyezünk el, különböző méretűeket. Tetszőleges üres láda megfog-
+ható és belehelyezhető valamely, tőle balra vagy jobbra elhelyezkedő nagyobb ládába, ha köztük
+nincs másik láda. Ha például balról jobbra haladva a ládák mérete rendre 1, 3, 2, akkor először a 2
+méretűt rakjuk a 3 méretűbe, majd az 1 méretűt beletehetjük; de ha először az 1-est tesszük a
+3-asba, akkor a 2-est már nem tehetjük bele. Az a cél, hogy a pakolás végén a ládákat a lehető leg-
+kevesebb ládába pakoljuk be.
+Írj programot, amely kiszámítja, hogy legkevesebb hány ládába lehet összepakolni a bemeneti lá-
+dasort!
+Bemenet
+A standard bemenet első sorában a ládák N (1≤N≤10000) száma van. A második sor
+pontosan N különböző pozitív egész számot tartalmaz egy-egy szóközzel elválasztva, a ládák mé-
+reteit balról jobbra sorrendben. A legnagyobb láda mérete N.
+Kimenet
+A standard kimenet első és egyetlen sorába egy egész számot kell írni, ahány ládába a láda-
+sor bepakolható!
+Példa
+Bemenet                                          Kimenet
+8                                                2
+3 4 7 2 1 5 8 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 50%-ában N≤100
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,27 @@
+Elemi feladatok                                                                                 *
+
+
+                                        Órák angolul
+Az angol számnevek 1-től 12-ig: one, two, three, four, five, six, seven, eight, nine, ten,
+eleven, twelve. Két óra angolul: two o'clock. Negyed három angolul: a quarter past two. Fél öt
+angolul: half past four. Háromnegyed öt angolul: a quarter to five. Délelőtti órák (1.00-tól
+11.45-ig) után az a.m., délutániak (12.00-tól 23.45-ig) után pedig a p.m. rövidítést kell kitenni.
+Írj programot, amely kiírja angolul a pontos időt!
+Bemenet
+A standard bemenet első és egyetlen sora két egész számot tartalmaz szóközzel elválasztva,
+a kiírandó időpont óra (1≤H≤23) és perc részét, ahol a perc csak 0, 15, 30 vagy 45 lehet.
+Kimenet
+A standard kimenet egyetlen sorába a beolvasott időpontot kell angolul kiírni szövegesen
+a fenti elveknek megfelelően!
+Példa
+Bemenet                                              Kimenet
+21 15                                                a quarter past nine p.m.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

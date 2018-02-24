@@ -1,0 +1,35 @@
+Dinamikus programozás                                                                            *
+
+
+                                       Kirándulás
+Egy kiránduláson N helyen tudunk vásárolni dobozos üdítőitalt. A megvett italos dobozokat egy
+K doboz kapacitású hátizsákba tesszük. Egy doboz üdítőitalt 1 km megtétele alatt iszunk meg.
+Készíts programot, amely a boltok távolságának ismeretében kiszámítja, hogy minimum hány
+boltban kell üdítőitalt vásárolnunk, hogy végigihassuk az utat és az N+1-edik helyre érve éppen
+elfogyjon az utolsó doboz üdítő!
+Bemenet
+A standard bemenet első sorában a boltok száma (1≤N≤1000) és a hátizsák kapacitása
+(1≤K≤100) van. A következő N sor mindegyikében két szám van: a következő állomás távolsága
+(1≤Ti≤1000), valamint az állomáson megvásárolható üdítőital dobozok száma (1≤Di≤100).
+Kimenet
+A standard kimenet egyetlen sorába a vásárlások minimális számát kell írni! Ha a feladat
+nem oldható meg, akkor a -1-es számot kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6   10                                           3
+4   10
+3   3
+2   3
+2   2
+2   2                                            4          3        2       2       2       2
+2   2                                   10              3        3       2       2       2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤200 és K≤20
+
+
+
+
+                                             1. oldal
+

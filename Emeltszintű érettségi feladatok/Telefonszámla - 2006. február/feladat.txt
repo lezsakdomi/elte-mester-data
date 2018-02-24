@@ -1,0 +1,62 @@
+Emelt szintű érettségi feladat                                                     2006. február 28.
+
+
+                                        Telefonszámla
+Napi telefonbeszélgetésekről a következő adatokat tudjuk: hívás kezdete, hívás vége, hívott
+telefonszám. A hívás kezdete és vége óra, perc, másodperc formában szerepel. A hívások idejéből
+minden megkezdett perc egy teljes percet jelent. A díjazás számításakor az számít, hogy mikor
+kezdte az illető a beszélgetést. (Például: ha 17:55-kor kezdett egy beszélgetést, de azt 18:10-kor
+fejezte be, akkor is csúcsidőbeli díjakkal kell számlázni, a 18:00-kor kezdődő beszélgetés már
+csúcsidőn kívüli.)
+Írj programot, mely megadja
+   1. egy telefonszámról, hogy vezetékes vagy mobil-e (20, 30, 70: mobil; minden más:
+      vezetékes);
+   2. hívásonként a hívás idejét és a hívott telefonszámot;
+   3. hány hívás kezdődött csúcsidőben és azon kívül (csúcsidő: 7:00-18:00.);
+   4. hány percet beszélt a felhasználó mobil számmal és hány percet vezetékessel;
+   5. a csúcsidőben folytatott beszélgetések díját!
+Bemenet
+A standard bemenet első sora a hívások számát (0≤N≤100), a második sor a hívások
+percenkénti csúcsidős díját (0≤Dv≤500, 0≤Dm≤500), a további sorok az N hívás kezdetét és
+végét (0≤Kó≤23, 0≤Kp≤59, 0≤Kmp≤59, 0≤Vó≤23, 0≤Vp≤59, 0≤Vmp≤59), valamint a hívott
+számot (10 000 000≤Hi≤99 999 999) tartalmazzák.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: N karaktert kell írni, eldöntve az N hívott számról, hogy mobil (m) vagy vezetékes
+(v) szám-e!
+2. részfeladat: az N hívás hívásidejét (percben) és a hívott telefonszámot kell kiírni
+3. részfeladat: a csúcsidőben és az azon kívül történt hívások számát kell írni!
+4. részfeladat: A mobil számmal beszélt perceket és a vezetékes számmal beszélt perceket kel
+kiírni!
+5. részfeladat: A csúcsidőben folytatott beszélgetések díját kell írni!
+Példa
+Bemenet                                     Kimenet
+4                                           #
+30 69                                       vvmm
+6 15 0 6 19 0 31678120                      #
+8 12 31 8 14 40 12345670                    4 31678120 3 12345670 1 20678340 7 30126750
+12 13 14 12 13 55 20678340                  #
+17 55 00 18 01 12 30126750                  3 1
+                                            #
+                                            8 7
+
+
+
+                                               1. oldal
+Emelt szintű érettségi feladat               2006. február 28.
+
+                                 #
+                                 642
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                  2. oldal
+

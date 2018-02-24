@@ -1,0 +1,35 @@
+Programozási tételek összeépítése                                                            **
+
+
+             Leghosszabb egyszínű gyöngyökből álló szakasz
+Egy nyakláncon különböző színű gyöngyök találhatók. Tudjuk, hogy minden szín kezdőbetűje
+más, így a gyöngyöket a színük kezdőbetűjével adjuk meg. A lánc gyöngyeit egy tetszőleges pont-
+jától kezdve adjuk meg.
+Készíts programot, amely kiírja, hogy hány egyforma gyöngyből áll és milyen színű az egymás
+mellett levő leghosszabb egyszínű gyöngyökből álló szakasz!
+Bemenet
+A standard bemenet első sorában a gyöngyök száma van (1≤N≤100), majd a második
+sorban N gyöngy színe (egy-egy színt egy-egy betű jelöl).
+Kimenet
+A standard kimenet első sorába kiírja, hogy hány egyforma gyöngyből áll a leghosszabb
+egyforma gyöngyökből álló szakasz, a következő sorba pedig annak színét (ha több ilyen is van,
+akkor az elsőt)!
+Példa
+Bemenet                                        Kimenet                      S    S
+
+12                                             5                    S                    S
+SSLLLPPPPSSS                                   S
+                                                                                             P
+Korlátok                                                       S
+
+Időlimit: 0.1 mp.                                                                            P
+                                                                L
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤30                        L                P
+                                                                            L        P
+
+
+
+
+                                           1. oldal
+

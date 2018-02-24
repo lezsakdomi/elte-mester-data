@@ -1,0 +1,45 @@
+Programozási tételek – megszámolás                                                           **
+
+
+                                    Személyi számok
+Ismerjük N ember személyi számát. A személyi szám úgy nevezett „beszélő szám”, azaz struktú-
+rája van. 11 decimális számjegyből áll és MÉÉHHNNSSSK alakú.
+    Az ÉÉHHNN számjegyek a születési év utolsó két jegyét, a hónapot és a napot kódolják.
+    Az SSS az azonos napon születettek megkülönböztetésére való.
+    A K ellenőrzési célokat szolgál.
+    A M értékére vonatkozó szabályok:
+Az 1997 előtt született/betelepült személyek esetén     1997. január 1-jétől változott a
+ekképp határozták meg az első számjegyet:               szabály:
+Állampolgárság                Születési év és nem                Születési év és nem
+                           1900-1997        18xx           1997–1999               20xx
+                           férfi nő férfi nő              férfi      nő       férfi     nő
+magyar                       1      2     3     4           1         2         3        4
+(eredetileg) nem magyar      5      6     7     8
+Készíts programot, amely megadja, hogy az év hány napján van több lánynak születésnapja, mint
+fiúnak!
+Bemenet
+A standard bemenet első sorában az emberek száma (1≤N≤1000) és az idei év sorszáma
+(1800≤Év<2100) van. A következő N sor tartalmazza az egyes emberek szabályos személyi
+számát.
+Kimenet
+A standard kimenet egyetlen sorába azon napok számát kell írni, ahány napon több lány-
+nak van születésnapja ebben az évben, mint fiúnak!
+Példa
+Bemenet                                         Kimenet
+7 2015                                          2
+18811121231
+29811121112
+40101011258
+68102021257
+30202023451
+40302021111
+25602293336
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

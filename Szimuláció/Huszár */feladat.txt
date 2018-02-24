@@ -1,0 +1,37 @@
+Szimuláció                                                                                        *
+
+
+                                            Huszár
+Egy sakktáblára elhelyezünk egy huszárt. A sakktábla egy 8*8-as mezőből álló négyzet. A huszár
+„lóugrásban” lép, azaz
+       vízszintes irányban lép egyet és függőlegesen kettőt, vagy
+       függőlegesen lép egyet, és vízszintesen kettőt
+Készíts programot, amely egy adott pozícióra elhelyezett huszár esetén megadja, hogy a huszár
+legfeljebb N lépés alatt mely pozíciókra juthat el!
+Bemenet
+A standard bemenet első, és egyetlen sorában a huszár sorindexe (1≤X≤8), oszlopindexe
+(1≤Y≤8), valamint a lépések maximális száma (0≤N≤20) van megadva, egy-egy szóközzel elvá-
+lasztva.
+Kimenet
+A standard kimenet 8 sorból álljon, egy-egy sorába 8-8 karaktert kell írni! Az i. sorának
+a j. karaktere '*' legyen, ha a huszár azt a pozíciót legfeljebb N lépés alatt elérheti az (X,Y) ko-
+ordinátáról, egyébként pedig legyen '.' karakter!
+Példa
+Bemenet                                           Kimenet
+1 1 2                                             *.*.*...
+                                                  ..**....
+                                                  **..*...
+                                                  .*.*....
+                                                  *.*.....
+                                                  ........
+                                                  ........
+                                                  ........
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

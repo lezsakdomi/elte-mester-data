@@ -1,0 +1,58 @@
+Interaktív feladatok – Kétszemélyes játékok                                                  ***
+
+
+                             Kitalálós játék hibakorláttal
+Ádám és Éva a következő kitalálós játékot játssza. Éva kigondol egy 1 és N közötti egész számot,
+amit Ádámnak ki kell találnia. Ádám csak olyan kérdést tehet fel Évának, hogy „A gondolt szám
+az [A, B] intervallumba esik-e?”. Éva válasza -1, 0, vagy 1 lehet. Ha a gondolt szám g, akkor g<A
+esetén a válasz -1, A≤g≤B esetén 0 és B<g esetén 1. Hogy érdekesebb legyen a játék, Ádámnak
+úgy kell kitalálnia a számot, hogy legfeljebb H-szor kaphat nem 0 választ. Tehát ha már H-szor
+kapott nem 0 választ, akkor meg kell mondania a gondolt számot! Vigyázat! Éva csalfa válaszadó.
+A gondolt számot úgy változtatja, hogy a válasza kompatibilis legyen azzal, amit eddig Ádám kér-
+dezett, de a lehető legtöbb kérdésre kényszerítse Ádámot.
+Írj programot, amely a lehető legkevesebb kérdéssel kitalálja az Éva által gondolt számot!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az eva modul valósít meg.
+    GetN: Pontosan egyszer kell hívni a program elején és a visszaadott érték az Éva által
+     gondolt szám felső korlátja (1≤N≤4 000 000).
+    GetH: Pontosan egyszer kell hívni a program elején és a visszaadott érték az a szám,
+     ahányszor Ádám kérdezhet úgy, hogy a válasz nem 0 (1≤H≤14).
+    Kerdes(A,B): Ha a gondolt szám kisebb, mint A, akkor -1, ha nagyobb vagy egyenlő,
+     mint A és kisebb vagy egyenlő, mint B, akkor 0, egyébként 1 értéket ad vissza. A kérdés
+     hibás, ha A>B, és ekkor megszakad a program.
+    Megoldas(x): A kitalált számot ezzel a művelettel kell közölni az x argumentumban!
+     Blöffölni nem lehet! Csak akkor fogadható el a közölt x érték, ha a feltett kérdések alap-
+     ján a gondolt szám csak x lehet!
+A műveletek Pascal deklarációja:
+   uses eva;
+   function GetN: longint;
+   function GetH: integer;
+   function Kerdes(A,B: longint): integer;
+   procedure Megoldas(x: longint);
+A műveletek C/C++ deklarációja:
+   #include ”eva.h”
+   long GetN();
+   int GetH();
+   int Kerdes(long A, long B);
+   void Megoldas(long x);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy min-
+ta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen próbáláskor a standard bemenet első sorába két egész számot kell írni egy szó-
+közzel elválasztva, az N és a H értékét!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+
+
+                                              1. oldal
+Interaktív feladatok – Kétszemélyes játékok              ***
+
+Időlimit: 1.0 mp.
+Memórialimit: 256 MiB
+
+
+
+
+                                              2. oldal
+

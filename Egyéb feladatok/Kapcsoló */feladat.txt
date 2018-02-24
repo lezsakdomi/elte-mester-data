@@ -1,0 +1,36 @@
+Egyéb                                                                                         *
+
+
+                                         Kapcsoló
+Három különböző nyomtatót szeretnénk számítógépünkhöz kapcsolni, de a gépnek csak két
+portja van. Sikerült vásárolni egy olyan 23 kapcsolót, amelynek két bemenete a két porthoz, há-
+rom kimenete pedig a három nyomtatóhoz köthető. Így mind a három nyomtatóra nyomtatha-
+tunk, csak a nyomtatás előtt egy kapcsológombbal a megfelelő portnyomtató kapcsolatot ki kell
+alakítani, ha a kívánt nyomtató éppen nincs egyik porthoz sem kötve a 23 kapcsoló által.
+Adott nyomtatandó anyagoknak egy sorozata, megjelölve, hogy az anyagot melyik nyomtatón kell
+kinyomtatni. A nyomtatókat az A, B és C karakterekkel azonosítjuk. A nyomtatást a megadott
+sorrendben kell elvégezni, és egyszerre csak egy anyagot nyomtathatunk. Kezdetben egyik nyom-
+tató sincs porthoz kapcsolva.
+Készíts programot, amely kiszámítja, hogy minimálisan hány kapcsolás szükséges a bemenetként
+megadott nyomtatási igény végrehajtásához!
+Bemenet
+A standard bemenet első sorában a nyomtatandó anyagok száma (1N107) van. A kö-
+vetkező sorban N karakterrel adjuk meg az N anyag nyomtatóazonosítóját (A, B és C betűk, elvá-
+lasztójel nincs közöttük).
+Kimenet
+A standard kimenet egyetlen számot, a nyomtatáshoz szükséges kapcsolások minimális
+számát tartalmazza!
+Példa
+Bemenet                                         Kimenet
+10                                              4
+AABACABAAB
+(A példában vastagon szedtük a kapcsolások lehetséges helyét.)
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

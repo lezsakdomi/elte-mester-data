@@ -1,0 +1,41 @@
+Mohó algoritmusok                                                                           ***
+
+
+                                      Legtöbb vírus
+Biológusok egy különleges vírustörzset vizsgálnak. Egy kísérlet során minden egyedre feljegyezték
+annak keletkezési és pusztulási időpontját. Adott H értékre szeretnék kiszámítani, hogy melyik az
+a H hosszúságú időintervallum, amely alatt a legtöbb egyed volt megfigyelhető. A T kezdetű, H
+hosszú időintervallumban azok a K keletkezési és P pusztulási idejű egyedek voltak megfigyelhe-
+tők, amelyre az alábbi feltételek teljesülnek:
+        TK és K<T+H, vagy             T<P és P<T+H, vagy K<T és P≥T+H.
+Készíts programot, amely kiszámítja annak a H hosszú időintervallumnak a kezdetét, amely alatt
+a legtöbb egyed volt életben!
+Bemenet
+A standard bemenet első sora az egyedek (1N300 000) számát és az időintervallum
+hosszát (1<H7000) tartalmazza. A következő N sorban az egyes egyedek K keletkezési és P
+pusztulási ideje van (1K<P7000).
+Kimenet
+A standard kimenet első sorába a megfigyelhető vírusok maximális számát kell írni, a má-
+sodikba pedig azt a T időpontot, amelyre a T kezdetű és H hosszú időintervallumban a legtöbb
+egyed volt megfigyelhető (T+H7000)! Több megoldás esetén a legkorábbi időpontot kell kiírni!
+Példa
+Bemenet                                         Kimenet
+9 3                                             4
+2 6                                             2
+1 3
+5 6
+4 7
+4 9
+8 11
+11 14
+10 13
+10 12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

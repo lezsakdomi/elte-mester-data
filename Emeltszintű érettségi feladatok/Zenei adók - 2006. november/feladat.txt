@@ -1,0 +1,95 @@
+Emelt szintű informatika érettségi                                              2006. november 3.
+
+
+                                        Zenei adók
+Ez a feladat három, folyamatosan zenét sugárzó adóról szól, azok egyetlen napi műsorát feldol-
+gozva. Az adókat sorszámmal azonosítottuk. Az adás minden adón 0 óra 0 perckor kezdődik. A
+nap kezdetén kívül sehol nem fordul elő, hogy két zeneszám azonos időpontban kezdődne. An--
+nyi biztos, hogy először a szerző neve szerepel, majd utána a szám címe.
+Az egyik rádióműsorban képeslapon is kérhető szám. A sokszor csak odafirkált kéréseket olykor
+nehéz kibetűzni. Előfordul, hogy csak ennyi olvasható: „gaoaf”, tehát ezek a betűk biztosan sze-
+repelnek, mégpedig pontosan ebben a sorrendben.
+Az 1. adón változik a műsor szerkezete: minden számot egy rövid, egyperces bevezető előz majd
+meg, és műsorkezdéstől minden egész órakor 3 perces híreket mondanak. Természetesen minden
+szám egy részletben hangzik el továbbra is, közvetlenül a bevezető perc után. Így ha egy szám
+nem fejeződne be a hírekig, el sem kezdik, az üres időt a műsorvezető tölti ki.
+Készíts programot, amely megadja, hogy:
+   1. melyik csatornán hány számot lehet meghallgatni;
+   2. mennyi idő telt el egy adott előadó első számának kezdete és az adott előadó utolsó számá-
+      nak vége között az 1. adón;
+   3. melyik adón volt hallható egy adott előadótól egy adott szám,
+   4. és a másik két adón milyen számok szóltak ekkor;
+   5. mely számok felelnek meg egy adott karaktersorozatnak;
+   6. mikor lenne vége az adásnak az új műsorszerkezetben az 1. adón!
+Bemenet
+A standard bemenet első sorában egy előadó (E) van, aki az első adón legalább kétszer sze-
+repelt. A második sorban egy előadótól egy szám címe (SZ) van, amely valamelyik adón elhang-
+zott. A harmadik sorban egy X karaktersorozat található, amely egy zeneszám azonosítójából tar-
+talmaz néhány karaktert. A negyedik sorban az aznapi zeneszám száma van (1≤Z≤677), majd ezt
+Z darab sor követi. Minden sor négy adatot tartalmaz: a rádió sorszámát (1≤Ri≤3), amit a szám
+hossza követ perc (0≤Pi≤55) és másodperc (0≤MPi≤59) formában, majd a játszott szám azo-
+nosítója szerepel, ami a szám előadójából és címéből áll. A szám azonosítója legfeljebb 50 karak-
+ter hosszú, benne egy kettőspont szerepel, ami az előadó és a cím között található. A számok az
+elhangzás sorrendjében szerepelnek (később kezdődő szám későbbi sorban található), minden
+zeneszám legfeljebb egyszer.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Írd ki, hogy melyik csatornán hány számot lehet meghallgatni!
+2. részfeladat: Írd ki óra:perc:másodperc formában, hogy mennyi idő telt el E első számának
+kezdete és E utolsó számának vége között az 1. adón a szerkezetváltás előtt!
+3. részfeladat: Az első sorba írd ki, hogy melyik adón volt hallható az SZ szám (feltételezhető,
+hogy csak egyszer játszották)!
+
+
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                                          2006. november 3.
+
+4. részfeladat: A második és a harmadik sorba azoknak a számoknak az azonosítóját írd tetszőle-
+ges sorrendben, amelyeket a másik két adó játszott az SZ szám kezdetekor (feltételezhető, hogy a
+másik két adón volt még adás)!
+5. részfeladat: Az X karaktersorozatnak megfelelő szám DB számát írd ki! Ezután DB soron ke-
+resztül írd ki a számok azonosítóit abban a sorrendben, ahogy elhangoztak!
+6. részfeladat: Add meg, hogy mikor lenne vége az adásnak az új műsorszerkezetben az 1. adón!
+Példa
+Bemenet
+Eric Clapton
+Omega:Ablakok
+onc
+6
+1 5 3 Eric Clapton:Bad Attitude
+2 3 36 Eric Clapton:Terraplane Blues
+3 2 46 Eric Clapton:Crazy Country Hop
+3 3 25 Omega:Ablakok
+2 4 23 Eric Clapton:Catch Me If You Can
+1 3 27 Eric Clapton:Willie And The Hand Jive
+Kimenet
+#
+2 2 2
+#
+0:8:30
+#
+3
+#
+Eric Clapton:Bad Attitude
+Eric Clapton:Terraplane Blues
+#
+2
+Eric Clapton:Crazy Country Hop
+Eric Clapton:Catch Me If You Can
+#
+0:13:30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            2. oldal
+

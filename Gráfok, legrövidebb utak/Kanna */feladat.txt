@@ -1,0 +1,35 @@
+Gráfok – legrövidebb utak                                                                        *
+
+
+                                            Kanna
+Egy gazdának három különböző űrtartalmú tejeskannája van, amelyekbe teli állapotban A, B és C
+liter tej fér. A gazda tudja, hogy a kannák közötti öntögetésekkel bizonyos mennyiségű tejet ki tud
+mérni. Az öntögetések során csak azt kell betartania, hogy tudja, hogy mennyi tej marad abban a
+kannában, amelyikből tölt és mennyi lesz abban, amelyikbe tölt. Kezdetben mindhárom kannában
+van valamennyi tej és azt szeretné elérni, hogy az A-literes kannában legyen az eladásra kínált
+mennyiségű tej. A kimérést a lehető leggyorsabban akarja elvégezni, ezért figyelembe kell vennie,
+hogy egy áttöltés ideje megegyezik az áttöltött tej mennyiségével.
+Készíts programot, amely kiszámítja azt a tej mennyiséget, amelynek a kimérése a legtovább tart,
+és azt is, hogy meddig!
+Bemenet
+A standard bemenet első sorában a három tejeskanna űrtartalma van (1≤A,B,C≤1000,
+A≥B≥C). A második sor is három egész számot tartalmaz, a kezdetben az A-, a B-, és a C-literes
+kannában lévő tej mennyiségét.
+Kimenet
+A standard kimenet első sorába két egész számot kell írni! Az első szám az a tejmennyiség
+legyen, amelynek a kimérése a legtovább tart, a második szám pedig a kimérés összideje! Ha több
+ilyen mennyiség lenne, akkor a legkisebbet kell megadni!
+Példa
+Bemenet              Kimenet
+9 5 2                8 11
+7 2 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában az A,B,C≤100
+
+
+
+
+                                             1. oldal
+

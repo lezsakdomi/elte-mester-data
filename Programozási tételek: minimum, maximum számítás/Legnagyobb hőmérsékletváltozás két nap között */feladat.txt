@@ -1,0 +1,31 @@
+Programozási tételek – Maximumkiválasztás
+
+
+             Legnagyobb hőmérsékletváltozás két nap között
+Az időjárás előrejelzésben ismerjük előre N nap várható minimális és maximális hőmérsékletét.
+Készíts programot, amely megadja azt a két szomszédos napot, ahol a legnagyobbat változik a
+hőmérséklet (az egyik maximuma és a másik minimuma különbsége a lehető legnagyobb)!
+Bemenet
+A standard bemenet első sorában a napok száma (2≤N≤100). A következő N sorban az
+egyes napokra várható minimális és maximális hőmérséklet szerepel (-20≤Min<Max≤30).
+Kimenet
+A standard kimenet első sorába annak a két szomszédos napnak a sorszámát kell kiírni,
+ahol a legnagyobbat változik a hőmérséklet (ha több ilyen is van, akkor az elsőt)!
+Példa
+Bemenet                                         Kimenet
+5                                               4 5
+-9 -2
+-1 4
+-5 -4
+-6 -1
+5 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

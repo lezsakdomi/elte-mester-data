@@ -1,0 +1,30 @@
+Programozási tételek - megszámolás                                                      *
+
+
+                                           Jegyek
+Ismerjük egy egyetemi évfolyam vizsgajegyeit.
+Számold meg, hogy az 1, 2, 3, 4 és 5-ös jegyekből külön-külön hány darab van!
+Bemenet
+A standard bemenet első sorában található az évfolyam tagjai száma (1≤N≤100) értéke.
+Az ezt követő N sorban az évfolyam jegyei vannak (1, 2, 3, 4 vagy 5 értékek).
+Kimenet
+A standard kimenet első sorába ki kell írni szóközzel elválasztva 5 számot, melyek értékei
+az egyes jegyek darabszámai 1-től 5-ig!
+Példa
+Bemenet                                         Kimenet
+6                                               1 0 0 2 3
+4
+1
+5
+4
+5
+5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

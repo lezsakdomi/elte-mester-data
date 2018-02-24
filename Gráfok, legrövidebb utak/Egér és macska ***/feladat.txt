@@ -1,0 +1,49 @@
+Gráfok – legrövidebb utak                                                                    ***
+
+
+                                     Egér és macska
+Egy irányított gráf egyik pontjából egy macska, másikból pedig egy egér indul el. Mindkettőre tud-
+juk, hogy melyik élet mennyi idő alatt teszi meg. Egérlyukak azok a pontok, ahonnan nem vezet
+tovább él. A macska elfogja az egeret egy P pontban, ha előbb vagy ugyanakkor ér a P pontba,
+mint az egér.
+Készíts programot, amely megadja az egér egy olyan útját, amelyen biztosan beér egy egérlyukba,
+mielőtt a macska utolérné, bármerre is megy a macska! (Az egérlyuknál sem érheti utol!)
+Bemenet
+A standard bemenet első sorában a pontok (1≤N≤200) és az élek (1≤M≤10 000)
+száma van, egyetlen szóközzel elválasztva. A második sorban a macska és az egér kezdőpontja
+sorszáma van (1≤A≠B≤N). A következő M sor mindegyikében egy él kezdő- és végpontja sor-
+száma (1≤K≠V≤N), valamint az az idő van, ami alatt a macska, illetve az egér végighaladhat az
+élen (1≤IM,IE≤100), egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet egyetlen egy olyan út sorszámait kell írni, amelyen az egér biztonságo-
+san beér egy egérlyukba! Ha nincs ilyen, akkor az első sorba az egyetlen 0 számot kell írni, ha
+több megoldás is lenne, akkor bármelyik kiírható!
+Példa
+Bemenet                                          Kimenet
+10 14                                            8 9 10
+1 8
+1 2 1 2
+1 4 1 2
+                                                    2                           5
+2 3 1 2
+4 3 1 2
+2 5 1 2                                                      3              6
+3 6 1 2                                1                                                       10
+3 7 1 2                                                 4          7
+4 7 1 2                                                                             9
+6 9 1 2
+7 6 1 2
+8 7 1 2
+                                                   8
+8 9 1 2
+9 10 1 2
+6 5 1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

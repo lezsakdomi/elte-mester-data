@@ -1,0 +1,45 @@
+Gráfok – Mélységi bejárás                                                                       **
+
+
+                                              Park
+A városi vidámpark több részlegből áll. Az egyes részlegeket kétirányú utak kötik össze. Az úthá-
+lózat olyan, hogy bármely részlegtől legfeljebb három közvetlen út vezet más részleghez, kivéve a
+főbejáratot tartalmazó részleget, onnan legfeljebb két másik részleghez vezet közvetlen út. Egy
+részleghez érve csak a részlegen keresztül lehet másik útra lépni. Minden részleghez el lehet jutni
+– esetleg más részlegeken keresztül – a főbejáratot tartalmazó részlegtől. Minden részlegbe csak
+az oda szóló belépőjeggyel lehet bemenni. Kedvezményesen lehet venni olyan belépőjegy köteget,
+amely minden részlegbe pontosan három jegyet tartalmaz.
+Készíts programot, amely kiszámít egy olyan séta útvonalat, amely a főbejáratot tartalmazó rész-
+legtől indul, oda ér vissza és minden részleget tartalmaz, de minden részleget legfeljebb három-
+szor!
+Bemenet
+A standard bemenet első sorában a vidámpark részlegeinek száma (1N1000) és a rész-
+legeket közvetlenül összekötő utak száma (1M3000) van. A főbejárat az 1. részlegnél van. A
+következő M sor mindegyike két részleg sorszámát tartalmazza (1a≠bN), amelyeket közvetlen
+kétirányú út köt össze.
+Kimenet
+A standard kimenet első sorába egy olyan séta útvonalat kell írni, amely a főbejárattal (1)
+kezdődik és végződik, minden részleget tartalmaz, de legfeljebb háromszor, továbbá az egymást
+követő részlegek között van közvetlen út! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                       Kimenet
+8   10                        1 2 4 5 3 5 6 7 8 7 6 5 4 2 1
+1   2
+2   3                                                                    2            4
+2   4
+5   4                                                         1                                 6
+3   5                                                                    3            5
+4   6
+5   6
+6   7                                                                           8           7
+7   8
+1   8
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

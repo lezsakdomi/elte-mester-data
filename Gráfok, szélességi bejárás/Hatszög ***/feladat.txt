@@ -1,0 +1,53 @@
+Gráfok – Szélességi bejárás                                                                                         ***
+
+
+                                           Hatszög
+                          Egy szabályos hatszög alakú térképet szabá-             j                                 k
+                          lyos hatszögekre bontottunk úgy, hogy min-
+                          den oldalán N darab kisebb hatszög lett. A
+                          szemben levő csúcsokat összekötő átlókra az
+                                                                       i
+                          ábra szimmetrikus, így a hatszögeket három
+                          indexszel azonosíthatjuk (mindegyik az egyik
+                          tengely mentén állandó).
+
+
+Az i index a vízszintes tengely mentén állandó, felfelé csökken, lefelé
+nő. A j index a jobbra lefelé haladó tengely mentén állandó, ettől balra
+csökken, jobbra pedig nő. A k index pedig a balra lefele haladó tengely               i-1,j,k+ 1       i-1,j+ 1,k
+
+mentén állandó, ettől balra növekszik, jobbra pedig csökken.
+Így az (i,j,k) indexű elem szomszédai indexei a jobboldali ábra            i,j-1,k+ 1          i,j,k           i,j+ 1,k-1
+
+szerint alakulnak. Legyen a középső kis hatszög indexe a (0,0,0)!
+Minden egyes pontnak ismerjük a tengerszint feletti magasságát.                    i+ 1,j-1,k          i+ 1,j,k-1
+
+Készíts programot, amely a (p,q,r) indexű pontból meghatározza a
+legrövidebb olyan ún. vízszintes út hosszát az (x,y,z) pontba,
+melynek során a tengerszint feletti magasság nem változik!
+Bemenet
+A standard bemenet első sorában a nagy hatszög mérete (1N80) van. A következő
+2*N-1 sorban annyi tengerszint feletti magasság van (0<magasság1000), amennyi a tér-
+kép egy-egy sorához szükséges. Az utolsó sorban a kezdő- (p,q,r) és a végpozíció (x,y,z)
+indexei találhatók, egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet egyetlen sorába a legrövidebb (p,q,r)-ből (x,y,z)-be vezető
+vízszintes út hosszát kell írni. Ha ilyen út nincs, akkor a kiírt szám legyen -1!
+Példa
+Bemenet                                          Kimenet
+3                                                4
+5 6 7
+1 1 1    8
+1 2 3    2 1
+1 1 1    1
+1 1 1
+–1 –1    2 1 0 -1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

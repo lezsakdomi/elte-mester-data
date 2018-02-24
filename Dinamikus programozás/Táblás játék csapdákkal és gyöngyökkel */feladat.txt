@@ -1,0 +1,46 @@
+Dinamikus programozás                                                                             *
+
+
+                    Táblás játék csapdákkal és gyöngyökkel
+Tekintsük azt az egyszemélyes játékot, amelyet egy N sorból és M oszlopból álló négyzetrácsos
+táblán lehet játszani. A tábla véletlenszerűen kiválasztott mezőin gyöngyöket helyeznek el. A táb-
+lán lehetnek csapda mezők, amelyekre nem lehet lépni. A játék célja az, hogy a játékos egy bábut
+mozgatva a tábla mezőin a lehető legtöbb gyöngyöt gyűjtse be. A játékszabály a következő:
+    Kezdetben a bábu a tábla (1,1) koordinátájú bal felső sarkában áll.
+    Egy lépésben a bábut csak szomszédos mezőre lehet mozgatni, vagy jobbra, vagy lefelé.
+    Csapda mezőre nem lehet lépni.
+    A játék akkor ér véget, ha a bábu a tábla (N,M) koordinátájú jobb alsó mezőjére, a célmező-
+     re kerül.
+    A játékban szerzett pontszám azokon a mezőkön található gyöngyök számának összege,
+     amelyekre a bábuval lépett a versenyző. Az (1,1) mezőn lévő gyöngyök is a játékosé lesz-
+     nek.
+Írj programot, amely kiszámít egy olyan játékmenetet, amely a legtöbb pontot eredményezi!
+Bemenet
+A standard bemenet első sorában a tábla sorainak és oszlopainak száma van (1N,
+M200). A következő N sor a kezdeti játékállást tartalmazza, minden sorban pontosan M egész
+szám van. Ha a j-edik szám -1, akkor ott csapda mező van, egyébként azt adja meg, hogy az adott
+sorban a j-edik mezőn hány gyöngy van. Minden szám értéke nem nagyobb, mint 500.
+Kimenet
+A standard kimenet első sorába a szabályos játékkal elérhető legnagyobb pontszám értékét
+kell írni! Ha a célmező nem érhető el, akkor az első és egyetlen sorba a -1 értéket kell írni! Ha el
+lehet jutni a célmezőre, akkor a második sor pontosan N+M-2 karaktert tartalmazzon, egy olyan
+szabályos lépéssorozatot, amellyel elérhető a maximális pontszám! A jobbra lépés jele a 'J', a le-
+felé lépés jele az 'L' karakter. A karakterek között nem lehet szóköz, és az utolsó karakter után
+nem lehet szóköz! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+5 6                                              17
+1 2 3 4 0 1                                      JJLLLLJJJ
+2 -1 2 1 -1 3
+-1 0 6 0 0 0
+4 1 0 -1 1 -1
+0 0 1 2 0 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                              1. oldal
+

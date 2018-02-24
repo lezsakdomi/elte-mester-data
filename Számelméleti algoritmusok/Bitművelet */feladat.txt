@@ -1,0 +1,37 @@
+Számelméleti algoritmusok
+
+
+                                              Bitművelet
+Legyen (X,Y) a következő sorozat:
+        (X,Y) := (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), (0,3), (1,2), …,
+ahol a sorozat tagjait 0-tól sorszámozzuk!
+Ez alapján két sorozatot állítunk elő:
+   az A004198 sorozat elemei X és Y bitenkénti ÉS műveletével keletkeznek,
+   az A003986 sorozat elemei pedig X és Y bitenkénti VAGY műveletével.
+Ez alapján
+   az A004198 sorozat: 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 2, 2, 0, …
+   az A003986 sorozat: 0, 1, 1, 2, 1, 2, 3, 3, 3, 3, 4, 3, 2, 3, 4, 5, 5, 3, 3, 5, …
+Készíts programot, amely kiszámítja az N. (X,Y) számpárt, valamint az A004198 és az A003986
+sorozatok N. elemeinek kettes és tízes számrendszerbeli alakját!
+Bemenet
+A standard bemenet első sorában N értéke található (0  N  1 000 000).
+Kimenet
+A standard kimenet első sorába kerüljön az (X,Y) sorozat N. tagjának X és Y tagja szó-
+közzel elválasztva! A második sorban az A004198 sorozat N. tagja, a harmadik sorban az
+A003986 sorozat N. tagja szerepeljen előbb a kettes, majd a tízes számrendszerbeli alakjukban,
+szóközzel elválasztva!
+Példa
+Bemenet                                                Kimenet
+8                                                      2 1
+                                                       0 0
+                                                       11 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤1000.
+
+
+
+
+                                                   1. oldal
+

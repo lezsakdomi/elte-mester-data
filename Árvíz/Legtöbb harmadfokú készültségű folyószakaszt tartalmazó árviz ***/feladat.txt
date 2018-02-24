@@ -1,0 +1,45 @@
+Árvíz                                                                                     ****
+
+
+A legtöbb harmadfokú készültségű folyószakaszt tartalmazó árvíz
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza a legtöbb harmadfokú készültségű folyószakaszt tartal-
+mazó árvizet!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába az árvizek K darabszámát kell írni (0, ha nincs ilyen, eb-
+ben az esetben nincsenek további sorok)! A második sorba ennek a K árvíznek a kezdete és vége
+kerüljön! A 3. sorba K érték kerüljön, ezek a K árvíz harmadfokú készültségű folyószakaszainak
+darabszámai! Végül a 4. sor annak az árvíznek a kezdetét és végét adja meg, amelyik a legtöbb
+harmadfokú készültségű folyószakaszt tartalmazza! (Amennyiben több ilyen van, akkor az elsőt
+kell megadni, ha pedig egy sincs, akkor 0-t kell kiírni!)
+Példa
+Bemenet              Kimenet
+9                    3
+1100                 1 1 3 6 8 9
+750                  1 2 1
+1050                 3 6       1300
+810
+1050                                1100
+1100
+600                                  900
+1100
+1200                                 700
+
+Korlátok                             500
+Időlimit: 0,1 mp.
+                                     300
+Memórialimit: 32 MB                        1       2      3   4    5     6     7      8     9
+
+
+
+
+                                               1. oldal
+

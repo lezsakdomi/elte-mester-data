@@ -1,0 +1,35 @@
+Gráfok – Mélységi bejárás                                                                     ***
+
+
+                                           Ültetés
+Az osztályod ünnepségre készül, ahol minden osztály külön széksort kapott, pontosan annyi
+székkel, amennyi az osztálylétszám. Az osztályfőnök mindenkit megkért, hogy nevezzen meg egy
+tanulót, aki mellett ülni szeretne.
+Készíts olyan programot, amely kiszámít egy olyan ültetési sorrendet, amely a lehető legtöbb ta-
+nuló kérését teljesíti!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1N20000) van. A második sor
+pontosan N számot tartalmaz: az i-edik szám annak a tanulónak a sorszáma, aki mellett az i-edik
+tanuló ülni szeretne (1SiN,Si≠i).
+Kimenet
+A standard kimenet első és egyetlen sorába N számot kell írni! Az i-edik szám annak a
+széknek a sorszáma legyen, ahova az i-edik tanulót ültetjük a legtöbb kérést kielégítő ültetésben!
+Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                   Kimenet
+11                                        7
+8 1 1 1 6 8 6 9 10 8 10                   2 1 3 4 5 6 7 8 9 10 11
+Korlátok
+                                                               2        3        4
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+                                                               1        8       10       11
+Pontozás: A tesztek 50%-ában N≤500
+
+                                                               5        6        7       9
+
+
+
+
+                                             1. oldal
+

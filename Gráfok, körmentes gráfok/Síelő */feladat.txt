@@ -1,0 +1,34 @@
+Gráfok – körmentes gráfok                                                                         *
+
+
+                                              Síelő
+Egy síelő központban többféle lesiklópályát lehet kijelölni. Az egyes kijelölhető pályák csak
+kezdőpontból indulhatnak és csak végpontban végződhetnek. A kezdőpontokba nem vezet be út,
+a végpontokból pedig nem vezet ki út.
+Írj programot, amely kiszámolja a legrövidebb és a leghosszabb kijelölhető lesiklópálya helyét!
+Bemenet
+A standard bemenetelső sorában a pályák csomópontjainak száma (1N10000) és a
+közöttük vezető utak száma (1M100000) van, egyetlen szóközzel elválasztva. A következő M
+sor mindegyike egy-egy út két végpontjának sorszámát és a köztük levő távolságot (A B H, az út
+A-ból B-be vezet, hossza H, A<B, H>0) tartalmazza, egyetlen szóközzel elválasztva.
+Kimenet
+A standard kimenetelsősorába a legrövidebb, a másodikba pedig a leghosszabb út hosszát,
+valamint kezdő- és végcsomópontjának sorszámát kell írni, egy-egy szóközzel elválasztva! Ha
+több megoldás is van, akkor a minimális sorszámút.
+Példa
+Bemenet                                          Kimenet
+5   4                                            7 2 5
+1   3   10                                       18 1 4
+2   3   5
+3   4   8
+3   5   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                              1. oldal
+

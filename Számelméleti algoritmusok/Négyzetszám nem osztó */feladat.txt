@@ -1,0 +1,24 @@
+Számelméleti algoritmusok                                                                 *
+
+
+                             Négyzetszám nem osztó
+Készíts programot, amely megadja az összes A és B közötti olyan természetes számot, amelynek
+– az 1-et kivéve – semmilyen négyzetszám nem osztója!
+Bemenet
+A standard bemenet egyetlen sorában az A és a B értéke van (1≤A≤B≤1 000 000, ahol
+B-A≤10 000).
+Kimenet
+A standard kimenet első sorába az összes A és B közötti olyan természetes számot kell ír-
+ni növekvő sorrendben, amelynek semmilyen négyzetszám nem osztója!
+Példa
+Bemenet                                       Kimenet
+3 10                                          3 5 6 7 10
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

@@ -1,0 +1,37 @@
+Elemi feladatok                                                                                **
+
+
+                                                    Titkos kód
+Egy legfeljebb N számjegyű titkos számkódot szeretnénk megfejteni, a számkód nemnegatív egész
+szám. Azt tudjuk csak róla, hogy mennyi az 5-tel (A), a 7-tel (B), illetve a 11-gyel (C) osztásának
+maradéka.
+Írj programot, amely N, valamint A és B és C értékének ismeretében megadja a legkisebb olyan
+számkódot, ami a maradékok alapján lehetséges, továbbá azt, hogy hány ilyen legfeljebb N-jegyű
+szám van összesen!
+Bemenet
+A standard bemenet első sora tartalmazza az N értéket, azaz azt, hogy a titkos számkód
+legfeljebb hány számjegyből állhat (1≤N≤4). A második sorban három egész szám van szóközzel
+elválasztva, A, B és C értéke (0≤A≤4, 0≤B≤6, 0≤C≤10), azaz a titkos számkód 5-tel, 7-tel és
+11-gyel osztásának maradéka.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot, a legkisebb olyan számkódot kell
+írni, ami a maradékok alapján lehetséges. A második sorba is egy egész szám kerüljön, annak az
+értéke, hogy hány olyan, legfeljebb N-jegyű szám van összesen, amely 5-tel, 7-tel és 11-gyel osztva
+sorban A, B és C maradékot képez! Ha egyetlen szám sem teljesíti a megadott feltételeket, akkor a
+kimenet egyetlen sorába a „NINCS” szót kell írni!
+Példa
+Bemenet                                                      Kimenet1
+3                                                            88
+3 4 0                                                        3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+1   A 88-on kívül további ilyen számok: 473, 858, de ezeket nem kell kiírni.
+
+                                                         1. oldal
+

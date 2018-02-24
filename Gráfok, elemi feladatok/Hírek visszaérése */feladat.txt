@@ -1,0 +1,37 @@
+Gráfok – elemi feladatok                                                                             *
+
+
+                                      Hírek visszaérése
+Egy iskola tanulói elhatározták, hogy az Interneten olvasott érdekes hírt továbbítják egymásnak.
+Minden tanuló pontosan egy másiknak továbbítja a hírt. A hír úgy terjed, hogy aki megkap egy
+hírt, az továbbítja az általa kiválasztott tanulónak, aki azt továbbítja, és így tovább. Akitől indult a
+hír, illetve aki másodszorra kapja a hírt, az már nem továbbítja még egyszer.
+Írj programot, amely kiszámítja, hogy kik azok a tanulók, akik visszakapják az általuk elindított
+hírt!
+Bemenet
+A standard bemenetelső sorában a tanulók N (1<N100000) száma van. A tanulókat az
+1,…,N számokkal azonosítjuk. A második sor pontosan N egész számot tartalmaz (egy-egy
+szóközzel elválasztva). Az i-edik szám annak a tanulónak a sorszáma, akinek az i-edik tanuló
+továbbítja a hírt.
+Kimenet
+A standard kimenetelsősorába azon tanulók M számát kell írni, akik visszakapják az
+általuk indított hírt. A második sorba M számot kell írni (egy-egy szóközzel elválasztva), a
+kérdéses tanulók sorszámait tetszőleges sorrendben.
+Példa
+Bemenet                                            Kimenet
+11                                                 8
+8 1 1 11 6 7 5 9 10 8 4                            4 5 6 7 8 9 10 11
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤5000
+
+
+
+
+                                                1. oldal
+

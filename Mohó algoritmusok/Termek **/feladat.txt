@@ -1,0 +1,41 @@
+Mohó algoritmusok                                                                            **
+
+
+                                          Termek
+Iskolád alapításának évfordulóján nagyszabású ünnepséget szervez. Egy napra sok eseményt ter-
+vez. Kiderült, hogy lesznek események, amelyek részben egy időben zajlanak. Ezért meg kell hatá-
+rozni, hogy legkevesebb hány termet kell előkészíteni ahhoz, hogy minden esemény számára le-
+gyen terem foglalva, és természetesen az események ne ütközzenek. Minden betervezett ese-
+ménynek ismerjük a kezdési és befejezési időpontját, amit percben adtak meg. Ha egy esemény az
+A perctől a B percig tart, akkor ugyanabba a terembe beosztott bármely másik esemény vagy A-
+nál korábban véget ér, vagy B-nél később kezdődhet.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány terem kell ahhoz, hogy minden be-
+tervezett eseményt meg lehessen tartani, továbbá megad egy lehetséges terembeosztást!
+Bemenet
+A standard bemenet első sorában az események száma van (1N100000). A következő
+N sor mindegyikében egy esemény kezdő, illetve befejező időpontja van (1KiBi1440).
+Kimenet
+A standard kimenet első sorába az összes esemény beosztásához szükséges legkevesebb
+terem T számát kell írni! A következő T sorban kell megadni a termek beosztását! Egy sorba azon
+események sorszámát kell írni egy-egy szóközzel elválasztva, amelyek ugyanazon teremben lesz-
+nek megtartva a felsorolás sorrendjében. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+8                                               4
+1100 1200                                       2 4 8
+500 520                                         3 7
+510 570                                         5 1
+600 630                                         6
+630 700
+700 800
+600 800
+650 700
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

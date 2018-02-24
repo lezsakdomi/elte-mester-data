@@ -1,0 +1,37 @@
+Sorozatok                                                                                    **
+
+
+                                         Ranglista
+Egy felmérésben megvizsgálták K ország leggazdagabb embereinek vagyonát, ismerjük az egyes
+országokbeli rangsort.
+Írj programot, amely megadja a vagyon szerinti összesített rangsor első L tagjának vagyonát, va-
+lamint azt, hogy közöttük melyik országból vannak a legtöbben!
+Bemenet
+A standard bemenet első sorában az országok száma (2≤K≤10) és az L szám van
+(1≤L≤100 000). A következő K sorban az egyes országok lakóinak száma (1≤Mi≤100 000),
+majd az Mi lakos vagyona szerepel (1≤Vi,j≤100 000 000) , vagyon szerint csökkenő sorrend-
+ben.
+Kimenet
+A standard kimenet első sorába annak az országnak a sorszámát kell írni, amelyből a leg-
+többen vannak az leggazdagabb L lakos között. A további L sorba az egyes lakók vagyonát kell
+írni, vagyon szerint csökkenő sorrendben!
+Példa
+bemenet                                         kimenet
+3   6                                           1
+3   1000 500 300                                2000
+2   2000 400                                    1000
+2   200 100                                     500
+                                                400
+                                                300
+                                                200
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                            1. oldal                    2017.03.28. 14:00-24:00
+

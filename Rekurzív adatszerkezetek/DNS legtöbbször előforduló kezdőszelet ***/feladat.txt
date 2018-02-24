@@ -1,0 +1,40 @@
+Rekurzív adatszerkezetek                                                                     ***
+
+
+                    DNS legtöbbször előforduló kezdőszelet
+Kutatók különleges DNS szekvenciákat kutatnak. Sok szekvenciát összegyűjtöttek. Aktuális fel-
+adatukban a szekvenciák első K hosszú kezdőszeleteit vizsgálják, és azt szeretnék tudni, hogy me-
+lyik kezdőszelet fordul elő legtöbbször az ismert szekvenciák között.
+Készíts programot, amely megadja a legtöbbször előforduló K hosszú kezdőszeletet, és azt is,
+hogy az hány szekvenciának a kezdőszelete!
+Bemenet
+A standard bemenet első sorában az összegyűjtött szekvenciák száma (1≤N≤100 000) és
+a vizsgált kezdőszeletek hossza (1≤K≤50) van. A további N sor mindegyike egy szekvenciát tar-
+talmaz, olyan legfeljebb 250 elemű karaktersorozatot, amelyben minden karakter az A, C, G, T
+nagybetűk valamelyike.
+Kimenet
+A standard kimenet első sorába a legtöbbször előforduló K hosszú kezdőszelet előfordu-
+lásainak számát kell írni! A második sorba pontosan K karaktert kell írni (mindegyik az A, C, G, T
+nagybetűk valamelyike), a legtöbbször előforduló K hosszú kezdőszeletet! Több megoldás esetén
+bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+8 3                                              3
+AGG                                              AGG
+AGGTCGA
+AG
+GAGA
+GAGGCG
+AGGTGC
+GATACT
+ATAGCC
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 120 MiB
+Pontozás: A tesztek 40%-ában a szekvenciák száma N≤5000
+
+
+
+
+                                             1. oldal
+

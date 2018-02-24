@@ -1,0 +1,51 @@
+Gráfok – Szélességi bejárás                                                                   ***
+
+
+                               80 nap alatt a Föld körül
+Bizonyára ismered Verne Gyula regényét, melyben Phileas Fogg, az angol lord fogadásból 80 nap
+alatt körbeutazta a Földet. Ebben a feladatban az ő útját kell végigkövetned és segítened kell őt a
+fogadás megnyerésében.
+Készíts programot, amely a városok és a járatok adatainak ismeretében megadja, hogy Phileas
+Fogg leghamarabb hány nap alatt tudja megkerülni a Földet!
+Bemenet
+A standard bemenet első sorában a városok (1N100), a járatok (1M5000) száma és
+a kiinduló állomás sorszáma. A következő N sor mindegyike egy város leírását tartalmazza: a vá-
+ros hosszúsági és szélességi koordinátáit (-180H180,-90Sz90). A következő M sor
+mindegyike egy járat leírását tartalmazza: a kiinduló és a célállomás sorszámát és az utazás idejét
+napokban. Feltételezzük, hogy a következő járat az előző megérkezése után azonnal el tud indul-
+ni.
+Kimenet
+A standard kimenet egyetlen sorába azt a számot kell írni, ahány nap alatt Phileas Fogg
+leghamarabb meg tudja kerülni a Földet! Ha nem tudja megkerülni a Földet, akkor -1-et kell ki-
+írni!
+Példa
+Bemenet                                          Kimenet
+5 15 5                                           31
+-172 -54
+-12 44
+118 -48
+119 -87
+-172 -72
+2 1 6
+2 3 10
+5 4 16
+4 3 5
+1 2 8
+5 4 6
+2 5 16
+3 5 7
+4 3 11
+2 3 19
+5 4 12
+4 5 3
+5 4 16
+4 2 9
+4 1 16
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+                                             1. oldal
+

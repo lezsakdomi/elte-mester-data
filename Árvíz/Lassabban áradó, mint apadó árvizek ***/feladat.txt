@@ -1,0 +1,51 @@
+Árvíz                                                                                     ****
+
+
+                      Lassabban áradó, mint apadó árvizek
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza azokat az árvizeket, amelyek lassabban áradtak, mint
+ahogyan apadtak! Az árvíz áradása az árvíz kezdetén lévő szigorúan monoton növekvő szakasz
+hossza, apadása pedig az árvíz végén lévő szigorúan monoton csökkenő szakasz hossza. Az a las-
+sabb, amelyiknek a hossza hosszabb.
+
+
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába az árvizek K darabszámát kell írni (0, ha nincs ilyen, eb-
+ben az esetben nincsenek további sorok)! A második sorba ennek a K árvíznek a kezdete és vége
+kerüljön. A 3. sorba a lassabban áradó, mint apadó árvizek M darabszámát kell írni (0, ha nincs
+ilyen, ebben az esetben nincsenek további sorok), a 4. sorba pedig ezen M árvíz kezdete és vége
+kerüljön!
+Példa
+Bemenet              Kimenet
+13                   4
+1100                 1 2 4 6 8 8 10 13
+950                  1
+700                  10 13    1300
+850                               1200
+1200                              1100
+900                               1000
+800                                900
+1200                               800
+600                                700
+850                                600
+1200                               500
+900                                400
+1200                               300
+                                         1   2   3      4   5   6   7   8   9   10 11 12 13
+Korlátok
+Időlimit: 0,1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

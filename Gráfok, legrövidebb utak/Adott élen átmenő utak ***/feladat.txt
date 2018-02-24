@@ -1,0 +1,42 @@
+Gráfok – legrövidebb utak                                                                ***
+
+
+                              Adott élen átmenő utak
+Adott egy G=(V,E) irányított gráf és egy (u,v)E éle.
+Írj programot, amely kiszámítja az összes olyan (p,q) pontpárt, amelyekre teljesül, hogy min-
+den p-ből q-ba vezető út tartalmazza az uv élet!
+Bemenet
+A standard bemenet első sora a gráf pontjainak számát (1N500) és a gráf éleinek szá-
+mát (1M10000) tartalmazza. A második sor a kérdésben szereplő uv él végpontjait tartal-
+mazza (1uvN). A további M sor mindegyike egy x y számpárt tartalmaz, a gráf egy xy
+élét (1xyN).
+Kimenet
+A standard kimenet első sora azon (p,q) pontpárok K számát tartalmazza, amelyekre tel-
+jesül, hogy minden p-ből q-ba vezető út tartalmazza az uv élet! Az állomány további K sora
+egy-egy számpárt tartalmazzon (tetszőleges sorrendben), a kérdésben szereplő pontpárokat!
+Példa
+Bemenet                                       Kimenet
+6   10                                        7
+                                                                                2
+3   4                                         3   2
+1   2                                         2   4
+                                                                        1
+2   3                                         2   5
+1   3                                         2   6
+3   4                                         3   5
+                                                                                3         4
+4   2                                         3   6
+1   5                                         3   4
+4   5
+5   6                                                                       5        6
+4   6
+5   4
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

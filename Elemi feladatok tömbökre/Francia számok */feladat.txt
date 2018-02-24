@@ -1,0 +1,36 @@
+Elemi feladatok tömbökre                                                                               *
+
+
+                                        Francia számok
+A francia nyelvben a legfeljebb 3-jegyű számok írására az alábbi szabályok vannak:
+     A 0-16 számoknak önálló neve van – zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix,
+      onze, douze, treize, quatorze, quinze, seize.
+     A 17-19 számok a 10-ből és a 7..9 számok nevéből keletkeznek, kötőjellel – pl. dix-sept.
+     A 20,30,40,50,60 számoknak önálló neve van: vingt, trente, quarante, cinqante, soixante.
+     A 21,31,41,51,61 számokban a tízes helyiérték mögé kerül az et un, azaz pl. a 61 soixante et un
+      lesz.
+     Ha nem egyesre végződik, akkor kötőjellel írjuk mögé az egyjegyű számot, azaz pl. a 27
+      vingt-sept lesz.
+     A 70 franciául soixante-dix (60+10), 71-től 79-ig úgy képződnek belőle a számok mint a 11-
+      19 közötti kétjegyűek, azaz 71 – soixante et onze, 72 soixante-douze, 79 soixante-dix-neuf.
+     A 80 franciául quatre-vingts (4*20 – az s betű csak a 80-ban van), 81-től 99-ig ehhez jön hoz-
+      zá az 1..19, azaz pl. 83 – quatre-vingt-trois, 88 – quatre-vingt-huit, 90 – quatre-vingt-dix, 97 –
+      quatre-vingt-dix-sept.
+Írj programot, amely egy 0 és 99 közötti egész számot kiír franciául!
+Bemenet
+A standard bemenet első sora a kiírandó N egész számot tartalmazza (1≤N≤99).
+Kimenet
+A standard kimenetre a beolvasott N számot kell franciául kiírni!
+Példa
+Bemenet                                             Kimenet
+0                                                   zéro
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                                 1. oldal
+

@@ -1,0 +1,36 @@
+Visszalépéses keresés                                                                          *
+
+
+                                             Sudoku 2
+A Sudoku játék 4x4-es változatában egy 4x4-es táblázatot kell kitölteni úgy, hogy minden sor-
+ban, minden oszlopban és mind a négy sarok 2x2-es részben az 1,2,3,4 számok mindegyike
+előforduljon!
+Készíts programot, amely adott, nem teljesen kitöltött táblázatra kiszámítja, hogy hányféleképpen
+lehet kitölteni úgy, hogy szabályos sudoku táblázat legyen !
+Bemenet
+A standard bemenet négy sort tartalmaz, minden sorban négy egész szám van egy-egy szó-
+közzel elválasztva. A számok értéke 0,1,2,3,4 lehet. A 0 azt jelenti, hogy a táblázat azon
+elemét meg kell adni a megoldásban.
+Kimenet
+A standard kimenet első és egyetlen sorába egy egész számot kell írni, ahányféleképpen ki-
+tölthető a bemeneti táblázat szabályos sudoku táblázattá!
+Példa
+Bemenet                                          Kimenet
+0   3   0   1                                    2
+0   1   0   3
+3   0   1   0
+0   2   0   4
+Segítségként a 2 megoldás:
+                             2   3   4   1               4   3   2   1
+                             4   1   2   3               2   1   4   3
+                             3   4   1   2               3   4   1   2
+                             1   2   3   4               1   2   3   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

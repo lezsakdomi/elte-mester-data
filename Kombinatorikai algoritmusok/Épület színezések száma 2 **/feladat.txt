@@ -1,0 +1,29 @@
+Kombinatorikus algoritmusok                                                                      **
+
+
+                              Épület színezések száma 2
+Egy N szintes épület szintjeit fehér (F), piros (P) és zöld (Z) színnel festhetjük ki. Piros emeletet
+csak fehér emelet követhet, továbbá nem lehet egymás mellett két zöld emelet!
+Készíts programot, amely megadja, hogy az épület hányféleképpen színezhető ki! Mivel az ered-
+mény nagyon nagy is lehet, ezért azt MOD 20160109 kell kiírni!
+Bemenet
+A standard bemenet első sorában az emeletek száma van (1≤N≤1000).
+Kimenet
+A standard kimenet egyetlen sorába a színezések lehetséges legnagyobb számát kell kiírni
+MOD 20160109!
+Példa
+Bemenet                                           Kimenet
+3                                                 13
+Magyarázat
+A színezések: FFF, FFP, FFZ, FPF, FZF, FZP, PFF, PFP, PFZ, ZFF,
+ZFP, ZFZ, ZPF
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤10.
+
+
+
+
+                                              1. oldal
+

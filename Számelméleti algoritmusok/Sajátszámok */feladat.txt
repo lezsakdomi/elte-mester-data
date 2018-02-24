@@ -1,0 +1,30 @@
+Számelméleti algoritmusok
+
+
+                                          Sajátszámok
+D.R. Kaprekar indiai matematikus 1949-ben elnevezte a természetes számok egy halmazát saját-
+számoknak (self-numbers). Tetszőleges N számra kiszámolható
+        d(N):=N + N számjegyeinek összege. (Például d(75)=75+7+5.)
+Kaprekar azokat az X számokat nevezte self-number-nek, amelyekhez nem létezik olyan N termé-
+szetes szám, hogy X = d(N) lenne.
+Például 40-ig a következő self-number-ek léteznek: 1, 3, 5, 7, 9, 20, 31.
+Készíts programot, amely adott M-re kiszámítja, hogy melyik az a legnagyobb self-number, amely
+nem nagyobb M-nél!
+Bemenet
+A standard bemenet első sorában M értéke található (1  M  1 000 000 000).
+Kimenet
+A standard kimenet első sorába kerüljön az a legnagyobb self-number, amely nem nagyobb
+M-nél!
+Példa
+Bemenet                                             Kimenet
+100                                                 97
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az M≤1000.
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,51 @@
+Geometriai algoritmusok                                                                     ***
+
+
+                                         Autópálya
+A közlekedési vállalat két úthálózatot üzemeltet. Mindkét úthálózat nem metsző, zárt törtvonalat
+alkot. A piros úthálózat N, a kék úthálózat M csomópontot tartalmaz. Minden egymást követő
+sorszámú két csomópont van összekötve egyenes szakasz úttal, és az utolsó az elsővel. A két há-
+lózat útszakaszainak nincs közös pontja. A csomópontok a koordinátáikkal adottak. A két hálóza-
+tot olyan egyenes vonalú autópályával akarják összekötni, amelyre igaz, hogy a két hálózat az au-
+tópályának ugyanazon az oldalán van és átmegy mindkét hálózat legalább egy-egy csomópontján.
+Készíts programot, amely megad egy összekötő autópályát, ha lehetséges!
+Bemenet
+A standard bemenet első sorában a piros hálózat csomópontjainak száma van
+(1≤N≤100 000). A következő N sor mindegyike két egész számot tartalmaz, egy-egy csomópont
+X Y koordinátáit (-1 000 000≤X,Y≤1 000 000). A harmadik sor tartalmazza a kék hálózat
+csomópontjainak számát (1≤M≤100 000). A következő M sor mindegyike két egész számot tar-
+talmaz, egy-egy csomópont X Y koordinátáit (-1 000 000≤X,Y≤1 000 000).
+Kimenet
+A standard kimenet első sorába két egész számot kell írni, az első szám egy piros hálózati
+csomópont, a második szám pedig egy kék hálózati csomópont sorszáma legyen! Ez a két cso-
+mópont határozza meg az autópálya egyenest, amelyre tejesül, hogy mindkét hálózat minden
+csomópontja, ami nem esik az autópálya egyenesre, az autópálya egyenes egyik oldalán van. Ha
+nem lehet megadni ilyen autópálya egyenest, akkor a 0 0 számpárt kell kiírni! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+9                                               6 3
+8 11
+12 7
+6 8
+6 5
+3 5
+7 2
+3 1
+1 3
+2 8
+5
+8 5
+6 4
+10 4
+9 7
+7 6
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

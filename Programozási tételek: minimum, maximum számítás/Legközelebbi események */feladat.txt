@@ -1,0 +1,52 @@
+Programozási tételek – Maximumkiválasztás                                                      *
+
+
+                              Legközelebbi események
+A mai napon számos nevezetes esemény történt az emberiség története során. Számosakat ezek
+közül feljegyeztek: megadva az évet (pozitív egész), és az eseményt (nem üres szöveg). Az adatok-
+tól elvárjuk, hogy év szerint (szigorúan) rendezve következzenek. Nem tudjuk azonban, hogy nö-
+vekvően vagy csökkenően!
+Írj programot, amely megadja, hogy legalább hány év telt el két feljegyzett esemény között!
+Bemenet
+A standard bemenet első sorában az események száma (2≤N≤100), a második sorban pe-
+dig a kategóriák száma (1≤KSZ≤10) van. A további 3*N sorban az események adatai vannak,
+eseményenként 3 sor. Elsőként az év (1≤É≤2013), másodikként az esemény kategóriája
+(1≤Ki≤KSZ), harmadikként az esemény maga (nem üres). Az események leírását követő sorban
+egy évintervallum két határoló éve (egész számok, egy szóközzel elválasztva; 0<Év1<
+Év2<2013) van. Végül a kategóriák felsorolása következik, KSZ számú sor, soronként egy-egy
+kategóriát azonosító szó.
+Kimenet
+A standard kimenet első sorába azt kell kiírni, hogy mennyi a legkisebb követési idő, és a
+hozzá tartozó két – egymást követő – Év1, Év2 év (Év1<Év2)! Ha több eseménypár is van
+ugyanennyi távolságra, akkor az elsőként beolvasottat írd ki!
+Példa
+Bemenet                                          Kimenet
+4                                                69 1453 1522
+4
+862
+1
+Jutland
+1205
+2
+II. Andras
+1453
+3
+Konstantinapoly
+1522
+3
+Elesik
+1000 1500
+alapitas
+koronazas
+haboru
+szerencsetlenseg
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+
+
+
+                                             1. oldal
+

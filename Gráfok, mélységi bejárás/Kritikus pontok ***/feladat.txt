@@ -1,0 +1,44 @@
+Gráfok – Mélységi bejárás                                                                      ***
+
+
+                                      Kritikus pontok
+Egy számítógépes hálózat csomópontokat és bizonyos csomópont-párokat közvetlenül összekötő
+kétirányú adatátvitelt biztosító adatátviteli vonalakat tartalmaz. A szóban forgó hálózatot úgy ter-
+vezték, hogy bármely két csomópont között (esetleg más csomópontokon keresztül) lehessen
+adatot továbbítani. A hálózatban egy csomópont meghibásodása esetén lehetnek olyan csomó-
+pont párok, amelyek között lehetetlenné válik az adatátvitel.
+Írj programot, amely kiszámítja az összes olyan csomópontot, amelyek egyedi meghibásodása le-
+hetetlenné teszi az adatátvitelt két adott csomópont között!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1<N5000) és a közvetlen vo-
+nalak száma (1<M20000) van. A második sorban van a kérdésben szereplő két csomópont
+sorszáma (1A≠BN). A további M sorban két-két csomópont sorszáma van (1u≠vN), ame-
+lyeket közvetlen vonal köt össze. Bármely két csomópont között legfeljebb egy közvetlen vonal
+van. Az A és B csomópont között biztosan létezik legalább egy útvonal.
+Kimenet
+A standard kimenet első sorába azon (A-tól és B-től különböző) csomópontok K számát
+kell írni, amelyek egyedi meghibásodása lehetetlenné teszi az adatátvitelt az A és B csomópont
+között! A második sorba pontosan K egész számot kell írni, a kérdéses csomópontok sorszámait
+(tetszőleges sorrendben)!
+Példa
+Bemenet                        Kimenet
+7   9                          2
+7   6                          5 1
+6   4
+4   1
+1   2
+2   3
+3   5
+5   7
+2   5
+1   3
+1   6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

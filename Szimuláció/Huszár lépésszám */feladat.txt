@@ -1,0 +1,36 @@
+Szimuláció                                                                                  *
+
+
+                                    Huszár lépésszám
+Egy sakktáblára elhelyezünk egy huszárt. A sakktábla egy 8*8-as mezőből álló négyzet. A huszár
+„lóugrásban” lép, azaz
+       vízszintes irányban lép egyet és függőlegesen kettőt, vagy
+       függőlegesen lép egyet, és vízszintesen kettőt
+Készíts programot, amely egy adott pozícióra elhelyezett huszár esetén megadja, hogy a huszár
+mely pozíciókra minimum hány lépésben juthat el!
+Bemenet
+A standard bemenet első, és egyetlen sorában a huszár sorindexe (1≤X≤8) és oszlopinde-
+xe (1≤Y≤8) van megadva egy szóközzel elválasztva.
+Kimenet
+A standard kimenet 8 sorból álljon, egy-egy sorába 8-8 számot kell írni szóközökkel elvá-
+lasztva. Az i. sorának a j. oszlopában az a lépésszám legyen, ahány lépésben az (i,j) mező
+elérhető az (X,Y) mezőről!
+Példa
+Bemenet                                           Kimenet
+3 2                                               1   2   1   4   3   2   3   4
+                                                  2   3   2   1   2   3   4   3
+                                                  3   0   3   2   3   2   3   4
+                                                  2   3   2   1   2   3   4   3
+                                                  1   2   1   4   3   2   3   4
+                                                  2   3   2   3   2   3   4   3
+                                                  3   2   3   2   3   4   3   4
+                                                  4   3   4   3   4   3   4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

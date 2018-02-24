@@ -1,0 +1,32 @@
+Programozási tételek összeépítése                                                              *
+
+
+                       Legrosszabb kettesnél jobb tanuló
+Egy iskolában N tanuló kapott egy-egy jegyet a nyelvórákon.
+Írj programot, amely megadja a legalább 3-ast kapott tanulók közül a leggyengébb eredményűt!
+Bemenet
+A standard bemenet első sorában a tanulók száma van (1N100). A következő sorok
+mindegyike egy-egy egész számot tartalmaz, az egyes tanulók osztályzatát (1O5).
+Kimenet
+A standard kimenet első sorába a legalább 3-ast kapott tanulók közül a leggyengébb
+eredményű sorszáma, a második pedig az osztályzata legyen (több megoldás esetén a legkisebb
+sorszámú)! Egyetlen „-1”-est kell írni, ha mindenki 3-asnál rosszabb jegyet kapott!
+Példa
+Bemenet                                         Kimenet
+6                                               1 3
+3
+2
+1
+5
+3
+4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

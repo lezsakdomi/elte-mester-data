@@ -1,0 +1,46 @@
+Gráfok – Szélességi bejárás                                                                 ***
+
+
+                                        Robotváros
+Robot város úthálózata olyan, hogy minden kereszteződésben pontosan 3 út találkozik. Azt
+mondjuk, hogy az A—B úttól C jobbra, D pedig balra van, ha az óramutató járásával szemben ha-
+ladva az ABC szög kisebb, mint az ABD szög. Egy robotot kell irányítanunk a labirintusban a J és
+a B betűk, mint parancsok segítségével, melyek azt jelentik, hogy az adott kereszteződésben a ro-
+botnak jobbra vagy balra kell fordulnia.
+Készíts programot, amely egy parancssorozattal megadja azt az utat, amely a legkevesebb keresz-
+teződést érintve vezet az A kereszteződésből a V kereszteződésbe úgy, hogy a robot minden ke-
+reszteződésen és minden úton legfeljebb egyszer halad át!
+Bemenet
+A standard bemenet első sorában a kereszteződések száma (1N100) van. A második
+sorban a robot tartózkodási helye (1AN) és annak a kereszteződésnek a sorszáma van, ahova
+először lép (1BN). A harmadik sor a robot által elérendő kereszteződés sorszámát (1VN)
+tartalmazza. A következő N sor az egyes kereszteződések X és Y koordinátáját, valamint a vele
+szomszédos három kereszteződés sorszámát tartalmazza, egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet pontosan egy sort tartalmazzon: a parancssorozatot, amely a robotot
+az A-ból a B felé indulva a V kereszteződésbe viszi a lehető legkisebb lépésszámú olyan úton, ami
+a fenti szabályoknak megfelel!
+Példa
+Bemenet                                         Kimenet
+8                                               JJB
+1 2
+5
+0 0 2 3 7                                                 7                                   8
+10 0 1 4 8
+3 3 1 4 5
+                                                                   5                6
+7 3 2 3 6
+3 7 3 6 7
+7 7 4 5 8
+0 10 1 5 8
+10 10 2 6 7                                                        3                4
+Korlátok
+                                                          1                                   2
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

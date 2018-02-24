@@ -1,0 +1,32 @@
+Programozási tételek - maximumkiválasztás                                               *
+
+
+                              Gyanús hőmérsékletek
+Egy napon percenként mértük a hőmérsékletet. A hőmérő adatai néha hibásan érkeznek. Gyanú-
+sak azok a mérések, amelyek nagyon eltérnek a két szomszédjuk átlagától.
+Határozd meg a leggyanúsabb mérést!
+Bemenet
+A standard bemenet első sorában található a mért hőmérsékletek száma (1≤N≤100). Az
+ezt követő N sorban a mért hőmérsékletek értékei vannak (-100≤Hi≤100). Az első és utolsó
+mérések biztos, hogy helyesek.
+Kimenet
+A standard kimenet első sorába ki kell írni, hogy melyik indexű mérés a leggyanúsabb
+(több közül az első előfordulást)! Ha nincs gyanús mérés, akkor a 0 számot kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               3
+23
+21
+33
+22
+23
+21
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,41 @@
+Dinamikus programozás                                                                         **
+
+
+                                       Kerítésfestés
+Sebaj Tóbiás házát léckerítéssel vette körül, s be szeretné festeni. Különböző színű festékei van-
+nak, de ő ragaszkodik az egyszínű kerítéshez. Minden doboz festékről tudja, hogy hány méter ke-
+rítést lehet vele befesteni. Tóbiás nagyon takarékos, ezért ha egyszer egy festékesdobozt megkezd,
+el is használja. Emellett Tóbiás szeretne minél kevesebb festékesdobozt használni.
+Készíts programot, amely megadja, hogy hány festékesdobozt kell felhasználnia, és melyik festé-
+kesdobozokat kell teljesen elhasználnia!
+Bemenet
+A standard bemenet első sorában a kerítés hossza (1≤L≤10 000), a festékesdobozok
+száma (1≤N≤10 000) és a különböző színek száma (1≤M≤500) van. A következő N sorban
+egy-egy festékesdoboz leírása van (1≤SZi≤M,1≤Xi≤L), az első szám a festék színét jelöli, a má-
+sodik megadja a vele lefesthető kerítésszakasz hosszát.
+Kimenet
+A standard kimenet első sorába felhasználandó festékesdobozok minimális számát kell ír-
+ni. A következő sorba szóközökkel elválasztva a szükséges festékesdobozok sorszámát kell meg-
+adni, ami a bemenetben szereplésük szerint adott. Ha több helyes megoldás van, bármelyik meg-
+adható. Ha a kerítést nem lehet lefesteni, az első és egyetlen sor -1-et tartalmazzon!
+Példa
+Bemenet                                         Kimenet
+15 7 3                                          2
+3 4                                             3 6
+2 6
+1 7
+2 7
+2 2
+1 8
+3 2
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,L≤1000 és M≤10. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                             1. oldal
+

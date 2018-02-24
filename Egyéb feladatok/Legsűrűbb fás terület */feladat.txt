@@ -1,0 +1,37 @@
+Egyéb                                                                                          *
+
+
+                                 Legsűrűbb fás terület
+Egy N*M négyzetméteres területen F darab fa áll, egy mező 1 négyzetméter. Minden mezőn
+egyetlen fa állhat. Egy tetszőleges területen a fák sűrűsége=fák száma/terület.
+Készíts programot, amely megadja azt a legalább T négyzetméteres téglalap alakú területet, ahol a
+fák a legsűrűbben állnak!
+Bemenet
+A standard bemenet első sorában a mező mérete (1≤N,M≤150), a mezőn levő fák száma
+(1≤F≤N*M) és a minimális terület mérete van (1≤T≤N*M). A következő F sorban az egyes fák
+sor- és oszlopindexei szerepelnek, egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első és egyetlen sorába négy egész számot kell írni, a legsűrűbb terület
+bal felső, illetve jobb alsó sarkának sor- és oszlopindexét! Több megoldás esetén bármelyik meg-
+adható.
+Példa
+Bemenet                                         Kimenet
+5   6 9 6                                       1 1 2 3
+1   1
+1   2
+2   1
+2   2
+2   6
+3   6
+4   6
+5   6
+5   5
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

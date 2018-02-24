@@ -1,0 +1,30 @@
+Dinamikus programozás                                                                        **
+
+
+                    Tükörszó kezdőszelete betűk törlésével
+Egy karaktersorozatot tükörszónak nevezünk, ha balról-jobbra, valamint jobbról-balra olvasva
+megegyezik. Másképpen fogalmazva, egy S szó akkor és csak akkor tükörszó, ha vagy üres szó,
+vagy egybetűs, vagy az első és az utolsó betűje megegyezik, és ezeket elhagyva ismét tükörszót
+kapunk.
+Írj programot, amely adott S szóra és K értékre kiszámítja a leghosszabb olyan kezdőszelet hosz-
+szát, amely legfeljebb K betű törlésével tükörszóvá tehető!
+Bemenet
+A standard bemenet első sora a K egész számot tartalmazza. A második sorban egy S szó
+van, amelynek hossza legfeljebb 10 000, és S minden c karakterére: ’a’c’z’ vagy
+’A’c’Z’.
+Kimenet
+A standard kimenet első és egyetlen sora az S bemenet azon leghosszabb kezdőszeletének
+a hosszát tartalmazza, amely legfeljebb K betű törlésével tükörszóvá tehető!
+Példa
+Bemenet                                        Kimenet
+2                                              7
+emeletes
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

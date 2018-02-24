@@ -1,0 +1,39 @@
+Gráfok – Mélységi bejárás                                                                   **
+
+
+                                Tájékozódási verseny
+Tájékozódási futóverseny rendeznek egy olyan pályán, ami N ellenőrző pontot tartalmaz. Térkép
+tartalmazza, hogy mely pontok között vezet egyirányú ösvény. Adott továbbá a Start és a Cél
+pont.
+Írj programot, amely meghatározza az összes olyan ellenőrző pontot, amely nem kerülhető ki, te-
+hát amelyen minden Start-ból Cél-ba vezető út keresztülmegy!
+Bemenet
+A standard bemenet első sora az ellenőrző pontok számát tartalmazza (0<N200). A má-
+sodik sorban van a Start és a Cél állomás sorszáma (1StartCélN). A harmadik sorban az
+ösvények száma áll (0K30000). A következő K sor mindegyike két egész számot tartalmaz
+(1XYN), ami azt jelenti, hogy az X pontból vezet (egyirányú) ösvény az Y pontba.
+Kimenet
+A standard kimenet első sorába a –1 értéket kell írni, ha nincs út a Start és a Cél között,
+egyébként az első sor azon pontok M számát tartalmazza, amelyek nem kerülhetők ki (M=0, ha
+nincs ilyen pont)! A második sor az M darab nem kikerülhető pont sorszámát tartalmazza!
+Példa
+Bemenet                      Kimenet
+6                            4
+1   6                        1 4 5 6
+7
+1   2                                                            2                   5
+1   3
+2   4
+3   4                                                   1                   4               6
+4   5
+5   2                                                            3
+5   6
+Korlátok
+Időlimit: 0.03 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

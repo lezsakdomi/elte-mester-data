@@ -1,0 +1,47 @@
+Rekurzív adatszerkezetek                                                                           *
+
+
+                                                 Család
+Családi kapcsolatokat szeretnénk feltérképezni. A vizsgált személyeket a sorszámukkal azonosít-
+juk. Ismerjük közülük valahány adatait, azaz az apjuk és az anyjuk azonosítóját (sorszámát).
+Készíts programot, amely egy adott személyhez meghatározza
+   1.) a testvérei számát és azonosítóját;
+   2.) a féltestvérei számát és azonosítóját (a testvérek nem féltestvérek!);
+   3.) a férfiági felmenőinek számát, majd apja, nagyapja, dédapja, ükapja, ... azonosítóját, amíg
+       ismert;
+   4.) első unokatestvérei számát és azonosítóját (akikkel közös nagyszülője van az ismert szemé-
+       lyek között)!
+Bemenet
+A standard bemenet első sorában a személyek száma (1N1000), azon személyek száma
+(0MN), akiknek a felmenőit is ismerjük, és annak a személynek az azonosítója (1KN) szere-
+pel, akinek a rokonaira kíváncsiak vagyunk. A következő M sor három-három egész számot tar-
+talmaz, szóközökkel elválasztva. Ezek rendre egy-egy ismert személy adatai: a saját, az apja, végül
+az anyja azonosítója (1 és N közötti egész számok).
+Kimenet
+A standard kimenet négy sorába a négy kérdésre adott választ kell írni! Mindegyik sorban
+először a válasznak megfelelő személyek száma szerepeljen, majd az azonosítóik, egy-egy szóköz-
+zel elválasztva! A harmadik kérdésnél a férfiági felmenőket a feladatban leírt sorrendnek megfele-
+lően kell megadni! A többi kérdésnél a személyek sorrendje tetszőleges.
+Példa
+Bemenet                                               Kimenet
+14 7 1                                                1   4
+1 2 3                                                 1   5
+4 2 3                                                 2   2 7
+5 2 6                                                 1   13
+2 7 8
+3 9 10                                       7            8       9       10
+                                                                                        12
+11 12 10
+13 14 11                       6                  2                   3            11             14
+
+Korlátok
+Időlimit: 0.1 mp.                        5                    1                4             13
+
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a személyek száma N≤30
+
+
+
+
+                                                 1. oldal
+

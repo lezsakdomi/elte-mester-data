@@ -1,0 +1,73 @@
+Gráfok – Körmentes gráfok                                                                          *
+
+
+                                      Folyón átkelés
+Egy versenyen egy folyón kell átkelni, amelyen szigetek vannak. A szigetek között egyirányú hidak
+vannak és tudjuk, hogy nincs olyan sziget, ahonnan saját magára vissza lehetne térni. Minden
+szigetre meghatározott belépési díj ellenében lehet belépni, és a szigeten adott értékű kincs
+található. Kezdetben K forinttal indulunk. Az útvonal a folyó bal partjáról indul (ezek formálisan
+olyan félszigetként szerepelnek, ahova nem vezet híd) és a jobb oldalán ér véget (ezek olyan
+félszigetek, ahonnan nem vezet tovább híd).
+Készíts programot, amely kiszámítja, hogy mennyi az elérhető legnagyobb nyeremény összege és
+ehhez mely útvonalon kell haladni!
+Bemenet
+A standard bemenetelső sorában három egész szám van, a szigetek N száma
+(1≤N≤10000), a hidakM száma(1≤M≤100000) és a kezdeti pénz Kösszege (1≤K≤10000). A
+szigeteket az 1,…,N számokkal azonosítjuk. A további N sor mindegyike két egész számot
+tartalmaz egy szóközzel elválasztva, az első szám P a belépési díj, a második szám Q pedig a
+szigeten található kincs értéke (0≤P,Q≤10000). Az ezt követő M sor mindegyike egy hidat ad
+meg, U V számpár formájában, ami azt jelenti, hogy az U szigetet és a V szigetet híd köti össze,
+amelyen U-ról V-re lehet menni.
+Kimenet
+A standard kimenetelső sorába az elérhető legnagyobb nyeremény összegét kell írni. A
+második sor egy olyan útvonalat adjon meg, amely a legnagyobb nyereményt adja. Az útvonalat a
+szigetek sorszámainak felsorolásával kell megadni, egy-egy szóközzel elválasztva a számokat! Ha
+nincs megoldás, akkor az első és egyetlen sor a -1 számot tartalmazza. Több megoldás esetén
+bármelyik megadható!
+Példa
+Bemenet                       Kimenet
+10 13 100                           265
+7 8                                 2 5 8 7 6 9
+6 20
+5 15                                                           3           6
+10 40                                                                                        9
+80 20                                                        5,15          1,7               3,8
+                                                1
+1 7
+0 10                                            7,8
+10 200
+3 8                                                            4             7
+8 9                                                                       0,10
+                                                             10,40                            10
+1 3                                             2
+2 3                                                                                          8,9
+2 4                                            6,20
+2 5                                                                     8
+                                                            5
+3 6                                                                      10,200
+3 7                                                        80,20
+4 7
+5 8
+6 9
+6 10
+7 6
+7 10
+8 7
+
+
+
+                                             1. oldal
+Gráfok – Körmentes gráfok                         *
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                       2. oldal
+

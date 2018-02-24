@@ -1,0 +1,49 @@
+Geometriai algoritmusok                                                                   ***
+
+
+                                Poligonok metszése
+Adott a síkon két zárt konvex sokszög, P=<p1,…,pM> és Q=<q1,…,qN> a csúcspontjaik órajá-
+rással ellentétes felsorolásában. Eldöntendő, hogy a két sokszög metszi-e egymást!
+Készíts programot, amely meghatározza a két sokszög egy-egy olyan oldalát, amelyeknek van kö-
+zös pontja!
+Bemenet
+A standard bemenet első sorában két egész szám van, a P sokszög csúcspontjainak száma
+(3≤M≤100 000) és a Q sokszög csúcspontjainak száma (3≤N≤100 000). A további M sor
+mindegyike a P sokszög egy-egy csúcspontjának x- és y-koordinátáját tartalmazza. Az ezt követő
+N sor mindegyike a Q sokszög egy-egy csúcspontjának x- és y-koordinátáját tartalmazza. A koor-
+dináta értékek a [-107,107] tartományba esnek.
+Kimenet
+A standard kimenet első sorába két egész számot kell írni (i és j), ami azt jelenti, hogy a
+P sokszög pipi+1 és a Q sokszög qjqj+1 oldalának van közös pontja! A +1 cirkulárisan értendő,
+azaz M+1 az 1 és N+1 az 1. Ha nincs metsző oldalpár, akkor a 0 0 számpárt kell kiírni! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                       Kimenet
+5 4                                           3 4
+1 -2
+3 2
+2 4
+                                                        4                         3
+-2 3
+-2 0
+4 0
+7 3                                                                  3
+4 6
+0 6                                            4
+                                                                                            2
+Korlátok                                                                  2
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+                                               5
+                                                                              1
+
+
+
+
+                                                                 1
+
+
+
+
+                                           1. oldal
+

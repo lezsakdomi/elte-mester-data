@@ -1,0 +1,63 @@
+Gráfok – Szélességi bejárás                                                                  ***
+
+
+                                            Szolga
+Egy számítógépes hálózat N csomópontot tartalmaz. Azt mondjuk, hogy az Y csomópont közvet-
+len szomszédja az X csomópontnak, ha össze vannak kötve kétirányú adatátvitelt biztosító köz-
+vetlen vonallal. (Tehát, ha Y szomszédja X-nek, akkor X is szomszédja Y-nak.) Van K darab cso-
+mópont, amelyek névfeloldó szolgáltatást tudnak adni. Ha egy csomópontban lévő gép névfelol-
+dást kíván, akkor a kérését el kell juttatnia valamelyik kiszolgálóhoz. Ha valamelyik közvetlen
+szomszédja kiszolgáló, akkor a kérését ennek továbbítja, amelyik azt meg is válaszolja. Egyébként
+a kérést valamelyik közvetlen szomszédjának kell átadni, aki azt továbbítja, és így tovább, amíg a
+kérés valamelyik kiszolgálóhoz nem ér, aki megválaszolja, és visszaküldi a választ ugyanazon út-
+vonalon, amelyiken érkezett. A válaszidőt az határozza meg, hogy hány csomóponton keresztül
+jut el a kérés a kiszolgálóhoz.
+Készíts programot, amely minden csomópontra kiszámítja, hogy a csomópont melyik közvetlen
+szomszédjának küldje a kérést, ha az a cél, hogy a legrövidebb időn belül megkapja a választ!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1≤N≤10 000), és a kiszolgá-
+lók száma (1≤K≤1000) van. A második sor a K kiszolgáló sorszámát tartalmazza egy-egy szó-
+közzel elválasztva. A következő N sor írja le a hálózatot. Közülük az i-edik sorban azok a cso-
+mópontok vannak felsorolva egy-egy szóközzel elválasztva és 0-val zárva, amelyek az i csomó-
+pont közvetlen szomszédjai. A hálózat legfeljebb 100 000 közvetlen vonalat tartalmaz.
+Kimenet
+A standard kimenet első sorába azt az M számot kell írni, amelyre teljesül, hogy bármely
+csomópont kérése megválaszolható úgy, hogy legfeljebb M csomóponton keresztül jut el a kérés
+valamely kiszolgálóhoz (beleértve a kiszolgálót, de nem számítva a kérést küldőt)! A következő N
+sor mindegyikébe két számot kell írni, az i+1-edik sorban az első szám a legkevesebb csomó-
+pont száma, amelyen keresztülhalad az i-edik csomópont kérése! A második szám pedig annak a
+csomópontnak a sorszáma legyen, amelyiknek az i csomópont a kérését továbbítja! A kiszolgálók
+esetén a 0 i számpár legyen kiírva! Ha nincs olyan útvonal, amelyen az i-edik csomópont eljut-
+hatna valamely kiszolgálóhoz, akkor a 0 0 számpárt kell kiírni! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                          Kimenet
+11 3                                             3
+1 3 5                                            0   1      1           4          8          9
+4 0                                              0   0
+11 0                                             0   3
+4 6 5 0                                          1   1
+1 3 6 8 0                                        0   5      2           3          6          10
+7 3 6 0                                          1   3
+4 3 5 7 10 8 0                                   1   5
+5 6 10 0                                         2   4      11               5         7
+4 6 9 0                                          3   8
+8 10 0                                           2   6
+9 6 7 0                                          0   0
+2 0
+
+
+
+                                             1. oldal
+Gráfok – Szélességi bejárás              ***
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                              2. oldal
+

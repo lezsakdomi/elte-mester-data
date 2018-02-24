@@ -1,0 +1,41 @@
+Egyéb                                                                                            *
+
+
+                                         Folt határa
+Egy NxM pontból álló fekete-fehér képen egyetlen fekete folt lehet, ennek belsejében nincs fehér
+pont, s a folt a kép szélét nem éri el.
+A foltot ún. lánckóddal írjuk le, ami a kezdőpont koordinátáiból és a folt körüljárása során kapott
+ún. iránykód-sorozatból áll. A kezdőpont az a fekete pont, amelyet a kép bal
+felső sarkából kiindulva, soronként balról jobbra haladva elsőnek találunk meg. 2 1 8
+A kezdőpontból elindulva az óramutató járásával egyező irányban haladunk a
+                                                                                    3 * 7
+folt peremén, amíg a lehető legrövidebb útvonalon vissza nem jutunk a kezdő-
+pontba. Egy-egy pontból 8 irányba léphetünk, az irányokat az ábrán látható 4 5 6
+módon kódoljuk (ezek az ún. iránykódok). Akkor van a folt peremén egy pont,
+ha van fehér oldalszomszédja. Minden perem pontra rá kell lépnünk, lehetnek olyanok, amelyekre
+többször is.
+Írj programot, amely megadja a folt lánckódját!
+Bemenet
+A standard bemenet első sora a sorok számát (1N1000) és az oszlopok számát (1M
+1000) tartalmazza egy szóközzel elválasztva. A következő N sorban soronként M db karakter írja
+le a kép sorait: 'X' jelöli a fekete, '.' pedig a fehér pontokat.
+Kimenet
+A standard kimenet az első sorában kezdőpont sor- és oszlopindexe legyen, egy szóközzel
+elválasztva, a másodikban pedig a lánckód karakterei! Ha az adatok alapján nincs folt a képen, ak-
+kor a NINCS FOLT szöveget kell kiírni!
+Példa
+Bemenet                                           Kimenet
+4 5                                               2 3
+.....                                             7438
+..XX.
+.XX..
+.....
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

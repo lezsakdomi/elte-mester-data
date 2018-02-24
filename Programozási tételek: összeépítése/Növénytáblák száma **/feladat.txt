@@ -1,0 +1,49 @@
+Programozási tételek összeépítése                                                            **
+
+
+                                 Növénytáblák száma
+Egy téglalap alakú birtokon többféle növényt vetettek. A terület minden négyzetméteréről tudjuk,
+hogy ott milyen növény található. Növénytáblának azt a lehető legnagyobb, téglalap alakú terüle-
+tet nevezzük, amelyen belül csupa azonos növény nő.
+Készíts programot, amely kiszámolja a birtokon levő növénytáblák számát!
+Bemenet
+A standard bemenet első sora tartalmazza a birtokot leíró téglalap sorainak (1N50), il-
+letve oszlopainak számát (1M50) egyetlen szóközzel elválasztva. A további N*M sorban a ve-
+tett növények neve található, sorfolytonosan.
+Kimenet
+A standard kimenet első sorába a birtokon lévő növénytáblák számát kell írni!
+Példa
+Bemenet                                         Kimenet
+4 5                                             4
+Buza
+Buza
+Buza
+Burgonya
+Burgonya
+Buza
+Buza
+Buza
+Burgonya
+Burgonya
+Buza
+Buza
+Kukorica
+Kukorica
+Kukorica
+Buza
+Buza
+Kukorica
+Kukorica
+Kukorica
+A lehetséges növénytáblák:
+Buza     Buza       Buza            Burgonya    Burgonya
+Buza     Buza       Buza            Burgonya    Burgonya
+Buza     Buza       Kukorica        Kukorica    Kukorica
+Buza     Buza       Kukorica        Kukorica    Kukorica
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+                                            1. oldal
+

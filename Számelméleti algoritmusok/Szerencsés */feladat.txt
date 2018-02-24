@@ -1,0 +1,34 @@
+Számelméleti algoritmusok
+
+
+                                        Szerencsés
+A szerencsés számokat az alábbi eljárással kapjuk. Vegyük az
+                                   1, 2, 3, 4, 5, 6, 7, 8, …, N
+sorozatot! Ebből minden második számot törölve az
+                                   1, 3, 5, 7, 9, 11, 13, 15, …
+sorozatot kapjuk. A megmaradt számok közül a következő, még nem használt szám a 3, így el-
+hagyjuk a sorozat minden harmadik tagját:
+                                   1, 3, 7, 9, 13, 15, 19, 21 …
+marad. Most minden hetediket kell elhagyni, s kapjuk az
+                                   1, 3, 7, 9, 13, 15, 21, 25, …
+sorozatot, és így tovább. Azokat a számokat hívjuk szerencsés számoknak, amelyek megmarad-
+nak.
+Készíts programot, amely adott N-re kiszámítja az 1 és N közötti szerencsés számokat!
+Bemenet
+A standard bemenet első sorában N (1  N  300 000) található.
+Kimenet
+A standard kimenet első sorába kerüljenek a szerencsés számok szigorúan monoton nö-
+vekvő sorrendben, szóközzel elválasztva!
+Példa
+Bemenet                                          Kimenet
+20                                               1 3 7 9 13 15
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤1000.
+
+
+
+
+                                             1. oldal
+

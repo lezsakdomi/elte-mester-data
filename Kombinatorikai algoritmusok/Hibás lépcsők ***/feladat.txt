@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                                 ***
+
+
+                                      Hibás lépcsők
+Egy lépcsőn N lépcsőfok van, egyszerre legfeljebb K lépcsőfokot léphetünk, de vannak hibás lép-
+csők, amelyekre tilos lépni.
+Készíts programot, amely megadja, hogy hányféleképpen mehetünk fel úgy a lépcső tetejére, hogy
+legfeljebb L lépést teszünk!
+Bemenet
+A standard bemenet első sorában a lépcsők száma (1≤N≤100), az egyszerre léphető lép-
+csők száma (1≤K≤N), a hibás lépcsők száma (0≤H≤N) és a lépések száma (1≤L≤N) van, egy-
+egy szóközzel elválasztva. A második sorban H különböző egész szám, a hibás lépcsők sorszáma
+van, egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet egyetlen sorába az a szám kerüljön, ahányféleképpen felmehetünk úgy
+a lépcső tetejére, hogy legfeljebb L lépést teszünk! Feltehető, hogy csak olyan esetekkel teszte-
+lünk, amikor a megoldás elfér 64 bites egész típusú változóban!
+Példa
+Bemenet                                         Kimenet
+6 2 1 4                                         3
+3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

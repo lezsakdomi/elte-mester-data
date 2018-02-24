@@ -1,0 +1,54 @@
+Programozási tételek - Megszámolás                                                             *
+
+
+                                        Több törzs
+Feladat szöveges leírása
+A jelenlegi Dél-Afrikai Köztársaság területén számos törzs élt, amikor a fehér gyarmatosítók meg-
+jelentek. Közülük egyesek békében éltek, mások időről időre ellenséges viszonyba keveredtek
+vagy éppen harcban álltak szomszédjaikkal. A háborúkat kezdőidő szerinti sorrendben ismerjük a
+XVII., XVIII., XIX. századból.
+Add meg azon háborús évek számát, amikor legalább Y törzs állt háborúban!
+Bemenet
+A standard bemenet első sorába az törzsek száma (                    ), ezután új sorba a há-
+borúk száma kerül (              ), majd minden sorba négy darab szám, melyek rendre:
+    a háborúzó törzs sorszáma
+    az ellenséges törzs sorszáma
+    a háború kezdetének évszáma (eszerint növekvően rendezett)
+    a háború befejezésének évszáma.
+Az utolsó sorban az Y küszöbszám szerepel (          ),
+Kimenet
+A standard kimenet első sorába a feladatnak eleget tevő szám kerüljön!
+
+Példa
+Bemenet                       Kimenet
+8                             12
+8
+5   1   1696   1736
+1   2   1752   1782
+1   3   1756   1772
+                                                                            Háborúk
+1   4   1756   1758
+6   1   1770   1788                                                               Mettől Meddig
+                                            Törzsek             Ki       Kivel
+3   1   1776   1805
+3   6   1777   1800                          1 Zulu           Xhosa      Zulu      1696      1736
+7   8   1788   1790
+3                                          2 Ndebele           Zulu    Ndebele     1752      1782
+Korlátok
+                                            3 Sotho            Zulu      Sotho     1756      1772
+Időlimit:0,3 mp.
+Memórialimit: 33 MB                        4 Tsonga            Zulu     Tsonga     1756      1758
+
+Pontozás: A tesztek 40%-ában a              5 Xhosa           Venda      Zulu      1770      1788
+(              ); (            ).
+                                            6 Venda           Sotho      Zulu      1776      1805
+
+                                           7 Tswana           Sotho     Venda      1777      1800
+
+                                            8 Swazi          Tswana     Swazi      1788      1790
+
+
+
+
+                                            1. oldal
+

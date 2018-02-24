@@ -1,0 +1,36 @@
+Programozási tételek – Maximumkiválasztás
+
+
+                              Legszennyezettebb nap
+A városban naponta mérik a levegő szennyezettségét (szénmonoxid-tartalmát a határérték száza-
+lékában). A mérőműszer időnként elromlik, és ilyenkor 0 százalékot mér, mindaddig, amíg meg
+nem javítják (javítás után újra 0%-nál többet mér).
+Írj programot, amely megadja a legszennyezettebb napot!
+Bemenet
+A standard bemenet első sorában a napok száma (1N100), majd az egyes napokon
+mért szennyezettség (0S500) van.
+Kimenet
+A standard kimenet első sorába azon nap sorszámát kell írni, amely nap a legszennyezet-
+tebb volt (ha több ilyen is van, akkor az elsőt)!
+Példa
+Bemenet                                         Kimenet
+9                                               6
+20
+0
+0
+60
+110
+120
+80
+110
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

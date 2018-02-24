@@ -1,0 +1,50 @@
+Programozási tételek - rendezés                                                                   *
+
+
+                                           Felvételi
+Bergengócia egyetemeire N informatikus szakra jelentkezhetnek a felvételizők, a szakokat sor-
+számukkal azonosítjuk. Közös felvételi vizsgát tesznek, azaz mindenkinek egyetlen pontszáma
+van. Minden diák meghatározhatja a felvételi lapján, hogy melyik egyetemre akar kerülni, a szoká-
+sos módon prioritási sorrendben. Ezen kívül tudjuk, hogy melyik szakra hányan vehetők fel.
+A felvételi ponthatárokat úgy kell megállapítani, hogy teljesüljenek az alábbi feltételek:
+     60 pont alatt senkit sem lehet felvenni.
+     Minden jelentkező arra a szakra kerül be, amelyik az első a prioritási sorrendjében, ame-
+        lyen a ponthatár nem nagyobb, mint az ő pontszáma.
+     Minden szakra az így felvett jelentkezők száma nem haladja meg a szakra megadott keret-
+        számot, kivéve, amikor eggyel magasabb pontszámmal a szakra a keretszámnál kevesebb
+        kerülne be, ekkor a felvehetők száma a keretszám 110%-a (lefelé kerekítve) lehet.
+     Bármely két, azonos pontszámú jelentkező esetén, ha jelentkeztek ugyanarra a szakra, ak-
+        kor vagy mindkettőt felvették, vagy egyiket sem vették fel.
+     A ponthatár megállapítás olyan legyen, hogy összességében a lehető legtöbb jelentkezőt
+        vegyenek fel.
+Írj programot, ami meghatározza, hogy melyik szakon mennyi lesz a felvételi ponthatár (a felvett
+tanulók pontszámai közül a legkisebb, ha senki nem került be a szakra, akkor 60), és hogy melyik
+tanuló melyik szakra került be!
+Bemenet
+A standard bemenet első sorában a szakok (1≤N≤100) és a felvételizők száma
+(1≤M≤9000) van. A második sorban N db szám van: minden szakra a maximálisan felvehető
+diákok száma, a keretszám (0≤K(i)≤1000). A következő M sorban a diákok pontszáma van
+(0≤P(j)≤120,1≤j≤6), majd azon szakok sorszáma a jelentkezés sorrendjében, ahova be sze-
+retne kerülni.
+Kimenet
+A standard kimenet első sorába N db számot kell írni: az i. szám az i. szakon a felvételi
+ponthatár, illetve 60, ha egyetlen diákot sem vettek fel! A második sorba M db számot kell írni: az
+i. szám annak a szaknak a sorszáma, ahová az i. diák bekerült, illetve 0, ha a diákot nem vették fel
+sehová!
+Példa
+Bemenet                                           Kimenet
+4 5                                               81 60 92 82
+1 2 2 3                                           3 1 4 3 0
+98 3 2 1 4
+81 1 3 2
+82 4
+92 3 1
+0 1 2 3 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+                                              1. oldal
+

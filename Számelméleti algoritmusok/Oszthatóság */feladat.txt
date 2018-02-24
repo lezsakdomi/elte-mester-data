@@ -1,0 +1,39 @@
+Számelméleti algoritmusok                                                                         *
+
+
+                                        Oszthatóság
+Úgy vizsgálhatjuk meg egy szám 19-cel oszthatóságát, hogy a szám első számjegyétől az utolsó
+előtti számjegyéig képzett számhoz hozzáadjuk az utolsó számjegy kétszeresét. Ha ez a szám
+osztható 19-cel, akkor az eredeti is. A folyamat ismételhető. (Pl.: 7828  782+(2*8)=798 
+79+(2*8)=95  9+(2*5)=19. 19 osztható 19-cel, tehát 7828 is osztható 19-cel.)
+Úgy vizsgálhatjuk meg egy szám 29-cel oszthatóságát, hogy a szám első számjegyétől az utolsó
+előtti számjegyéig képzett számhoz hozzáadjuk az utolsó számjegy háromszorosát. Ha ez a szám
+osztható 29-cel, akkor az eredeti is. A folyamat ismételhető. (Pl.: 4205  420+(3*5)=435 
+43+(3*5)=58  5+(3*8)=29. Mivel 29 osztható 29-cel, ezért 4205 is.)
+Készíts programot, amely eldönti N természetes számról, hogy oszthatóak-e 19-cel, 29-cel és 551-
+gyel!
+Bemenet
+A standard bemenet első sorában a természetes számok száma van (1≤N≤5). A további N
+sorban pedig az egyes számok értéke (1≤Si<101000) van.
+Kimenet
+A standard kimenet 3 sorába a bemenet szerinti sorrendben az IGEN, illetve a NEM szót
+kell írni, egy-egy szóközzel elválasztva, ha az i-edik szám osztható, az első sorba a 19-cel osztha-
+tóságra, a másodikba a 29-cel oszthatóságra, a harmadikba pedig az 551-gyel oszthatóságra adott
+válaszokat!
+Példa
+Bemenet                                          Kimenet
+4                                                NEM IGEN IGEN IGEN
+550                                              NEM IGEN NEM IGEN
+551                                              NEM IGEN NEM IGEN
+5491
+551551
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a számok legfeljebb 12 számjegyből állnak.
+
+
+
+
+                                              1. oldal
+

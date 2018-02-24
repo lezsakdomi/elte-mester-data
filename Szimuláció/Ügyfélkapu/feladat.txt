@@ -1,0 +1,45 @@
+Szimuláció                                                                                    **
+
+
+                                        Ügyfélkapu
+A körzeti Ügyfélkapu igénybevételére előre lehet jelentkezni. Adott napra egy jelentkezés tartal-
+mazza azt az időpontot, amikor a jelentkező megjelenik az ügyét intézni és azt, hogy milyen ügyet
+akar elintézni. A hivatal az ügy alapján megállapítja, hogy az ügy elintézése hány percet vesz
+igénybe. Az érkezési időt a nyitástól számított percben rögzítik, tehát egy jelentkező adata egy
+(Erk,Ugyi) számpár, ami azt jelenti, hogy az ügyfél az Erk időben érkezik és Ugyi percig
+tart elintézni az ügyét. Akinek az ügyét intézik, az ügyintézés alatt már nem számít várakozónak,
+azaz ha pl. valakit azonnal fogadnak, az semmit sem várakozik.
+A hivatal folyamatosan működik egy ügyintézővel, a várakozók közül mindig azt hívja be, akinek
+az ügyét a legrövidebb idő alatt el tudja intézni. Ha több ilyen várakozó lenne, akkor a korábban
+érkezőt választja. Ha ebből is több lenne, akkor a legkisebb sorszámút választja. Ha egy ügyfél
+ügyének intézését a T időben kezdik és U ideig tart, akkor a következő ügyfél ügyének intézése a
+T+U időben kezdődhet.
+Készíts programot, amely megadja, hogy melyik ügyfél várakozott a leghosszabb ideig és mennyi
+volt az egy időben várakozók maximális száma!
+Bemenet
+A standard bemenet első sorában az ügyfelek száma (1≤N≤1000) van. A további N sor
+mindegyikében egy-egy ügyfél érkezési ideje (0≤Erk≤720) és az ügye elintézéséhez szükséges
+idő (1≤Ugyi≤40) van, a jelentkezésük sorrendjében.
+Kimenet
+A standard kimenet első sorába a leghosszabb ideig várakozó ügyfél sorszámát kell írni!
+Ha több ilyen van, akkor a legkisebb sorszámút kell kiírni! Ha nem volt várakozó, akkor 0-t kell
+kiírni! A második sorba az egy időben várakozók maximális számát kell írni!
+Példa
+bemenet                                         kimenet
+6                                               1
+2 5                                             2
+3 2
+4 1
+5 1
+1 2
+6 1
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 60%-ában N≤100.
+
+
+
+
+                                            1. oldal
+

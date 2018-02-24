@@ -1,0 +1,53 @@
+Törzsek                                                                                        *
+
+
+                          Egy törzs legrövidebb háborúja
+A jelenlegi Dél-Afrikai Köztársaság területén számos törzs élt, amikor a fehér gyarmatosítók meg-
+jelentek. Közülük egyesek békében éltek, mások időről időre ellenséges viszonyba keveredtek
+vagy éppen harcban álltak szomszédjaikkal. A háborúkat kezdőidő szerinti sorrendben ismerjük a
+XVII., XVIII., XIX. századból.
+Készíts programot, amely megadja egy törzs legrövidebb háborúját (kivel, mettől, meddig)!
+Bemenet
+A standard bemenet első sorában az törzsek száma van (0<N≤1000). A következő sor-
+ban a háborúk száma van (0<K≤2000), majd N sorban négy darab szám következik, melyek
+rendre:
+        a háborúzó törzs sorszáma,
+        az ellenséges törzs sorszáma,
+        a háború kezdetének évszáma (eszerint növekvően rendezett),
+        a háború befejezésének évszáma.
+Az utolsó sorban a kérdéses törzs sorszáma van (1≤S≤N).
+Kimenet
+A standard kimenet első sorába az ellenséges törzs sorszáma, majd a háború kezdeti év-
+száma, majd befejezési évszáma kerüljön! Ha nem volt ilyen háború, akkor mindhárom érték 0 le-
+gyen! Több megoldás esetén a legkorábbit kell kiírni!
+Példa
+Bemenet                       Kimenet
+8                             8 1788 1790
+8
+5   1   1696   1736
+1   2   1752   1782
+1   3   1756   1772
+                                                                            Háborúk
+1   4   1756   1758
+6   1   1770   1788                                                               Mettől Meddig
+                                            Törzsek             Ki       Kivel
+3   1   1776   1805
+3   6   1777   1800                          1 Zulu           Xhosa      Zulu      1696      1736
+7   8   1788   1790
+7                                          2 Ndebele           Zulu    Ndebele     1752      1782
+Korlátok
+                                            3 Sotho            Zulu      Sotho     1756      1772
+Időlimit: 0,3 mp.
+Memórialimit: 33 MB                        4 Tsonga            Zulu     Tsonga     1756      1758
+
+Pontozás: A tesztek 40%-ában a              5 Xhosa           Venda      Zulu      1770      1788
+N≤100, K≤200.
+                                            6 Venda           Sotho      Zulu      1776      1805
+
+                                           7 Tswana           Sotho     Venda      1777      1800
+
+                                            8 Swazi          Tswana     Swazi      1788      1790
+
+
+                                            1. oldal
+

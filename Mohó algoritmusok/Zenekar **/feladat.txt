@@ -1,0 +1,38 @@
+Mohó algoritmusok                                                                             **
+
+
+                                          Zenekar
+Egy népszerű zenekar a következő évre vonatkozó fellépéseit tervezi. Sok meghívása van fellé-
+pésre, ezek közül kell a zenekarnak választani, hogy melyeket fogadja el. Minden fellépés ponto-
+san egy napot foglal el. Minden beérkezett meghívási igény egy (e,u) számpárral adott, ami azt
+jelenti, hogy az igénylő azt szeretné, hogy a zenekar olyan k sorszámú napon tartson nála koncer-
+tet, hogy eku. A zenekarnak az a célja, hogy a lehető legtöbb fellépése legyen.
+Készíts programot, amely kiszámítja, hogy mely meghívásokat fogadja el, hogy a következő évben
+a lehető legtöbb fellépése legyen, és a programod adjon is meg egy beosztást!
+Bemenet
+A standard bemenet első sorában a meghívások száma (1N1000) van. A következő N
+sor mindegyike egy (e,u) számpárt tartalmaz egy szóközzel elválasztva (1eu365).
+Kimenet
+A standard kimenet első sora egy egész számot tartalmazzon, a vállalható legtöbb fellépé-
+sek M számát! A következő M sor mindegyike két egész számot tartalmazzon, egy szóközzel el-
+választva! Az első szám egy elfogadott meghívás sorszáma legyen, a második pedig annak a nap-
+nak a sorszáma, amelyik napon teljesíti a zenekar a fellépést! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                         Kimenet
+6                                               5
+2   4                                           4   1
+1   4                                           2   2
+3   5                                           3   3
+1   3                                           5   4
+3   5                                           6   5
+2   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

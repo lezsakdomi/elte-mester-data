@@ -1,0 +1,37 @@
+Dinamikus programozás                                                                         **
+
+
+                         Konténer pakolás egymás mellé
+Egy konténer raktárban egy sorban tárolják a konténereket, ahol N darab konténernek van hely.
+Mivel a konténerek kiszállítása az igénynek megfelelően történik, ezért egy adott időpontban a
+raktárban lévő M konténer tetszőlegesen helyezkedik el. A raktárosnak időnként át kell rendezni a
+raktárban lévő konténereket úgy, hogy folyamatosan egymás mellett legyenek. Az átrendezést bi-
+zonyos konténerek egyesével történő átrakásával lehet végezni. Egy i-edik konténerhelyen lévő
+konténert a j-edik konténerhelyre csak akkor rakhatunk át, ha köztük minden konténerhely üres.
+Ha az átrendezés során az i-edik konténerhelyen lévő konténert a j-edik konténerhelyre rakja át,
+ennek költsége i-j abszolút értéke. Az optimális átrendezés az, amelyre az összköltség minimá-
+lis.
+Készíts programot, amely kiszámítja a raktár optimális átrendezésének költségét!
+Bemenet
+A standard bemenet első sora a raktár konténerhelyeinek számát (2≤N≤10 000) tartal-
+mazza. A második sor pontosan N egész számot tartalmaz egy-egy szóközzel elválasztva. A sor-
+ban minden szám vagy 0 vagy 1. A raktárban az i-edik helyen akkor és csak akkor van konténer,
+ha a második sorban az i-edik szám 1. Legalább egy konténer van a raktárban.
+Kimenet
+A standard kimenet első sora az optimális átrendezés költségét tartalmazza! A második
+sor is egyetlen számot tartalmazzon, a legkisebb konténerhelynek a sorszámát, amely az átrende-
+zés után konténert tartalmaz! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                         Kimenet
+10                                              8
+1 0 1 1 0 0 1 1 0 1                             2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤1000. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                             1. oldal
+

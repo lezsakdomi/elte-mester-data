@@ -1,0 +1,36 @@
+Programozási tételek - rendezés                                                                   *
+
+
+                                            Mozgat
+Minden szövegszerkesztővel végezhető kivágás-beszúrás művelet. Minden műveletet egy A, B, C
+számhármas ír le, ami azt jelenti, hogy a szöveg A-tól B-ig terjedő sorait (A-t és B-t is beleértve)
+kivágjuk, és beszúrjuk a C-edik sor mögé. (Az A, B és C sorszámok a művelet elvégzése előtt ér-
+tendők.) Egy N sorból álló szövegre K-szor alkalmazunk kivágás-beszúrás műveletet.
+Írj programot, amely kiszámítja, hogy a szöveg első 10 sora hova került a műveletek elvégzése
+után; valamint az eredeti szöveg mely sorai kerültek az első 10 sorba a műveletek hatására!
+Bemenet
+A standard bemenet első sorában a szöveg sorainak a száma (10N1 000 000) és a
+műveletek száma (1K1000) van. A további K sor mindegyikében a műveletet leíró A, B és C
+van (1ABN,0C<A vagy BCN). Ha C=0, akkor a kivágott szöveget az első sor elé kell be-
+szúrni!
+Kimenet
+A standard kimenet két sorába 10-10 számot kell írni! Először azoknak a szövegsoroknak
+a sorszámát kell felsorolni, ahová az eredeti szöveg első 10 sora került a műveletek hatására! Azu-
+tán az eredeti szöveg azon sorainak a sorszámát kell felsorolni, amelyek a műveletek hatására az
+első 10 sorba kerültek át!
+Példa
+Bemenet                                    Kimenet
+1000 4                                     805 2 3 806 807 808 809 810 115 1
+1 9 10                                     10 2 3 390 391 392 393 394 395 396
+3 4 1
+300 500 9
+100 900 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

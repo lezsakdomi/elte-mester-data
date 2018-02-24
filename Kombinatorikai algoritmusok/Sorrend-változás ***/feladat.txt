@@ -1,0 +1,34 @@
+Kombinatorikai algoritmusok                                                                 ***
+
+
+                                    Sorrend-változás
+Egy csapatsportág tabelláján gyakori, hogy fordulónként változik a sorrend, de egy forduló alatt
+az elsőből biztos nem lesz utolsó. A mi esetünkben mindenki csak 1 hellyel mozdulhat el előre
+vagy hátra.
+Készíts programot, amely megadja, hogy az 1…N helyen levő csapatok sorrendje a fenti szabály
+szerint hányfélére változhat, valamint megadja az összes lehetséges sorrendet is!
+Bemenet
+A standard bemenet egyetlen sorában a csapatok száma (1≤N≤25) van.
+Kimenet
+A standard kimenet első sorába az előállítható sorrendek M számát, a következő M sorába
+pedig az egyes sorrendeket kell írni lexikografikusan növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+5                                               8
+                                                1   2   3   4   5
+                                                1   2   3   5   4
+                                                1   2   4   3   5
+                                                1   3   2   4   5
+                                                1   3   2   5   4
+                                                2   1   3   4   5
+                                                2   1   3   5   4
+                                                2   1   4   3   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,43 @@
+Mohó algoritmusok                                                                              **
+
+
+                                   Szilveszteri tévézés
+A TV-készülékeden egyszerre N televízió-csatornát foghatsz. A szilveszteri műsort mindegyik adó
+igyekszik jó filmekkel kitölteni. Előfordulhat, hogy nem tudod mind megnézni. Az alábbi szem-
+pontok szerint válogatod ki a filmeket:
+     A lehető legtöbb filmet szeretnéd megnézni.
+     Csak teljes filmeket nézel meg (azaz ha akár egyetlen percet elmulasztasz egy filmből, akkor
+      azt már nem nézed meg).
+     Egyszerre csak egy filmet nézhetsz a TV-készülékeden.
+Készíts programot, amely a lehető legtöbb film adatai felsorolja, amit megnézhetsz! Ha több
+megoldás is van, akkor azt kell megadni, amelynek az összideje a legnagyobb!
+Bemenet
+A standard bemenet tartalmazza a számodra érdekes filmeket. Az első sor a filmek számát
+tartalmazza (1≤N≤100), majd soronként egy film leírását. A soron belül az adatokat egy-egy szó-
+köz választja el. A film leírása a következő elemekből áll: adó sorszáma, kezdési idő
+(óra, perc), befejezési idő (óra, perc). Az óra 0 és 23 közötti, a perc pedig
+0 és 59 közötti egész szám.
+Kimenet
+A standard kimenet első sorába két számot kell írni: a megnézhető filmek maximális M
+számát és ezek összidejét percekben! A következő M sor a megnézendő filmek sorszámát tartal-
+mazza, kezdési idő szerinti sorrendben!
+Példa
+Bemenet                                          Kimenet
+5                                                3 720
+1   18 0 22 0                                    2 4 1
+1   6 0 10 0
+3   8 0 10 0
+3   14 0 18 0
+2   12 0 20 0
+1. adó:
+2. adó:
+3: adó:
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

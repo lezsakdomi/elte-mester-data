@@ -1,0 +1,39 @@
+Dinamikus programozás                                                                         **
+
+
+                                          Hegység
+Egy hegymászó megkapta egy hegység domborzati térképét, amely egy négyzetrács-háló egyes
+pontjaiban tartalmazza a felszín tengerszint feletti magasságát. A hegymászás során a hegység tet-
+szőleges pontjáról indulhat, s minden lépésben a négy szomszédos hely valamelyikére léphet (te-
+hát átlósan nem). Egy emelkedő út olyan lépéssorozat, amikor minden egyes érintett hely maga-
+sabb az előzőnél, az út hossza pedig a megtett lépések száma.
+Készíts programot, amely megadja a leghosszabb utat, amelyen egy hegymászó folyamatosan fel-
+felé haladhat! Ha több megoldás is van, elég csak egyet megadni.
+Bemenet
+A standard bemenet első sorában a hegység domborzati térképét tartalmazó téglalap sorai
+és oszlopai száma van (1≤N,M≤1000). A következő N sor mindegyike M egész számot tartal-
+maz, az egyes pozíciók tengerszint feletti magasságát (0≤magasság≤10 000).
+Kimenet
+A standard kimenet első sorába a leghosszabb út hosszát kell írni (azon lépések számát,
+ahány lépés alatt egy tetszőleges kezdőpozícióból szomszéd helyeken át folyamatosan lehet felfelé
+lépkedni), a második sorba pedig az ehhez az úthoz tartozó kezdő pozíció sor- és oszlopindexét!
+Ha sehonnan sem lehet lépni, akkor az első sorba 0, a második sorba tetszőleges pozíció írandó!
+Példa
+Bemenet                                         Kimenet
+6   8                                           6
+2   2   1   2   2   2   1   1                   1 3
+4   3   6   9   2   1   1   1
+5   1   7   8   1   8   1   1
+1   1   1   1   6   7   1   1
+1   3   4   4   5   1   1   1
+1   2   1   1   1   1   1   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                             1. oldal
+

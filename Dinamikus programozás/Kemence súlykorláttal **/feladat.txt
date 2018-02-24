@@ -1,0 +1,40 @@
+Dinamikus programozás                                                                          **
+
+
+                                Kemence súlykorláttal
+A porcelángyár égetőkemencéjéhez futószalagon érkeznek az égetésre váró tárgyak. Minden
+tárgynak ismert a súlya és a kiégetéséhez minimálisan szükséges idő. Az égetésre váró tárgyakat az
+érkezésük sorrendjében kell kiégetni. Egyszerre több tárgyat is rakhatunk a kemencébe, az össz-
+súlyuk azonban nem haladhatja meg a kemence kapacitását. Az égetési idő egy menetben mindig
+a kemencébe rakott tárgyak minimális égetési idejének a maximuma kell legyen.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő kell az összes tárgy kiégetésé-
+hez, továbbá megadja azt is, hogy ezen idő eléréséhez mely tárgyakat kell egy-egy menetben a
+kemencében együtt égetni!
+Bemenet
+A standard bemenet első sora a tárgyak számát (1≤N≤100 000) és a kemence kapacitását
+(1≤K≤10 000) tartalmazza. A következő N sor mindegyike két egész számot tartalmaz: egy tárgy
+súlyát (1≤S≤1000) és minimális égetési idejét (1≤E≤1000).
+Kimenet
+A standard kimenet első sorába az összes tárgy kiégetéséhez minimálisan szükséges időt
+kell írni! A következő sorok mindegyikébe két egész számot, I-t és J-t kell írni egy szóközzel el-
+választva, I az első, J pedig az utolsó tárgy sorszáma, amelyek egyszerre kerülnek a kemencébe!
+Példa
+Bemenet                                         Kimenet
+6   10                                          46
+3   10                                          1 1
+2   12                                          2 3
+7   20                                          4 6
+5   15
+3   11
+2   16
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤10 000 és K≤1000. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                             1. oldal
+

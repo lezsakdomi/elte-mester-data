@@ -1,0 +1,32 @@
+Programozási tételek – Kiválogatás
+
+
+                                     Sikertelen napok
+Egy ember N napon horgászott, tudjuk, hogy melyik nap hány halat fogott.
+Készíts programot, amely megadja a sikertelen napokat (azokat, amelyeken 5-nél kevesebb halat
+fogott)!
+Bemenet
+A standard bemenet első sorában a napok száma van (1N100). A következő N sor
+mindegyike egy-egy egész számot tartalmaz, az egyes napokon fogott halak számát (0Hi30).
+Kimenet
+A standard kimenet első száma a sikertelen napok darabszáma legyen, amelyet sikertelen
+napok sorszáma kövessen növekvő sorrendben, a számok közé egy-egy szóközt kell kiírni!
+Példa
+Bemenet                                        Kimenet
+6                                              3 2 3 4
+20
+1
+0
+3
+10
+6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,31 @@
+Informatika OKTV 2017                 Programozás kategória                       Második forduló
+
+
+                                          Konverzió
+Łukasiewicz lengyel logikatudós vette észre először, hogy az aritmetikai kifejezések leírhatók záró-
+jelek nélkül, ha a műveleti jelet nem az argumentumok közé, hanem azok után írjuk. Az ilyen
+írásmódot fordított lengyel jelölésnek, vagy posztfix alaknak is nevezik.
+Például az a+b*(a-b)/(x+y) kifejezés posztfix alakja abab-xy+/*+.
+Készíts programot (konvert), amely kiszámítja egy posztfix alakú aritmetikai kifejezés hagyo-
+mányos (infix) alakját!
+Bemenet
+A standard bemenet egy legfeljebb 1000 karaktert tartalmazó posztfix alakú aritmetikai ki-
+fejezést tartalmaz, amelyben minden váltózó az angol ábécé kisbetűje. A kifejezés csak a +,-,* és
+/ műveleti jeleket tartalmazza, és nincs benne szóköz.
+Kimenet
+A standard kimenet egyetlen sorába a bemeneti kifejezés hagyományos (infix) alakját kell
+írni (szóközök nélkül) a lehető legkevesebb zárójel alkalmazásával! A kimenetben az argumentu-
+mok sorrendje nem változtatható.
+Példa
+bemenet                                           kimenet
+abab-xy+/*+                                       a+b*(a-b)/(x+y)
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                              1. oldal                         2017.01.07. 9-14 óra
+

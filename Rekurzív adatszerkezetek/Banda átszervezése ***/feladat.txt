@@ -1,0 +1,50 @@
+Rekurzív adatszerkezetek                                                                     ***
+
+
+                                  Banda átszervezése
+Egy banda hierarchikusan épül fel, minden tagjának legfeljebb K közvetlen beosztottja lehet. Az
+üzenetek egy tagtól a beosztottjáig pontosan 1 nap alatt érnek el. Az a cél, hogy a főnök (aki már
+senki másnak nem beosztottja) üzenetei a lehető leghamarabb érjenek el minden bandataghoz.
+Ennek érdekében egyetlen egy bandatag főnökét meg szabad változtatni, természetesen úgy, hogy
+továbbra se legyen senkinek K-nál több közvetlen beosztottja. Az áthelyezett tag persze a beosz-
+tottjait is viszi magával.
+Készíts programot, amely megadja, hogy melyik bandatag főnökét változtassuk meg, és ki legyen
+az új főnöke!
+Bemenet
+A standard bemenet első sorában a bandatagok száma (1<N1000), valamint az egy tag-
+hoz tartozó közvetlen beosztottak maximális száma (2K10) van. A további N-1 sor mindegyi-
+ke egy U V egész számpárt tartalmaz, ami azt jelenti, hogy az U bandatag főnöke a V bandatagnak
+(1UVN). A banda főnöke az 1-es sorszámú tag.
+Kimenet
+A standard kimenet egyetlen sorába az áthelyezendő bandatag sorszámát és az új főnöke
+sorszámát kell írni, egyetlen szóközzel elválasztva! Ha nincs áthelyezendő bandatag, akkor két 0
+kerüljön az eredménybe! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+15 3                                            7 10
+1 9
+1 10
+1 11                                                             1
+9 5
+9 6
+9 8
+                                        9                    10                11
+8 7
+8 13
+7 14
+7 15                         5          6               8    12      2         3             4
+11 2
+11 3
+11 4
+10 12                                       7               13
+
+Korlátok
+Időlimit: 0.1 mp.                  14             15
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤20
+
+
+
+
+                                             1. oldal
+

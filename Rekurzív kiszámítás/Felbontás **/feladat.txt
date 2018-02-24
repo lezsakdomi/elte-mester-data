@@ -1,0 +1,27 @@
+Rekurzív kiszámítás                                                                     **
+
+
+                                         Felbontás
+Egy tetszőleges számot kell előállítani az 123456789 sorozatból úgy, hogy bármely két szám-
+jegy közé tehetünk egy + vagy – jelet. Más módosítást (pl. zárójelek) nem végezhetünk.
+Készíts programot, amely egy adott számra kiszámítja a felbontását!
+Bemenet
+A standard bemenet egyetlen sorában a keresett szám (0≤N≤123 456 789) szerepel.
+Kimenet
+A standard kimenet egyetlen sorába a keresett felbontást kell írni! Ha az N nem bontható
+fel a feladatban rögzített feltételek szerint, akkor a LEHETETELEN szöveget kell kiírni! Ha
+több megoldás van, bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+120                                             123+4-5+6-7+8-9
+Bemenet                                         Kimenet
+1000                                            LEHETETELEN
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                                      **
+
+
+                                  Következő azonosító
+A processzorgyártó cégek megállapodtak abban, hogy milyen rendszert alkalmaznak az általuk
+gyártott processzorok azonosítására. Minden cég kap egy betűkészletet, és ezekből kell az azono-
+sító kódot képeznie úgy, hogy minden betű pontosan egyszer szerepeljen az azonosítóban. Példá-
+ul egy cég azt kapta, hogy minden azonosítója egy-egy ’a’, ’b’, ’c’, ’d’ és ’x’ betűt tartalmazzon. A
+processzorok a gyártási sorrendben ábécé szerint növekvően kapják mindig a következő azonosí-
+tót.
+Készíts programot, amely adott azonosítóra kiszámítja az ábécé sorrendben rákövetkező szabá-
+lyos azonosítót!
+Bemenet
+A standard bemenet első és egyetlen sorában egy szabályos azonosító van, amely csak kis-
+betűket tartalmaz az ’a’ .. ’z’ tartományból és legfeljebb 100 betűből áll.
+Kimenet
+A standard kimenet első sorába a rákövetkező szabályos azonosítót kell írni! Ha nincs
+ilyen, akkor a NINCS szót!
+Példa
+Bemenet                                           Kimenet
+bdaxc                                             bdcax
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,44 @@
+Programozási tételek - kiválasztás                                                               *
+
+
+                                           Vakáció
+Készíts programot, amely megállapítja, hogy még hány éjszakát kell aludni a következő vakációig,
+ha a legalább egyhetes tanításmentes időszakot tekintjük vakációnak!
+Bemenet
+A standard bemenet első sorában található a mai napot követő napok száma (N, maximum
+366). A következő N sorban a napok típusát jelző 0 vagy 1 érték, ahol 1 jelenti a szünetet, míg 0 a
+tanítási napot. Biztos, hogy van még az évben vakáció a mai nap után.
+Kimenet
+A standard kimenet első sorába ki kell írni a napok számát a következő valációig!
+Példa
+Bemenet                                          Kimenet
+20                                               13
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

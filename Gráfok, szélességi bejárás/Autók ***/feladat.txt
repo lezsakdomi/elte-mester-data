@@ -1,0 +1,37 @@
+Gráfok – Szélességi bejárás                                                                  ***
+
+
+                                            Autók
+Egy autót helyezünk egy labirintusba, megjelölve a kezdő- és a célpozícióját. Az autót el kell ve-
+zetni a célig, feltéve, hogy sebessége legfeljebb K lehet, s minden lépés után a sebessége 1-gyel
+változhat. Az autó egy időegység alatt csak vízszintesen vagy csak függőlegesen mozoghat, az S
+sebességű autó pontosan S távolságra lép. Az autó a kezdőpozícióban 0 sebességű (a lépése előtt
+1 sebességűre vált) és a végpozícióba érve 1 sebességűnek kell lennie.
+Készíts programot, amely megadja, hogy minimum mennyi idő múlva érhet az autó a kezdőpozí-
+cióból a célpozícióba!
+Bemenet
+A standard bemenet első sorában a négyzetrács magassága és szélessége (1N,
+M200), valamint az autók maximális sebessége (1K10) van, egy-egy szóközzel elválasztva.
+A következő N sor mindegyike pontosan M karaktert tartalmaz, az üres helyeken szóközt, a foglalt
+helyeken *-ot, az autó kezdőpozícióján K betűt, célpozícióján pedig C betűt.
+Kimenet
+A standard kimenet egyetlen sort kell írni, azt a minimális időtartamot, ami alatt az autó a
+kezdőhelyről a célpozícióba érhet. Ha az autó nem érhet el a célpozícióba, akkor az állományba
+-1-et kell írni.
+Példa
+Bemenet                                          Kimenet
+5 10 3                                           7
+**********
+*K        *
+****** ***
+C
+***    ****
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

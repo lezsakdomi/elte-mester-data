@@ -1,0 +1,88 @@
+Emelt szintű informatika érettségi                                                2014. május 13.
+
+
+                                              IPv6
+A számítógépes hálózatok üzemeltetésében az IPv4-es címeket lassan leváltja az IPv6-os címzési
+rendszer, amely az eddigi 32 bit hosszúságú címek helyett 128 bit hosszúságú címeket használ.
+Az IPv6-os címeket hexadecimális alakban ábrázoljuk, nyolc darab négyes csoportba osztva. Az
+egyes számjegyek a tízes számrendszerben is használt számjegyek, valamint az a, b, c, d, e, f betűk
+lehetnek. Az egyes csoportokat kettősponttal választjuk el. Ezek alapján formailag megfelelő
+IPv6-os cím a következő:
+2001:0db8:03cd:0000:0000:ef45:0006:0123
+Egy nagyvállalat szerverén háromféle IP-cím fordul elő. A feladat megoldásában csak ezekkel a
+címekkel kell foglalkozni:
+      A 2001:0db8 kezdetű címek a dokumentációs címek, eszközöknek nincsenek kiosztva.
+      A 2001:0e kezdetű címek az informatikai eszközöknek kiosztott globális egyedi címek.
+      Az fc, valamint az fd kezdetű címek az eszközöknek kiosztott helyi egyedi címek.
+Több szabály vonatkozik a címek rövidebb leírásának lehetőségére:
+    Az egyes csoportokban a bevezető nullák elhagyhatók. Például így leírva a fenti cím:
+     2001:db8:3cd:0:0:ef45:6:123
+    Kettő vagy több csak nullákból álló csoportot le lehet egyszerűsíteni két kettőspont kö-
+     zötti üres csoportra. Ezzel a szabállyal tovább egyszerűsítve az előző címet:
+     2001:db8:3cd::ef45:6:123
+    Ha egy címben több helyen is vannak csak nullákból álló csoportok, akkor is csak egyszer
+     lehet ez utóbbi módszerrel rövidítést végrehajtani. Ilyen esetben mindig több nullás cso-
+     portot kell rövidíteni. Ha azonos számú nullás csoport található a címen belül több helyen
+     is, akkor balról az elsőt kell rövidíteni.
+     Például: 2001:0000:0000:00f5:0000:0000:0000:0123
+       Rövidítve: 2001:0:0:f5::123
+Készíts programot, amely megadja, hogy
+   1. melyik a nagyvállalat szerverén található legalacsonyabb IP-cím;
+   2. a nagyvállalat szerverén hány darab IP-cím van az egyes fajtákból;
+   3. hány olyan IP-cím van a nagyvállalat szerverén, amely legalább 18 nullát tartalmaz, és azt,
+      hogy melyek ezek;
+   4. mi egy adott sorszámú IP-cím rövidítése a csoportokon belüli bevezető nullák elhagyásával;
+   5. mi egy adott sorszámú IP-cím rövidítése az egymást követő nullás csoportok rövidítésére
+      vonatkozó szabályoknak megfelelően!
+Bemenet
+A standard bemenet első sora az IP címek számát (1≤N≤500) és egy sorszámot tartalmaz
+(1≤S≤N). A további N sor egy-egy, a nagyvállalat szerverén tárolt IP-címet tartalmaz ismétlődés
+nélkül.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                                                  2014. május 13.
+
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A nagyvállalat szerverén található legalacsonyabb IP-címet kell kiírni!
+2. részfeladat: Írd ki, hogy hány darab IP-cím van az egyes fajtákból! Az első szám a dokumentá-
+ciós címek, a második a globális egyedi címek, a harmadik pedig a helyi egyedi címek számát jelöl-
+je!
+3. részfeladat: A nagyvállalat szerverén található olyan IP-címek X számát kell kiírni, amelyek
+legalább 18 nullát tartalmaznak! A következő X sorba kell írni a sorszámukkal együtt ezeket a cí-
+meket a bemenetnek megfelelő sorrendben!
+4. részfeladat: Az egyetlen sorba az S. IP-cím csoportokon belüli bevezető nullák elhagyásával
+képzett rövidítése kerüljön!
+5. részfeladat: Az egyetlen sorba az S. IP-cím egymást követő nullák elhagyásával rövidített vál-
+tozata kerüljön! Amennyiben nem rövidíthető, - jelet írj ki!
+Példa
+Bemenet                                           Kimenet
+10 5                                              #
+fc00:0610:0f00:89f0:00f0:0ed2:0000:000d           2001:0db8:0030:1a90:0200:9000:c000:0088
+2001:0e00:00f9:00d4:7300:0096:0801:0201           #
+2001:0db8:5005:0003:0b02:0029:fe09:a861           2 2 6
+fcb6:0600:e707:a30c:3007:0d05:0100:aadf           #
+fcef:b0e7:7d20:0000:0000:0000:3b95:0565           3
+2001:0e00:41a0:006b:00de:03c0:0e00:60bc           1 fc00:0610:0f00:89f0:00f0:0ed2:0000:000d
+2001:0db8:0030:1a90:0200:9000:c000:0088           7 2001:0db8:0030:1a90:0200:9000:c000:0088
+fc09:000a:70b0:020d:0008:000f:7090:5038           9 fd0c:2200:00d0:0db0:0900:0a05:0000:00ef
+fd0c:2200:00d0:0db0:0900:0a05:0000:00ef           #
+fc0b:6000:1080:2059:0033:e010:0090:0005           fcef:b0e7:7d20:0:0:0:3b95:565
+                                                  #
+                                                  fcef:b0e7:7d20::3b95:565
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              2. oldal
+

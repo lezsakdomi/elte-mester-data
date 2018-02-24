@@ -1,0 +1,48 @@
+Emelt szintű informatika érettségi                                                2015. október 16.
+
+
+                                         Fej vagy írás
+Ha egy szabályos pénzérmét feldobunk, ugyanannyi a valószínűsége annak, hogy leesés után az
+érme értéke lesz felül (írás, I), mint annak, hogy a címert tartalmazó másik oldala (fej, F).
+Készíts programot, amely megadja
+   1.   A kísérlet során dobott fejek relatív gyakoriságát százalékban;
+   2.   A pontosan kettő hosszú fejsorozatok számát;
+   3.   A leghosszabb fejsorozat létszámát és egy ilyen első elemének helyét;
+   4.   A sorozatban található FFFI és FFFF sorozatok számát!
+Bemenet
+A standard bemenet első sorában a kísérletek száma található (3≤N≤1000). Következő
+sorban egy pénzfeldobás-sorozat eredményét találod.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Írd ki, hogy milyen relatív gyakorisággal dobtunk a kísérlet során fejet, egészre ke-
+rekítve! (A fej relatív gyakorisága a fejet eredményező dobások és az összes dobás hányadosa.)
+2. részfeladat: Add meg, hogy hányszor fordult elő ebben a kísérletben, hogy egymás után pon-
+tosan két fejet dobtunk!
+3. részfeladat: Add meg, hogy milyen hosszú volt a leghosszabb, csak fejekből álló részsorozat és
+az egyik ilyen részsorozat első tagjának helyét is! Ha nem volt fej a sorozatban, akkor a leghos--
+szabb értéke 0 legyen és a helyéhez -1-et írj be!
+4. részfeladat: Írd ki, hogy hány esetben követett egy háromtagú „tisztafej” sorozatot fej, illetve
+hány esetben írás!
+Példa
+Bemenet                                           Kimenet
+12                                                #
+FIFIFFFIFFII                                      58
+                                                  #
+                                                  1
+                                                  #
+                                                  3 5
+                                                  #
+                                                  0 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

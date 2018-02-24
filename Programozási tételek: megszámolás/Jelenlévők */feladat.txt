@@ -1,0 +1,31 @@
+Programozási tételek - megszámolás                                                           *
+
+
+                                        Jelenlévők
+Egy rendezvényre N vendég érkezik. Ismerjük mindegyik érkezési és távozási idejét.
+Számold meg, hogy a K. időpontban hány vendég van a rendezvényen!
+Bemenet
+A standard bemenet első sorában található a vendégek száma (1≤N≤100) és a K percben
+megadott időpillanat. Az ezt követő N sorban pedig szóközzel elválasztva az egyes vendégek ér-
+kezési és távozási ideje napon belüli percben megadva (éjfél utáni távozás esetén 24*60-nál na-
+gyobb értékek vannak).
+Kimenet
+A standard kimenet első sorába ki kell írni a K. időpontban jelen lévő részt vevők számát!
+Példa
+Bemenet                                         Kimenet
+6 1440                                          3
+1320 1410
+1350 1430
+1400 1500
+1080 1500
+1120 1500
+1120 1410
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

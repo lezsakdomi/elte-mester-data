@@ -1,0 +1,39 @@
+Rekurzív adatszerkezetek                                                                     ***
+
+
+                                         Trópusi fa
+Egy különleges trópusi fafajta ágai minden évben elágaznak, a végükből vagy balra nő ki az új ág,
+vagy jobbra, vagy mindkét irányba. Az egyes ágvégeket sorszámokkal azonosítjuk.
+Készíts programot, amely megadja a fa gyökeréhez (1 sorszámú pont) a legközelebbi olyan pon-
+tot, amelyből a balra és jobbra kinövő teljes ágak egymás tükörképei!
+Bemenet
+A standard bemenet első sorában a pontok száma (1≤N≤100 000) és az elágazások szá-
+ma (1≤M<N) van. A következő M sorban az egyes elágazások leírása szerepel három sorszámmal
+(1≤A≠B≠C≤N): az első szám az elágazás kezdőpontjának sorszáma, a második a bal oldali ágvég
+sorszáma, a harmadik a jobb oldali ágvég sorszáma. Ha valamerre nem nő ág, akkor ott az ágvég
+sorszáma 0.
+Kimenet
+A standard kimenet első sorába a gyökérhez legközelebbi olyan pont sorszámát kell írni,
+amelyből a balra és jobbra kinövő ágak egymás tükörképei! Több megoldás esetén a legkisebb
+sorszámút kell megadni!
+Példa
+Bemenet                                         Kimenet
+8   5                                           4
+1   2   3
+2   4   0                                       5            6                    8
+3   7   0
+4   5   6
+7   0   8
+                                                       4                 7
+Korlátok
+Időlimit: 0.1 mp.
+                                                             2                3
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a pontok száma N≤8000
+                                                                     1
+
+
+
+
+                                            1. oldal
+

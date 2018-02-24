@@ -1,0 +1,34 @@
+Villamosjárat                                                                                     *
+
+
+                     Menetidők a villamosmegállók között
+Egy villamosjáratról tudjuk, hogy a megállói milyen messze vannak az előző állomástól, valamint
+az egyes állomásokra az érkezési és indulási időket (csak az egyik irányban, a villamos a 0. percben
+indul). Ha egy megállóban azonos az érkezési és az indulási idő, akkor a villamos ott nem állt
+meg.
+Készíts programot, amely kiszámítja, az egyes állomásszakaszokon a villamos menetidejét!
+Bemenet
+A standard bemenet első sorában a villamosmegállók száma van (1≤N≤100). Ezt követő-
+en N sorban, soronként a megállók adatai vannak: távolság az előzőtől (1≤Ti≤6000), érkezési
+idő (1≤Erki≤2000), indulási idő (Erki≤Indi≤2000).
+Kimenet
+A standard kimenet első sorába az állomásszakaszok számát és az egyes állomások közti
+menetidőket kell kiírni, az állomások sorrendjében!
+Példa
+Bemenet                                           Kimenet
+5                                                 5 10 15 10 6 5
+300 10 15
+2000 30 30
+1000 40 42
+500 48 58
+400 63 63
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

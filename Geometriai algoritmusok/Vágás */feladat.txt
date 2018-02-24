@@ -1,0 +1,35 @@
+Geometriai algoritmusok                                                                       *
+
+
+                                           Vágás
+Egy gazdának sokszög alakú földje van. A sokszög N oldalú, ismerjük a csúcsainak koordinátáit az
+óramutató járása szerinti sorrendben megadva. A földön keresztül egy egyenes utat építenek,
+amely az (A,B) ponttól a (C,D) pontig tart.
+Készíts programot, amely megadja, hogy az út a gazda földjét hány részre darabolja! Feltehetjük,
+hogy az út nem megy át a sokszög csúcsain.
+Bemenet
+A standard bemenet első sorában a csúcsok száma (3N500 000), a következő N sor-
+ban a pontok koordinátái (0Xi,Yi108), az utolsó előtti sorban az út kezdő-, az utolsóban
+pedig az út végpontjának koordinátái (0A,B,C,D108) vannak. Az új út (A,B) és (C,D)
+pontja is földterületen kívül van.
+Kimenet
+A standard kimenetre egy egész számot kell írni, ahány részre az út a földet darabolja!
+Példa
+Bemenet                                         Kimenet
+5                                               3
+10 10
+10 100
+100 100
+100 10
+50 50
+0 20
+120 40
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

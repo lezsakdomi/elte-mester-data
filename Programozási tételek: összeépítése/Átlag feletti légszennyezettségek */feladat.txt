@@ -1,0 +1,34 @@
+Programozási tételek összeépítése                                                                   *
+
+
+                          Átlag feletti légszennyezettségek
+A város egy forgalmas pontján N napon keresztül minden nap mérték a légszennyeződés mérté-
+két reggel és este.
+Írjon programot, amely megadja azon napok számát, és a napok növekvő sorrendjét, amikor az
+esti érték nagyobb volt, mint az esti értékek átlaga!
+Bemenet
+A standard bemenet első sorában a mérési napok száma van (1≤N≤1000). A további N
+sor mindegyike két egész számot tartalmaz egy szóközzel elválasztva, az első szám az adott napon
+reggel, a második pedig az este mért szennyeződési érték (1≤R,E≤1000).
+Kimenet
+A standard kimenet első sorába azon napok számát, és a napok növekvő sorrendjét (egy-
+egy szóközzel elválasztva) kell kiírni, amikor az esti érték nagyobb volt, mint az esti értékek átlaga!
+Példa
+Bemenet                                            Kimenet
+6                                                  3 3 4 5
+100 120
+200 122
+170 190
+100 222
+150 155
+75 60
+Korlátok
+Időlimit: -
+Memórialimit: -
+Pontozás: A tesztek 40%-ában a bemenetek száma≤20
+
+
+
+
+                                               1. oldal
+

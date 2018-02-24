@@ -1,0 +1,41 @@
+Programozási tételek – Kiválogatás
+
+
+                Egyszerre nagy mennyiségben megvett teák
+Egy élelmiszerdiszkontban nyilvántartást vezetnek a teavásárlásról. Minden vásárlásnál feljegyzik,
+hogy milyen cég teájából milyen mennyiséget vettek.
+Készíts programot, amely beolvas N ilyen adatot (cég neve és a tea mennyisége), majd megadja
+azokat a cégeket, amelyek teáiból vettek egyszerre 500 grammnál többet!
+Bemenet
+A standard bemenet első sorában az árusító helyek száma (1≤N≤100), a következő 2*N
+sorban sorpáronként egy-egy árusító hely leírása: teafajta, majd a következő sorban a mennyiség
+(1≤M≤2000).
+Kimenet
+A standard kimenet első sorába azokat a cégeket kell kiírni, amelyek teáiból vettek egy-
+szerre 500 grammnál többet; egy sorban a darabszám és a megfelelő cégek (a bemenet sorrendjé-
+ben), szóközökkel tagolva! A cégek ismétlődhetnek a felsorolásban!
+Példa
+Bemenet                                          Kimenet
+6                                                3 Lipton Lipton Greenfield
+Lipton
+200
+Teekanne
+100
+Lipton
+600
+Lipton
+800
+Pickwick
+200
+Greenfield
+800
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

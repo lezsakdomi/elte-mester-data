@@ -1,0 +1,43 @@
+Gráfok – elemi feladatok                                                                     *
+
+
+                               Legelszigeteltebb falu
+Egy megyében N (1≤N≤1000) falu van. A falvakat M (3≤M≤10000) út köti össze, ismerjük
+minden út hosszát. A legelszigeteltebb falunak azt nevezzük, amelytől a legközelebbi szomszédja
+a lehető legtávolabb van.
+Írj programot, amely megadja a legelszigeteltebb falut! Ha több megoldás van, akkor bármelyik
+kiírható.
+Bemenet
+A standard bemenetelső sorában N és M értéke található, egy-egy szóközzel elválasztva. A
+következő M sor mindegyike három egész számot tartalmaz: az utak kezdő és végpontját, illetve a
+hosszát.
+Kimenet
+A standard kimenetelső és egyetlen sorába legelszigeteltebb falu sorszámát kell kiírni. Ha
+több ilyen is van, akkor a legkisebb sorszámút.
+Példa
+Bemenet                                        Kimenet
+56                                             2
+1   2   5
+2   3   6
+3   1   4                                                      1        4
+3   4   10
+4
+3
+    5
+    5
+        1
+        11
+                                                           5                  3
+                                                                   6
+
+                                                          2              10
+Korlátok                                                                           11
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB                                                      4
+Pontozás: A tesztek 30%-ában a N, M≤100                                       1      5
+
+
+
+
+                                           1. oldal
+

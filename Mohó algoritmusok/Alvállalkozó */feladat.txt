@@ -1,0 +1,37 @@
+Mohó stratégia                                                                                 *
+
+
+                                       Alvállalkozó
+Egy nagyszabású beruházás terve N különböző munka elvégzését írja elő. Minden munkát ponto-
+san egy nap alatt lehet elvégezni, azonban minden munkára elő van írva az a határidő, ameddig el
+kell végezni. Jelentkezett egy alvállalkozó, aki bármely munkát el tudja végezni, de egy nap csak
+egy munkát.
+Készíts programot, amely megadja, hogy maximum hány munkát bízhatunk az alvállalkozóra!
+Bemenet
+A standard bemenet első sorában az elvégzendő munkák száma van (2≤N≤10 000). A
+további N sor mindegyike egy-egy munka határidejét tartalmazza (1≤Hi≤300), növekvő sor-
+rendben.
+Kimenet
+A standard kimenet első sorába az alvállalkozónak kiadható munkák K maximális számát
+kell írni! A következő sorba a K darab kiadott munka sorszámát kell írni, a munkák kiadásának
+sorendjében! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                         Kimenet
+7                                               4
+1                                               1 3 6 7
+1
+2
+2
+2
+4
+4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 60%-ában N≤100.
+
+
+
+
+                                            1. oldal
+

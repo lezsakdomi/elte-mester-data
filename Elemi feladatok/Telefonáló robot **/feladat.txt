@@ -1,0 +1,38 @@
+Elemi feladatok                                                                                    **
+
+
+                                      Telefonáló robot
+Egy telefonkészüléken az alábbi ábrán látható elrendezésben vannak a nyomógombok. Egy ro-
+botkart kell irányítanunk, amely egy adott telefonszám számjegyeit nyomja le a készüléken.
+                                               1 2    3
+                                               4 5    6
+                                               7 8    9
+                                               * 0 #
+
+A robotot az alábbi utasításokkal vezérelhetjük:
+       E x     x egységnyit mozdítja a robotkart északi irányba (negatív x esetén déli irányba)
+       K x     x egységnyit mozdítja a robotkart keleti irányba (negatív x esetén nyugati irányba)
+       N       lenyomja a nyomógombot, amelyik felett a robotkar áll.
+A robotkar kezdetben a * jel fölött van, a telefonálás végén a # jel fölött kell lennie.
+Írj programot, amely egy legfeljebb 7 jegyű telefonszám ismeretében minimális utasításszámmal
+végrehajtatja a robottal a telefonálást!
+Bemenet
+A standard bemenet első és egyetlen sora egy legfeljebb 7 számjegyből (0-9) álló szöveget
+tartalmaz, a beírandó telefonszámot.
+Kimenet
+A standard kimenet első és egyetlen sorába a robot számára szóló azon utasításokat kell
+szóközökkel elválasztva kiírni, melyek minimális utasításszámmal hajtatják végre a robottal a be-
+olvasott telefonszám felhívását.
+Példa
+Bemenet                                            Kimenet
+79                                                 E 1 N K 2 N E -1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                               1. oldal
+

@@ -1,0 +1,37 @@
+Dinamikus programozás                                                                          **
+
+
+                                       Munkagépek
+Egy vállalkozó két azonos munkagépet üzemeltet, amelyeken speciális alkatrészeket gyárt. Sok
+megrendelést kapott alkatrészek gyártására. A megrendelésben különböző alkatrészek szerepel-
+nek, de ismert, hogy az egyes alkatrészek legyártása mennyi időt igényel (percben kifejezve). A
+gépek folyamatosan dolgoznak. A vállalkozó el akarja osztani az alkatrészeket a két gép között,
+hogy a lehető legkorábban befejeződjön a legyártásuk, tehát ha az első gép a neki kiosztott alkat-
+részeket T1, a második gép T2 idő alatt gyártja le, akkor max(T1,T2) a lehető legkisebb le-
+gyen.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő alatt tudja a két gép legyártani
+az összes alkatrészt, és meg is ad egy megfelelő beosztást!
+Bemenet
+A standard bemenet első sorában az alkatrészek száma van (2≤N≤2000). A második sor
+pontosan N egész számot tartalmaz, a legyártandó alkatrészek gyártási idejét, ami 1 és 50 közötti
+érték.
+Kimenet
+A standard kimenet első sora azt a legkisebb T időt tartalmazza, amely alatt a két gép le
+tudja gyártani az összes alkatrészt! A második sor azon alkatrészek sorszámát tartalmazza (tetsző-
+leges sorrendben), amelyeket az első, a harmadik sor pedig azokat, amelyeket a második gép gyárt
+le! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+9                                         54
+7 12 5 21 6 9 31 4 12                     2 3 5 7
+                                          1 4 6 8 9
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 120 MiB
+Pontozás: A tesztek 40%-ában N≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                             1. oldal
+

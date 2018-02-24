@@ -1,0 +1,30 @@
+Elemi feladatok                                                                                *
+
+
+                                     Sportverseny 2.
+Egy kosárlabdacsapatnak 5, egy kézilabdacsapatnak pedig 7 tagja van. Egy osztály N tanulóját úgy
+szeretnénk csapatokra osztani, hogy senki se szerepeljen egynél több csapatban, s a lehető legke-
+vesebben maradjanak ki (például egy 18 fős osztályból 2 kosárlabda- és 1 kézilabdacsapatot szer-
+vezünk, mert így csak egyetlen tanuló marad ki, 19 fős osztály esetén azonban már 2 kézi- és 1
+kosárlabdacsapatot kell szervezni).
+Készíts programot, amely egy osztály létszáma alapján kiszámolja, hogy belőlük hány kosár- és
+hány kézilabdacsapatot szervezzünk, valamint, hogy hányan maradnak ki a csapatokból! (Ha több
+megoldás lenne, akkor is elég egyet – bármelyiket – megadni.)
+Bemenet
+A standard bemenet első és egyetlen sora az osztály N létszámát tartalmazza (5≤N≤100).
+Kimenet
+A standard kimenet első és egyetlen sorába három egész számot kell írni: a kosárlabda-, a
+kézilabdacsapatok, valamint a kimaradók számát. A kosárlabda- és kézilabdacsapatok számát úgy
+kell meghatározni, hogy a lehető legkevesebben maradjanak ki az osztályból!
+Példa
+Bemenet                                         Kimenet
+18                                              2 1 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

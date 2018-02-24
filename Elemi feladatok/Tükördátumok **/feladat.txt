@@ -1,0 +1,41 @@
+Elemi feladatok                                                                               **
+
+
+                                     Tükördátumok
+A 2001 és 2099 közötti dátumokat az EE.HH.NN. alakban is ki tudja írni számítógépünk. Az
+évszámból az utolsó két jegyet írja ki. Ha az így kapott dátumban az év, a hónap vagy a nap 0-val
+kezdődne, akkor egyetlen számjeggyel kell kiírni. Tükördátumnak nevezzük azokat a dátumokat,
+amelyek számjegyei sorrendjét megfordítva is dátumot kapunk.
+Írj programot, amely egy adott évben naptári sorrendben kiírja a tükördátumokat!
+Bemenet
+A standard bemenet első és egyetlen sora a négyjegyű évszámot tartalmazza
+(2000<évszám<2100).
+Kimenet
+A standard kimenetre annyi sort kell írni, ahány tükördátum a beolvasott évben előállít-
+ható. Mindegyik sorban egy tükördátum szerepel „EE.HH.NN.” alakban, ahol EE az évszám
+utolsó két számjegye, HH a hónap sorszáma, NN pedig a nap sorszáma. Ezek közül ha bármelyik
+0-val kezdődik, akkor a 0-t elhagyva csak egy számjegyet kell kiírni.
+Példa
+Bemenet                                         Kimenet
+2082                                            82.1.28.
+                                                82.2.8.
+                                                82.2.28.
+                                                82.3.28.
+                                                82.4.28.
+                                                82.5.28.
+                                                82.6.28.
+                                                82.7.28.
+                                                82.8.28.
+                                                82.9.28.
+                                                82.11.28.
+                                                82.12.8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                            1. oldal
+

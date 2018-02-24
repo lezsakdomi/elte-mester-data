@@ -1,0 +1,29 @@
+Sorozatok                                                                                   **
+
+
+                                       Közös árak
+Az alsódabasi piacon N, a felsődabasin pedig M árus árul almát. Arra vagyunk kíváncsiak, hogy a
+két piacon ugyanannyiért árult almák közül mennyibe kerül a legolcsóbb és a legdrágább.
+Készíts programot, amely a két piacon ugyanannyiért árul almák közül a legolcsóbb és a
+legdrágább alma árát!
+Bemenet
+A standard bemenet első sorában az alsódabasi és a felsődabasi piac árusainak száma van
+(1N,M100) van. A második sorban az alsódabasi piac N árusának árai, a harmadik sorban
+pedig a felsődabasi piac M árusának árai vannak. Az árak 1 és 1000 közötti egész számok.
+Kimenet
+A standard kimenet egyetlen sorába a legolcsóbb és legdrágább alma árát kell írni, amit
+mindkét piacon meg lehet venni! Ha nincs ilyen alma, akkor kettő darab 0 számot kell kiírni!
+Példa
+Bemenet                            Kimenet
+4 3                                200 300
+100 500 200 300
+200 300 200
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 16 MiB
+
+
+
+
+                                           1. oldal
+

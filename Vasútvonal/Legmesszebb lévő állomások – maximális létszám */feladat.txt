@@ -1,0 +1,37 @@
+Vasútvonal                                                                                         *
+
+
+             Legmesszebb lévő állomások – maximális létszám
+A Budapest-Székesfehérvár vasútvonalon egy vonat kalauza minden állomáson feljegyezte, hogy
+hányan szálltak fel a vonatra, illetve hányan szálltak le. (Budapesten biztos nincs leszálló, Székes-
+fehérváron biztos nincs felszálló, aki leszállt, az nem száll vissza.)
+Készíts programot, amely megadja a két legmesszebb levő állomást, amelyek között folyamatosan
+a maximális létszám volt a vonaton! (A hivatalos maximális kapacitásnál többen utazhatnak a vo-
+naton.)
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤N≤1000) és a vonaton utazók
+maximális létszáma (0<MAX≤800) szerepel, majd a következő N sorban az egyes állomásokon
+leszállók (0≤le≤800) és felszállók (0≤fel≤800) száma található.
+Kimenet
+A standard kimenet első sorába a két legmesszebb levő állomás sorszámát kell írni, ame-
+lyek között folyamatosan a maximális létszám volt a vonaton! Ha nem volt maximális létszám a
+vonaton, akkor az eredmény két nulla legyen!
+Példa
+Bemenet                                           Kimenet
+6 100                                             0 0
+0 15
+10 30
+0 32
+48 0
+19 26
+26 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza ≤500, a leszállók és felszállók száma ≤400
+
+
+
+
+                                              1. oldal
+

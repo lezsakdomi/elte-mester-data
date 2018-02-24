@@ -1,0 +1,36 @@
+Villamosjárat                                                                                     *
+
+
+          Legtávolabbi állomás közelebb az induló állomáshoz
+Egy villamosjáratról tudjuk, hogy a megállói milyen messze vannak az előző állomástól, valamint
+az egyes állomásokra az érkezési és indulási időket (csak az egyik irányban, a villamos a 0. percben
+indul). Ha egy megállóban azonos az érkezési és az indulási idő, akkor a villamos ott nem állt
+meg.
+Készíts programot, amely megadja az induló állomástól legtávolabbi állomást, ahova hamarabb el
+lehet jutni az induló állomástól, mint onnan a végállomáshoz és mindkét időtartamot!
+Bemenet
+A standard bemenet első sorában a villamosmegállók száma van (1≤N≤100). Ezt követő-
+en soronként a megállók adatai vannak: távolság az előzőtől (1≤Ti≤6000), érkezési idő
+(1≤Erki≤2000), indulási idő (Erki≤Indi≤2000).
+Kimenet
+A standard kimenet első sorába annak az állomásnak a sorszámát kell kiírni, illetve az oda-
+jutás idejét az induló állomástól és onnan a végállomásra jutás idejét, ahova hamarabb el lehet jut-
+ni az induló állomástól! Ha nincs ilyen az induló állomáson kívül, akkor a „-1”-et kell kiírni!
+Példa
+Bemenet                                           Kimenet
+5                                                 2 30 33
+300 10 15
+2000 30 30
+1000 40 42
+500 48 58
+400 63 63
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

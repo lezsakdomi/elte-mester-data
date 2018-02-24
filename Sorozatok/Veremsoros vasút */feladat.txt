@@ -1,0 +1,59 @@
+Sorozatok
+
+
+                                    Veremsoros vasút
+Veremsor város vasútállomásán nagy gondot okoz a szerelvények rendezése. Az állomásról to-
+vábbítandó szerelvényeket úgy kell kialakítani, hogy amikor az megérkezik a célállomásra, a sze-
+relvény végéről mindig lekapcsolható legyen az oda továbbított kocsisor. Minden továbbítandó
+szerelvény négy állomást érint, ezért a rendezés előtt minden kocsit megjelölnek az 1, 2, 3 vagy 4
+számokkal.
+A szerelvény kocsijait rendezzük át úgy, hogy a szerelvény elején legyenek az 1-essel, aztán a 2-
+essel, majd a 3-assal, végül a 4-essel megjelöltek! Kezdetben a kocsik az ábrán látható E-F pálya-
+szakaszon vannak.
+
+
+
+
+A vasúti váltók működése csak a következő műveleteket teszi lehetővé:
+       Az átrendezendő kocsisorból balról az első kocsit át lehet mozgatni vagy a B-E szakaszba
+        a már ott lévő kocsik mögé, vagy a C-D szakaszba a már ott lévő kocsik elé.
+       A B-E szakaszban lévő első kocsi átmozdítható és hozzáilleszthető az A-B szakaszon ki-
+        alakítandó kocsisor végére.
+       A C-D szakasz első (tehát az utolsónak odaérkezett) kocsija átmozdítható és hozzáilleszt-
+        hető az A-B szakaszon kialakítandó kocsisor végére.
+Készíts programot, amely kiszámítja, hogy adott szerelvények kocsijai átrendezhetőek-e úgy, hogy
+a kocsik számozásuk alapján monoton növekvő sorozatot alkossanak!
+Bemenet
+A standard bemenet első sora a megadott kocsisorokban található kocsik számát tartal-
+mazza (4  N  2000), a második sorban a rendezendő szerelvények száma áll (1  M  100). A
+következő M sor mindegyike egy-egy átrendezendő szerelvényt ír le: N db 1 és 4 közötti egész
+számot tartalmaznak egy-egy szóközzel elválasztva, ezzel jelölve a kocsik számait.
+Kimenet
+A standard kimenet pontosan M sort tartalmazzon, minden szerelvényre meghatározva,
+hogy kialakítható-e a kívánt kocsisorrend a megfelelő bemeneti kocsisorrendből! Ha kialakítható,
+az IGEN szó szerepeljen, egyébként a NEM szó!
+Példa
+Bemenet                                          Kimenet
+8                                                IGEN
+3                                                NEM
+4 4 1 2 3 4 2 3                                  IGEN
+4 3 2 1 4 3 2 1
+4 1 2 3 1 2 3 4
+
+
+
+
+                                             1. oldal
+Sorozatok
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤200.
+
+
+
+
+                                         2. oldal
+

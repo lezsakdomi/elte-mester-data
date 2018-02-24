@@ -1,0 +1,28 @@
+Programozási tételek – Megszámolás
+
+
+                      Balaton befagyott napjainak száma
+Az elmúlt N napon megmértük a Balatonon a jég vastagságát.
+Készíts programot, amely megadja, hogy a Balaton hány napon át volt befagyva!
+Bemenet
+A standard bemenet első sorában a mérések száma (0≤N≤100) van, alatta soronként egy-
+egy mérése adatai vannak (0≤K≤20).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, azon napok számát,
+amikor a Balaton be volt fagyva!
+Példa
+Bemenet                                        Kimenet
+3                                              2
+6
+5
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

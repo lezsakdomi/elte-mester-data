@@ -1,0 +1,49 @@
+Rekurzív kiszámítás                                                                        **
+
+
+                                     Kép kódolása
+Egy N N-es színes képet (N kettőhatvány) a következőképpen kódolunk:
+    Ha a kép egyszínű, akkor a kódja: 0 szín.
+    Ha nem egyszínű, akkor bontsuk négy egyforma részre:                       1     2
+         o Ezzel négy kódrészlet áll elő, a kód első jele a jobb oldali 4 szám-
+                                                                                3     4
+             jegy valamelyike, s ezután a 4 részre alkalmazzuk újra ugyanezt a
+             módszert.
+Készíts programot, amely egy adott képhez kiszámítja a képet megadó kódhalmazt!
+Bemenet
+A standard bemenet első sorában a kép mérete van (1N128, N kettőhatvány). A kö-
+vetkező N sor mindegyikében pontosan N jel van, egy-egy képsor képpontjainak a színe. A színt
+tetszőleges karakter jelöli.
+Kimenet
+A standard kimenet első sorába a kép méretét és a kódhalmaz M elemszámát (1MN*N)
+kell írni! A következő M sor mindegyikébe egy-egy négyzet alakú tartomány kódját kell írni kód
+szerint lexikografikusan növekvő sorrendben (lásd a példát)! A kód nem tartalmazhat semmilyen
+elválasztójelet!
+Példa
+Bemenet                                        Kimenet
+4                                              4 1
+aaaa                                           0a
+aaaa
+aaaa
+aaaa
+Bemenet                                        Kimenet
+4                                              4 10
+abbb                                           110a
+bbbb                                           120b
+bb77                                           130b
+bb89                                           140b
+                                               20b
+                                               30b
+                                               4107
+                                               4207
+                                               4308
+                                               4409
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a kép mérete N≤16
+
+
+
+                                           1. oldal
+

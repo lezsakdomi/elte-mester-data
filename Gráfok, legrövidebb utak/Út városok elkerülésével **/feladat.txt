@@ -1,0 +1,51 @@
+Gráfok, legrövidebb utak                                                                     **
+
+
+                              Út városok elkerülésével
+Az évfolyam kirándulását tervezi. Az A városból indulnak és a B város a cél. Az útvonal megter-
+vezéséhez van olyan menetrendjük, amely tartalmazza, hogy mely városok között van közvetlen
+buszjárat (mindkét irányban). Bizonyos városokat célszerű elkerülni, mert útépítések miatt hosz-
+szadalmas áthaladni rajtuk. Ismerik ezeket az elkerülendő városokat is.
+Írj programot, amely kiszámít egy olyan A-ból B-be vezető útvonalat, amely a lehető legkevesebb
+elkerülendő várost tartalmazza!
+Bemenet
+A standard bemenet első sorában a városok száma (1N10 000), a városok közötti
+közvetlen buszjáratok száma (1M200 000) és az elkerülendő városok száma (1KN) van. A
+második sor az indulási város A és a cél város B sorszámát tartalmazza (1ABN). A harmadik
+sor pontosan K számot tartalmaz, az elkerülendő városok sorszámát. A további M sor mindegyike
+egy közvetlen kétirányú buszjárattal összekötött két város sorszámát tartalmazza (1uvN).
+Tudjuk, hogy biztosan van legalább egy útvonal A-ból B-be.
+Kimenet
+A standard kimenet első sora első száma a legkevesebb elkerülendő várost tartalmazó A-
+ból B-be vezető útvonal városainak R száma (beleértve az indulási és érkezési várost is), a máso-
+dik pedig az útvonalba eső elkerülendő városok S száma legyen! A második sor pontosan R szá-
+mot tartalmazzon, az út során érintett városok sorszámát az utazás sorrendjében! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+8   12 4                                        4 1
+                                                                                     8
+3   8                                           3 4 2 8
+1   4 6 7                                                                   2                 7
+3   1                                                                                4
+3   4
+6   3                                                               1       3
+1   5                                                                                6
+2   1
+2   4
+                                                                                     5
+2   8
+7   2
+6   7
+6   5
+5   7
+7   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

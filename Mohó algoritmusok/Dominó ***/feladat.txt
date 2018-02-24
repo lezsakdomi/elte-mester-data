@@ -1,0 +1,39 @@
+Mohó algoritmusok                                                                             ***
+
+
+                                           Dominó
+Dominóval sokféle játékot lehet játszani. Mohó Marci kedvenc dominós játéka a következő. Elő-
+ször véletlenszerűen sorba rakja a felhasználható dominókat. A játék célja az, hogy a lehető leg-
+hosszabb illeszkedő sorozatot képezzen a felhasználható dominókból. A játékszabály szerint
+minden lépésben csak a felhasználható dominósor első (bal oldali) elemét veheti és vagy elveti
+(félrerakja, de később nem veheti), vagy a már képzett illeszkedő sorozat bal vagy jobb végéhez
+teszi, feltéve, hogy az adott oldalával illeszkedik (megegyezik a pöttyök száma a két dominó érint-
+kező oldalán). Az aktuális dominót mindkét oldalával próbálhatja illeszteni. A játék úgy kezdődik,
+hogy az első dominót ki kell raknia.
+Készíts programot, amely meghatározza a kirakható leghosszabb illeszkedő dominósor hosszát!
+Bemenet
+A standard bemenet első sorában a felhasználható dominók száma (1N100 000)
+van. A következő N sor mindegyikében egy dominó leírása, azaz két szám (0X,Y9) van egy
+szóközzel elválasztva. Bármely dominó (számpár) többször is szerepelhet az állományban, és az
+állomány nem feltétlenül tartalmaz minden lehetséges dominót.
+Kimenet
+A standard kimenet egyetlen számot kell írni, a kirakható leghosszabb illeszkedő dominó-
+sor hosszát!
+Példa
+Bemenet                                          Kimenet
+6                                                5
+1   2
+1   6
+2   3
+1   4
+2   3
+4   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

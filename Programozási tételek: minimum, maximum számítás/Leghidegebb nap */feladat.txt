@@ -1,0 +1,30 @@
+Programozási tételek – Maximumkiválasztás
+
+
+                                 Leghidegebb nap
+Az elmúlt N nap hőmérséklete alapján számold meg, mennyi volt a leghidegebb nap hőmérsékle-
+te!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma van (1N50), alatta soronként
+a napi mérések eredménye (-100Mi100).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, leghidegebb nap hőmér-
+sékletét!
+Példa
+Bemenet                                         Kimenet
+5                                               -82
+-82
+-13
+50
+31
+-47
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤10
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,35 @@
+Dinamikus programozás                                                                              *
+
+
+                               Fehér és fekete korongok
+Tekintsük a következő kétszemélyes játékot. Induláskor véletlenszerűen egy sorban leraknak N
+korongot (N páros). Minden korong vagy fehér, vagy fekete színű. A két játékos felváltva lép
+egyet-egyet, egy lépésben vagy a sor elején, vagy a sor végén lévő korongot veheti le a tábláról.
+Ha az első játékos fehér korongot vesz le, akkor az övé lesz, ha feketét, akkor a bankba rakja. Ha-
+sonlóképpen, ha a második játékos fekete korongot vesz le, akkor az övé lesz, egyébként a bank-
+nak adja. A játék akkor ér véget, ha a tábla üres lesz. A második játékos úgy lép, hogy az első játé-
+kos a lehető legkevesebb fehér korongot tudja megszerezni.
+Készíts programot, amely kiszámítja, hogy a játékot kezdő első játékos legjobb esetben hány ko-
+rongot gyűjthet, feltéve, hogy a második játékos arra törekszik, hogy az első játékos a lehető leg-
+kevesebb fehér korongot gyűjtse!
+Bemenet
+A standard bemenet első sorában a kezdeti játékállásban megadott korongok számát
+(2≤N≤1 000) tartalmazza (N páros szám). A második sor tartalmazza a kezdeti játékállást, N
+egész számot, amelyek mindegyike 0, vagy 1. A fekete szín jele 0, a fehéré 1.
+Kimenet
+A standard kimenet egyetlen sorába egy egész számot kell írni, az első játékos által a leg-
+jobb esetben begyűjthető korongok számát!
+Példa
+Bemenet                                           Kimenet
+8                                                 3
+1 0 1 1 0 0 1 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a N≤100
+
+
+
+
+                                              1. oldal
+

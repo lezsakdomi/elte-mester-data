@@ -1,0 +1,41 @@
+Sorozatok                                                                                     ***
+
+
+                        Legtöbb közös nyelvet beszélő pár
+Emberek nyelvtudását mérték fel egy kísérletben.
+Készíts programot, amely megad két embert, akik a legtöbb közös nyelvet beszélik!
+Bemenet
+A standard bemenet első sorában a felmérés elemszáma van (1≤M≤200 000). A követ-
+kező 2*M sorban egy-egy felmérés eredménye szerepel. Minden sorpár első sora egy ember nevét,
+a második pedig egy általa beszélt nyelvet tartalmaz. Mivel a felmérést többen készíthették, elkép-
+zelhető, hogy ugyanazt a választ többször is megkapták. A nevek és a nyelvek is csak az angol
+ábécé betűit tartalmazzák. A bemenetben legfeljebb 200 nyelv és legfeljebb 1000, de legalább 2
+ember fordul elő.
+Kimenet
+A standard kimenet első és második sorába két ember nevét kell kiírni, akik által beszélt
+közös nyelvek száma maximális! Több megoldás esetén bármelyik kiírható! Ha senki nem beszél
+közös nyelvet, akkor a kimenetre a NINCS szót kell írni!
+Példa
+Bemenet                                          Kimenet
+6                                                Katalin
+Anna                                             Erika
+angol
+Katalin
+mongol
+Katalin
+angol
+Erika
+mongol
+Erika
+angol
+Anna
+angol
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

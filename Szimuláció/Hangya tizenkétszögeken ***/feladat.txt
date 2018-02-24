@@ -1,0 +1,50 @@
+Szimuláció                                                                                 ***
+
+
+                             Hangya tizenkétszögeken
+Egy üvegrács 100*100 tizenkétszög alakú lapból áll, amely
+a síkot tizenkétszögekre és közöttük levő háromszögekre
+és négyzetekre osztja. Az egyik tizenkétszögből indulva egy
+hangya mászik az üveglapokon, adott irányban. Ha egy új
+lapra ér, akkor új haladási irányt választ magának, s végül
+biztosan egy újabb tizenkétszögben fog megállni.
+A hangya útját irányok sorozatával kódolhatjuk. Egy tizen-
+kétszögből északra (E), észak-északkeletre (EEK), kelet-
+északkeletre (KEK), keletre (K), kelet-délkeletre (KDK),
+dél-délkeletre (DDK), délre (D), dél-délnyugatra (DDN),
+nyugat-délnyugatra (NDN), nyugatra (N), nyugat-észak-
+nyugatra (NEN), illetve észak-északnyugatra (EEN) mehet. A négyzetekből csak négy irányban
+távozhat: északra (E), keletre (K), délre (D), illetve nyugatra (N). A háromszögekből három
+irányba léphet, állásuktól függően a tizenkétszögből kilépés irányai közül a megfelelő háromba.
+Készíts programot, amely az irányokból álló útra megadja, hogy a hangya
+   A. hány négyzeten megy keresztül;
+   B. a végén melyik nyolcszögben állt meg;
+   C. hány mezőt érint többször?
+Bemenet
+A standard bemenet első sorában a hangya kezdőpozíciója (1≤KX,KY≤100) van, a bal
+alsó sarok az (1,1) pozíció, a jobb felső pedig a (100,100). A bemenet végéig következő sorokban
+egy-egy irány kódja van: amerre a hangyának tovább kell másznia.
+Kimenet
+A standard kimenet három sort kell írni, a három kérdésre adott választ! Az első sorban az
+érintett négyzetek száma, a második sorban a hangya végső X, illetve Y koordinátája, a harmadik
+sorban pedig a többször érintett mezők száma legyen!!
+Példa
+Bemenet                                         Kimenet
+1 1                                             1
+E                                               2 2
+K                                               1
+EEK
+EEN
+KDK
+KEK
+DDN
+N
+D
+NDN
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+                                             1. oldal
+

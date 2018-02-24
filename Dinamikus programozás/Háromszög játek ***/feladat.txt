@@ -1,0 +1,40 @@
+Dinamikus programozás                                                                      ***
+
+
+                                   Háromszög játék
+Adott egy N oldalhosszúságú háromszög. A háromszög – az elemek elrendezését tekintve – ha-
+sonló a Pascal háromszögre, tehát minden elem fölött balra és jobbra (ha az nem a háromszög bal
+vagy jobb szélén helyezkedik el) található egy-egy elem.
+Adott a háromszög elemeivel együtt. Ez egy játék, amit két játékos játszik. A háromszög oldalá-
+nak hossza páros. Minden lépésben a soron következő játékos a háromszög három oldala közül
+választhat, és amelyik oldalt választja, azon oldal mentén levő elemek az ő birtokába kerülnek.
+Ezeket az elemeket eltávolítja a háromszögből, ezáltal egy (N-1) méretű háromszöget kapunk.
+Most a második játékos lép, hasonló szabály alapján. A játékosok annyi pontot szereznek, ameny-
+nyi a birtokukban lévő elemek összege.
+Készíts programot, amely kiszámítja, hogy maximálisan hány pontot tud összegyűjteni az első já-
+tékos, feltéve, hogy a második játékos is úgy játszik, hogy a legtöbb pontot szerezze meg!
+Bemenet
+A standard bemenet első sorában egyetlen egész számot tartalmaz, a háromszög oldal-
+hosszát (0<N≤100, N páros szám). A következő N sor tartalmazza a háromszög leírását. Az ál-
+lomány i-edik sora i-1 darab pozitív egész számot tartalmaz egy-egy szóközzel elválasztva, ami
+a háromszög i-1-edig sora lesz. Minden háromszögbeli szám értéke legfeljebb 100.
+Kimenet
+A standard kimenet első sorába egyetlen számot kell írni, ami az első játékos által megsze-
+rezhető maximális pontszám!
+Példa
+Bemenet                                        Kimenet
+4                                              15
+1
+2 3
+3 4 2
+4 2 3 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤20
+
+
+
+
+                                           1. oldal
+

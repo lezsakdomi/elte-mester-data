@@ -1,0 +1,45 @@
+Gráfok – elemi feladatok                                                                            *
+
+
+                                         Állatkert
+Egy állatkertben ismerjük a bejárható útvonalakat. A bejárat a 0 sorszámú pont. Az egyes
+állatokat az 1 és N közötti sorszámukkal azonosítjuk (1≤N≤100), az utakat pedig két olyan állat
+sorszámával, amelyek ketrece között vezetnek.
+Írj programot, amely az állatkerti utak ismeretében megadja, hogy hány olyan állat van, amelyik
+zsákutca végén található, valamint azt, hogy melyik állathoz vezet a legtöbb út (ha több is van,
+bármelyik megadható)!
+Bemenet
+A standard bemenetelső sorában N és M értéke (1N10000, 1M200000) található,
+egy-egy szóközzel elválasztva. A következő M sor mindegyike két egész számot tartalmaz: az utak
+kezdő és végpontját.
+Kimenet
+A standard kimenetelső és egyetlen sorába azsákutca végén található állatok számát, és a
+legtöbb helyről elérhető állat sorszámát.
+Példa
+Bemenet                                         Kimenet
+5   7                                           2 1
+0   1                                                                                   0
+
+1   4
+3   1                                                                           1               2
+
+3   5
+2   0
+                                                                            4               3
+2   3
+1   2
+                                                                                    5
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N, M≤100
+
+
+
+
+                                            1. oldal
+

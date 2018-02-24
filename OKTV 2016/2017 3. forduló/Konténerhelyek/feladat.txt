@@ -1,0 +1,30 @@
+Informatika OKTV 2017                Programozás kategória                                Döntő
+
+
+                                     Konténerhelyek
+N különböző mérető konténer van egy sorban. A konténerek méretei 1 és N közötti egész szá-
+mok. Egy lépésben adott helyről az ott lévőket egyben át lehet rakni valamelyik szomszédos hely-
+re, ha az üres, vagy az ott lévők legfelső konténere eggyel nagyobb, mint az átrakandók alsója.
+Írj programot, amely kiszámítja, hogy mennyi a lehető legtöbb hely, amit fel lehet szabadítani át-
+pakolással.
+Bemenet
+A standard bemenet első sorában a konténerek száma van (2≤N≤100 000). A második
+sorban N különböző egész szám van egy-egy szóközzel elválasztva, egy-egy konténer mérete
+(1≤Mi≤N).
+Kimenet
+A standard kimenet első sorába a felszabadítható helyek maximális számát kell írni!
+Példa
+bemenet                                          kimenet
+8                                                7
+1 8 2 4 3 6 7 5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                             1. oldal                     2017.02.25. 10:00-16:00
+

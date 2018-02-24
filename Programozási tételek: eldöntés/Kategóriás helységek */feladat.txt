@@ -1,0 +1,46 @@
+Programozási tételek – Eldöntés                                                                 *
+
+
+                                  Kategóriás helységek
+A „Kihívás napja” 1991 óta hazánk legnépszerűbb lakossági sporteseménye. Magyarországon ed-
+dig összesen 1591 település vett részt a vetélkedésben. Tavaly a versenyben induló falvak és vá-
+rosok lakói egyetlen nap alatt 48 millió percnyi testmozgást végeztek.
+Az eseményre nevezni kell a helységnévvel, a helységről tudjuk a lakósok számát, és hogy hányan
+vesznek részt az eseményen. A feldolgozásban szerepet kap a helységek alábbi kategorizálása: I.
+kategória – a 700 főnél kisebb lélekszámúak, II. kategória – 700-1499 fő, III. kategória – 1500-
+2999 fő, IV. kategória – 3000-7999 fő, V. kategória – 8000-24 999 fő, VI. kategória – 25 000-
+69 999 fő, VII. kategória – 70 000 fő felettiek.
+Készíts programot, amely kiszámítja, hogy van-e V., VI., illetve VII. kategóriás helység? A válasz
+3 darab vagy „VAN” vagy „NINCS” lehet!
+Bemenet
+A standard bemenet első sorában a nevezők száma (1≤N≤1000), a további N sorban az
+egyes nevező helységek adatai vannak soronként (egy sor egy adat). A nevezők adatai: elsőként a
+helységnév, majd a helység lélekszáma (1≤H≤200 000) és a részvevők száma (1≤R≤10 000).
+Kimenet
+A standard kimenet első sorába 3 darab vagy „VAN” vagy „NINCS” szót kell kiírni, asze-
+rint, hogy van-e V., VI., ill. VII. kategóriás helység!
+Példa
+Bemenet                                          Kimenet
+4                                                NINCS NINCS VAN
+Miskolc
+166823
+1234
+Eger
+5772
+234
+Zirc
+7454
+333
+Baja
+3939
+282
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

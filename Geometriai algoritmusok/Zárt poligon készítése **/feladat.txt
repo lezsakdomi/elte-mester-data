@@ -1,0 +1,34 @@
+Geometriai algoritmusok                                                                      **
+
+
+                               Zárt poligon készítése
+Adott a síkon N pont az (x,y) koordinátáival. Egy a pontokat összekötő, zárt, nem-metsző poli-
+gon megadható a pontok azonosítóinak egy felsorolásával: a felsorolásban egymást követő pon-
+tokat kötjük össze egyenes szakaszokkal, továbbá, az utolsót az elsővel is összekötjük.
+Írj programot, amely összeköti a pontpárokat egyenes szakaszokkal úgy, hogy olyan zárt poligont
+kapjunk, amelyben nincs metsző szakaszpár.
+Bemenet
+A standard bemenet első sorában a pontok száma (3<N100 000) van. A további N sor
+mindegyike egy-egy pont x és y koordinátáit tartalmazza (-30 000x,y30 000). A pontok
+nem esnek egy egyenesre.
+Kimenet
+A standard kimenetre a pontsorszámoknak egy olyan sorozatát kell kiírni, amely minden
+pontot tartalmazó zárt, nem-metsző poligont ír le!
+Példa
+Bemenet                                        Kimenet
+                                                                           2             5
+5                                              3 2 5 4 1
+2   0
+1   4
+0   2
+3   2                                                                                         4
+2   4                                                                  3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB                                                                 1
+
+
+
+
+                                            1. oldal
+

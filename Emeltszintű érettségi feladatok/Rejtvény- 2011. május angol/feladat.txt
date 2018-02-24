@@ -1,0 +1,123 @@
+Emelt szintű informatika érettségi                                                 2011. május 10.
+
+
+                                           Rejtvény
+Egy weboldalon érdekes rejtvényt tesznek közzé hétről hétre. A rejtvényekben egy 10×10-es te-
+rületre világítótornyokat helyeznek le (minden sorba és oszlopba legfeljebb 1-et). Ezeket a tornyo-
+kat számmal jelölik. Minden alkalommal az a feladat, hogy a területre el kell helyezni K darab hajót
+úgy, hogy minden toronyból (vízszintesen és függőlegesen összesen) annyi hajó legyen látható,
+ahányas szám a tornyot jelképező mezőben van!
+A hajókra vonatkozó szabályok a következők:
+    •   Minden hajó egy négyzet nagyságú.
+    •   A hajók közvetlenül nem érintkezhetnek egymással, még átlós irányban sem.
+    •   A hajók közvetlenül nem érinthetik a világítótornyokat, még átlós irányban sem.
+    •   A hajók egymást nem takarják ki. Azaz a világítótoronyból az egy vonalban lévő hajók is
+        látszanak.
+A rejtvényre érkező megoldások helyességét ellenőrzi kell.
+Írj programot, amely
+    1. kiszűri azon megoldásokat, melyek nem az e heti feladványra érkeztek,
+    2. megszámolja, hogy a beküldött megoldások közül hányban van kevesebb vagy több hajó
+       megadva, mint K,
+    3. megszámolja, hány olyan szabálytalan megoldás volt, amelyben a hajók száma megfelelő,
+       de egy vagy több hajó elhelyezése a szomszédsági kapcsolatokra vonatkozó szabályoknak
+       nem megfelelő,
+    4. meghatározza mely megoldások voltak helyesek a beküldöttek közül.
+Bemenet
+   A standard bemenet első sora tartalmazza a megoldások számát (1≤N≤20), és a hajók
+számát (1≤K≤12). A következő sorokban a feladvány található táblázatos formában. Ezután a
+megfejtések következnek. Minden megfejtés előtt a beküldő neve található külön sorban, majd a
+hozzá tartozó megfejtés táblázatos formában. Az egyes megfejtésekben a vizet 0-val, a világítótor-
+nyot egy 1 és 9 közötti számmal, a hajókat pedig 11-el jelölik. A megoldásban a karaktereket egy-
+egy szóközzel választják el.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Írd ki azon beküldők számát és nevét, akik megoldása nem az e heti feladványra
+érkezett, azaz a megoldásban a világítótornyok elhelyezkedése, vagy az őket jelképező szám eltérő,
+mint az eheti feladványban. A nevek kerüljenek egy sorba!
+2. részfeladat: Írd ki, hány olyan megoldás van az e heti feladványra, melyben a hajók száma több
+vagy kevesebb, mint K!
+3. részfeladat: Írd ki, hány olyan megoldás van az e heti feladványra, melyben a hajók száma meg-
+felelő, azonban egy vagy több hajó elhelyezése a szomszédsági kapcsolatokra vonatkozó szabályok-
+nak nem megfelelő!
+
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi                                             2011. május 10.
+
+4. részfeladat: Írd ki azon beküldők számát és nevét, akik helyesen oldották meg a rejtvényt. A
+nevek kerüljenek egy sorba!
+Példa
+Bemenet                                           Kimenet
+4 12                                              #
+0 0 0 6 0 0 0 0 0 0                               1
+0 0 0 0 0 0 0 0 0 0                               Anna
+0 0 0 0 0 0 0 0 0 0                               #
+0 0 0 0 0 0 0 0 0 0                               1
+0 0 0 0 0 0 0 3 0 0                               #
+0 0 0 0 0 0 0 0 0 0                               1
+0 0 0 0 0 0 0 0 0 0                               #
+3 0 0 0 0 0 0 0 0 0                               1
+0 0 0 0 0 0 0 0 0 0                               Ilona
+0 4 0 0 0 0 0 0 0 0
+Anna
+11 0 0 6 0 11 0 11 0 11
+0 0 0 0 0 0 0 0 0 0
+0 0 0 11 0 0 0 0 0 0
+0 11 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 2 0 0
+0 0 0 11 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+3 0 11 0 0 0 0 0 0 11
+0 0 0 0 0 0 0 0 0 0
+0 4 0 0 11 0 0 11 0 11
+Zsolt
+11 0 0 6 0 0 0 11 0 11
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 11 0 0 0 3 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+3 0 0 11 0 0 0 0 0 11
+0 0 0 0 0 0 0 0 0 0
+0 4 0 11 0 11 0 11 0 11
+Ilona
+11 0 0 6 0 11 0 11 0 11
+0 0 0 0 0 0 0 0 0 0
+0 0 0 11 0 0 0 0 0 0
+0 11 0 0 0 0 0 0 0 0
+0 0 0 11 0 0 0 3 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+3 0 11 0 0 0 0 0 0 11
+0 0 0 0 0 0 0 0 0 0
+0 4 0 0 11 0 0 11 0 11
+Bence
+11 0 0 6 0 11 0 11 0 11
+
+                                           2. oldal
+Emelt szintű informatika érettségi              2011. május 10.
+
+0   0 0 0 0 0 0 0 0 0
+0   0 0 11 0 0 0 0 0 0
+0   11 0 0 0 0 0 0 0 0
+0   0 0 11 0 0 0 3 0 0
+0   0 0 0 0 0 0 0 0 0
+0   0 0 0 0 0 0 0 0 0
+3   0 11 0 0 0 0 0 0 11
+0   0 0 0 0 0 0 0 0 0
+0   4 0 0 11 0 0 11 11 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     3. oldal
+

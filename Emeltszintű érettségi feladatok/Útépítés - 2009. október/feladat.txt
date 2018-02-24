@@ -1,0 +1,81 @@
+Emelt szintű érettségi feladat                                                   2009. október 26.
+
+
+                                                Útépítés
+Az Alsó és Felső város közötti útszakasz (1000 m) forgalmát figyeljük, ahol előzési tilalom van
+érvényben. Az áthaladó járművekről a belépési időpontot, az áthaladáshoz szükséges időt és az
+irányukat tudjuk (két irány lehetséges: 0, ha a jármű Alsóból indult, 1, ha Felsőből). Ha az útsza-
+kaszon egyik jármű utoléri a másikat, akkor az előzési tilalom miatt úgy tekintjük, hogy változatlan
+sorrendben, ugyanabban az időpillanatban hagyják el a szakasz, mint ahogy a lassabb jármű tenné.
+Írj programot, mely megadja az alábbiakat
+   1.   a K-adik jármű irányát;
+   2.   az 1 irányú utolsó két jármű belépési időpontjának különbségét (másodpercben);
+   3.   óránként és irányonként hány autó érte el a szakaszt;
+   4.   a 10 leggyorsabb járművet, sebesség szerint csökkenő sorrendben;
+   5.   a 0 irányú járművek mikor hagyták el az útszakaszt (előzés nincs az útszakaszon, egy autó
+        beér egy másikat, akkor az elhagyási ideje azonos lesz a beért autóéval).
+Bemenet
+A standard bemenet első sora az áthaladó járművek számát tartalmazza (10≤N≤2000). A
+második sor egy vizsgált jármű sorszámát adja meg (0≤K≤N). A következő N sorban egy-egy jár-
+mű belépési ideje időrendben (0≤Bó(i)≤23, 0≤Bp(i)≤59, 0≤Bmp(i)≤59), áthaladáshoz szüksé-
+ges ideje másodpercben (0≤Ti≤200) és iránya (0/1) található.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A K. jármű irányát kell írni!
+2. részfeladat: Az utolsó két 1 irányú jármű belépési időpontjának különbségét kell kiírni (má-
+sodpercben). Ha csak egy 1 irányú jármű van, akkor eredményként 0-t adjon vissza a program, ha
+nincs ilyen irányú jármű, akkor -1-et írjon ki!
+3. részfeladat: Az első és a második sorban az szerepeljen, hogy 0 és 1 irányból óránként hány
+autó érte el a szakaszt (mindkét sorban pontosan 24 szám, a 0, 1, 2... órában adott irányban érke-
+ző autók száma)!
+4. részfeladat: A 10 sorba a 10 leggyorsabb jármű adatait kell írni (óra, perc, másodperc, irány)
+(azonos sebességnél a bemenet sorrendjében)!
+5. részfeladat: Az X sorba a 0 irányú járművek elhagyási ideje kerüljön növekvő sorrendben!
+Példa
+Bemenet                            Kimenet
+14                                 #
+2                                  0
+7 21     1 60 0                    #
+7 21     58 69 0                   3600
+7 22     4 117 0                   #
+7 22     39 155 1                  0 0 0 0 0 0 0 3 4 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+7 23     11 99 1                   0 0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+
+                                                 1. oldal
+Emelt szintű érettségi feladat                     2009. október 26.
+
+8 2 10 40 0                      #
+8 21 1 43 0                      8 22 39 1
+8 21 58 69 0                     8 2 10 0
+8 22 4 100 0                     8 21 1 0
+8 22 39 37 1                     9 23 11 1
+9 23 11 51 1                     7 21 1 0
+10 2 10 86 0                     11 2 10 0
+10 23 11 95 1                    8 21 58 0
+11 2 10 63 0                     7 21 58 0
+                                 10 2 10 0
+                                 10 23 11 1
+                                 #
+                                 7 22 1
+                                 7 23 7
+                                 7 24 1
+                                 8 2 50
+                                 8 21 44
+                                 8 23 7
+                                 8 23 44
+                                 10 3 36
+                                 11 3 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                        2. oldal
+

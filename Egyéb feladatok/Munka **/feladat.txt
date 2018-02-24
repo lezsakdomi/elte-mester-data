@@ -1,0 +1,36 @@
+Egyéb feladatok                                                                                **
+
+
+                                            Munka
+Egy vállalkozónak N napra ajánlanak munkát, minden napra különböző fizetségért. Az N nap
+alatt legalább F forintot szeretne keresni, a lehető legkevesebb egymás utáni munkanappal.
+Készíts programot, amely megadja azt a legkevesebb, egymást folytonosan követő napot, amelye-
+ken a vállalkozó összesen legalább F forint jövedelmet szerezhet!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤10 000) és a megszerzendő jö-
+vedelem (1≤F≤100 000) van. A következő N sorban az egyes napokon megszerezhető jövede-
+lem található (0≤Jövi≤10 000)
+Kimenet
+A standard kimenet egyetlen sorába annak a két, egymáshoz legközelebbi napnak a sor-
+számát kell írni, amelyek között (őket magukat is beleértve) a jövedelmek összege legalább F! Ha
+nincs megoldás, akkor kettő darab -1-et kell kiírni! Több megoldás esetén azt kell kiírni, amelyik-
+nek a kezdőnapja a legkisebb!
+Példa
+bemenet                                          kimenet
+6 8                                              3 4
+5
+2
+4
+4
+6
+2
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MiB
+Pontozás: a tesztek 40%-ában N<1000
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,32 @@
+Programozási tételek – Maximumkiválasztás                                                      *
+
+
+                                Legrövidebb útfelújítás
+Egy N kilométer hosszú utat rossz állapota miatt szakaszonként újra aszfaltoznak. Az aszfaltozást
+M alkalommal végzik. Minden alkalomról tudjuk, hogy melyik kilométertől (K i) melyik kilométe-
+rig (Vi) terjedő szakaszt aszfaltoznak.
+Írj programot, amely megadja a legrövidebb felújítás hosszát!
+Bemenet
+A standard bemenet első sorában az út hossza (1≤N≤10 000) és a felújítások száma van
+(1≤M≤100), alatta soronként egy-egy felújítás adatai (0≤Ki<Vi≤N).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a legrövidebb felújítás
+hosszát!
+Példa
+Bemenet                                          Kimenet
+100 5                                            2
+0 10
+0 5
+75 95
+12 17
+13 14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

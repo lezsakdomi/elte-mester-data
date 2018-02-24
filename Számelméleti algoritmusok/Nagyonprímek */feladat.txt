@@ -1,0 +1,35 @@
+Számelméleti algoritmusok
+
+
+                                     Nagyonprímek
+„Nagyon” prímeknek nevezzük az olyan prímszámokat, amelyek bármely kezdőszelete is prím-
+szám. Például nagyon prím a 239, mert a 2, a 23 és a 239 is prím; nem nagyon prím a 241, ami
+ugyan prímszám, a 2 is prím, de a 24 nem az.
+Készíts programot, amely előállítja az összes N-jegyű nagyon prímet és ezek kezdőszeleteit!
+Bemenet
+A standard bemenet első sorában N található (1  N  8).
+Kimenet
+A standard kimenet egy-egy sorába egy nagyon prím kezdőszeletei, majd a nagyon prím
+kerüljön egy-egy szóközzel elválasztva, a sorok legyenek a nagyon prímek szerint növekvő sor-
+rendben!
+Példa
+Bemenet                                         Kimenet
+2                                               2   23
+                                                2   29
+                                                3   31
+                                                3   37
+                                                5   53
+                                                5   59
+                                                7   71
+                                                7   73
+                                                7   79
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤4.
+
+
+
+
+                                             1. oldal
+

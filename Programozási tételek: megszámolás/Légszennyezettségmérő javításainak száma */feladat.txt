@@ -1,0 +1,36 @@
+Programozási tételek – Megszámolás
+
+
+                    Légszennyezettségmérő javításainak száma
+A városban naponta mérik a levegő szennyezettségét (szénmonoxid-tartalmát a határérték száza-
+lékában). A mérőműszer időnként elromlik, és ilyenkor 0 százalékot mér, mindaddig, amíg meg
+nem javítják (javítás után újra 0%-nál többet mér).
+Írj programot, amely beolvassa napok számát és az egyes napokon mért szennyezettséget, majd
+megadja a mérés közbeni javítások számát!
+Bemenet
+A standard bemenet első sorában a napok száma (1N100) van, majd N sorban az egyes
+napokon mért szennyezettség (0SZ500).
+Kimenet
+A standard kimenet első sorába a mérés közbeni javítások számát kell írni!
+Példa
+Bemenet                                        Kimenet
+9                                              2
+20
+0
+0
+60
+110
+120
+80
+110
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

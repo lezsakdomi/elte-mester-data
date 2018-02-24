@@ -1,0 +1,30 @@
+Szimuláció                                                                                     *
+
+
+                                   Bábuk ütközése 1
+Egy játéktáblán a 0. időegységben L bábu van. Mindegyiket elindítjuk valamerre. Egy időegység
+alatt mindegyik a neki megfelelő távolságra mozdul el, a tábla széléről visszafordulnak. Lehetsé-
+ges, hogy előbb-utóbb két bábu összeütközik: ugyanarra a helyre lépnének vagy átlépnének egy-
+máson.
+Készíts programot, amely megadja, hogy K időegységen belül mikor ütközik legelőször két bábu!
+Bemenet
+A standard bemenet első sorában található a tábla szélessége (1N100), a bábuk száma
+(1L10) és az időtartam (1K100 000)! A következő L sorban van a bábuk kezdő helye
+(1SiN) és a mozgás iránya (Xi{J,B} – jobbra, balra).
+Kimenet
+A standard kimenet egyetlen sorból álljon, mely megadja az első ütközés időpontját! Ha K
+időegységen belül nem történik ütközés, akkor -1-et írjon ki!
+Példa
+Bemenet                                         Kimenet
+10 2 10                                         5
+3 B
+8 B                                                                                
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

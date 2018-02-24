@@ -1,0 +1,33 @@
+Programozási tételek – Kiválogatás
+
+
+                                     Drága fenyőfák
+A karácsonyi vásárban N fenyőfát árulnak.
+Írj programot, amely megadja a K forintnál drágább fenyőfákat!
+Bemenet
+A standard bemenet első sorában a fenyőfák száma (1N100) és egy ár (1K10 000)
+van. A következő N sor mindegyike egy-egy egész számot tartalmaz, az egyes fenyőfák árát
+(1F10 000).
+Kimenet
+A standard kimenet első száma azon fák darabszáma legyen, amelyek K forintnál drágáb-
+bak, ezt az ilyen fák sorszáma kövesse növekvő sorrendben, a számok közé egy-egy szóközt kell
+kiírni!
+Példa
+Bemenet                                         Kimenet
+6 5000                                          3 2 5 6
+2500
+5300
+1900
+2400
+8800
+5300
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

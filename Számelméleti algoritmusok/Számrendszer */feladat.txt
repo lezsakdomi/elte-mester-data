@@ -1,0 +1,29 @@
+Számelméleti algoritmusok
+
+
+                                     Számrendszer
+Ismerjük az A pozitív egész számot, valamint azt is tudjuk, hogy az A számjegyeinek összege va-
+lamilyen számrendszerben éppen S. A számrendszer alapszáma legfeljebb A+1.
+Készíts programot, amely kiszámítja, hogy az A szám számjegyeinek összege mely számrendsze-
+rekben lehet éppen S!
+Bemenet
+A standard bemenet első sorában A értéke található (1 A  32 767), második sorában
+pedig számjegyeinek S összege (1 S  1000).
+Kimenet
+A standard kimenet első és egyetlen sorába írd ki az összes lehetséges számrendszer alap-
+számát, ahol A számjegyei összege pontosan N, növekvő sorrendben! Ha nincs ilyen számrend-
+szer, akkor egyetlen 0-t írj ki!
+Példa
+Bemenet                                        Kimenet
+127                                            5 63 125
+3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az A≤200.
+
+
+
+
+                                           1. oldal
+

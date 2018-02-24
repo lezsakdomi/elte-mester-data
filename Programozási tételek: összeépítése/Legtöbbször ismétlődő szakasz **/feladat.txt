@@ -1,0 +1,29 @@
+Programozási tételek összeépítése                                                                **
+
+
+                          Legtöbbször ismétlődő szakasz
+A DNS mesterséges előállításáért folytatott kísérletek során sikerült előállítani egy óriásmolekula-
+szálat. Ismétlődésnek nevezünk egy legalább 2 karakterből álló sorozatot, ha a DNS-leírásban leg-
+alább kétszer előfordul (egymást nem átfedően).
+Írj programot, amely egy DNS-leírásról megadja a legtöbbször ismétlődő, legalább 3 karaktert tar-
+talmazó szakaszt és ismétlődései számát!
+Bemenet
+A standard bemenet első sorában egy DNS-leírás van. Ennek leírása legfeljebb 255 karak-
+terből áll (C, G, A és T betű lehet benne).
+Kimenet
+A standard kimenet első sorába a legtöbbször ismétlődő szakaszt (legalább 3 karaktert tar-
+talmazó), illetve annak előfordulási számát kell kiírni! Több megoldás esetén a legelsőt kell kiírni,
+ha nincs ilyen, akkor -1-et kel kiírni!
+Példa
+Bemenet                                           Kimenet
+CGACCGACCGAT                                      CGA 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

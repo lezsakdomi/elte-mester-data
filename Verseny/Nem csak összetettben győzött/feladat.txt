@@ -1,0 +1,37 @@
+Tanulmányi verseny                                                                         ***
+
+
+                         Nem csak összetettben győzött
+Egy iskolában egyéni és összetett tanulmányi versenyt tartottak. A versenyekben összesen N ta-
+nuló vett részt. A versenyek száma M. Ismerjük versenyenként az induló tanulókat és elért pont-
+számukat. Az összetett versenyben csak azon tanulók eredményét értékelik, akik az összes egyéni
+versenyen indultak és elérték a versenyenként adott minimális pontszámot.
+Készíts programot, amely eldönti, hogy az összetett verseny győztesei győztek-e valamely ver-
+senyszámban!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤100) és a versenyek száma
+(1≤M≤100) van. A második sorban az M versenyen elvárt minimális pontszámok találhatók
+(0≤Mini≤50). Az ezt követő M sorban az egyes versenyek leírása következik: a versenyen indu-
+lók száma (1≤Indi≤N), majd Indi számpár, az egyes tanulók sorszáma (1≤Si,j≤N) és elért
+pontszáma (0≤Pi,j≤100).
+Kimenet
+A standard kimenet első sorába az összetett versenyben győztes tanulók T számát kell ki-
+írni! A következő T sorba, sorszám szerint növekvő sorrendben az összetett versenyben győztes
+tanulók sorszámát és az IGEN vagy a NEM szót kell írni, attól függően, hogy az adott sorszámú
+tanuló győztes volt-e valamely versenyszámban!
+Példa
+Bemenet                                        Kimenet
+5 3                                            2
+10 10 10                                       1 NEM
+3 1 20 2 30 4 20                               4 IGEN
+3 3 30 1 20 4 10
+5 1 40 2 20 3 30 4 50 5 50
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

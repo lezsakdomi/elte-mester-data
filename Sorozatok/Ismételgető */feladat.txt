@@ -1,0 +1,26 @@
+Sorozatok                                                                                      *
+
+
+                                       Ismételgető
+Készíts programot, amely megadja egy szöveg mindazon legalább 2 karakterből álló részeit, ame-
+lyek egynél többször fordulnak elő benne!
+Bemenet
+A standard bemenet első sorában egy legfeljebb 300 karakterből álló szöveg található,
+amely csak az angol ábécé kisbetűit tartalmazza.
+Kimenet
+A standard kimenet első sorába ábécé sorrendben kerüljenek azok a részek egy-egy szó-
+közzel elválasztva, amelyek legalább kétszer előfordulnak a szövegben! Minden részletet csak egy-
+szer adj meg!
+Példa
+Bemenet                                         Kimenet
+mississippi                                     is iss issi si ss ssi
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a karakterek száma ≤100.
+
+
+
+
+                                            1. oldal
+

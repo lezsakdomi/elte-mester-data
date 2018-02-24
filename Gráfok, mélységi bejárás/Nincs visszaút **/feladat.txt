@@ -1,0 +1,43 @@
+Gráfok – mélységi bejárás                                                                    **
+
+
+                                     Nincs visszaút
+Adott egy G=(V, E) irányított gráf és egy pV pontja.
+Készíts programot az összes olyan qV pontok halmazának kiszámítására, amelyekre teljesül,
+hogy p-ből van út q-ba, de nincs út q-ból p-be!
+Bemenet
+A standard bemenet első sorában a gráf pontjainak száma (1N100 000), a gráf éleinek
+száma (1M1 000 000) és a kiindulási pont sorszáma (1PN) van. A további M sor mind-
+egyike u v számpárt tartalmaz, a gráf egy-egy élét (1u≠vN).
+Kimenet
+A standard kimenet első sorába a gráf azon q pontjainak K számát kell írni, amelyekbe
+van út p-ből, de nincs q-ból p-be visszavezető út! A második sor pontosan K számot tartalmaz-
+zon, a feladat megoldását adó halmaz elemeit egy-egy szóközzel elválasztva (tetszőleges sorrend-
+ben)!
+Példa
+Bemenet                                         Kimenet
+9   14 4                                        4                             2
+1   2                                           6 7 9 8
+2   3                                                                1
+2   1
+1   6                                                                         3        4
+3   4
+4   5
+                                                                     6            5
+5   3
+5   8
+6   7
+7   6                                                                7            8          9
+7   8
+8   9
+9   8
+3   6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

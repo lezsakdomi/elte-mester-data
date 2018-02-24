@@ -1,0 +1,30 @@
+Rekurzív adatszerkezetek                                                                    ***
+
+
+                            Fa magassága és szélessége
+Fák szövegesen is megadhatók az alábbi szabályok szerint:
+   1.) Minden karakter, ami az angol ábécé eleme, faleírás.
+   2.) Ha x karakter valamint f1 ,…, fk faleírás, akkor az x(f1,…,fk) szöveg is faleírás.
+   3.) Csak az 1. és 2. szabályok véges sokszori alkalmazásával kapható faleírás.
+Fa magasságán a gyökértől levélig vezető leghosszabb úton levő pontok számát értjük. Fa széles-
+sége pedig az azonos szinten lévő pontok számának maximuma.
+Készíts programot, amely kiszámítja a fa magasságát és szélességét!
+Bemenet
+A standard bemenet első sorában egy szabályos faleírás szerepel, ami legfeljebb 50 000
+karaktert tartalmaz.
+Kimenet
+A standard kimenet első sorába a fa magasságát, a másodikba pedig a szélességét kell írni!
+Példa
+Bemenet                                          Kimenet
+z(a,b(c,d),x(y,u,v))                             3
+                                                 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+
+
+
+                                             1. oldal
+

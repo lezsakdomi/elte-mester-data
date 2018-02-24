@@ -1,0 +1,35 @@
+Gráfok                                                                                             *
+
+
+                                    Nem kimérhető tej
+Egy gazdának három különböző űrtartalmú tejeskannája van, amelyekbe teli állapotban A, B és C
+liter tej fér. Van továbbá egy negyedik kannája is, ennek az űrtartalmát nem ismeri, csak azt tudja,
+hogy ez a legnagyobb kannája. Kezdetben a három ismert űrtartalmú kanna közül a legnagyobb
+tele van, a többi pedig üres. A gazda egyik kannából másik kannába áttöltéseket végezve azt sze-
+retné elérni, hogy a negyedik kannában adott mennyiségű tej legyen. Ezért csak olyan áttöltést vé-
+gezhet, hogy mindig tudnia kell, hogy az egyes kannákban mennyi tej van. Tehát ha az X kanná-
+ból az Y kannába tölt át, akkor vagy mindet át kell töltenie az Y-ba, ha belefér, vagy annyit kell át-
+töltenie, hogy az Y kanna tele legyen.
+Írj programot, amely kiszámítja, hogy öntögetéssel milyen mennyiségű tejet nem tud a gazda ki-
+mérni a negyedik kannába!
+Bemenet
+A standard bemenet egyetlen sorában a három ismert méretű kanna A, B és C űrtartalma
+van (100≥A>B>C≥1).
+Kimenet
+A standard kimenet első sorába azon 1 és A közötti mennyiségek K számát kell írni, ame-
+lyet nem lehet kimérni a kannákkal! A második sor K mennyiségeket tartalmazza, amelyeket nem
+lehet kimérni a kannákkal! Ha minden lehetséges érték előállítható, akkor az egyetlen 0 számot
+kell kiírni!
+Példa
+Bemenet                                            Kimenet
+13 11 5                                            2
+                                                   4 9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

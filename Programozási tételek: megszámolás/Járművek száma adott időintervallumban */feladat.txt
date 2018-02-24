@@ -1,0 +1,42 @@
+Programozási tételek – Megszámolás                                                               *
+
+
+                    Járművek száma adott időintervallumban
+Egy városban forgalomszámlálást végeztek M helyen. Minden áthaladó járműről feljegyezték, a
+megfigyelés helyét és az időpont óra és perc értékét. A megfigyelési adatokat összegyűjtötték és az
+időpont szerint nem csökkenő sorrendbe rendezték.
+Írjon programot, amely megadja, hogy hány járműt figyeltek meg X óra 0 perc és Y óra 59 perc
+közötti időben!
+Bemenet
+A standard bemenet első sorában a megfigyelési helyek száma (2≤M≤100), az adatok
+száma (2≤N≤1000), és két idő (1≤X≤Y≤23) van. A következő sorok mindegyike egy megfigye-
+lési adatot tartalmaz: az első szám a megfigyelési hely sorszáma (1≤S≤M), a második a megfigye-
+lési időpont óra (1≤Ó≤23), a harmadik pedig a perc része (1≤P≤59).
+Kimenet
+A standard kimenet első sorába egyetlen számot kell írni, azon járművek számát, ahányat
+X óra 0 perc és Y óra 59 perc közötti időben megfigyeltek!
+Példa
+Bemenet                                          Kimenet
+5   12 15 17                                     5
+2   0 12
+1   1 12
+2   2 22
+3   3 11
+5   7 52
+2   10 12
+2   15 12
+2   15 13
+2   16 10
+1   16 10
+3   17 12
+5   20 32
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

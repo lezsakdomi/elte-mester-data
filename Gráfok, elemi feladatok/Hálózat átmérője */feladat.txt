@@ -1,0 +1,38 @@
+Gráfok – szélességi bejárás                                                                    *
+
+
+                                   Hálózat átmérője
+Egy számítógépes hálózat kiépítése a következőképpen történik: Kezdetben egy gépből áll a
+hálózat. Egy új gép bekapcsolásakor azt pontosan 1 db, már a hálózatban levő géppel kötik össze,
+ami kétirányú kapcsolatot biztosít a két összekötött gép között. Két gép távolságán a legkevesebb
+közvetlen összekötést tartalmazó összekötést értjük. A hálózat átmérőjének nevezzük a
+hálózatban levő gépek közül a két legtávolabbi távolságát.
+Írj programot, amely kiszámítja, hogy N db gép esetén mekkora lesz a hálózat átmérője!
+Bemenet
+A standard bemenetelső sorában N (1N300000) értéke található. Az állomány I.
+sorában annak a számítógépnek a J (J<I) sorszáma van, amelyhez az I. számítógépet kötik a
+hálózatban.
+Kimenet
+A standard kimenetelső sorába egyetlen számot kell írni, a hálózat átmérőjét a teljes
+kiépülés után.
+Példa
+Bemenet                                                 Kimenet
+7                                                                   4
+1
+2
+2                                                                      3
+4
+4                                        1                                      5             7
+6
+                                                            2
+
+Korlátok                                                           4                     6
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

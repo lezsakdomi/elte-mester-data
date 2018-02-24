@@ -1,0 +1,47 @@
+Programozási tételek – Megszámolás                                                         *
+
+
+                    Két évszám közötti események száma
+A mai napon számos nevezetes esemény történt az emberiség története során. Számosakat ezek
+közül feljegyeztek: megadva az évet és az eseményt. Az adatok év szerint (szigorúan) rendezve
+következnek. Nem tudjuk azonban, hogy növekvően vagy csökkenően!
+Írj programot, amely megadja, hogy két adott év között hány esemény volt!
+Bemenet
+A standard bemenet első sorában az események száma (2≤N≤100), alatta az egyes ese-
+mények adatai soronként. Elsőként az év (1≤É≤2013), másodikként az esemény kategóriája
+(1≤Ki≤KSZ), végül az esemény maga (nem üres). Az események leírását követő sorban egy év-
+intervallum két határoló éve (0<Év1<Év2<2013) van. Végül a kategóriák felsorolása követke-
+zik, amely első sora a kategóriák száma (1≤KSZ≤10), majd ennyi sorban egy-egy szó.
+Kimenet
+A standard kimenet első sorába a két adott év közötti események számát kell kiírni (a ha-
+tároló évek is számítanak)!
+Példa
+Bemenet                                         Kimenet
+4                                               2
+4
+8621
+Jutland
+1205
+2
+II. Andras
+1453
+3
+Konstantinapoly
+1522
+3
+Elesik
+1000 1500
+alapitas
+koronazas
+haboru
+szerencsetlenseg
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

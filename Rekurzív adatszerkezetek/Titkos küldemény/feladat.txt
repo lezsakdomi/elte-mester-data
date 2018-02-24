@@ -1,0 +1,46 @@
+Rekurzív adatszerkezetek                                                                      ***
+
+
+                                   Titkos küldemény
+Egy titkos társaság úgy épül fel, hogy mindenki csak a közvetlen főnökét, valamint közvetlen be-
+osztottjait ismeri. A fő főnök az 1-es sorszámú. A társaság egy A tagja küldeményt küldött egy
+másik tagnak, de csak azt tudjuk, hogy a küldemény az ismeretségek szerint pontosan K különbö-
+ző tagon keresztül érkezett meg és a küldemény mindenkinél legfeljebb egyszer járt. Küldeményt
+küldeni mindenki csak a közvetlen főnökén vagy közvetlen beosztottján keresztül tud.
+Készíts programot, amely megadja, hogy hányan lehettek a küldemény címzettjei, valamint azt az
+L értéket, amire maximális számú címzett lehet, ha a küldemény L-szer megy közvetlen főnöknek,
+K+1-L-szer pedig közvetlen beosztottnak!
+Bemenet
+A standard bemenet első sorában a tagok száma (1≤N≤100 000), a főnökök száma
+(1≤M<N), az A tag sorszáma (1≤A≤N) és a K érték (0≤K≤N-2) van. A további M sorban, soron-
+ként egy-egy főnök sorszáma (1≤i≤N), az i sorszámú főnök közvetlen beosztottjai száma,
+(1≤Bi≤10) majd a Bi közvetlen beosztottja sorszámai vannak (2≤Si,j≤N).
+Kimenet
+A standard kimenet első sorába a küldemény lehetséges címzettjei számát kell írni! A má-
+sodik sorba az az L érték kerüljön, amire maximális számú címzett lehet, ha a küldemény L-szer
+megy közvetlen főnöknek K+1-L-szer pedig közvetlen beosztottnak (0≤L≤K+1)! Több megol-
+dás esetén a legnagyobb ilyen L értéket kell kiírni!
+Példa
+Bemenet                                           Kimenet
+11 5 8 2                                          4
+                                                                             1
+1 2 2 3                                           2
+3 3 4 5 6
+4 2 7 8                                                          2                   3
+8 2 9 10
+7 1 11
+                                                                         4           5        6
+Magyarázat:
+A címzettek: 1,5,6,11.
+2 főnöknek küldés esetén az 5,6 lehet a cím-                         7           8
+zett.
+                                                            11               9           10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

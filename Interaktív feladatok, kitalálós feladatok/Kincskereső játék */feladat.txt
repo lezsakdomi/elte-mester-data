@@ -1,0 +1,59 @@
+Olimpiai válogatóverseny 2015                                             2015.04.17. 12:30-15:30
+
+                                           Kincskereső játék
+Ádám és Éva a kincskereső játékot játssza. A játék úgy kezdődik, hogy egy nagy lapra rajzolnak N darab kis kört,
+ezek lesznek a kincs lehetséges helyei. Véletlenszerűen kiválasztott hely-párokat összekötnek úgy, hogy végül
+bármely két hely között pontosan egy összekötő útvonal legyen. Kezdődhet a játék. Éva kiválaszt egy helyet és
+oda helyezi a kincset, de ezt nem mondja meg Ádámnak. Ádámnak ki kell találni, hogy hol van a kincs. Rámutat-
+va egy helyre, azt kérdezi, hogy „Itt van a kincs?”. Éva válasza igen vagy nem lehet. Ha nem a válasz, akkor meg
+kell mondania, hogy az Ádám által megjelölt hely melyik közvetlen szomszédja felé haladva találja meg a kincs
+helyét. Ádám akkor győz, ha legfeljebb log2 N kérdéssel kitalálja, hogy hol van a kincs.
+Olyan programot kell írni, amelyik Ádám játékát valósítja meg! A játék megvalósításához a kincs könyvtári mo-
+dult kell használni!
+A programod nem írhat, és nem olvashat semmilyen fájlt, beleértve a standard inputot és outputot is!
+Könyvtári műveletek
+A játék megvalósításához a kincs könyvtári modul négy művelete használható:
+Helyekszama, egyszer kell hívni a program elején, a játéktáblán lévő helyek számát adja (3≤N≤10000). A
+helyeket az 1,…,N számokkal azonosítjuk.
+Szomszed, a helyek közötti közvetlen kapcsolatokat adja, Szomszed(x) annak a közvetlen szomszéd hely-
+nek a sorszámát adja, amelyik az első hely az 1 sorszámú hely felé vezető úton. Ha x=1, akkor a visszaadott érték
+0.
+Ittvan, Ádám kérdését valósítja meg. Az argumentum annak a helynek a sorszáma legyen, amelyikre Ádám
+rákérdez: Ittvan(x). A visszaadott érték 0, ha az x helyen van a kincs, egyébként annak a helynek a sorszá-
+ma, amelyik az x helytől a kincs helyéhez vezető úton az első hely.
+Kincshely, a program végén kell hívni, argumentum a megtalált kincshely sorszámát kell megadni! A hívás
+hatására befejeződik a program.
+Gyakorlás
+Letölthető egy minta kincs modul C++ és Pascal forrás programja. A kincs a standard bemenetről egy
+egész számot olvas be, a helyek N számát. A válaszokat egy véletlenszerű elrendezés alapján adja.
+Pascal program esetén:
+uses kincs;
+A műveletek Pascal deklarációja
+function Helyekszama:integer;
+function Szomszed(x: integer) : integer;
+function Ittvan(x:integer):integer;
+procedure Kincshely(x:integer);
+A műveletek C/C++ deklarációja
+#include ”kincs.h”
+int Helyekszama(void);
+int Szomszed(int x);
+int Ittvan(int x);
+void Kincshely(int x);
+
+
+
+
+                                                    1. oldal
+Olimpiai válogatóverseny 2015                                         2015.04.17. 12:30-15:30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MB
+Pontozás: Ha a Kincshely eljárással közölt hely a kincs helye, és legfeljebb log2N Ittvan műveletet hajtott
+végre a program, akkor teljes pont jár.
+A tesztek 25%-ában N≤100.
+
+
+
+
+                                                  2. oldal
+

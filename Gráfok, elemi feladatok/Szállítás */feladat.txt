@@ -1,0 +1,58 @@
+Gráfok – elemi feladatok                                                                             *
+
+
+                                            Szállítás
+Egy vállalat termeléssel, raktározással és árusítással is foglalkozik. Összesen N telephelye van, s
+egyiken sem foglalkozik kétféle tevékenységgel. Ismerjük, hogy mely telephelyről mely telephelyre
+szállít árut. Szállítási útvonalai lehetnek: termelő helyről raktározó vagy árusító helyre; raktározó
+helyről másik raktározó vagy pedig árusító helyre.
+   Készíts programot, amely megadja
+A. azokat a telephelyeket, amelyek termeléssel foglalkoznak;
+B. azokat a telephelyeket, amelyek árusítással foglalkoznak;
+C. azokat az árusító telephelyeket, ahova csak termelő telephelyről küldenek árut;
+D. azokat a raktározó telephelyeket, akiknek nincs kapcsolatuk közvetlenül sem termelővel, sem
+árusítóval;
+E. azokat a raktározó telephelyeket, amelyeknek sem összegyűjtő, sem szétosztó funkciójuk nincs!
+Bemenet
+A standard bemenetelsősorában a telephelyek N száma (1N3000) és a szállítási útvonalak M
+száma (1M40000) van, egy szóközzel elválasztva. A következő M sor mindegyikében két
+telephely (A és B) sorszáma (1ABN) van, egy szóközzel elválasztva, ami azt jelenti, hogy az A
+telephelyről visznek árut a B telephelyre.
+Kimenet
+A standard kimenetre5 sort kell írni. Az első sorba az A, a másodikba a B, a harmadikba a C, a
+negyedikbe a D, az ötödikbe pedig az E részfeladat megoldása kerüljön! (Ha valamelyik
+részfeladat megoldása nincs kész, a hozzá tartozó üres sort akkor is ki kell írni az eredménybe.)
+Mindegyik sorba a megfelelő tulajdonságú telephelyek számát kell írni, majd pedig a megfelelő
+telephelyek sorszámát növekvő sorrendben, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                           Kimenet
+12 14                                             3   1 5 9
+1 2                                               3   4 8 12
+2 3                                               1   12
+3 4                                               1   7
+5 6                                               4   2 3 7 10
+5 12
+6 7
+6 11
+7 11                                                       1         5        6         7
+9 6
+9 10
+9 12
+10 11                                                      2        12        9
+11 4
+11 8
+Korlátok                                                   3         4       10                  8
+Időlimit: 0.1 mp.
+                                                                                        11
+
+                                              1. oldal
+Gráfok – elemi feladatok                          *
+
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                       2. oldal
+

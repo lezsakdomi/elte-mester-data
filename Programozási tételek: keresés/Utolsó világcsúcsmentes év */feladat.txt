@@ -1,0 +1,36 @@
+Programozási tételek – keresés                                                                  *
+
+
+                            Utolsó világcsúcsmentes év
+Ismerjük az elmúlt N magasugró világcsúcs időpontját és magasságát. Világcsúcsot akkor ér el egy
+versenyző, ha az előző világcsúccsal egyforma vagy annál nagyobb magasságot ugrott át. Ezen be-
+lül világcsúcs beállítás az, ha a versenyző az előző világcsúccsal megegyező magasságot ugrott át.
+Írj programot, amely megadja a legújabb világcsúcs előtti utolsó évet, amikor nem született világ-
+csúcs!
+Bemenet
+A standard bemenet első sorában a világcsúcsok száma van (2≤N≤100). A következő N
+sorban egy-egy világcsúcs elérésének éve (1900≤Ti≤2015) és magassága (150≤Magi≤250)
+található, magasság szerinti sorrendben.
+Kimenet
+A standard kimenet első sorába az utolsó évet kell írni, amelyben a legutolsó világcsúcs
+előtt nem született világcsúcs!
+Példa
+Bemenet                                         Kimenet
+8                                               2009
+1960    208
+1960    210
+1973    210
+1992    230
+1993    232
+1994    232
+2010    238
+2011    239
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,36 @@
+Sorozatok                                                                                     **
+
+
+                                          Fogadás
+Byteland ország követsége fogadást rendezett. A fogadásra N ország nagykövetét hívták meg. A
+vendégek különböző időpontokban érkeztek, és minden vendég azonos ideig volt jelen a fogadá-
+son. A házigazda feljegyezte, hogy ki kivel találkozott a fogadás során. Az előbb érkezett A ven-
+dég találkozott a később érkezett B vendéggel, ha A később távozott, mint B érkezett. Azt is tud-
+juk, hogy az első vendég érkezésétől az utolsó távozásáig minden időpontban jelen volt legalább
+egy vendég.
+Készíts programot, amely kiszámítja a vendégek egy lehetséges érkezési sorrendjét!
+Bemenet
+A standard bemenet első sorában a vendégek száma található (3  N  200), második so-
+rába pedig a találkozások száma került (1  M  10 000). A következő M sor mindegyike egy ta-
+lálkozást ír le, X Y számpár azt jelenti, hogy az X és Y vendég találkozott a fogadás során
+(1  X , Y  N). A felsoroltakon kívül biztosan nem történt más találkozás.
+Kimenet
+A standard kimenet első és egyetlen sorába a vendégek sorszámai kerüljenek (1, …, N)
+egy lehetséges érkezési sorrendben, a sorszámokat egy-egy szóközzel válaszd el!
+Példa
+Bemenet                                         Kimenet
+4                                               1 2 4 3
+3
+1 2                                                    (3 4 2 1 is jó megoldás)
+2 4
+3 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤100.
+
+
+
+
+                                            1. oldal
+

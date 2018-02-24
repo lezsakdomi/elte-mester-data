@@ -1,0 +1,64 @@
+Interaktív feladatok – Kétszemélyes játékok                                                   ***
+
+
+                                            Mankala
+A Mancala családba tartozó játékok, amelyeket kavicsokkal és üregekkel
+játszottak, a legősibbek közül valók. A kétszemélyes mini mancala
+változatában négy üreg van. Az 1. és a 2. üreg az egyik, a 3. és 4. üreg a
+másik játékoshoz tartozik. A játék kezdetén az üregekbe véletlenszerűen
+beraknak legfeljebb 8 kavicsot. A játékosok felváltva lépnek, az 1-es
+játékos kezd. A soron következő játékos kiválaszt a hozzá tartozó
+üregek közül egyet, majd kiveszi az abban lévő összes kavicsot. Ezután a
+kivett kavicsokból egyet eldob, a többit pedig szétosztja az üregek
+között az alábbiak szerint. Az órajárással ellentétes irányban haladva
+minden érintett üregbe rak egy kavicsot, de kihagyja azt az üreget, amelyből kivette a kavicsokat.
+Például, ha az 1. üreget választja, amiben 6 kavics van, akkor sorrendben a 2., 3., 4., 2. és 3.
+üregbe rak egy-egy kavicsot.
+A játék akkor ér véget, ha a soron következő játékos nem tud lépni, mert mindkét hozzá tartozó
+üreg üres. Az a játékos nyer, aki utoljára tudott lépni.
+Írj programot, amely a játékot kezdő 1. játékos nyerő stratégiáját valósítja meg!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az game modul valósít
+meg.
+     Pit: egy i egész szám az argumentuma, a függvényhívás eredménye az i-edik üregben
+      lévő kavicsok száma. Ezzel kell lekérdezni a kezdeti játékállást!
+     MyMove(i): ezzel a művelettel közli az 1. játékos az aktuális lépését. Egyetlen
+      argumentuma a lépésben választott üreg sorszáma, ami 1 vagy 2 lehet. A művelet hatására
+      a 2. játékos azonnal lép (ha tud).
+     YourMove: argumentum nélküli művelet, a 2. játékos utolsó lépését adja (ami 3 vagy 4
+      lehet).
+Ha az aktuális játékos nem tud lépni, akkor a program automatikusan befejeződik.
+A műveletek Pascal deklarációja:
+   uses game;
+   function Pit(i: integer): integer;
+   procedure MyMove(i: integer);
+   function YourMove: integer;
+A műveletek C/C++ deklarációja:
+   #include ”game.h”
+   int Pit(int i);
+   void MyMove(int i);
+   int YourMove(void);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy
+minta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen próbáláskor a standard bemenet első sorában a kezdeti játékállást kell megadni,
+tehát négy nemnegatív egész számot, amelyek összege legfeljebb 8!
+
+
+                                              1. oldal
+Interaktív feladatok – Kétszemélyes játékok                                                ***
+
+
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+Pontozás: A programodat csak olyan bemenetekre tesztelik, amelyre a játékot kezdő 1. játékosnak
+van nyerő stratégiája, tehát nyerhet, bárhogyan is lép az ellenfele.
+
+
+
+
+                                              2. oldal
+

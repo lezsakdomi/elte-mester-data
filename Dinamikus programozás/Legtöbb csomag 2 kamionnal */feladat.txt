@@ -1,0 +1,36 @@
+Dinamikus programozás                                                                          *
+
+
+                          Legtöbb csomag 2 kamionnal
+Egy csomagküldő szolgálat központjában a beérkezés sorrendjében várakoznak a csomagok to-
+vábbításra. Minden csomagnak ismert a súlya, ezek a beérkezés sorrendjében: s1,...,sN. A cégnek
+két kamionja van, mindegyik azonos K kapacitású, tehát mindegyikre legfeljebb annyi csomag pa-
+kolható, hogy a csomagok összsúlya nem lehet K-nál nagyobb. Egyik csomag súlya sem nagyobb
+K-nál. A lehető legtöbb csomagot akarják továbbítani a két kamionnal.
+Készíts programot, amely kiszámítja úgy a legnagyobb M számot, hogy a sorban első M csomag
+mindegyike felpakolható a két kamion valamelyikére, és meg is ad egy lehetséges pakolást!
+Bemenet
+A standard bemenet első sora a kamion kapacitását (1≤K≤5000) és a csomagok számát
+(1≤N≤1000) tartalmazza. A második sor az N csomag súlyát tartalmazza (1≤si≤K).
+Kimenet
+A standard kimenet első sora azt a legnagyobb M (1≤M≤N) indexet tartalmazza, amelyre
+teljesül, hogy az első M csomag felpakolható a két kamionra, betartva a K súlykorlátot! A második
+és harmadik sor azoknak a csomagoknak a sorszámait tartalmazza, amelyeket az első, illetve a
+második kamionra pakolnak egy optimális pakolás során! Több megoldás esetén bármelyik meg-
+adható.
+Példa
+Bemenet                                         Kimenet
+100 7                                           4
+3 12 45 64 56 23 42                             1 2 3
+                                                4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és K≤400. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                            1. oldal
+

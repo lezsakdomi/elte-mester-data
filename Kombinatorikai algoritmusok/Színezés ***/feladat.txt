@@ -1,0 +1,32 @@
+Kombinatorikai algoritmusok                                                                         ***
+
+
+                                              Színezés
+Egy N emeletes fehér épület bizonyos emeleteit a szépség kedvéért pirosra szeretnénk festeni.
+Csak olyan festést tartunk elfogadhatónak, amelynél szomszédos szinteket nem festünk pirosra. A
+színezéseket N+1 elemű 0-1 számsorozattal kódoljuk: 1-es jelöli a piros, 0-s pedig a fehér színű
+emeletet. Az első szám jelenti a földszint, az utolsó pedig az N. emelet színét.
+Készíts programot, amely megadja, hogy az épület hányféleképpen színezhető ki, valamint a
+lexikografikus (ábécé szerinti) K-adik színezést!
+Bemenet
+A standard bemenet egyetlen sorában az emeletek száma (0N40) és K szám
+(1K100 000 000) van.
+Kimenet
+A standard kimenet első sorába a színezések lehetséges számát kell írni! A második sorba
+a K. színezést kell kiírni: az emeletek növekvő sorrendjében N+1 darab egész számot egy-egy
+szóközzel elválasztva, ahol 0 jelöli a fehér, 1 pedig a pirosra festett szintet!
+Példa
+Bemenet                                              Kimenet
+3 4                                                  8
+                                                     0 1 0 0
+Magyarázat a példához
+Sorrendben a jó festések: 0 0 0 0, 0 0 0 1, 0 0 1 0, 0 1 0 0, 0 1 0 1, 1 0 0 0, 1 0 0 1, 1 0 1 0.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                 1. oldal
+

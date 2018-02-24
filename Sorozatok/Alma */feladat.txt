@@ -1,0 +1,40 @@
+Sorozatok
+
+
+                                             Alma
+Egy almatermelő több fajta almát is termel, ezek mennyiségét egy leltárban tartja számon. Egyik
+nap kereskedő érkezik hozzá, elég pontos igényekkel: tudja, hogy mely almafajtákból mennyit
+akar vásárolni. Ha kevesebb van az egyik almafajtából, azt felvásárolja, de semmiből sem vesz
+többet, mint a tervezett.
+Készíts programot, amely kiszámítja, hogy mi marad a termelőnél, és mivel távozik a kereskedő!
+Bemenet
+A standard bemenet első sorában a termelő által termelt almafajták száma található
+(1  N  1000), majd a következő N sorban a fajtát azonosító szám és a fajtából termelt mennyi-
+ség található. A következő sorban a kereskedő által vásárolni kívánt almafajták száma található
+(1  M  1000), az ezt követő M sorban pedig a fajtaazonosító és a fajtából felvásárolandó meny-
+nyiség szerepel. A fajtaazonosítók és a mennyiségek 1 és 10000 közé eső egész számok.
+Kimenet
+A standard kimenet első sorába az a szám kerüljön, ahány fajta almából marad a termelő-
+nél, valamint ezen fajták azonosítója és a belőlük megmaradt mennyiségek egy-egy szóközzel el-
+választva, az azonosítók szerinti növekvő sorrendben! A második sorban a kereskedő által meg-
+vásárolt almafajták száma legyen, ezt kövessék a fajtaazonosítók és a felvásárolt mennyiségek egy-
+egy szóközzel elválasztva, szintén az azonosítók szerinti növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+3                                               2 10 100 18 500
+10   100                                        1 22 30
+22   30
+18   500
+2
+22   50
+40   100
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N,M≤50.
+
+
+
+
+                                             1. oldal
+

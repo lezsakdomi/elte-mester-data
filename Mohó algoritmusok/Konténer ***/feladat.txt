@@ -1,0 +1,33 @@
+Mohó algoritmusok                                                                               ***
+
+
+                                           Konténer
+Egy raktárban egyetlen sorban egymás mellett van N darab kocka alakú konténer. Mindegyik kon-
+téner egy konténerhelyet foglal el a méretétől függetlenül. A raktár teljesen tele van és a raktáros-
+nak helyet kell biztosítani újonnan érkező konténerek számára. Helyet csak úgy tud biztosítani, ha
+konténereket egymásra rak. A raktár biztonsági előírása szerint konténer csak nálánál nagyobb
+méretű konténerre rakható rá, de ennek betartásával akárhány konténer rakható egymásra. A rak-
+táros dolgát nehezíti, hogy az átpakolást olyan robottal végezheti, amely bármely konténert fel tud
+venni, de csak balról jobbra haladva tud szállítani.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány konténerhely szabadítható fel
+konténerek egymásra rakásával!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1≤N≤10 000) és a legnagyobb
+konténer méret (1≤K≤1000) van. A második sor pontosan N egész számot tartalmaz egy-egy
+szóközzel elválasztva, a konténerek méretét balról jobbra haladó sorrendben (1≤Mi≤K).
+Kimenet
+A standard kimenet első és egyetlen sorába a felszabadítható konténerhelyek maximálás
+számát kell írni!
+Példa
+Bemenet                                           Kimenet
+10 20                                             6
+12 2 13 12 20 6 10 4 5 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

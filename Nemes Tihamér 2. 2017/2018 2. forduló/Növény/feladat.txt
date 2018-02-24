@@ -1,0 +1,39 @@
+Nemes Tihamér Nemzetközi Programozási Verseny, 2. korcsoport                        2. forduló
+
+
+                                         Növény
+Egy különleges növényfajt fedeztek fel az egyenlítői dzsungelben. A növény N évig él, élete M.
+évétől kezdve K évben egy-egy magot hoz, amiből a következő évben újabb növény kel ki (azaz
+pl. az első évben ültetett növény az M., M+1. .. M+K-1. évben hoz magot, amit újra elültetünk –
+belőlük az M+1., …M+K. évben kel ki növény, az N. évben még él, az N+1.-ben pedig elpusz-
+tul). Beszereztünk L egyéves növényt és elültettük egy arborétum üvegházába (ők az M. évben
+hoznak először magot, M=1 esetén már az ültetés évében).
+Készíts programot, amely megadja, hogy az X. évben hány új növény kel ki és összesen hány nö-
+vényünk lesz! Mivel mindkét szám nagyon nagy is lehet, ezért mindkettőnek a 20180113-mal vett
+osztási maradékát kell kiírni!
+Bemenet
+A standard bemenet első sorában a növények életévei száma (1≤N≤100), az első magot
+hozó évének sorszáma (1≤M<N), a magot hozó évei K száma (1≤K≤N,M+K-1≤N) és az első év-
+ben elültetett növények száma (1≤L≤1000) van. A második sorban az X értéke szerepel
+(1≤X≤100 000).
+Kimenet
+A standard kimenet első sorába az X. évben kikelő növények számának 20180113-mal
+vett osztási maradékát, a másodikba pedig az X évben élő növények számának 20180113-mal vett
+osztási maradékát kell írni!
+Példa
+Bemenet                                         Kimenet
+5 1 3 1                                         13
+6                                               27
+                    Év              1.     2.         3.   4.     5.      6.
+                    Új növény       1      1          2    4       7      13
+                    Összes növény   1      2          4    8      15      27
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

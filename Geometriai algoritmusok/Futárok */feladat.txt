@@ -1,0 +1,37 @@
+Geometriai algoritmusok                                                                         *
+
+
+                                           Futárok
+A római birodalomban lovas futárok vitték a postát egyik helyről a másikra. A Róma-Aquincum
+útvonalon a kezdő- és a végállomást is beleértve N fogadó épült, ahol a futárok megállhattak,
+egyenletes távolságra egymástól. Az útvonalon M futár teljesít szolgálatot, egy napon belül egy
+irányban megtéve adott távolságot, s másnap ugyanannyit visszafelé.
+Készíts programot, amely megadja azokat a futárpárokat, akik szolgálat közben valahol találkoz-
+hatnak egymással.
+Bemenet
+A standard bemenet első sorában az állomások (1N108) és a futárok (1M2000)
+száma van. A következő M sorban az egyes futárok szolgálati adatai vannak: a kezdő- és a végál-
+lomásuk sorszáma, valamint a szolgálatuk kezdő- és végideje ezredmásodpercben (0 és 108 közti
+egész számok).
+Kimenet
+A standard kimenet első sorába azon futárpárok K számát kell írni, akik találkozhatnak
+szolgálatteljesítés közben, a következő K sorba pedig az egyes párok sorszámait! (Ha az egyik vég-
+állomása azonos a másik kezdőállomásával, s az egyik érkezési ideje megegyezik a másik indulási
+idejével, akkor szolgálati időben még éppen találkozhatnak.)
+Példa
+Bemenet                                                 Kimenet
+100 5                                                   3
+1 10 5 14                                               2 3
+5 20 7 14                                               2 4
+22 18 13 14                                             4 5
+6 9 12 18
+9 10 18 19
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

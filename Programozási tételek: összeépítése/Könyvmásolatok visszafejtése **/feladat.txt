@@ -1,0 +1,38 @@
+Programozási tételek összeépítése                                                              **
+
+
+                           Könyvmásolatok visszafejtése
+A könyvnyomtatás kora előtt a könyveket emberek másolták, s másolás során néha hibát vétettek.
+Emiatt a különböző időben, különböző könyvpéldányokról készült másolatok több helyen kü-
+lönbözhetnek egymástól. Ismerjük egy szöveg több változatát, keletkezési idejük sorrendjében.
+Írj programot, amely megadja, hogy melyik melyikből keletkezhetett! Másoláskor legfeljebb K
+olyan hiba keletkezhetett, hogy a másolt szöveg valahány betűjét megváltoztatták. Feltehető, hogy
+egy megváltozott betű tovább már nem változott. Azt tartjuk egy másolt szöveg eredetijének,
+amelytől a fenti feltételek mellett a legkevesebb betűben tér el. (Ha több ilyen is van, akkor bár-
+melyikből keletkezhetett.)
+Bemenet
+A standard bemenet első sorában a szövegek száma (1≤N≤10) és az egy másoláskor ke-
+letkező hibák maximális száma (1≤K≤10) van, egyetlen szóközzel elválasztva. A második sorban
+található az eredeti szöveg (legfeljebb 1000 karakteres), majd az ezt követő N-1 sorban a másola-
+tok keletkezési sorrendben.
+Kimenet
+A standard kimenet első sorába pontosan N-1 számot kell írni, egy-egy szóközzel elvá-
+lasztva! Az i-edik szám annak a szövegnek a sorszáma legyen, amelyből az i+1-edik szöveg kelet-
+kezett!
+Példa
+Bemenet                                          Kimenet
+4 3                                              1 1 2
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNABCRSTUVWXYZ
+ABCDEFGHIJKLMNOBCDSTUVWXYZ
+ABCDEFGHIJKLMNABCDSTUVWTYZ
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

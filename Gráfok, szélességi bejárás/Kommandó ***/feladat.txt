@@ -1,0 +1,49 @@
+Gráfok – Szélességi bejárás                                                                   ***
+
+
+                                        Kommandó
+Egy térképrészleten minden ország be van festve valamilyen színnel. Egy kommandónak el kell
+jutnia az egyik országból egy másikba. A kommandósoknak, hogy ne ismerjék fel őket, minden
+országban olyan színű trikót kell hordaniuk, amilyen az adott ország színe a térképen.
+Határozd meg azt a legrövidebb útvonalat, amelynek a bejárásához a lehető legkevesebbszer kell
+trikót cserélni!
+Bemenet
+A standard bemenet első sorában az országok száma van (2N20 000). A következő
+N sor az országok szomszédjait írja le: az i-edik sorban az első szám az i-edik ország szomszédjai-
+nak Ki száma, az azt követő Ki darab szám pedig az i-edik ország szomszédjainak országkódja. A
+következő N sorban az egyes országok színkódja található (ugyancsak egész számok, az országkó-
+dok növekvő sorrendjében). Az utolsó sorban 2 egész szám azonosítja a kiindulási országot és a
+célországot.
+Kimenet
+A standard kimenet első sorába a trikócserék minimális számát, azok közül pedig a legrö-
+videbb útvonalban szereplő országok számát kell megadni! A második sorba egy optimális útvo-
+nalon fekvő országok országkódját kell kiírni! Ha több azonos értékű megoldás van, elég egyet
+megadni! Ha nem lehet eljutni, akkor az első és egyetlen sorba -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6                                                2 3
+3   2   3   4                                    1 3 5
+                                                                           4       1
+3   1   3   6                                                                           2
+5   1   2   4 5 6
+2   1   3
+2   3   6
+                                                                               3
+3   2   3   5
+1                                                                                        6
+3
+                                                                                   5
+2
+2
+3
+1
+1   5
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,31 @@
+Programozási tételek – Maximumkiválasztás
+
+
+                                    Legidősebb dolgozó
+Egy vállalat tárolja dolgozói életkorát és fizetését.
+Írj programot, amely megadja a legidősebb dolgozó fizetését!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1N100), a következő N sor-
+ban egy-egy ember kora (1≤K≤100) és a fizetése van (1≤F≤2 000 000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a legidősebb dolgozó fize-
+tését (ha több megoldás van, akkor közülük a legkisebb sorszámú fizetését)!
+Példa
+Bemenet                                             Kimenet
+6                                                   80000
+42   150000
+33   100000
+25   600000
+66   80000
+25   200000
+42   800000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                                1. oldal
+

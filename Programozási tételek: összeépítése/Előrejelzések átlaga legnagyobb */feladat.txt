@@ -1,0 +1,35 @@
+Programozási tételek összeépítése                                                              *
+
+
+                              Előrejelzések átlaga legnagyobb
+Ismerjük N településre az M napos időjárás előrejelzést, ezek alapján keressük a legmelegebb te-
+lepülést.
+Készíts programot, amely megadja a legmelegebb települést, amelyre az előrejelzések átlaga a leg-
+nagyobb!
+Bemenet
+A standard bemenet első a települések száma (1N1000), a napok száma (1M1000)
+és a hőmérséklet korlát van (20K50), egy-egy szóközzel elválasztva. A következő N sor mind-
+egyikében M egész szám van, egy-egy szóközzel elválasztva: az i-edik település j-edik napra várt
+hőmérséklete (20H50).
+Kimenet
+A standard kimenet első sorába azon település sorszámát kell kiírni, ahol az előrejelzések
+átlaga a legnagyobb!
+Példa
+Bemenet                                         Kimenet
+5 6 30                                          4
+20 22 22    24      26   21
+31 31 31    29      31   20
+20 30 35    30      30   21
+32 29 34    32      29   30
+33 20 20    33      33   30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet
+hossza≤20
+
+
+
+
+                                            1. oldal
+

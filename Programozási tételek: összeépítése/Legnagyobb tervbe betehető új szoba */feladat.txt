@@ -1,0 +1,40 @@
+Programozási tételek összeépítése                                                               *
+
+
+                     Legnagyobb tervbe betehető új szoba
+Egy ház tervrajzát egységnyi négyzetrácsos lapon készítik. Minden szobának téglalap alakúnak kell
+lenni. Eddig N szobát rajzoltak fel a tervrajzon. Minden szobát a bal felső és jobb alsó sarkával
+adnak meg. A négyzetrács egy mezőjét x-és y-koordinátájával adják meg, a bal felső mező koordi-
+nátái (0,0). Az x-koordináták a vízszintesen, az y-koordináták függőlegesen nőnek. A tervező ki
+akarja számítani, hogy hány új téglalap alakú szobát lehet még betenni a tervbe, ha bármely két új
+szoba bármely két oldalának nem lehet közös része, továbbá mind a négy oldala szomszédos vagy
+meglevő szobával, vagy a ház oldalával. Eddig betervezett szobák olyanok, hogy minden szaba-
+don maradt terület téglalap alakú.
+Készíts programot, amely megadja, mekkora a legnagyobb lehetséges új szoba területe, amekkorát
+még be lehet tenni a tervbe!
+Bemenet
+A standard bemenet első sorában a tervben meglevő szobák száma (1≤N≤10 000), vala-
+mint a ház bal felső (FX,FY) és jobb alsó (AX,AY) sarkának koordinátái vannak (0≤FX<
+AX≤10000, 0≤FY<AY≤10000), egy-egy szóközzel elválasztva. A következő N sor mindegyi-
+kében egy-egy szoba bal felső (BFXi,BFYi) és jobb alsó (JAXi,JAYi) sarkának koordinátái
+vannak (FX≤BFXi≤JAXi≤AX,FY≤BFYi≤JAYi≤AY) egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába a legnagyobb új szoba területe kerüljön!
+Példa
+Bemenet                                          Kimenet
+5   1   1 10 10                                  8
+1   1   5 5
+6   1   10 2
+6   3   9 10
+1   6   3 10
+4   6   4 10
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

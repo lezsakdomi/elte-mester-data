@@ -1,0 +1,32 @@
+Dinamikus programozás                                                                      ***
+
+
+                             Ádám és Éva ismét játszik
+Ádám és Éva kitalálós játékot játszik. Éva gondol egy 1 és N közötti egész számot, amelyet
+Ádámnak ki kell találnia. Ádám olyan kérdést tehet fel, hogy "A gondolt szám kisebb-e, mint x?".
+Éva válasza "igen", vagy "nem" lehet. Hogy a játék érdekesebb legyen, megállapodtak abban,
+hogy Ádám legfeljebb H-szor tehet fel olyan kérdést, amelyre a válasz "nem", tehát ha már H kér-
+désére "nem" választ kapott, akkor tovább nem kérdezhet.
+Írj programot, amely N és K ismeretében kiszámítja azt a legkisebb H értéket, amelyre teljesül,
+hogy Ádám bármely 1 és N közötti gondolt számot ki tud találni legfeljebb K kérdéssel úgy, hogy
+legfeljebb H-szor kap "nem" választ!
+Bemenet
+A standard bemenet egyetlen sorában az N értéke (1N2 000 000 000) és a K értéke
+(1K100) van.
+Kimenet
+A standard kimenet egyetlen sorába azt a minimális H értéket kell írni, amelyre teljesül,
+hogy Ádám bármely 1 és N közötti gondolt számot ki tud találni legfeljebb K kérdéssel úgy, hogy
+legfeljebb H-szor kap "nem" választ! Ha az adott bemenetre nincs megoldás, akkor a -1 számot
+kell kiírni!
+Példa
+Bemenet                                        Kimenet
+9 4                                            2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

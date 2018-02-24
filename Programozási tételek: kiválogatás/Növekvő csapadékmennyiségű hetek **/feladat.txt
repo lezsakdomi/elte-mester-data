@@ -1,0 +1,32 @@
+Programozási tételek – kiválogatás                                                         **
+
+
+                     Növekvő csapadékmennyiségű hetek
+Az elmúlt N hétben minden nap megmértük a lehullott csapadék mennyiségét, milliméterben.
+Írj programot, amely megadja azon heteket, amikor a csapadékmennyiség a héten belül folyama-
+tosan nőtt!
+Bemenet
+A standard bemenet első sora a hetek számát tartalmazza (2≤N≤1000). A következő N
+sorban egy-egy hét 7 csapadékmennyisége található (0≤Ci,j≤1000).
+Kimenet
+A standard kimenet első sorába azon hetek M számát, majd a második sorába az M hét
+sorszámát kell kiírni, növekvő sorrendben, amelyeken belül a csapadékmennyiség folyamatosan
+nőtt!
+Példa
+Bemenet                                       Kimenet
+6                                             2
+5   10 15   20 25 30 35                       1 4
+0   2 0 0   0 0 0
+0   0 0 1   0 3 0
+0   1 2 3   4 5 6
+5   1 0 0   2 1 0
+0   0 0 0   0 0 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          1. oldal
+

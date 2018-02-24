@@ -1,0 +1,44 @@
+Visszalépéses keresés                                                                            **
+
+
+                                            Ritmus
+Egy vers ritmikai elemzéséhez fel kell ismerni a ritmusmintákat (daktilus, spondeus, jambus, ...). A
+ritmusminták hosszú és rövid szótagok speciális sorrendjéből állnak. Az ismert ritmusmintákat
+szövegesen tároljuk, a hosszú szótagokat kötőjel (–), a rövideket pedig pont (.) karakterrel jelölve.
+A ritmusmintákat a sorszámuk azonosítja.
+Készíts programot, amely meghatározza egy vers soraihoz tartozó ritmusmintákat, ismerve, hogy
+a sorokban hogyan követik egymást a hosszú és rövid szótagok!
+Bemenet
+A standard bemenet első sorában az ismert ritmusminták száma (1N100) van. A kö-
+vetkező N sor egy-egy ritmusmintát ír le. Egy ilyen leírás legalább 1, legfeljebb 10 karakter hosz-
+szú, mindegyik karaktere . vagy -, elválasztójelek nélkül. A ritmusminták között lehetnek azono-
+sak. Az N+2. sor egyetlen egész számot tartalmaz, a verssorok számát (1M100). Az ezt köve-
+tő M sor a verssorokat írja le. Egy ilyen leírás legalább 1, legfeljebb 200 karakter hosszú, mind-
+egyik karaktere . vagy -, elválasztójelek nélkül.
+Kimenet
+A standard kimenetre M sort kell írni! Az i. sorba az i. verssor felismert ritmusmintái-
+nak Ki darabszámát, majd egy szóköz után Ki egész számot, az i. sor felismert ritmusmintáinak
+sorszámait, egy-egy szóközzel elválasztva! Több megoldás esetén bármelyik megadható. Ha nincs
+megoldás, az adott sorba az egyetlen -1 számot kell írni!
+Példa
+Bemenet                                           Kimenet
+4                                                 3 1 1 2
+-..                                               3 1 4 3               {vagy 3 3 2 3}
+..-                                               4 3 3 4 4
+-.                                                -1
+.-
+4
+-..-....-
+-...--.
+-.-..-.-
+.--
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a minták és a verssorok száma is N,M≤10
+
+
+
+
+                                              1. oldal
+

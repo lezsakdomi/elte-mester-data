@@ -1,0 +1,41 @@
+Gráfok – elemi feladatok                                                                       *
+
+
+                                         Csoportok
+Egy N fős osztályban szociometriai felmérést végeztek. Minden tanuló megadta egy (-1000,1000)-
+es skálán, hogy az osztályban kit mennyire szeret. A pozitív számok rokonszenvet, a negatívak
+pedig ellenszenvet jelentenek. Csoportok úgy alakulnak, hogy mindenki a neki legszimpatikusabb
+(>0 szimpátia értékű) tanulóval van egy csoportban, ha van neki egyáltalán szimpatikus tanuló az
+osztályban.
+Készíts programot, amely megadja az osztály baráti csoportjait!
+Bemenet
+A standard bemenet első sorában a tanulók száma (2N1000) van. A következő N sor mind-
+egyikében N szimpátia érték van, az i-edik sor j-edik száma azt jelenti, hogy az i-edik tanulónak
+mennyire szimpatikus a j-edik tanuló. Saját magát mindenki biztosan 0 szimpátiára értékeli. Egy
+soron belül egyforma számok nem lehetnek.
+Kimenet
+A standard kimenet első sorába a csoportok K számát kell írni! A következő K sor mindegyikébe
+egy-egy csoport tanulói sorszáma kerüljön! Mindegyik sorban annyi tanuló sorszáma legyen egy-
+egy szóközzel elválasztva, ahányan abba a csoportba tartoznak! A csoportok tagjai tetszőleges
+sorrendben kiírhatók!
+Példa
+Bemenet                                         Kimenet
+6                                               3
+0 2 3 4 5 6                                     1 5 6
+-1 0 -3 -4 -5 -6                                2
+-1 -2 0 10 1 2                                  3 4
+1 2 10 0 4 5
+6 5 4 3 0 1
+6 5 4 3 2 0                                                       5          1             6
+
+Korlátok
+Időlimit: 0.1 mp.                                                 2          3             4
+
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

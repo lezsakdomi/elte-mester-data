@@ -1,0 +1,49 @@
+Interaktív feladatok – Kétszemélyes játékok                                                       ***
+
+
+                                Két játékos egy bábuval
+Tekintsük azt a kétszemélyes játékot, amelyet egy NxN-es négyzethálós táblán lehet játszani! A
+tábla mezőin természetes számok vannak elhelyezve. A két játékos egyetlen bábut mozgat felvált-
+va lépkedve. Egy lépésben egyet lehet lépni a bábuval szomszédos mezőre vagy lefelé, vagy jobb-
+ra. A játék akkor ér véget, amikor a második játékos a tábla jobb alsó mezőjére lép. A bábu a játék
+kezdetén a tábla bal felső sarkában van. Az első játékos megszerzi mindazon pontokat, amelyek
+olyan mezőn vannak, amire lépett. A játék célja az, hogy az első játékos, aki a játékot kezdi, a lehe-
+tő legtöbb összpontot szerezze meg. A második játékos arra törekszik, hogy lépéseivel akadályoz-
+za az első játékost a legjobb eredmény elérésében.
+Írj programot, amely az első játékos játékát valósítja meg!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket a gep modul valósít meg.
+     Kezd: Pontosan egyszer kell hívni a program elején, megadja a tábla méretét (1<N1000).
+     Mezo(i,j): A tábla i. sorának j. oszlopában lévő számot (0Mezo(i,j)1000) ad-
+      ja meg.
+     Lep(L): A játékos saját lépése, ahol L értéke 'L' vagy 'J', attól függően, hogy lefelé vagy
+      jobbra lép.
+     GepLep: A második játékos válaszlépését adja, értéke szintén 'L' vagy 'J' lehet.
+A műveletek Pascal deklarációja:
+   uses gep;
+   function Kezd: longint;
+   function Mezo(i:longint; j:longint): longint;
+   procedure Lep(L: char);
+   function GepLep: char;
+A műveletek C/C++ deklarációja:
+   #include ”gep.h”
+   int Kezd(void);
+   int Mezo(int i, int j);
+   void Lep(char L);
+   char GepLep(void);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy min-
+ta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen kipróbáláskor a standard bemenet első sorába a tábla méretét és a táblán levő
+pozitív egészek számát (M) kell írni! A következő M sorban legyen a kezdeti táblaállás, megadva
+azokat a mezőket, amelyek tartalma nem 0! Ezek három számot tartalmaznak: i j k, ami azt je-
+lenti, hogy az i. sor j. oszlopában a táblán a k szám van.
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+                                               1. oldal
+

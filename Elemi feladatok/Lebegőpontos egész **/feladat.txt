@@ -1,0 +1,32 @@
+Elemi feladatok                                                                              **
+
+
+                                 Lebegőpontos egész
+Nagy egész számokat lebegőpontos alakban (a*10b) írhatunk fel, ahol a és b is egész szám. Az
+a szám első és utolsó számjegye sem lehet 0. A b értéke nagyon nagy is lehet, azaz lehet, hogy
+a*10b nem számítható ki. A 0 ebben a formában 0*100 alakban írandó.
+Készíts programot, amely kiszámítja két ilyen formában megadott pozitív egész szám összegét,
+különbségét és szorzatát!
+Bemenet
+A standard bemenet első sorában az első, második sorában a második lebegőpontos egész
+szám a és b értéke van megadva, egymástól szóközzel elválasztva (0≤a≤299, 0≤b≤10000).
+A beolvasott lebegőpontos egész számok b kitevője legfeljebb 2-vel tér el egymástól.
+Kimenet
+A standard kimenet első sorába a beolvasott két lebegőpontos egész szám összegét, a má-
+sodikba a különbségét, a harmadikba a szorzatát kell írni! Mindegyik sorba két egész számot kell
+írni szóközzel elválasztva, a megfelelő művelet eredményeképpen létrejött lebegőpontos egész
+szám a*10b alakjának a és b értékét!
+Példa
+Bemenet                                        Kimenet
+12 1000                                        125 999
+5 999                                          115 999
+                                               6 2000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

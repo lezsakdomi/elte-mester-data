@@ -1,0 +1,33 @@
+Programozási tételek összeépítése                                                           ***
+
+
+                      Maximális születésszám 1 éven belül
+Ismerjük M ember születési időpontját.
+Készíts programot, amely megadja azt az 1 éves időtartamot, ami alatt a lehető legtöbb született
+közülük!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤M≤100 000). A következő
+M sorban az egyes emberek születési időpontjai szerepelnek (1900≤Évi≤2016, 1≤Hói≤12,
+1≤Napi≤az adott hónap napszáma).
+Kimenet
+A standard kimenet első sorába azon E,H,N dátumot kell kiírni, amelyre teljesül, hogy az
+[(E,H,N),(E+1,H,N)) balról zárt, jobbról nyílt intervallumban a születések száma maximális! Több
+megoldás esetén a legkisebb ilyen dátumot kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               1975 11 30
+1963    11   11
+1975    12   1
+1976    11   19
+1975    11   30
+1964    11   11
+1963    11   11
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

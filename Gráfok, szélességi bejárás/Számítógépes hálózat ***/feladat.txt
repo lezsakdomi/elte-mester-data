@@ -1,0 +1,70 @@
+Gráfok – Szélességi bejárás                                                                  ***
+
+
+                                 Számítógépes hálózat
+A ProtoNet számítógépes hálózat úgy alakult ki, hogy eredetileg különálló hálózatokat összekap-
+csoltak. Mindegyik hálózat saját, egyedi protokollt használt. Az egyes részhálózatok az összekap-
+csolás után is a régi módon, azaz saját protokollt használva működnek. A hálózati hardvert azon-
+ban felszerelték olyan szoftverrel, amely képes bármelyik két protokoll közötti váltásra. A teljes
+hálózat most úgy működik, hogy ha egy X csomópontból közvetlenül egy Y csomópontba kell
+csomagot küldeni, és X valamint Y nem azonos részhálózathoz tartozik, akkor előbb protokoll-
+váltást kell végrehajtani. A hálózati működést optimalizálni szeretnék. Ez azt jelenti, hogy olyan
+szoftvert kell készíteni, amely meghatározza, hogy ha egy adott A csomópontból egy másik B
+csomópontba kell küldeni a csomagot, akkor milyen útvonalat kell választani ahhoz, hogy a pro-
+tokollváltások száma minimális legyen.
+Készíts programot, amely
+   A. Kiszámítja, hogy az A csomópontból a B csomópontba küldendő csomag esetén legkeve-
+      sebb hány protokollváltás szükséges!
+   B. Megad egy olyan A-ból B-be vezető útvonalat, amelyen a protokollváltás a lehető legkeve-
+      sebb!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a csomópontok N számát
+(0<N30000), és a részhálózatok M számát (0<MN). A következő M sorban csomópontok
+sorszámai szerepelnek, minden sort a 0 szám zárja. Az egy sorban felsorolt csomópontok alkot-
+nak egy részhálózatot. Minden csomópont pontosan egy részhálózathoz tartozik. A következő
+sor a csomópontok közötti közvetlen átviteli kapcsolatok K számát tartalmazza
+(0<K300000). A következő K sor mindegyike egy X Y számpárt tartalmaz, (1 X, YN,
+XY), ami azt jelenti, hogy az X és az Y csomópont közvetlenül össze van kötve átviteli csator-
+nával. Az utolsó sor egy A B számpárt tartalmaz, ezek azon csomópont sorszámai (AB), ame-
+lyek közötti átvitelt vizsgáljuk. Az egyes részhálózatok nem feltétlenül összefüggőek!
+Kimenet
+A standard kimenet első sorába egyetlen számot kell írni, ami az első részfeladat megoldá-
+sa. A második sorba egy az A csomópontból a B csomópontba vezető olyan útvonalat kell meg-
+adni, amely esetén a protokollváltások száma a lehető legkevesebb! Ha nincs útvonal A és B kö-
+zött, akkor az első sorba a -1 értéket kell kiírni!
+
+
+
+
+                                             1. oldal
+Gráfok – Szélességi bejárás                             ***
+
+
+Példa
+Bemenet                           Kimenet
+7 3                               1
+1 3 5 0                           1 3 5 7
+4 2 6 0
+7 0                                             7
+10
+1 2                                         4
+1 3
+1 4
+2 3                                             2   5
+2 5
+3 5
+3 6
+4 7                                         1
+5 6
+5 7
+1 7
+                                                3   6
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                              2. oldal
+

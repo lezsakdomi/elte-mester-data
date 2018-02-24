@@ -1,0 +1,49 @@
+Rekurzív kiszámítás                                                                     **
+
+
+                                   Kép dekódolása
+Egy N N-es színes képet (N kettőhatvány) a következőképpen kódolunk:
+    Ha a kép egyszínű, akkor a kódja: 0 szín.
+    Ha nem egyszínű, akkor bontsuk négy egyforma részre:                       1   2
+         o Ezzel négy kódrészlet áll elő, a kód első jele a jobb oldali 4 szám-
+                                                                                3   4
+             jegy valamelyike, s ezután a 4 részre alkalmazzuk újra ugyanezt a
+             módszert.
+Készíts programot, amely egy adott kódhalmazhoz megadja az általa kódolt képet!
+Bemenet
+A standard bemenet első sorában a kép mérete (1N128, N kettőhatvány) és a kódhal-
+maz elemszáma (1MN*N) van. A következő M sor mindegyikében egy-egy négyzet alakú tar-
+tomány kódja szerepel kód szerint lexikografikusan növekvő sorrendben. A kód nem tartalmaz
+semmilyen elválasztójelet. A szín jele tetszőleges karakter lehet.
+Kimenet
+A standard kimenet első sorába a kép N méretét kell írni! A következő N sor mindegyiké-
+ben pontosan N jel legyen, egy-egy képsor képpontjainak a színe!
+Példa
+Bemenet                                        Kimenet
+4 1                                            4
+0a                                             aaaa
+                                               aaaa
+                                               aaaa
+                                               aaaa
+Bemenet                                        Kimenet
+4 10                                           4
+110a                                           abbb
+120b                                           bbbb
+130b                                           bb77
+140b                                           bb89
+20b
+30b
+4107
+4207
+4308
+4409
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a kép mérete N≤16
+
+
+
+
+                                           1. oldal
+

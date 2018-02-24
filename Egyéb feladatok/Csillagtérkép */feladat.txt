@@ -1,0 +1,31 @@
+Egyéb                                                                                        *
+
+
+                                         Csillagtérkép
+Egy síkbeli csillagtérképen N csillag található.
+Készíts programot, amely megadja az MxM-es térképen a legnagyobb területű téglalapot, amely-
+ben nincs egyetlen csillag sem és a téglalap oldalai párhuzamosak a térkép széleivel!
+Bemenet
+A standard bemenet első sorában a csillagok száma (0≤N<M2) és a térkép mérete van
+(1≤M≤200), egyetlen szóközzel elválasztva. A következő N sor mindegyike egy-egy csillag x-, il-
+letve y-koordinátáját (1≤x,y≤M) tartalmazza, egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába a legnagyobb csillagmentes téglalap méretét kell írni, a
+második sorba pedig a téglalap bal alsó, valamint jobb felső sarkának x- és y-koordinátáját! Ha
+több maximális méretű téglalap van, akkor bármelyik megadható.
+Példa
+Bemenet                                               Kimenet             5
+3   5                                                 12                  4                  *
+1   3                                                 2 2 4 5             3   *
+3   1                                                                     2
+5   4                                                                     1           *
+                                                                              1   2   3 4    5
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                   1. oldal
+

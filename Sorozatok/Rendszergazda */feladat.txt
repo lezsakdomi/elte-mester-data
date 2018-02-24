@@ -1,0 +1,42 @@
+Sorozatok
+
+
+                                     Rendszergazda
+Egy vállalat 2 rendszergazdát alkalmaz. Mindkettő megmondta, hogy a következő N nap alatt
+mettől meddig szeretne szabadságra menni. Biztonságosnak azokat az időintervallumokat nevez-
+zük, amikor mindkét rendszergazda dolgozik, veszélyesnek pedig azokat, amikor mindketten sza-
+badságon vannak.
+Készíts programot, amely kiszámítja a biztonságos és veszélyes intervallumokat!
+Bemenet
+A standard bemenet első sorában a napok száma van (1  N  1000). A második sorban
+az első rendszergazda tervezett szabadságainak száma található (0  K  N), a következő K sorban
+pedig az egyes szabadságai első és utolsó napjának sorszáma van, egy szóközzel elválasztva. Az
+ezt követő sorban a második rendszergazda szabadságainak száma szerepel (0  L  N), a követ-
+kező L sorban ezen szabadságok első és utolsó napjának sorszáma található, szintén egy szóköz-
+zel elválasztva.
+Kimenet
+A standard kimenet első sorába kerüljön a biztonságos időintervallumok B száma! A kö-
+vetkező B sorban add is meg ezen intervallumok kezdetét és végét egy szóközzel elválasztva, idő-
+rendi sorrendben! Ezt kövesse a veszélyes intervallumok V számát tartalmazó sor, majd pedig V
+darab sorban egy-egy veszélyes időintervallum első és utolsó napja, szintén időrendi sorrendben!
+Azokat az intervallumokat, amelyeknél a megelőző utolsó napja megegyezik a következő első
+napjával, össze kell vonni!
+Példa
+Bemenet                                         Kimenet
+50                                              4
+3                                               1 4
+5 10                                            11 11
+40 45                                           25 39
+15 20                                           46 50
+1                                               1
+12 24                                           15 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤100.
+
+
+
+
+                                            1. oldal
+

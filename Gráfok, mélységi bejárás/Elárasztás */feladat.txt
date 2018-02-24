@@ -1,0 +1,41 @@
+Gráfok – mélységi bejárás                                                                          *
+
+
+                                           Elárasztás
+Egy csupa nem negatív egészekből álló mátrix egy rácsnégyzetekre osztott sziget domborzati ada-
+tait tartalmazza: egy-egy érték a neki megfeleltetett rácsnégyzet fölötti, egészre kerekített, átlagos
+tengerszintfeletti magasságot jelenti. A domborzat viszonylag egyenletes: nem fordul elő az, hogy
+egy 2x2-es rész egyik átlójában lévő két érték kisebb a másik két értéknél. Adott koordinátájú
+rácsnégyzeten egy kiapadhatatlan forrás tört fel.
+Készíts programot, amely megadja, hogy mekkora mennyiségű vizet képesek a szigeten a keletke-
+ző tavak megtartani, illetve a tavaknak hány különböző szintje alakul ki!
+Bemenet
+A standard bemenet első sorában a térkép sorai (1N1000) és oszlopai (1M1000)
+száma van, egyetlen szóközzel elválasztva. A következő N sor mindegyike pontosan M számot tar-
+talmaz, az egyes pontokban mért tengerszint feletti magasságot, szóközökkel elválasztva. Az utol-
+só sorban a forrás helyének sor- (1KN) és oszlopindexe (1LM) van, egyetlen szóközzel elvá-
+lasztva.
+Kimenet
+A standard kimenet első sorába megtartott víz mennyiségét, a másodikba pedig a tavak
+különböző szintjei számát kell írni!
+Példa
+Bemenet                                           Kimenet
+7   7                                             23
+0   0 0 0 0 0 0                                   1
+0   20 29 29 6 53 0
+0   25 25 30 16 16 0                                      Megjegyzés: a 18 és a 9 értékű
+0   41 18 36 50 21 0                                      elem helyére kerül 25 az elá-
+0   46 9 37 60 13 0                                              rasztás során.
+0   33 33 33 33 33 0
+0   0 0 0 0 0 0
+3   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤30
+
+
+
+
+                                               1. oldal
+

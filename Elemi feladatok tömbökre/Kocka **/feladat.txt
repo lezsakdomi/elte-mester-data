@@ -1,0 +1,42 @@
+Elemi feladatok tömbökre                                                                       **
+
+
+                                            Kocka
+Egy kocka csúcspontjait a következő szabályok szerint számozzuk meg (ld. az ábrákat):
+       Az alsó lap csúcsaihoz tetszőleges pontból kiindulva az 1, 2, 3, 4 számokat rendeljük sor-
+        ban az élek mentén.
+
+
+
+
+       A felső lap csúcsaihoz az 1-es fölötti csúcsból kiindulva, az előzővel azonos irányban ha-
+        ladva rendeljük a 8, 7, 6, 5 számokat sorban az élek mentén.
+
+
+
+
+Írj programot, amely beolvassa a csúcsok egy bejárási sorrendjét, majd eldönti, hogy csak a kocka
+élein haladva a csúcsok bejárhatók-e! Ha nem, akkor a program írja ki azokat a felsorolásban
+szomszédos csúcspárokat, amelyeket nem köt össze él!
+Bemenet
+A standard bemenet első sora nyolc egész számot tartalmaz szóközzel elválasztva, a kocka
+csúcsainak egy bejárási sorrendjét. Mindegyik szám biztosan 1 és 8 között van, és a sorozatban
+mindegyik pontosan egyszer szerepel.
+Kimenet
+A standard kimenet egyetlen sort tartalmazzon! Ebben az „IGEN” szöveget kell kiírni, ha
+a bemeneten megadott bejárási sorrend lehetséges! Ellenkező esetben azokat a csúcspárokat kell
+kiírni, amelyeket a bemeneti felsorolás sorrendjében nem köt össze él! Egy csúcspár esetében a
+két csúcsot kötőjel kössön össze, a csúcspárokat pedig szóköz válassza el!
+Példa
+Bemenet                                          Kimenet
+1 2 4 3 6 5 7 8                                  2-4 5-7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,49 @@
+Visszalépéses keresés                                                                          ***
+
+
+                                               Kirakó
+Egy szókirakó játékban a játékmező (egy négyzethálós téglalap) egyes négyzeteibe kell szavakat
+elhelyezni vízszintesen vagy függőlegesen. A szavak egymást keresztezhetik, ekkor természetesen
+a közös mezőben mindkét szóban azonos betűnek kell állnia! A játékban a szavakat csak a meg-
+adott sorrendben szabad lerakni, s minden lépésben úgy kell eljárni, hogy addig az átfedő betűk
+száma a lehető legnagyobb legyen!
+Feltehető, hogy minden újabb szónak legalább 1 átfedő betűje van a már letett szavakkal. Egy-
+mást részben vagy egészben tartalmazó szavak egymás meghosszabbításában is lehelyezhetők.
+Minden betű pontosan eggyel kevesebb átfedésnek számít, mint ahány szónak része.
+Készíts programot, amely megadja azt a szóelhelyezést, amelyben kirakás közben és a kirakás vé-
+gén is a legtöbb átfedő betű található!
+Bemenet
+A standard bemenet első sorában a kirakandó szavak száma (2DB15) és a játékmező
+mérete (1N,M30), a második sorban az első szó kezdőpozíciója (1SORN,1OSZLOPM)
+és iránya (V vagy F – jelentése vízszintesen, illetve függőlegesen) szerepel egy-egy szóközzel elvá-
+lasztva. A további DB sorban az egyes értelmes magyar szavak találhatók (legfeljebb 10 karakte-
+resek, ugyanaz a betű legfeljebb négyszer fordul elő bennük.).
+Kimenet
+ A standard kimenetre DB-1 sort kell írni, a bemenet második sorának megfelelő mó-
+don, azaz egyes szavak kezdőpozícióját (1SORN,1OSZLOPM) és irányát (V vagy F), egy-
+egy szóközzel elválasztva! Több megoldás esetén bármelyik megadható.
+Bemenet                                           Kimenet
+3 10 10                                           4 6 F
+5 5 V                                             6 6 V
+FA                                                6 5 V
+KAP                                        1      2  3       4     5     6     7     8     9    10
+PER                                 1
+EPE                                 2
+                                    3
+                                    4                                    K
+                                    5                              F     A
+                                    6                              E     P     E     R
+                                    7
+                                    8
+                                    9
+                                    10
+A példában a P betű 2-szeres, az A betű és a (6,7) pozíción álló E betű 1-szeres átfedésnek
+számít.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a lehelyezendő szavak száma DB≤7
+
+
+                                               1. oldal
+

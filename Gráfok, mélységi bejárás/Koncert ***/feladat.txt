@@ -1,0 +1,45 @@
+Gráfok – Mélységi bejárás                                                                   ****
+
+
+                                            Koncert
+Az év koncertjére jegyet lehet igényelni. Minden igénylő pontosan két ülőhelyet jelölhet meg
+igényként.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány igény elégíthető ki, és meg is ad
+megfelelő jegykiosztást!
+Bemenet
+A standard bemenet első sorában az ülőhelyek száma (1M30 000), és az igények száma
+(1N60 000) van. A további N sor mindegyike egy igényt tartalmaz (1uvM).
+Kimenet
+A standard kimenet első sorába a legtöbb kielégíthető igény K számát kell írni! A követke-
+ző K sorba kell kiírni egy megfelelő jegykiosztást! A sorokban az első szám egy igény sorszáma, a
+második pedig annak a széknek a sorszáma legyen, amelyet az igénylő kap! Több megoldás esetén
+bármelyik megadható.
+Példa:
+Bemenet                         Kimenet
+10 7                            7
+1 2                             1       1
+2 3                             2       2
+3 4                             3       3
+5 6                             7       4
+6 7                             4       5
+3 7                             5       6
+1 4                             6       7
+
+        1           2       3                     4        5
+
+
+  1         2           3           4       5          6       7       8         9        10
+
+
+
+                    7                       6
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

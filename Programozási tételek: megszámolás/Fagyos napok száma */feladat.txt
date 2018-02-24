@@ -1,0 +1,29 @@
+Programozási tételek – Megszámolás
+
+
+                                Fagyos napok száma
+Az elmúlt N napon mértük a hőmérsékletet! Akkor volt fagy, ha a hőmérséklet <0 fok.
+Írj programot, amely megadja, hogy hány napon volt fagy!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma van (1N50), a következő N
+sorban pedig soronként a napi mérések eredményei vannak (-100Mi100).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a fagyos napok számát!
+Példa
+Bemenet                                        Kimenet
+5                                              3
+-82
+-13
+50
+31
+-47
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤10
+
+
+
+
+                                           1. oldal
+

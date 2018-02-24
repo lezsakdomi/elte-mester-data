@@ -1,0 +1,45 @@
+Rekurzív adatszerkezetek                                                                           *
+
+
+                                           Családfa
+Egy család történetét a családfával lehet illusztrálni, amely egy ősből (ez a fa gyökere) kiindulva
+mutatja a családtagok leszármazását. A családtagokat az egyszerűség kedvéért sorszámukkal azo-
+nosítjuk, az ős az 1-es sorszámú.
+Készíts programot, amely megadja, hogy a családfa mikor volt a legszélesebb, és mikor volt a leg-
+keskenyebb (a fa gyökerén kívül)!
+Bemenet
+A standard bemenet első sorában a családtagok száma (2N20 000) szerepel. A 2…N.
+sorokban az egyes családtagok szülőjének sorszáma van, az i-edik sorban az i-edik családtagé.
+Kimenet
+A standard kimenet első sorába annak a generációnak a sorszámát kell írni (azok vannak
+ugyanabban a generációban, akik az őstől egyforma leszármazási távolságra vannak), amely a leg-
+népesebb volt, a második sorba pedig azét, amelyik a legkisebb létszámú (de ez nem lehet az 1.
+generáció, azaz maga az ős)! Ha több megoldás is van, akkor az őshöz legközelebbit kell kiírni!
+Példa
+Bemenet                                          Kimenet
+11                                               3
+                                                                               1
+1                                                4
+1
+1
+                                                              2                3               4
+2
+3
+3
+4                                                             5          6            7        8
+6
+9
+9                                                                        9
+
+Korlátok
+Időlimit: 0.1 mp.                                                 10          11
+
+
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a családtagok száma N≤500
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,47 @@
+Rekurzív adatszerlezetek                                                                   ***
+
+
+                                           Körök
+Egy online lexikonban N szócikk található. Ismerjük mindegyikről, hogy a cikkben levő első link
+melyik másik szócikkre vonatkozik. Egyes szócikkek köröket alkothatnak, pl. A hivatkozik B-re,
+B hivatkozik C-re, C pedig A-ra.
+Készíts programot, amely megadja, hogy a lexikonban hány kör található, mennyi a szócikkek
+maximális száma, ahonnan ugyanabba a körbe lehet eljutni, valamint mekkora a leghosszabb kör
+hossza!
+Bemenet
+A standard bemenet első sorában a szócikkek száma van (1≤N≤1 000 000). A további N
+sorban egy-egy szócikk legelső linkje (annak a szócikknek a sorszáma, amire először hivatkozik)
+van (1≤Li≤N, Li≠i).
+Kimenet
+A standard kimenet első sorába a körök K számát kell írni! A második sorba a szócikkek
+maximális száma kerüljön, ahonnan ugyanabba a körbe lehet eljutni (beleértve a körben levőket
+is)! A harmadik sorba a leghosszabb kör hosszát kell írni!
+Példa
+Bemenet                                         Kimenet
+13                                              2
+2                                               7
+6                                               4
+4
+7
+1                              2            1           4           3
+5
+3
+7
+                               6            5                7                  11
+5
+6
+                                                                        12
+12
+7                             10            9           8
+                                                                                13
+12
+
+Korlátok
+Időlimit: 0.25 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

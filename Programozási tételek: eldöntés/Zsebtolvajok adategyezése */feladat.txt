@@ -1,0 +1,34 @@
+Programozási tételek - eldöntés                                                                 *
+
+
+                             Zsebtolvajok adategyezése
+Egy bűnügyi nyilvántartásban a zsebtolvajokról négy adatot tartanak nyilván: magasság, szemszín,
+hajszín, eddig letöltött büntetés.
+Írj programot, amely eldönti, hogy van-e két olyan zsebtolvaj, akinek legalább két nyilvántartott
+adata megegyezik!
+Bemenet
+A standard bemenet első sorában található a zsebtolvajok száma (1≤N≤100). A követke-
+ző N sorban szóközzel elválasztva találhatóak a magasság cm-ben, a szemszín, a hajszín és a letöl-
+tött büntetés (napok száma).
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! Az „IGEN” szöveg szerepeljen
+amennyiben van két olyan zsebtolvaj, akinek legalább két nyilvántartott adata egyezik, különben a
+„NEM” szöveg!
+Példa
+Bemenet                                          Kimenet
+6                                                NEM
+168   barna barna 20
+170   kek barna 21
+172   zold barna 22
+172   barna fekete 23
+176   kek fekete 24
+180   zold fekete 25
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,40 @@
+Sorozatok                                                                                        *
+
+
+                                       Televízióadók
+Egy városban több televízióadó műsorát lehet fogni. Az adásidők a hét minden napján ugyanak-
+kor vannak, a következő napra nem nyúlnak át, és egész órától egész óráig tartanak, azonban az
+egyes adók naponta többször is sugározhatnak műsort.
+Egy új televízióadó indításához felmérést végeznek, hogy melyik lenne a műsor számára a legked-
+vezőbb vagy legkedvezőtlenebb időszak. Ehhez a következő adatokra lenne szükség:
+    1.) A nap mely egyórás időszakaiban lehet a legtöbb műsor közül választani?
+    2.) Melyik az a legkorábbi, leghosszabb időszak, amikor egyetlen tévéadás sem fogható?
+Készíts programot, amely kiszámítja a szükséges adatokat!
+Bemenet
+A standard bemenet első sorában a műsorok száma található (1  N  100). Az ezt követő
+N sorban három-három szám van, egymástól egy-egy szóközzel elválasztva. Az első az adó sor-
+száma, a második az adás kezdete, a harmadik pedig a vége (0  K i < V i  24). Az adás idejét
+balról zárt, jobbról nyílt intervallumként kell értelmezni.
+Kimenet
+A standard kimenet első sorába a legzsúfoltabb egyórás időszakok kerüljenek növekvő
+sorrendben, az időszakok kezdetét és végét kötőjellel, az időszakokat szóközökkel elválasztva! A
+második sorban annak a legkorábbi, leghosszabb időszaknak a kezdetét és végét add meg, amikor
+egyetlen adás sem fogható, a kezdet és vég idejét kötőjellel elválasztva! Ha nincs ilyen időszak, a
+sorban egyetlen 0 szerepeljen!
+Példa
+Bemenet                                          Kimenet
+4                                                18-19 19-20
+1   18 22                                        0-6
+1   6 10
+3   16 20
+2   12 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤10.
+
+
+
+
+                                             1. oldal
+

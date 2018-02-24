@@ -1,0 +1,47 @@
+Mohó algoritmusok                                                                            ***
+
+
+                                             Koncert
+Az év koncertjét olyan helyszínen rendezik, ahol M ülőhely van. A rendezvény szervezőihez igé-
+nyeket lehet benyújtani. Egy igény egy ülőhelyre vonatkozhat, és egy A B számpárt lehet, ami azt
+jelenti, hogy az igénylő olyan ülőhelyet szeretne kapni, amelynek S sorszámára teljesül, hogy
+A≤S≤B.
+Készíts programot, amely kiszámítja, hogy a legjobb esetben hány igény elégíthető ki, és meg is ad
+egy megfelelő jegykiosztást!
+Bemenet
+A standard bemenet első sorában az ülőhelyek száma (3≤M≤100 000), és az igények
+(1≤N≤1 000 000) száma van. A további N sor tartalmazza az igényeket, soronként egy szám-
+párt (1≤A≤B≤M).
+Kimenet
+A standard kimenet első sorába a legtöbb kielégíthető igény K számát kell írni! A további
+K sorba kell kiírni egy megfelelő jegykiosztást! Minden sorban az első szám egy igény sorszáma, a
+második szám pedig annak az ülőhelynek a sorszáma legyen, amelyet az igénylő kap! Több meg-
+oldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+10 7                                              6
+2 3                                               4   1
+2 5                                               6   2
+3 3                                               3   3
+1 2                                               2   5
+6 7                                               5   7
+2 2                                               7   10
+6 10
+    X    X
+    X    X X X
+        X
+X X
+                        X X
+    X
+                        X X X X         X
+1   2    3   4      5   6   7   8   9   10
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

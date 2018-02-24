@@ -1,0 +1,42 @@
+Gráfok – elemi feladatok                                                                   *
+
+
+                                          Város
+Egy konvex sokszög alakú országban N város található. Az országot háromszög alakú megyékre
+osztják, ahol a háromszögek csúcsaiban vannak a városok.
+Írj programot, amely megadja, hogy hány város van az ország határán; illetve minden városra
+megadja, hogy hány másik várossal szomszédos (azaz közös háromszögben van)!
+Bemenet
+A standard bemenetelső sorában a városok N száma (3≤N≤10000) és a háromszögek M
+száma (1≤M≤100000) van, egy szóközzel elválasztva. A városokat 1 és N közötti sorszámukkal
+azonosítjuk. A következő M sorban egy-egy háromszög három csúcsán levő város sorszáma van,
+egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenetelsősorába az országhatáron levő városok számát kell kiírni! A
+második sorba N számot kell írni, az i-edik szám az i-edik város szomszédjainak száma legyen!
+Példa
+Bemenet                                       Kimenet
+7   7                                         5
+1   6   7                                     4 3 3 5 4 4 3
+6   7   5
+4   6   5
+                                                                              3
+4   6   1
+1   4   2                                                      2
+2   3   4
+3   4   5
+                                                                         4
+
+
+
+Korlátok                                                   1             6             5
+
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100                                      7
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,39 @@
+Programozási tételek összeépítése                                                               **
+
+
+                            Legkedvezőbb málnavásárlás
+Egy gyümölcslevet gyártó üzem naponta K kg málnát tud feldolgozni. N termelő ajánlotta fel a
+málnáját, az is lehet, hogy eltérő árakon. Mivel a málna romlandó, ezért az árusok naponta egysé-
+gesen F forintot engednek az árból. Az üzem a lehető leghamarabb fel akarja dolgozni a beérke-
+zett málnát, de ezen belül azért arra törekszik, hogy a lehető legkevesebb pénzt kelljen fizetnie a
+termelőknek. Feltehető, hogy az ár az engedményekkel sem megy le 0 forintra.
+Készíts programot, amely megadja, hogy az üzem melyik napon melyik termelőtől vegyen málnát,
+hogy a kiadása a lehető legkisebb legyen!
+Bemenet
+A standard bemenet első sorában az üzem napi kapacitása (100≤K≤1000), a termelők
+száma (1≤N≤5000), valamint a napi engedmény (1≤F≤100) szerepel. A következő sorok
+mindegyikében két egész szám van egy szóközzel elválasztva, az adott termelő által felajánlott
+málna mennyisége (1≤mennyiség≤200), illetve kilónkénti ára (500≤ár≤1500).
+Kimenet
+A standard kimenet első sorába az összes málna feldolgozásához szükséges napok M
+számát és az üzem által kifizetett teljes vételárat kell írni! A következő M sor mindegyikében egy -
+egy nap adatai szerepeljenek, egy-egy szóközzel elválasztva: azon termelők sorszáma és a tőlük
+vásárolt málnamennyiség, akiktől azon a napon vesz málnát az üzem!
+Példa
+Bemenet                                          Kimenet
+100 5 100                                        3   144000
+40 800                                           3   20 4 70 2 10
+120 600                                          2   100
+20 500                                           2   10 5 30 1 40
+70 500
+30 700
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,38 @@
+Programozási tételek – Megszámolás
+
+
+                                Viharos napok száma
+A vitorlás versenyek rendezői megmérték N napon át Balatonfüreden a szélsebességet. Vitorlás
+versenyt szélcsendben nem lehet rendezni, de nagyobb viharban sem célszerű. Viharban nagyobb
+a szélsebesség, mint 100 km/óra. Egy versenyen naponta egy fordulót rendeznek, s legalább K
+fordulóra van szükség.
+Írj programot, kiszámolja, hogy hány napon volt vihar!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000) és a versenynapok száma
+(1≤K≤10) szerepel. Majd a következő N sorban az egyes napokon mért szélsebességek szerepel-
+nek (0≤S≤200).
+Kimenet
+A standard kimenet első sorába azon napok számát kell kiírni, amikor vihar volt!
+Példa
+Bemenet                                         Kimenet
+10 3                                            1
+50
+40
+0
+5
+0
+80
+70
+90
+100
+120
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

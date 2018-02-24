@@ -1,0 +1,34 @@
+Programozási tételek – Kiválogatás
+
+
+             Települések Piripócshoz közel, Kukutyintól távol
+Ismerjük Magyarország összes településének távolságát Kukutyintól és Piripócstól.
+Készíts programot, amely megadja a Piripócshoz 100 kilométernél közelebbi azon települések
+sorszámát, amelyek Kukutyintól legalább 100 kilométerre vannak!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤100), utána N sorban egy-
+egy település távolsága van Kukutyintól (0K300), illetve Piripócstól (0P300) (egy szóköz-
+zel elválasztva).
+Kimenet
+A standard kimenet első sorába azon települések darabszámát, illetve sorszámát kell írni
+sorszám szerint növekvő sorrendben, amelyek Piripócshoz 100 kilométernél közelebb vannak és
+Kukutyintól legalább 100 kilométerre vannak!
+Példa
+Bemenet                                         Kimenet
+6                                               2 2 6
+42 15
+110 20
+125 160
+166 180
+42 100
+110 39
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤20
+
+
+
+
+                                            1. oldal
+

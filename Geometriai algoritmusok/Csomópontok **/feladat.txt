@@ -1,0 +1,51 @@
+Geometriai algoritmusok                                                                       **
+
+
+                                      Csomópontok
+A tervezők egy speciális úthálózatot terveznek. A hálózat a tervezés jelenlegi állapotában N cso-
+mópontot tartalmaz, ismerjük a csomópontok koordinátáit. Tudjuk, hogy a csomópontoknak van
+olyan felsorolása, hogy a terv csak az egymást követő csomópontok között tartalmaz egyirányú
+közlekedést. Teljesül, hogy ha bármely két csomópont közötti egyenes útszakasz keresztezi az el-
+ső és utolsó csomóponton átmenő egyenest, akkor a metszéspont az első és utolsó csomópont
+között van. A mérnököknek további útszakaszokat kell felvenni a tervbe, hogy végül bármely
+csomópontból bármely másikba el lehessen jutni. Minden további útszakasz csak meglévő két
+csomópont közötti egyenes szakasz lehet, amelyek között nincs (egyik irányban sem) útszakasz, és
+bármely más útszakasszal csak közös végpontban érintkezhet.
+Készíts programot, amely megadja, hogy mely útszakaszokat kell még felvenni a tervbe, hogy
+bármely csomópontból el lehessen jutni bármely másik csomópontba!
+Bemenet
+A standard bemenet első sorában csomópontok száma van (3≤N≤100 000). A további N
+sor mindegyike egy csomópont x- és y-koordinátáját (-1 000 000≤X,Y≤1 000 000) tartalmaz-
+za. A terv szerint az i-edik és i+1-edik (1≤i<N) csomópont között van i-ből i+1-be vezető egy-
+irányú egyenes út. Az útszakaszok nem keresztezik egymást. Az 1. és az N. csomóponton áthaladó
+egyenesre nem esik más csomópont.
+Kimenet
+A standard kimenet első sorába az új útszakaszok M számát kell írni. A további M sor
+mindegyike két egész számot tartalmazzon; U V, ami azt jelenti, hogy az U csomópontból a V
+csomópontba vezető útszakaszt kell felvenni még a tervbe! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                         Kimenet
+13                                              2
+0 0                                             5 1
+5 6                                             13 4
+9 2
+15 8
+0 10
+11 12
+3 12
+3 17
+12 21
+11 16
+19 19
+12 14
+16 14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

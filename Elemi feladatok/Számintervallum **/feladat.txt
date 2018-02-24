@@ -1,0 +1,43 @@
+Elemi feladatok                                                                               **
+
+
+                                               Számintervallum
+Számítógépen csak véges sok számjeggyel leírható törteket tudunk ábrázolni. Minden más X
+számra tudunk mondani egy alsó és egy felső határt, amire AH≤X≤FH. AH és FH egy-egy tört,
+aminek ismerjük a számlálóját és a nevezőjét, egyszerűsítve. Így a π szám például a        inter-
+vallummal ábrázolható.
+Írj programot, amely két pozitív szám (X,Y) alsó és felső határa ismeretében megadja X+Y, X-Y,
+X*Y alsó és felső határát! Az eredmények alsó határa is biztosan 0! Az eredmények alsó és felső
+határait jelentő törteket egyszerűsített formában kell megadni!
+Bemenet
+A standard bemenet első sorában az X, második sorában az Y pozitív szám (X,Y0) van
+megadva. Mindegyik sor négy, szóközökkel elválasztott egész számot tartalmaz a következő sor-
+rendben: az adott szám alsó határának H1 számlálóját, H2 nevezőjét, valamint a felső határának H3
+számlálóját és H4 nevezőjét (0≤H1,H3≤100,0<H2,H4≤100).
+Kimenet
+A standard kimenet három sort tartalmaz. Az első sorba a beolvasott X és Y szám össze-
+gét, a másodikba a különbségét, a harmadikba a szorzatát kell írni. Mindegyik sor négy egész szá-
+mot tartalmaz szóközökkel elválasztva a következő sorrendben: az adott eredmény alsó határának
+számlálóját, nevezőjét, majd felső határának számlálóját és nevezőjét.
+Példa
+Bemenet1                                                      Kimenet2
+7 3 3 1                                                       23 6 19 4
+3 2 7 4                                                       7 12 3 2
+                                                              7 2 21 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+     7 3  3 7 
+1   X: , , Y:  , 
+     3 1   2 4 
+2 X+Y:
+        23 19             7 3              7 21
+        6 , 4  , X-Y: 12 , 2  , X*Y:  2 , 4 
+
+                                                           1. oldal
+

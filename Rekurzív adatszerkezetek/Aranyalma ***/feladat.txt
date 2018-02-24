@@ -1,0 +1,41 @@
+Rekurzív adatszerkezetek                                                                          ***
+
+
+                                       Aranyalma
+Egy mesebeli fán aranyalmák nőnek. A fa minden ágszakaszára ismerjük, hogy ott hány alma te-
+rem. Minden ágszakasz végéről legfeljebb 2 új ág nőhet ki. A fa törzse az 1-es sorszámú ágsza-
+kasz. Egy kertésznek úgy kell metszenie a fát, hogy legfeljebb K ágszakasz maradjon!
+Készíts programot, amely megadja, hogy a metszés után maximum hány aranyalma fog teremni a
+fán!
+Bemenet
+A standard bemenet első sorában az ágszakaszok száma (1≤N≤1000) és a megmaradó
+ágszakaszok száma (1≤K≤N) van. A további N sor mindegyike három egész számot tartalmaz (A
+B C), ami azt jelenti, hogy az ágszakaszon A darab aranyalma terem (0≤A≤1000), s a végéből
+nő ki a B és a C sorszámú ág (1≤B,C≤N). B és C is lehet -1, ami azt jelenti, hogy arra nem nő
+ága tovább a fának.
+Kimenet
+A standard kimenet első sorába a metszés utáni maximális termésmennyiséget kell írni!
+Példa
+Bemenet                                       Kimenet                                    1
+                                                                                   7.
+7   4                                         15
+1   2 3
+4   4 5                                                      2                 1                  9
+                                                                          5.                 6.
+1   -1 6                                                4.
+2   -1 -1
+1   -1 -1                                                                                1
+                                                                      4
+9   7 -1                                                         2.                 3.
+1   -1 -1
+Korlátok                                                                       1
+                                                                          1.
+Időlimit: 1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az ágszakaszok száma N≤100
+
+
+
+
+                                           1. oldal
+

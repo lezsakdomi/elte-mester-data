@@ -1,0 +1,57 @@
+Interaktív feladatok – Kétszemélyes játékok                                                    ***
+
+
+                                      Számok elvétele
+Tekintsük a következő kétszemélyes játékot! A játék elején az asztalra egy sorban leraknak N da-
+rab pozitív egész számot. A két játékos felváltva lép, az első játékos kezd. Minden lépésben az ak-
+tuális játékos a számsor bal végéről elvehet 1, 2 vagy 3 számot. Az elvett számok saját pontszámát
+gyarapítják. A játék akkor ér véget, ha elfogyott az összes szám. Az a játékos nyer, akinek több
+pontja van.
+Írj programot, amely az első játékos játékát valósítja meg és nyer.
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az ellenfel modul va-
+lósít meg.
+     Meret: egyszer kell hívni a program elején, az asztalra lerakott számok számát adja
+      (2≤N≤1000).
+     Tabla(i): egy szám sorszámát kell argumentumként megadni, a visszaadott érték az
+      adott sorszámú szám éréke (legfeljebb 100).
+     EnLep(i): Ezzel a művelettel kell közölni az első játékos lépését. Egy argumentuma
+      van, amelynek értéke 1, 2 vagy 3 lehet.
+     TeLep: A második játékos lépését adja, éréke 1, 2 vagy 3 lehet.
+Ha az aktuális játékos nem tud lépni, akkor a program automatikusan befejeződik.
+A műveletek Pascal deklarációja:
+   uses ellenfel;
+   function Meret: integer;
+   function Tabla(i: integer): integer;
+   procedure EnLep(i: integer);
+   function TeLep: integer;
+A műveletek C/C++ deklarációja:
+   #include ”ellenfel.h”
+   int Meret(void);
+   int Tabla(int i);
+   void EnLep(int i);
+   int TeLep(void);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy min-
+ta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen próbáláskor a standard bemenet első sorában a számok N száma, a második
+sorában pedig a kezdeti játékállásban szereplő N szám legyen!
+Korlátok
+A megoldás program nem olvashat és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+                                              1. oldal
+Interaktív feladatok – Kétszemélyes játékok                                                  ***
+
+A bemenetekre teljesül, hogy az első játékosnak van nyerő stratégiája, azaz meg tudja verni a má-
+sodik játékost.
+
+
+
+
+                                              2. oldal
+

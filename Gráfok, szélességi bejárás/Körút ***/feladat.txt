@@ -1,0 +1,43 @@
+Gráfok – Szélességi bejárás                                                                       ***
+
+
+                                              Körút
+Osztályod azt tervezi, hogy az osztálykirándulás során az egyik napon a környékbeli városok kö-
+zött egy körutazást tesz autóbusszal. Az osztály még nem döntött az útvonalról, csak azt határoz-
+ta meg, hogy olyan útvonalat kell választani, amely legalább két várost érint a kiindulásin kívül, és
+hogy az útvonal különböző városokon át haladjon. Az idő rövidsége miatt azt is ki kellett kötni,
+hogy a lehető legkevesebb várost érintsen a túra. A feladat megoldásához van olyan menetrend,
+amely tartalmazza, hogy mely városok között van közvetlen kétirányú buszjárat.
+Készíts programot, amely meghatároz egy, a követelményeket kielégítő útvonalat!
+Bemenet
+A standard bemenet első sora a városok számát (1N20 000), a buszjáratok számát
+(1M200 000) és a kiindulási város sorszámát (1KN) tartalmazza. A következő M sorban
+egy-egy várospár van (1U≠VN), amelyek között van közvetlen, mindkét irányban közlekedő
+buszjárat. Bármely két városra legfeljebb egy buszjárat van.
+Kimenet
+A standard kimenet első sorába a körút során érintett városok L számát kell írni! A máso-
+dik sor tartalmazza a követelményeknek megfelelő körút leírását, azaz L város azonosítóját egy-
+egy szóközzel elválasztva! Az első szám a kiindulási város K azonosítója legyen! Ha nincs megol-
+dás, akkor az állomány első és egyetlen sora a 0 számot tartalmazza!
+Példa
+Bemenet                                           Kimenet
+8   10 2                                          3
+1   2                                             2 3 6
+2   3
+2   4                                                                              6
+3   5
+5   6
+6   2                                                       1          2           3          5
+6   3
+3   7
+7   8                                                                  4           8          7
+4   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

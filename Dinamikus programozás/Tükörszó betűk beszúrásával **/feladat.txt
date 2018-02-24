@@ -1,0 +1,33 @@
+Dinamikus programozás                                                                        **
+
+
+                           Tükörszó betűk beszúrásával
+Egy karaktersorozatot tükörszónak nevezünk, ha balról-jobbra, valamint jobbról-balra olvasva
+megegyezik. Másképpen fogalmazva, egy S szó akkor és csak akkor tükörszó, ha vagy üres szó,
+vagy egybetűs, vagy az első és az utolsó betűje megegyezik, és ezeket elhagyva ismét tükörszót
+kapunk.
+Írj programot, amely kiszámítja, hogy egy adott szóba minimálisan hány betűt kell beszúrni, hogy
+tükörszót kapjunk! A program adjon is meg egy ilyen beszúrást!
+Bemenet
+A standard bemenet egyetlen sora egy S szót tartalmaz, amelynek hossza legfeljebb 2000,
+és S minden c karakterére: ’a’c’z’ vagy ’A’c’Z’.
+Kimenet
+A standard kimenet első sorába a minimális beszúrandó karakterek M számát kell írni,
+amellyel a bemeneti S szó tükörszóvá tehető! A további M sor mindegyike egy beszúrást tartal-
+mazzon! Minden sorban egy i x pár legyen, ahol i az a pozíció, amely után az x karaktert be
+kell szúrni! A pozíciók sorszámai a már elvégzett beszúrások utáni sorszámként értendők, az első
+karakter sorszáma 1. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+eleme                                           2
+                                                1 m
+                                                2 e
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

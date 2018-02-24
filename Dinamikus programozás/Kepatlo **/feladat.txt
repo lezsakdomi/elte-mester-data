@@ -1,0 +1,33 @@
+Dinamikus programozás                                                                          **
+
+
+                                           Képátló
+Adott egy N×N pixelből álló fekete-fehér kép. Szeretnénk a képen a bal felső saroktól a jobb alsó
+sarokig egy jobbra-lefele haladó határvonalat húzni úgy, hogy a vonaltól jobbra-felfele eső fekete,
+valamint a vonaltól balra-lefele eső fehér pixelek számának K összege a lehető legkevesebb legyen.
+A határvonalra eső pixelek nem számítanak bele.
+Készíts programot, amely megadja a minimális K értéket!
+Bemenet
+A standard bemenet első sorában a kép mérete található (1≤N≤1000). A következő N sor
+mindegyikében N darab szám áll: 0, ha az adott képpont fekete, 1, ha az adott képpont fehér. A
+bal felső sarok közülük az első sor első eleme, a jobb alsó sarok az N. sor utolsó eleme.
+Kimenet
+A standard kimenet egyetlen sorába az optimális határvonalra kiszámított K-t kell írni!
+Példa
+Bemenet                                          Kimenet
+5                                                3
+1   1   1   1   1
+0   1   1   1   0
+1   0   0   1   1
+0   1   1   1   0
+0   1   1   0   0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a N,M≤50
+
+
+
+
+                                             1. oldal
+

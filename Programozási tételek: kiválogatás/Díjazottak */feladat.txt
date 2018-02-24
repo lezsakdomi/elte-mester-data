@@ -1,0 +1,35 @@
+Programozási tételek - szétválogatás                                                             *
+
+
+                                             Díjazottak
+Egy pontverseny N résztvevője közül I. díjat kap mindenki, aki az elérhető pontok legalább 90%-
+át eléri; II. díjat kapnak azok, akik legalább 80%-ot teljesítettek, de nem érték el a 90%-ot, III.
+díjat pedig azok, akiknek teljesítménye legalább 70%, de kevesebb 80%-nál. A tanulók eredmé-
+nyeit egy névsor tartalmazza.
+Készítsd el az I., a II., illetve a III. díjasok és a nem díjazottak névsorát!
+Bemenet
+A standard bemenet első sorában található a résztvevők száma (1≤N≤100) és a maximáli-
+san elérhető pontszám (1≤P≤100). Az ezt követő N sor mindegyikében pontosvesszővel elvá-
+lasztva szerepel egy név majd egy pontszám (0≤Pi≤100).
+Kimenet
+A standard kimenet első sorába az I., a második sorába a II., a harmadik sorába a III. míg
+a negyedik sorába a többiek névsorát kell írni a bemenetbeli előfordulások sorrendjében. Minden
+sor elején a sorban lévő elemek száma legyen. Minden elem után pontosvesszőt kell írni!
+Példa
+Bemenet                                              Kimenet
+6 100                                                1;Angyal Pofa;
+Angyal Pofa;90                                       2;Cukor Falat;Eros Pista;
+Bozontos Beata;73                                    2;Bozontos Beata;Dohongo Diana;
+Cukor Falat;85                                       1;Fickos Ferenc;
+Dohongo Diana;78
+Eros Pista;83
+Fickos Ferenc;64
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                 1. oldal
+

@@ -1,0 +1,30 @@
+Dinamikus programozás                                                                          **
+
+
+                         Raktár pakolás a sor két végéről
+Egy raktárban egy sorban tárolják az elszállításra várakozó konténereket. A szállítást olyan konté-
+nerekkel végzik, amelyek kapacitása K tonna, tehát legfeljebb ennyi összsúly rakható fel rájuk. A
+raktár olyan szűk, hogy csak a sor két végén lévő konténerhez lehet hozzáférni, tehát csak a sor
+valamelyik végén lévő konténert lehet egy lépésben kamionra rakni.
+Írj programot, amely kiszámítja, hogy legkevesebb hány kamion kell az összes konténer elszállítá-
+sához!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1N1000) és a kamionok kapa-
+citása (1K300) van. A második sor az N konténer súlyát (0<siK) tartalmazza abban a sor-
+rendben, ahogy a raktárban elhelyezkednek.
+Kimenet
+A standard kimenet első sorába a legkevesebb kamion számát kell írni, ami az összes kon-
+téner elszállításához kell!
+Példa
+Bemenet                                          Kimenet
+6 8                                              2
+1 2 4 3 1 5
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,40 @@
+                                         Cukrászok
+Cukrászok éves összejövetelén három fős csapatok közösen készítenek süteményt. Minden cuk-
+rász előre megmondta, hogy neki hány gramm liszt kell a sütemény elkészítéséhez. Minden csapat
+annyi lisztet kap, amennyi a három csapattag igényének maximuma. Minden lehetséges módon
+képződnek a három fős csapatok, de csak olyan módon, hogy a tagok kölcsönösen kedvelik egy-
+mást.
+Készíts programot, amely kiszámítja, hogy összesen mennyi liszt kell!
+Bemenet
+A standard bemenet első sorában két egész szám van, a tagok N száma (1N100 000)
+és azon párok M (1N250 000) száma, akik kölcsönösen kedvelik egymást. A tagokat az
+1,…,N számokkal azonosítjuk. A második sorban pontosan N pozitív egész szám van, az i-edik
+szám az i-edik cukrász által igényelt liszt mennyisége, ami legfeljebb 1000000. A további M sor
+mindegyike egy számpárt tartalmaz, olyan tagok sorszámát, akik kölcsönösen kedvelik egymást.
+Kimenet
+A standard kimenet első és egyetlen sora egy egész számot tartalmazzon, az összes csapat
+által használt liszt menníségét!
+Példa
+Bemenet                      Kimenet
+5 7                          14
+1 5 3 4 2
+1 2
+2 3
+5 2
+4 3
+3 1
+1 4
+5 1
+
+
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤10
+
+
+
+
+                                             1. oldal
+

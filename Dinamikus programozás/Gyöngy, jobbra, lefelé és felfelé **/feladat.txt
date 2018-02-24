@@ -1,0 +1,45 @@
+Dinamikus programozás                                                                            **
+
+
+                       Gyöngy, jobbra, lefelé és felfelé lépve
+Tekintsük azt az egyszemélyes játékot, amelyet N sorból és M oszlopból álló négyzetrácsos táblán
+játszanak! Bizonyos mezőkön gyöngyöket helyeznek el, és lehetnek olyan mezők, amelyekre nem
+lehet lépni, a többi mező üres. Egy bábut kell mozgatni a táblán. A bábu kezdetben a tábla bal fel-
+ső sarkában van, és a jobb alsó sarokba kell eljuttatni az alábbi lépés-szabályt betartva:
+       Csak olyan mezőre lehet lépni, ahova még nem lépett a bábu.
+       Csapda mezőre nem lehet lépni.
+       Csak a négy szomszédos mező valamelyikére lehet lépni.
+       Egy lépésben csak jobbra, lefelé, vagy felfelé lehet lépni.
+       Minden olyan mezőn lévő gyöngy a játékosé lesz, amely mezőre lép.
+Készíts programot, amely kiszámítja a játékkal elérhető legnagyobb pontszámot, és meg is ad lé-
+péssort, amely a legnagyobb pontszámot eredményezi!
+Bemenet
+A standard bemenet első sorában a táblázat sorainak száma (1≤M≤100), az oszlopainak
+száma (1≤N≤100), a csapdák száma (1≤U≤10 000) és a gyöngyök száma (1≤V≤10 000) van.
+A következő U sor mindegyikében egy csapdamező koordinátái vannak: a sorindex (1≤X≤M) és
+az oszlopindex (1≤Y≤N). Ezt követi V darab sor, soronként három szám: a gyöngyöt tartalmazó
+mező koordinátái (1≤X≤M,1≤Y≤N), ahol Z számú (0<Z≤100) gyöngy van a táblán. A tábla
+többi mezője üres.
+Kimenet
+A standard kimenet első sorába az elérhető maximális pontszám értékét kell írni! A máso-
+dik sorba egy olyan lépéssorozatot kell írni, amely egy olyan szabályos játékot ad meg, amellyel a
+maximális pontszám elérhető! A lépéseket a J, L, F betűkkel kódoljuk; J azt jelenti, hogy az ak-
+tuális mezőről jobbra, L azt, hogy lefelé, F pedig, hogy felfelé lép a játékos. A betűket válassza el
+pontosan egy szóköz!
+Példa
+Bemenet                                           Kimenet
+5   5 2 2                                         33
+5   1                                             LLJJLLJFFFFJLLLL
+2   3
+5   5 19
+4   3 14
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                              1. oldal
+

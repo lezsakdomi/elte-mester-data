@@ -1,0 +1,38 @@
+Dinamikus programozás                                                                        **
+
+
+                    Fazekas kemence sor elejéről vagy végéről
+Egy fazekas műhelyében egy sorban várakoznak a kiégetésre váró korsók. Az égető kemencébe
+legfeljebb két korsó fér be egyidejűleg. A korsók törékenysége és súlya miatt csak a sor elején,
+vagy végén lévő korsót lehet berakni a kemencébe. Minden korsóról tudjuk, hogy mennyi az a
+legkevesebb idő, ami a kiégetéséhez kell. Ha két korsót egyszerre raknak a kemencébe és ez egyik
+t1, a másik t2 égetési időt igényelne, akkor a kettőt együtt max(t1,t2) ideig kell a kemencében
+tartani.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő kell az összes korsó kiégeté-
+séhez, továbbá megadja azt is, hogy ezen idő eléréséhez mely korsókat kell egy-egy menetben a
+kemencében együtt égetni!
+Bemenet
+A standard bemenet első sorában a korsók N száma van (1N2000)! A második sor az
+N korsó minimális égetési idejét tartalmazza, ami nem nagyobb, mint 1000.
+Kimenet
+A standard kimenet első sorába az összes korsó kiégetéséhez minimálisan szükséges
+összidőt kell írni! A következő sorokban kell megadni, hogy milyen sorrendben kerülnek be a
+korsók a kemencébe egy optimális égetés esetén! Minden sor egy vagy két korsó sorszámot tar-
+talmaz. Ha két i j sorszám van a sorban, az azt jelenti, hogy előbb az i sorszámú, majd a j
+sorszámú korsót kell a kemencébe rakni. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+7                                               11
+2 1 5 1 3 3 4                                   1 2
+                                                3 7
+                                                4
+                                                5 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

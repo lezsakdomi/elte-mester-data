@@ -1,0 +1,37 @@
+Dinamikus programozás                                                                           **
+
+
+                                         Menekülés
+Egy négyzet alakú sziget közepén elhelyeztünk egy robotjárművet, amelyet ki kell juttatni a sziget-
+ről. A jármű minden egyes időegységben egyet léphet vagy északra, vagy keletre, vagy délre vagy
+pedig nyugatra. A járműnek minden lépésével távolodnia kell a kezdőpontjától! Egyes mezők sá-
+rosak, ezért fennáll a lehetősége, hogy a járművünk beleragad. Ha a kezdőpont koordinátái (x0,y0)
+és a jármű az (x,y) koordinátájú helyen van, akkor a távolsága │x0-x│ + │y0-y│.
+Készíts programot, amely megad a robot számára egy a szigetről kivezető olyan útvonalat, amin a
+lehető legkevesebb sáros mezőt érinti! Az útvonal akkor ér véget, ha a jármű kilépett a szigetről.
+Bemenet
+A standard bemenet első sorában a négyzet oldalhossza van (3N<1000, N páratlan). A
+következő N sorban soronként N szám szerepel, 0 jelöli a száraz, 1 pedig a sáros pontokat.
+Kimenet
+A standard kimenet első sorába a legkevesebb sáros mező számát kell kiírni, amelyek érin-
+tésével a jármű kijuthat a szigetről! A második sorba egy ilyen útvonalat leíró karaktersorozat ke-
+rüljön, ami az E, K, D, N betűket tartalmazhatja, a haladási iránynak megfelelően! Több megoldás
+esetén bármelyik kiírható.
+Példa
+Bemenet                                          Kimenet
+5                                                1
+0   0   1   1   0                                ENEE
+0   0   1   1   1
+1   1   0   1   1
+1   1   1   1   1
+0   0   0   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

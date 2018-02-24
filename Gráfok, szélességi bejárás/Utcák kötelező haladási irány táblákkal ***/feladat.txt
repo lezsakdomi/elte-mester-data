@@ -1,0 +1,48 @@
+Gráfok – Szélességi bejárás                                                                     ***
+
+
+                    Utcák kötelező haladási irány táblákkal
+Egy modern nagyváros úthálózata egy négyzetráccsal írható le, ahol N jelöli a négyzetrács sorainak
+számát (azaz a kelet-nyugati irányú utak számát, az ilyen utakat alulról felfelé sorszámozzuk), M
+pedig az oszlopokét (azaz az észak-déli utakét, az ilyen utakat balról jobbra sorszámozzuk). El
+szeretnénk jutni a város egyik kereszteződéséből egy másik kereszteződésbe. Az egyes kereszte-
+ződések (csomópontok) előtt a haladási irányt befolyásoló jelzőtáblák lehetnek, melyeket a követ-
+kező kódokkal látunk el:
+     balra fordulni tilos             BT
+     jobbra fordulni tilos            JT
+     balra haladni kötelező           BK
+     jobbra haladni kötelező          JK
+Visszafordulni semelyik csomópontban sem lehet, azaz ha nincs jelzőtábla, akkor is csak maxi-
+mum háromfelé haladhatunk. Útközben a várost nem hagyhatjuk el (bár erről szóló jelzőtáblák
+nincsenek). Az indulási helyről bármerre indulhatunk, azt nem befolyásolja tábla.
+Készíts programot, amely a táblák figyelembevételével megadja a legrövidebb útvonalat, amelye-
+ken áthaladva eljuthatunk az indulási helyről a célba!
+Bemenet
+A standard bemenet első sorában a sorok és oszlopok száma (1≤N,M≤200), valamint a
+táblák száma (1≤T≤40000) van egy-egy szóközzel elválasztva. A következő T sorban soronként
+egy-egy tábla leírása található. A táblaleírás formája: irány sor oszlop kód, ahol a sor
+és az oszlop a csomópont koordinátáit adja meg (1≤sor≤N, 1≤oszlop≤M), az irány
+pedig a csomópontba beérkező útszakasz irányát (E, K, D, N), azaz a beérkező út északi, keleti,
+déli vagy nyugati irányban halad-e. Az utolsó sorban a két kereszteződés sor és oszlopindexe van,
+egy-egy szóközzel elválasztva, az első az induló hely, a második a cél.
+Kimenet
+A standard kimenet első sorába a két pont közötti legrövidebb út hosszát kell írni! A má-
+sodik sorba a legrövidebb út leírását kell írni, ahol minden lépést a haladás iránya, azaz az E, K, D
+vagy N betű azonosít. Ha nincs ilyen út, akkor az első és egyetlen sorba -1-et kell kiírni!
+Példa
+Bemenet                                           Kimenet
+4   3   5                                         5
+E   2   1   JK                                    KEENE
+K   2   2   JK
+E   2   2   BT
+E   4   2   BT
+E   4   2   JT
+1   1   4   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+                                              1. oldal
+

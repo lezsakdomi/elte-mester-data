@@ -1,0 +1,31 @@
+Programozási tételek összeépítése                                                     *
+
+
+                  Lakások különböző alapterületeinek száma
+Egy ingatlanforgalmazó cég tárolja az eladó lakások alapterületét és árát.
+Írj programot, amely megadja, hogy hányféle alapterületű lakás van!
+Bemenet
+A standard bemenet első sorában a lakások száma (1≤N≤100), alatta soronként egy-egy
+lakás alapterülete (négyzetméterben, 1≤T≤1000) és ára van (millió forintban, 1≤A≤1000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a különböző alapterületű
+lakások számát!
+Példa
+Bemenet                                           Kimenet
+6                                                 4
+42 15
+110 20
+125 160
+166 180
+42 10
+110 39
+Korlátok
+Időlimit: 32 MB
+Memórialimit: 0.1 mp
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤20
+
+
+
+
+                                              1. oldal
+

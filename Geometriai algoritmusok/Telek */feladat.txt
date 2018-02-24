@@ -1,0 +1,76 @@
+Geometriai algoritmusok                                                                             *
+
+
+                                                 Telek
+János gazdának háromszög alakú telke van (az A,B,C sarkai koordinátáit ismerjük). Az önkor-
+mányzat utat szeretne építeni, de egyelőre csak a (P,Q) szakasz megépítésére van pénze.
+Írj programot, amely megadja, hogy az útépítés hogyan érinti János gazda telkét! Elképzelhető,
+hogy két részre vágja, vagy belevág valahol, vagy elkerüli. Ha csak a határt érinti, az nem jelent be-
+levágást.
+1)   Az út a telket két részre vágja, például:
+                                                        B
+
+
+
+                               P
+                                                                            Q
+
+
+
+                                       A
+
+
+                                                                    C
+2)   Az út belevág a telek egy részébe, például:
+                                   B                                                B
+
+
+
+
+                                                                                P
+                          P                        Q
+
+
+             A                                                  A                   Q
+
+
+                                           C           vagy                                 C
+3)   Az út elkerüli a telket, például:
+                                                                                B
+                           B
+
+
+
+                                       P
+
+
+
+                                           Q                A
+        A                                                               P
+                                                                                        C
+                                       C         vagy                                           Q
+
+Bemenet
+A standard bemenet egyetlen sorában 10 egész szám írja le az A, B, C, P és Q pontok x- és
+y-koordinátáit. A koordináták a [-106;106] intervallumban vannak.
+Kimenet
+A standard kimenet egyetlen sorába az 1, 2 vagy 3 számok valamelyikét kell írni a fenti
+eseteknek megfelelően!
+
+
+                                                 1. oldal
+Geometriai algoritmusok                *
+
+
+Példa
+Bemenet                      Kimenet
+0 1 2 5 4 0 2 2 5 2          2
+Korlátok
+Időlimit: 0.01 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                          2. oldal
+

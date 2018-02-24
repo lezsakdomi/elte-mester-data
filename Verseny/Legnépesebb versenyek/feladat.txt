@@ -1,0 +1,35 @@
+Tanulmányi verseny                                                                           *
+
+
+                              Legnépesebb versenyek
+Egy iskolában egyéni és összetett tanulmányi versenyt tartottak. A versenyekben összesen N ta-
+nuló vett részt. A versenyek száma M. Ismerjük versenyenként az induló tanulókat és elért pont-
+számukat. Az összetett versenyben csak azon tanulók eredményét értékelik, akik az összes egyéni
+versenyen indultak és elérték a versenyenként adott minimális pontszámot.
+Készíts programot, amely megadja a legnépesebb versenyeket, azaz azokat a versenyeket, ahol a
+minimális pontszámot legalább elért versenyzők száma maximális volt!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤100) és a versenyek száma
+(1≤M≤100) van. A második sorban az M versenyen elvárt minimális pontszámok találhatók
+(0≤Mini≤50). Az ezt követő M sorban az egyes versenyek leírása következik: a versenyen indu-
+lók száma (1≤Indi≤N), majd Indi számpár, az egyes tanulók sorszáma (1≤Si,j≤N) és elért
+pontszáma (1≤Pi,j≤100).
+Kimenet
+A standard kimenet első sorába a legnépesebb versenyek V számát kell írni, mögötte pedig
+ezen versenyek sorszámai következzenek, sorszám szerint növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+5 3                                            2 1 3
+10 20 20
+3 1 10 2 30 3 10
+2 2 10 1 10
+4 1 10 2 20 3 30 5 50
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,41 @@
+Nemes Tihamér OITV 2017                   Második forduló           2. korcsoport: 9-10. osztályosok
+
+
+                                           Függőhíd
+Egy szakadék felett 2*N járdalapból álló függőhíd vezet keresztül. Az egyes járdalapok különböző
+veszélyességi mértékűek. A hídon áthaladáskor minden lépésben előre, balra vagy jobbra lehet
+lépni egyet.
+Készíts programot, amely megadja a nyugatról keletre átjutáshoz szükséges minimális veszélyes-
+ségi mértéket, valamint egy lehetséges átjutást!
+Bemenet
+A standard bemenet első sorában a híd hossza van (1≤N≤25000). A második sorban a
+baloldali (1≤Bali≤100), a harmadikban pedig a jobboldali (1≤Jobbi≤100) járdalapok veszé-
+lyességi mértéke található.
+Kimenet
+A standard kimenet első sorába a nyugatról keletre átjutáshoz szükséges minimális veszé-
+lyességi mértéket kell írni! A második sorba egy ilyen lehetséges átjutás leírása kerüljön! A sor első
+karaktere B, ha a járda bal oldalán kezdjük az átkelést, illetve J, ha a jobb oldalán. A második ka-
+rakter kötelezően E, aminek hatására rálépünk a híd első járdalapjára. Ezután minden lépést egy-
+egy karakter ír le: E jelenti, hogy az adott oldalon egy járdalapot előre lépünk, B azt, hogy a jobb
+oldalról átlépünk a mellette levő baloldali járdalapra, a J pedig azt, hogy a bal oldalról átlépünk a
+mellette levő jobboldali járdalapra. Az utolsó lépésnek biztosan E-nek kell lenni, amivel lelépünk
+a híd túlsó oldalán. A lépéssor végére a # karaktert kell írni! Több megoldás esetén bármelyik
+megadható.
+Példa
+bemenet                                            kimenet
+5                                                  10
+1 1 5 2 2                                          BEEJEEBEE#
+3 1 1 2 8
+                 Nyugati oldal       1     1      5       2   2    Keleti oldal
+                                      3     1      1       2   8
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                                1. oldal                     2017.01.07. 830-1330 óra
+

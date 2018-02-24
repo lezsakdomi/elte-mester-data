@@ -1,0 +1,31 @@
+Programozási tételek – rendezések                                                            *
+
+
+                                      Hallgató felező
+Egy kurzusra N hallgató járt. A hallgatók röpzárthelyiket írnak
+Írj programot, amely megadja, hogy melyik az a legnagyobb R röpzárthelyi pontszám, amelyre tel-
+jesül, hogy a hallgatók legalább felének a pontszáma legalább R!
+Bemenet
+A standard bemenet első sorában a hallgatók száma (0≤N≤99) található. A következő N
+sorban a röpzárthelyi pontok (0≤Ri≤20) vannak.
+Kimenet
+A standard kimenet egyetlen sorába a legnagyobb R pontszámot kell kiírni, amelyre telje-
+sül, hogy a hallgatók legalább felének a pontszáma legalább R!
+Példa
+Bemenet                                          Kimenet
+5                                                10
+15
+10
+9
+8
+20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤20.
+
+
+
+
+                                              1. oldal
+

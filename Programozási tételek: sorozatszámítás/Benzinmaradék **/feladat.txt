@@ -1,0 +1,34 @@
+Programozási tételek – sorozatszámítás                                                     **
+
+
+                                    Benzinmaradék
+Egy K kilométeres útra autót béreltünk, amelyet B liter benzinnel feltankolva kaptunk meg. Út-
+közben N helyen tankoltunk. Az autó fogyasztása 100 kilométerenként L liter.
+Írj programot, amely megadja, hogy mennyi benzin lesz az autóban az út végén!
+Bemenet
+A standard bemenet első sorában a megtett út hossza (1≤K≤100100), a tankolások szá-
+ma (1≤N≤1000), az autóban kezdetben levő benzin mennyisége (1≤B≤100) és a 100 kilométe-
+renkénti fogyasztás (1≤L≤10) van. A következő N sorban soronként a benzinkutak távolsága az
+indulási helytől (1≤Holi<Holi+1≤K) és a tankolt benzin mennyisége (1≤Mennyiti≤100)
+van, tankolás szerinti sorrendben. Minden távolság osztható 100-zal. A tankolások biztosítják,
+hogy el lehet jutni a célig.
+Kimenet
+A standard kimenet egyetlen sorába az út végén az autóban levő benzin mennyiségét kell
+írni!
+Példa
+Bemenet                                        Kimenet
+2000 4 40 7                                    60
+400 20
+500 80
+800 30
+1200 30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤10.
+
+
+
+
+                                           1. oldal
+

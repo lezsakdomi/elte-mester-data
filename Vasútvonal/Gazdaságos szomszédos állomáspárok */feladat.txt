@@ -1,0 +1,39 @@
+Vasútvonal                                                                                         *
+
+
+                     Gazdaságos szomszédos állomáspárok
+A Budapest-Székesfehérvár vasútvonalon egy vonat kalauza minden állomáson feljegyezte, hogy
+hányan szálltak fel a vonatra, illetve hányan szálltak le. (Budapesten biztos nincs leszálló, Székes-
+fehérváron biztos nincs felszálló, aki leszállt, az nem száll vissza.)
+Készíts programot, amely megadja, hogy hány szomszédos állomáspár között gazdaságos a vonat
+üzemeltetése, ha egy utasnak egy állomásnyi távolság N forintba kerül, a vonat egy állomásnyi útja
+pedig M forintba kerül!
+Bemenet
+A standard bemenet első sorában az állomások száma van (1≤állomásszám≤1000),
+második sorában szóközzel elválasztva rendre az egy állomásnyi távolság ára személyenként
+(0<N≤100), valamint a vonat egy állomásnyi útjának ára (0<M≤1000), amelyek egész számok.
+A további sorokban az egyes állomásokon leszállók (0≤leszállók≤800) és felszállók
+(0≤felszállók≤800) száma található, egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába azon szomszédos állomáspárok számát kell írni, amelyek
+között gazdaságos az üzemeltetés!
+Példa
+Bemenet                                           Kimenet
+6                                                 5
+100 1000
+0 15
+10 30
+0 32
+48 0
+19 26
+26 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza ≤500, a leszállók és felszállók száma ≤400
+
+
+
+
+                                              1. oldal
+

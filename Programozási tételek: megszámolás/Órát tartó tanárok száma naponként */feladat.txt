@@ -1,0 +1,38 @@
+Programozási tételek – Megszámolás                                                             *
+
+
+                      Órát tartó tanárok száma naponként
+Egy iskola tanárairól tudjuk, hogy mikor milyen órát tartanak. A tanárokat, a tantárgyakat, a hét
+napjait, a napokon belüli órákat sorszámukkal azonosítjuk.
+Készíts programot, amely megadja minden napra az aznap órát tartó tanárok számát!
+Bemenet
+A standard bemenet első sorában az órák száma (1O1000), a tanárok száma
+(1N100), a tantárgyak száma (1M100), egy tanár sorszáma (1TN) és egy nap sorszáma
+van (1H5), egy-egy szóközzel elválasztva. A következő sorok mindegyikében 4 egész szám
+van, egy-egy szóközzel elválasztva: tanár sorszám (1TSN), tanított tantárgy sorszáma
+(1TTSM), nap (1Nap5), óra (0Óra8). Például 3 7 2 0 azt jelenti, hogy a harmadik tanár
+a hetedik tantárgyat a hét második napján a nulladik órában tanítja.
+Kimenet
+A standard kimenet első sorába meg kell adni, minden napra az aznap órát tartó tanárok
+számát!
+Példa
+Bemenet                                         Kimenet
+8   3   4   1 1                                 2 3 1 0 0
+1   1   1   6
+1   1   2   2
+1   2   1   3
+2   1   2   2
+2   2   3   1
+3   4   1   2
+3   2   1   4
+3   3   2   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

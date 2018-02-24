@@ -1,0 +1,34 @@
+Programozási tételek - rendezés                                                           *
+
+
+                        Kalapácsvető verseny selejtezője
+Egy kalapácsvető verseny selejtezőjéből a legalább H métert dobók biztosan továbbjutnak. A
+döntőt legalább K fősre tervezik, azaz H-nál kisebbet dobók is bekerülhetnek.
+Add meg a döntőbe jutottak sorrendjét a dobásuk nagysága szerint!
+
+Bemenet
+A standard bemenet első sorában található a versenyzők száma (1 ≤ N ≤ 100), a határ (1 ≤
+H ≤ 200), ami fölött mindenképpen bejutnak a döntőbe és a bejutók minimális száma (1 ≤ K ≤
+N). Az ezt követő N sor mindegyikében egy-egy érték (pozitív egész számok, maximum 200) van,
+a dobások értékei.
+Kimenet
+A standard kimenet első sorába ki kell írni elválasztva a döntőbe jutók számát és indexeit
+egy-egy szóközzel elválasztva, úgy, hogy dobásuk mértéke csökkenő legyen.
+Példa
+Bemenet                                        Kimenet
+6 20 3                                         3 4 2 1
+19
+20
+3
+21
+4
+12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal                              2014.09.11.
+

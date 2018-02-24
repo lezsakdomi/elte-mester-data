@@ -1,0 +1,30 @@
+Programozási tételek - megszámolás                                                          *
+
+
+                                              Tejárak
+Egy élelmiszerboltban N-féle tejet árulnak.
+Határozd meg azon tejfélék számát, amelyek legalább P, de legfeljebb Q forintba kerülnek!
+Bemenet
+A standard bemenet első sorában található a tejfélék száma (1≤N≤100) és a két ár
+(1≤P,Q≤1000) szóközzel elválasztva. Az ezt követő N sorban az áraik vannak (1≤Ai≤1000).
+Kimenet
+A standard kimenet első sorába ki kell írni a legalább P, de legfeljebb Q forintba kerülő
+tejfélék számát!
+Példa
+Bemenet                                            Kimenet
+6 200 220                                          3
+199
+198
+200
+218
+220
+189
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

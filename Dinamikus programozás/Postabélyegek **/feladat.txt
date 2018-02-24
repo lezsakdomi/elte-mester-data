@@ -1,0 +1,31 @@
+Dinamikus programozás                                                                          **
+
+
+                                      Postabélyegek
+Nevesincs ország postája csak olyan levél kézbesítését vállalja, amelyen legfeljebb K darab bélyeg
+van.
+Készíts programot, amely kiszámítja, hogy melyek azok az 1 és M közötti értékek, amelyeket nem
+lehet legfeljebb K bélyeg értékének összegeként előállítani!
+Bemenet
+A standard bemenet első sorában a bélyeg címletek száma (1≤N≤100), az egy levélre ra-
+gasztható bélyegek maximális száma (1≤K≤100), valamint az M érték (1≤M≤3000) van. A má-
+sodik sor tartalmazza az N darab címlet értékét (1≤Ci≤1000).
+Kimenet
+A standard kimenet első sorába azon 1 és M közötti értékek R számát kell írni, amelyeket
+nem lehet legfeljebb K bélyeg értékének összegeként előállítani! A második sor pontosan R egész
+számot tartalmazzon egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                         Kimenet
+6 3 50                                          5
+2 3 11 13 17 25                                 1 10 12 46 48
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,K≤50 és M≤500. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                             1. oldal
+

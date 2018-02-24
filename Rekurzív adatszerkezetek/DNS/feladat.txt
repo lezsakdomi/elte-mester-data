@@ -1,0 +1,39 @@
+Rekurzív adatszerkezetek                                                                  ***
+
+
+                                     DNS vizsgálat
+Kutatók DNS szekvenciákat vizsgálnak. Kiderítették, hogy vannak olyan DNS minták, az úgy ne-
+vezett patologikus minták, amelyek előfordulása DNS szekvenciákban problémás lehet. Azt sze-
+retnék tudni, hogy adott minták és egy szekvencia esetén legkevesebb hány DNS báziselemét kell
+uracil (’U’) bázisra módosítani, hogy egyik patologikus minta se forduljon elő a szekvenciában.
+Írj programot, amely kiszámítja, hogy adott patologikus minták és egy szekvencia esetén a szek-
+venciát legkevesebb hány helyen kellene módosítani a szekvenciát, hogy egyik patologikus minta
+se forduljon elő a szekvenciában!
+Bemenet
+A standard bemenet első sorában a patologikus minták száma (1≤N≤1000), és a vizsgált
+DNS szekvenciák száma (1≤M≤10) van. A következő N sor mindegyike egy-egy patologikus
+mintát tartalmaz, amelyek legfeljebb 100 DNS bázis karaktert (’A’,’C’,’G’,’T’) tartal-
+maznak. A következő M sor mindegyike egy vizsgált DNS szekvenciát tartalmaz. Mindegyik leg-
+feljebb 10 000 karakterből áll.
+Kimenet
+A standard kimenet pontosan egy sort tartalmazzon! Az i-edik szám a sorban az az érték
+legyen, ahány helyen minimálisan módosítani kell az i-edik szekvenciát, hogy egyik patologikus
+minta se forduljon elő a szekvenciában!
+Példa
+bemenet                                        kimenet
+2 2                                            2 3
+AA
+ACA
+ACACAAC
+AAAATAAA
+
+Korlátok
+Időlimit: 0.03 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤10.
+
+
+
+
+                                           1. oldal
+

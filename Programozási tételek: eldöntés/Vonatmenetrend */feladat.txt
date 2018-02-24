@@ -1,0 +1,38 @@
+Programozási tételek - eldöntés                                                                *
+
+
+                                    Vonatmenetrend
+Adott egy Budapest és Pécs közötti vasúti menetrend, amely tartalmazza a közbülső helységek
+esetében az érkezési és az indulási időt.
+Írj programot, amely eldönti, hogy a menetrendben szereplő valamennyi vonat Pécsig közlekedik-
+e!
+Bemenet
+A standard bemenet első sorában van a menetrendben található bejegyzések (1≤N≤100)
+száma. A következő N sor mindegyikében van egy városnév (ekezet nelkul), egy érkezési idő és
+egy indulási idő. Az idők a napon belüli percekben vannak megadva, vagyis 24*60=1440 a maxi-
+mális érték és a vonat aznap mindig megérkezik. „-1” van ott, ahol nincs értelmezhető érkezési
+idő és „9999” szerepel a nem értelmezhető indulási időknél. Az adatok indulási idő szerint rende-
+zettek.
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! Az „IGEN” szöveg szerepeljen
+amennyiben valamennyi vonat „Pecs”-ig közlekedik (csak Pécsen van, olyan, hogy „9999” perc-
+kor indul tovább), különben a „NEM” szöveg!
+Példa
+Bemenet                                         Kimenet
+7                                               IGEN
+Budapest -1 480
+Dunaujvaros 549 550
+Paks 580 582
+Szekszard -1 600
+Szekszard 604 605
+Pecs 650 9999
+Pecs 655 9999
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

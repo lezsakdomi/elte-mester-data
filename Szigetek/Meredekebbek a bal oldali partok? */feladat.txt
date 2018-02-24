@@ -1,0 +1,39 @@
+Szigetek                                                                                         *
+
+
+                        Meredekebbek a bal oldali partok?
+Egy repülőgéppel Európából Amerikába repültünk. Az út során egyenlő távolságonként mértük a
+felszín tengerszint feletti magasságát. Az első és utolsó mérést vagy kontinens, vagy tenger fölött
+mértük. Pozitív magasságot ott mértünk, ahol szárazföld volt, 0 magasságot pedig ott, ahol ten-
+ger.
+
+
+
+
+Három egymást követő méterben mért mérési eredményt jelöljön A, B és C! Ekkor B
+    bal oldali partot jelez, ha B>0 és A=0;
+    jobb oldali partot jelez, ha B>0 és C=0.
+A szomszédos mérési eredmények különbségét meredekségnek tekintjük. A part meredeksége a
+legelső tengerparti mérés és a tengerszint (azaz a 0) különbsége.
+Készíts programot, amely eldönti, hogy a szigetek bal oldali partjai több esetben meredekebbek-e,
+mint a jobb oldali partjai!
+Bemenet
+A standard bemenet első sorában a mérések száma van (2≤N≤10 000). A második sor-
+ban N szám szerepel, mindegyik egy méterben mért tengerszint feletti magasság (0≤M<9000),
+melyek egymást időrendben követik – az első és az utolsó biztosan nem 0.
+Kimenet
+A standard kimenet első és egyetlen sorába egy 1-es vagy egy 0-s kerüljön aszerint, hogy a
+döntés igen vagy nem!
+Példa
+Bemenet                                          Kimenet
+12                                               0
+3 2 0 3 4 4 0 2 1 3 0 1
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                             1. oldal
+

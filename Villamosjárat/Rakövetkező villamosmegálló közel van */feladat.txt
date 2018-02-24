@@ -1,0 +1,36 @@
+Villamosjárat                                                                                     *
+
+
+                    Rákövetkező villamosmegálló közel van
+Egy villamosjáratról tudjuk, hogy a megállói milyen messze vannak az előző állomástól, valamint
+az egyes állomásokra az érkezési és indulási időket (csak az egyik irányban, a villamos a 0. percben
+indul). Ha egy megállóban azonos az érkezési és az indulási idő, akkor a villamos ott nem állt
+meg.
+Készíts programot, amely megadja az első állomást, amitől a következő K méternél közelebb van
+és a következő állomás távolságát ettől!
+Bemenet
+A standard bemenet első sorában a villamosmegállók száma (1≤N≤100) és egy távolság
+(1≤K≤2000) van. Ezt követően soronként a megállók adatai vannak: távolság az előzőtől
+(1≤Ti≤6000), érkezési idő (1≤Erki≤2000), indulási idő (Erki≤Indi≤2000).
+Kimenet
+A standard kimenet első sorába annak az első olyan villamosmegállónak a sorszámát kell
+kiírni, amitől a következő K méternél közelebb van és a következő állomás távolságát ettől! Ha
+nincs ilyen, akkor „-1”-et kell kiírni!
+Példa
+Bemenet                                           Kimenet
+5 500                                             1 300
+300 10 15
+2000 30 30
+1000 40 42
+500 48 58
+400 63 63
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,44 @@
+Rekurzív adatszerkezetek                                                                          **
+
+
+                                     Titkos társaság 3
+Egy titkos társaság hierarchikusan épül fel, minden tagja csak a felettesét és a hozzá közvetlenül
+beosztottakat ismeri. A társaságnak pontosan egy olyan tagja van, akinek nincs főnöke. Bármelyik
+tag küldhet levelet bármelyik tagnak. A szervezeten belül a levelek továbbítása úgy történik, hogy
+egy lépésben vagy a közvetlen főnökhöz, vagy a közvetlen beosztotthoz továbbítódik a levél.
+Készíts programot, amely adott két, X és Y tagra kiszámítja, hogy
+   1.) ha csak a beosztottaknak lehet levelet küldeni, akkor az egyik küldhet-e levelet a másiknak;
+   2.) ha beosztottaknak és feletteseknek is lehet levelet küldeni, akkor az X-től Y-nak küldött le-
+       vél hány lépés alatt ér el Y-hoz;
+   3.) hány beosztottja – nem csak közvetlen – van az X és az Y tagnak?
+Bemenet
+A standard bemenet első sorában a társaság tagjainak száma (1N10 000), valamint a
+két ember sorszáma (1X,YN) van. A következő N-1 sorban egy-egy egész szám szerepel, a
+bemenet i. sorában az i. tag felettesének sorszáma. A társaság nagyfőnöke az 1-es sorszámú tag,
+neki nincs felettese.
+Kimenet
+A standard kimenet első sorába egyetlen számot kell írni: 1-et, ha X küldhet levelet Y-nak;
+2-t, ha Y küldhet levelet X-nek; egyébként pedig 3-at! A második sorba egyetlen számot kell írni:
+hány lépés alatt juthat el a levél egyiktől a másikig? A harmadik sorba két számot kell írni, X és Y
+beosztottjainak a számát!
+Példa
+Bemenet                                           Kimenet                         1
+
+7 2 3                                             3
+1                                                 2
+                                                                           2              3
+1                                                 1 3
+3
+2                                                                          5          4   6   7
+3
+3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤100
+
+
+
+
+                                              1. oldal
+

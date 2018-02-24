@@ -1,0 +1,43 @@
+Geometriai algoritmusok                                                                         ***
+
+
+                                    Háromszög kerítés
+A város nagy parkjába egy különleges facsemetét ültettek, amely védelmet igényel. A város főker-
+tésze kiadta az utasítást, hogy a facsemetét körbe kell keríteni. Három meglévő fát lehet körbeke-
+ríteni úgy, hogy a csemete az elkerített részen belül legyen, nem eshet a kerítés oldalára sem. Azt
+szeretné, hogy az elkerített részben – a határát is beleértve – a lehető legkevesebb fa legyen. A be-
+kerítéshez már kijelöltek két fát, most már csak a harmadikat kell meghatározni. A főkertész min-
+den fa helyét tudja, mert van egy térképe, amely tartalmazza minden fa helyét, megadva a koordi-
+nátáit.
+Készíts programot, amely meghatározza, a bekerítéshez a harmadik fát!
+Bemenet
+A standard bemenet első sorában hat egész szám van. Az első két szám az egyik kijelölt fa
+x- és y-koordinátája, a második két szám a másik kijelölt fa x- és y-koordinátája, a harmadik két
+szám pedig a csemete x- és y-koordinátája. A második sorban van a fák száma (1N100 000),
+az első sorban megadott két kijelölt fa és a csemete nem szerepel közöttük. A további N sor
+mindegyike két egész számot tartalmaz, egy fa x- és y-koordinátáját (-1 000 000 és 1 000 000 kö-
+zötti egész számok).
+Kimenet
+A standard kimenet első és egyetlen sorába annak a fának a sorszámát kell kiírni, amelyik a
+bekerítés harmadik fája lesz! Több megoldás esetén a legkisebb sorszámút kell kiírni! Ha nincs
+megoldás, akkor a 0 számot kell kiírni!
+Példa
+Bemenet                                           Kimenet
+0 0 11 0 8 6                                      3
+7
+7 11
+7 13
+11 10
+10 6
+13 5
+5 6
+4 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

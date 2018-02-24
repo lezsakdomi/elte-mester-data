@@ -1,0 +1,39 @@
+Geometriai algoritmusok                                                                       ***
+
+
+                                    Épület elhagyása
+Egy épület téglalap alakú helyiségekből áll, az egyes helyiségek oldalai párhuzamosak a koordiná-
+tatengelyekkel, belső udvara nincs. Az épület belső szobáiból más helyiségeken keresztül lehet ki-
+jutni a külvilágba.
+Készíts programot, amely megadja, hogy egy adott helyiségből minimum hány helyiségen keresz-
+tül juthatunk ki a külvilágba!
+Bemenet
+A standard bemenet első sorában a helyiségek száma (1N50 000) és egy helyiség sor-
+száma (1HN) van. A következő N sorban egy-egy helyiség bal alsó és jobb felső sarkának koor-
+dinátái találhatók (0BAX,BAY,JFX,JFY10 000 000).
+Kimenet
+A standard kimenet egyetlen sorába azon helyiségek minimális számát kell kiírni, amelye-
+ken keresztül a H helyiségből indulva kijuthatunk az épületből!
+Példa
+Bemenet                                          Kimenet
+9   3                                            1
+0   12 4 16
+4   14 8 16
+4   8 8 12
+4   12 8 14
+2   8 4 12
+0   8 2 12
+8   8 16 16
+0   0 8 8
+8   0 16 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100 és a
+koordináták nem nagyobbak 100-nál.
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,32 @@
+Programozási tételek összeépítése                                                            **
+
+
+                                           Szólánc
+A szólánc játékot úgy játsszák, hogy valaki mond egy szót, a következőnek a szó utolsó betűjével
+kezdődő szót kell mondania, az őt követőnek a második szó utolsó betűjével kezdődőt, … és így
+tovább. A szólánc szavait azonban valaki összekeverte, de tudjuk, hogy a szavak különböző betű-
+vel kezdődnek, ezért a sorrendjük biztosan helyreállítható.
+Készíts programot, amely kiírja a szóláncot a helyes sorrendben!
+Bemenet
+A standard bemenet első sorában a szavak száma (1≤N≤26) van. A következő N sorban
+pedig soronként egy szó (a szólánc tagjai összekeverve). Mindegyik szó legfeljebb 20 karakteres,
+csak az angol ábécé betűit tartalmazhatja.
+Kimenet
+A standard kimenet N sorába a szóláncot kell kiírni a helyes sorrendben!
+Példa
+Bemenet                                          Kimenet
+4                                                MINTA
+AVAR                                             AVAR
+KEMENCE                                          RETEK
+MINTA                                            KEMENCE
+RETEK
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤10
+
+
+
+
+                                             1. oldal
+

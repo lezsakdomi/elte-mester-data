@@ -1,0 +1,32 @@
+Egyéb                                                                                               *
+
+
+                                           Helyesírás
+A helyesírás szabályai szerint szövegben írásjelek (vessző, pont, kérdőjel, felkiáltójel, pontosvesz-
+sző, kettőspont) elé nem teszünk szóközt, utána viszont teszünk. Ugyancsak nem teszünk szó-
+közt a nyitó zárójelek után és a csukó zárójelek elé (háromféle van: gömbölyű, szögletes és kap-
+csos). A nyitó zárójel elé kell tenni szóközt és a csukó után is kell, hacsak nem írásjel követi! Sehol
+nem lehet két szóköz egymás mellett! Ha egyszerre két szabályt kellene alkalmazni (pl. írásjel után
+kell, csukó zárójel előtt nem kell szóköz), akkor a tiltó szabály az erősebb.
+Készíts programot, amely egy szöveget átalakít a helyesírás szabályai szerint! Az átalakítás során
+csak szóközöket beszúrni vagy törölni lehet a szöveg belsejében!
+Bemenet
+A standard bemenet egyetlen sora (legfeljebb 106 karakter) a hibásan beírt szöveget tartal-
+mazza.
+Kimenet
+A standard kimenet egyetlen sorába a javított szöveget kell írni!
+Példa
+Bemenet
+Ez egy hibásan ,rosszul( rossz zárójelezéssel)írt szöveg                                        .
+
+Kimenet
+Ez egy hibásan, rosszul (rossz zárójelezéssel) írt szöveg.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

@@ -1,0 +1,38 @@
+Számelméleti algoritmusok
+
+
+                                               6174
+Vegyünk egy tetszőleges négyjegyű számot, amelyben legalább kétféle számjegy van! A következő
+sorozatot képezzük:
+      N1 := a megadott szám
+      Ai := Ni számjegyei csökkenő sorrendben
+      Bi := Ni számjegyei növekvő sorrendben
+      Ni+1 := Ai-Bi
+
+A „6174-es tétel” szerint ez a sorozat mindig eléri a 6174-et, és onnantól konstanssá válik.
+Készíts programot, amely kiszámít egy ilyen N1 számhoz tartozó sorozatot, valamint a legkisebb
+olyan négyjegyű számot, amelynek sorozata ugyanennyi lépésben érné el a 6174-et!
+Bemenet
+A standard bemenet első és egyetlen sorában egy legalább kétféle számjegyet tartalmazó
+négyjegyű szám található.
+Kimenet
+A standard kimenetre soronként írd ki Ai, Bi és Ni+1 értékeit i=1-től, amíg Ni ≠ 6174
+(az a sor ugyanis már nem tartozik az eredményhez)! A sorozatot követő sorban, tehát a kimenet
+utolsó sorában az a legkisebb négyjegyű szám szerepeljen, amely ugyanennyi lépésben éri el a
+6174-et!
+Példa
+Bemenet                                           Kimenet
+1998                                              9981 1899 8082
+                                                  8820 288 8532
+                                                  8532 2358 6174
+                                                  1002
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a szám≤5000.
+
+
+
+
+                                              1. oldal
+

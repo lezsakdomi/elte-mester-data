@@ -1,0 +1,29 @@
+Programozási tételek – Maximumkiválasztás
+
+
+                          Legvastagabb jég a Balatonon
+Az elmúlt N napon megmértük a Balatonon a jég vastagságát.
+Készíts programot, amely megadja azt a napot, amikor a legvastagabb volt a jég!
+Bemenet
+A standard bemenet első sorában a mérések száma van (1≤N≤100), alatta soronként egy-
+egy mérés található (0≤Ki≤20).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az első olyan napnak a
+sorszámát, amikor a legvastagabb volt a jég!
+Példa
+Bemenet                                         Kimenet
+4                                               2
+4
+6
+5
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

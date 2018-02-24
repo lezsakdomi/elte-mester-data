@@ -1,0 +1,35 @@
+Kombinatorikai algoritmusok                                                                      **
+
+
+                                           Válogatás
+Egy üzletben válogatás nélkül gyűjtötték össze az üres üvegeket N ládában. Mivel az üvegfajták
+száma is N, ezért az azonos fajtájú üvegeket egy-egy ládában el lehet tárolni. Ezért szét akarják vá-
+logatni az üvegeket, hogy minden ládában csak azonos fajtájú legyen, de úgy, hogy a lehető legke-
+vesebb üveget kelljen átrakni más ládába.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány darab üveget kell másik ládába át-
+rakni, és megadja, hogy ehhez az egyes fajtákat melyik ládába kell gyűjteni!
+Bemenet
+A standard bemenet első sorában a ládák száma (1N8) van. A következő N sor mind-
+egyike pontosan N nemnegatív egész számot tartalmaz egy-egy szóközzel elválasztva. Az I+1-
+edik sorban a J-edik szám az I-edik ládában lévő J-fajta üvegek száma. Minden szám értéke leg-
+feljebb 5000.
+Kimenet
+A standard kimenet első sora egy egész számot tartalmazzon, a kívánt szétválogatáshoz
+szükséges átrakások minimális számát! A második sor pontosan N egész számot tartalmazzon
+(egy-egy szóközzel elválasztva): az I-edik szám annak az üvegfajtának a sorszáma legyen, amelyet
+az I-edik ládába rakunk!
+Példa
+Bemenet                                           Kimenet
+3                                                 182
+15 30 8                                           3 2 1
+55 80 10
+50 60 12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

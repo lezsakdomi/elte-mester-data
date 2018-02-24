@@ -1,0 +1,47 @@
+Rekurzív adatszerkezetek                                                                              *
+
+
+                                             Jelentés
+Egy vállalat hierarchikus felépítésű, tehát az igazgató kivételével (akinek nincs főnöke) minden
+dolgozónak pontosan egy közvetlen főnöke van, továbbá az igazgató mindenkinek a főnöke
+(közvetlenül, vagy közvetve). Ha egy dolgozó jelentést akar küldeni az igazgatónak, akkor be kell
+tartania a szolgálati utat, ami azt jelenti, hogy a jelentés egy lépésben, azaz egy nap alatt a dolgozó
+közvetlen főnökéhez kerül, aki azt továbbítja a közvetlen főnökének, és így tovább, amíg az üze-
+net meg nem érkezik az igazgatóhoz.
+Készíts programot, amely kiszámítja, hogy legrosszabb esetben hány nap kell ahhoz, hogy az
+igazgató megkapja dolgozója jelentését! A program adjon is meg egy ilyen dolgozót!
+Bemenet
+A standard bemenet első sorában a dolgozók száma van (1≤N≤10 000). Az igazgató
+azonosítója az 1. A következő N sor a vállalati hierarchiát írja le. Közülük az i-edik sorban azok a
+dolgozók vannak felsorolva (egy-egy szóközzel elválasztva, és a felsorolást a 0 szám zárja), akik
+az i-edik dolgozó közvetlen beosztottjai, tehát akiknek közvetlen főnöke i. Ha nincs egyetlen
+közvetlen beosztottja sem, akkor a sor csak a 0-t tartalmazza.
+Kimenet
+A standard kimenet első sorába azt a legnagyobb M számot kell írni, ahány nap szükséges
+ahhoz, hogy egy jelentés eljusson az igazgatóhoz! A második sor egy olyan dolgozó azonosítóját
+tartalmazza, akitől a jelentés M nap alatt jut az igazgatóhoz! Ha több ilyen van, akkor a legkisebb
+sorszámút kell kiírni!
+Példa
+Bemenet                                            Kimenet
+                                                                                    1
+9                                                  3
+3   2 0                                            6
+8   0
+4   5 7 0                                                                                        2
+0                                                                       3
+0
+0
+6   0
+9   0                                                      4            5               7         8
+0
+Korlátok
+Időlimit: 0.1 mp.                                                                       6         9
+
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤300
+
+
+
+
+                                               1. oldal
+

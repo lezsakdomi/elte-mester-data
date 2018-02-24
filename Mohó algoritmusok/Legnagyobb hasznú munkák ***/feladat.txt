@@ -1,0 +1,37 @@
+Mohó algoritmusok                                                                        ***
+
+
+                          Legnagyobb hasznú munkák
+Mohó Márton vállalkozó egy pályázaton meghirdetett munkák között válogat. Ismeri minden
+munka határidejét, és azt, hogy az adott munka elvégzése mekkora hasznot eredményez. Minden
+munka elvégzésére 1 napra van szüksége, és egy nap csak egy munkát tud elvégezni.
+Készíts programot, amely kiszámítja, hogy
+     Mekkora az elérhető legnagyobb összhaszon,
+     Mely munkákat végezzük el, hogy az összhaszon a lehető legnagyobb legyen!
+Bemenet
+A standard bemenet első sora a munkák számát (0<N10 000) tartalmazza. A további N
+sor mindegyikében az első szám a munka határideje (0<H10 000), a második pedig a munka
+elvégzésével elérhető haszon (0<P1000). Ha egy munka határideje K, az azt jelenti, hogy ha a
+munkát elvállaljuk, akkor azt a K-adik napig (a K. napon még lehet) be kell fejezni.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb összhasznot kell írni! A második
+sorba azoknak a munkáknak a sorszámait kell kiírni, amelyek elvégzése az első sorba írt
+összhasznot eredményezi, ha a munkákat ebben a sorrendben végezik el!
+Példa
+Bemenet                                         Kimenet
+6                                               220
+3   60                                          6 4 1 2 5
+4   40
+1   10
+3   30
+7   70
+4   20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

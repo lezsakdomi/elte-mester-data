@@ -1,0 +1,38 @@
+Gráfok, mélységi bejárás                                                                   ****
+
+
+                                     Hálózat felezés
+Adott egy N csomópontot tartalmazó hálózat, amelyben bármely két csomópont között pontosan
+egy útvonal van. A hálózatot két azonos számú csomópontot tartalmazó A és B részre kell bon-
+tani, amit úgynevezett vágás műveletek sorozatával lehet elvégezni! Kezdetben a teljes hálózat az
+A részhez tartozik. Egy vágás művelet azt jelenti, hogy az A részben megszüntetnek egy közvet-
+len vonalat valamely U és V csomópont között, majd az U-t tartalmazó rész marad az A-ban, a V
+csomópontot pedig egy közvetlen új vonallal a B rész valamely csomó-pontjához kapcsolják.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány vágással lehet kialakítani két azonos
+számú csomópontot tartalmazó hálózatot!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1≤N≤4000, páros szám) van. A
+további N-1 sorban egy-egy közvetlen vonal két végpontja van (1≤Ai≠Bi≤N).
+Kimenet
+A standard kimenet első sorába a legkevesebb vágások K számát kell írni, amellyel ki lehet
+alakítani két azonos számú csomópontot tartalmazó hálózatot!
+Példa
+bemenet                                         kimenet
+6                                               2
+1   2
+1   3
+3   4                                                  2       1         6
+3   5
+3   6
+
+Korlátok                                               4       3         5
+
+Időlimit: 0.1 mp.
+Memórialimit: 64 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                            1. oldal
+

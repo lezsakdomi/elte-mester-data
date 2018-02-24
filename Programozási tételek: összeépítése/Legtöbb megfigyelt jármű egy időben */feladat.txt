@@ -1,0 +1,42 @@
+Programozási tételek összeépítése                                                                *
+
+
+                     Legtöbb megfigyelt jármű egy helyen
+Egy városban forgalomszámlálást végeztek M helyen. Minden áthaladó járműről feljegyezték, a
+megfigyelés helyét és az időpont óra és perc értékét. A megfigyelési adatokat összegyűjtötték és az
+időpont szerint nem csökkenő sorrendbe rendezték.
+Írjon programot, amely megadja, hogy melyik időpontban figyelték meg a legtöbb járművet!
+Bemenet
+A standard bemenet első sorában a megfigyelési helyek száma (2≤M≤100) és az adatok
+száma (2≤N≤1000) van. A következő sorok mindegyike egy megfigyelési adatot tartalmaz, há-
+rom nem negatív egész számot egy-egy szóközzel elválasztva, az első szám a megfigyelési hely
+sorszáma (1≤S≤M) a második a megfigyelési időpont óra (0≤Ó≤23), a harmadik pedig a perc ré-
+sze (0≤P≤59).
+Kimenet
+A standard kimenet első sorába azon időpontot kell kiírni, amikor a legtöbb járművet fi-
+gyelték meg (ha több ilyen van, akkor a legkorábbit kell megadni)!
+Példa
+Bemenet                                          Kimenet
+5   12                                           16 10
+2   0 12
+1   1 12
+2   2 22
+3   3 11
+5   7 52
+2   10 12
+2   15 12
+2   15 13
+2   16 10
+1   16 10
+3   17 12
+5   20 32
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

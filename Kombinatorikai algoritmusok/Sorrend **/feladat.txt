@@ -1,0 +1,28 @@
+Kombinatorikai algoritmusok                                                                    **
+
+
+                                          Sorrend
+Egy osztály tanulóit névsor szerint besorszámoztuk. Olyan sorrendbe szeretnénk átrendezni a ta-
+nulókat, hogy senki után közvetlenül ne a névsorban következő (azaz a következő sorszámú) le-
+gyen.
+Készíts programot, amely megadja, hogy ez hányféleképpen tehető meg!
+Bemenet
+A standard bemenet egyetlen sorában a tanulók száma van (1≤N≤30).
+Kimenet
+A standard kimenet egyetlen sorába azt a számot kell írni, ahányféleképpen az átrendezés
+elvégezhető! Mivel ez igen nagy szám lehet, értékét MOD 1 000 000 000 000 kell megadni!
+Példa
+Bemenet                             Kimenet
+4                                   11
+(A példa bemenet szerinti 11 ilyen sorrend: 1324, 1432, 2143, 2413, 2431, 3142, 3214, 3241, 4132,
+    4231, 4321)
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MiB
+Pontozás: a tesztek 70%-ában N<10
+
+
+
+
+                                                1. oldal
+

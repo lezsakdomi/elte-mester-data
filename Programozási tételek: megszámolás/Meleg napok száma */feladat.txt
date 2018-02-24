@@ -1,0 +1,32 @@
+Programozási tételek – Megszámolás
+
+
+                                Meleg napok száma
+Megkaptuk egy település elmúlt N napon délben mért hőmérsékletét.
+Készíts programot, amely megadja a K foknál melegebb napok számát!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma (1≤N≤100) van, valamint egy
+hőmérséklet (-20≤K≤50), utána N sorban a napi mérések eredményei (-20≤Hi≤50).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a K foknál melegebb na-
+pok számát!
+Példa
+Bemenet                                       Kimenet
+7 30                                          4
+25
+36
+29
+33
+34
+36
+30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                          1. oldal
+

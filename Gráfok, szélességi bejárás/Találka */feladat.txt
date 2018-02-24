@@ -1,0 +1,54 @@
+Gráfok – szélességi bejárás                                                                         *
+
+
+                                            Találka
+Rómeó és Júlia a lehető legrövidebb időn belül találkozni szeretne. Jelenleg egymástól távol, kü-
+lönböző városban vannak. Repülővel akarnak utazni egy olyan városba, ahova a legrövidebb idő
+alatt mindketten megérkezhetnek. Az útvonal kiválasztásához ismerik az összes igénybe vehető
+repülőjáratot.
+Írj programot, amely megadja a legközelebbi találkozási pontot és azt a két útvonalat, amelyen
+közlekedniük kell ahhoz, hogy a lehető legkorábban találkozzanak!
+Bemenet
+A standard bemenet első sorában a városok (1≤N≤20 000) és a járatok (1≤M≤200 000)
+száma van. A második sorban a Rómeó és Júlia tartózkodási helyének sorszáma van
+(1≤A≠B≤N). A következő M sor mindegyikében egy repülőjárat van (1≤K≠V≤N). Ez azt jelen-
+ti, hogy a K városból van közvetlen egyirányú járat a V városba. Minden járat naponta csak egy-
+szer közlekedik, és reggel indul azonos időben.
+Kimenet
+A standard kimenet első sorába két számot kell írni, az első a legközelebbi találkozás ideje,
+a második a legközelebbi találkozási város sorszám legyen! Ha nincs ilyen, akkor az első sorba –1-
+et kell írni és a következő két sor legyen üres! A második sorba azt az útvonalat kell írni, amelyi-
+ken Rómeó eljut a találkozási városba, a harmadikba pedig azt az útvonalat, amelyiken Júlia eljut a
+találkozási városba! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                            Kimenet
+10 15                                              2 7
+1 8                                                1 4 7
+1 2                                                8 7
+2 1
+1 4
+3 2                                                        2                     5
+4 3
+2 5                                                                3         6
+                                            1                                                  10
+3 6
+3 7                                                            4       7
+                                                                                     9
+4 7
+5 10
+6 9
+                                                           8
+7 6
+8 7
+8 9
+9 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                                1. oldal
+

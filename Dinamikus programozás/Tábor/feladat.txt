@@ -1,0 +1,46 @@
+Dinamikus programozás                                                                           ***
+
+
+                                             Tábor
+Egy iskola diákjait két nyári táborba kell beosztani. A két tábort úgy kell kialakítani, hogy ha X és
+Y nem szeretik egymást, akkor különböző táborba kerüljenek. Tudjuk, hogy a tanulókat lehetsé-
+ges így két táborba osztani. A cél, hogy a táborok létszámkülönbsége a lehető legkisebb legyen!
+Készíts programot, amely kiszámít egy, a feltételeknek megfelelő tábor beosztást!
+Bemenet
+A standard bemenet első sorában tanulók száma (1≤N≤2000) és azon párok száma van
+(1≤M≤20 000), akik nem szeretik egymást. A következő M sor mindegyike két egész számot tar-
+talmaz (1≤Xi,Yi≤N), ami azt jelenti, hogy Xi és Yi nem szeretik egymást.
+Kimenet
+A standard kimenet két első sorába a két csapat tagjainak An és Bn számát kell írni. A má-
+sodik sorba An egész számot kell írni egy-egy szóközzel elválasztva, az első csapat tagjainak sor-
+számait! A harmadik sorba Bn egész számot kell írni egy-egy szóközzel elválasztva, a másik csapat
+tagjainak sorszámait! Mindkét sorban tanulók sorszámai növekvő sorrendben legyenek! Több
+megoldás esetén bármelyik megadható.
+Példa
+                                                                               5
+bemenet                                           kimenet
+                                                                                                      4
+9   8                                             4 5
+1   3                                             3 4 6 8                          1
+
+3   9                                             1 2 5 7 9
+9   4                                                                                                 3
+
+5   4                                                                           9
+
+2   6
+7   8                                                                                               6
+3   5                                                                          2
+9   6
+                                                                                                      8
+Korlátok
+                                                                               7
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤50.
+
+
+
+
+                                              1. oldal
+

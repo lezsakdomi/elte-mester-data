@@ -1,0 +1,45 @@
+Gráfok – szélességi bejárás                                                                          *
+
+
+                                              Futár
+Egy vállalat futárokat alkalmaz a bizalmas levelek továbbítására. Több városban is lehet futár, és
+ha egy adott cél városba kell levelet vinni, akkor mindig az a futár viszi a levelet, amelyik a legha-
+marabb célhoz ér Minden futár egy nap alatt csak olyan úton haladhat, amely legfeljebb K várost
+érint.
+Írj programot, amely megadja azon városok sorszámát, amelyekbe 1 nap alatt nem juthat el futár,
+valamint azt, hogy hány nap kell, hogy biztosan eljusson mindenhova!
+Bemenet
+A standard bemenet első sorában a városok száma (1N200 000), a futár által egy nap
+alatt bejárható városok száma (1KN) és a városok közötti utak száma (1M1 000 000) van.
+A következő M sor mindegyike 2 egész számot tartalmaz, amelyek egy-egy utat írnak le: milyen
+sorszámú városból (1XN) milyen sorszámú városba (1YN) vezet. Az utolsó sorban azon vá-
+rosok sorszáma szerepel egy-egy szóközzel elválasztva, ahonnan indulhat a futár (1FiN). Az
+utak kétirányúak, nincs olyan város, ahova futár nem juthat el.
+Kimenet
+A standard kimenet első sorába azon városok sorszámát kell írni, egy-egy szóközzel elvá-
+lasztva, ahova nem juthat el futár 1 nap alatt! A második sorba azon napok legkisebb számát kell
+írni, ahány nap alatt a legtávolabbi városba is elérhet futár!
+Példa
+Bemenet                                           Kimenet
+8   2 9                                                        6
+1   2                                                          2
+1   3
+2   4                                                                                     8
+                                                                        7
+3   4
+2   5
+4   6
+5   6                                                     1                 2                   5
+2   7
+7   8
+1   7
+Korlátok
+Időlimit: 0.3 mp.                                                                                6
+Memórialimit: 32 MiB                                      3                  4
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                               1. oldal
+

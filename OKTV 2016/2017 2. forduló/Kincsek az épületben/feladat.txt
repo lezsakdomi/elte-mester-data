@@ -1,0 +1,38 @@
+Informatika OKTV 2017                 Programpzás kategória                       Második forduló
+
+
+                                  Kincsek az épületben
+Egy épületben N szint van, minden emeleten egy folyosóról nyílik M ajtó. Az emeletek két végén
+lépcsők vezetnek a szomszédos szintre (0. és M+1. ajtónak felelnek meg). Egyes szobákban kin-
+cseket rejtettek el. Egy kincskereső robot a legfelső szint 0. ajtónak megfelelő lépcsőjétől indul, a
+szinteken belül bármerre léphet, a lépcsőn azonban csak lefelé haladhat. Egy ajtónyi távolságot és
+egy szintközti lépcsőt 1 időegység alatt tesz meg. Ha az ajtó mögött kincs van, annak felvétele
+újabb 1 időegységbe kerül. Végül a legalsó szintre kell leérnie, ott azonban bárhol lehet!
+Készíts programot (kincsek), amely megadja, hogy a robot minimum mennyi idő alatt tudja az
+összes kincset összegyűjteni!
+Bemenet
+A standard bemenet első sorában az emeletek és az emeletenkénti ajtók száma van
+(2M,N1000). A további N sor mindegyike egy-egy emelet leírását tartalmazza, szint sorszám
+szerint növekvő sorrendben. Minden sor első száma a szinten levő kincsek száma (0DbiM), a
+következő Dbi szám pedig a kincseket tartalmazó szobák sorszáma (1Szi,jM), növekvő sor-
+rendben.
+Kimenet
+A standard kimenet egyetlen sorába a legrövidebb időt kell írni, ami alatt a robot minden
+kincset összegyűjtve az alsó szintre ér!
+Példa
+bemenet                                           kimenet
+4   6                                             23           R         K    K
+0
+2   1 6                                                             K
+1   1
+2   2 3                                                             K                        K
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 60%-ában N≤100.
+
+
+
+
+                                              1. oldal                         2017.01.07. 9-14 óra
+

@@ -1,0 +1,36 @@
+Sorozatok
+
+
+                                    Azonos csoportok
+Egy iskola diákjai választhattak, hogy milyen nyelvet szeretnének tanulni, illetve hogy testnevelés
+órán milyen sportággal szeretnének foglalkozni. Minden diák egyetlen nyelvet és egyetlen sport-
+ágat választhatott.
+Készíts programot, amely megadja, hogy hány olyan A nyelv-B sport pár van, amelyeknél az A-t
+és a B-t ugyanazon diákok halmaza választotta!
+Bemenet
+A standard bemenet első sorában a diákok (1  D  1000), a nyelvek (1  N  100), majd
+a sportágak (1  S  100) száma található, egy-egy szóközzel elválasztva. A következő N sor az
+egyes nyelveket írja le, az azt követő S sor pedig a sportokat a következők szerint: az első szám az
+adott dolgot választó tanulók száma (0  D B  D), majd ezután egy-egy szóközzel elválasztva kö-
+vetkeznek a tanulók sorszámai, pontosan DB darab.
+Kimenet
+A standard kimenet első és egyetlen sorába az azonos tagokkal rendelkező nyelv-sport pá-
+rok számát kell írni!
+Példa
+Bemenet                                           Kimenet
+8   2   3                                         1
+3   1   3   5
+5   2   4   8 7 6
+3   4   8   2
+3   5   1   3
+2   6   7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N,S≤20.
+
+
+
+
+                                              1. oldal
+

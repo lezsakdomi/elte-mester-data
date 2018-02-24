@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                                   ***
+
+
+                                         Azonosítók
+Egy vállalkozás a dolgozóinak úgy készít munkahelyi azonosítókat, hogy az angol ábécé első N
+lehetséges kisbetűs karakteréből olyan M karakteres azonosítókat állít elő, ahol az azonosító egyes
+karakterei mind különbözőek és ábécé szerint növekvő sorrendbe rendezettek.
+Készíts programot, amely megadja egy adott azonosítót ábécé sorrendben követő K. azonosítót!
+Bemenet
+A standard bemenet első sorában a használható betűk száma (1≤N≤26), az azonosítók
+hossza (1≤M≤N), valamint a K értéke (1≤K≤1 000 000 000) van. A bemenetre teljesül, hogy
+biztosan van K-val későbbi azonosító. A második sorban a feltételeknek megfelelően M karakte-
+res A azonosító szerepel.
+Kimenet
+A standard kimenet egyetlen sorába az A azonosítót követő K. azonosítót kell kiírni!
+Példa
+bemenet                                          kimenet
+5 3 6                                            bce
+abd
+
+Korlátok
+Időlimit: 0.01 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤6.
+
+
+
+
+                                             1. oldal
+

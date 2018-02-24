@@ -1,0 +1,80 @@
+Emelt szintű informatika érettségi                                               2007. november 6.
+
+
+                                               Foci
+Egy futballbajnokságban minden csapat minden csapattal pontosan egyszer játszik. A lejátszott
+mérkőzésekről eredménylistát vezettek. Ebben minden mérkőzéshez feljegyezték, hogy melyik
+fordulóban játszódott, a hazai, illetve vendégcsapat góljait, a félidőben elért gólok számát (szintén
+hazai és vendég külön), illetve a két csapat nevét.
+Írj programot, amely megadja
+   1.   egy forduló végeredményeit;
+   2.   azon csapatok nevét, amelyek félidőben vesztésre álltak, de végül a mérkőzést megnyerték;
+   3.   egy csapat lőtt és kapott góljai számát a szezon során;
+   4.   egy csapat első hazai pályás vereségét;
+   5.   a végeredmények előfordulási számát (a fordított eredmények egyezőek, pl. 4-2=2-4).
+Bemenet
+A standard bemenet első sorában egy forduló sorszáma (0≤F≤100), a másodikban egy
+csapat neve (CS), a harmadikban az összes lejátszott mérkőzés száma (0≤N≤800) van. A követ-
+kező N sorban egy-egy mérkőzés adatai vannak tárolva: Először a forduló száma (0≤Si≤F), ezt
+követi a hazai, majd a vendégcsapat góljainak száma (0≤GHi,GVi≤9), ezután a félidőben elért
+gólok hazai, illetve vendég részről (0≤FHi≤GHi,0≤FVi≤GVi), végezetül a két csapat neve (a
+csapatok nevében csak az angol ábécé kisbetűi szerepelnek).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az F. forduló végeredményei M számát kell írni!
+2. részfeladat: Az M sorba a forduló végeredményeit kell írni a bemenet sorrendjében: Csapat-
+névh Csapatnévv GH GV FH FV (először a végeredmény, utána a félidőben lőtt gólok)!
+3. részfeladat: Azon csapatok C számát kell írni, amelyek fordítottak!
+4. részfeladat: A C sorba a fordítást véghez vivő csapatok nevét kell írni, bemenet szerinti sor-
+rendben!
+5. részfeladat: A CS csapat lőtt és kapott góljainak számát kell írni!
+6. részfeladat: A CS csapat fordulószám szerint első hazai pályás vereségének fordulószámát és
+ellenfelének nevét kell írni (ha nincs ilyen, akkor 0-t)!
+7. részfeladat: A végeredmény fajták V számát kell kiírni!
+8. részfeladat: A V sorba egy-egy lehetséges végeredményt és annak előfordulási számát kell írni
+bemenet szerinti első előfordulás sorrendjében: G1 G2 Db! (A hazai és vendég gólsorrendje fel-
+cserélhető: pl. 2 0 3 és 0 2 3 is jó).
+
+
+
+
+                                               1. oldal
+Emelt szintű informatika érettségi                         2007. november 6.
+
+
+Példa
+Bemenet                                 Kimenet
+3                                       #
+Lelkesek                                2
+6                                       #
+1 0 1 0 0      Agarak Lelkesek          Ijedtek Agarak 1 2 1 0
+2 4 0 3 0      Lelkesek Ijedtek         Nyulak Lelkesek 1 1 0 1
+1 2 2 1 1      Ijedtek Nyulak           #
+3 1 2 1 0      Ijedtek Agarak           1
+2 2 1 1 0      Agarak Nyulak            #
+3 1 1 0 1      Nyulak Lelkesek          Agarak
+                                        #
+                                        6 1
+                                        #
+                                        0
+                                        #
+                                        5
+                                        #
+                                        1 0 1
+                                        4 0 1
+                                        2 2 1
+                                        2 1 2
+                                        1 1 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+
+
+
+
+                                     2. oldal
+

@@ -1,0 +1,46 @@
+Árvíz                                                                                       ***
+
+
+ Harmadfokúval nem határos másodfokú árvizek együttes hossza
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza az olyan másodfokú árvízvédelmi folyószakaszok összes
+hosszát, amelyek nem határosak harmadfokú készültségű szakasszal!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába a másodfokú árvizek K darabszámát kell írni (0, ha nincs
+ilyen hely, ebben az esetben nincsenek további sorok)! A második sorba ennek a K árvíznek a
+kezdete és vége kerüljön, növekvő sorrendben! A harmadik sorba az előző K közül csak azok da-
+rabszámát (D) írja, amelyek nem határosak harmadfokú árvízzel (0, ha nincs ilyen, ebben az eset-
+ben nincsenek további sorok)! A 4. sorba a D db árvíznek a kezdete és vége, végül az 5. sorba a D
+db árvíz együttes hosszúsága kerüljön!
+Példa
+Bemenet              Kimenet
+7                    3
+1100                 2 2 4 4 6 7
+970                  2
+                                 1200
+750                  4 4 6 7
+                                 1100
+950                  3
+750                                    1000
+910                                     900
+1000                                    800
+                                        700
+Korlátok                                600
+Időlimit: 0,1 mp.                       500
+Memórialimit: 32 MB                     400
+                                        300
+                                              1          2    3       4        5       6        7
+
+
+
+
+                                              1. oldal
+

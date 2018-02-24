@@ -1,0 +1,44 @@
+Rekurzív kiszámítás                                                                                **
+
+
+                                            Robot
+Egy négyzetrácsos elrendezésű raktárban robot alkalmazásával dolgoznak. A raktár egy mezőjét a
+négyzetrácsos elrendezésben a mező (x,y) koordinátájával azonosítják, ahol x az oszlop, y pedig
+a sor koordinátája, az oszlopokat balról jobbra, a sorokat alulról felfelé sorszámozzuk, a bal alsó
+mező koordinátái (1,1). A robot egy lépésben a szomszédos mezőre léphet vagy felfelé, vagy
+jobbra. A raktár N mezőjén van tárolva áru. A robotnak az (1,1) mezőről indulva, legfeljebb L
+lépés megtételével olyan útvonalon kell haladnia, amelyen a lehető legtöbb árut tartalmazó mező
+van.
+Készíts programot, amely kiszámítja, hogy maximum hány árut tartalmazó mezőn haladhat át a
+robot, és meg is adja ezt az útvonalat!
+Bemenet
+A standard bemenet első sorában az árut tartalmazó mezők száma (1≤N≤10 000) és a
+robot által megtehető lépések maximuma (1≤L≤2 000 000) van. A további N sor mindegyiké-
+ben két pozitív egész szám van (egy szóközzel elválasztva), egy olyan mező koordinátái, ahol áru
+van. Minden koordináta értéke legfeljebb 2 000 000.
+Kimenet
+A standard kimenet első sorába azt a legnagyobb M számot kell írni, ahány árut tartalmazó
+mezőn áthaladhat a robot! A második sorba pontosan M számot kell írni egy-egy szóközzel elvá-
+lasztva, a bejárás sorrendjében a mezők bemenetbeli sorszámait! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                          Kimenet
+                                                                                           
+6   8                                            3
+3   2                                            1 4 6                                             
+2   3                                                                              
+5   2
+                                                                                              
+4   4
+6   4
+4   6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az áruk száma N≤500
+
+
+
+
+                                             1. oldal
+

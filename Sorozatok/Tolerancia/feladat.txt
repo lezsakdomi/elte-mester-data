@@ -1,0 +1,29 @@
+Sorozatok                                                                              ***
+
+
+                                         Tolerancia
+Kutatók mérési adatsort vizsgálnak. Az adatsor egy A1,…An nemnegatív egész számokat tartal-
+mazó sorozat. Azt mondják, hogy az [i..j] részsorozat t-toleráns, ha bármely (i≤u<v≤j)
+indexekre teljesül, hogy abs(Au-Av)≤t.
+Írj programot, amely kiszámítja a leghosszabb t-toleráns részsorozat hosszát!
+Bemenet
+A standard bemenet első sora a tolerancia értékét (1≤t≤1 000 000) és az adatsor hosz-
+szát (1≤N≤1 000 000) tartalmazza. A második sorban a mérési sorozat N adata van
+(0≤Mi≤1 000 000 000).
+Kimenet
+A standard kimenet első és egyetlen sorába a leghosszabb t-toleráns részsorozat hosszát
+kell írni!
+Példa
+Bemenet                                          Kimenet
+3 9                                              4
+5 1 3 5 8 6 6 9 10
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

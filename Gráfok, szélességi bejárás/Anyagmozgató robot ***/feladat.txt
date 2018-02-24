@@ -1,0 +1,49 @@
+Gráfok – Szélességi bejárás                                                                   ***
+
+
+                                      Anyagmozgató robot
+Egy raktárban robotot üzemeltetnek anyagmozgatásra. A robot csak kijelölt pályákon mozoghat.
+A pályák rácsos szerkezetet alkotnak, a szomszédos pályák távolsága 1 méter. A raktár téglalap
+alakú, mérete NxM méter. A szélső robotpályák a raktár falától 1 méter távolságra vannak. A ro-
+bot alakja kör, aminek átmérője 1.6 méter. A robot középpontjával van a pályán és mindig csak
+egy rácspontban állhat meg. A raktárban a robot mozgását akadályok gátolják, ezek mindegyike
+egy négyzetet foglal el. A robot a következő utasításokat tudja végrehajtani, mindegyiket 1 má-
+sodperc alatt.
+       Előre: a pillanatnyi irányításnak megfelelően 1 métert halad előre,
+     Fordul balra: irányítását 90-al balra fordítja,
+     Fordul jobbra: irányítását 90-al jobbra fordítja.
+Készíts programot, amely kiszámítja, hogy egy adott pontból egy adott másik pontba a robot
+hány másodperc alatt tud eljutni a leggyorsabban!
+Bemenet
+A standard bemenet első sora a raktár méretét tartalmazza (1N,M1000). A második
+sorban az (x1,y1) indulási pont, valamint az (x2,y2) célpont koordinátái vannak. A további N
+sor mindegyike M számot tartalmaz, 1-et, ha az adott négyzet akadály, 0 egyébként. Egy akadályt
+az általa elfoglalt négyzet bal felső sarkának koordinátáival adunk meg. Sor-oszlop koordináta-
+rendszert használunk, a bal felső négyzet koordinátái (0,0), a jobb alsóé pedig (N–1,M–1). A
+robot kezdetben a felső sor felé néz, célba érkezve irányítása tetszőleges lehet.
+Kimenet
+A standard kimenet egyetlen számot tartalmazzon, azt, hogy a robot leggyorsabban hány
+másodperc alatt tud eljutni az indulási pontból a célpontba! A -1 értéket kell kiírni, ha az akadá-
+lyok miatt nem tud eljutni a célpontba a robot!
+Példa
+Bemenet                                            Kimenet
+9   10                                             19
+7   2 2   7
+0   0 0   0   0   0   1   0   0   0
+0   0 0   0   0   0   0   0   1   0
+0   0 0   0   1   0   0   0   0   0
+0   0 0   1   1   0   0   0   0   0
+0   0 0   0   0   0   1   0   0   0
+0   0 0   0   0   1   0   0   0   0
+0   0 0   1   1   0   0   0   0   0
+0   0 0   0   0   0   0   0   0   0
+1   0 0   0   0   0   0   0   1   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 64 MB
+
+
+
+
+                                               1. oldal
+

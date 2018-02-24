@@ -1,0 +1,41 @@
+Dinamikus programozás                                                                            **
+
+
+                                             Robot
+Egy gyárban a munkagépek négyzetrácsos elrendezésben vannak. A futószalagon érkező tárgya-
+kat egy robotnak kell elszállítania a rendeltetési helyére. A robot a (0,0) mezőről indul, a tárgya-
+kat érkezési sorrendjükben veheti le a futószalagról és egyszerre legfeljebb 3 tárgyat szállíthat. Ha
+több tárgyat szállít, akkor azokat tetszőleges sorrendben adhatja le a rendeltetési helyre. A robot a
+munkagépek felett mozoghat, egy lépésben szomszédos mezőre léphet egyet: balra, jobbra, felfe-
+lé, vagy lefelé. Egy lépése egy időegységet igényel. Miután leadta az egy menetben szállított tár-
+gyakat, vissza kell térnie a kiindulási helyére, a (0,0) mezőre.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő alatt tudja a robot elszállítani
+az összes tárgyat, és meg is ad egy szállítási ütemezést!
+Bemenet
+A standard bemenet első sorában a tárgyak száma van (1≤N≤10000). A következő N sor
+mindegyikében egy tárgy rendeltetési helyének koordinátái vannak (1≤X,Y≤1000) egy szó-
+közzel elválasztva, Ugyanarra a helyre több tárgy is érkezhet.
+Kimenet
+A standard kimenet első sorába azt a legkisebb M számot kell írni, amely alatt a robot az
+összes tárgyat el tudja szállítani a rendeltetési helyére! A második sorba egy számsorozatot kell
+írni (egy-egy szóközzel elválasztva), amely megadja, hogy a robot egy-egy menetben hány tárgyat
+szállít! Tehát a számsorozat minden eleme 1,2, vagy 3 lehet.
+Példa
+Bemenet                                           Kimenet
+6                                                 54
+1   2                                             3 3
+3   2
+4   7
+8   3
+5   7
+9   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N1000. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                              1. oldal
+

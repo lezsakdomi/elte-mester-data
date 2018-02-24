@@ -1,0 +1,31 @@
+Programozási tételek: kiválogatás                                                              **
+
+
+                                     Magánhangzók
+Egy magyar szóban lehetnek több karakterrel leírt mássalhangzók is (pl. sz, cs, dzs, …). Feltesz-
+szük, hogy az egymás melletti s+z, … betűket mindig egy hangnak, azaz sz-nek, … értelmezhet-
+jük. A hosszú mássalhangzókat egy hangnak kell venni!
+Írj programot, amely megadja, hogy egy szóban a magánhangzók hány hangra vannak egymástól!
+Bemenet
+A standard bemenet egyetlen sorában egy legalább 1 és legfeljebb 255 karakterrel leírt ma-
+gyar szó van. A szavak az angol ábécé betűiből állnak, az ékezetes karaktereket a megfelelő ékezet
+nélküliek helyettesítik.
+Kimenet
+A standard kimenetre eggyel kevesebb számot kell írni, mint a bemeneti szóban levő
+magánhangzók száma. Az i-edik szám a szó i-edik és azt követő magánhangzója közötti hangok
+száma legyen!
+Példa1
+Bemenet                                          Kimenet
+templomtorony                                    3 2 1
+Példa2
+Bemenet                                          Kimenet
+hosszu                                           1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

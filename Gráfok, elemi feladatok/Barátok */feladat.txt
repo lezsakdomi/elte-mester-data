@@ -1,0 +1,38 @@
+Gráfok – elemi feladatok                                                                       *
+
+
+                                          Barátok
+Egy osztályba N tanuló jár. Ismerünk tanulópárokat, akik barátai egymásnak. A barátság ún.
+tranzitív kapcsolat, azaz ha A barátja B-nek és B barátja C-nek, abból következik, hogy A is
+barátja C-nek. A barátság kapcsolat szimmetrikus is, azaz, ha A barátja B-nek, akkor B is barátja
+A-nak.
+   Készíts programot, amely megadja, hogy az osztály hány baráti csoportra bontható!
+Bemenet
+A standard bemenetelsősorában a tanulók N (2N10000) és az ismert baráti kapcsolatok M
+száma (0M100000) van, egy szóközzel elválasztva. A következő M sor mindegyikében egy-egy
+számpár van, két tanuló sorszáma, egy szóközzel elválasztva, akikről tudjuk, hogy barátok.
+Kimenet
+A standard kimenetelsősorába azt a K számot kell írni, ahány baráti csoportra az osztályt bontani
+lehet. Ha tudjuk, hogy A és B barátok, akkor ugyanazon csoportba kell tartozniuk, ha pedig nem
+barátok, akkor különbözőbe. Mindegyikbe a baráti csoportba tartozó tanulók sorszámát kell írni,
+egy-egy szóközzel elválasztva, növekvő sorrendben. A sorokat a csoport legkisebb sorszámú tagja
+szerint növekvően kell kiírni.
+Példa
+Bemenet                                         Kimenet
+9   6                                           3
+1   3                                           1 3 5 7 8 9
+3   5                                           2
+4   6                                           4 6
+7   9
+8   9
+1   7                                             8          1         3         2
+Korlátok
+Időlimit: 0.1 mp.                                 9          7         5         4         6
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

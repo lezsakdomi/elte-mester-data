@@ -1,0 +1,31 @@
+Sorozatok                                                                                   ***
+
+
+                                 Mindenhol van adás
+Televíziónkon N adó adásait tudjuk fogni; ismerjük mindegyikük adásidejét.
+Készíts programot, amely megadja, hogy mikor lehet az összes adó adását fogni!
+Bemenet
+A standard bemenet első sorában az adók száma van (1≤N≤100). A következő N sor
+mindegyikében egy adó adásai leírása található. Az egyes sorok első száma az adások száma
+(0≤Adi≤1000), a következő Adi számpár pedig az adó adásai, adás kezdete és vége, növekvő
+sorrendben (1≤Ki,j<Vi,j<8640).
+Kimenet
+A standard kimenet első sorába azon intervallumok L számát kell írni, amikor az összes
+adó adását lehet fogni! A következő L sorba ezen intervallumok kezdetés és végét kell írni, a so-
+rokat kezdet szerint növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+3                                               2
+3 10 20 40 50 100 150                           40 45
+2 20 60 120 130                                 120 130
+3 20 45 50 130 1000 1010
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 33%-ában K=2.
+
+
+
+
+                                            1. oldal
+

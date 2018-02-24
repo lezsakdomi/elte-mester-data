@@ -1,0 +1,35 @@
+Programozási tételek – Kiválogatás                                                          *
+
+
+                                     Születési évek
+N embernek ismerjük a születési adatait: év, hónap, nap. Az adatokat rendezetlenül kapjuk, az
+embereket sorszámukkal azonosítjuk.
+Készíts programot, amely megadja az elmúlt 100 évből azokat az éveket, amelyekben legalább egy
+ember született!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤1000). A következő N
+sor mindegyike három egész számot tartalmaz egy-egy szóközzel elválasztva: az adott ember szü-
+letése évének, hónapjának és napjának sorszámát. Az utolsó sorban található a mai dátum (év,
+hónap, nap).
+Kimenet
+A standard kimenet első sorába azon éveket kell kiírni az elmúlt 100 évből növekvő sor-
+rendben, amelyekben legalább egy ember született!
+Példa
+Bemenet                                        Kimenet
+5                                              5 1917 1950 1957 2000 2001
+1957   1   20
+2000   1   22
+1917   1   8
+2001   2   22
+1950   5   5
+2013   1   9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

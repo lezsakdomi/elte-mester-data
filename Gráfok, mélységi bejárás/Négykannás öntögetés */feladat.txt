@@ -1,0 +1,29 @@
+Gráfok – Mélységi bejárás                                                                      *
+
+
+                               Négy kannás öntögetés
+Egy gazdának három különböző űrtartalmú tejeskannája van, amelyekbe teli állapotban A, B és C
+liter tej fér. Van továbbá egy negyedik kannája, ennek az űrtartalmát nem ismeri, csak azt tudja,
+hogy ez a legnagyobb kannája. Kezdetben a legnagyobb, ismert űrtartalmú kanna tele van, a többi
+pedig üres.
+Olyan programot kell írni, amely kiszámítja, hogy öntögetéssel milyen mennyiségű tejet nem tud a
+gazda elkülöníteni a negyedik kannában!
+Bemenő adatok:
+A standard kimenet három pozitív egész számot tartalmaz az első sorban, a három kanna
+űrtartalmát. A számok értéke nem nagyobb mint 30.
+Kimenő adatok:
+A standard kimenet első sorába azokat az értékeket kell kiírni, amelyek a kezdetben meg-
+lévő tejmennyiségnél kisebbek, de nem állíthatók elő kannák közötti öntögetéssel! Ha minden le-
+hetséges érték előállítható, akkor az egyetlen 0 számot kell kiírni!
+Példa:
+Bemenet                       Kimenet
+13 11 5                       4 9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

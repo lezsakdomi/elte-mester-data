@@ -1,0 +1,33 @@
+Sorozatok                                                                                   **
+
+
+                                    Közös nyaralás
+Két barát megadta, hogy az év mely időintervallumaiban tudna elmenni nyaralni.
+Készíts programot, amely megadja azokat az intervallumokat, amikor együtt nyaralhatnak!
+Bemenet
+A standard bemenet első sorában az első ember szabad időtartamai száma (1≤N≤100) és
+a második ember szabad időtartamai száma (1≤M≤100) van. A következő N sor mindegyikében
+az első ember szabad időtartamai, a következő M sor pedig a második ember szabad időtartamai
+leírását tartalmazza. Az egyes sorok a szabad intervallumok első és utolsó napjának éven belüli
+sorszámát tartalmazzák (1≤E≤U≤365).
+Kimenet
+A standard kimenet első sorába azon időintervallumok K számát kell írni, amikor együtt
+nyaralhatnak! A következő K sorba ezen intervallumok első és utolsó napjának éven belüli sor-
+számát kell írni, a sorokat az első nap szerint növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+3 2                                             2
+60 200                                          30 35
+30 40                                           70 90
+250 255
+70 90
+25 35
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,33 @@
+Programozási tételek - kiválogatás                                                         *
+
+
+                                     Kevés könyv
+Egy könyvtári nyilvántartásban a következőket tároljuk: könyv szerzője, címe, példányszáma, a
+kikölcsönzött példányszám.
+Add meg azokat a könyveket, amelyekből 2 vagy annál kevesebb van a könyvtárban!
+Bemenet
+A standard bemenet első sorában található a könyvtárban nyilvántartott könyvek száma
+(1≤N≤100). Az ezt követő N sor mindegyikében pontosvesszővel elválasztva szerepel a könyv
+szerzője, címe, példányszáma és a kikölcsönzött példányszáma (0≤Kii≤Pldi≤100).
+Kimenet
+A standard kimenet első sorába ki kell írni azon könyvek számát, amelyekből 2 vagy annál
+kevesebb van a könyvtárban, majd ezt követően szóközzel elválasztva növekvő sorrendben a
+könyvek sorszámait!
+Példa
+Bemenet                                                              Kimenet
+6                                                   3 1 2 4
+Arany János;Toldi;10;8
+Benedek Elek;Ezüst mesekönyv;23;22
+Csokonai Vitéz Mihály;A szépség ereje a bajnoki sziven;21;12
+Dsida Jenő;Leselkedő magány;2;2
+Esterházy Péter;Amit a csokornyakkendőről tudni kell...;13;3
+Fazekas Mihály;Lúdas Matyi;12;2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

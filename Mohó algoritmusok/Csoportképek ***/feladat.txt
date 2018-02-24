@@ -1,0 +1,42 @@
+Mohó stratégia                                                                          ****
+
+
+                                    Csoportképek
+Egy rendezvényre vendégek érkeznek, ismerjük az érkezési és távozási idejüket. Csoportképeket
+szeretnénk készíteni róluk úgy, hogy mindenki legfeljebb egy fényképen legyen rajta és minden
+képen pontosan K vendég szerepeljen! Ugyanabban az időpontban több fénykép is készíthető.
+Érkezési időben már, távozási időben még lehet fényképezni.
+Készíts programot, amely megadja, hogy maximum hány fényképet lehet készíteni és melyik
+fényképen kik fognak szerepelni!
+Bemenet
+A standard bemenet első sorában a vendégek száma (1M100 000) és az egy fényképen
+legalább szereplő emberek száma (1KM) van. A következő M sorban az emberek érkezési és tá-
+vozási ideje van (1ÉrkiTávi100 000) van.
+Kimenet
+A standard kimenet első sorába a készülő fényképek F számát kell írni! A következő F sor
+az egyes fényképeken szereplők sorszámát tartalmazza! Minden sorban az első szám a fényképe-
+zés időpontja legyen, ezután a fényképen szereplők sorszámai legyenek tetszőleges sorrendben!
+Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                 Kimenet
+10 3                                    3
+1 3                                     3 1 2 3
+1 3                                     5 5 6 7
+1 3                                     7 8 9 10
+2 4
+4 5
+5 6
+5 6
+6 7
+6 7
+6 7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

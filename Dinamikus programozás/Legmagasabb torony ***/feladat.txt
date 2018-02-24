@@ -1,0 +1,33 @@
+Dinamikus programozás                                                                            ***
+
+
+                                  Legmagasabb torony
+Építőkockákból úgy lehet stabil tornyot építeni, hogy kisebb kockára nem lehet nagyobbat, illetve
+könnyebb kockára nem lehet nehezebbet tenni.
+Készíts programot, amely adott N kocka alapján megadja a belőlük építhető legmagasabb tornyot!
+Bemenet
+A standard bemenet első sorában a kockák száma van (1N1000). A további N sor
+mindegyike egy kocka oldalhosszát és súlyát tartalmazza (mindkettő 2000-nél nem nagyobb pozi-
+tív egész szám). Nincs két kocka, amelynek oldalhossza és súlya is megegyezne.
+Kimenet
+A standard kimenet első sorába a legmagasabb felépíthető stabil torony kockáinak M szá-
+mát kell írni! A második sorba a stabil tornyot alkotó M kocka sorszámát kell írni alulról felfelé ha-
+ladva. Torony magasságán a tornyot alkotó kockák oldalhosszainak összegét értjük (nem a kockák
+számát). Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+5                                                 40
+10   3                                            2 1 5
+20   5
+15   6
+15   1
+10   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                               1. oldal
+

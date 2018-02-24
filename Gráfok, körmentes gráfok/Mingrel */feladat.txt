@@ -1,0 +1,35 @@
+Gráfok – Körmentes gráfok                                                                   *
+
+
+                                         Mingrel
+A mingrel ábécé betűi szó szerint megegyeznek az angol ábécé betűivel (azaz a mingreleknek is
+pontosan 26 betűjük van), a betűk ábécé-sorrendje azonban eltér az angolétól.
+Készíts programot, amely mingrel szavak ábécé sorrendje alapján megadja a mingrel ábécé betűi-
+nek lehetséges ábécé-sorrendjét!
+Bemenet
+A standard bemenet első sora az ismert mingrel szavak számát tartalmazza
+(1≤N≤100 000), majd soronként egy-egy szót (legfeljebb 100 karakterből állhatnak) a mingrel
+ábécé szerinti sorrendben, csupa kisbetűvel írva.
+Kimenet
+A standard kimenet egyetlen sorába a mingrel ábécé betűinek egy lehetséges ábécé-
+sorrendjét kell írni (pontosan 26 betűt szóközök nélkül)! Több megoldás esetén bármelyik meg-
+adható!
+Példa
+Bemenet                            Kimenet
+6                                  tauelbcdfghijkmnopqrsvwxyz
+atom
+alma
+utt
+utas
+ember
+emberek
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

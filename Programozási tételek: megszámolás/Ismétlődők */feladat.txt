@@ -1,0 +1,30 @@
+Programozási tételek - megszámolás                                                       *
+
+
+                                     Ismétlődők
+Add meg egy N elemű számsorozat azon elemeinek számát, amelyek a következő K elemben leg-
+alább egyszer megismétlődnek!
+Bemenet
+A standard bemenet első sorában található az elemek száma (1≤N≤100) és egy K szám (1≤K≤100)
+szóközzel elválasztva. Az ezt követő N sorban pedig az elemek vannak (1≤Elemi≤10 000).
+Kimenet
+A standard kimenet első sorába ki kell írni azon elemek számát, amelyek a következő K
+elemben legalább egyszer megismétlődnek!
+Példa
+Bemenet                                       Kimenet
+6 2                                           3
+10
+11
+10
+11
+11
+12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

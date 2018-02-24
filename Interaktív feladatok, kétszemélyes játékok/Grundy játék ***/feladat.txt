@@ -1,0 +1,41 @@
+Interaktív feladatok – kétszemélyes játékok                                                  ***
+
+
+                                       Grundy játék
+A játék kezdetén letesznek az asztalra egy kupacba N darab kavicsot. A két játékos felváltva lép,
+egy lépésben választ egy kupacot és az abban lévő kavicsokból két, nem azonos számú kupacot
+képez. Az nyer, aki utoljára tud lépni.
+Írj olyan programot, amely a kezdő játékos játékát valósítja meg!
+Feladat
+Az alábbi függvényeket kell elkészíteni a játék megvalósításához:
+    Kezd(n):Egyszer hívják a program elején, az n paraméterben a kezdeti játékállásban lévő
+     kavicsok számát adja, ami legfeljebb 10 000.
+    EnLepesem(m,k): A kezdő játékos lépését adja, ami azt jelenti, hogy egy m elemszámú
+     kupacot bont egy k és egy m-k (k≠m-k) elemszámú kupacra.
+    TeLepesed(m,k): Az ellenfél lépését adja
+Megvalósítás
+   Pascal program esetén
+      uses grundy;
+   Műveletek Pascal deklarációja
+      procedure Kezd(var n:integer);
+      procedure EnLepesem(m:integer; k:integer);
+      procedure TeLepesed(var m:integer; var k:integer);
+   A műveletek C/C++ deklarációja
+      #include ”grundy.h”
+      void Kezd(int n);
+      void EnLepesem(int &m, int &k);
+      void TeLepesed(int m, int k);
+Gyakorlás
+A minta.zip fájlban letölthető egy egyszerű minta.
+Korlátozások
+A kezdeti kupac elemszáma legfeljebb 10 000, és erre a kezdő játékosnak van nyerő stratégiája.
+Időlimit: 0.99 mp.
+Memórialimit: 128 MiB
+A tesztek 30%-ában a számok értéke <1000.
+A programod nem írhat és nem olvashat semmilyen állományt, a standard outputra sem írhat!
+
+
+
+
+                                              1. oldal
+

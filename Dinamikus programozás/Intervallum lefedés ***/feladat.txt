@@ -1,0 +1,40 @@
+Dinamikus programozás                                                                     ***
+
+
+                                  Intervallum lefedés
+Adott a számegyenesen egy szakasz az A és B egész értékű végpontjával (A<B), és adottak a
+[k1,v1],…,[kn,vn] (ki<vi, i=1,…,N) zárt intervallumok egész értékű kezdő és végpontja-
+ikkal. Kiválasztandó az intervallumoknak egy olyan halmaza, amely lefedi az [A,B] szakaszt, az-
+az minden x egész számra, amely eleme az [A,B] szakasznak (AxB) van olyan kiválasztott
+[ki,vi] intervallum, amelynek x eleme, azaz kixvi. A lefedés költsége a kiválasztott inter-
+vallumok hosszainak összege. Egy [k,v] intervallum hosszán a v-k értéket értjük.
+Írj programot, amely megad egy minimális költségű lefedést!
+Bemenet
+A standard bemenet első sora a lefedendő szakasz kezdő- és végpontját tartalmazza (1A<
+B10 000). A második sorban a lefedésre használható intervallumok száma van (1N1000).
+A következő N sor mindegyike egy lefedésre használható intervallum kezdő és végpontját tartal-
+mazza (AKi<ViB), a végpontjuk szerint nemcsökkenő sorrendben.
+Kimenet
+A standard kimenet első sorába a minimális lefedési költséget kell írni! A második sorba
+egy minimális lefedést adó intervallumok sorszámait kell kiírni, tetszőleges sorrendben! Több
+megoldás esetén bármelyik megadható. Ha az [A,B] szakasz nem fedhető le a megadott inter-
+vallumokkal, akkor az első és egyetlen sor a -1 értéket tartalmazza!
+Példa
+Bemenet                                         Kimenet
+2 50                                            68
+6                                               6 4 2 1
+2 4
+3 18
+15 19
+10 33
+20 45
+22 50
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,31 @@
+Programozási tételek összeépítése                                                      *
+
+
+                              Fagyos időszakok száma
+Fagyos időszaknak nevezzük egymás utáni napok leghosszabb sorozatát, amikor a hőmérséklet
+folyamatosan 0 fok alatt volt.
+Az elmúlt N nap hőmérséklete alapján számold meg, hány fagyos időszak volt!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma (1N50), alatta soronként a
+napi mérések eredményei vannak (-100≤M≤100).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a fagyos időszakok szá-
+mát!
+Példa
+Bemenet                                        Kimenet
+5                                              2
+-82
+-13
+50
+31
+-47
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤10
+
+
+
+
+                                           1. oldal
+

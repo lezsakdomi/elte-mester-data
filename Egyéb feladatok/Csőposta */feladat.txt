@@ -1,0 +1,41 @@
+Egyéb                                                                                           *
+
+
+                                          Csőposta
+Egy vállalat két épülete (A és B) között csőpostát üzemeltet, amiben mindkét irányban haladhat-
+nak csomagok, ha persze nem jön szembe egy másik csomag. A csomagok a csőben különböző
+sebességgel haladhatnak.
+Ha egy gyorsabb csomag ugyanabban az irányban haladva utolér egy lassabb csomagot, akkor
+összeütköznek és gyorsabb lelassul a lassabb sebességére. Ha szemben találkoznak, akkor útjukat
+a gyorsabb irányába, a gyorsabb sebességével folytatják. Egyforma sebesség esetén a később indu-
+ló irányába haladnak tovább.
+Készíts programot, amely megadja, hogy hány csomag ütközik össze valamelyik előzővel és me-
+lyek ezek!
+Bemenet
+A standard bemenet első sorában a csomagok száma van (1≤N≤106). A következő N sor
+mindegyikében egy-egy csomag leírása található indulási idő szerint növekvő sorrendben. Minden
+sor első karaktere a csomag induló helye (az A vagy a B betű), ettől egy szóközzel elválasztva kö-
+vetkezik az indulás ideje és az út megtételéhez szükséges idő. (A példában az első csomag a 10.
+percben indul A-ból és 10 perc múlva érkezik meg B-be.)
+Kimenet
+A standard kimenet első sorába az ütközések K számát kell írni, a következő K sorba pe-
+dig egy-egy sorszámot: azon csomagok sorszámát, amelyek valamelyik korábbival ütköznek!
+Példa
+Bemenet                                         Kimenet
+7                                               3
+A   10   10                                     3
+A   15   15                                     5
+B   25   10                                     7
+B   40   20
+B   45   10
+A   70   10
+B   75   20
+Korlátok
+Időlimit: 0.6 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

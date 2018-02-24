@@ -1,0 +1,26 @@
+Dinamikus programozás                                                                           **
+
+
+                          Leghosszabb tükörszó hossza
+Egy szót tükörszónak nevezünk, ha balról és jobbról kiolvasva betűről betűre megegyezik. (Tehát
+minden egybetűs szó tükörszó.) Minden szóban található tükörszó, amin azt értjük, hogy ha ki-
+törlünk belőle betűket, akkor tükörszót kapunk.
+Készíts programot, amely kiszámítja, egy adott szóban található leghosszabb tükörszó hosszát!
+Bemenet
+A standard bemenet első sorában egy legfeljebb 1000 karakterből álló S szó van.
+Kimenet
+A standard kimenet első sorába az S szóban található leghosszabb tükörszó hosszát kell
+írni!
+Példa
+Bemenet                                         Kimenet
+abbakabadara                                    7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az S szó legfeljebb 100 karakter hosszú.
+
+
+
+
+                                            1. oldal
+

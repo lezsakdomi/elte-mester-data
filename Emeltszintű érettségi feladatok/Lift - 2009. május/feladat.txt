@@ -1,0 +1,75 @@
+Emelt szintű informatika érettségi                                                   2009. május 15.
+
+
+                                                Lift
+A Madárház Kft. toronyházak építésével foglalkozik. Jelenleg a Csúcs Rt. épületén kezdték meg a
+belső szerelési műveleteket. Az egyes szerelőcsapatok naponta többször változtatják helyüket. Ha
+az új munkaterület egy másik emeleten van, akkor – a biztonsági előírások miatt – lifttel kell men-
+niük. A házban egyetlen lift működik, amelynek igénybevételét az egyes csapatok a célszint meg-
+adásával jelezhetik. A lift az igényeket a jelzés sorrendjében szolgálja ki, ha két kérés egyszerre ér-
+kezne, akkor a kisebb sorszámú csapatot szolgálja ki. A lift egyszerre csak egy csapatot szállít. A
+csapatok mozgását a 9 és 14 óra közötti intervallumban követjük nyomon. Ez az intervallum a
+munkaidőnek csak egy része, tehát a csapatok már dolgoznak valamelyik szinten, de 9 órakor tel-
+jesítetlen kérés nincs és a lift szabad.
+Előfordul, hogy egyik vagy másik szerelőcsapat áthágja a szabályokat, és egyik szintről gyalog
+megy a másikra. (Ezt onnan tudhatjuk, hogy más emeleten igényli a liftet, mint ahova korábban
+érkezett.)
+Írj programot, amely
+    1. meghatározza, hogy a megfigyelés kezdete és az utolsó igénylés teljesítése között melyik a
+       legalacsonyabb és legmagasabb sorszámú szint, amelyet a lift érintett!
+    2. meghatározza, hogy hányszor kellett a liftnek felfelé indulni utassal és hányszor utas nél-
+       kül!
+    3. meghatározza, hogy mely szerelőcsapatok nem vették igénybe a liftet a figyelt időszakban!
+    4. eldönti, hogy egy adott csapatról bizonyítható-e, hogy szabálytalanságot követtek el!
+Bemenet
+A standard bemenet első sora tartalmazza a szintek számát (2≤N≤10 000), második sora
+a csapatok számát (1≤M≤1000), harmadik sora az igények számát (1≤K≤10 000), negyedik so-
+ra a 4. részfeladatban vizsgálandó csapat sorszámát (1≤L≤M), ötödik sora a szint sorszámát, ahol
+a lift áll a megfigyelés kezdetekor (1≤S≤N).
+A következő K sor egy-egy igény leírását tartalmazza, a jelzés ideje, azon belül csapat sorszám sor-
+rendjében. Egy igény hat számból áll: az első három szám a kérés idejét adja meg óra, perc, má-
+sodperc formátumban (9≤H≤13,0≤Min,Sec≤59), a negyedik a csapat sorszáma (1≤Id≤M),
+az ötödik az induló-, a hatodik a célszint sorszáma (1≤start,stop≤N).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A legalacsonyabb és legmagasabb meglátogatott emelet sorszámát kell kiírni!
+2. részfeladat: Meg kell adni, hogy a lift hányszor indult el felfelé utassal, illetve hányszor utas
+nélkül!
+3. részfeladat: Az első sorba a liftet nem igénybe vevő csapatok számát kell kiírni! A második
+sorba ezen csapatok sorszámát kell írni, növekvő sorban!
+4. részfeladat: Ha nem bizonyítható szabálytalanság, a „NEM” szöveget kell kiírni! Ha bizonyít-
+ható, akkor az első sorba az „IGEN” szöveget, a második sorba két emelet sorszámát és az ész-
+revétel időpontját kell írni: az adatok szerint a csapatnak melyik emeleten kéne lennie és melyik
+emeleten igényelték a liftet, illetve a szabálytalanság észrevételének idejét (mikor történt a szabály-
+talan kérés)! Ha több szabálytalanság is volt, bármelyik megadható.
+
+                                               1. oldal
+Emelt szintű informatika érettségi                    2009. május 15.
+
+
+Példa
+Bemenet                                 Kimenet
+10                                      #
+2                                       1 8
+6                                       #
+1                                       3 2
+1                                       #
+9 0 0 1 1 4                             0
+9 1 17 2 8 7
+9 32 6 1 4 3                            #
+10 2 45 2 5 8                           IGEN
+11 4 7 1 3 6                            7 5 10 2 45
+13 21 4 1 5 2                           6 5 13 21 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

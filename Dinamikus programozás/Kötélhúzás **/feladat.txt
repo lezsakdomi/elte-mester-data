@@ -1,0 +1,32 @@
+Dinamikus programozás                                                                          **
+
+
+                                        Kötélhúzás
+Az osztály kötélhúzó versenyt rendez. A tanulók két csoportot alkotnak, úgy hogy minden tanuló
+valamelyik csoport tagja lesz, és a két csoport létszáma azonos. Szerencsére az osztály tanulóinak
+N száma páros szám. Mivel a csoportok tagjainak összsúlya hatással lehet a verseny kimenetelére,
+ezért úgy kell képezni a két csoportot, hogy a két összsúly eltérése a lehető legkisebb legyen.
+Készíts programot, amely kiszámít egy megfelelő csoportbeosztást!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤100, N páros szám) van. A má-
+sodik sor pontosan N egész számot tartalmaz (egy-egy szóközzel elválasztva), az i-edik szám az
+i-edik tanuló súlya, értéke legfeljebb 100.
+Kimenet
+A standard kimenet első sorába a két csoport összsúly-különbségének abszolút értékét
+kell írni! A második és harmadik sorba kell kiírni a két csoport tagjainak azonosítóit, pontosan
+N/2 számot, egy-egy szóközzel elválasztva! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+8                                                0
+44 45 55 56 50 100 80 30                         1 4 5 7
+                                                 2 3 6 8
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 128 MiB
+Pontozás: A tesztek 40%-ában N≤10. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                             1. oldal
+

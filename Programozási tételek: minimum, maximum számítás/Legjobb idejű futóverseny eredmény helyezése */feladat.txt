@@ -1,0 +1,35 @@
+Programozási tételek – Maximumkiválasztás
+
+
+               Legjobb idejű futóverseny eredmény helyezése
+Egy futó N versenyen vett részt, egyetlen versenyszámban. Minden versenyen feljegyezték, hogy
+hányadik helyezést ért el és az ideje hány perc, hány másodperc volt.
+Írj programot, amely megadja, hogy a futó legjobb időeredménye milyen legjobb helyezést ered-
+ményezett!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100), alatta soronként egy-egy
+verseny adatai vannak, három egész szám egy-egy szóközzel elválasztva. Az első szám a verse-
+nyen elért helyezés (1≤H≤100), a második az időeredményének perc része (1≤P≤100), a har-
+madik pedig az időeredményének másodperc része (0≤Mp≤59).
+Kimenet
+A standard kimenet első sorába a legjobb időeredményhez tartozó legjobb helyezést kell
+kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               2
+4   3   12
+1   2   34
+3   2   0
+2   1   33
+5   2   10
+1   1   40
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

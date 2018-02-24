@@ -1,0 +1,37 @@
+Gráfok – Szélességi bejárás                                                                        **
+
+
+                                           Solitaire
+Tekintsük a Solitaire játéknak azt a változatát, amelyet 6x6-os négyzetrácsos táblán lehet játszani.
+A táblára három fekete korongot helyeznek három különböző mezőre, ez a kezdeti játékállás. A
+játék során minden lépésben egy korongot lehet mozgatni az alábbi szabály szerint.
+          Csak üres mezőre lehet lépni.
+          A négy szomszédos mező valamelyikére lehet lépni, balra, jobbra, felfelé vagy lefelé.
+          Ha a lépés irányába eső szomszédos mezőn van korong, akkor azt az egy korongot át
+           lehet lépni.
+A (3,2) mezőn álló korong négy lehetséges lépése: (2,2), (3,1), (5,2), (3,4), mint az
+ábrán látható.
+Készíts programot, amely kiszámítja, hogy adott kezdeti játékállásból legkevesebb hány lépés vég-
+rehajtásával lehet eljutni adott végállásba!
+Bemenet
+A standard bemenet két sort tartalmaz, az első sor a kezdeti játékállást, a második pedig a
+végállást írja le. Mindkét sor 6 egész számot tartalmaz, a három korong koordinátáit. Az i-edik
+(i=1,2,3), számpár az i-edik korong sor, illetve oszlopkoordinátáját jelenti. A sorokat fentről
+lefelé, az oszlopokat balról jobbra sorszámozzuk 1-től 6-ig. A három korong sorrendje közömbös
+a végállásban!
+Kimenet
+A standard kimenet első és egyetlen sora egy egész számot tartalmazzon, azon leg-
+kevesebb lépések számát, amennyi lépéssel el lehet jutni a kezdeti játékállásból a végállásba!
+Példa
+Bemenet                                           Kimenet
+3 2 3 3 4 2                                       3
+2 3 3 3 3 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

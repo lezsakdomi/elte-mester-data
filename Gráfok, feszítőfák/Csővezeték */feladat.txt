@@ -1,0 +1,49 @@
+Gráfok – feszítőfák                                                                             *
+
+
+                                        Csővezeték
+Egy országban K helyen építettek olajfinomítót, ahol kőolajból benzint készítenek. N helyen van
+benzinkút, ahova a benzint el kell juttatni csővezetéken valamelyik olajfinomítóból. Úgy kell meg-
+tervezni a csővezetéket, hogy minimális hosszúságú (a távolság alatt Manhattan távolságot értünk)
+csövet kelljen lefektetni. Csővezeték csak benzinkútnál vagy finomítónál ágazhat el, a térképen
+csak vízszintesen vagy függőlegesen vezethető, a vezetékek keresztezhetik egymást, de csatlakozás
+csak finomítónál vagy benzinkútnál lehet. A finomítókat 1-től K-ig, a benzinkutakat pedig K+1-
+től K+N-ig sorszámozzuk.
+Írj programot, amely meghatározza, hogy mely csomópontok (olajfinomító vagy benzinkút) kö-
+zött kell kiépíteni a csővezetéket úgy, hogy a csővezeték hossza minimális legyen!
+Bemenet
+A standard bemenet első sorában az olajfinomítók száma (1K100) és a benzinkutak
+száma (1N3000) van. A következő K sor az egyes olajfinomítók, az ezt követő N sor pedig a
+benzinkutak koordinátáit tartalmazza. Minden sorban egy sor- és egy oszlopindex szerepel (-1000
+és 1000 közötti egész számok).
+Kimenet
+A standard kimenet első sorába a minimális hosszúságú csőhálózat hosszát kell írni, a to-
+vábbi sorokba pedig azon helyek indexeit, amelyek között csövet kell fektetni a minimális hosszú-
+ságú csőhálózat kiépítéséhez! Minden sorban egy összekötés két végének sorszáma szerepeljen!
+Példa
+Bemenet                                          Kimenet
+2 4                                              400
+100 100                                          2 3
+0 100                                            1 4
+-100 100                                         2 5
+100 0                                            4 6
+40 40                                                                                 1
+
+150 -50                                                 3            2
+
+
+
+
+Korlátok
+                                                                            5
+
+Időlimit: 0.8 mp.
+                                                                                          4
+Memórialimit: 84 MiB
+Pontozás: A tesztek 30%-ában a N≤100                                                           6
+
+
+
+
+                                             1. oldal
+

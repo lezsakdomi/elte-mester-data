@@ -1,0 +1,35 @@
+Egyéb                                                                                         **
+
+
+                                          Kerekasztal
+Kerekasztal lovagjai éves rendes összejövetelüket tartják. A lovagok az érkezésükkor tetszőleges
+helyre leülhetnek a kerekasztal körül elhelyezett székekre. A lovagokat sorszámukkal azonosítják,
+1-től N-ig. A lovagrend főnökének sorszáma 1. Mielőtt megkezdődne az értekezlet, a főnök el-
+rendeli, hogy az asztal körül olyan sorrendben helyezkedjenek el, hogy a főnöktől indulva órajá-
+rással megegyező irányban haladva sorszámuk szerinti sorrendben legyenek. A megkövetelt sor-
+rendet úgy kell elérni, hogy két lovag helyet cserél, mindaddig, amíg egy kívánt sorrendben lesz-
+nek. A kívánt sorrend elérése érdekében bárki, a főnök is változtathat helyet.
+Készíts programot, amely kiszámítja, hogy minimálisan hány párnak kell helyet cserélnie, hogy
+egy kívánt sorrend kialakuljon!
+Bemenet
+A standard bemenet első sorában a lovagok száma van (1≤N≤10 000). A második sor
+pontosan N egész számot tartalmaz a lovagok kezdeti elhelyezkedését (1≤xi≤N), a bejárattól in-
+dulva órajárással megegyező irányban haladva. Minden helyen pontosan egy lovag van.
+Kimenet
+A standard kimenet első és egyetlen sorába a minimális cserék számát kell írni, amellyel el-
+érhető egy megkövetelt sorrend!
+Példa
+Bemenet                                           Kimenet
+8                                                 1
+3 7 5 6 4 8 1 2
+Megjegyzés: a 7-es és 4-es cseréjével kialakul egy kívánt sor-
+rend.
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

@@ -1,0 +1,40 @@
+Nemes Tihamér OITV 2017                Második forduló         2. korcsoport: 9-10. osztályosok
+
+
+                                            Piac
+Egy piacon N kereskedő árul M-féle terméket. Ismerjük mindenkiről, hogy mely termékből mi-
+lyen mennyiséget és milyen áron adott el.
+Készíts programot, amely megadja, hogy
+A. mely kereskedőknek volt az átlagosnál nagyobb bevételük,
+B. melyik áruból adták el a K. legnagyobb mennyiséget,
+C. melyik kereskedőnél volt a legtöbb olyan termék, amit más nem árult az övénél magasabb
+áron!
+Bemenet
+A standard bemenet első sorában a kereskedők száma (1≤N≤1000), a termékek száma
+(1≤M≤100), valamint K értéke (1≤K≤M) van. A következő N sor mindegyike egy-egy kereskedő
+leírását tartalmazza. A sorok első száma a kereskedő által eladott termékfajták száma (1≤Fi≤M,
+Fi≤10). Ezt követi a termékek leírása: minden számhármas első tagja a termék sorszáma
+(1≤Si,j≤M), egységára (1≤EAi,j≤10 000), valamint eladott mennyisége (0≤MEi,j≤100).
+Kimenet
+A standard kimenet első sorába az átlagosnál nagyobb bevételű kereskedők számát kell ír-
+ni, amit ezen kereskedők sorszámai kövessenek, növekvő sorrendben! A második sorba a K. leg-
+nagyobb mennyiségben fogyó áru sorszámát kell kiírni – ha több is lenne, akkor tetszőlegeset! A
+harmadik sorba egy olyan kereskedő sorszáma kerüljön, akinél a legtöbb olyan termék volt, amit
+más árus nem árult az övénél magasabb áron – több megoldás esetén a legkisebb sorszámút kell
+kiírni!
+Példa
+bemenet                                        kimenet
+3   3   2                                      2 1 3
+3   1   100 1 2 200 0 3 300 10                 3
+2   2   300 1 3 200 1                          1
+1   2   100 20
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                            1. oldal                    2017.01.07. 830-1330 óra
+

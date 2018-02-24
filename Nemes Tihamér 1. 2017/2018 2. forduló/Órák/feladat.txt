@@ -1,0 +1,29 @@
+Nemes Tihamér Nemzetközi Programozási Verseny, 1. korcsoport                     2. forduló
+
+
+                                          Órák
+Készíts programot, amely meghatározza, hogy adott időpontban az óra kis- és nagymutatója mi-
+lyen szöget zár be!
+Bemenet
+A standard bemenet első sorában az óra (0≤ORA≤23) és a perc (0≤PERC≤59) értéke sze-
+repel.
+Kimenet
+A standard kimenet első sorába a két mutató egymással bezárt szögét kell kiírni! A szög
+≤180 fok, minden teszteset esetén egész szám!
+Példa
+Bemenet                                       Kimenet
+15 0                                          90
+Bemenet                                       Kimenet
+22 0                                          60
+Bemenet                                       Kimenet
+3 30                                          75
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

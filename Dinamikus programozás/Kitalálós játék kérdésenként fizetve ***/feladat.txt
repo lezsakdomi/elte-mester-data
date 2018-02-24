@@ -1,0 +1,30 @@
+Dinamikus programozás                                                                     ***
+
+
+                      Kitalálós játék kérdésenként fizetve
+Ádám és Éva kitalálós játékot játszik. Éva gondol egy 1 és N közötti egész számot, amelyet
+Ádámnak ki kell találnia. Ádám olyan kérdést tehet fel, hogy "A gondolt szám kisebb vagy egyen-
+lő-e, mint x?". Éva válasza igen, vagy nem lehet. Hogy a játék érdekesebb legyen, Ádámnak min-
+den kérdésért fizetnie kell. Ha az x számra kérdez rá, akkor f(x) forintot kell fizetnie.
+Írj programot, amely kiszámítja, hogy minimálisan hány forintjának kell lennie Ádámnak, hogy
+bármely gondolt számot ki tudjon találni!
+Bemenet
+A standard bemenet első sorában az N értéke van (1N500). A második sor pontosan N
+pozitív egész számot tartalmaz, az i. számra kérdezéshez tartozó f(i) értékeket
+(f(i)1000).
+Kimenet
+A standard kimenet egyetlen sorába azt a minimális értéket kell írni, amely ahhoz kell,
+hogy Ádám bármely gondolt számot ki tudjon találni!
+Példa
+Bemenet                                        Kimenet
+7                                              14
+1 3 10 1 5 2 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,36 @@
+Dinamikus programozás                                                                         **
+
+
+                                      Rúd felvágása
+Adott egy fémrúd, amelyet megadott számú darabra kell felvágni úgy, hogy a vágások pontos he-
+lyét is tudjuk. A vágások helyét a rúd egyik végétől mért, milliméterben kifejezett értékek adják
+meg. Olyan vágógéppel kell a feladatot megoldani, amely egyszerre csak egy vágást tud végezni. A
+vágások tetszőleges sorrendben elvégezhetőek. Egy vágás költsége megegyezik annak a darabnak
+a hosszával, amit éppen (két darabra) vágunk.
+Készíts programot, amely kiszámítja a műveletsor minimális költségét, és meg is ad egy hozzá tar-
+tozó vágási sorrendet!
+Bemenet
+A standard bemenet első sora a vágandó rúd hosszát tartalmazza (0<H≤100 000). A má-
+sodik sorban az elvégzendő vágások száma van (0<N≤500). A harmadik sor N darab egész szá-
+mot tartalmaz, az elvégzendő vágások helyét. A számok szigorúan monoton növekvő sorozatot
+alkotnak, és mindegyik nagyobb, mint 0 és kisebb, mint H.
+Kimenet
+A standard kimenet első sorába a vágási műveletsor optimális összköltségét kell írni! A
+második sor N darab egész számot tartalmazzon, ami a vágási helyek egy olyan felsorolása legyen,
+hogy ebben a sorrendben elvégezve a vágásokat, az összköltség optimális lesz!
+Példa
+Bemenet                                         Kimenet
+10                                              22
+4                                               4 7 5 8
+4 5 7 8
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában H≤10 000 és N≤100. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                            1. oldal
+

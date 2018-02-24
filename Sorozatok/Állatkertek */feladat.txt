@@ -1,0 +1,47 @@
+Sorozatok
+
+
+                                           Állatkertek
+A kukutyini állatkert N, a rátóti pedig M különböző állatot tart. Tudjuk, hogy melyik állatkertben
+melyik fajból hány példány van. Adott ezen kívül egy K és egy L szám:
+       Cserélni azon állatokat lehet, amelyekből mindkét állatkertnek legalább K példánya van
+       Az egyik állatkert ajándékozhat a másiknak olyan állatot, amelyből neki legalább L példá-
+        nya van, a másik pedig egyetlen példánnyal sem rendelkezik
+Készíts programot, amely megadja, hogy melyek azok az állatfajok, amelyeket cserélgethet egy-
+mással a két állatkert, és melyek azok a fajok, amelyeket egymásnak ajándékozhatnának!
+Bemenet
+A standard bemenet első sorában a kukutyini állatkert állatfajai száma van (0N100 ),
+majd az ezt követő N sorban az állatfajok neve és példányszáma (0<Pi≤1000) szerepel, szóköz-
+zel elválasztva. Ezután a rátóti állatkert állatfajainak száma (0≤M≤100) van, majd a következő M
+sorban ezek neve és példányszáma (0<Qi≤1000) szóközzel elválasztva. A bemenet utolsó két
+sorában a csere minimális példányszáma (0<K≤1000) és az ajándékozás minimális példányszá-
+ma (0<L≤1000) van.
+Kimenet
+A standard kimenet első sorába az elcserélhető állatfajok nevei, a második sorba a kuku-
+tyini állatkert által elajándékozható állatfajok nevei, a harmadik sorba pedig a rátóti állatkert által
+elajándékozható állatfajok nevei kerüljenek! Az egy sorban lévő neveket szóközökkel válaszd el!
+Példa
+Bemenet                                            Kimenet
+4                                                  kecske liba
+kecske 12                                          nyul
+nyul 41                                            pulyka
+lo 8
+liba 76
+5
+kecske 8
+pulyka 16
+szamar 1
+lo 4
+liba 60
+6
+12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N,M≤20.
+
+
+
+
+                                               1. oldal
+

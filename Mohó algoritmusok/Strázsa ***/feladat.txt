@@ -1,0 +1,38 @@
+Mohó algoritmusok                                                                            ***
+
+
+                                           Ügyelet
+Egy iskola több napig tartó rendezvényén a tanulók folyamatos ügyeletet tartanak. A rendezvény
+kezdete az 1., vége az N-edik időegység. Minden tanuló megad egy ügyeleti idő-intervallumot
+(egy a b számpárt), amikor vállalná az ügyeletet. Az ügyeleti beosztást úgy kell elkészíteni, hogy
+az egymást váltó tanulók át tudják adni egymásnak a szolgálatot, azaz ha az A tanulót (a1 a2 in-
+tervallum) a B tanuló (b1 b2 intervallum) követi a szolgálatban, akkor b1a2 teljesüljön.
+Készíts programot, amely kiszámítja, hogy minimálisan hány tanulóval lehet a kapuügyeletet
+megoldani a rendezvény teljes idejére a fent leírt feltételnek megfelelően!
+Bemenet
+A standard bemenet első sora a rendezvény időtartamát tartalmazza (1N10 000). Az
+ezt követő minden sorban egy a b számpár van, egy szóközzel elválasztva (1abN): egy ta-
+nuló által vállalt ügyeleti idő-intervallum. Az utolsó sor a 0 0 számpárt tartalmazza.
+Kimenet
+A standard kimenet a lehető legkevesebb tanulót igénylő beosztásban alkalmazott tanulók
+számát kell írni! Ha a feladatnak nincs megoldása (azaz nem lehet a rendezvény teljes időtartam-
+ára a jelentkezésekből megfelelő beosztást kialakítani), akkor 0-t kell kiírni!
+Példa
+Bemenet                                          Kimenet
+10                                               3
+1 4
+2 3
+3 7
+2 5
+4 9
+5 10
+0 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

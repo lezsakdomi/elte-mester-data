@@ -1,0 +1,35 @@
+Rekurzív adatszerkezetek                                                                      *
+
+
+                                        Fa elágazásai
+Minden fát leírhatunk egy karaktersorozattal. Ebben a leírásban F betűk és zárójelek fognak sze-
+repelni. Az F ágat jelent, az ágak végi elágazásokat pedig zárójelbe tesszük.
+
+
+
+
+        F                F(F)(F)            F(F(F)(F))(F)(F) F(F(F)(F(F)(F))(F)
+
+Készíts programot, amely megadja:
+   1.) a fa elágazásai számát (a törzs nem számít elágazásnak);
+   2.) egy helyen a legnagyobb elágazásszámot!
+Bemenet
+A standard bemenet egyetlen sorában a fát leíró szöveg van. A bemenet hossza legfeljebb
+100 000 karakter, és minden esetben egy # zárja.
+Kimenet
+A standard kimenet első sorába a fa elágazásai számát, a második sorába pedig a legna-
+gyobb elágazásszámot kell kiírni!
+Példa
+Bemenet                                           Kimenet
+F(F)(F)(F(F)(F))#                                 5
+                                                  3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤1000
+
+
+
+
+                                              1. oldal
+

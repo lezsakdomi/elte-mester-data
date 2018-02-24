@@ -1,0 +1,35 @@
+Kombinatorikai algoritmusok                                                                  ***
+
+
+                                             Zár
+Egy zár három körlemez tárcsából áll (A, B és C), amelyek közös tengely körül forgathatók. Az
+egyes tárcsákon körben az 1,..,N egész számok vannak felírva. A tárcsák külön-külön és
+együtt is forgathatók mindkét irányban. Tehát a zárat háromféleképpen fordíthatjuk el: egyszerre
+egy tárcsát (A, B vagy C), bármely kettő tárcsát egyszerre (egy irányban) (AB, vagy AC vagy BC),
+ill. a három tárcsát egyszerre (ABC) forgatva egy irányba.
+Egy lépésnek a fenti forgatások valamelyikét nevezzük, tetszőleges irányba egy egység elfordulás-
+sal.
+Készíts programot, amely a zár egy adott kiinduló helyzetéből ([a;b;c]) megadja a legrövidebb
+forgatási sorozat hosszát, amivel az [1;1;1] pozícióba juthatunk!
+Bemenet
+A standard bemenet első sorában van az N (1N100) érték. A második sorban három
+szám van, egy-egy szóközzel elválasztva, a három tárcsán pillanatnyilag beállított szám.
+Kimenet
+A standard kimenetre a legrövidebb lépéssorozat hosszát kell írni, amellyel a zár kinyitha-
+tó, azaz az [1;1;1] pozícióba hozható.
+Példa
+Bemenet                                         Kimenet
+6                                               4
+1 5 3
+Magyarázat a példához
+Például egy lehetséges 4 hosszúságú lépéssorozat: BC-t kétszer forgatva csökkenő irányba, majd
+B-t kétszer forgatva csökkenő irányba.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,35 @@
+Számelméleti algoritmusok
+
+
+                                        Mókusok
+Egy patakban N követ raktak le átjárónak. A köveken M mókus ugrál át a túlsó partra úgy, hogy
+mindegyik csak bizonyos kövekre (pl. a parttól számítva minden második, minden negyedik kőre)
+ugrik.
+Készíts programot, amely kiszámítja, hogy mely kövekre nem lép egyetlen mókus sem, illetve
+hogy melyekre lép a legtöbb!
+Bemenet
+A standard bemenet első sorában a kövek száma található (1 N  20 000), a második
+sorban a mókusok száma (1 M  100), a következő M db sorban pedig 1-1 szám, amely megha-
+tározza mókusonként, hogy ugrásaikkal hányadik kőre érkeznek.
+Kimenet
+A standard kimenet első sorába kerüljenek szóközzel elválasztva, növekvő sorrendben
+azon kövek sorszámai, amelyekre egyetlen mókus sem lép! Ha nincs ilyen, az első sorba egy 0 ke-
+rüljön! A második sorba szóközzel elválasztva azon kövek sorszámai kerüljenek növekvő sor-
+rendben, amelyekre a legtöbben léptek!
+Példa
+Bemenet                                        Kimenet
+15                                             1 5 7 11 13
+3                                              12
+2
+3
+4
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az M≤20.
+
+
+
+
+                                           1. oldal
+

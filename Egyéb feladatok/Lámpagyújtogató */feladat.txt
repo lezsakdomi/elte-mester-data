@@ -1,0 +1,32 @@
+Egyéb                                                                                              *
+
+
+                                     Lámpagyújtogató
+Egy terem világítását N*M lámpa biztosítja, amelyek a mennyezeten N sorban és M oszlopban
+vannak elhelyezve. Minden sorhoz és oszlophoz tartozik egy-egy nyomógomb. Ha lenyomjuk,
+akkor az adott sor (vagy oszlop) összes lámpája ellenkező állapotba vált (kialszik, ha égett, illetve
+fordítva). Kezdetben egyik lámpa sem ég.
+Készíts programot, amely egy előre megadott világítási konfigurációhoz (melyik lámpa világít és
+melyik nem) megadja, hogy minimálisan hány kapcsolással lehet előállítani a konfigurációt!
+Bemenet
+A standard bemenet első sorában a sorok és az oszlopok száma van (1N,M2000). A
+következő N sor mindegyikében M db számmal írjuk le az adott sor világítási konfigurációját: a
+szám 1, ha a lámpának égni kell, s 0, ha nem.
+Kimenet
+A standard kimenetre a világítási konfiguráció előállításához szükséges minimális kapcso-
+lások számát kell írni! Az eredmény –1 legyen, ha nincs megoldás!
+Példa
+Bemenet                                           Kimenet
+3   5                                             4
+1   0 1 0 1
+0   1 0 1 0
+1   0 1 0 1
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,32 @@
+Kombinatorikai algoritmusok                                                                     ***
+
+
+                                         Társasjáték
+Egy társasjáték egy sorban N mezőt tartalmaz, 1-től N-ig megszámozva. A játékosok az 1-es szá-
+mú mezőn kezdenek, szabályos dobókockával dobnak, és annyit lépnek előre, ahányast dobtak. A
+cél az N. mező, ha ide elér valaki, akkor vége a játéknak, azonban csak pontos dobással lehet be-
+érni. Ha valaki túllépne az utolsó mezőn, akkor a maradék lépéseit hátrafelé kell megtennie. Tehát
+ha pl. 10 mező van és a 7. mezőn álló játékos 5-öst dob, akkor 3-at lép előre, majd a maradék
+kettőt hátra, így a 8. mezőre kerül.
+Készíts programot, amely kiszámítja, hogy hányféle különböző dobássorozattal lehet egy játékos-
+nak legfeljebb K dobással eljutni a célba! Mivel ez az érték elég nagy lehet, ezért az utolsó 6 szám-
+jegyét kell megadni!
+Bemenet
+A standard bemenet első sorában két egész szám van egy szóközzel elválasztva, a mezők
+száma (6≤N≤1000) és a dobások száma (1≤K≤1000).
+Kimenet
+A standard kimenet egyetlen sorába azon lépéssorozatok számának utolsó 6 számjegyét
+kell írni, ahány különböző dobássorozattal eljuthatunk az N. mezőre legfeljebb K lépéssel!
+Példa
+Bemenet                                           Kimenet
+6 3                                               31
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 50%-ában N*K≤8000.
+
+
+
+
+                                              1. oldal
+

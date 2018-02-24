@@ -1,0 +1,41 @@
+Gráfok – legrövidebb utak                                                                            *
+
+
+                                         Szállítás
+Az ország N városa között különböző teherbírású utak vannak. Két város között árut szeretnénk
+szállítani a lehető legnagyobb kapacitású teherautóval olyan útvonalon, ahol az autó tehersúlya
+nem nagyobb, mint az egyes utak teherbírása.
+Készíts programot, amely adott A és B városra megadja, hogy maximum mekkora tehersúlyú
+teherautó közlekedhet közöttük és merre kell menni!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤100 000), a köztük levő utak
+száma (1≤M≤1 000 000), a kezdő és a cél város sorszáma (1≤A≠B≤N) van. A következő M sor
+mindegyikében egy-egy út leírása található: azon két város sorszáma (1≤sorszám≤N), amelyek
+között a kétirányú út vezet, valamint az út teherbírása (1≤tehebírás≤1000).
+Kimenet
+Az standard kimenetre 2 sort kell írni. Az elsőbe a maximális tehersúly kerüljön, a
+másodikba pedig az oda vezető úton levő városok sorszáma, az útvonal sorrendjében (azaz az
+első sorszám biztosan A, az utolsó sorszám biztosan B legyen)! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet             Kimenet
+5   6   3 4         300
+                                                                                 100
+2   1   100         3 5 4                                          1                             2
+1   4   100
+3   1   200                                                100             200
+3   5   300                                                                                900
+
+2   3   900                                                  4                         3
+4   5   400
+Korlátok                                                     400             300
+                                                                       5
+Időlimit: 0.7 mp.
+Memórialimit: 84 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

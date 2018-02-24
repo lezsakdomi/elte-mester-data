@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                               ***
+
+
+                                       Dekódolás
+Az 1,…N számok minden A=(a1,…,aN) permutációja kódolható azzal a B=(b1,…,bN) soro-
+zattal, ahol
+        bi= azon aj elemek számával, amelyekre j<i és aj>ai.
+Készíts programot, amely adott B kódsorozatra kiszámítja azt az A permutációt, amelyek kódja a
+B sorozat!
+Bemenet
+A standard bemenet első sorában az N szám (1≤N≤100 000) van. A második sor pon-
+tosan N számot tartalmaz egy-egy szóközzel elválasztva, egy permutáció B kódját. (A bemenet
+biztosan egy permutáció kódja.)
+Kimenet
+A standard kimenet első sorába kell kiírni azt a permutációt (N egész számot egy-egy szó-
+közzel elválasztva), amelynek kódja a bemenetben megadott B sorozat!
+Példa
+Bemenet                                        Kimenet
+7                                              1 5 2 6 4 7 3
+0 0 1 0 2 0 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 60%-ában N≤10 000.
+
+
+
+
+                                           1. oldal
+

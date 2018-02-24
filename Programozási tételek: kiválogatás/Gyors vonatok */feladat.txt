@@ -1,0 +1,35 @@
+Programozási tételek – Kiválogatás
+
+
+                                     Gyors vonatok
+Ismerjük N vonat menetidejét Budapestről Siófokra.
+Írj programot, amely megadja azokat a vonatokat, amelyek K percnél rövidebb idő alatt érnek
+Siófokra!
+Bemenet
+A standard bemenet első sorában a vonatok száma (1N100), a másodikban pedig egy
+idő (1K200) van. A következő sorok mindegyike egy-egy egész számot tartalmaz, az egyes
+vonatok menetidejét (1M300).
+Kimenet
+A standard kimenet első sorába a K percnél gyorsabb vonatok darabszáma legyen,
+amelyet ezen vonatok sorszáma kövessen növekvő sorrendben, a számok közé egy-egy szóközt
+kell kiírni!
+Példa
+Bemenet                                        Kimenet
+6                                              2 1 4
+120
+118
+200
+199
+116
+200
+122
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

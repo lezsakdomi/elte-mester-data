@@ -1,0 +1,51 @@
+Gráfok – Szélességi bejárás                                                                       ***
+
+
+                                         Csatorna
+Egy szennyvíz csatorna hálózathoz takarító robotot fejlesztettek. A hálózat csomópontokból és
+közöttük levő kör keresztmetszetű csatorna szakaszokból áll, amelyeknek ismerjük a csőátmérő-
+jét. A robot olyan csövet tud tisztítani, amelynek átmérője nagyobb a robot méreténél. A robot a
+csatornában mindkét irányban haladhat.
+Készíts programot, amely megadja, hogy adott pontból indítva a robot hány csatorna szakaszt tud
+kitisztítani, valamint hogy minimum hány további pontból kellene elindítani, hogy az összes olyan
+csatornát kitisztítsa, ahova befér!
+Bemenet
+A standard bemenet első sora a csomópontok számát (1≤N≤40 000), a csatorna szaka-
+szok számát (1≤M≤400 000), a kiinduló csomópont sorszámát (1≤S≤N) és a robot méretét
+(1≤R≤100) tartalmazza, egy-egy szóközzel elválasztva. A következő M sor mindegyike egy-egy
+csatorna szakasz két végpontját (1≤Ki≠Vi≤N) és átmérőjét (1≤Ai≤100) tartalmazza.
+Kimenet
+A standard kimenet első sorába az S pontból kitisztítható csatorna szakaszok számát kell
+írni! A második sorba azon további pontok minimális számát kell írni, amelyekből elindulva az
+összes olyan csatorna kitisztítható, ahova a robot befér!
+Példa
+Bemenet                                         Kimenet
+12 15 4 10                                      4
+1 2 11                                          2
+5 8 1
+1 3 11                                                                                  11
+1 4 1                                                                             1              2
+2 5 11                                                                      11
+                                                                                  1                  11
+6 7 1                                                                                   1
+3 6 1                                                                   3         4              5
+4 7 11
+                                                                    1            11         11        1
+4 8 11
+4 5 1                                                                       1          11
+                                                                        6         7              8
+8 7 11
+11 7 10                                                                          10                   11
+8 12 11
+9 10 1                                                          1           11
+                                                           9         10           11             12
+11 10 11
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

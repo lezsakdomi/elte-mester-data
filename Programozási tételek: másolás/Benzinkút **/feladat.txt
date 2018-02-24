@@ -1,0 +1,34 @@
+Programozási tételek: másolás                                                                   **
+
+
+                                          Benzinkút
+Egy benzinkútnál K töltőhelyen lehet tankolni. A kúthoz összesen N autó érkezik, melyek külön-
+böző ideig foglalják el a töltőhelyeket. Az érkező autók egy szabad töltőhelyhez állnak. Ha min-
+den hely foglalt, akkor várakoznak, majd érkezési sorrendben állnak a szabaddá vált kutakhoz,
+ahol megadott ideig tankolnak.
+Írj programot, amely megadja, hogy az egyes autók – érkezési idejük sorrendjében – mikor hagy-
+ják el a benzinkutat!
+Bemenet
+A standard bemenet első sorában N (0N100) és K (1K10) értéke van szóközzel elvá-
+lasztva. A következő N sor az egyes autók érkezési (óra, perc), illetve tankolási (perc) idejét tar-
+talmazza szóközzel elválasztott egész számok formájában.
+Kimenet
+A standard kimenet N sorába meg kell adni minden egyes autóra – érkezési idejük sor-
+rendjében – azt, hogy azok mikor hagyják el a benzinkutat. Minden sor két egész számot, az elha-
+gyás időpontjának óra és perc részét tartalmazza szóközzel elválasztva.
+Példa
+Bemenet                                          Kimenet
+3 2                                              7 5
+6 30 35                                          6 45
+6 35 10                                          6 55
+6 40 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 50%-ában N≤10
+
+
+
+
+                                              1. oldal
+

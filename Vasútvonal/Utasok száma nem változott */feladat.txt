@@ -1,0 +1,33 @@
+Vasútvonal                                                                                         *
+
+
+                             Utasok száma nem változott
+A Budapest-Székesfehérvár vasútvonalon egy vonat kalauza minden állomáson feljegyezte, hogy
+hányan szálltak fel a vonatra, illetve hányan szálltak le. (Budapesten biztos nincs leszálló, Székes-
+fehérváron biztos nincs felszálló, aki leszállt, az nem száll vissza.)
+Készíts programot, amely megad egy állomást, ahol az utasok száma nem változott!
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤N≤1000) szerepel, majd soronként az
+egyes állomásokon leszállók (0≤le≤800) és felszállók (0≤fel≤800) száma.
+Kimenet
+A standard kimenet első sorába egy olyan állomás sorszámát kell kiírni, ahol az utasok
+száma nem változott! Az eredmény állomásszám+1 legyen, ha nem volt ilyen állomás!
+Példa
+Bemenet                                           Kimenet
+6                                                 5
+0 15
+10 30
+0 32
+48 0
+0 0
+19 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500, a leszállók és felszállók száma ≤400
+
+
+
+
+                                              1. oldal
+

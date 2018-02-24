@@ -1,0 +1,31 @@
+Programozási tételek – rendezések                                                           *
+
+
+                                    Legnagyobb lakások
+Egy ingatlanforgalmazó vállalat tárolja az eladott lakásai árát és területét.
+Írj programot, amely megadja a K legnagyobb mérethez tartozó lakások számát! Nyilvánvaló,
+hogy ha minden lakás más és más alapterületű lenne, akkor ez a szám pontosan K lenne, egyéb-
+ként azonban ≥K.
+Bemenet
+A standard bemenet első sorában a lakások száma (1≤N≤100); valamint a méret korlát
+(1≤K≤N) van. A következő N sorban soronként az egyes lakások ára (1≤Ári≤100) és területe
+(10≤Méreti≤199) van. (Megjegyzés az árakat – természetesen – millió forintban értjük, de ezzel
+a megoldásnál nem kell foglalkozni!)
+Kimenet
+A standard kimenet első sorába a K legnagyobb mérethez tartozó lakások számát kell írni!
+Példa
+Bemenet                                Kimenet
+4 2                                    3
+10 80
+20 80
+10 30
+100 145
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

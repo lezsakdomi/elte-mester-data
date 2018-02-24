@@ -1,0 +1,41 @@
+Dinamikus programozás                                                                              *
+
+
+                                    Csapdák kikerülése
+Tekintsük azt az egyszemélyes játékot, amelyet N sorból és M oszlopból álló négyzetrácsos táblán
+játszanak! Minden mező vagy üres, vagy csapda. Egy bábut kell mozgatni a táblán. A bábu kez-
+detben a tábla bal felső sarkában van, és a jobb alsó sarokba kell eljuttatni az alábbi lépés-szabályt
+betartva:
+     Csak olyan mezőre lehet lépni, ahova még nem lépett a bábu.
+     Csapda mezőre nem lehet lépni.
+     Csak a négy szomszédos mező valamelyikére lehet lépni.
+     Egy lépésben csak jobbra, vagy lefelé lehet lépni.
+Készíts programot, amely kiszámítja, hogy hányféleképpen lehet eljuttatni a bábut a bal felső sa-
+rokból a jobb alsóba! Mivel az eredmény nagyon nagy szám is lehet, az 1 000 000-val vett ma-
+radékát kell megadni!
+Bemenet
+A standard bemenet első sorában a sorok és oszlopok száma (1≤N,M≤1000) van. A to-
+vábbi N sor mindegyike M egész számot tartalmaz. A sorban az i-edik szám 1, akkor a megfelelő
+mező csapda, egyébként a mező üres.
+Kimenet
+A standard kimenet egyetlen sora egy egész számot tartalmazzon, annak a számnak az
+1 000 000-val vett maradékát, ahányféleképpen el lehet juttatni a bábut a bal felső sarokból a
+jobb alsóba!
+Példa
+Bemenet                                           Kimenet
+5   6                                             7
+0   0   0   0   0   0
+0   1   0   0   1   0
+0   0   1   0   0   0
+1   0   1   0   0   0
+0   0   0   0   1   0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤50
+
+
+
+
+                                               1. oldal
+

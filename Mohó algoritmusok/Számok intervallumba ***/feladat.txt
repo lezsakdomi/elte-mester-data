@@ -1,0 +1,33 @@
+Mohó algoritmusok                                                                            ***
+
+
+                                Számok intervallumba
+Adott N pozitív egész szám. Keresünk olyan zárt intervallumokat, hogy minden megadott szám
+benne legyen valamelyik intervallumban, és minden intervallumba legalább két szám essen és az
+intervallumok összhossza a lehető legkisebb legyen! Egy [a,b] intervallum hossza a b-a érték.
+Készíts programot, amely megadja a legkisebb összhosszú lefedő intervallumokat!
+Bemenet
+A standard bemenet első sorában a lefedendő számok száma van (1<N≤100 000). A má-
+sodik sor pontosan N pozitív egész számot tartalmaz (egy-egy szóközzel elválasztva), a lefedendő
+számokat. A számok nem nagyobbak, mint 2 000 000.
+Kimenet
+A standard kimenet első sorába a lefedő intervallumok összhosszát kell írni! A következő
+sorok mindegyikébe egy lefedő intervallum kezdő és végpontját kell írni egy szóközzel elválasztva,
+kezdőpontjuk szerint növekvő sorrendben! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+7                                                9
+3 1 4 11 7 9 15                                  1 4
+                                                 7 9
+                                                 11 15
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

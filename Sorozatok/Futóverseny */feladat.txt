@@ -1,0 +1,44 @@
+Sorozatok
+
+
+                                        Futóverseny
+Egy maratoni futóversenyen minden csapatot két ember képvisel. A távot végigfutók érkezési
+sorrendjét jegyzőkönyvben rögzítik. A csapatokat a következő rendszer szerint rangsorolják: ha
+mindkét csapattag beérkezik, akkor a csapat pontszáma a helyezéseik összege. Minél kevesebb az
+összpontszám, annál jobb helyezést ért el az adott csapat, így a legkevesebb pontszámú csapat
+állhat a dobogó tetejére.
+Készíts programot, amely kiszámítja, hogy mely csapatoknak érkezett be mindkét képviselője, és
+melyik csapat végzett az első helyen!
+Bemenet
+A standard bemenet első sorában a beérkezők száma található (1  N  100 000), ezt kö-
+veti N sorban egy-egy résztvevő sorszáma és csapatának kódja egyetlen szóközzel elválasztva
+(1  S i , C i  100 000).
+Kimenet
+A standard kimenet első sorába kerüljenek azon csapatok kódjai egy-egy szóközzel elvá-
+lasztva, amelyeknek mindkét tagja beérkezett! Ha nincs ilyen csapat, a sorban egyetlen 0 szerepel-
+jen! A második sorban annak a csapatnak a kódja legyen, amely az első helyen végzett, ezt pedig a
+tagok sorszámai kövessék, egy-egy szóközzel elválasztva! Holtverseny esetén a legkisebb kódú
+csapatot add meg! Ha nem volt beérkező csapat, ebbe a sorba is egyetlen 0 kerüljön!
+Példa
+Bemenet                                         Kimenet
+10                                              4 8 9
+5 9                                             4 1 3
+1 4
+3 4
+6 7
+15 1
+8 9
+11 2
+20 8
+21 3
+10 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤1000.
+
+
+
+
+                                             1. oldal
+

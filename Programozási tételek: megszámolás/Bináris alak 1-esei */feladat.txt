@@ -1,0 +1,21 @@
+Programozási tételek - megszámolás                                                          *
+
+
+                                   Bináris alak 1-esei
+Számítsd ki, hogy az N természetes szám binárisan felírt alakjában hány db 1-es szerepel!
+Bemenet
+A standard bemenet első sorában található N értéke (maximum 10 000).
+Kimenet
+A standard kimenet első sorába ki kell írni a bináris alakban szereplő 1-esek számát!
+Példa
+Bemenet                                          Kimenet
+6                                                2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

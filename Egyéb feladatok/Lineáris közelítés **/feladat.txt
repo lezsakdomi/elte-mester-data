@@ -1,0 +1,57 @@
+Egyéb                                                                                             **
+
+
+                                      Lineáris közelítés
+N napon át mértük egy nemrég felfedezett bolygó felszíni hőmérsékletét, ez minden nap egy
+egész szám volt. Néhány napon azonban elfelejtettünk mérni, ezeket a napokat ? karakter jelzi.
+Legfeljebb N-2 darab ? lehet.
+Készíts programot, amely a ?-ek helyére közelítő értéket számol, lineárisan közelítve a hiányzó ér-
+tékeket!
+A lineáris közelítés a következőt jelenti: Ha a bemeneti adatsor: ? ? 4 3 ? ? 6 ? ?, akkor az 1. ábrán
+látható módon az ötödik helyre bekerül a 4, a hatodik helyre pedig az 5. A 2. ábra mutatja, hogy a
+bal szélen levő ?-ek helyére a 6 és az 5 kerül. Hasonló elven, a jobb szélen levő ?-ek helyére 7-et
+és 8-at kell tenni.
+ 7                                                 7
+
+
+ 6                                                 6
+
+ 5                                                 5
+
+
+ 4                                                 4
+
+
+ 3                                                 3
+
+ 2                                                 2
+
+
+ 1                                                 1
+
+ 0                                                 0
+        3       4         5       6        7              1          2             3        4
+
+
+
+
+                    1. ábra                                              2. ábra
+Bemenet
+A standard bemenet első sorában a napok (2≤N≤500 000) száma van. A második sorban
+pontosan N szám (vagy ? karakter) van szóközökkel elválasztva, az egyes napokon mért hőmér-
+séklet.
+Kimenet
+A standard kimenet egyetlen sorába kell írni a ?-ek lineáris közelítése után kapott sorozat
+számait, szóközökkel elválasztva.
+Példa
+Bemenet                                           Kimenet
+? ? 4 3 ? ? 6 ? ?                                 6 5 4 3 4 5 6 7 8
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

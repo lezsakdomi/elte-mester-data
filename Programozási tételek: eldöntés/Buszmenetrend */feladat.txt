@@ -1,0 +1,36 @@
+Programozási tételek - eldöntés                                                            *
+
+
+                                     Buszmenetrend
+Adott egy Budapest és Mohács közötti autóbusz menetrend, amely tartalmazza a közbülső hely-
+ségek esetében az érkezési és az indulási időt. Az adatok indulási idő szerint rendezettek.
+Írj programot, amely eldönti, hogy van-e olyan busz, amely Szekszárdról indul!
+Bemenet
+A standard bemenet első sorában található a menetrendben található bejegyzések (N, ma-
+ximum 100) száma. A következő N sor mindegyikében van egy városnév (ekezet nelkul), egy ér-
+kezési idő és egy indulási idő szóközzel elválasztva. Az idők a napon belüli percekben vannak
+megadva, vagyis 24*60=1440 a maximális érték és aznap mindig megérkezik. „-1” van ott, ahol
+nincs értelmezhető érkezési idő és „9999” szerepel a nem értelmezhető indulási időknél.
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! A „VAN” szöveg szerepeljen, ameny-
+nyiben van olyan busz, ami „Szekszard”-ról indult („-1” perckor érkezett), különben a „NINCS”
+szöveg!
+Példa
+Bemenet                                          Kimenet
+7                                                VAN
+Budapest -1 480
+Dunaujvaros 549 550
+Paks 580 582
+Szekszard -1 600
+Szekszard 604 605
+Mohacs 650 9999
+Mohacs 655 9999
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

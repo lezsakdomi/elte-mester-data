@@ -1,0 +1,32 @@
+Programozási tételek – Keresés
+
+
+                           Korcsolyázós nap a Balatonon
+Az elmúlt N napon megmértük a Balatonon a jég vastagságát. Korcsolyázni akkor lehet, ha leg-
+alább 2 előző napon keresztül a vastagság nagyobb volt, mint M centiméter (a korcsolyázás napját
+is beleértve).
+Készíts programot, amely megad egy napot, amikor korcsolyázni lehetett!
+Bemenet
+A standard bemenet első sorában a mérések száma (0≤N≤100) és egy jégvastagság
+(0<M≤20) van, utána soronként egy-egy mérés van (0≤Vi≤100).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, annak a napnak a sorszá-
+mát, amikor korcsolyázni lehetett (ha több ilyen is van, akkor az elsőt)! Ha nincs ilyen nap, akkor
+-1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+3                                                2
+4
+6
+5
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

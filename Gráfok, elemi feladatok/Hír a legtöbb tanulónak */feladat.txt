@@ -1,0 +1,35 @@
+Gráfok – elemi feladatok                                                                       *
+
+
+                               Hír a legtöbb tanulónak
+Egy osztályba N tanuló jár. Minden tanuló ismeri néhány osztálytársának telefonszámát.
+    Írj programot, amelymegadja azt a legkisebb sorszámú tanulót, akitől egy hír az ismert
+telefonokon keresztül továbbadva előbb-utóbb az osztály legtöbb tanulójához eljut!
+Bemenet
+A standard bemenetelső sorában a tanulók N száma (1≤N≤250) van. A következő N sor
+mindegyike egy-egy tanuló által ismert telefonszámú tanulókat ír le, az állomány i+1-edik sorában
+azoknak a tanulóknak a sorszáma van, akiét az i-edik tanuló ismeri. Mindegyik sorban legfeljebb
+N-1 különböző egész szám van, egy-egy szóközzel elválasztva és 0-val zárva: az ismert
+telefonszámú tanulók sorszáma.
+Kimenet
+A standard kimenetreegyetlen sort kell írni, annak a tanulónak a sorszámát, akitől a
+legtöbb tanulóhoz eljuthat egy hír. Ha több ilyen tanuló van, akkor bármelyik sorszáma kiírható!
+Példa
+Bemenet                                         Kimenet
+5                                               1
+3   5 0
+3   4 0
+0                                                                              3           4
+2   3 0
+2   0
+                                                                    1
+Korlátok
+Időlimit: 0.1 mp.                                                              5           2
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤20
+
+
+
+
+                                            1. oldal
+

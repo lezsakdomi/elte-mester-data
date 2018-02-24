@@ -1,0 +1,36 @@
+Programozási tételek összeépítése                                                             **
+
+
+                                       Legtöbb tipp
+Egy szerencsejátékban a résztvevők sorban egymás után egy-egy 1 és M közötti számot tippelnek.
+Az nyer, aki elsőként tippelt arra a számra, amelyre a résztvevők közül a legtöbben tippeltek. Ha
+több ilyen szám is van, akkor az összes ilyen szám első tippelője nyer.
+Készíts programot, amely megadja a nyertes játékos sorszámát, a nyertes számot, és azt, hogy há-
+nyan választották ezt a számot!
+Bemenet
+A standard bemenet első sorában a versenyzők száma (1N5000) és a tipp maximális
+értéke (1M1000000) van, egyetlen szóközzel elválasztva. A következő N sorban van az egyes
+versenyzők tippje (1≤T≤M).
+Kimenet
+A standard kimenetbe annyi sort kell írni, ahány győztes van (tippjük szerint növekvő
+sorrendben)! Minden sorban három szám legyen egy-egy szóközzel elválasztva: a győztes sorszá-
+ma, a tippje, valamint az, hogy hányan tippelték ezt a számot!
+Példa
+Bemenet                                         Kimenet
+6 100                                           3 15 2
+25                                              2 20 2
+20
+15
+15
+30
+20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤100
+
+
+
+
+                                            1. oldal
+

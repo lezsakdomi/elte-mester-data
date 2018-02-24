@@ -1,0 +1,28 @@
+Maximumkiválasztás                                                                         *
+
+
+                       Legnagyobb hőmérséklet eltérés
+Ismerjük az elmúlt N napon délben mért hőmérsékletet.
+Készíts programot, amely megad egy olyan 7 napos időszakot, amelyben a legnagyobb és a legki-
+sebb mért hőmérséklet eltérése a lehető legnagyobb volt!
+Bemenet
+A standard bemenet első sorában a napok száma van (7N10 000). A következő sor-
+ban az egyes napokon délben mért N hőmérséklet érték található (-40Hi50).
+Kimenet
+A standard kimenet egyetlen sorába annak a napnak a sorszámát kell kiírni, amitől kezdő-
+dő 7 napos szakaszon a legnagyobb és legkisebb hőmérséklet eltérése a lehető legnagyobb volt!
+Ha több ilyen is van, akkor a legkisebb sorszámot kell kiírni!
+Példa
+Bemenet                                       Kimenet
+9                                                     2
+5 8 1 5 1 2 3 9 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 66%-ában N≤100.
+
+
+
+
+                                           1. oldal
+

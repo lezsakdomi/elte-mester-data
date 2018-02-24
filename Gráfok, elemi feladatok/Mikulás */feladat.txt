@@ -1,0 +1,38 @@
+Gráfok – elemi feladatok                                                                       *
+
+
+                                          Mikulás
+Osztályod Mikulás ünnepségre készül. Minden tanuló választott magának egy másik tanulót,
+akinek ajándékot szeretne adni. Kiderült, hogy így lehet olyan tanuló, aki nem kap senkitől sem
+ajándékot. Az osztály felhatalmazta az osztályfőnököt, hogy a lehető legkevesebb módosítást
+elvégezze, hogy mindenki továbbra is egy ajándékot adjon és pontosan egy ajándékot kapjon.
+   Készíts programot, amely kiszámítja a szükséges legkevesebb módosítások számát, amelynek
+hatására mindenki pontosan egy ajándékot kap, és meg is ad egy ilyen módosítást!
+Bemenet
+A standard bemenetelső sora a tanulók N számát tartalmazza (2≤N≤100000). A tanulókat az
+1,…,N számokkal azonosítjuk. A második sor pontosan N egész számot tartalmaz egy-egy
+szóközzel elválasztva. A sorban az i-edik szám annak a tanulónak a sorszáma, akinek az i-edik
+tanuló ajándékot szeretne adni (saját magának biztosan nem ad).
+Kimenet
+A standard kimenetelsősora egyetlen számot tartalmazzon, a lehető legkevesebb szükséges
+módosítások K számát! A következő K sor mindegyike egy-egy módosítást tartalmazzon, két
+egész számot egy szóközzel elválasztva: i j. Ez azt jelenti, hogy a módosítás következtében az i-
+edik tanuló a j-edik tanulónak fog ajándékot adni. Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                         Kimenet
+9                                               3
+234535898                                       56
+                                                          1       2       3        4
+                                                61
+                                                97
+Korlátok                                                  7               9        5       6
+Időlimit: 0.1 mp.
+                                                                  8
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

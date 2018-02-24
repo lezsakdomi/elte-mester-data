@@ -1,0 +1,41 @@
+Gráfok – Mélységi bejárás                                                                 ***
+
+
+                                  Két út hálózatban
+Minden számítógépes hálózat úgy épül fel, hogy csomópontokat kétirányú adatátvitelt biztosító
+vonal köt össze közvetlenül. Az általunk vizsgált hálózat olyan, hogy minden csomópont legfel-
+jebb három másik csomóponttal van közvetlenül összekötve. A hálózatot úgy alakították ki, hogy
+megbízható legyen abban az értelemben, hogy bármely két P és Q csomópontja között legyen két
+olyan útvonal, amelyeknek nincs közös pontja, csak P és Q.
+Írj programot, amely két adott csomópontra meghatároz két olyan útvonalat, amelyeknek a vég-
+pontok kivételével, nincs közös pontjuk!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (3N1000), a csomópontok
+közötti közvetlen kapcsolatok száma (3M3000) és a két csomópont sorszáma (1P≠QN)
+van. A következő M sor mindegyikében két csomópont sorszáma (1XYN) van, ahol az X és az
+Y csomópontot kétirányú átvitelt biztosító közvetlen kapcsolat köti össze.
+Kimenet
+A standard kimenet két sort tartalmazzon, a megadott P és Q csomópontot összekötő két
+különböző, közös belső pont nélküli útvonalat! Mind P, mind Q szerepeljen az útvonalban! Ha
+több megoldás is van, akkor egy tetszőlegeset ki lehet írni.
+Példa
+Bemenet                      Kimenet
+                                                                   7           1          2
+7   8 1 5                    1 7 4 5
+7   1                        1 2 6 5
+4   7
+1   2                                                              4           3
+4   5
+3   4
+5   6
+6   2                                                              5                      6
+3   7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

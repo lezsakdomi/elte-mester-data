@@ -1,0 +1,46 @@
+Programozási tételek összeépítése                                                                               *
+
+
+                  Résztvevők száma kategóriánként a kihíváson
+A „Kihívás napja”, 1991 óta hazánk legnépszerűbb lakossági sporteseménye. Magyarországon eddig összesen
+1591 település vett részt a vetélkedésben. Tavaly a versenyben induló falvak és városok lakói egyetlen nap alatt 48
+millió percnyi testmozgást végeztek.
+Az eseményre nevezni kell a helységnévvel, a helységről tudjuk a lakósok számát, és hogy hányan
+vesznek részt az eseményen. N nevezés történt, amelyet időrendben jegyeztek föl. A feldolgozás-
+ban szerepet kap a helységek alábbi kategorizálása: I. kategória – a 700 főnél kisebb lélekszámúak,
+II. kategória – 700-1499 fő, III. kategória – 1500-2999 fő, IV. kategória – 3000-7999 fő, V. kate-
+gória – 8000-24 999 fő, VI. kategória – 25 000-69 999 fő, VII. kategória – 70 000 fő felettiek.
+Készíts programot, amely megadja, hogy hányan vettek részt az eseményen az egyes kategóriák-
+ban!
+Bemenet
+A standard bemenet első sorában a nevezők száma (1≤N≤1000), alatta az egyes nevező
+helységek adatai soronként (egy sor egy adat). A nevezők adatai: elsőként a helységnév, a helység
+lélekszáma (1≤H≤200 000), a részvevők száma (1≤R≤10 000).
+Kimenet
+A standard kimenet első sorába az egyes kategóriákban részt vettek számát kell kiírni (a
+kategóriák sorszáma szerint növekvő sorrendben)!
+Példa
+Bemenet                                                  Kimenet
+4                                                        0 0 0 849 0 0 1234
+Miskolc
+166823
+1234
+Aszód
+5772
+234
+Zirc
+7454
+333
+Bóly
+3939
+282
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                                     1. oldal
+

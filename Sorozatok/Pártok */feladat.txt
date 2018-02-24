@@ -1,0 +1,47 @@
+Sorozatok                                                                                        *
+
+
+                                            Pártok
+Az elmúlt 200 évben Európa 2 országában feljegyezték, hogy a választások után milyen párt (bal-
+oldali vagy jobboldali) adta a miniszterelnököt. Olyan időszakokat keresünk, amikor mindkét or-
+szágban ugyanolyan jellegű párt volt hatalmon. A győztes adja a miniszterelnököt a választás nap-
+jától a következő választást megelőző napig.
+Készíts programot, amely megadja azokat az időintervallumokat a legelső választás és az aktuális
+idő között, amikor mindegyik országban azonos jellegű párt volt hatalmon!
+Bemenet
+A standard bemenet első sorában az aktuális dátum szerepel: év, hónap, nap, egy-egy szó-
+közzel elválasztva. A második sorban az első országbeli választások száma van (1  N  200), a
+következő N sor pedig egy-egy választás eredményét tartalmazza. Utána következik a második or-
+szágbeli választások száma (1  M  200), majd M sorban újra egy-egy választás eredménye. A vá-
+lasztási eredmény első karaktere a B vagy J betű attól függően, hogy baloldali vagy jobboldali párt
+adta a miniszterelnököt, ezt követi a választás éve, hónapja és napja, az első betűtől és egymástól
+egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába azon időintervallumok K számát kell írni, amikor mindkét
+országban azonos jellegű párt adta a miniszterelnököt, a következő K sorba pedig növekvő idő-
+rendben az egyes intervallumokat! Minden intervallumot az időszak elejével (év, hónap, nap) és
+végével (szintén év, hónap, nap) kell leírni, azaz minden sorban 6 egész szám szerepeljen! Ha két
+egymáshoz illeszkedő intervallumban ugyanaz a párt adta mindkét országban a miniszterelnököt,
+akkor az egy intervallumnak számít.
+Példa
+Bemenet                                          Kimenet
+2001 5      20                                   2
+3                                                1992 6 11 1994 5 11
+J 1990      5 4                                  1996 6 30 1998 5 7
+B 1994      5 12
+J 1998      5 8
+4
+J 1992      6   11
+J 1993      6   1
+B 1996      6   30
+B 1998      2   15
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N,M≤20.
+
+
+
+
+                                             1. oldal
+

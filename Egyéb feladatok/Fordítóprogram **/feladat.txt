@@ -1,0 +1,46 @@
+Egyéb                                                                                          **
+
+
+                                    Fordítóprogram
+Az alábbi programozási nyelven írt programokkal egy tár legfeljebb 200 000 db 8 bites rekeszét
+adatokkal tölthetjük fel (az 1. rekesztől kezdve):
+   Címke: x(DB)             az x számot beírja a tár következő DB rekeszébe
+                            (0x,DB255)
+   Címke: 'x'(DB)           az x karakter kódját beírja a tár következő DB rekeszébe
+                            (0DB255)
+   Címke: "xxxxxx" az xxxxxx karaktersorozat elemeinek kódját beírja a tár következő
+                   rekeszeibe
+   Címke: <X>               az X címkének megfelelő 16 bites címet írja a tár következő két re-
+                            keszébe (előbb a kisebb helyi értékű részét, utána a nagyobbat)
+   Címke: [X]               az X címkének megfelelő címen levő 8 bites értéket írja a tár követ-
+                            kező rekeszébe
+A Címke maximum hat, az angol ábécé betűiből álló karaktersorozat, amelyet kettőspont követ.
+A neki megfelelő cím a soron következő rekesz sorszáma az utasítás végrehajtása előtt. A Cím-
+ke: el is maradhat. A számok és címkék belsejét kivéve mindenütt tetszőleges számú szóköz le-
+het.
+Írj programot, amely beolvassa a lefordítandó, biztosan helyes programot, és kiírja a végrehajtás
+eredményét (a tár rekeszeinek tartalmát)!
+Bemenet
+A standard bemenet minden sorában a lefordítandó program pontosan egy utasítása van.
+Kimenet
+A standard kimenetre egyetlen sort kell írni, tár rekeszeinek tartalmát az összes utasítás
+végrehajtása után, cím szerinti sorrendben! Elég azokat a rekeszeket kiírni, ahová a program írt
+adatot!
+Példa
+Bemenet                             Kimenet
+A: 12 (2)                           12 12 97 97 97 98 99 100 12 1 0 14 0 98
+   'a'(3)
+B: "bcd"
+   [A]
+   < A >
+   <C    >
+C: [B]
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

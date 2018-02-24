@@ -1,0 +1,30 @@
+Programozási tételek – Megszámolás
+
+
+                              Nyelvórán egyesek száma
+Egy iskolában N tanuló kapott egy-egy jegyet a nyelvórákon.
+Írj programot, amely megadja, hogy hány 1-es jegy született!
+Bemenet
+A standard bemenet első sorában a tanulók száma van (1N100). A következő N sor
+mindegyike egy-egy egész számot tartalmaz, az egyes tanulók osztályzatát (1≤O≤5).
+Kimenet
+A standard kimenet első sorába egyetlen egész szám legyen, az 1-es osztályzatok száma!
+Példa
+Bemenet                                          Kimenet
+6                                                1
+3
+2
+1
+5
+3
+4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

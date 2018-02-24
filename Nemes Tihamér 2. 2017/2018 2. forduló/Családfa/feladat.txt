@@ -1,0 +1,38 @@
+Nemes Tihamér Nemzetközi Programozási Verseny, 2. korcsoport                          2. forduló
+
+
+                                          Családfa
+Egy királyi családban ismerjük az apai ágú leszármazottakat. A család tagjai egyetlen közös őstől
+származnak. Az ős gyerekei tőle 1 távolságra vannak, az unokái 2-re, a dédunokái 3-ra, és így to-
+vább. Az 1-es sorszámú tag a közös ős.
+Készíts programot, amely megadja a legtávolabbi leszármazottakat!
+Bemenet
+A standard bemenet első sorában a királyi család tagjai száma (1≤N≤1 000 000) szerepel.
+A következő N-1 sorban sorra a 2-es, 3-as, … sorszámú családtag apjának sorszáma található
+(1≤Apai≤N).
+Kimenet
+A standard kimenet első sorába a legtávolabbi leszármazottak K számát és a közös őstől
+számított távolságukat kell írni! A második sorba a K legtávolabbi leszármazott sorszáma kerül-
+jön, sorszám szerint növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+10                                              3 3
+1                                               6 7 10                        1
+2
+1
+4                                                                   2         4          8
+5
+5                                                             3               5          9
+1
+8
+9                                                                         6       7          10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,44 @@
+Egyéb                                                                                                *
+
+
+                                              Jegyek
+Egy osztály tanulóit dolgozatíráskor 0 és M pont között pontozzák. Lelkileg nem szerencsés, ami-
+kor valaki úgy érzi, hogy nagyon közel volt egy osztályzathoz, csak néhány ponton múlt, hogy
+nem érte azt el. Emiatt azt találták ki, hogy úgy határoznak meg ponthatárokat az egyes jegyekhez,
+hogy
+       a ponthatáron ne legyen egyetlen diák sem, valamint
+       a diákok minél messzebb legyenek ennek elérésétől (azaz a ponthatárok és a náluk kisebb
+        pontszámok különbségeinek minimuma maximális legyen),
+       de azért mindenféle osztályzatot kiadhassanak.
+Készíts programot, amely megadja a jegyek közötti ponthatárokat!
+Bemenet
+A standard bemenet első sorában a tanulók száma (0≤N≤106) és a maximálisan elérhető
+pontszám (0≤M≤107) van egy szóközzel elválasztva. A következő N sorban egy-egy tanuló pont-
+száma található (0 és M közötti egész szám).
+Kimenet
+A standard kimenet négy sorába az osztályzatok közötti ponthatárt kell írni, az i-edik sor-
+ba az i és az i+1 jegyek közöttit! Ha több megoldás is lenne, elég az egyiket kiírni! Ha a fenti felté-
+telekkel nincs megoldás – a pontok alapján nem lehet ötféle osztályzatot adni (pl. csak 1 tanuló írt
+dolgozatot), akkor egyetlen, 0-t tartalmazó sort kell kiírni!
+Példa
+Bemenet                                            Kimenet
+10 100                                             15
+8                                                  36
+9                                                  47
+16                                                 79
+18
+23
+37
+48
+54
+60
+80
+Korlátok
+Időlimit: 0.25 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

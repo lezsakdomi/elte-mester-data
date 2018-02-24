@@ -1,0 +1,39 @@
+Programozási tételek – rendezés                                                           ***
+
+
+                                  Programozási verseny
+Egy programozási versenyen N fordulót rendeznek, melyek mindegyikében az első K helyezettet
+értékelik. Az első helyezett K, a második K-1, a harmadik K-2, … pontot kap. Mindenkinek az L
+legmagasabb pontszámát veszik figyelembe. Legfeljebb 1000 versenyző indult.
+Készíts programot, amely megadja azokat, akik mindegyik fordulóban az első K hely valamelyi-
+kén végeztek, valamint a verseny végeredményét!
+Bemenet
+A standard bemenet első sorában a fordulók száma (1≤N≤1000), a pontot érő helyezések
+száma (1≤K≤100) és a figyelembe veendő eredmények száma (1≤L≤1000) van. A további N
+sorban egy-egy forduló eredményei vannak, a sorok első száma az abban a fordulóban helyezést
+elértek száma (1≤Hi≤K), a következő Hi szám pedig a győztessel kezdődően helyezési szám sze-
+rint növekvően a helyezést elértek sorszámai (1≤Ri,j≤1000), holtverseny biztosan nincs.
+Kimenet
+A standard kimenet első sorába a minden fordulóban első K-ban szereplő versenyzők S
+számát kell írni, amit ezen versenyzők sorszámai kövessenek, sorszám szerint növekvő sorrend-
+ben! A második sor első száma a pontot szerzett versenyzők P száma legyen, a következő P szám
+pedig a versenyzők sorszámai az összetett verseny helyezés szerint növekvő sorrendjében! Az
+azonos pontszámúak között előbb legyen, akinek több magasabb pontszámú helyezése van (azaz
+pl. a 4+1+1 pont többet ér, mint a 2+2+2 pont, és a 4+2 mindkettőnél többet ér)! Ha ez is egy-
+forma, akkor sorszám szerint kisebb legyen előbb!
+Példa
+Bemenet                                        Kimenet
+3   5   2                                      2 1 8
+5   7   2 9 1 8                                7 2 1 9 7 8 3 6
+3   1   6 8
+5   2   3 9 8 1
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

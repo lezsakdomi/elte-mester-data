@@ -1,0 +1,31 @@
+Maximumkiválasztás                                                                          *
+
+
+                                     Földrengések
+Bergengóciában egy 31 napos hónapban feljegyezték a földrengések pontos idejét.
+Készíts programot, amely megadja a leghosszabb időszak hosszát, ami alatt nem volt földrengés,
+valamint két földrengés közötti időtartamok minimumát!
+Bemenet
+A standard bemenet első sorában a földrengések száma van (2≤N≤1000). A következő N
+sorban az egyes földrengések időpontjai találhatók, növekvő sorrendben: (1≤Napi≤31,
+0≤Órai≤23, 0≤Perci≤59, 0≤Másodperci≤59).
+Kimenet
+A standard kimenet első sorába a leghosszabb földrengésmentes időszak hosszát kell írni,
+a második sorába pedig két földrengés közötti időtartamok minimumát! Mindkét sor formátuma
+a bemenetbeli időpont formátumával egyezzen meg!
+Példa
+Bemenet                                        Kimenet
+3                                              17 2 57 1
+5 10 22 33                                     4 23 37 25
+10 9 59 58
+27 12 56 59
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                           1. oldal
+

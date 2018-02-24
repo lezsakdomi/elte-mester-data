@@ -1,0 +1,71 @@
+Interaktív feladatok – Kétszemélyes játékok                                                    ***
+
+
+                               Kitalálós játék fizetéssel
+Ádám és Éva a következő kitalálós játékot játssza. Éva kigondol egy 1 és N közötti egész számot,
+amit Ádámnak ki kell találnia. Ádám csak olyan kérdést tehet fel Évának, hogy „A gondolt szám
+kisebb vagy egyenlő-e mint X?” Éva válasza igen, vagy nem lehet. Hogy a játék érdekesebb
+legyen, Ádám a játék kezdetén kap K darab zsetont, és minden kérdésére egy zsetonnal kell
+fizetnie. Ha elfogy a zsetonja, nem kérdezhet többet. Ha a kérdésre igen választ kap, akkor P(X)
+számú plusz zsetont kap. Vigyázat! Éva csalfa válaszadó. Mindig úgy válaszol, hogy a válasza
+kompatibilis legyen azzal, amit eddig Ádám kérdezett, de Ádámnak a lehető legtöbbet kelljen
+fizetnie. A játék célja, hogy Ádám kitalálja a gondolt számot, és a végén a lehető legtöbb zsetonja
+legyen.
+Írj programot, amely Ádám játékát valósítja meg!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az eva modul valósít meg.
+    GetN: Pontosan egyszer kell hívni a program elején és a visszaadott érték az Éva által
+     gondolt szám felső korlátja (2≤N≤500).
+    GetK: A kezdetkor Ádám által kapott zsetonok számát adja.
+    GetP(x): A plusz zsetonok számát adja, arra az esetre, amikor a feltett kérdésben x
+     szerepel, és a válasz igen (1≤x≤N, 0≤GetP(x)≤N)
+    Kerdes(x): A feltehető kérdést valósítja meg. Ha a gondolt szám kisebb vagy egyenlő,
+     mint x, akkor az 1, egyébként a 0 értéket adja vissza. Ha a válasz igaz, akkor a GetP(x)
+     által kapott plusz zsetont kap a kérdező. Ha a korábbi kérdések alapján a gondolt szám az
+     [a,b] zárt intervallumba esik, és a kérdésben szereplő x<a, vagy x≥b, akkor nincs sem
+     plusz, sem büntető zseton.
+    Megoldas(x): A kitalált számot ezzel a művelettel kell közölni, a kitalált szám az x
+     argumentum. Blöffölni nem lehet! Csak akkor fogadható el a közölt x érték, ha a feltett
+     kérdések alapján a gondolt szám csak x lehet. Az eljárás végrehajtása a program
+     befejezését eredményezi.
+A műveletek Pascal deklarációja:
+   uses eva;
+   function GetN: integer;
+   function GetK: integer;
+   function GetP(x: integer): integer;
+   function Kerdes(x: integer): integer;
+   procedure Megoldas(x: integer);
+A műveletek C/C++ deklarációja:
+   #include ”eva.h”
+   int GetN();
+   int GetK();
+   int GetP(int x);
+   int Kerdes(int x);
+   void Megoldas(int x);
+
+
+
+
+                                              1. oldal
+Interaktív feladatok – Kétszemélyes játékok                                                  ***
+
+
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy
+minta a gyakorláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen próbáláskor a standard bemenet első sorába két egész számot kell írni egy
+szóközzel elválasztva, az N és a K értékét! A második sor pontosan N nemnegatív egész számot
+tartalmazzon egy-egy szóközzel elválasztva, az i-dik szám a plusz zsetonok száma legyen arra az
+esetre, amikor a feltett kérdésben i szerepel, és a válasz igaz (1)!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+Csak olyan bemenetekre teszteljük a beadott programot, amelyre kitalálható a gondolt szám.
+
+
+
+
+                                              2. oldal
+

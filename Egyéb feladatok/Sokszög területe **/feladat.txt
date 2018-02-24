@@ -1,0 +1,37 @@
+Egyéb                                                                                       **
+
+
+                                   Sokszög területe
+Egy négyzet alakú területre egy befestett sokszöget rajzoltunk, amelynek oldalai párhuzamosak a
+képernyő szélével.
+Készíts programot, amely megadja, hogy hány képpontból áll a sokszög!
+Bemenet
+A standard bemenet első sorában a sokszög sarokpontjainak száma (4≤N≤50 000) és a
+terület mérete (1≤M≤5000) van. A következő N sor mindegyikében egy-egy pont x- és y-
+koordinátája van (1≤x,y≤M). A legelső pont a legkisebb x-koordinátájú pont (azok közül is a
+legkisebb y-koordinátájú), s innen kezdve az óramutató járása szerint soroltuk fel a pontokat.
+Kimenet
+A standard kimenet egyetlen sorába azon pontok számát kell írni, amelyek a sokszöghöz
+tartoznak!
+Példa
+Bemenet                              Kimenet             9
+10 9                                 50                  8     X O O X
+1 1                                                      7     O   X X X O           X
+1 8                                                      6     O   O   O             O
+4 8                                                      5     O   O   O             O
+4 7                                                      4     O   O   O             O
+3 7                                                      3     O   X O X             O
+3 3                                                      2     O                     O
+5 3                                                      1     X O O O O O           X
+5 7                                                            1 2 3 4 5 6           7 8 9
+7 7
+7 1
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

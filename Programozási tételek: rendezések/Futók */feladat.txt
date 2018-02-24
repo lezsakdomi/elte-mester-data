@@ -1,0 +1,41 @@
+Programozási tételek - rendezés                                                                 *
+
+
+                                              Futók
+Egy útvonalon a céltól különböző távolságra egyszerre indul N futó. A futók egyenletes sebesség-
+gel futnak, az i-edik futó másodpercenként Ai centimétert tesz meg. Azt mondjuk, hogy a távo-
+labbról induló lehagyja a közelebbről indulót, ha van olyan időpont, amikor a távolabbról jövő
+közelebb kerül a célhoz, mint a közelebbről jövő.
+Írj programot, amely megadja azokat az időpontokat, amikor a sorrend változott, azaz egy távo-
+labbról induló lehagyott egy közelebbről indulót!
+Bemenet
+A standard bemenet első sorában a futók száma (1N100) van. A következő N sor
+mindegyike két egész számot tartalmaz: Ti az i-edik futó rajthelyének távolsága a céltól, Ai pedig
+az a távolság, amit 1 másodperc alatt megtesz (T11000000,Ti>Ti+1,Tn>0,Ai>0).
+Kimenet
+A standard kimenet első sorába azon időpontok K számát kell írni, amikor a sorrend vál-
+tozik, utána pedig a K megfelelő időpontot!
+Példa
+Bemenet                                          Kimenet
+5                                                4 4 5 7 13
+100 5
+96 6
+88 4
+81 2
+10 1
+Magyarázat: (versenyzők távolsága a céltól)
+0. 1. 2. 3. 4.          5.   6.   7.   … időpont
+1: 100 95 90 85         80   75   70   65 …
+2: 96 90 84 78          72   66   60   54 …
+3: 88 84 80 76          72   68   64   60 …
+4: 81 79 77 75          73   71   69   67 …
+5: 10 9 8 7              6    5    4    3 …
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

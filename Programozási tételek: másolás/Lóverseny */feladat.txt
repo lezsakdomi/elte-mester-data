@@ -1,0 +1,44 @@
+Programozási tételek: másolás                                                                 *
+
+
+                                          Lóverseny
+Lóversenyeken a versenyrendezők igyekeznek az egyes lovaknak azonos esély adni a verseny
+megnyerésére. Emiatt a gyengébb lovak a rajtvonalról indulnak, az erősebbek pedig erősségük
+arányában egyre hátrábbról.
+Írj programot, amely N ló erőssége (1 és 100 közötti egész számok) és a következő szabályok
+alapján megadja, hogy a rajtvonaltól hány méter távolságra kell indulniuk:
+       az 50, vagy annál kisebb erősségűek a rajtvonalról indulnak (0 méter);
+       a 90-nél nagyobb erősségűek a rajtvonal mögül 45 méterről indulnak;
+       az 51 és 90 pont közöttiek erősségüktől függően a rajtvonaltól számított 5 és 40 méter
+        között, 5 méterenként az erősségük arányában elosztva indulnak (tehát 51-től 55 pontig 5
+        méterre, 56-tól 60-ig 10 méterre, ...)
+Bemenet
+A standard bemenet első sora a lovak N számát tartalmazza (1≤N≤100). A következő N
+sorban a lovak Ei erőssége van megadva, az i. lóé az i. sorban (1≤Ei≤100).
+Kimenet
+A standard kimenetre N sort kell írni, az i. sorba azt, hogy az i. ló a rajtvonaltól hány mé-
+ter távolságra indul.
+Példa
+Bemenet                                          Kimenet
+11                                               0
+1                                                0
+25                                               0
+50                                               10
+59                                               10
+60                                               15
+61                                               20
+69                                               40
+89                                               40
+90                                               45
+91                                               45
+100
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                             1. oldal
+

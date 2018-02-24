@@ -1,0 +1,28 @@
+Kombinatorikai algoritmusok                                                                  **
+
+
+                                       Indulási sorrend
+Egy tájékozódási futó versenyre N versenyző nevezett, akiket 1 és N közötti különböző erősségi
+számokkal láttak el. A versenyzőket 1 percenként indítják a versenyen és a szervezők azt szeret-
+nék, hogy ugyanannyiszor forduljon elő, hogy gyengébb versenyző után közvetlenül erősebb ver-
+senyző jöjjön, illetve erősebb versenyző után gyengébb.
+Készíts programot, amely megadja, hogy a verseny szervezői hányféle ilyen indítási sorrendben
+indíthatják a versenyzőket!
+Bemenet
+A standard bemenet egyetlen sorában a versenyzők száma van (1≤N≤99, N páratlan).
+Kimenet
+A standard kimenet első sorába a lehetséges indítási sorrendek számát kell írni, MOD
+2017!
+Példa
+Bemenet                            Kimenet
+3                                  4
+Magyarázat: a lehetséges sorrendek 1 3 2, 2 1 3, 2 3 1, 3 1 2.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

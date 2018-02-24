@@ -1,0 +1,38 @@
+Dinamikus programozás                                                                      ***
+
+
+                               Tornyok kiegyenlítése
+Éva azonos méretű kockákból N tornyot készített. Azt a játékot játssza, hogy a lehető legkeve-
+sebb művelettel elő kell állítania K darab egymás utáni azonos méretű tornyot. A végezhető mű-
+veletek:
+    • Egy torony legfelső kockájának eltávolítása.
+    • Egy torony tetejére rakni egy kockát.
+Tetszőleges számú tartalék kockánk van, tehát nem csak olyan kockát lehet rárakni egy toronyra,
+amit korábban levettünk.
+Írj programot, amely kiszámítja, hogy legkevesebb hány művelettel lehet elérni, hogy legyen K
+darab egymás utáni azonos méretű torony!
+Bemenet
+A standard bemenet első sora a tornyok számát (1≤N≤100 000) és a K értékét (1≤K≤N)
+tartalmazza. A következő N sor egy-egy torony magasságát (kockáinak számát) tartalmazza, amely
+legfeljebb 1 000 000.
+Kimenet
+A standard kimenet első és egyetlen sorába azon műveletek legkevesebb számát kell írni,
+amellyel elérhető, hogy K darab egymást követő azonos méretű torony legyen!
+Példa
+Bemenet                                        Kimenet
+5 3                                            2
+3
+9
+2
+3
+1
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

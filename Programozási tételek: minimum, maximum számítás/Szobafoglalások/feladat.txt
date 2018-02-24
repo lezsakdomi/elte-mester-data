@@ -1,0 +1,38 @@
+Programozási tételek – maximumkiválasztás                                                             **
+
+
+                                        Szobafoglalások
+Egy nagy szállodaláncban az elmúlt M napban N szobafoglalás volt. Minden foglalásról tudjuk,
+hogy a szobát mely naptól mely napig foglalták le. A szobából kiköltözés napján a szobát már ki-
+adhatják újabb vendégnek, azaz pl. egy 6-tól 8-ig történő foglalás esetén a vendég a 6. és a 7. nap
+éjszakáján aludt a szállodában.
+Készíts programot, amely megadja, hogy
+    mennyi volt az egyszerre a szállodában éjszakára lefoglalt szobák maximális száma;
+    továbbá hogy ilyen foglaltság hány napon fordult elő!
+Bemenet
+A standard bemenet első sorában a foglalások száma (1≤N≤1 000 000) és a napok száma
+(1≤M≤100 000) van, a további N sorban pedig soronként egy-egy foglalás kezdete és vége
+(0≤Ki<Vi≤M).
+Kimenet
+A standard kimenet legfeljebb első sorába az egyszerre a szállodában éjszakára lefoglalt
+szobák maximális S számát kell írni! A második sorba azon napok száma kerüljön, amikor ponto-
+san S foglalás volt a szállodában!
+Példa
+Bemenet                                             Kimenet
+5   10                                              3
+2   8                                               2
+4   6
+1   3
+5   8
+7   9
+Megjegyzés: Az 5. éjszakára az 1., 2. és 4. igénylő foglalt szobát, a 7. éjszakára pedig az 1., 4. és 5.
+igénylő.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                1. oldal
+

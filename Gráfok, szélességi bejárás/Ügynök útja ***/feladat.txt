@@ -1,0 +1,37 @@
+Gráfok – szélességi bejárás                                                                  ***
+
+
+                                       Ügynök útja
+Egy ügynöknek városokat kell felkeresnie. Minden városból bármely másik városba pontosan egy
+nap alatt tud eljutni. A városokat kétirányú közvetlen utak kötik össze úgy, hogy bármely két vá-
+ros között pontosan egy útvonal van.
+Készíts programot, amely megadja, hogy M nap alatt hány városba tud eljutni, ha akármelyik vá-
+rosból indulhat!
+Bemenet
+A standard bemenet első sorában a városok száma (2N100 000) és az ügynök számára
+előírt nap van (1M2*M). A következő N-1 sorban egy-egy Ai és Bi városok közötti közvetlen
+út van (1Ai≠BiN).
+Kimenet
+A standard kimenet egyetlen sorába az M nap alatt meglátogatható városok számát kell ki-
+írni! A meglátogatott városokba beszámít az indulás helye is.
+Példa
+Bemenet                                         Kimenet
+9   8                                           7
+1   2
+2   3
+3   4
+5   2
+8   3
+6   9
+7   9
+9   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤1000
+
+
+
+
+                                            1. oldal
+

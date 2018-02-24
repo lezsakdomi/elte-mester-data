@@ -1,0 +1,59 @@
+Interaktív feladatok – Kitalálós feladatok                                               ***
+
+
+                                   Molekula szomszédok
+Kutatók egy speciális molekulát vizsgálnak. Tudják, hogy a molekula N különböző atomot
+tartalmaz, amelyek egy lineáris láncot alkotnak. A kutatók a molekulát egy speciális
+mérőműszerrel vizsgálják. A műszer meg tudja adni a molekula két adott atomja közötti egyik
+olyan atomot, amely a két atom valamelyikének közvetlen szomszédja. Például az ábrán szereplő
+molekula esetén ha az 1-es és 2-es atomra kérdeznek, akkor a válasz 3, vagy 5 lesz.
+
+
+
+
+Írj programot, amely meghatározza a molekula szerkezetét, azaz minden atom pozícióját a
+molekulában!
+Könyvtár
+Az alábbi műveleteket lehet használni, amelyeket a muszer modul valósít meg.
+    Atomszam: az atomok számát (2≤Atomszam≤10 000) adja, egyszer kell hívni a
+     program elején!
+    Kozte(x,y): két atom azonosítóját kell argumentumként megadni (1≤x,y≤N); a
+     visszaadott érték egy olyan atom azonosítója, amely a molekulában az x és y atom között
+     van és vagy x-nek, vagy y-nak a közvetlen szomszédja. Ha x és y közvetlen szomszédok,
+     akkor a visszaadott érték vagy x, vagy y.
+    Sorrend(i,x): a program végén kell hívni, a kiszámított eredmény közléséhez: a
+     molekulában az i-edik pozíción a x azonosítójú atom van! Minden i-re (1≤i≤N)
+     pontosan egyszer kell hívni, az N. híváskor a program végrehajtása befejeződik! A
+     megoldás tükörkép erejéig egyértelmű, a két megoldás közül bármelyiket meg lehet adni.
+A műveletek Pascal deklarációja:
+   uses muszer;
+   function Atomszam: integer;
+   function Kozte(x,y: integer): integer;
+   procedure Sorrend(i: integer; x: integer);
+A műveletek C/C++ deklarációja:
+   #include ”muszer.h”
+   int Atomszam(void);
+   int Kozte(int x, int y);
+   void Sorrend(int i, int x);
+Használat
+Letölthető egy minta muszer modul C++ és Pascal forrás programja.
+Használatához a standard bemenet első sorába az atomok számát kell írni! A második sor
+pontosan N különböző számot tartalmazzon, az atomok sorszámait!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+                                             1. oldal
+Interaktív feladatok – Kitalálós feladatok                                                ***
+
+Pontozás: Ha a Sorrend eljárással közölt sorrend helyes és legfeljebb 3*N Kozte műveletet
+hajtott végre a program, akkor fél, ha legfeljebb 2*N Kozte műveletet hajtott végre a program,
+akkor teljes pontszám jár.
+
+
+
+
+                                             2. oldal
+

@@ -1,0 +1,41 @@
+Dinamikus programozás                                                                          *
+
+
+                        Koncertre 2 egymás melletti jegy
+Egy jegyiroda nagyszabású koncertre árul jegyeket. Összesen M ülőhelyre lehet jegyeket igényelni,
+pontosabban minden igénylő két egymás melletti jegyet igényelhet, és meg kell adnia, hogy ezért
+mennyit fizetne.
+Készíts programot, amely kiszámítja az elérhető legnagyobb jegybevételt és meg is adja, hogy me-
+lyik igények kielégítése esetén érhető el a legnagyobb bevétel!
+Bemenet
+A standard bemenet első sora az ülőhelyek számát (1≤M≤100 000) és az igények számát
+(1≤N≤100 000) tartalmazza. A további N sor mindegyike egy igényt leíró két egész számot tar-
+talmaz. Az első szám az igényelt két ülőhely első székének sorszáma (1≤s<M), a második szám az
+a pénzösszeg (1≤f≤500), amit az igénylő a két jegyért fizetne.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb bevételt kell írni! A második sorba
+azoknak az igényeknek a sorszáma kerüljön (tetszőleges sorrendben), amelyek esetén a bevétel a
+legnagyobb lesz! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+20 10                                           144
+1 21                                            2 4 8 6 1
+12 23
+2 12
+7 43
+2 32
+3 24
+6 12
+5 33
+4 32
+1 12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤1 000. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                            1. oldal
+

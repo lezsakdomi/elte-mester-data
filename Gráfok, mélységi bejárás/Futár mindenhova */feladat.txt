@@ -1,0 +1,52 @@
+Gráfok – mélységi bejárás                                                                        *
+
+
+                                             Futár
+G város úthálózata N útkereszteződést tartalmaz és sok utcája egyirányú. Teljesül az úthálózatra,
+hogy bármely útkereszteződéshez a főtérről pontosan egy – önmagát nem metsző – útvonalon
+lehet eljutni, továbbá minden útkereszteződéstől el lehet jutni a főtérre (nem feltétlenül egyetlen
+útvonalon). Minden kereszteződésben van a városnak egy hirdetőoszlopa, amin közzéteszik az
+aktuális híreket. A hírekért felelős futárnak minden új hírt ki kell ragasztania minden keresztező-
+désbeli hirdetőoszlopra. Tehát a futárnak olyan útvonalon kell haladnia, mely a főtérről indul (ott
+van a városháza), minden kereszteződésbe eljut (legalább egyszer), és a végen visszaér a főtérre.
+Írj programot, amely a város úthálózatának ismeretében megad egy alkalmas útvonalat a futár
+számára!
+Bemenet
+A standard bemenet első sorában az útkereszteződések száma (1≤N≤10 000) és az utcák
+száma (1≤M≤1 000 000) van. A főtér sorszáma 1. A további M sor mindegyike két egész szá-
+mot tartalmaz, két útkereszteződés U V sorszámát, ami azt jelenti (1≤U≠V≤N), hogy az U keresz-
+teződésből a V kereszteződésbe lehet közvetlenül haladni más kereszteződések érintése nélkül.
+Tehát ha az utcában kétirányú a forgalom, akkor a bemenetben mind az U V mind a V U szám-
+pár szerepel.
+Kimenet
+A standard kimenet egyetlen sorába egy, a futár számára alkalmas útvonalat kell írni: az
+útkereszteződések sorszámaiból álló olyan sorozatot (egy-egy szóközzel elválasztva), amely az 1-el
+kezdődik, minden kereszteződést legalább egyszer tartalmaz, és az egymást követő kereszteződé-
+sek között van utca, továbbá az utolsóból is van utca a főtérre!
+Példa
+Bemenet                                          Kimenet
+10 16                                            1 2 4 8 4 7 9 4 7 10 7 2 1 3 6 3 5
+1 2
+2 1
+1 3
+2 4
+3 5
+3 6
+4 7
+4 8
+5 1
+6 3
+7 10
+7 9
+8 4
+9 4
+10 7
+7 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+                                             1. oldal
+

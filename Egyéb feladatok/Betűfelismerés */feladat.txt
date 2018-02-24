@@ -1,0 +1,42 @@
+Egyéb                                                                                               *
+
+
+                                      Betűfelismerés
+Az ábécé betűit 8xK-as pontmátrixban ábrázoljuk, 0-val
+kódolva a világos, és 1-gyel a sötét pontokat. A vonalak
+belsejében levő sötét pontoknak legfeljebb 2 sötét szom-
+szédja lehet, a vonalak találkozásánál levőknek 3 vagy 4,
+a vonalak végén levőknek pedig 1. (Egy pontnak 8
+szomszédja lehet.) A betűket legalább egy üres oszlop
+választja el egymástól és különböző méretűek, esetleg elnyújtottak, de egyenes állásúak lehetnek.
+Készíts programot, amely a bemeneti állományból a vonalak jellege és végpontjaik helyzete alap-
+ján felismeri az I, N, V, X betűket!
+Bemenet
+A standard bemenet első sora a szöveg szélessége (10K5000), a további 8 sor pedig
+az egyes betűk leírása, minden sorban K számjegy (0 vagy 1). A bemenetben csak az angol ábécé
+nagybetűi fordulnak elő.
+Kimenet
+A standard kimenet egyetlen sorába kell kiírni a felismert betűket a bemenet sorrendjében!
+A fenti 4-től különböző betűk esetén (ha a fentiek alapján megkülönböztethető tőlük – az L-től a
+V például biztosan nem különböztethető meg) az eredmény megfelelő helyén a – karakter szere-
+peljen!
+Példa
+Bemenet                                                 Kimenet
+14                                                      XI-
+00000000000000
+00000101000001
+00000100100010
+01010100010100                                          Mert a 3. betűként a példán látható Y-t a
+00100100001000                                          programnak nem kell felismernie.
+01010100001000
+00000100001000
+00000000000000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

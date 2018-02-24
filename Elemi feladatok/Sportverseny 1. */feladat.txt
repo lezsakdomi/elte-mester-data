@@ -1,0 +1,30 @@
+Elemi feladatok                                                                                *
+
+
+                                     Sportverseny 1.
+Egy röplabdacsapatnak 6, egy kézilabdacsapatnak pedig 7 tagja van. Egy osztály N tanulóját úgy
+szeretnénk csapatokra osztani, hogy senki se szerepeljen egynél több csapatban, s a lehető legke-
+vesebben maradjanak ki (például egy 15 fős osztályból 2 kézilabdacsapatot szervezünk, mert így
+csak egyetlen tanuló marad ki).
+Készíts programot, amely egy osztály létszáma alapján kiszámolja, hogy belőlük hány röplabda- és
+hány kézilabdacsapatot szervezzünk, valamint, hogy hányan maradnak ki a csapatokból!
+Bemenet
+A standard bemenet első és egyetlen sora az osztály N létszámát tartalmazza (5≤N≤100).
+Kimenet
+A standard kimenet első és egyetlen sorába három egész számot kell írni szóközzel elvá-
+lasztva: a röplabda-, a kézilabdacsapatok, valamint a kimaradók számát. A röplabda- és kézilabda-
+csapatok számát úgy kell meghatározni, hogy a lehető legkevesebben maradjanak ki az osztályból!
+(Ha több megoldás lenne, akkor is elég egyet – bármelyiket – megadni.)
+Példa
+Bemenet                                         Kimenet
+15                                              0 2 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                            1. oldal
+

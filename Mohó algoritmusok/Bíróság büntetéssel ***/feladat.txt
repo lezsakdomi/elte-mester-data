@@ -1,0 +1,38 @@
+Mohó algoritmusok                                                                             ***
+
+
+                                   Bíróság büntetéssel
+Egy bíróságon minden nap egyetlen ügyet tárgyalnak. N ügyfél jelentkezett be, akiknek az ügyét a
+következő N munkanapon tárgyalni kell. Minden ügyhöz tartozik egy határidő, ameddig az ügyet
+tárgyalnia kell a bíróságnak. Ha eddig a határidőig nem tudja tárgyalni, akkor is foglalkoznia kell
+vele az N nap során egy későbbi időpontban, de ekkor a bíróságnak egy ügytől függő késedelmi
+díjat kell fizetni.
+Készíts programot, amely megadja azt az ügy tárgyalási sorrendet, amellyel a bíróságnak a legki-
+sebb késedelmi díjat kell fizetnie!
+Bemenet
+A standard bemenet első sorában az ügyek száma van (1≤N≤50 000). A következő N
+sor mindegyikében egy határidő (1≤idő≤N) és egy késedelmi díj (1≤díj≤1100) van egy
+szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába a késedelmi díjak minimális összegét kell írni! A második
+sorban az optimális megoldás N sorszáma szerepeljen egy-egy szóközzel elválasztva: az i-edik
+szám az i-edik napon tárgyalandó ügy sorszáma legyen!
+Példa
+Bemenet                                          Kimenet
+7                                                50
+4   70                                           4 2 3 1 7 6 5
+2   60
+4   50
+3   40
+1   30
+4   20
+6   10
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

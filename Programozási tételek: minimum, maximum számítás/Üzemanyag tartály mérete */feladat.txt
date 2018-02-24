@@ -1,0 +1,35 @@
+Programozási tételek - maximumkiválasztás                                                      *
+
+
+                             Üzemanyag tartály mérete
+Egy K kilométeres útra autót béreltünk, amelyet B liter benzinnel feltankolva kaptunk meg. Út-
+közben N helyen tankoltunk. Az autó fogyasztása 100 kilométerenként L liter.
+Írj programot, amely megadja, hogy minimum hány literes az üzemanyagtartály, ha a benzin min-
+dig bele-fért az út során?
+Bemenet
+A standard bemenet első sorában a megtett út hossza (1≤K≤100100), a tankolások száma
+(1≤N≤1000), az autóban kezdetben levő benzin mennyisége (1≤B≤100) és a 100 kilométe-
+renkénti fogyasztás (1≤L≤10) van. A következő N sorban soronként a benzinkutak távolsága az
+indulási helytől (1≤Holi<Holi+1≤K) és a tankolt benzin mennyisége (1≤Mennyiti≤100) van,
+tankolás szerinti sorrendben. Minden távolság osztható 100-zal. A tankolások biztosítják, hogy el
+lehet jutni a célig.
+Kimenet
+A standard kimenet egyetlen sorába az üzemanyagtartály minimális mérete kerüljön, ha
+feltételezzük, hogy az út során a benzin mindig elfért az üzemanyagtartályban!
+Példa
+Bemenet                                         Kimenet
+2000 4 40 7                                     116
+400 20
+500 80
+800 30
+1200 30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤10.
+
+
+
+
+                                            1. oldal
+

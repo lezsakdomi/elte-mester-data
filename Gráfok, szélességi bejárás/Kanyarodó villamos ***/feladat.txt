@@ -1,0 +1,67 @@
+Gráfok – Szélességi bejárás                                                                     ***
+
+
+                                    Kanyarodó villamos
+Egy négyzetrácsos szerkezetű városban villamosok közlekednek. A villamospályákat egy térképpel
+írjuk le, ahol minden térképelem egy-egy négyzet alakú pályaelemnek felel meg. A következő pá-
+lyaelemek vannak:
+
+
+
+
+0:                     1:                   2:                       3:
+
+
+
+
+4:                     5:                   6:                       7:
+Az ábrákat úgy kell érteni, hogy a villamos szigorúan csak a kirajzolt pályán mozoghat, azaz ha
+például az 5-ös pályaelemre felülről lép be, akkor csak úgy mehet ki alul, ha előbb kimegy a szom-
+szédos pályaelemre balra, majd onnan visszajön és lefelé halad tovább. Visszafordulni bármelyik
+elemről lehet.
+Minden pályaelem négyféle állású lehet:
+     0: az ábrákon látható      1: 90 fokkal az óramutató járása szerint elforgatva
+     2: 180 fokkal elforgatva   3: 270 fokkal az óramutató járása szerint elforgatva
+Készíts programot, amely megadja, hogy egy adott pályaelemről egy másikra a villamos minimum
+hány lépésben juthat el!
+Bemenet
+A standard bemenet első sorában a térkép sorainak N (1N100) és oszlopainak M (1M
+100) száma van. A következő N sorban soronként M számjegypár – a pályaelemek kódja – talál-
+ható, egy-egy szóközzel elválasztva. Az egyes sorok a térkép egy-egy sorát írják le. A számjegypá-
+rok első tagja a megfelelő ábra száma (0 és 7 közötti érték), a második tagja pedig az elforgatás
+kódja (0 és 3 közötti érték). Az utolsó sorban 5 egész szám van: a kezdőelem sor- és oszlopinde-
+xe, a belépési irány, valamint a célelem sor- és oszlopindexe. A bal felső elem sor- és oszlopinde-
+xe (1,1). A kezdőelem biztosan a pálya szélén van, és feltehetjük, hogy a villamos kívülről ér-
+kezett. A belépési irány kódja 0, ha balról lépett be a villamos; 1, ha felülről; 2, ha jobbról és 3,
+ha alulról.
+Kimenet
+A standard kimenet egyetlen sorába azt a minimális lépésszámot (az egyik elemről a má-
+sikra való átlépések számát) kell írni, amely alatt a villamos eljuthat a kezdőelemről a célelemre!
+Ha nincs út a két elem között, akkor az állományba –1-et kell írni.
+
+
+
+
+                                                 1. oldal
+Gráfok – Szélességi bejárás                                                                        ***
+
+
+Példa
+Bemenet                                                 Kimenet
+4 5                                                     12
+00 21     00 00      10
+20 70     20 20      30
+12 20     00 00      21
+70 20     20 30      50
+1 2 1     4 1
+Megjegyzés a példához
+Egy lehetséges út: (1,2),(2,2),(2,1),(2,2),(2,3),(2,4),(2,5),(3,5),(4,5),(4,4),(4,3),(4,2),(4,1)
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                   2. oldal
+

@@ -1,0 +1,35 @@
+Mohó algoritmusok                                                                              **
+
+
+                                             WiFi
+Hosszú utca lakói elhatározták, hogy közösen WiFi szolgáltatást szerveznek. Kedvező ajánlatot
+kaptak olyan hálózati eszközre, amelynek hatósugara H méter. Minden hálózati eszközt valame-
+lyik házba kell telepíteni. Minden ház megadta a ház azon pontját, ahova az eszközt telepítené, és
+amelyet a hatótávolság megállapításánál számításba kell venni. Ezt a pontot referencia pontnak
+nevezik, és az utcában az első háztól mért, méterben kifejezett értékkel adják meg.
+Készíts programot, amely meghatározza, hogy hány hálózati eszközt kell venni és azokat hova
+kell telepíteni, hogy minden ház a legközelebbi elérési pont hatótávolságán belül legyen!
+Bemenet
+A standard bemenet első sorában két egész szám van, a házak száma (2≤N≤10 000) és a
+hálózati eszközök hatótávolsága (1≤H≤1000). A második sorban pontosan N nemnegatív egész
+szám van növekvő sorrendben. Az i-edik szám az i-edik ház referencia pontjának távolsága mé-
+terben az első háztól mérve (0≤Ri, R1=0, RN≤10 000 000).
+Kimenet
+A standard kimenet első sorába a minimálisan szükséges hálózati eszközök M számát kell
+írni! A második sor pontosan M egész számot tartalmazzon, sorrendben azon házak sorszámait,
+ahova elérési pontot kell telepíteni, hogy minden ház hatótávolságon belül legyen! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                             Kimenet
+7 20                                3
+0 10 30 40 60 85 100                2 5 7
+Korlátok
+Időlimit: 0.3 mp
+Memórialimit: 16 MiB
+Pontozás: a tesztek 50%-ában N≤200
+
+
+
+
+                                                1. oldal
+

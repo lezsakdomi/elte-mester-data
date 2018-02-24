@@ -1,0 +1,28 @@
+Dinamikus programozás                                                                       **
+
+
+                               Tükörszavakra bontás
+Egy szót tükörszónak nevezünk, ha balról és jobbról kiolvasva betűről betűre megegyezik. (Tehát
+minden egybetűs szó tükörszó.) Minden szó felbontható részekre úgy, hogy minden rész tükör-
+szó legyen. Minimálisnak nevezzük az olyan felbontást, amely egy szót a lehető legkevesebb tü-
+körszóra bont.
+Készíts programot, amely kiszámítja, hogy egy adott szó minimális felbontása hány tükörszóból
+áll!
+Bemenet
+A standard bemenet első sorában egy legfeljebb 1000 karakterből álló S szó van.
+Kimenet
+A standard kimenet első sorába az S szó minimális felbontásához szükséges tükörszavak
+számát kell írni!
+Példa
+Bemenet                                        Kimenet
+abbakabadara                                   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ábanaz S szó legfeljebb 100 karakter hosszú.
+
+
+
+
+                                           1. oldal
+

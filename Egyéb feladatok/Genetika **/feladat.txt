@@ -1,0 +1,42 @@
+Egyéb                                                                                          **
+
+
+                                          Genetika
+A genetikai kód egyértelműen leírható a négyféle bázis (adenin, citozin, guanin, timin) sorrendjé-
+vel. A bázisokat a kezdőbetűjükkel (A,C,G,T) jelöljük. Óriásmolekulák bázisszekvenciáját nehéz
+meghatározni, ezért a vizsgálat előtt az óriásmolekulát megfelelő enzimekkel feldarabolják kisebb
+(rövidebb) molekuladarabokra. Ugyanazt az óriásmolekulát többféleképpen is feldarabolják, azt
+azonban nem lehet tudni, hogy a keletkező kisebb molekulák melyik darabolásból származnak.
+Tudjuk viszont, hogy
+    a molekuladarabok különböznek egymástól,
+    minden molekuladarab csak egy helyre illeszthető be az óriásmolekulába,
+    ugyanazon a helyen legfeljebb egyszer vágjuk el az óriásmolekulát.
+A feldarabolás után kémiai módszerekkel meghatározzák a keletkezett molekuladarabok bázissor-
+rendjét. Az egyes darabok csak a leírt sorrendben használhatók fel, megfordítani nem szabad
+őket!
+Készíts programot, amely a molekuladarabok bázissorrendjéből előállítja az eredeti óriásmolekula
+bázissorrendjét!
+Bemenet
+A standard bemenet első sorában a feldarabolások száma (2K100) és a keletkezett mo-
+lekuladarabok száma (1N500) található. A következő N sor mindegyike egy betűsorozatot tar-
+talmaz, az egyes molekuladarabok bázissorrendjét.
+Kimenet
+A standard kimenet egyetlen sorába az eredeti óriásmolekula bázissorrendjét kell kiírni!
+Ha több megoldás is lenne, akkor közülük csak egyet kell kiírni (bármelyiket)!
+Példa
+Bemenet                                          Kimenet
+2 5                                              AACGAGT
+AACG
+AAC
+AGT
+GA
+GT
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

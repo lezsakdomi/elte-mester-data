@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                               ***
+
+
+                                Halmazok sorrendje
+Adott N és K (1K<N) természetes számokra tekintsük az {1,…,N} halmaz összes olyan rész-
+halmazát, amelyek mindegyike pontosan K elemű! Rendezzük ezeket a halmazokat az alábbi mó-
+don! Az A halmaz akkor és csak akkor előzi meg a B halmazt, ha A-B legnagyobb eleme na-
+gyobb, mint B-A legnagyobb eleme. Adott M-re kiszámítandó a rendezésben M-edik halmaz.
+Készíts programot, amely adott N, K és M bemenetre kiszámítja a rendezésben M-edik halmazt!
+Bemenet
+A standard bemenet első és egyetlen sora három egész számot tartalmaz, N, K és M értékét;
+(1N30, 1K<N, 1M1000000000).
+Kimenet
+A standard kimenet első sorába a rendezésben M-edik K-elemű halmaz elemeit kell kiírni
+(egy-egy szóközzel elválasztva) növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+5 2 7                                          1 4
+Magyarázat a példához
+A 2-elemű lehetséges halmazok a rendezés szerinti sorrendben:
+{4,5},{3,5},{2,5},{1,5},{3,4},{2,4},{1,4},{2,3},{1,3},{1,2}
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

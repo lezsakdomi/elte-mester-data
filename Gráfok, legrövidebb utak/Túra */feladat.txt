@@ -1,0 +1,38 @@
+Gráfok – legrövidebb utak                                                                      *
+
+
+                                            Túra
+Ismerjük egy N*M-es térképen a pontok tengerszint feletti magasságát. Két szomszédos pont kö-
+zötti lépés ideje 1 + a magasságuk különbségének abszolút értéke. Egy pontból nem lehet átlépni
+a szomszédjába, ha a magasságuk különbsége nagyobb, mint H. Egy P pontból szeretnénk eljutni
+egy Q pontba.
+Készíts programot, amely megadja, hogy P-ből Q-ba minimálisan mennyi idő alatt lehet eljutni és
+megad egy ilyen utat az L,J,F,B betűk sorozatával (L=le, J=jobbra, F=fel, B=balra)!
+Bemenet
+A standard bemenet első sorában a térkép mérete (1≤N,M≤1000) és a magasságkorlát
+(1≤H≤1000) van. A második sorban a P (1≤PS≤N,1≤PO≤M) és a Q pont sor-, illetve oszlop-
+indexe van (1≤QS≤N,1≤QO≤M). A következő N sorban soronként M szám található, az egyes
+pontok tengerszint feletti magassága.
+Kimenet
+A standard kimenet első sorába a P és Q közötti leggyorsabb út idejét kell írni! Ha nem le-
+het eljutni a P pontból a Q pontba, akkor az egyetlen sorba -1-et kell kiírni! A második sorba az
+utat leíró karaktersorozat kerüljön!
+Példa
+Bemenet                             Kimenet
+5   6   4                           11
+2   4   4   4                       BBBLLLJJJF
+5   5   5   5   5   9
+4   4   4   4   4   9
+5   9   9   9   9   9
+5   9   9   5   9   9
+5   5   5   5   5   9
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N,M≤100
+
+
+
+
+                                            1. oldal
+

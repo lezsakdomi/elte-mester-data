@@ -1,0 +1,32 @@
+Programozási tételek összeépítése                                                           **
+
+
+                            Szabad nap nélküli termek
+Egy rendezvénysorozatra N termet lehetett lefoglalni, M napra. Ismerjük a rendezvények beosz-
+tását: melyik termet, hányadik naptól, hányadik napig foglalták le.
+Írj programot, amely megadja azon termeket, ahol két foglalás között nem volt szabad nap!
+Bemenet
+A standard bemenet első sora a termek (1≤N≤100), a napok (1≤M≤1000) és a foglalások
+számát tartalmazza (1≤K≤1000). A következő K sorban a foglalások teremsorszáma (1≤Ti≤N),
+első és utolsó napja (1≤Ei≤Ui≤M) található. Nincs ütköző, átfedő teremfoglalás!
+Kimenet
+A standard kimenet első sorába azon termek L számát kell írni, amelyekben előfordult,
+hogy két foglalás között nem volt szabad nap! A második sorba az L ilyen terem sorszáma kerül-
+jön, növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+3   10 5                                       1
+1   4 8                                        2
+2   3 5
+3   8 8
+2   6 9
+3   1 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

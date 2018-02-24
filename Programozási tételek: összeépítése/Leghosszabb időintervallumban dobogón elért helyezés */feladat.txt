@@ -1,0 +1,37 @@
+Programozási tételek összeépítése                                                                *
+
+
+             Leghosszabb időintervallumban dobogós helyezés
+Egy futó N versenyen vett részt, egyetlen versenyszámban. Minden versenyen feljegyezték, hogy
+hányadik helyezést ért el és az ideje hány perc, hány másodperc volt. Az adatokat a versenyek sor-
+rendjében kapjuk.
+Írj programot, amely megadja a leghosszabb sorozat első és utolsó versenyét, amelyek alatt min-
+dig legalább 3. helyezést ért el!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000), alatta soronként egy-egy
+verseny adatai vannak, három egész szám egy-egy szóközzel elválasztva. Az első szám a verse-
+nyen elért helyezés (1≤H≤20), a második az időeredményének perc része (0≤P≤60), a harmadik
+pedig az időeredményének másodperc része (0≤Mp≤59).
+Kimenet
+A standard kimenet első sorába leghosszabb sorozat első és utolsó versenyének sorszámát
+kell írni, amelyek alatt mindig legalább 3. helyezést ért el! Ha nem volt ilyen, akkor egy 0 számot
+kell kiírni! Ha több ilyen sorozat is volt, akkor az elsőt kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6                                                2 4
+4   3   12
+1   2   34
+3   2   0
+2   1   33
+5   2   10
+1   1   40
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

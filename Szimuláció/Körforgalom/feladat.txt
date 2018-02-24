@@ -1,0 +1,45 @@
+Szimuláció                                                                                       ****
+
+
+                                        Körforgalom
+Egy közlekedési csomópontban 4 út találkozásánál körforgalmat építettek ki. A körforgalomba
+akkor léphet be egy útról autó, ha az kör megelőző negyedében nincs másik autó, amely nem
+ugyanazon az úton kíván kifelé haladni a körforgalomból, valamint a következőben sincs már au-
+tó. Az autóknak a kör negyede megtétele K időegységbe telik (azaz a negyedkör K hosszúságú),
+továbbá ugyanarról az útról két belépő autó között legalább K időegységnek kell eltelnie. Az
+egyes autók megérkezésétől a körforgalomig eljutáshoz L időegységre van szükségük 8azaz az
+utak L hosszúságúak). A körforgalomban minden autó legfeljebb ¾ kört tesz meg.
+Készíts programot, amely az érkező autók érkezési időpontjai és tervezett útirányuk alapján meg-
+adja a legtöbbet várakozó autó átjutásai idejét (a körforgalomból kilépés időpontja – az útszakasz-
+ra érkezés időpontja).
+Bemenet
+A standard bemenet első sorában az autók száma van (2≤N≤500), valamint a K és az L
+időegység van (1≤K≤10,1≤L≤1000). A következő N sorban egy-egy autó leírása beérkező út-
+jának sorszáma (1≤Bei≤4), érkezési ideje (1≤Idői≤100 000) és távozási útjának sorszáma
+(1≤Kii≤4) van, érkezési idő szerinti sorrendben, a K követési távolságot betartva.
+Kimenet
+A standard kimenet első sorába a legtöbbet várakozó autó átjutási idejét kell írni!
+Példa
+bemenet                                          kimenet
+4   2 5                                          14
+1   10 4                                         Az egyes autók átjutási ideje: 12, 10, 14, 10
+2   10 4
+3   11 4
+1   12 3
+Magyarázat: az 1. és a 2. autó 15-kor ér a körfogalomhoz, mindketten be is léphetnek azonnal (a
+22, illetve a 20. időegységben lépnek ki). A 3. autó 16-kor ér a körfogalomhoz, a belépését elő-
+ször a 2., majd az 1. autó akadályozza. Azaz amikor az 1. autó kilép a 4-es úton, akkor léphet be
+a körfogalomba (tehát 16-kor ért a körforgalomhoz, 22-kor lép be a körforgalomba, majd 3 idő-
+egység múlva kiléphet a 4-es úton). A 4. autó a 3. kereszteződésben kilép, azaz senkit nem akadá-
+lyoz (5-öt megy az úton, 4-et a körforgalomban, majd 1 időegység alatt lép ki).
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 60%-ában N≤50.
+
+
+
+
+                                             1. oldal                      2017.03.28. 14:00-24:00
+

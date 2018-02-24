@@ -1,0 +1,45 @@
+Gráfok – körmentes gráfok                                                                 *
+
+
+                                       Utak száma
+Egy kerékpárversenyen a versenyzők egy labirintusszerű versenypályán haladnak. A labirintus
+csomópontjai közötti egyes útszakaszok csak egy irányban járhatóak, s tudjuk, hogy bármilyen
+útszakaszt is választanak, biztosan célba érnek. A kezdőpont az a csomópont, ahova nem vezet
+útszakasz. A cél az a csomópont, ahonnan nem vezet ki útszakasz.
+Írj programot, amely megadja, hogyhány különböző úton lehet eljutni a célba!
+Bemenet
+A standard bemenetelső sorában négy egész szám van, a csomópontok száma
+(1<N10000), az utak száma (0M100000), a start csomópont és a cél csomópont sor-
+száma(1SCN). A további M sor mindegyike egy U V egész számpárt tartalmaz; ami azt
+jelenti, hogy az U csomópontból a V csomópontba vezet útszakasz. Teljesül, hogy 1UVN.
+Kimenet
+A standard kimenetegyetlen sorába a kezdőpontból a célpontba menő utak számának
+100000007-es maradékát kell írni.
+Példa
+Bemenet                                        Kimenet
+8   11 2 7                                     5
+2   3
+2   1
+1   5
+1   4                                                                     4
+3   5
+                                                           1                        7
+3   6
+4   7
+4   8                                                                     5
+5   8                                          2
+6   8
+8   7
+                                                                                    8
+Korlátok                                                   3
+
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB                                                       6
+
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

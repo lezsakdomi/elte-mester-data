@@ -1,0 +1,33 @@
+Programozási tételek - összegzés                                                            *
+
+
+                                       Menetrend
+Egy vasúti menetrendben minden személyvonat útját egy-egy bitsorozattal adjuk meg (1, ha a vo-
+nat megáll az állomáson, 0, ha nem).
+Add meg azt a bitsorozatot, amelyben azon állomások bitjei 1-esek, amelyeken megáll minden
+vonat!
+Bemenet
+A standard bemenet első sorában a vonatok száma (1≤V≤100) és az állomások száma
+(1≤A≤100) van. A következő V sorban szerepelő A darab, szóközzel választott 0 vagy 1 jelenti,
+hogy az adott vonat (sor) megállt-e az adott állomáson (oszlop).
+Kimenet
+A standard kimenet első sorába kell írni A darab szóközzel elválasztott 0-t vagy 1-est,
+mely megmutatja, hogy az adott állomáson megállt-e minden vonat!
+Példa
+Bemenet                                        Kimenet
+6   8                                          1 0 0 0 1 0 0 0
+1   1   1   1   1   1   0   1
+1   0   0   0   1   1   0   1
+1   0   0   0   1   0   0   0
+1   1   1   0   1   0   0   0
+1   1   0   1   1   0   0   1
+1   1   1   0   1   0   0   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

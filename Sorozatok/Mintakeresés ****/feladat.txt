@@ -1,0 +1,31 @@
+Sorozatok                                                                                   ****
+
+
+                           Mintakeresés permutációban
+Egy futóversenyen N futó indult, mindegyik kapott egy 1 és N közötti egyedi azonosító számot.
+A futókat egymás után indítják. Az indítás előtt kisorsolták az indítási sorrendet, azaz mindenki
+megkapta a rajtszámát.
+Készíts programot, amely megad négy indulót indítási sorrendben, akik közül a harmadik azono-
+sítója a legnagyobb a négy között, a negyediké pedig a legkisebb a négy között!
+Bemenet
+A standard bemenet első sorában az indulók száma van (4N500 000). A második sor-
+ban indulási sorrendben szerepel az N induló azonosító száma (1SiN, i≠jSi≠Sj).
+Kimenet
+A standard kimenet egyetlen sorába négy olyan versenyző azonosítóját kell kiírni, akik kö-
+zül az indítási sorrendben harmadik azonosítója a legnagyobb a négy között, a negyediké pedig a
+legkisebb a négy között! Ha nincs ilyen négy versenyző, akkor egyetlen 0 számot kell kiírni! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+6                                               3 4 6 1
+5 3 4 2 6 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤500
+
+
+
+
+                                            1. oldal
+

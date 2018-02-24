@@ -1,0 +1,49 @@
+Gráfok – körmentes gráfok                                                                       *
+
+
+                                         Építkezés
+Egy építkezés befejezéséhez N különböző munkát kell elvégezni. Minden munka pontosan egy
+nap alatt teljesíthető, egy napon több munka is végezhető. A terv alapján tudjuk, hogy bizonyos
+munkát előbb kell elvégezni, mint másokat. A terv (A, B) párok halmazát tartalmazza, ami azt je-
+lenti, hogy az A munkát előbb kell elvégezni, mint a B munkát.
+Írj programot, amely
+A. kiszámítja, hogy legkevesebb hány nap kell az összes munka elvégzéséhez;
+B. megadja a munkáknak egy olyan beosztását, amely teljesíti a követelményeket!
+Bemenet
+A standard bemenet első sora az elvégzendő munkák számát (1N20 000) és a tervben
+megadott megelőzési párok számát (1T100 000) tartalmazza. A további T sor mindegyiké-
+ben két egész szám van (1A≠BN), ami azt jelenti, hogy az A munkát előbb kell elvégezni, mint
+B-t.
+Kimenet
+A standard kimenet első sorába a lehető legkevesebb napok M számát kell írni, ami alatt az
+összes munkát el lehet végezni! Ezt követően pontosan M sornak kell lennie! Az állomány I+1-
+edik sora azon munkák sorszámát tartalmazza egy-egy szóközzel elválasztva, amelyeket az I-edik
+napon kell elvégezni! Ha több megoldás is van, közülük egy tetszőlegeset kell kiírni! Ha nem lehet
+a tervben megadott feltételeket teljesíteni, akkor az első sorba 0-t kell kiírni!
+Példa
+Bemenet                                         Kimenet
+10 11                                           5
+1 3                                             1 2
+3 4                                             5 8
+1 5                                             3 6
+5 3                                             4 7 9
+3 7                                             10
+5 6
+1 8
+8 6
+6 9                                                1                      3           4
+9 10
+7 10
+                                                               5                      7
+Korlátok
+                                                                          6                  10
+Időlimit: 0.1 mp.
+                                                   2           8                      9
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

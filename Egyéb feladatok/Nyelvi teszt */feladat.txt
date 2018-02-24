@@ -1,0 +1,46 @@
+Egyéb                                                                                             *
+
+
+                                         Nyelvi teszt
+Egy nyelviskola automatizálni szeretné a vizsgázói által idegen nyelvre fordított mondatok javítá-
+sát. Ez nehéz feladat, hiszen ugyanannak a mondatnak több helyes fordítása is létezhet. Ennek
+megoldására azt találták ki, hogy a megoldásként megadott mondatok bizonyos részeire több le-
+hetséges választ is elfogadnak. A zárójelbe tett és | jelekkel elválasztott alternatívák közül bárme-
+lyik választható, az utolsó ág üres is lehet. A zárójelek egymásba ágyazásával több szintű alternatí-
+vák is képezhetők. A mondatokat pont, kérdőjel vagy felkiáltójel zárja.
+Írj programot, amely egy adott megoldási kulcs alapján eldönti, hogy bizonyos megoldások helye-
+sek-e!
+Bemenet
+A standard bemenet első sora tartalmazza a megoldási kulcsot (maximum 255 karakter) a
+fenti szintaxis szerint. A második sorban a megoldások száma van (1N300). A következő N
+sorban a megoldások vannak (soronként maximum 200 karakter). A szavak hossza legfeljebb 50
+karakter, a megoldási kulcsban egy szinten legfeljebb 10 alternatíva van.
+Kimenet
+A standard kimenetre N sort kell írni, soronként IGEN-t vagy NEM-et, attól függően,
+hogy a megfelelő válasz helyes volt-e, vagy sem!
+Példa
+Bemenet
+(John|He) loved (Mary|her|his girlfriend).
+6
+John loved Mary.
+John loved her.
+John loved his girlfriend.
+He loved Mary.
+He loved her.
+He loved her girlfriend.
+Kimenet
+IGEN
+IGEN
+IGEN
+IGEN
+IGEN
+NEM
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

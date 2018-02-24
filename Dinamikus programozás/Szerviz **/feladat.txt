@@ -1,0 +1,44 @@
+Dinamikus programozás                                                                         **
+
+
+                                           Szerviz
+A Mobil Szolgáltató Vállalat K város számára végez szerviz szolgáltatást. A szolgáltatást M csapat
+végzi. Az igényeket a beérkezés sorrendjében elégítik ki. Ismerünk N beérkezett igényt, azaz, hogy
+melyik városban kell elvégezni a szervizelést. A városok egy egyenes út mentén helyezkednek el.
+Ismerjük a csapatok kezdeti helyét. Egy igény kiszolgálása úgy történik, hogy valamelyik csapat az
+aktuális helyéről elmegy az igényt kérő városba, majd ott marad további feladatra várva. Ennek
+költsége megegyezik a két város távolságával.
+Készíts programot, amely kiszámítja, az összes igény kiszolgálásának minimális összköltségét, és
+meg is adja, hogyan kell ennek eléréséhez a csapatokat mozgatni!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤K≤2000), a szerviz-csapatok szá-
+ma (1≤M≤100), valamint az igények száma (1≤N≤5000) van. A második sorban pontosan K
+pozitív egész szám van, a K darab város távolsága az út kezdőpontjától számítva. A harmadik sor
+tartalmazza az M szerviz-csapat kezdeti pozícióját. A negyedik sor tartalmazza az igényeket, N vá-
+ros sorszámát.
+Kimenet
+A standard kimenet első sorába az összes igény kielégítésének lehető legkisebb összkölt-
+ségét kell írni! A második sor pontosan N egész számot tartalmazzon, az i-edik szám annak a
+csapatnak a sorszáma legyen, amelyik az i-edik igényt kielégíti! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                            Kimenet
+10 3 12                                            36
+2 4 7 11 15 18 20 23 33 40                         2 1 2 2 3 1 1 2 2 2 1 3
+2 6 9
+5 1 5 7 9 2 1 8 7 4 1 10
+ 2       2          3      4        4       3          2     3      10       7
+              1                                    2                     3
+
+
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában K≤400, N≤20 és M≤500. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                                1. oldal
+

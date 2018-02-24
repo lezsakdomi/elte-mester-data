@@ -1,0 +1,44 @@
+Gráfok – elemi feladatok                                                                       *
+
+
+                                        Ismerősök
+Egy közösségi portálra N ember jelentkezett be. Mindenki megadta, hogy kiket ismer, amit az is-
+merősük vissza is igazolt.
+Írj programot, amely megadja azon párokat
+    A. akiknek minden ismerősük közös (de van legalább 1);
+    B. akiknek van közös ismerősük!
+Bemenet
+A standard bemenet első sorában az emberek száma (1≤N≤200) és az ismeretségek szá-
+ma (0≤M≤10 000) van, egy szóközzel elválasztva. A következő M sor mindegyike két egymást
+ismerő ember sorszámát tartalmazza (1≤i≠j≤N), egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába azon párok K számát kell írni, akiknek minden ismerősük
+közös, a következő K sorba pedig lexikografikus sorrendben egy-egy ilyen pár sorszámát, a sor-
+számokat egy szóközzel elválasztva növekvő sorrendben! A következő sorba azon párok L szá-
+mát kell írni, akiknek van közös ismerősük, s az ezt követő L sorba pedig lexikografikus sorrend-
+ben egy-egy ilyen pár sorszámát, a sorszámokat egy szóközzel elválasztva növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+7   6                                           2
+1   2                                           1   2        ismerőseik: 3,4
+1   3                                           3   4        ismerőseik: 1,2
+1   4                                           6
+3   2                                           1   2
+                                                                        1               5
+4   2                                           1   3
+5   6                                           1   4
+                                                2   3             3            4        6
+                                                2   4
+                                                3   4
+                                                                         2
+Korlátok                                                                                7
+
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤20
+
+
+
+
+                                            1. oldal
+

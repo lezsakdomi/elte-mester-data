@@ -1,0 +1,30 @@
+Mohó algoritmusok                                                                                 *
+
+
+                                             Vasút
+Egy vasútvonal mellett N állomás található, ismerjük mindegyik távolságát a kiinduló állomástól.
+Egy utazó indul a kiinduló állomásról. Minél több állomáson meg kell állnia, de azzal a feltétellel,
+hogy ha egy helyen megállt, akkor a következő megállása legalább K kilométerre kell legyen!
+Készíts programot, amely kiszámítja, hogy az utazó maximum hány állomáson állhat meg, s me-
+lyek lehetnek ezek az állomások! A kiinduló és a végállomáson mindenképpen meg kell állnia!
+Bemenet
+A standard bemenet első sorában az állomások száma (2≤N≤100) és a K kilométer
+(1≤K≤100) van. A második sorban az egyes állomások távolsága szerepel a kiinduló állomástól
+(0=T(1)<T(2)<…<T(N), T(N)≥K).
+Kimenet
+A standard kimenet első sora az állomások maximális M számát tartalmazza, ahol az utazó
+megállhat! A második sorba M számot kell írni: azon állomások sorszámát, amely egy ilyen utazást
+mutat! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+5 10                                              3
+0 5 13 24 28                                      1 3 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

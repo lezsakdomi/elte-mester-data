@@ -1,0 +1,39 @@
+Gráfok – feszítőfák                                                                            *
+
+
+                                    Hálózat kiépítés
+Bergengóciában N város között kell kiépíteni a hálózatot. K héten keresztül kapunk egy-egy
+újabb árajánlatot két város közötti közvetlen hálózati kapcsolat kiépítésére.
+Írj programot, amely minden hétre – ha lehetséges – megad az addig beérkezett javaslatok alapján
+egy tervet, hogy mely város-párok között építsenek ki közvetlen hálózati kapcsolatot, hogy bár-
+mely városból bármely másik elérhető legyen közvetlenül vagy más városokon keresztül, de úgy,
+hogy az építés összköltsége minimális legyen! A terv összekötendő város-párokból és a hálózat
+kiépítés teljes költségéből áll!
+Bemenet
+A standard bemenet első sorában a városok (1≤N≤100) és a hetek (1≤K≤10 000) száma
+van. A következő K sor mindegyike egy hét árajánlatát tartalmazza: két város sorszámot
+(1≤A≠B≤N) és egy árat (1≤ÁR≤1000).
+Kimenet
+A standard kimenetre pontosan K+1 sort kell írni! Az első sorba annak a hétnek a sor-
+számát, ami után már nem csökken tovább a minimális kiépítési költség! Ha a hálózat soha nem
+építhető ki, akkor ebbe a sorba 0 kerüljön! Az i+1-edik sorba pedig, ha az i-edik héten még nem
+lehet olyan kapcsolatrendszert kiépíteni, hogy bármelyik város bárhonnan elérhető legyen, akkor 0
+kerüljön, egyébként pedig az i-edik heti kiépítés minimális költsége!
+Példa
+Bemenet                                         Kimenet
+3   5                                           4
+1   3   100                                     0
+2   3   50                                      150
+1   3   60                                      110
+1   2   40                                      90
+1   3   120                                     90
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤10
+
+
+
+
+                                            1. oldal
+

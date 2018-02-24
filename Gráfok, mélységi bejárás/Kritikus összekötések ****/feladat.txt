@@ -1,0 +1,41 @@
+Gráfok, mélységi bejárás                                                                    ****
+
+
+                                Kritikus összekötések
+Egy számítógép-hálózat bizonyos gép-párok között kiépített, kétirányú adatátvitelt biztosító köz-
+vetlen vonalakat tartalmaz. A vizsgált hálózatra teljesül, hogy bármely két gép között van össze-
+köttetés, esetleg több más gépen keresztül. Azonban lehetnek olyan két számítógép közötti ösz-
+szekötések (ún. kritikus összekötések), amelyek sérülése esetén nem tud bármely számítógép
+bármely másikat elérni.
+Készíts programot, amely megad két számítógépet, amelyek közvetlen összekötésével a kritikus
+összekötések száma a lehető legkisebbre csökken!
+Bemenet
+A standard bemenet első sorában a számítógépek (2N10 000) és az összekötések szá-
+ma szerepel (1M100 000). A következő M sorban egy-egy összekötésben szereplő két gép
+sorszáma szerepel (1A≠BN).
+Kimenet
+A standard kimenet egyetlen sorába két számítógép sorszámát kell kiírni, amelyek össze-
+kötésével a lehető legkevesebb kritikus összekötés marad! Több megoldás esetén bármelyik meg-
+adható.
+Példa
+Bemenet                                         Kimenet
+8   8                                           8 7
+1   2
+1   3                                                                        1               6
+2   4
+2   5
+                                                                   2                  3
+6   3
+7   3
+8   5                                                   4          5         8               7
+4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

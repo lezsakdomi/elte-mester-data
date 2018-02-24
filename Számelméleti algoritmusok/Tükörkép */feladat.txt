@@ -1,0 +1,26 @@
+Számelméleti algoritmusok
+
+
+                                       Tükörkép
+Készíts programot, amely megadja azt az M darab legkisebb N-jegyű számot, amelyet tükörképé-
+vel megszorozva olyan számot kapunk, amely saját magának a tükörképe!
+Bemenet
+A standard bemenet első sorában N (1  N  50), második sorában M (1  M  100) szere-
+pel.
+Kimenet
+A standard kimenet soraiba növekvő sorrendben sorold fel a feltételnek megfelelő M da-
+rab legkisebb N-jegyű számot!
+Példa
+Bemenet                                       Kimenet
+2                                             11
+2                                             12
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤8.
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,44 @@
+Rekurzív adatszerkezetek                                                                          *
+
+
+                                            Újság
+Egy folyóirat-terjesztő cég vasúton szállítja minden nap az újságokat a megfelelő címekre. Az új-
+ságot egy központi helyen nyomtatják, vonatra rakják, és elküldik. A vasúti csomópontokban át-
+rakják a megfelelő irányokba továbbinduló szerelvényekre. Ismerjük minden vasúti csomópontra,
+hogy közvetlenül honnan kapja az újságcsomagot.
+Készíts programot, amely adott A és B csomópontra megadja, hogy
+    1.) az A csomópontból hány helyre visznek még tovább újságot;
+    2.) az A csomópontba küldendő újságokat hányszor kell átrakni másik vonatra;
+    3.) az A és B csomópontba küldendő újságokat legtovább melyik csomópontig vihetik együtt?
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1≤N≤1000), valamint két cso-
+mópont sorszáma van (1≤A,B≤N), egy-egy szóközzel elválasztva. A következő N-1 sor mind-
+egyikében két csomópont sorszáma van (1≤I≠J≤N), ami azt jelenti, hogy az I-edik csomópont-
+ba a J-edik csomópontból szállítják az újságokat.
+Kimenet
+A standard kimenet három sorába rendre az első, második és harmadik kérdésre adott vá-
+laszt kell írni!
+Példa
+Bemenet                                         Kimenet                               6
+9   1 3                                         2      {a 8.-ba és a 9.-be}
+1   5                                           1      {az 5.-ben}            5
+                                                                                              7
+2   4                                           5      {az 5.-ig}
+3   4
+                                                                        1
+5   6                                                                                 4
+7   6
+4   5
+9   8                                                           8                 2           3
+8   1
+Korlátok
+                                                                    9
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a csomópontok száma N≤25
+
+
+
+
+                                            1. oldal
+

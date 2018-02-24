@@ -1,0 +1,45 @@
+Gráfok – körmentes gráfok                                                                    **
+
+
+                       Építkezés megelőzési előírásokkal
+Egy nagyszabású építkezés terve N különböző munka elvégzését tartalmazza. Minden munkát
+pontosan egy nap alatt lehet elvégezni. A terv tartalmaz több megelőzési előírást, amely szerint
+egy U munkát előbb kell elvégezni, mint egy másik adott V munkát. A munkákat úgy kell ütemez-
+ni, hogy minden megelőzési előírás teljesüljön!
+Készíts programot, amely kiszámítja, hogy legkevesebb hány nap telik el két adott A és B munka
+elvégzése között, ha minden megelőzési előírást betartanak!
+Bemenet
+A standard bemenet első sora a munkák számát (1N10 000) és a megelőzési előírások
+számát (1M100 000) tartalmazza. A második sor a kitüntetett A és B munka sorszámát tar-
+talmazza (1A≠BN). A további M sor mindegyike egy megelőzési előírást tartalmaz (1Ui≠
+ViN), ami azt jelenti, hogy az Ui, munkát előbb kell elvégezni, mint a Vi munkát. Feltehető,
+hogy a munkák elvégezhetők olyan sorrendben, amely szerint minden megelőzési előírás teljesül.
+Az is feltehető, hogy az A munkát biztosan előbb kell elvégezni, mint a B munkát.
+Kimenet
+A standard kimenet első sorába egy egész számot kell írni, a legkevesebb napok számát,
+amely az A és a B munka elvégzése között eltelik, ha minden megelőzési előírást betartanak!
+Példa
+Bemenet                                         Kimenet
+8   11                                          3
+3   6
+1   2                                                                        7
+1   3
+2   3
+3   4                                                        1       3       4      5       6
+3   7
+4   7
+4   5                                                                2                      8
+5   6
+7   6
+6   8
+5   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                            1. oldal
+

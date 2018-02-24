@@ -1,0 +1,38 @@
+Dinamikus programozás                                                                        **
+
+
+                                    Ülőhely igénylés
+Egy rendezvényt olyan teremben tartanak, ahol M db ülőhely van. A rendezvény szervezője meg-
+rendeléseket fogad. Minden megrendelés egy d h f számhármast tartalmaz, ami azt jelenti,
+hogy a megrendelő az első h ülőhely közül d darab egymás melletti ülőhelyet szeretne kapni, és
+ezért f forintot fizetne.
+Készíts programot, amely kiszámítja, hogy mekkora az elérhető legnagyobb bevétel és meg is ad
+egy olyan jegykiosztást, amely kielégíti a megrendeléseket és a lehető legnagyobb bevételt ered-
+ményezi!
+Bemenet
+A standard bemenet első sorában az ülőhelyek száma (1≤M≤3000) és a megrendelések
+száma (1≤N≤1000) van. A következő N sorban az egyes megrendelések d h f leírása szerepel
+(1≤d≤h≤M), (1≤f≤1000).
+Kimenet
+A standard kimenet első sorába a legnagyobb elérhető bevételt, a másodikba pedig az ezt
+eredményező megrendelések K elemszámát kell írni! A következő K sor tartalmazza a jegykiosz-
+tást a kiválasztott K megrendelés számára! Minden sor két egész számot tartalmazzon egy szó-
+közzel elválasztva! Az első szám egy megrendelés sorszáma, a második pedig annak a kisebb sor-
+számú ülőhelynek a sorszáma, amelyet a megrendelő kap.
+Példa
+Bemenet                                        Kimenet
+6   3                                          120
+2   3 60                                       2
+3   4 100                                      1 1
+2   4 60                                       3 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában M≤500 és N≤100. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                            1. oldal
+

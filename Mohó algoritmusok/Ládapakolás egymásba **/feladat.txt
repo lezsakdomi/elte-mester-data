@@ -1,0 +1,49 @@
+Mohó algoritmusok                                                                              **
+
+
+                                Ládapakolás egymásba
+Egy raktárban üres ládák állnak egy sorban. N különböző méretű láda van, minden láda kocka
+alakú és a felső oldala nyitott. A ládákat össze akarják egymásba pakolni. Az összepakolás az
+alábbi szabályok szerint történhet. Az i-edik helyen lévő ládákat berakhatjuk a j-edik helyen lévő
+ládákba, ha az i-edik és j-edik hely között már nincs láda, és a j-edik helyen lévő (esetleg már
+összepakolt) ládákba belefér, tehát az i-edik helyen lévő ládák legnagyobbikának mérete kisebb,
+mint a j-edik helyen összepakolt ládák legkisebbike.
+Készíts programot, amely kiszámítja, hogy összerakhatók-e a ládák egybe, és megad egy összepa-
+kolási műveletsort!
+Bemenet
+A standard bemenet első sorában egy egész szám van, a ládák száma (1N10 000). A
+második sor pontosan N különböző számot tartalmaz, a ládák méretét (1 és N közötti egész szá-
+mok).
+Kimenet
+A standard kimenet első sorába két 0 számot kell írni, ha nem lehet az összes ládát egybe
+összepakolni! Egyébként pontosan N-1 sort kell kiírni, soronként egy pakolási művelet két pozí-
+cióját, u-t és v-t, ami azt jelenti, hogy az u pozíción lévő ládákat a v pozíción lévő ládákba kell
+belerakni!
+Példa
+Bemenet                                          Kimenet
+5                                                3   4
+5 1 3 4 2                                        5   4
+                                                 2   4
+                                                 4   1
+
+
+
+
+                                             1. oldal
+Mohó algoritmusok                  **
+
+
+Magyarázat a példához
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                        2. oldal
+

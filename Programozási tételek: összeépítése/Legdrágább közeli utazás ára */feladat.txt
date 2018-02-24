@@ -1,0 +1,32 @@
+Programozási tételek összeépítése                                                                 *
+
+
+                           Legdrágább közeli utazás ára
+Egy utazási iroda tárolja, hogy milyen távolságokra levő városokba mennyiért árul repülőjegyet.
+Írj programot, amely megadja az 1000 kilométernél közelebbi városok közül mennyi a legdrágább
+jegy ára!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤100), alatta soronként egy-egy
+város távolsága (1≤T≤20 000) és a repülőjegy ára van (1≤A≤2 000 000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az 1000 kilométernél kö-
+zelebbi városok közül a legdrágább jegy árát! Ha nincs ilyen, akkor „-1”-et kell írni!
+Példa
+Bemenet                                          Kimenet
+6                                                150000
+50 30000
+1900 200000
+2000 150000
+900 38000
+600 150000
+2100 30000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

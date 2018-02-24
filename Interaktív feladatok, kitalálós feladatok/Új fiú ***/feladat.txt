@@ -1,0 +1,46 @@
+Interaktív feladatok – Kitalálós feladatok                                                     ***
+
+
+                                               Új fiú
+Egy osztály tanulói két baráti csoportba tartoznak, mindegyik csoportban legalább 2 tanuló van.
+Egy új fiú érkezett az osztályba, aki nem ismer senkit, tehát egyik baráti csoporthoz sem tartozik.
+Írj programot, amely kideríti, hogy ki az új fiú!
+Könyvtár
+Az alábbi műveleteket lehet használni, amelyeket a valasz modul valósít meg.
+     GetN: Pontosan egyszer kell hívni a program elején és a visszaadott érték az osztály tanu-
+      lóinak száma (5≤GetN≤1 000 000).
+     Barat(x,y): A feltehető kérdést valósítja meg; ha x és y ugyanazon baráti csoportba
+      tartozik, akkor 1 értéket ad vissza, egyébként 0-át (1≤x,y≤GetN).
+     Megoldas(x): Az új fiú sorszámot ezzel a művelettel kell közölni, az x argumentum
+      az új fiú sorszáma! Blöffölni nem lehet! Csak akkor fogadható el a közölt x érték, ha a fel-
+      tett kérdések alapján csak x lehet az új fiú! A művelet végrehajtása a program befejezését
+      eredményezi.
+A műveletek Pascal deklarációja:
+   uses valasz;
+   function GetN: longint;
+   function Barat(x,y: longint): longint;
+   procedure Megoldas(x: longint);
+A műveletek C/C++ deklarációja:
+   #include ”valasz.h”
+   int GetN(void);
+   int Barat(int x, int y);
+   void Megoldas(int x);
+Használat
+Letölthető egy minta valasz modul C++ és Pascal programja. Használatakor a standard
+input első sorába a tanulók számát, az egyik csoport tanulóinak számát és az új fiú sorszámát
+kell írni! A második sor az egyik csoportba tartozó tanulók sorszámait tartalmazza!
+A standard kimenet első sora a pontszámot (0,1,2), a második sora az érékelési üzenetet, a
+harmadik pedig a feltett kérdések számát tartalmazza!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: Ha a program 3*N/2-nél több Barat műveletet hajthat végre, vagy a közölt megol-
+dás nem helyes, akkor 0 pont jár. Ha minden tanuló legfeljebb 5 Barat kérdésben szerepelt, ak-
+kor teljes-, egyébként fele pontszám jár.
+
+
+
+
+                                                1. oldal
+

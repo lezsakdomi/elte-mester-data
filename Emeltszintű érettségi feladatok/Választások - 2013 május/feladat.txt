@@ -1,0 +1,78 @@
+Emelt szintű informatika érettségi                                                  2013. május 13.
+
+
+                                         Választások
+Eszem-iszom városában időközi helyhatósági választásokat írtak ki. A városban a szavazásra jo-
+gosult állampolgárokat több választókerületbe sorolták.
+Minden választókerületben több jelölt is indul, de egy jelölt csak egy választókerületben indulhat.
+Egy választókerület szavazói az adott választókerületben induló jelöltek közül egy jelöltre adhat-
+nak le szavazatot, de nem kötelező részt venniük a szavazáson. (A részvételi arány azt adja meg,
+hogy a jogosultak hány százaléka vett részt a szavazáson.) Minden választókerületben az a jelölt
+nyer, aki a legtöbb szavazatot kapja. (Feltételezhető, hogy egyetlen választókerületben sem alakult
+ki holtverseny.)
+A jelöltek vagy egy párt támogatásával, vagy független jelöltként indulhatnak. Az idei évben a
+Gyümölcsevők Pártja (GYEP), a Húsevők Pártja (HEP), a Tejivók Szövetsége (TISZ) vagy a
+Zöldségevők Pártja (ZEP) támogatja a jelölteket. A független jelölteket FTLEN rövidítéssel jelöl-
+tük.
+Készíts programot, amely az alábbi kérdésekre válaszol!
+   1.   Adott képviselő hány szavazatot kapott?
+   2.   Hányan adták le szavazatukat, és mennyi volt a részvételi arány?
+   3.   Mekkora az egyes pártokra leadott szavazatok aránya az összes leadott szavazathoz képest?
+   4.   Melyik jelölt kapta a legtöbb szavazatot?
+   5.   Az egyes választókerületekben kik lettek a képviselők?
+Bemenet
+A standard bemenet első sorában szerepel a szavazásra jogosult választópolgárok száma
+(2≤M≤20 000), a feltüntetett képviselőjelöltek száma (2≤N≤100), a választókerületek száma
+(1≤VK≤100), valamint a felsorolt pártok száma (2≤P≤100) és egy jelölt neve (Jelölt). Ezek
+után P sorban a pártok rövidítései találhatóak. Az ez utáni N sorban egy-egy képviselőjelölt adatai
+szerepelnek: a választókerület sorszáma (1≤Si≤VK) és a képviselőjelöltre leadott szavazatok szá-
+ma (0≤SZi≤M), a jelölt vezeték- és utóneve, majd a jelöltet támogató párt hivatalos rövidítése.
+Minden képviselőjelöltnek pontosan egy vezeték és utóneve van. Feltételezhető, hogy nem indult
+két azonos nevű képviselőjelölt a választáson. A szöveges adatokban csak az angol abc kis és
+nagybetűi szerepelnek.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A Jelölt szavazatai számát kell kiírni (ha nem szerepel a nyilvántartásban, ak-
+kor -1-et)!
+2. részfeladat: A szavazatot leadók számát és a részvételi arányt írd, az arányt egészre kerekítve!
+3. részfeladat: P darab sorban tüntesd fel az egyes pártok rövidítését és a hozzájuk tartozó száza-
+lékos értéket!
+4. részfeladat: A legtöbb szavazatot kapó jelölt adatait írd ki! Több megoldás esetén az először
+szereplőt írd ki!
+5. részfeladat: A választókerületek sorszáma szerinti VK sorba, növekvő sorrendbe írd ki soron-
+ként az adott választókerület sorszámát, győztesének vezetéknevét, keresztnevét, valamint az őt
+
+                                              1. oldal
+Emelt szintű informatika érettségi                                          2013. május 13.
+
+támogató párt rövidítését! Amennyiben valamelyik kerületben nem volt nyertes, a sorszám után
+írd ki, hogy „nincs nyertes”!
+Példa
+Bemenet                                       Kimenet
+474 4 3 3 Alma Dalma                          #
+ZEP                                           54
+GYEP                                          #
+FTLEN                                         366 77
+1 149 Zeller Zelma ZEP                        #
+2 63 Zsoldos Zsolt FTLEN                      ZEP 68
+3 54 Alma Dalma GYEP                          FTLEN 17
+2 100 Fasirt Ferenc ZEP                       GYEP 15
+                                              #
+                                              Zeller Zelma ZEP
+                                              #
+                                              1 Zeller Zelma ZEP
+                                              2 Fasirt Ferenc ZEP
+                                              3 Alma Dalma GYEP
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

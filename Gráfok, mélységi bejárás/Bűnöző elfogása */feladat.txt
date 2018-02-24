@@ -1,0 +1,53 @@
+Gráfok – Mélységi bejárás                                                                        *
+
+
+                                     Bűnöző elfogása
+A városi rendőrség egy veszélyes bűnöző elfogását tervezi, aki gépkocsival folyamatosan közleke-
+dik a város utcáin. A rendőrségnek korlátozottak a lehetőségei, nem tud például minden kereszte-
+ződésbe rendőrt állítani az elfogás érdekében. Ravasz őrmesternek az alábbi kitűnő ötlete támadt.
+Egy kijelölt K kereszteződésből indulva bejárja a város utcáit és úgy egyirányúsítja azokat, hogy a
+bűnöző előbb-utóbb úgyis eljut a K kereszteződésbe, ahol egy másik rendőr várakozik, aki elfogja
+a bűnözőt. A kapitánynak nagyon tetszik az ötlet, de kiköti, hogy Ravasz őrmesternek is be kell
+tartania a közlekedési szabályokat, tehát ha már egyirányúsított egy utcát, akkor abban ő is csak
+egy irányban közlekedhet.
+Ha az A kereszteződésből a B-be vezető utcát akarja egyirányúsítani, azt csak úgy teheti, hogy el-
+megy az A-ba, ott elhelyez egy behajtani tilos táblát B irányában, ezután elmegy az utcában a B
+kereszteződésig és ott elhelyezi az A-irányába mutató egyirányú utca táblát. Ugyanazon utcában
+többször is járhat, de csak a már beállított irányban. A város úthálózata összefüggő, azaz minden
+kereszteződésből el lehet jutni bármely másik kereszteződésbe.
+Írj programot, amely kiszámít egy olyan bejárási sorozatot, amelyet bejárva és elvégezve az egyirá-
+nyúsítást, a bűnöző előbb-utóbb feltűnik abban a kereszteződésben, ahonnan az őrmester indult!
+Bemenet
+A standard bemenet első sorában a kereszteződések száma (1N200), a második sorá-
+ban az utcák (1M10000) száma van. A következő M sor mindegyike két kereszteződés sor-
+számot (1A,BN) tartalmaz, ami azt jelenti, hogy az A kereszteződésből megy egy (kétirányú)
+utca a B kereszteződésig. Két kereszteződés között legfeljebb egy utca lehet. A kereszteződéseket
+az 1,…,N számokkal azonosítjuk, az őrmester az 1 kereszteződésből indul.
+Kimenet
+A standard kimenet első sorába az őrmester által bejárt utcák L számát kell írni. A további
+L sor sorrendben a bejárt utcákat tartalmazza. Minden sor három egész számot tartalmazzon: A B
+C, ami azt jelenti, hogy az őrmester az A kereszteződésből a B kereszteződésbe halad. A harma-
+dik szám 1 legyen, ha az A-B utcát A-ból B-felé egyirányúsítja, egyébként 0. Tehát a 0 szám azt je-
+lenti, hogy az utcát már egyirányúsította A-ból B-felé.
+Példa
+Bemenet                       Kimenet
+5   6                         12
+1   2                         1 2   1
+2   3                         2 3   1
+1   4                         3 2   0
+1   5                         2 1   0
+4   2                         1 4   1
+4   5                         4 2   1
+                              2 4   0
+                              4 5   1
+                              5 4   0
+                              4 1   0
+                              1 5   1
+                              5 1   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+                                             1. oldal
+

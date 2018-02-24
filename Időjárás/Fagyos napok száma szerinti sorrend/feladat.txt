@@ -1,0 +1,31 @@
+Időjárás előrejelzés                                                                          **
+
+
+                       Fagyos napok száma szerinti sorrend
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely csökkenő sorrendbe rendezi a napokat aszerint, hogy aznap hány tele-
+pülésen lesz kevesebb 0 foknál!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába a csökkenő sorrendbe rendezett napok sorszámait kell ki-
+írni aszerint, hogy aznap hány településen lesz kevesebb 0 foknál! Több megoldás esetén azt kell
+kiírni, amelyben a sorszámok növekvő sorrendűek!
+Példa
+Bemenet                                          Kimenet
+3 5                                              4 5 1 2 3
+-10 15 12 -10 -10
+11 11 11 -11 -20
+12 16 16 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

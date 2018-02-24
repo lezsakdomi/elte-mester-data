@@ -1,0 +1,43 @@
+Gráfok – szélességi bejárás                                                                       *
+
+
+                                              Túra
+Egy turista a turistaházból a lehető legrövidebb idő alatt szeretne eljutni a forráshoz. Útja hegye-
+ken, völgyeken, szakadékokon vezet át. Minden út észak-déli vagy kelet-nyugati irányú. Előfor-
+dulhat, hogy a nagy szintkülönbség miatt kerülőt kell tennie. Segíts neki az útvonal megtervezésé-
+ben!
+Az úthálózat alkotta rácsot, ahol a rácspontok az útelágazások, egy NxM-es tömbbel ábrázoljuk;
+az egyes cellák értéke a domborzat adott rácspontban mért magassága. A turistaház a bal felső sa-
+rokban (az (1,1) koordinátájú pontban), a forrás a jobb alsó sarokban (az (N,M) koordinátájú
+pontban) található.
+Egy útszakasz megtétele sík terepen egy percig tart. Minden méter szintkülönbség leküzdése to-
+vábbi egy perccel növeli meg ezt az időt. Ha két pont szintkülönbsége nagyobb az előre megadott
+K értéknél, a turistának kerülőt kell tennie.
+Írj programot, amely meghatározza a túra megtételéhez szükséges legrövidebb időt és az útvonal
+szakaszainak számát!
+Bemenet
+A standard bemenet első sorában a rácshálózat mérete és K értéke (1N,M600, 1K
+1000) található, egy-egy szóközzel elválasztva. A következő N sor mindegyike M rácspont H ma-
+gasságát tartalmazza (0H3000), szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába a túra megtételéhez szükséges legrövidebb időt és az út-
+szakaszok számát kell írni. Ha nem lehet eljutni a célba, a program írja ki a NEM ER CELBA
+szöveget!
+Példa
+Bemenet                                          Kimenet
+5 5   100                                        88 8
+100   110   150     200   250
+200   120   130     200   100
+200   200   140     150   200
+200   200   150     190   190
+200   200   160     170   180
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N,M≤100
+
+
+
+
+                                              1. oldal
+

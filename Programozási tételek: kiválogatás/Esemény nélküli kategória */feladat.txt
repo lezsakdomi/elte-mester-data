@@ -1,0 +1,51 @@
+Programozási tételek – Kiválogatás                                                             *
+
+
+                             Esemény nélküli kategória
+A mai napon számos nevezetes esemény történt az emberiség története során. Számosakat ezek
+közül feljegyeztek: megadva az évet (pozitív egész), és az eseményt (nem üres szöveg). Az adatok-
+tól elvárjuk, hogy év szerint (szigorúan) rendezve következzenek. Nem tudjuk azonban, hogy nö-
+vekvően vagy csökkenően!
+Írj programot, amely megadja, hány kategória van, amelybeli eseményből egy sincs, és melyek
+ezek!
+Bemenet
+A standard bemenet első sorában az események száma (2≤N≤100), a második sorban a
+kategóriák száma (1≤KSZ≤10) van. A további 3*N sorban az események adatai vannak, egy
+eseményé 3 sorban. Elsőként az év (1≤É≤2013), másodikként az esemény kategóriája
+(1≤Ki≤KSZ), végül az esemény maga (nem üres szöveg). Az események leírását követő sorban
+egy év-intervallum két határoló éve (0<Év1<Év2<2013) van. Végül a kategóriák felsorolása
+következik KSZ számú sorban, soronként egy-egy kategória neve.
+Kimenet
+A standard kimenet első sorába azon kategóriák számát kell kíirni, amelybeli eseményből
+egy sincsen, majd ezen eseményeket a bemenet sorrendjében, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                         Kimenet
+4                                               1 szerencsetlenseg
+4
+1522
+3
+Elesik
+1453
+3
+Konstantinapoly
+1205
+2
+II. Andras
+862
+1
+Jutland
+1000 1500
+alapitas
+koronazas
+haboru
+szerencsetlenseg
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

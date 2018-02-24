@@ -1,0 +1,47 @@
+Visszalépéses keresés                                                                         ***
+
+
+                                 Biztonságos leszállás
+Idén Olaszországban tartják a G8 csúcstalálkozót, a világ legfejlettebb országainak politikai fóru-
+mát. A résztvevő országok kormányainak vezetői mind május 25-én érkeznek magánrepülőkkel
+Taorminába, a találkozó helyszínére. A szervezők természetesen mindent megtesznek, hogy a kö-
+rülmények a lehető legbiztonságosabbak legyenek, a képviselők repülőinek leszállását is ennek
+megfelelően ütemezik.
+Egy leszállási ütemezést annál biztonságosabbnak tekintenek, minél több idő telik el az egymást
+követő leszállások között, mert így könnyebb reagálni az esetleges váratlan eseményekre. A leszál-
+lások tervezésekor a biztonság mellett azt is figyelembe kell venni, hogy az egyes vezetőknek a
+nap melyik részében kényelmes érkezni, amit előre megadtak.
+Szerencsére ez az ütemezés automatizálható. Készíts programot, ami megkapja az egyes küldött-
+ségek által megadott kényelmes érkezési időintervallumot, és meghatározza a legbiztonságosabb
+leszállási ütemezést! Minden repülőhöz meg kell adnod egy leszállási időpontot (másodperc pon-
+tossággal) a megfelelő érkezési intervallumon belül úgy, hogy az egymást követő leszállási idő-
+pontok közötti legkisebb távolság a lehető legnagyobb legyen.
+Bemenet
+A standard bemenet első sorában a küldöttségek száma (2≤N≤8) van. A következő N sor
+tartalmazza a küldöttségek által megadott ai bi érkezési intervallumokat (0≤ai≤bi≤1440) éj-
+féltől számítva, egész percben megadva.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb ∆t biztonsági időt kell írni, amire
+léteznek ai*60≤ti≤bi*60 leszállási időpontok (másodpercben) úgy, hogy |ti-tj|≥∆t
+(i≠j)! ∆t és a ti-k nem feltétlenül egészek, ∆t-t másodperce kerekítve kell megadni
+perc:másodperc formátumban!
+Példa
+bemenet                                          kimenet
+3                                                7:30
+0 10
+5 15
+10 15
+bemenet                                          kimenet
+2                                                20:00
+0 10
+10 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 25%-ában N≤4.
+
+
+
+
+                                             1. oldal
+

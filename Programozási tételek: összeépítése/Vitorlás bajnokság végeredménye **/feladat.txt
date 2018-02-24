@@ -1,0 +1,45 @@
+Programozási tételek összeépítése                                                            **
+
+
+                          Vitorlás bajnokság eredménye
+Egy vitorlás versenyen N futamot rendeznek, melyek mindegyikében az első K helyezettet értéke-
+lik. Az első helyezett K, a második K-1, a harmadik K-2, … pontot kap. Az összetett versenyben
+mindenkinek az L legmagasabb pontszámát veszik figyelembe. A versenyen M versenyző vett
+részt, 1 és M közötti sorszámukkal azonosítjuk őket. A helyezést ezen pontszámok összege alap-
+ján csökkenő sorrendben határozzák meg. Ha két versenyzőnek ugyanannyi pontja lenne, akkor
+az kerül előbbre, akinek több első helyezése van; ha ugyanannyi első helyezésük van, akkor a má-
+sodik helyezések száma dönt, … és így tovább. Ha két versenyző ebben is egyforma, akkor a sor-
+rendjük tetszőleges lehet.
+Készíts programot, amely megadja a verseny végeredményét!
+Bemenet
+A standard bemenet első sorában a futamok száma (0<N≤100), a helyezettek száma
+(3≤K≤10), az összetett versenybe beleszámító helyezések száma (2≤L≤N) és a versenyzők száma
+(1≤M≤1000) van, egyetlen szóközzel elválasztva. Ezt követi az egyes futamok sorrendjével.
+Minden sorban a versenyzők sorszámai (1≤S≤M) van, helyezésük szerint csökkenő sorrendben,
+egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába összes, pontot szerzett versenyző számát kell írni, a kö-
+vetkező sorokba pedig ezek sorszámát és összpontszámát, pontszám szerint csökkenő sorrend-
+ben! Az azonos pontszámúak sorszám szerint növekvő sorrendben legyenek!
+Példa
+Bemenet                                         Kimenet
+5   5   3   15                                  9
+1   2   3   4 5                                 4 12
+2   4   6   8 3                                 1 11
+3   6   9   12 4                                2 11
+5   4   3   2 1                                 3 11
+1   4   5   2 3                                 5 9
+                                                6 7
+                                                9 3
+                                                8 2
+                                                12 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

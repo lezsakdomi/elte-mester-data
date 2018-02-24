@@ -1,0 +1,31 @@
+Számelméleti algoritmusok                                                                   **
+
+
+                                        Egységtört
+Az ókori egyiptomi matematikusok a 0 és 1 közötti racionális számokat egységtörtek összegeként,
+azaz 1/x1+1/x2+…1/xk alakban adták meg, ahol az xi-k különböző pozitív egész számok.
+Például:
+
+
+
+Készíts programot, amely kiszámítja egy M/N alakú tört egységtörtekre bontását!
+Bemenet
+A standard bemenet első sorában a számláló (1  M  N), második sorában pedig a nevező
+(2  N  30) értéke található.
+Kimenet
+A standard kimenet első és egyetlen sorába az egységtörtek nevezői kerüljenek növekvő
+sorrendben, szóközzel elválasztva!
+Példa
+Bemenet                                         Kimenet
+19                                              2 8 120
+30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a kapott egységtörtek nevezői ≤100.
+
+
+
+
+                                            1. oldal
+

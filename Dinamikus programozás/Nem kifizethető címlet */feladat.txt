@@ -1,0 +1,30 @@
+Dinamikus programozás                                                                    *
+
+
+                             Nem kifizethető címletek
+Egy országban N-féle címlet használatos.
+Készíts programot, amely megadja, hogy mely 1 és M közötti pénzösszegeket nem lehet a hasz-
+nálható címletekkel pontosan kifizetni!
+Bemenet
+A standard bemenet első sorában a pénzjegyek száma (1≤N≤500) és a maximális összeg
+értéke (1≤M≤100 000) van. A második sorban az N címlet értéke van, érték szerint növekvő
+sorrendben.
+Kimenet
+A standard kimenet első sorába a nem kifizethető összegek számát kell írni! A második
+sorban egy-egy szóközzel elválasztva a nem kifizethető összegek szerepeljenek, növekvő sor-
+rendben!
+Példa
+Bemenet                                       Kimenet
+2 20                                          10
+5 6                                           1 2 3 4 7 8 9 13 14 19
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és M≤1000. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                           1. oldal
+

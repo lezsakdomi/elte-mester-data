@@ -1,0 +1,37 @@
+Elemi feladatok                                                                               **
+
+
+                                           Törtek
+A legtöbb programozási nyelvben csak egész, illetve valós számokat használhatunk, törteket
+számláló/nevező formában nem. Emiatt az alábbi műveletekre nincs a nyelvekben utasítás:
+                     1 1 2          1 1 1           1 1 1          1 1 3
+                                                              : 
+                     2 6 3          2 6 3           2 6 12         2 6 1
+Írj programot, amelynek két törtet megadva, kiírja azok összegét, a különbségét, a szorzatát és a
+hányadosát tört alakban, egyszerűsítve! Csak pozitív számokkal dolgozunk, még a különbség is
+csak 0 vagy pozitív lehet. A 0 számot 0/1 alakban írjuk.
+Bemenet
+A standard bemenet első sorában az egyik, második sorában a másik törtet tároljuk soron-
+ként két, szóközzel elválasztott egész szám formájában: az első szám az adott tört számlálója
+(0≤számláló≤30), a második pedig a tört nevezője (1≤nevező≤30).
+Kimenet
+A standard kimenet első sorába a beolvasott két tört összegét, második sorába a különb-
+ségét, a harmadikba a szorzatát, a negyedik sorba pedig a hányadosát kell írni. Mindegyik sorba
+két egész számot kell kiírni szóközzel elválasztva, az eredményül kapott tört számlálóját és neve-
+zőjét. Az eredményeket egyszerűsített formában kell megadni! A 0 számot 0/1 alakban írjuk.
+Példa
+Bemenet                                         Kimenet
+1 2                                             2 3
+1 6                                             1 3
+                                                1 12
+                                                3 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                             1. oldal
+

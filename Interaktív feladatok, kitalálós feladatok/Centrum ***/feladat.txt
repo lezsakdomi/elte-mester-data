@@ -1,0 +1,59 @@
+Interaktív feladatok – Kitalálós feladatok                                                  ***
+
+
+                                             Centrum
+Nagyváros metróhálózata N terminált tartalmaz. Minden metróvonal két terminált köt össze és
+nem érint másik terminált. Minden vonalak kétirányú közlekedést biztosítanak a két terminál kö-
+zött. A hálózat olyan szerkezetű, hogy van egy terminál, amelyiket vonal köt össze mindem más
+terminállal, ez a centrum. Továbbá, van legalább egy olyan terminál, amely csak a centrummal van
+összekötve vonallal. A centrum terminálnál van találkozód a barátoddal, de nem tudod, hogy me-
+lyik a centrum. Van egy speciális tudakozó, amely kérésre megmondja, hogy adott A és B terminál
+között van-e vonal. Egy kérés költsége egy érme, és pontosan 2*N érméd van, tehát legfeljebb
+2*N kérdéssel kell kitalálni, hogy melyik a centrum.
+Készíts programot, amely legfeljebb 2*N kérdéssel kitalálja, hogy melyik a centrum!
+Könyvtár
+A program megvalósításához a tudakozo könyvtár műveleteit kell használni.
+       hany: a terminálok számát adja (2≤hany≤10 000). Ennek a műveletnek a végrehajtá-
+        sa meg kell, hogy előzze az első kerdes műveletet!
+       kerdes(x,y): a művelet két paramétere két terminál sorszáma legyen: (1≤x≠y≤N)! A
+        művelet egy egész számot ad vissza, amely 1, ha az x és y terminált vonal köti össze,
+        egyébként 0.
+       megoldas(c): a művelet egyetlen paramétere a centrum sorszáma legyen! Végrehajtá-
+        sával a program végrehajtása normálisan befejeződik. Csak olyan választ fogadunk el,
+        amely a feltett kérdések alapján helyes, tippelni nem lehet!
+A műveletek Pascal deklarációja:
+   uses tudakozo;
+   function hany:integer;
+   function kerdes(x, y : integer) : integer;
+   procedure megoldas(c : integer);
+A műveletek C/C++ deklarációja:
+   #include ”tudakozo.h”
+   int hany(void);
+   int kerdes(int x, int y);
+   void megoldas(int c);
+Használat
+Letölthető egy minta tudakozo modul C++ és Pascal programja. A tudakozo a standard
+bemenetről három egész számot olvas be, az első a terminálok száma, a második a centrum C
+sorszáma, a harmadik pedig a különálló K terminál sorszáma. Tehát minden kerdes(x,y) 0-t
+ad, ha x=K és y≠C vagy y=K és x≠C, egyébként 1-et.
+A minta tudakozo modul nem ellenőrzi, hogy a feltett kérdések elegendőek-e ahhoz, hogy
+megadja a megoldást!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+                                              1. oldal
+Interaktív feladatok – Kitalálós feladatok                                                 ***
+
+Pontozás: Ha a megoldas(c) eljárással közölt c érték helyes és legfeljebb 4*N kerdes mű-
+veletet hajtott végre a program, akkor 2 pont/teszteset jár, ha legfeljebb 2*N kerdes műveletet
+hajtott végre a program, akkor teljes pontszám jár. A tesztek 40%-ában N≤400.
+
+
+
+
+                                             2. oldal
+

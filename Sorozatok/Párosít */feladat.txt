@@ -1,0 +1,32 @@
+Sorozatok                                                                                      *
+
+
+                                           Párosít
+Egy raktárból N boltba kell kiszállítani ládákba csomagolt árut. Minden boltba pontosan két ládát
+kell vinni. A ládák az előkészítés időrendi sorrendjében egymás mellett egy sorban vannak, mind-
+egyikre ráragasztva annak a boltnak a sorszáma, ahova szállítani kell. A raktárosnak át kell ren-
+dezni a ládák sorrendjét, hogy az egy boltba kerülő ládák egymás mellett legyenek. Az átrendezés
+során egy lépésben két láda helyét cserélheti meg.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány cserével lehet megfelelő sorrendet
+kialakítani!
+Bemenet
+A standard bemenet első sorában a boltok száma van (2  N  2000). A második sor pon-
+tosan 2*N db pozitív egész számot tartalmaz egy-egy szóközzel elválasztva, amiben az 1, …, N
+számok mindegyike pontosan kétszer fordul elő.
+Kimenet
+A standard kimenet első és egyetlen sorába kerüljön az a legkisebb M szám, ahány cserével
+a bemenetben megadott ládasor a kívánt sorrendbe rakható!
+Példa
+Bemenet                                         Kimenet
+4                                               3
+1 3 2 1 3 4 4 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤100.
+
+
+
+
+                                            1. oldal
+

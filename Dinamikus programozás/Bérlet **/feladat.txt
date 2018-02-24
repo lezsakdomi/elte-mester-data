@@ -1,0 +1,44 @@
+Dinamikus programozás                                                                        **
+
+
+                                           Bérlet
+Egy vállalkozónak van egy nagy értékű munkagépe, amit bérbe ad más vállalkozóknak. Sok meg-
+rendelése van a következő napokra. Minden megrendelés egy (e,u) számpárral adott, ami azt je-
+lenti, hogy az igénylő az e sorszámú naptól az u sorszámú napig kívánja bérelni a gépet. Mivel a
+bérleti díj minden napra azonos, ezért a bérbeadónak az a célja, hogy olyan megrendeléseket fo-
+gadjon el, hogy a lehető legtöbb napon legyen bérbe adva a gépe.
+Készíts programot, amely kiszámítja, hogy mely megrendeléseket fogadja el, hogy a gépe a lehető
+legtöbb napon legyen bérbe adva, és a programod adjon is meg egy beosztást!
+Bemenet
+A standard bemenet első sorában a megrendelések (1≤N≤100 000) és a napok
+(1≤M≤100 000) száma van. A következő N sor mindegyike két egész számot tartalmaz egy szó-
+közzel elválasztva (1≤e≤u≤M), ami azt jelenti, hogy a megrendelő az e naptól az u napig kívánja
+bérbe venni a gépet.
+Kimenet
+A standard kimenet első sora a lehető legtöbb nap számát tartalmazza, amelyre a vállalko-
+zó bérbe tudja adni a gépét! A második sorba az elfogadott megrendelések K számát kell írni! A
+harmadik sor pontosan K egész számot tartalmazzon, egy-egy szóközzel elválasztva, azoknak a
+megrendeléseknek a sorszámait (tetszőleges sorrendben), amelyeket a bérbeadó elvállalt! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+5 25                                           19
+2 7                                            4
+3 10                                           1 4 3 5
+13 15
+8 11
+20 25
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤1 000. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                            1. oldal
+

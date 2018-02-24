@@ -1,0 +1,32 @@
+Programozási tételek – Kiválogatás
+
+
+                          Arányokban drágább utazások
+Egy utazási iroda tárolja, hogy milyen távolságokra levő városokba mennyiért árul repülőjegyet.
+Írj programot, amely megadja azon városokat, ahova a kilométerenkénti ár nagyobb 100 forintnál!
+Bemenet
+A standard bemenet első sorában a városok száma (0≤N≤100), majd N sorban egy-egy
+város távolsága (1≤T≤20 000) és a repülőjegy ára van (1≤Á≤2 000 000).
+Kimenet
+A standard kimenet első sorába azon városok számát és sorszámait kell kiírni, ahova a ki-
+lométerenkénti ár nagyobb 100 forintnál (a sorszámokat növekvő sorrendben), egy-egy szóközzel
+elválasztva!
+Példa
+Bemenet                                          Kimenet
+6                                                3 1 2 5
+50 30000
+1900 200000
+2000 150000
+900 38000
+600 150000
+2100 30000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

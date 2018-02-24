@@ -1,0 +1,41 @@
+Programozási tételek – Kiválogatás                                                            *
+
+
+                      Mindig jó helyezést elért vitorlások
+Egy vitorlás versenyen N futamot rendeznek, melyek mindegyikében az első K helyezettet értéke-
+lik. A versenyen M versenyző vett részt. Az első helyezett K, a második K-1, a harmadik K-2, …
+pontot kap. Az összetett versenyben mindenkinek az L legmagasabb pontszámát veszik figyelem-
+be. A helyezést ezen pontszámok összege alapján csökkenő sorrendben határozzák meg. Ha két
+versenyzőnek ugyanannyi pontja lenne, akkor az kerül előbbre, akinek több első helyezése van; ha
+ugyanannyi első helyezésük van, akkor a második helyezések száma dönt, … és így tovább. Ha
+két versenyző ebben is egyforma, akkor a sorrendjük tetszőleges lehet.
+Készíts programot, amely megadja azokat, akik mindegyik futamon az első K hely valamelyikén
+végeztek!
+Bemenet
+A standard bemenet első sorában a futamok száma (0<N≤100), a helyezettek száma
+(3≤K≤10), az összetett versenybe beleszámító helyezések száma (2≤L≤N) és a versenyzők száma
+(1≤M≤1000) van, egyetlen szóközzel elválasztva. Ezt követik az egyes futamok a versenyzők
+sorrendjével. Minden sorban a versenyzők sorszámai (1≤Si,j≤M) vannak, helyezésük szerint
+csökkenő sorrendben, egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába azon versenyzők számát kell írni, ahányan mindegyik fu-
+tamban az első K helyezés valamelyikét érték el, majd pedig az ilyen versenyzők sorszámát, egy-
+egy szóközzel elválasztva, növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+5   5   3   15                                  2 3 4
+1   2   3   4 5
+2   4   6   8 3
+3   6   9   12 4
+5   4   3   2 1
+1   4   5   2 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

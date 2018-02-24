@@ -1,0 +1,46 @@
+Dinamikus programozás                                                                              **
+
+
+                                            Központ
+A következő Mars-expedíció sok helyről akar begyűjteni kőzetmintát. Síkbeli koordináta-
+rendszerben meg is határozták azt az N helyet, ahonnan kőzetmintát kell venni. A mintákat egy
+robotnak kell begyűjtenie. A robot csak a koordinátarendszer tengelyeivel párhuzamosan tud mo-
+zogni, tehát ha az (x1,y1) pontból az (x2,y2) pontba megy, akkor |x1-x2|+|y1-y2| távolsá-
+got kell megtennie. A robotot szállító űrhajónak valamelyik kijelölt pontban kell leszállnia. A ro-
+botnak innen minden kijelölt ponthoz el kell mennie, kőzetmintát venni, majd vissza kell mennie
+az űrhajóhoz. Ezért a kijelölt pontok közül meg kell határozni azt, amelyikre teljesül, hogy a többi
+pontnak ettől vett távolságának maximuma a lehető legkisebb. Ez a pont lesz az expedíció köz-
+pontja. A kutatók arra is kíváncsiak, hogy a kijelölt pontok között mekkora a legnagyobb távolság.
+Készíts programot, amely meghatározza az expedíció központját, és a legtávolabb lévő két pont
+távolságát!
+Bemenet
+A standard bemenet első sorában a kijelölt pontok száma van (1N100 000). A további
+N sor mindegyike két egész számot tartalmaz, egy kijelölt pont x-és y-koordinátáját. Minden ko-
+ordináta érték 0 és 200 000 000 közötti egész szám.
+Kimenet
+A standard kimenet első sorába az expedíció központjának sorszámát kell kiírni! Ha több
+kijelölt pont is teljesítené a feltételt, akkor azt kell megadni, amelyiknek a sorszáma a legkisebb! A
+második sorba egy egész számot kell írni, a két legtávolabbi kijelölt pont távolságát!
+Példa
+Bemenet                                            Kimenet
+10                                                 2
+17 8                                               27
+15 0
+16 9
+23 6
+19 3
+19 7
+6 6
+10 4
+28 1
+18 11
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N10 000. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                               1. oldal
+

@@ -1,0 +1,35 @@
+Programozási tételek – Megszámolás                                                                 *
+
+
+                            Lakatlan territóriumok száma
+Egyes madarak a fészkelő helyüktől adott távolságra saját területet, ún. territóriumot tartanak.
+Készíts programot, amely megadja azon helyek számát, amely nem tartozik egyetlen madár terri-
+tóriumához sem!
+Bemenet
+A standard bemenet első sorában a madarak száma (1≤M≤32) és egy, a fészkeket tartal-
+mazó négyzet alakú terület mérete (1≤N≤100) van. A következő M sorban egy-egy madarat leíró
+3 szám szerepel egy-egy szóközzel elválasztva. Az első két szám a madár fészkének helye
+(1≤X,Y≤N), a harmadik pedig a territórium mérete (1≤R≤10), ami azt jelenti, hogy a territórium
+az (X-R,Y-R) ponttól az (X+R,Y+R) pontig tart.
+Kimenet
+A standard kimenet első sorába a territóriumhoz nem tartozó helyek száma kerüljön!
+Példa
+Bemenet                                           Kimenet
+7 100                                             9687
+7 7 4
+7 7 2
+20 15 5
+14 21 4
+19 22 2
+20 5 2
+23 23 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

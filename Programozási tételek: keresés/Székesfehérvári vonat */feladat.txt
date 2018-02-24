@@ -1,0 +1,36 @@
+Programozási tételek - keresés                                                               *
+
+
+                                 Székesfehérvári vonat
+Adott egy Budapest és Fonyód közötti vasúti menetrend, amely tartalmazza a közbülső helységek
+esetében az érkezési és az indulási időt.
+Számítsd ki az első olyan vonat indulási idejét, amely Székesfehérvárról indul!
+Bemenet
+A standard bemenet első sorában található a menetrendben található bejegyzések (N, ma-
+ximum 100) száma. A következő N sor mindegyikében (i) van egy városnév (ekezet nelkul), egy
+érkezési idő és egy indulási idő szóközzel elválasztva. Az idők a napon belüli percekben vannak
+megadva, vagyis 24*60=1440 a maximális érték és aznap mindig megérkezik. „-1” van ott, ahol
+nincs értelmezhető érkezési idő és „9999” szerepel a nem értelmezhető indulási időknél. Az ada-
+tok indulási idő szerint rendezettek.
+Kimenet
+A standard kimenet első sorába ki kell írni az első Székesfehérvárról induló vonat indulási
+idejét, vagy „-1”-t, ha nincs ilyen vonat!
+Példa
+Bemenet                                           Kimenet
+7                                                 600
+Budapest -1 480
+Szekesfehervar 510 515
+Siofok 545 550
+Szekesfehervar -1 600
+Siofok 630 635
+Fonyod 635 9999
+Fonyod 720 9999
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,36 @@
+Sorozatok                                                                                   **
+
+
+                                            Rádióadók
+Ismerjük két rádióadás sorozat adásidőit.
+Készíts programot, amely eldönti, hogy a két adássorozatot adhatta-e ugyanaz az adó! Ha nem
+adhatta, akkor meg kell adni a két adó első olyan adásait, amelyek egyszerre voltak!
+Bemenet
+A standard bemenet első sorában az első adó adásai száma (1≤N≤100) és a második adó
+adásai száma (1≤M≤100) van. A következő N sor mindegyikében az első adó adásai időtartamai,
+a következő M sor pedig a második adó adásai időtartamai leírását tartalmazza, adás szerint nö-
+vekvő sorrendben. Az egyes sorok az adások első és utolsó időpontját tartalmazzák (1≤E<U≤
+10 000 000).
+Kimenet
+A standard kimenet első sorába az IGEN szót kell írni, ha a két adássorozatot adhatta
+ugyanaz az adó, egyébként a NEM szót! Ha nem adhatta ugyanaz az adó, akkor a második sorba
+az első és a második adó első olyan adásának sorszámát kell írni, amelyek egyszerre voltak!
+Példa
+Bemenet                                           Kimenet
+3 4                                               NEM
+10 20                                             2 3
+50 70
+90 110
+5 10
+30 40
+55 65
+90 110
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

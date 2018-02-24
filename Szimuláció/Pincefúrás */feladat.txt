@@ -1,0 +1,33 @@
+Szimuláció                                                                                         *
+
+
+                                          Pincefúrás
+Pincét fúrnak: az E,J,B utasítások hatására egy egységnyi részt fúrnak, vagy 90 fokkal jobbra, illet-
+ve balra fordulnak. A zárójelben levő részek a főágról leágazást jelentenek, előbb mindig a főágat
+fúrják végig, s utána kezdenek az elágazásokhoz. A kezdőkoordináta (0,0). A pincefúrás közben
+az x és az y koordináta nem lép ki a [-100..100] intervallumból
+Szabályok: Két ág nem érhet össze, sőt a sarkok sem találkozhatnak. Önmagában minden lépés
+biztosan olyan, hogy fúrni is kell, azaz teljesen nem mennek bele már kifúrt részbe (pl. nincs
+olyan sorozat, hogy EJJE).
+Készíts programot, amely megadja, hogy a pincefúrás menete helyes-e, s ha nem, akkor melyik lé-
+pésben találkoznak össze az ágak!
+Bemenet
+A standard bemenet egyetlen sort tartalmaz, a pincét leíró karaktersorozatot (legfeljebb
+10000 karakter a sor végéig).
+Kimenet
+A standard kimenet egyetlen sorból álljon, mely egyetlen számot tartalmaz: 0-t, ha a pince
+helyes, illetve az I számot, ha a pincét leíró karaktersorozatban az I-edik karakter hatására fúrt
+szakasznál összetalálkoznak az ágak!
+
+Példa
+Bemenet                                           Kimenet
+EEEJEEB(JEEEBEEEBEE)EEE                           19
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

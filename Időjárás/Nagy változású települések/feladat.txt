@@ -1,0 +1,31 @@
+Időjárás előrejelzés                                                                          **
+
+
+                            Nagy változású települések
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely megadja azokat a településeket, ahol a hőmérséklet egyik napról a kö-
+vetkezőre legalább 10 fokot változik!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába azon települések T számát kell kiírni, ahol a hőmérséklet
+egyik napról a következőre legalább 10 fokot változik! Ezt kövesse ezen települések sorszáma,
+növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+3 5                                              2 2 3
+10 19 12 10 10
+1 11 11 11 20
+12 16 16 16 -2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

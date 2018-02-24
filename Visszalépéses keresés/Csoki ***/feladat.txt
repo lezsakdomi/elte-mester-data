@@ -1,0 +1,39 @@
+Visszalépéses keresés                                                                        ***
+
+
+                                            Csoki
+Egy csokoládégyár N féle csokoládét gyárt. Közvélemény-kutatást szeretnének tartani M ember
+részvételével, hogy melyik termékük a legjobb. Minden feltett kérdésben arra kell válaszolni, hogy
+két megkóstolt csokoládé közül melyik a jobb? Mindenkinek mindenféle csokoládét adni túlságo-
+san sokba kerülne, ezért azt találták ki, hogy minden csokoládét pontosan P embernek kell adni,
+minden résztvevő embernek pontosan Q féle csokoládét kell kapni, valamint minden csokoládé-
+párt pontosan K embernek kell összehasonlítani. Az embereket és a csokoládéfajtákat is a sor-
+számukkal azonosítjuk.
+Készíts programot, amely megad egy a feltételeknek megfelelő csokoládé-kiosztást!
+Bemenet
+A standard bemenet egyetlen sorában öt egész szám van, egy-egy szóközzel választva: a
+csokoládéfajták száma (1N10), a résztvevő emberek száma (1M12), valamint az, hogy egy
+fajta csokoládét hány embernek kell odaadni (1PM), egy embernek hányfajta csokoládét kell
+adni (1QN) és egy csokoládé párt hány embernek kell összehasonlítani (1KM).
+Kimenet
+A standard kimenetre M sort kell írni, ahol az i-edik sorban az i-edik embernek adandó
+csokoládéfajták sorszáma szerepel (pontosan Q darab egész szám, egy-egy szóközzel elválasztva)!
+Ha a feladat nem oldható meg, akkor a kimenet egyetlen sorába az egyetlen -1 számot kell írni!
+Példa
+Bemenet                                         Kimenet
+3 6 4 2 2                                       1   2
+                                                1   2
+                                                1   3
+                                                1   3
+                                                2   3
+                                                2   3
+Korlátok
+Időlimit: 1.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a csokoládéfajták és a résztvevők száma N,M≤5
+
+
+
+
+                                             1. oldal
+

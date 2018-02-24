@@ -1,0 +1,41 @@
+Árvíz                                                                                      ***
+
+
+              Legalább másodfokú árvizek csúcsmagasságai
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja az 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza a legalább másodfokú árvizek csúcsmagasságainak helyét
+és értékét!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy-egy mérési eredményt tartalmaz (0Ai3000).
+Kimenet
+A standard kimenet első sorába a legalább másodfokú árvizek K darabszámát kell írni (0,
+ha nincs ilyen árvíz, ebben az esetben nincsenek további sorok)! A második sorba ezen K árvíz
+kezdetének és végének a sorszáma, a 3. sorba pedig csúcsmagasságainak helye és értéke kerüljön!
+(Ha egy árvízen többször is előfordul a csúcsmagasság, akkor az első helyét kell megadni!)
+Példa
+Bemenet              Kimenet
+                                     1200
+7                    1
+810                  5 6             1000
+920                  6 1100           800
+1000
+780                                   600
+920
+1100                                  400
+720                                   200
+Korlátok                                 0
+Időlimit: 0,1 mp.                            1          2   3       4        5       6        7
+
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,32 @@
+Programozási tételek – Maximumkiválasztás
+
+
+                                 Legmelegebb nap
+Megkaptuk egy település elmúlt N napon délben mért hőmérsékletét.
+Készíts programot, amely megadja a legmelegebb napot!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma van (1≤N≤100), alatta soron-
+ként a napi mérések eredményei vannak (-20≤Hi≤50).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a legmelegebb nap sor-
+számát (ha több ilyen is van, akkor az elsőt)!
+Példa
+Bemenet                                         Kimenet
+7                                               2
+25
+36
+29
+33
+34
+36
+30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,67 @@
+Programozási tételek összeépítése                                                                  *
+
+
+                          Leghosszabb uralkodó dinasztia
+Árpád-házi királyokról tároljuk születési, illetve uralkodási adataikat. Csak olyan esetet vizsgálunk,
+amikor folyamatosan volt király, egyszerre csak egy, és mindegyik király csak egy időintervallum-
+ban uralkodott.
+Készíts programot, amely megadja mettől meddig volt a leghosszabb időszak, amikor olyan ural-
+kodók voltak, akik az apjukat követték a trónon (beleszámítva a legelsőt, aki még nem az apját
+követte)!
+Bemenet
+A standard bemenet első sorában az uralkodók száma van (1≤N≤100). A következő N
+sor mindegyike 3 adatot tartalmaz: a király uralkodásának kezdő- és végző évét időrendben
+(0≤év1,év2≤2000), valamint a nevét, egy-egy szóközzel elválasztva (a nevek biztosan külön-
+bözőek). A következő sorban a leszármazási kapcsolatok száma van (1≤M≤1000). Az ezt követő
+2*M sor páronként egy-egy szülői kapcsolatot tartalmaz: a pár első tagja a szülő, a második pedig
+a gyerek nevét.
+Kimenet
+A standard kimenet első sorába a leghosszabb időszak kezdetét és végét kell kiírni, amikor
+olyan uralkodók voltak, akik az apjukat követték a trónon! Több megoldás esetén a legkorábbit
+kell kiírni!
+Példa
+Bemenet                                            Kimenet
+7                                                  1095 1131
+1046 1060 I. András
+1060 1063 I. Béla
+1063 1074 Salamon
+1074 1077 I. Géza
+1077 1095 Szent László
+1095 1116 Könyves Kálmán
+1116 1131 II. István
+10
+Vazul
+I. András
+Vazul
+I. Béla
+Vazul
+Levente
+I. András
+Salamon
+I. Béla
+I. Géza
+I. Béla
+Szent László
+I. Géza
+Könyves Kálmán
+Szent László
+Piroska
+Könyves Kálmán
+László
+Könyves Kálmán
+
+
+                                               1. oldal
+Programozási tételek összeépítése                  *
+
+II. István
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                        2. oldal
+

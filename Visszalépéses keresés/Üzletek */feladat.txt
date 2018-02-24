@@ -1,0 +1,45 @@
+Visszalépéses keresés                                                                          *
+
+
+                                          Üzletek
+N üzlet M pékségtől rendelhet kenyeret. Tudjuk, hogy az egyes üzletek mennyi kenyérre tartanak
+igényt, és hogy az egyes pékségek mennyit sütnek naponta. Továbbá adott az is, hogy az egyes üz-
+letek mely pékségekkel állnak kapcsolatban (csak ilyentől rendelhetnek). Az üzletek csak egyetlen
+egy pékségtől rendelhetnek (az adott napon).
+Készíts programot, amely megadja, hogy az adott napon melyik üzlet melyik pékségtől vegye meg
+a szükséges mennyiségű kenyeret!
+Bemenet
+A standard bemenet első sorában egy szóközzel elválasztva az üzletek száma (1≤N≤30) és
+a pékségek száma (1≤M≤7) van. A második sorban pontosan N pozitív egész szám van, egy-egy
+szóközzel elválasztva, az egyes üzletek igényelt kenyérmennyisége (1≤Ei≤1000). A harmadik
+sorban pontosan M pozitív egész szám van, egy-egy szóközzel elválasztva, az egyes pékségek napi
+kenyérsütési kapacitása (1≤Si≤2000). A következő N sor egy-egy üzlet kapcsolatait írja le.
+Mindegyik sor első száma azon pékségek Pi száma, amelyekkel az üzlet kapcsolatban van
+(1≤Pi≤5). Ezt az üzlettel kapcsolatban levő Pi pékség sorszáma követi, egy-egy szóközzel elvá-
+lasztva.
+Kimenet
+A standard kimenet egyetlen sorába N egész számot kell írni, egy-egy szóközzel elválaszt-
+va, ahol az i-edik szám azon pékség sorszáma legyen, ahonnan az i-edik üzlet a kenyeret rendeli!
+Ha több megoldás is van, bármelyik kiírható. Ha nincs megoldás, akkor a sorba egyetlen -1-et
+kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6 3                                             3 2 3 1 3 3
+50 50 100 300 300 300
+300 1000 750
+2 1 3
+1 2
+1 3
+2 1 3
+2 1 3
+2 1 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a közértek száma N≤10
+
+
+
+
+                                            1. oldal
+

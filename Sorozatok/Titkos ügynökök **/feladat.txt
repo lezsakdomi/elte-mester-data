@@ -1,0 +1,36 @@
+Sorozatok                                                                                    **
+
+
+                                   Titkos ügynökök
+Egy idegen ország két titkos ügynököt küldött Bergengóciába, akik speciális adókészüléken küldik
+jelentéseiket. A bergengóciai biztonsági szolgálat minden adásukat lehallgatta. Használhatják
+ugyanazt az adókészüléket, ha nem volt olyan időpont, amikor mindkettő használta a készüléket.
+Akkor is elég egy készülék, ha az egyik adásának végidőpontjában kezdte a másik az adását.
+Készíts programot, amely megadja, hogy mennyi ideig volt biztosan két készülékük!
+Bemenet
+A standard bemenet első sorában az első ügynök adásai száma van (1≤E<10 000) van. A
+következő E sorban az adásai kezdő- és végidőpontja található (1≤EKi<EVi≤100 000), kezdet
+szerint növekvő sorrendben. Az ezt követő sorban a második ügynök adásai száma van
+(1≤M<10 000) van. A következő M sorban a második ügynök adásai kezdő- és végidőpontja
+található (1≤MKi<MVi≤100 000), kezdet szerint növekvő sorrendben.
+Kimenet
+A standard kimenet első sorába kerüljön az az időtartam, amennyi alatt biztosan két ké-
+szülékük volt!
+Példa
+Bemenet                                        Kimenet
+2                                              50
+100   200
+500   600
+3
+150   180
+300   400
+580   680
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

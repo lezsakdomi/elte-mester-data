@@ -1,0 +1,41 @@
+Mohó algoritmusok                                                                            ***
+
+
+                                        Hangosítás
+Egy vállalkozó rendezvények hangosítását biztosítja, egyszerre csak egy rendezvényét. Minden el-
+végzett munkáért L forintot fizetnek neki. Azonban naponként meghatározott regisztrációs díjat
+és kezelési költséget kell a vállalkozónak fizetni, mégpedig előre. Egyszerre több, egymást követő
+napra is fizethet. Ha m napra fizet előre, akkor K+m*R forintot kell fizetnie. Az első nap ingye-
+nes. N napon keresztül vannak rendezvények, mindegyik ugyanazon a napon fejeződik be, mint
+amikor elkezdődik. Ismerjük minden rendezvény kezdetét és végét (az adott napon belül, percben
+megadva). A vállalkozó kezdettől folyamatosan dolgozik a lehető legtovább, ha meg tudja fizetni
+a következő napok regisztrációs díját, napokat nem hagyhat ki.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány forintot tud keresni a vállalkozó,
+és ehhez hányszor kell neki előre fizetni regisztrációs díjat!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000), a kezelési költség ösz-
+szege (1≤K≤1000) a naponkénti regisztrációs díj összege (1≤R≤1000) és a rendezvényen-
+kénti munkadíj összege (1≤L≤1000) van. A további N sor mindegyike egy-egy nap rendezvé-
+nyeit írja le. Minden sor első száma az aznapi rendezvények száma (0≤Mi≤1000). A követke-
+ző 2*Mi szám az egyes rendezvények kezdő- és végidejét tartalmazza (0≤Kezdi,j<Végi,j,
+<24*60), a végidő szerint növekvő sorrendben.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb kereset összegét kell írni! A máso-
+dik sorba azt a számot kell írni, ahányszor regisztrációs díjat fizetett!
+Példa
+Bemenet                                                      Kimenet
+5   2 5 4                                                    5
+4   100 200 190 220 210 600 1000 1200                        2
+0
+2   100 200 300 500
+3   10 200 50 250 0 300
+3   100 200 200 201 201 250
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

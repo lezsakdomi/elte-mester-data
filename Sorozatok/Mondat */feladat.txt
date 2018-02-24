@@ -1,0 +1,36 @@
+Sorozatok                                                                                       *
+
+
+                                           Mondat
+Egy mondatra szeretnénk műveleteket végezni. A mondat kisbetűkből és szóközökből áll, a sza-
+vakat pontosan egy szóköz választja el egymástól, az első szó előtt, valamint az utolsó után nincs
+szóköz.
+A mondaton az alábbi átalakításokat szeretnénk egymástól függetlenül elvégezni:
+   1.) A mondat szavait fordított sorrendben írjuk ki.
+   2.) Csak a páratlan sorszámú szavakat jelenítjük meg.
+   3.) A szavak kezdőbetűjét írjuk ki, de azokat nagybetűvel, szóközökkel elválasztva.
+   4.) A szavak az eredeti sorrendben szerepelnek, viszont azok betűsorrendjét megfordítjuk.
+Készíts programot, amely átalakítja a megadott mondatot!
+Bemenet
+A standard bemenet első sorában egy legfeljebb 3000 karaktert tartalmazó mondat áll,
+amely előtt és után nem található szóköz, szavai az angol ábécé kisbetűiből állnak, a szavakat
+egyetlen szóköz választja el.
+Kimenet
+A standard kimenet négy sort tartalmazzon, az i. sorban a mondat i. átalakítása szerepel-
+jen!
+Példa
+Bemenet                                          Kimenet
+az ibafai papnak fapipaja van                    van fapipaja papnak ibafai az
+                                                 az papnak van
+                                                 A I P F V
+                                                 za iafabi kanpap ajapipaf nav
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a karakterek száma ≤200.
+
+
+
+
+                                             1. oldal
+

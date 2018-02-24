@@ -1,0 +1,30 @@
+Szimuláció                                                                                    ***
+
+
+                                          Automata
+Egy automatát a J, B, E betűk sorozatával vezérelhetünk. Az automata kezdetben az (x,y) = (0,0)
+koordinátájú pontban áll, és északi irányba néz. A J hatására jobbra fordul 90 fokkal, a B hatására
+pedig balra. Az E hatására 1 egységet előre lép az aktuális irányban. Az x értéke kelet felé nő,
+nyugat felé csökken, az y értéke pedig észak felé nő, dél felé csökken. Az x és az y negatív számok
+is lehetnek.
+Készíts programot, amely megadja, hogy az automata milyen koordinátájú pontra jutott, és éppen
+merre néz!
+Bemenet
+A standard bemenet egyetlen sort tartalmaz, egy legfeljebb 100 karakterből álló utasításso-
+rozatot (Xi{J,B,E} – jobbra, balra, előre).
+Kimenet
+A standard kimenet első sora tartalmazza, milyen koordinátájú pontra jutott az automata,
+a második sor pedig azt, milyen irányba néz!
+Példa
+Bemenet                                          Kimenet
+EJEEE                                            3 1
+                                                 kelet
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

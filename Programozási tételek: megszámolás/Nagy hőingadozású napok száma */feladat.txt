@@ -1,0 +1,33 @@
+Programozási tételek – Megszámolás
+
+
+                      Nagy hőingadozású napok száma
+Egy időjárás előrejelzésben megkaptuk a következő N nap várható minimális és maximális hő-
+mérsékletét.
+Írj programot, amely megadja azon napok számát, ahol a várható maximum legalább 10 fokkal
+több, mint a várható minimum!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100), alatta soronként egy-egy
+nap várható legkisebb és legnagyobb hőmérséklete (-50≤Min≤Max≤50) van.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, azon napok számát, ahol a
+várható maximum legalább 10 fokkal több, mint a várható minimum!
+Példa
+Bemenet                                      Kimenet
+6                                            2
+-5 5
+0 10
+-5 -3
+-5 0
+2 10
+10 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                         1. oldal
+

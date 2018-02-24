@@ -1,0 +1,46 @@
+Nemes Tihamér OITV 2017              Programozás kategória                                 Döntő
+
+
+                                  Leggyorsabb autók
+Egy autópályán N helyen tartottak forgalomszámlálást egy hónapon át (a sorszámozásuk a helyek
+sorrendjében történik), összesen M észlelés érkezett időrendben. A következő adatokat kaptuk
+minden egyes megfigyelt autóról: autó rendszáma (6-jegyű egész szám), megfigyelés helye, óra,
+perc. A forgalomszámlálásnál nem adták meg, hogy az autó mely irányban haladt az autópályán.
+Add meg minden szakaszra (i. és i+1. hely, illetve i+1. és i. hely között) az azon autók rendszá-
+mát, amelyek azt a szakaszt a leggyorsabban tették meg!
+Bemenet
+A standard bemenet első sorában a helyek száma (2≤N≤100) és az észlelések száma van
+(2≤M≤10 000). Az autópályán legfeljebb 1000 autó haladt, mindegyik csak egyszer ment vala-
+mely megfigyelő helytől valamely megfigyelő helyig (közöttük is észlelték minden megfigyelő he-
+lyen). A további M sorban egy-egy megfigyelés adatai vannak (Ri – 6 jegyű egész szám, 1≤Hi≤N,
+0≤Oi≤24*30, 0≤Pi≤59). Legalább 2 helyen minden autót megfigyeltek.
+Kimenet
+A standard kimenet első sora i. száma annak az autónak a rendszáma legyen, amely az i. és
+i+1. hely közötti szakaszt a leggyorsabban tette meg! A második sor i. száma pedig azon autó
+rendszáma legyen, amely az i+1. és i. hely közötti szakaszt a leggyorsabban tette meg! Ha egy sza-
+kaszon nem járt autó, akkor a rendszám helyett egyetlen 0-t kell kiírni! Ha egy szakaszra több
+megoldás lenne, akkor ott a legkorábbi autót kell megadni
+Példa
+bemenet                                          kimenet
+4 10                                             555555 111111 0
+111111     1   1    20                           0 333333 999999
+999999     4   1    25
+999999     3   1    35
+111111     2   1    40
+555555     1   2    0
+999999     2   2    5
+111111     3   2    10
+333333     3   2    15
+555555     2   2    15
+333333     2   2    25
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤50.
+
+
+
+
+                                             1. oldal                     2017.02.25. 10:00-16:00
+

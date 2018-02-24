@@ -1,0 +1,32 @@
+Egyéb                                                                                          *
+
+
+                                           Lapok
+Egy négyzet alakú fehér területre színes téglalapokat helyezünk, amelyek akár át is fedhetik egy-
+mást. A téglalapok oldalai párhuzamosak a fehér négyzet oldalaival.
+Készíts programot, amely kiszámítja a lerakott lapok alapján, hogy hány egyszínű összefüggő terü-
+let lett!
+Bemenet
+A standard bemenet első sorában a négyzet oldalhossza (1≤H≤1000) és a színes lapok
+száma (0≤L≤10000) van. A következő L sor mindegyike 5 számot tartalmaz, a színes téglalap
+bal alsó sarkának x és y koordinátáit (1≤x,y≤H) és a dx, dy oldalhosszait (1≤x+dx,
+y+dy≤H), valamint a színének kódját (1≤szín≤1000), a lerakás sorrendjében.
+Kimenet
+A standard kimenetre a lapok lerakása utáni egyszínű összefüggő területek számát kell ír-
+ni!
+Példa
+Bemenet                                         Kimenet
+10 4                                            5
+2 2 3    2   1
+5 2 1    2   2
+2 4 4    4   2
+5 4 1    4   1
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

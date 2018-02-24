@@ -1,0 +1,35 @@
+Programozási tételek – Keresés                                                                      *
+
+
+                          Első öt év alatt végzett hallgató
+Egy egyetem 5 éves szakjának végzettjeiről nyilvántartják a születés dátumát (év, hó, nap), és a
+szak kezdésének, valamint a diplomázásának évét.
+Írj programot, amely megadja az első olyan végzett sorszámát, aki 5 év alatt elvégezte a szakját!
+Bemenet
+A standard bemenet első sorában az események száma (1≤N≤100), utána N sorban egy-
+egy végzett adatai vannak, öt pozitív egész szám formájában egy-egy szóközzel elválasztva. Az el-
+ső, második és harmadik szám a végzett születési idejének év (1950≤E≤2000), hó (1≤H≤12)
+és nap (1≤Nap≤30) része, a negyedik a kezdés éve (2000≤K≤2020), az ötödik a végzés éve
+(K≤V≤2020).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az első olyan végzett sor-
+számát, aki 5 év alatt elvégezte a szakját! Ha nincs ilyen, akkor -1-et kell kiírni!
+Példa
+Bemenet                                           Kimenet
+6                                                 1
+1980    1 1 2007 2012
+1970    6 2 2007 2012
+1999    12 1 2007 2012
+1982    10 1 2000 2005
+1982    9 9 2000 2012
+1982    1 1 2000 2005
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,25 @@
+Számelméleti algoritmusok                                                                  *
+
+
+                                   Boldog számok
+„Boldog számoknak” nevezzük az olyan számokat, amelyekre igaz, hogy számjegyeik négyzetösz-
+szegét összeadva addig, amíg egyjegyű nem lesz, végül egyet (1) kapunk. Például boldog szám a
+23, mert 22+32=4+9=13, 12+32=1+9=10, 12+02=1+0=1.
+Készíts programot, amely megadja az A és B közötti boldog számokat!
+Bemenet
+A standard bemenet egyetlen sorában az A és a B értéke (1≤A≤B≤100 000) van.
+Kimenet
+A standard kimenet első sorába az A és B közötti boldog számokat kell írni, növekvő sor-
+rendben!
+Példa
+Bemenet                                        Kimenet
+1 23                                           1 10 13 19 23
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,36 @@
+Programozási tételek - kiválogatás                                                              *
+
+
+                                          Érettségi
+Egy középiskola minden negyedikesének ismertek az érettségi tárgyai. Egy tárgyat szabadon vá-
+laszthatnak.
+Készítsd el minden szabadon választható tárgyhoz az abból érettségizők névsorát!
+Bemenet
+A standard bemenet első sorában a szabadon választható tárgyak száma van (1≤T≤10) és
+szóközzel elválasztva a tárgyak felsorolása. A következő sorban található az érettségizők száma
+(1≤N≤100). Az ezt követő N sor mindegyikében egy-egy szóközzel elválasztott lista van, mely-
+ben az érettségi tárgyak egyszavas nevei szerepelnek, melyek csak kötelezőek vagy a szabadon vá-
+laszthatóak közül kerül ki.
+Kimenet
+A standard kimenet első T sorába kell kiírni a választható tárgyak felsorolásának sorrend-
+jében az azt választó érettségizők számát és szóközzel elválasztva az érettségizők sorszámait (nö-
+vekvő sorrendben)!
+Példa
+Bemenet                                          Kimenet
+3 informatika enek-zene rajz                     3 1 3 6
+6                                                2 2 4
+matek magyar informatika                         2 2 5
+matek magyar enek-zene rajz
+magyar informatika matek
+matek magyar enek-zene
+matek rajz magyar
+informatika matek magyar
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

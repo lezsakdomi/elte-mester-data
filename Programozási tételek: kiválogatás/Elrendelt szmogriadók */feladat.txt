@@ -1,0 +1,38 @@
+Programozási tételek – Kiválogatás
+
+
+                               Elrendelt szmogriadók
+A városban naponta mérik a levegő szennyezettségét (szénmonoxid-tartalmát a határérték száza-
+lékában). A mérőműszer időnként elromlik, és ilyenkor 0 százalékot mér, mindaddig, amíg meg
+nem javítják (javítás után újra 0%-nál többet mér). Szmogriadót akkor rendelnek el, amikor a
+szennyezettség 100% fölé emelkedik, s a szmogriadó mindaddig tart, amíg újra 100% alatt nem
+lesz a szennyezettség.
+Írj programot, amely megadja azon napokat, amikor szmogriadót kellett elrendelni!
+Bemenet
+A standard bemenet első sorában a napok száma (1N100), majd N sorban az egyes na-
+pokon mért szennyezettség van (0Sz500).
+Kimenet
+A standard kimenet első sorába azon napok számát, illetve a napok sorszámát kell írni
+növekvő sorrendben, amikor szmogriadót kellett elrendelni!
+Példa
+Bemenet                                         Kimenet
+9                                               2 5 8
+20
+0
+0
+60
+110
+120
+80
+110
+0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

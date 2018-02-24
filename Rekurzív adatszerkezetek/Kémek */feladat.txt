@@ -1,0 +1,40 @@
+Rekurzív adatszerkezetek                                                                        *
+
+
+                                             Kémek
+Egy N tagú kémszervezetben mindenkinek több közvetlen beosztottja lehet, s mindenkinek is-
+merjük a közvetlen felettesét. Egyetlen tagnak nincs felettese, ő a főnök.
+Készíts programot, amely megadja, hogy
+    1.) ki a szervezet főnöke;
+    2.) kinek van a legtöbb közvetlen beosztottja;
+    3.) ki van a „legmesszebb” a főnöktől!
+Bemenet
+A standard bemenet első sorában a tagok száma (1N20 000) van. A következő N-1
+sorban egy-egy tag sorszáma (1SN) és a közvetlen felettesének sorszáma (1FN) van. A
+szervezet főnökének nincs leírása.
+Kimenet
+A standard kimenet három sorába a szervezet főnökének sorszámát, a legtöbb közvetlen
+beosztottal rendelkező tag sorszámát, valamint a főnöktől „legmesszebb” levő tag sorszámát kell
+írni! Több megoldás esetén a legkisebb sorszámút kell kiírni!
+Példa
+                                                                                     1
+Bemenet                                              Kimenet
+6                                                    1
+                                                                               2            3
+2   1                                                1
+3   1                                                5
+6   3                                                                          4            6
+5   4
+4   2
+Korlátok                                                                       5
+
+
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤100
+
+
+
+
+                                               1. oldal
+

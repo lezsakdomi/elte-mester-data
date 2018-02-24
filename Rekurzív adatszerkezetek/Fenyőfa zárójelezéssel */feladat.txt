@@ -1,0 +1,47 @@
+Rekurzív adatszerkezetek                                                                            *
+
+
+                                  Fenyőfa zárójelezéssel
+A Kísérleti Fanemesítő Intézet újfajta fenyőfákat nemesített ki. A fenyőfa törzséből tetszőleges
+számú ág leágazhat, lehet, hogy egyetlenegy sem. Az egyes ágak ugyanolyan hosszúak, de feleak-
+kora tömegűek, mint a törzs, s a végükből újra tetszőleges számú ág ágazhat le, vagy egy sem.
+Ezek megint ugyanolyan hosszúak, mint amiből kinőttek, de feleakkora tömegűek. Egy fát záróje-
+lekkel és F betűkkel írunk le a számítógép számára: F(első ág)(második ág) ... (n. ág) formában. A fá-
+nak törzse biztosan van.
+Készíts programot, amely meghatározza
+   1.) a fa magasságát (a leghosszabb út hosszát a gyökértől valamelyik ág végéig);
+   2.) a törzs tömegét (feltételezve, hogy a fa legkisebb (azaz a gyökértől legtávolabbi) ágai éppen
+       egységnyi tömegűek);
+   3.) a fa tömegét (az ágak össztömege)!
+Bemenet
+A standard bemenet egyetlen sorában a fát leíró szöveg szerepel. A bemenet hossza legfel-
+jebb 100 000 karakter, és minden esetben egy # zárja.
+Kimenet
+A standard kimenet három sorába a a fa magasságát, a törzs tömegét, valamint a fa töme-
+gét kell írni!
+Példa
+Bemenet                                            Kimenet
+F#                                                 1
+                                                   1
+                                                   1
+Bemenet                                            Kimenet
+F(F)(F)#                                           2
+                                                   2
+                                                   4
+Bemenet                                            Kimenet
+F(F)(F)(F)(F)#                                     2
+                                                   2
+                                                   6
+Bemenet                                            Kimenet
+F(F(F)(F)(F))(F)#                                  3
+                                                   4
+                                                   11
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤1000
+
+
+
+                                               1. oldal
+

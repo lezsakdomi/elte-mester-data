@@ -1,0 +1,37 @@
+Számelméleti algoritmusok                                                                    ***
+
+
+                                 Diofantoszi egyenlet
+Adott két pozitív egész szám, A és B. Eldöntendő, hogy adott Z pozitív egész szám előállítható-e
+valahány A és valahány B összegeként. Azaz, hogy van-e olyan x és y természetes szám, hogy
+                  .
+Készíts programot, amely megadott A, B-re és adott pozitív egészekre kiszámítja, hogy azok előál-
+líthatók-e A és B többszöröseinek összegeként!
+Bemenet
+A standard bemenet első sorában az előállításban használható A és B szám (1 A,
+B  1 000 000), és az előállítandó számok darabszáma (1 N  10 000) van. A következő N sor
+mindegyike egy előállítandó számot (1 Zi  1 000 000 000) tartalmaz.
+Kimenet
+A standard kimenet pontosan N sort tartalmazzon, az i. sorban az „Igen” szó legyen,
+ha Zi előállítható A és B többszöröseinek összegeként, egyébként a „Nem” szó!
+Példa
+Bemenet                                         Kimenet
+5 7 8                                           Igen
+12                                              Igen
+10                                              Nem
+11                                              Igen
+19                                              Igen
+22                                              Igen
+102                                             Nem
+8                                               Nem
+9
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a Z≤1 000 000.
+
+
+
+
+                                            1. oldal
+

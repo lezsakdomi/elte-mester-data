@@ -1,0 +1,34 @@
+Programozási tételek – Keresés                                                                *
+
+
+                          Őr nélküli nap a múzeumban
+Egy múzeumban M napon át N őr teljesít szolgálatot. Ismerjük mindegyikről annak a két napnak
+a sorszámát, amelyek között folyamatosan szolgálatban volt.
+Írj programot, amely megadja a legelső olyan nap sorszámát, amikor nem volt őr a múzeumban!
+Bemenet
+A standard bemenet első sorában a napok száma (0≤M≤1000) és az őrök száma
+(0≤N≤1000) van, utána N sorban egy-egy őr szolgálata első és utolsó napjának sorszáma, egy
+szóközzel elválasztva (1≤E≤U≤M).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, annak az első napnak a
+sorszámát, amikor nem volt őr a múzeumban (0-t kell kiírni, ha nem volt ilyen nap)!
+Példa
+Bemenet                                        Kimenet
+6   6                                          5                          ● ● ●
+1   3
+                                                                                              ●
+6   6
+1   2                                                                     ● ●
+2   3                                                                       ● ●
+3   4                                                                         ● ●
+6   6                                                                                         ●
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

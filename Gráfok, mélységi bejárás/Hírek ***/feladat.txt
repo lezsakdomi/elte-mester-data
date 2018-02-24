@@ -1,0 +1,44 @@
+Gráfok – Mélységi bejárás                                                                          ***
+
+
+                                             Hírek
+Egy iskola tanulóiról tudjuk, hogy ha valaki egy érdekes hírt kap, akkor azt kiknek adja tovább.
+Készíts programot, amely kiszámítja, hogy ki legyen az a kiválasztandó K tanuló, akikhez eljuttat-
+va egy hírt, a legtöbb tanulóhoz eljut a hír!
+Bemenet
+A standard bemenet első sora a tanulók (1≤N≤10 000) számát, és a kiválasztandó tanu-
+lók számát (1≤K≤2) tartalmazza. A következő N sor írja le, hogy az egyes tanulók kiknek adják
+tovább a hírt. Közülük az i-edik sorban azoknak a tanulóknak a sorszáma van felsorolva egy-egy
+szóközzel elválasztva és 0-val zárva, akiknek az i-edik tanuló továbbadja a hírt. Ezekben legfel-
+jebb 100 000 nem nulla szám van.
+Kimenet
+A standard kimenet első sora azon tanulók M számát tartalmazza, akikhez eljut a hír (bele-
+értve a kiválasztott tanulókat is), ha a második sorban megadott tanulókhoz juttatjuk el! A máso-
+dik sor pontosan K kiválasztott tanuló sorszámát tartalmazza! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                        Kimenet
+12 2                           10
+3 0                            2 7
+                                                1            2        9           4          5
+9 1 0
+2 0
+5 9 10 0
+4 0                                             3            6        11          10         12
+7 11 0
+8 0
+                                                         8       7
+6 0
+10 0
+11 12 0
+0
+9 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

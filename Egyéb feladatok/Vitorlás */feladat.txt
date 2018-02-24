@@ -1,0 +1,39 @@
+Egyéb                                                                                          *
+
+
+                                          Vitorlás
+Egy vitorlás versenyen K futamot rendeznek, naponta legfeljebb 1 futamot. Nem rendezhető fu-
+tam, ha nagyon kicsi a szélsebesség, vagy ha nagy vihar van. Ha ilyen nap fordul elő, akkor szün-
+napot tartanak. Ismerjük N napra a szélsebesség előrejelzést. Az a cél, hogy a versenyt a lehető
+legkevesebb szünnappal rendezzék meg.
+Készíts programot, amely megadja, hogy mely napokon kezdődhet a verseny úgy, hogy a lehető
+legkevesebb szünnap legyen!
+Bemenet
+A standard bemenet első sorában a napok száma (1N1 000 000), a futamok száma
+(1KN), valamint a legkisebb és a legnagyobb szélsebesség van, amikor még versenyt lehet ren-
+dezni (0sebesség200). A következő N sorban egy-egy napra a szélsebesség előrejelzése ta-
+lálható (0sebesség200 km/óra).
+Kimenet
+A standard kimenet első sorába a lehetséges verseny kezdőnapok M számát kell írni, a má-
+sodik sorba pedig az M kezdőnap sorszámát! Ha nincs K napon megfelelő szélsebesség, akkor az
+eredmény egyetlen sorába 0-t kell írni!
+Példa
+Bemenet                                         Kimenet
+8 4 10 100                                      3
+0                                               2 3 4
+30
+30
+80
+110
+70
+60
+40
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

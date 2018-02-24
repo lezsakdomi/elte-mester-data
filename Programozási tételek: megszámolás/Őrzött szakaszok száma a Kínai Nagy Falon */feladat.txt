@@ -1,0 +1,38 @@
+Programozási tételek – Megszámolás                                                            *
+
+
+                Őrzött szakaszok száma a Kínai Nagy Falon
+A Kínai Nagy Falon N őrhelyet létesítettek. Közülük azonban csak M helyen van őrség. Két
+szomszédos őrhely közötti fal őrzött, ha legalább az egyik végén van őrség. Őrzött szakasznak
+nevezzük egymást követő őrzött falak nem bővíthető sorozatát.
+Készíts programot, amely megadja az őrzött szakaszok számát!
+Bemenet
+A standard bemenet első sorában az őrhelyek száma (1N100) és az őrségek száma
+(1MN) van, egy szóközzel elválasztva. A következő M sor az őrségek leírását tartalmazza, közü-
+lük az i-edik annak az őrhelynek a sorszáma, ahol az i-edik őrség van (1SiN). Tudjuk, hogy
+minden helyen legfeljebb 1 őrség van.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az őrzött szakaszok szá-
+mát!
+Példa
+Bemenet                                         Kimenet
+15 9                                            2
+6
+3
+12
+11
+4
+5
+8
+15
+14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,36 @@
+Egyéb                                                                                          **
+
+
+                                           Szójáték
+A szójáték népszerű játék, sok változata ismert. Tekintsük azt a változatát, amelyben egy adott
+szövegben elrejtett szót kell megtalálni. Például, az „abrakadabra” szövegben kell megtalálni az
+„akar” szót. Ennek egy megoldása: „abrakadabra”. Hogy érdekesebb legyen a játék, a szövegnek
+egy olyan legrövidebb részét kell megadni, amelyben még előfordul a keresendő szó (ha van meg-
+oldás).
+Írj programot, amely meghatározza adott szövegben azt a legrövidebb részt, amely tartalmazza a
+megadott szót!
+Bemenet
+A standard bemenet első sora a keresendő szó hosszát tartalmazza (1M300). A máso-
+dik sor pontosan M karaktert tartalmaz, a keresendő szót. A harmadik sor a szöveg hosszát
+(1N500 000) tartalmazza. A negyedik sor pontosan N karaktert tartalmaz, a szöveget. A szö-
+veg és a szó is tetszőleges alfabetikus karaktert tartalmazhat.
+Kimenet
+A standard kimenet első és egyetlen sorába két egész számot kell írni, egy szóközzel elvá-
+lasztva, I-t és H-t! A szöveg I-edik karakterétől vett H hosszú rész tartalmazza a megadott szót és
+nincs a szövegnek H-nál rövidebb része, amely tartalmazná a szót. Ha több ilyen I index lenne,
+akkor a legkisebbet kell megadni! Ha nincs megoldás, akkor a 0 0 számpárt kell kiírni!
+Példa
+Bemenet                                          Kimenet
+4                                                4 7
+akar
+11
+abrakadabra
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

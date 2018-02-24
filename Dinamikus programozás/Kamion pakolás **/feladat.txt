@@ -1,0 +1,33 @@
+Dinamikus programozás                                                                         **
+
+
+                                    Kamion pakolás
+Kamionnal kell elszállítani tárgyakat. Ismerjük a kamion kapacitását, tehát azt a súlyt, amelynél
+több nem rakható a kamionra, és ismerjük az elszállítandó tárgyak súlyát.
+Készíts programot, amely kiszámítja, hogy mekkora az a legnagyobb összsúly, amit a kamionnal
+elszállíthatunk! A program adja meg, hogy mely tárgyak kamionra rakásával érhető ez el!
+Bemenet
+A standard bemenet első sorában két egész szám van, a tárgyak száma (1≤N≤1000) és a
+kamion kapacitása (1≤K≤10 000). A második sor pontosan N pozitív egész számot tartalmaz.
+Az i-edik szám az i-edik tárgy súlya, ami nem nagyobb, mint a kamion K kapacitása.
+Kimenet
+A standard kimenet első sorába a kamionnal elszállítható legnagyobb S összsúlyt kell írni!
+A második sorba az S összsúlyt adó pakolásban szereplő tárgyak M számát kell írni! A harmadik
+sorba a kamionra pakolt M tárgy sorszámát kell írni tetszőleges sorrendben, egy-egy szóközzel
+elválasztva! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+6 20                                            19
+18 12 4 7 10 5                                  3
+                                                3 6 5
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 64 MiB
+Pontozás: A tesztek 40%-ában N≤500 és K≤1 000. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                            1. oldal
+

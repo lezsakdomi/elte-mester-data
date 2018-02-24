@@ -1,0 +1,39 @@
+Mohó algoritmusok                                                                            ***
+
+
+                       Fényképész legkevesebb menetben
+Egy rendezvényre sok vendéget hívtak meg. Minden vendég előre megadta, hogy mikor érkezik,
+és mikor távozik. A rendezők fényképen akarják megörökíteni a résztvevőket. A munkára kivá-
+lasztott fényképész úgy dolgozik, hogy egy menetben lefényképezi mindazokat, akik a menet F
+kezdete és F+K vége közötti időintervallumban jelen voltak a rendezvényen. Pontosabban le-
+fényképez minden olyan vendéget, akinek E érkezési és T távozási idejére teljesül, hogy E<F+K,
+és F≤T. A fényképészt a menetek száma szerint kell fizetni, tehát az a cél, hogy a lehető legkeve-
+sebb menet legyen, de mindenki rajta legyen legalább egy fényképen.
+Készíts programot, amely megadja, hogy legkevesebb hány menetre van szükség, hogy mindenki
+rajta legyen legalább egy fényképen, és meg is adja, hogy mikor kezdődjenek a menetek!
+Bemenet
+A standard bemenet első sorában a vendégek száma (1≤N≤100 000), és a menetek
+hosszát megadó szám (2≤K≤1000) van. A további N sor mindegyikében két egész szám van
+egy szóközzel elválasztva, egy vendég E érkezési es T távozási ideje (1≤E<T<20 000).
+Kimenet
+A standard kimenet első sorába a minimálisan szükséges menetek M számát kell írni! A
+második sor pontosan M egész számot tartalmazzon egy-egy szóközzel elválasztva, az egyes me-
+netek kezdő időpontját! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+6   2                                            2
+1   4                                            4 10
+7   12
+2   6
+4   9
+3   13
+8   10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,29 @@
+Programozási tételek - megszámolás                                                                *
+
+
+                                       Ugró értékek
+Egy számsorozat növekvően rendezett.
+Állapítsd meg, hány helyen van a sorozatban ugrás: hány indexre teljesül az Ai+1-Ai>1 feltétel!
+Bemenet
+A standard bemenet első sorában található a számsorozat hossza (1≤N≤100) értéke. Az ezt követő
+N sorban pedig a számok értékei vannak (egész számok, maximum 1000).
+Kimenet
+A standard kimenet első sorába ki kell írni az ugrások számát!
+Példa
+Bemenet                                          Kimenet
+6                                                2
+1
+2
+4
+5
+5
+7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

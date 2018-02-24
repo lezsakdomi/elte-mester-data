@@ -1,0 +1,35 @@
+Egyéb                                                                                       *
+
+
+                                          Csoki
+Egy N tagú társaság csokoládéüzletben vásárol. Az üzletben egy sorban M dobozban található
+csokoládé. A céljuk az, hogy egymás melletti dobozokból az összes csokit megvegyék úgy, hogy
+mindenkinek ugyanannyi csoki jusson!
+Készíts programot, amely meghatározza, hogy hányadik doboztól hányadik dobozig kell megven-
+niük az összes csokit, hogy mindenkinek ugyanannyi csoki jusson!
+Bemenet
+A standard bemenet első sorában a társaság tagjai száma (1N107), valamint a dobozok
+száma (1M106) van. A következő M sor mindegyike egy egész számot tartalmaz, egy-egy do-
+bozban levő csokik számát (legfeljebb 106).
+Kimenet
+A standard kimenet első sorába annak a két doboznak a sorszámát kell írni, amelyek kö-
+zötti összes csokit megvéve mindenki ugyanannyi csokit kaphat! Ha a feladatnak több megoldása
+is lenne, akkor közülük egy olyat kell kiírni, amelynél a legkevesebb csokit kell megvenni! Ha
+nincs megoldás, akkor egyetlen 0 számot kell kiírni!
+Példa
+Bemenet                                        Kimenet
+5 5                                            2 4
+4
+2
+7
+6
+3
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

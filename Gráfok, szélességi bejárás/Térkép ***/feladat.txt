@@ -1,0 +1,45 @@
+Gráfok – Szélességi bejárás                                                                  ***
+
+
+                                           Térkép
+Egy térképen különböző országokat ábrázolunk. Minden egyes ponthoz megadjuk, hogy melyik
+országhoz tartozik. (Az országokat sorszámukkal azonosítjuk, a területük összefüggő. Az orszá-
+gok száma legfeljebb 100.) Útnak nevezzük szomszédos helyek sorozatát, ami egyik helyről egy
+másikra vezet. (Mindig 4 szomszédot vizsgálunk, átlósan nem léphetünk.) Egyes szomszédos or-
+szágok (legfeljebb 100 pár) megállapodtak egymással, hogy a határukon semmiféle útlevél-
+ellenőrzést nem végeznek, így ott gyorsabb a határátlépés.
+Készíts programot, amely két hely koordinátái alapján megadja, hogy
+     minimum hány országot kell érinteni, ha egyik helyről el akarunk jutni a másikra;
+     minimum hány útlevél-ellenőrzéses határt kell átlépni, ha egyik helyről el akarunk jutni a
+      másikra!
+Bemenet
+A standard bemenet első sorában a térkép sorainak N és oszlopainak M száma
+(1N,M100), valamint az útlevél-ellenőrzést megszüntető ország-párok száma van
+(0SZ100). A következő N sor mindegyike M egész számot tartalmaz, egy-egy szóközzel elvá-
+lasztva, annak az országnak a sorszámát, amelyhez az adott pont tartozik. A következő SZ sor
+mindegyike 2 számot tartalmaz, olyan országok sorszámát, ahol a határt át lehet lépni útlevél-
+ellenőrzés nélkül. Az utolsó sorban 4 egész szám van, a kezdő- és a célhely sor, illetve oszlopko-
+ordinátája (1KSORN, 1KOSZLOPM, 1VSORN, 1VOSZLOPM).
+Kimenet
+A standard kimenet első sorába azon országok számát kell írni, ahányon minimum át kell
+haladni, hogy a kezdőpontból a végpontba jussunk, a másodikba pedig azon útlevél-ellenőrzéses
+határátlépések számát, amelyeken a minimum át kell haladni!
+Példa
+Bemenet                                          Kimenet
+5   6   1                                        2
+1   1   1   1   1   1                            0
+1   1   2   2   1   1
+1   1   2   3   3   1
+1   1   2   3   3   1
+1   1   2   3   1   1
+1   3
+1   2   5 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

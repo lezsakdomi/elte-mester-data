@@ -1,0 +1,34 @@
+Programozási tételek – rendezések                                                              **
+
+
+                                     Termékhasznok
+A Tesó™ üzletlánc N féle terméket árul. Ismerjük az összes termék beszerzési árát, eladási árát és
+eladásai számát.
+Írj programot, amely megadja a termelődött termékhaszon első K értékét, csökkenő sorrendben!
+Azaz az első érték a legnagyobb haszon, a második a második legnagyobb, …
+Bemenet
+A standard bemenet első sorában a termékek száma (1≤N≤100) és a K értéke (1≤K≤N)
+található. A következő N sorban soronként az egyes termékek különféle árai: beszerzési
+(0≤Ári≤100), az eladási ár (0≤EÁri≤100), valamint az eladási szám (0≤Dbi≤1000) van. Az
+adatok beszerzési ár szerint csökkenően rendezettek
+Kimenet
+A standard kimenet első sorába a K darab legnagyobb haszonérték írandó, csökkenő sor-
+rendben!
+Példa
+Bemenet                                         Kimenet
+6   3                                           16 15 9
+9   9   8
+8   9   7
+8   9   9
+7   8   7
+6   8   8
+5   8   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

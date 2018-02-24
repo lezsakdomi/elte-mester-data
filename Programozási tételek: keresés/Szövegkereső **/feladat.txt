@@ -1,0 +1,27 @@
+Programozási tételek: keresés                                                                    **
+
+
+                                        Szövegkereső
+Szövegek keresésekor megengedhető, hogy a keresőszóba a normál karakterek mellett ?, valamint
+* karaktert is tegyünk. A ? azt jelenti, hogy azon a pozíción tetszőleges karakter állhat, a * pedig
+tetszőleges számú karaktert helyettesíthet.
+Írj programot, amely kettő, legfeljebb egy * karaktert tartalmazó keresőszóról eldönti, hogy van-e
+olyan szó, amelyet mindkettővel megtalálhatunk, és ha van, akkor meg is ad egy ilyet!
+Bemenet
+A standard bemenet első sorában az első, a másodikban pedig a második keresőszó van.
+Kimenet
+A standard kimenet első sorába egy olyan, legfeljebb 200 karaktert tartalmazó szót kell ír-
+ni, ami mindkét keresőszónak megfelel! Ha nincs ilyen szó, akkor a NEM szót kell kiírni!
+Példa
+Bemenet                                           Kimenet
+Alm*a                                             Almafa
+A?ma*fa
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

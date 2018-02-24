@@ -1,0 +1,34 @@
+Programozási tételek - eldöntés                                                                 *
+
+
+                                          Nagykorú
+Adott egy 12. osztály tanulói nyilvántartása, valamint az aznapi dátum.
+Írj programot, amely megállapítja, hogy az adott osztály tanulói között van-e nagykorú!
+Bemenet
+A standard bemenet első sorában a tanuló száma található (0≤N≤100). A következő N
+sorban szóközzel elválasztva az adott tanuló születési ideje és neve van. A születési idő napokban
+van megadva 1970. január elsejétől számolva. Az utolsó sorban az aznapi dátum szerepel ugyan-
+csak 1970. január elsejétől számolva.
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! A „VAN” szöveg szerepeljen ameny-
+nyiben van nagykorú, vagyis a születésnapja és a mai nap között eltelt legalább 6574 nap, külön-
+ben „NINCS” szöveg!
+Példa
+Bemenet                                          Kimenet
+6                                                VAN
+9800 Alfonzina
+9790 Bagatelia
+9755 Cudarka
+9700 Durabella
+9770 Ementalia
+9810 Fintorgia
+16324
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

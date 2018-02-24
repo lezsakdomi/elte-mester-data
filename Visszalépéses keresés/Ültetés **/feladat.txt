@@ -1,0 +1,36 @@
+Visszalépéses keresés                                                                        **
+
+
+                                          Ültetés
+Egy futballstadionban M ülőhelyet tartanak fenn különleges vendégek számára. Minden vendég
+megadhat legfeljebb négy ülőhely sorszámot, amelyekből egyet szeretne megkapni.
+Készíts programot, amely eldönti, hogy teljesíthető-e az összes vendég igénye, és ha igen, akkor
+meg is adja, hogyan!
+Bemenet
+A standard bemenet első sorában a vendégek (1N20) és az ülőhelyek (1M25) száma
+van. A további N sor mindegyike egy-egy vendég igényét tartalmazza, közülük az i-edik sorban
+az i-edik vendég által igényelt ülőhelyek sorszámai vannak felsorolva egy-egy szóközzel elvá-
+lasztva és 0-val zárva.
+Kimenet
+A standard kimenet első sora N különböző ülőhely sorszámát tartalmazza egy-egy szóköz-
+zel elválasztva! Az i-edik szám annak az ülőhelynek a sorszáma legyen, amelyiket az i-edik ven-
+dég kap! Több megoldás esetén bármelyik megadható. Ha nem teljesíthető az összes vendég igé-
+nye, akkor a sor az egyetlen -1 számot tartalmazzon!
+Példa
+Bemenet                                        Kimenet
+5   10                                         5 4 1 3 7
+1   3 5   0
+4   3 0
+1   4 3   0
+1   4 3   0
+1   3 7   5 0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a vendégek száma N≤10
+
+
+
+
+                                            1. oldal
+

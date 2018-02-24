@@ -1,0 +1,32 @@
+Programozási tételek - keresés                                                                     *
+
+
+                                 Két azonos figurájú lap
+Egy 32 lapos magyar-kártyacsomag kártyáit összekevertük.
+Add meg, hogy hol van egymás mellett két azonos figurájú lap (pl. két nyolcas, két ász stb.)!
+Bemenet
+A standard bemenet 32 sorának mindegyikében két betű van szóközzel elválasztva. Az el-
+ső a kártya színét mutatja (m – makk, p – piros, t – tök, z – zöld), míg a második az értékét (7 – 7,
+8 – 8, 9 – 9, t – 10, a – alsó, f – felső, k – király, A – ász).
+Kimenet
+A standard kimenet első sorába ki kell írni a két azonos figurájú lap közül az első sorszá-
+mát! Ha nincs ilyen, akkor „0”-t kell írni! Több megoldás esetén a legkisebb első sorszámút kell
+kiírni!
+Példa
+Bemenet                                           Kimenet
+m 8                                               4
+p 7
+z A
+m 7
+t 7
+t 9
+...
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

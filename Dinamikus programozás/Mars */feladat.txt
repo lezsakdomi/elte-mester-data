@@ -1,0 +1,46 @@
+Dinamikus programozás                                                                         *
+
+
+                                             Mars
+A Mars felszínén különleges járművekkel kőzetmintákat gyűjtenek és juttatnak el az adóállomásra.
+A járművek csak négyzetrácsos útvonalon tudnak közlekedni, a kiindulási helytől csak dél vagy
+kelet felé és kizárólag sziklamentes terepen tudnak haladni. Térkép mutatja, hogy hol (melyik
+rácspontban) van kőzetminta, és hogy hol sziklás a terep. A térkép egy M×N-es mátrix, amely a
+különböző területfajtákat a következőképpen jelöli:
+    0 – üres terület
+    1 – kőzetmintás terület
+    2 – sziklás terület
+A járművek az (1,1) pontból indulnak, ez a térképen ábrázolt terep bal felső sarka. Az adóállo-
+más az (M,N) pontban van.
+Készíts programot, amely kiszámítja az összegyűjthető kőzetminták számának maximumát, ha
+feltesszük, hogy elegendő számú jármű áll rendelkezésre!
+Bemenet
+A standard bemenet első sorában az M és N értékek vannak egyetlen szóközzel elválasztva
+(1≤M,N≤1 000). A következő M sor mindegyike a térkép egy sorát adja meg, azaz minden sor-
+ban N szám (0, 1 vagy 2) van, ahol a számokat szintén egyetlen szóköz választja el.
+Kimenet
+A standard kimenet egyetlen sorába az összegyűjthető kőzetminták számának maximumát
+kell írni!
+Példa
+Bemenet                                          Kimenet
+10 12                                            14
+0 1 2    1   0   0   1   0   2   0   0   0
+0 1 0    0   0   2   0   0   0   0   0   0
+0 0 0    1   0   0   0   0   2   0   0   0
+2 0 0    0   0   2   0   0   0   0   0   0
+0 0 0    1   0   0   0   0   0   0   0   0
+0 2 0    0   2   0   0   0   0   0   0   0
+1 0 0    0   0   1   1   1   1   0   0   0
+1 1 1    1   1   2   0   0   0   1   0   0
+1 0 0    0   0   0   0   0   0   1   0   0
+1 0 0    0   0   0   0   0   0   1   0   0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤50
+
+
+
+
+                                             1. oldal
+

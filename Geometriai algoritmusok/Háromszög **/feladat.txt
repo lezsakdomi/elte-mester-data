@@ -1,0 +1,35 @@
+Geometriai algoritmusok                                                                     **
+
+
+                                       Háromszög
+Adott a síkon egy P ponthalmaz és egy ezektől különböző q pont. Ki kell választani a ponthal-
+maz három olyan a, b és c pontját, amelyekre teljesül, hogy a q pont az a, b és c pontok által
+meghatározott háromszögbe, vagy valamelyik oldalára esik, de a P ponthalmaz egyetlen más
+pontja sem esik a háromszögbe vagy oldalára!
+Írj programot, amely kiszámít egy q-t tartalmazó háromszöget, ha van ilyen!
+Bemenet
+A standard bemenet első sora a P ponthalmaz pontjainak számát (3N200 000) tartal-
+mazza. A második sor tartalmazza a kitüntetett q pont x- és y-koordinátáját. A következő N sor
+mindegyike két egész számot tartalmaz, egy-egy pont koordinátáit (-108x,y108).
+Kimenet
+A standard kimenet első sorába három egész számot kell írni, a keresett háromszöget
+megadó pontok sorszámát, órajárással ellentétes felsorolásban! Ha nincs megoldás, akkor az első
+sorba három 0 számot kell írni! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                         Kimenet
+5                                               4 3 5
+4   4
+0   1
+2   2
+6   1                                                                              X
+2   6
+6   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,35 @@
+Programozási tételek: kiválogatás                                                          *
+
+
+                           Együtt előforduló madárfajok
+Az ország néhány helységében madármegfigyelést végeztünk. Mindegyikben megadtuk, hogy mi-
+lyen fajú madárból hányat láttunk.
+Készíts programot, amely minden madárfajhoz megadja azok társfajait, amelyek nélkül az sehol
+sem fordult elő, csak velük együtt!
+Bemenet
+A standard bemenet első sorában két egész szám található egymástól szóközzel elválaszt-
+va, a helységek száma (1≤M≤50) és a madárfajok száma (1≤N≤200). A következő M sor mind-
+egyikében N egész szám szerepel egy-egy szóközzel elválasztva, mindegyik egy adott helységben
+adott madárfajból látott egyedek száma (0≤E≤1000). A bemenet i+1-edik (1≤i≤M) sorában a
+j-edik (1≤j≤N) egész szám az i-edik helységben a j-edik sorszámú fajból megfigyelt madarak
+száma.
+Kimenet
+A standard kimenet N sorból álljon! Minden j-re a j-edik sor a j-edik madárfaj társfajai-
+nak számával kezdődjön, majd ettől és egymástól egy-egy szóközzel elválasztva szerepeljenek a
+társfajok sorszámai növekvő sorrendben, ha az adott madárfajhoz volt társfaj!
+Példa
+bemenet                                       kimenet
+3   4                                         1 2
+1   2 0 1                                     1 1
+0   0 2 0                                     0
+4   1 0 0                                     2 1 2
+
+Korlátok
+Időlimit: 0,5 mp
+Memórialimit: 1 MB
+
+
+
+
+                                           1. oldal
+

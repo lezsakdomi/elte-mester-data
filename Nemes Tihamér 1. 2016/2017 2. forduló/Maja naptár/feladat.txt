@@ -1,0 +1,30 @@
+Nemes Tihamér OITV 1. korcsoport                                                              **
+
+
+                                       Maja naptár
+A maják többféle naptárt is használtak történelmük során. A tzolkin naptár évei 260 naposak,
+amelyek 13 darab húsznapos hónapból állnak. A haab naptár évei 18 húsznapos hónapból és az
+év végén hozzátett 5 további napból állnak. 52 haab év pontosan megegyezik 73 tzolkin évvel.
+Írj programot, amely egy tzolkin naptár szerinti dátumot átszámít haab naptár szerintivé; illetve
+egy haab naptár szerintit tzolkin naptár szerintivé!
+Bemenet
+A standard bemenet első sorában egy X nap tzolkin naptár szerinti dátuma van
+(1≤TEV≤73, 1≤THO≤13, 1≤TNAP≤20). A második sorban egy Y nap haab naptár szerinti
+dátuma található (1≤HEV≤52, 0≤HHO≤18, 1≤HNAP≤20, ahol HHO értéke az év végi 5
+nap esetén 0).
+Kimenet
+A standard kimenet első sorába az X nap haab naptár szerinti dátumát kell írni, a máso-
+dikba pedig az Y nap tzolkin naptár szerinti dátumát, a bemenetnek megfelelő formátumban!
+Példa
+bemenet                                         kimenet
+3 7 12                                          2 15 7
+3 2 5                                           3 12 15
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

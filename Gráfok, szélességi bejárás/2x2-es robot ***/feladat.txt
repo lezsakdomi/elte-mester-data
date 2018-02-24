@@ -1,0 +1,38 @@
+Gráfok – Szélességi bejárás                                                                   ***
+
+
+                                        2x2-es robot
+Egy 2x2-es robotot helyezünk egy szobába, megjelölve a kezdő- és a célpozícióját. A robotot el
+kell vezetni a célig, feltéve, hogy minden lépés 1 időegységbe kerül (csak vízszintesen vagy függő-
+legesen mozdulhat el 1 egységnyit), valamint, hogy úgy kell mozgatni, hogy bizonyos tárgyakat
+(1x1-es méretűeket) felemelhet és maga mögé tehet. Egy útban álló tárgy elmozdítása szintén 1
+időegységbe kerül.
+Készíts programot, amely megadja, hogy minimum mennyi idő múlva érhet a robot a kezdőpozí-
+cióból a célpozícióba!
+Bemenet
+A standard bemenet első sorában a négyzetrács magassága és szélessége (1N, M1000)
+van. A következő N sor mindegyike pontosan M karaktert tartalmaz, az üres helyeken ’.’-ot, a
+foglalt helyeken ’*’-ot, az elmozdítható tárgyak helyén '+' jelet, a robot kezdőpozícióján négy da-
+rab ’K’ betűt, célpozícióján pedig négy darab ’C’ betűt.
+Kimenet
+A standard kimenet egyetlen sorába azt a minimális időtartamot kel írni, ami alatt a robot
+a kezdőhelyről a célpozícióba érhet! Ha a robot nem érhet el a célpozícióba, akkor egyetlen 0-t
+kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6 10                                             9
+..........
+.KK.......
+.KK.......
+.+.******.
+......CC..
+......CC..
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

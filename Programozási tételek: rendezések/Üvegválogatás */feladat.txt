@@ -1,0 +1,31 @@
+Programozási tételek - rendezés                                                                *
+
+
+                                     Üvegválogatás
+Egyforma rekeszekben fehér és színes üvegpalackok vannak. Minden rekesz tele van. Szét kell
+válogatni az üvegeket úgy, hogy legfeljebb egy rekeszben legyen fehér és színes üveg is, a többi-
+ben vagy csak fehér, vagy csak színes. Egy lépésben egy fehér üveget cserélünk fel egy másik re-
+keszben lévő színes üveggel.
+Készíts programot, amely kiszámítja, hogy minimálisan hány cserére van szükség az üvegek szét-
+válogatásához!
+Bemenet
+A standard bemenet első sorában az egy rekeszben lévő üvegek száma (2≤M≤100), a má-
+sodik sorában a rekeszek száma (1≤N≤1000) van. A harmadik sor N számot tartalmaz: az egyes
+rekeszekben lévő fehér üvegek számát (0≤Ui≤M).
+Kimenet
+A standard kimenet első sorába a szétválogatáshoz szükséges cserék minimális számát kell
+kiírni!
+Példa
+Bemenet                                         Kimenet
+5                                               3
+6
+2 0 3 5 2 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,70 @@
+Sorozatok
+
+
+                                   Háromsoros vasút
+Háromsor város vasútállomásán nagy gondot okoz a szerelvények rendezése. Az állomásról to-
+vábbítandó szerelvényeket úgy kell kialakítani, hogy amikor az megérkezik a célállomásra, a sze-
+relvény végéről mindig lekapcsolható legyen az oda továbbított kocsisor. Minden továbbítandó
+szerelvény négy állomást érint, ezért a rendezés előtt minden kocsit megjelölnek az 1, 2, 3 vagy 4
+számokkal.
+A szerelvény kocsijait rendezzük át úgy, hogy a szerelvény elején legyenek az 1-essel, aztán a 2-
+essel, majd a 3-assal, végül a 4-essel megjelöltek! Kezdetben a kocsik az ábrán látható I-J pálya-
+szakaszon vannak.
+
+
+
+
+A vasúti váltók működése csak a következő hat műveletet teszi lehetővé:
+      B1: Az I-J szakaszról balról az első kocsit átmozgatni a C-F szakaszba a már ott lévő
+         kocsik mögé.
+      B2: Az I-J szakaszról balról az első kocsit átmozgatni a D-G szakaszba a már ott lévő
+         kocsik mögé.
+      B3: Az I-J szakaszban lévő első kocsit átmozgatni az E-H szakaszba a már ott lévő ko-
+         csik mögé.
+      K1: A C-F szakaszban lévő első kocsit átmozgatni és hozzáilleszteni az A-B szakaszon
+         kialakítandó rendezett kocsisor végére.
+      K2: A D-G szakaszban lévő első kocsit átmozgatni és hozzáilleszteni az A-B szakaszon
+         kialakítandó rendezett kocsisor végére.
+      K3: Az E-H szakaszban lévő első kocsit átmozgatni és hozzáilleszteni az A-B szakaszon
+         kialakítandó rendezett kocsisor végére.
+Készíts programot, amely meghatároz egy olyan műveletsort, amelynek végrehajtása a bemeneti
+kocsisor rendezését eredményezi!
+Bemenet
+A standard bemenet első sorában a kocsik száma található (1  N  1000). A második sor
+pontosan N egész számot tartalmaz egy-egy szóközzel elválasztva, ezek a rendezendő kocsik cím-
+kéi. Minden címke értéke 1, 2, 3 vagy 4.
+Kimenet
+A standard kimenetre egy megfelelő műveletsor kerüljön! Ennek megadása úgy történ-
+jen, hogy minden sorba egy-egy művelet jele, azaz „B1”, „B2”, „B3”, „K1”, „K2” vagy „K3” ke-
+rüljön, a műveletsor végére a kocsisornak rendezettnek kell lennie! Ha nem lehet rendezni a be-
+meneti kocsisort, akkor az állomány első és egyetlen sorába a NEM szót kell írni!
+
+
+
+
+                                             1. oldal
+Sorozatok
+
+
+Példa
+Bemenet                                     Kimenet
+5                                           B1
+2 3 1 4 3                                   B3
+                                            B2
+                                            K2
+                                            B1
+                                            K1
+                                            K3
+                                            B2
+                                            K2
+                                            K1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤300.
+
+
+
+
+                                         2. oldal
+

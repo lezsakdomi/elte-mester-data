@@ -1,0 +1,38 @@
+Programozás tételek – rendezés                                                                **
+
+
+                                 Konténerek rendezése
+N különböző mérető konténer van egy sorban. A konténerek méretei 1 és N közötti egész szá-
+mok. Egy lépésben adott helyről az ott lévőket lehet átrakni valamelyik szomszédos helyre, ha az
+üres, vagy az ott lévők legfelső konténere nagyobb, mint az átrakandó alsója. A legnagyobb kon-
+téner nem mozgatható.
+Írj programot, amely megad egy műveletsort, amely rendezi a konténersort a legnagyobb konté-
+nerre!
+Bemenet
+A standard bemenet első sorában a konténerek száma van (2≤N≤1000). A következő
+sorban balról jobbra haladva egy-egy konténer mérete van (1≤Mi≤N). A bemenetre teljesül, hogy
+a feladat megoldható.
+Kimenet
+A standard kimenet minden sora egy-egy művelet leírása legyen a végrehajtásuk sorrend-
+jében! Minden műveletet P L formában kell megadni, ahol P annak a helynek a sorszáma
+(1≤P≤N), amelyről az ott levő konténeroszlopot mozgatjuk, L pedig a ’B’ karakter, ha balra, illet-
+ve a ’J’ karakter, ha jobbra mozgatjuk.
+Példa
+bemenet                                          kimenet
+5                                                2   J
+1 4 5 2 3                                        4   J
+                                                 5   B
+                                                 1   J
+                                                 4   B
+                                                 2   J
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                             1. oldal                     2017.03.28. 14:00-24:00
+

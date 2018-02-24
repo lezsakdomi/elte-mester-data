@@ -1,0 +1,30 @@
+Kombinatorikai algoritmusok                                                                 **
+
+
+                                  Ügyességi verseny
+Egy ügyességi versenyen egymás után N különböző nehézségű feladatot kell megoldani. A szer-
+vezők nem szeretnék sem azt, hogy a feladatok fokozatosan nehezedjenek, sem azt, hogy fokoza-
+tosan könnyebbek legyenek. Azt találták ki, hogy olyan sorrendbe rendezik a feladatokat, amiben
+pontosan K-szor fordul elő az, hogy egy feladat nehezebb az őt közvetlenül megelőzőnél.
+Készíts programot, amely megadja, hogy ezt hányféleképpen tehetik meg! Mivel ez a szám na-
+gyon nagy is lehet, ezért az eredményt MOD 20160322 kell megadni!
+Bemenet
+A standard bemenet első sorában a feladatok száma (1≤N≤100) és a K érték (0≤K≤N)
+van.
+Kimenet
+A standard kimenet első sorába azon sorrendek számát kell kiírni (MOD 20160322), ame-
+lyekben pontosan K-szor fordul elő az, hogy egy feladat nehezebb az őt közvetlenül megelőzőnél!
+Példa
+Bemenet                                        Kimenet
+4 2                                            11
+Magyarázat
+1243 1324 1342 1423 2134 2314 2341 2413 3124 3412 4123
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

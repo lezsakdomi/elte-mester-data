@@ -1,0 +1,41 @@
+Rekurzív adatszerkezetek                                                                       *
+
+
+                                       Harmadolás
+A Magyarországot elkerülő autópálya építésével megbíztak egy vállalkozót X forintért. A vállalko-
+zó két dolgot tehet: ha el tudja végezni a munkát, akkor a pénzt megtartja magának; ha pedig
+nem, akkor a munkát és a pénzt három egyenlő részre osztja, egyet megtart, kettőt pedig két új
+vállalkozónak ad. (Ebből következik, hogy senki sem kaphat kétszer megbízást.) Az újabb vállal-
+kozók ugyanezt a stratégiát követik.
+Készíts programot, amely megadja, hogy hányan vannak az olyan vállalkozók, akiknél kevesebb
+pénzt senki sem kapott, azok, akiknél többet senki nem kapott, valamint azok, akik nem adták to-
+vább a munkát másoknak!
+Bemenet
+A standard bemenet első sorában a megbízások (munka- és pénzharmadolások) száma van
+(0N5000). A következő N sor mindegyike három számot tartalmaz, egy-egy szóközzel elvá-
+lasztva: a munkát harmadoló vállalkozás sorszámát (1S2N+1), valamint a harmadrészt meg-
+kapó két újabb vállalkozás sorszámát (1A,B2N+1). Az 1-es sorszámú vállalkozás kapja a ki-
+induló összeget.
+Kimenet
+A standard kimenet első sorába azon vállalkozók számát kell írni, akiknél kevesebb pénzt
+senki sem kap az autópálya építés során; a második sorba azok számát, akiknél többet nem kap
+senki, a harmadik sorba pedig azok számát, akik nem adták tovább a munkájukat senkinek! Mind
+a három sorba a darabszám mögé, egy-egy szóközzel elválasztva ki kell írni a megfelelő tulajdon-
+ságú vállalkozók sorszámát növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+4                                               3 7 8 9
+1   2   3                                       2 1 3
+2   4   5                                       5 3 5 6 8 9
+4   6   7
+7   8   9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a megbízások száma N≤500
+
+
+
+
+                                            1. oldal
+

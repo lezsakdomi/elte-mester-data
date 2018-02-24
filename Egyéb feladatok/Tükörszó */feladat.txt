@@ -1,0 +1,29 @@
+Egyéb                                                                                              *
+
+
+                                           Tökörszó
+Egy szóból a tükörképét úgy kapjuk meg, hogy a betűk sorrendjét megfordítjuk (például: mád –
+dám). A jó tükörszóban azonban a két vagy három karakterből álló mássalhangzók jó sorrendben
+maradnak (például ősz – sző). Sőt a hosszú többjegyű mássalhangzókat is meg kell hagyni
+(például: hosszú – ússzoh).
+Készíts programot, amely beolvas egy szót, majd kiírja a tükörszavát!
+Bemenet
+A standard bemenet egyetlen, a magyar ábécé kisbetűiből álló legfeljebb 1 000 000 karakter
+hosszúságú szót tartalmaz.
+Kimenet
+A standard kimenetre kell írni a beolvasott szó tükörszavát! A több karakterből álló
+betűk felismerésénél a lehető leghosszabb illesztés szabályát kell alkalmazni! Ez azt jelenti, hogy a
+karaktersorozatot balról jobbra elemezve midig a lehető legtöbb karaktert kell egy betűnek
+tekinteni!
+Példa
+Bemenet                                           Kimenet
+dzsszzs                                           zsszdzs
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

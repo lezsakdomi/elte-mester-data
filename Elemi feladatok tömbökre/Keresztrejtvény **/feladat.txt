@@ -1,0 +1,44 @@
+Elemi feladatok tömbökre                                                                       **
+
+
+                                     Keresztrejtvény
+Adott egy keresztrejtvény ábrája táblázatos formában (fehér és fekete kockák).
+Írj programot, amely beleírja a megfelelő fehér kockákba a keresztrejtvényeknél szokásos számo-
+kat, amelyekhez majd a megfejtendő kérdéseket kell adni! Ezenkívül készíts egy listát, hogy melyik
+számokhoz kell vízszintesen, illetve függőlegesen kérdéseket adni!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a keresztrejtvény sorainak N és
+oszlopainak M számát (1≤N,M≤70). A következő N sor mindegyikében egy M karakterből álló
+szöveg helyezkedik el; fehér kocka esetén ’0’, fekete kocka esetén ’1’ karakterrel.
+Kimenet
+A standard kimenet első N sorában kell a számokkal kitöltött keresztrejtvényt kiírni oly
+módon, hogy mindegyik sorban M érték lehet. Az i. sor j. értéke a következő:
+       0 számozatlan fehér kocka esetén,
+       >0 számozott fehér kocka esetén,
+       ’#’ fekete kocka esetén.
+Az N+1. sorba kerüljön a vízszintes meghatározásokhoz tartozó számok VDB darabszáma. Az
+N+2. sorban VDB darab, szóközzel elválasztott egész szám jelenik meg, a vízszintes meghatározá-
+sokhoz tartozó kérdések számai növekvő sorrendben. Az N+3. sorba kerüljön a függőleges meg-
+határozásokhoz tartozó számok FDB darabszáma. Az N+4. sorban FDB darab, szóközzel elvá-
+lasztott egész szám jelenik meg, a függőleges meghatározásokhoz tartozó kérdések számai növek-
+vő sorrendben.
+Példa
+Bemenet                                          Kimenet
+4 5                                              1   #   2   0   3
+01000                                            4   0   0   #   0
+00010                                            0   #   #   5   0
+01100                                            6   0   0   0   0
+00000                                            4
+                                                 2   4 5 6
+                                                 4
+                                                 1   2 3 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 70%-ában N,M ≤10
+
+
+
+
+                                             1. oldal
+

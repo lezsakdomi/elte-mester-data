@@ -1,0 +1,40 @@
+Nemes Tihamér OITV 2017                   Második forduló          2. korcsoport: 9-10. osztályosok
+
+
+                               Csak egy bolygón volt élet
+Egy messzi-messzi galaxisban két szomszédos bolygón többször is kialakult élet. Időszakaszok-
+nak nevezzük azokat a lehető leghosszabb időintervallumokat, amikor folyamatosan volt élet, az-
+az az (1,2) pár azt jelenti, hogy az 1. és a 2. évben volt élet. A bemenet ugyanezen bolygóján, illet-
+ve a kimeneten ezután a (3,3) pár nem szerepelhet, az (1,2) és a (3,3) pár helyett csak az (1,3) a he-
+lyes.
+Készíts programot, amely megadja, hogy mikor volt pontosan egy bolygón élet!
+Bemenet
+A standard bemenet első sorában a két bolygón levő időszakaszok száma van (1≤A,
+B≤100 000), amikor volt rajtuk élet. A következő A sorban az első, az azt követő B sorban a
+második bolygó időszakaszai találhatók, amikor volt élet, mindegyik növekvő sorrendben:
+(1≤Kezdi≤Végi≤1 000 000 000).
+Kimenet
+A standard kimenet első sorába azon időszakaszok D számát kell írni, amikor pontosan
+egy bolygón volt élet! A következő D sor ezen időszakaszok kezdeteit és végeit tartalmazza, nö-
+vekvő sorrendben!
+Példa
+bemenet                                           kimenet
+2 2                                               3
+1 5                                               1 2
+12 14                                             6 10
+3 10                                              12 18
+15 18
+
+
+
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                               1. oldal                      2017.01.07. 830-1330 óra
+

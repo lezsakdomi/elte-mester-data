@@ -1,0 +1,33 @@
+Szimuláció                                                                                      ***
+
+
+                               Hangya az egységkockán
+Egy egységkocka élein egy hangya mászik. Kezdetben a (0,0,0) pontban van és a z-tengely irányá-
+ba néz, azaz biztosan a (0,0,1) pontig fog haladni rajta. Ha egy él végére ér, akkor a két lehetséges
+továbbhaladási irány közül vagy a jobbra, vagy a balra levő élt választja.
+Készíts programot, amely az irányok sorozata alapján megadja a hangya útját!
+Bemenet
+A standard bemenet első sorában a továbbhaladási irányok száma van (0N1000). A
+második sorban a haladási irányok vannak: pontosan N betű, a következő él végén a hangya J betű
+hatására jobbra, a B betű hatására pedig balra fordul.
+Kimenet
+A standard kimenet N+2 sorból álljon, melyek a hangya pozícióit sorolják fel az út során!
+Minden sor három számot tartalmazzon, a hangya x-, y-, illetve z-koordinátáját, egy-egy szóközzel
+elválasztva!
+Példa
+Bemenet                                           Kimenet
+4                                                 0   0   0
+JJBJ                                              0   0   1
+                                                  1   0   1
+                                                  1   0   0
+                                                  1   1   0
+                                                  0   1   0
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,52 @@
+                                                                                                                        **
+
+
+                                                      Ládapakolás
+     Egy üzem ládapakoló robotot működtet egy gyártósor végénél. A robot feladata, hogy a futószalagon sorban,
+egymás után érkező tárgyakat ládákba rakja. Egyidejűleg pontosan két láda lehet nyitva. A rendelkezésre álló
+ládák egyformák, és egy ládába csak egy adott súlyhatárig lehet pakolni. A robot csak a következő 4 utası́tás
+végrehajtására képes:
+
+   1. Tegye a soron következő tárgyat az 1-es ládába
+   2. Tegye a soron következő tárgyat az 2-es ládába
+   3. Csukja be az 1-es ládát, és nyisson a helyén egy új, üres ládát
+
+   4. Csukja be az 2-es ládát, és nyisson a helyén egy új, üres ládát
+
+     A robot egy tárgyat termésetesen csak akkor tehet bele egy ládába, ha az új tárgy belehelyezésével nem
+lépjük át a súlyhatárt. Adottak a futószalagon egymást követő tárgyak súlyai, és a ládák súlyhatára, amely
+minden ládára ugyanaz.
+
+ Feladat
+Olyan programot kell ı́rni, amely kiszámı́tja, hogy minimálisan hány ládára van szükség, hogy a robot az összes
+tárgyat ládákba rakja!
+
+ Bemenet
+A standard bemenet egész számokat tartalmaz. Az első sorban a ládák L súlyhatára (1 ≤ L ≤ 10000) és a
+pakolandó tárgyak N száma található (1 ≤ N ≤ 10000). A következő N sor mindegyike egy tárgy súlyát
+tartalmazza a futószalagon, a robothoz érkezés sorrendjében. Minden tárgy súlya legalább 1, és legfeljebb L.
+
+ Kimenet
+A standard kimenet egy sorból áll, amely az összes tárgy ládákba pakolásához szükséges ládák minimális számát
+tartalmazza.
+
+ Példa
+ Bemenet                                                         Kimenet
+ 8 6                                                             3
+ 4
+ 2
+ 5
+ 3
+ 5
+ 4
+
+
+ Korlátok
+Időimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                          1 . oldal
+

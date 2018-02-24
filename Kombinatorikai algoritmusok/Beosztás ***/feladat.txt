@@ -1,0 +1,43 @@
+Kombinatorikai algoritmusok                                                                   ***
+
+
+                                          Beosztás
+Egy tehetségkutató versenyre N ember jelentkezett. A zsűri K napon át hallgatja meg a jelentke-
+zőket, naponta legalább egyet, de biztosan a jelentkezések sorrendjében. A zsűrielnök kíváncsi ar-
+ra, hogy hány ilyen beosztás lehetséges, s ha egy beosztást már ismer, akkor valamilyen szisztema-
+tikus módszerrel előállíthatja-e az előzőt, illetve a következőt. Egy beosztás akkor legyen későbbi
+egy másik beosztásnál, ha a naponkénti létszámai sorozata lexikografikusan kisebb, mint a másik
+beosztásé.
+Készíts programot, amely kiszámítja, hogy hány ilyen beosztás van, valamint egy adott beosztásra
+megadja a lexikografikusan következő és előző beosztást!
+Bemenet
+A standard bemenet első sorában két egész szám van, a jelentkezők száma (1≤N≤50) és
+a napok száma (1≤K≤10). A második sor pontosan K egész számot tartalmaz (egy-egy szóköz-
+zel elválasztva), az egyes napokon egy beosztásban meghallgatott jelentkezők száma.
+Kimenet
+A standard kimenet állomány első sorába a lehetséges beosztások számát kell írni! A má-
+sodik sorba a bemenetről kapott beosztást lexikografikusan megelőző, a harmadik sorba pedig a
+lexikografikusan követő beosztás kerüljön! Az előzőt és a következőt ciklikusan értjük, azaz az
+utolsót az első követi, az elsőt az utolsó előzi meg.
+Példa
+Bemenet                                          Kimenet
+5 3                                              6
+1 3 1                                            2 1 2
+                                                 1 2 2
+Magyarázat a példához
+1. 2. 3. 4. 5.
+1. 2. 3. 4. 5.
+1. 2. 3. 4. 5.
+1. 2. 3. 4. 5.
+1. 2. 3. 4. 5.
+1. 2. 3. 4. 5.
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

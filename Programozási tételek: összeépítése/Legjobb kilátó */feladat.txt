@@ -1,0 +1,46 @@
+Programozási tételek összeépítése                                                                                                                      *
+
+
+                                                           Legjobb kilátó
+Egy repülőgéppel Európából Amerikába repültünk. Az út során egyenlő távolságonként mértük a
+felszín tengerszint feletti magasságát. Az első és utolsó mérést vagy kontinens, vagy tenger fölött
+mértük. Pozitív magasságot ott mértünk, ahol szárazföld volt, 0 magasságot pedig ott, ahol tenger.
+                                                                       Ábra
+ m110
+ m100
+  m90
+  m80
+  m70
+  m60
+  m50
+  m40
+  m30
+  m20
+  m10
+   m0
+        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+
+
+
+Készíts programot, amely meghatároz egy olyan szárazföldi pontot, ahonnan a legtöbb mérési pont
+látható!
+Bemenet
+A standard bemenet első sorában egy egész szám található, ennyi a mérések száma
+(2≤N≤10000). A második sorban N egész szám szerepel egy-egy szóközzel elválasztva, mindegyik
+egy méterben mért tengerszint feletti magasság (0≤M<9000), melyek egymást időrendben követik.
+Kimenet
+A standard kimenet első és egyetlen sorába egy olyan szárazföldi pontot jelző mérés sor-
+száma szerepeljen, ahonnan a legtöbb mérési pont látható, vagy 0, ha nem mutatható ki szárazföld!
+Példa
+bemenet                                                                    kimenet
+12                                                                         6
+9 2 1 0 0 7 2 0 0 1 2 9
+Korlátok
+Időlimit: 0.5 mp
+Memórialimit: 1 MB
+
+
+
+
+                                                                      1. oldal
+

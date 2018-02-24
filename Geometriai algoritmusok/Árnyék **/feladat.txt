@@ -1,0 +1,60 @@
+Egyéb                                                                                           **
+
+
+                                            Árnyék
+Egy látképet egyenes szakaszok sorozatával adunk
+meg. A látkép felett a függőleges iránnyal az
+óramutató járása szerint 𝛼 szöget bezárva, végtelen
+távolságban van a Nap.
+Ha a napsugarak egy egyenesbe esnek egy felülettel,
+akkor megvilágítják. Add meg, hogy a Nap
+megvilágítja-e a teljes látképet!
+Ha nem, akkor add meg a megvilágítás irányából az
+első olyan szakasz sorszámát, amelyet a Nap nem
+világít meg!
+Add meg az összes olyan szakasz sorszámát,
+amelyek teljesen árnyékban vannak, illetve
+amelyeknek valamely részét a Nap nem világítja meg!
+Bemenet
+A standard bemenet első sorában M (2M1000) és az 𝛼 (-90<𝛼<90) egész számok vannak
+egy szóközzel elválasztva, a látkép töréspontjainak száma, beleértve az első és az utolsó pontot is,
+valamint a napsugár merőlegessel bezárt szöge.
+A következő M sorban soronként két egész szám Xi (0≤Xi≤100 000) és Hi
+(0≤Hi≤1000), egy szóközzel elválasztva: az i-edik töréspont Hi magasságban, az Xi
+vízszintes pozíción van, 1iM; (1iM-1 esetén teljesül Xi+1> Xi); egy egyenes szakaszt
+két egymás utáni pont ad meg.
+Kimenet
+A standard kimenet első sorába az IGEN szó kerüljön, ha a teljes látkép meg van világítva, NEM,
+ha nem. IGEN esetén a kimenet egy sorból áll, NEM esetén pedig:
+A 2. sorba az első olyan szakasz sorszáma kerüljön, ami teljes egészében árnyékban van.
+A 3. sorban az összes olyan szakasz sorszáma legyen felsorolva növekvő sorrendben, amelyek
+teljes egészében árnyékban vannak.
+A 4. sorban pedig összes olyan szakasz sorszáma növekvő sorrendben, amelyek részben meg
+vannak világítva, részben pedig árnyékban vannak.
+Példa
+Bemenet                                          Kimenet
+9 -30                                            NEM
+10 10                                            3
+20 40                                            3 7
+30 30                                            4 8
+35 15
+50 15
+60 25
+80 30
+90 10
+100 10
+
+
+                                              1. oldal
+Egyéb                             **
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                       2. oldal
+

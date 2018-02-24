@@ -1,0 +1,47 @@
+Gráfok – Szélességi bejárás                                                                   **
+
+
+                                          Karaván
+Egy sivatagban N város található, melyek között az év egy időszakában naponta indulnak karavá-
+nok. Ezen az időszakon kívül azonban egyetlen sem indul.
+Készíts programot, amely meghatározza két adott, A és B városra és H határidőre a következőket:
+       Legkorábban mikorra érhetünk az A városból a B városba;
+       Legalább hány nap kell ahhoz, hogy az A városból a B városba érjünk, ha nincs megkötés
+        sem az idulási, sem az érkezési időre;
+       Legkésőbb melyik napon kell elindulni az A városból, hogy legkésőbb a megadott H határ-
+        időig a B városba érjünk.
+Bemenet
+A standard bemenet első sorában a városok száma (1N500) és a karaván-kapcsolatok
+száma (1M50000) van. A következő M sor mindegyikében két város-sorszám (X, Y) és két
+napsorszám (1PQ365) van egy-egy szóközzel elválasztva, ami azt jelenti, hogy az X. városból
+az Y városba az év P. és Q. napja között (P-t és Q-t beleértve) indulnak karavánok. Az állomány
+utolsó sorában az indulási (A) és az érkezési (B) hely sorszáma van, valamint annak a napnak az
+éven belüli H sorszáma, amikor legkésőbb meg kell érkezni a B. városba, egy-egy szóközzel elvá-
+lasztva. A karavánok mindig reggel indulnak és még aznap este megérkeznek a célállomásra.
+Kimenet
+A standard kimenet összesen három sort tartalmazzon. Minden sorban egyetlen szám sze-
+repeljen: a részfeladat megoldásának értéke. Ha egy részfeladatnak nem létezik megoldása, akkor a
+–1 számot kell kiírni.
+Példa
+Bemenet                                         Kimenet
+5   7                                           3
+1   2   2 7                                     2
+1   5   2 4                                     7                  2-7            1-2
+2   3   1 2                                                  1              2             3
+2   5   8 9                                                              8-9
+                                                                                  1-2
+3   4   6 7                                                                                6-7
+                                                                  2-4
+5   4   3 9
+4   2   1 2                                                                 5    3-9
+                                                                                          4
+1   4   10
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

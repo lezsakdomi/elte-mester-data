@@ -1,0 +1,45 @@
+Dinamikus programozás                                                                        **
+
+
+                                     Túlélőverseny
+A túlélőverseny résztvevőinek az a feladata, hogy minél több pontot gyűjtsenek csapatuk számára.
+Az induláskor kapnak egy térképet, melyen be van jelölve kezdeti pozíciójuk, az állomások helye,
+valamint az, hogy az egyes állomások látogatása hány pontot ér. Az a cél, hogy minél több állo-
+mást látogassanak meg úgy, hogy az állomásokért kapott pontok összege maximális legyen.
+A térkép egy négyzetrácsos hálón van megadva, és az állomások koordinátái pozitív egész szá-
+mok. A kiindulási pont koordinátái (0,0). A csapat egy (X1,Y1) koordinátájú állomástól minden
+olyan (X2,Y2) koordinátájú állomáshoz mehet, amelyre X1≤X2 és Y1≤Y2.
+Készíts programot, amely kiszámít egy olyan útvonalat, amelyen haladva a lehető legtöbb pont
+gyűjthető össze!
+Bemenet
+A standard bemenet első sorában az állomások száma van (1≤N≤5000). A következő N
+sor mindegyike egy állomás (X,Y) koordinátáit és az állomás meglátogatásáért járó P pontot tar-
+talmazza (0≤X,Y≤10 000,1≤P≤2000).
+Kimenet
+A standard kimenet első sorába az elérhető maximális pontszámot kell írni! A második
+sorban egy olyan útvonalat kell megadni, amelyen haladva elérhető a maximális pontszám! Az út-
+vonal az állomások sorszámait tartalmazza abban a sorrendben, ahogy azokat a csapat megláto-
+gatja!
+Példa
+Bemenet                                        Kimenet
+5                                              20
+3   1   10                                     2 3 4
+1   2   5
+2   4   12                                                                           3
+4   5   3
+                                                                           12
+5   3   9
+                                                                                         9
+Korlátok
+                                                                       5
+Időlimit: 0.2 mp.
+                                                                                10
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤500. Helyes első sorral a
+pontok 40%-a szerezhető meg.
+
+
+
+
+                                            1. oldal
+

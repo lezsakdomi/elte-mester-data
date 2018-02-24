@@ -1,0 +1,30 @@
+Számelméleti algoritmusok                                                                ***
+
+
+                                   Abszolút prímek
+Hans-Egon Richert tanulmányozta először azokat a prímszámokat, amelyeknek számjegyeit bár-
+milyen sorrendben felírva is prímeket kapunk. Ezeket abszolút vagy permutálható prímeknek ne-
+vezzük.
+Készíts programot, amely kiszámítja M és N közötti legkisebb abszolút prímet, és annak permu-
+tációit!
+Bemenet
+A standard bemenet első sorában M, második sorában N található (1  M < N  1000).
+Kimenet
+A standard kimenet első sorába kerüljön az M és N közötti legkisebb abszolút prím
+(M  P  N ) , második sorába pedig ennek összes permutációja (önmagát is beleértve) növekvő
+sorrendben, egy-egy szóközzel elválasztva! Ha M és N között nincs egyetlen abszolút prím sem,
+akkor mindkét sorban egyetlen 0 szerepeljen!
+Példa
+Bemenet                                       Kimenet
+25                                            31
+35                                            13 31
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában M,N≤200.
+
+
+
+
+                                           1. oldal
+

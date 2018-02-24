@@ -1,0 +1,58 @@
+Gráfok – Szélességi bejárás                                                                   ***
+
+
+                                              Sziget
+Egy, a tengeren levő sziget sorsát nagy mértékben befolyásolja a tengerszint változása. A tenger-
+szint emelkedése esetén a sziget területe csökken, a tengerszint csökkenése esetén pedig növek-
+szik. A vízszint emelkedésekor az alacsonyan fekvő területeket elönti a tenger, csökkenésekor pe-
+dig a magasabban fekvő területek szárazra kerülhetnek, ha a víz le tud folyni róluk. (A víz mozgá-
+sakor minden négyzet 4 oldalszomszédját kell figyelembe venni.)
+A szigetet tartalmazó területet kis négyzetekre osztjuk, megadva minden négyzeten a talaj eredeti
+tengerszint feletti magasságát (ez a szám negatív ott, ahol jelenleg tenger van – ilyenkor a tenger
+mélységét jelenti). Feltehetjük, hogy a szélső négyzetek a legnagyobb tengerszint csökkenés esetén
+is vízzel fedettek maradnak.
+Készíts programot, amely a terület magasságadatai és a tengerszint változása alapján kiszámítja a
+sziget területét (a vízzel nem fedett négyzetek számát)!
+Bemenet
+A standard bemenet első sorában a terület mérete (N sor, M oszlop, 1N,M200) és a
+tengerszint változások száma (1K100) van. A következő N sor mindegyikében M egész szám
+van, az egyes területek eredeti tengerszint feletti magassága. Az utolsó K sor egy-egy pozitív vagy
+negatív egész számot tartalmaz, amely a tengerszint növekedését vagy csökkenését írja le.
+Kimenet
+A standard kimenet K+1 sorába egy-egy egész számot kell írni! Az első sor a sziget terüle-
+tét (azaz a vízzel nem fedett négyzetek számát) tartalmazza a kiinduló állapotban! A további K
+sorban az egyes tengerszintváltozások utáni sziget terület értéke legyen!
+Példa
+Bemenet                                               Kimenet
+8 10 3                                                45
+-5 -5 -5      -5    -5   -5   -5   -5   -5   -5       13
+-5 -5 +1      +2    +1   +1   +1   +1   -5   -5       0
+-5 +1 +1      +9    +9   +9   +1   +1   +1   -5       9
+-5 +1 +1      +9    +4   +4   +9   +1   +1   -5
+-5 +1 +1      +9    +4   +4   +9   +1   +1   -5
+-5 -5 +1      +4    +9   +9   +4   +4   +1   -5
+-5 +0 +0      +1    +1   +1   +1   +1   +1   -5
+-5 -5 -5      -5    -5   -5   -5   -5   -5   -5
+5
+8
+-5
+Magyarázat a példához
+Egy lapos partú szigetet látunk, amelyen egy magas, gyűrű alakú hegygerinc zár körbe egy közepes
+magasságú völgyet. (A +0 magasságú pont kezdetben még szárazföld.) A tengerszint háromszor
+változik, kétszer nő, majd egyszer csökken. 5 méter növekedés elönti a partot, de a hegyekkel kö-
+rülzárt terület szárazon marad. Újabb 8 méter növekedés után a teljes sziget elmerül. 5 méter
+csökkenés után a hegyek már kilátszanak, de a belső völgyből nem tud lefolyni a víz.
+Korlátok
+Időlimit: 0.4 mp.
+
+
+                                                  1. oldal
+Gráfok – Szélességi bejárás              ***
+
+Memórialimit: 32 MB
+
+
+
+
+                              2. oldal
+

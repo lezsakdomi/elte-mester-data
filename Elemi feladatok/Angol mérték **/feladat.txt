@@ -1,0 +1,33 @@
+Elemi feladatok                                                                            **
+
+
+                                     Angol mérték
+Az angol-amerikai mértékegységrendszerben hosszmértéknek a mienktől eltérő rendszert is hasz-
+nálnak.
+                                 mérföld           ≡ 1760 yard
+                                 yard              ≡ 3 láb
+                                 foot (láb)        ≡ 1/3 yard
+                                 inch (hüvelyk) ≡ 1/12 láb
+
+Írj programot, amely egy angol mértékegységrendszerben megadott hosszúságot összead, illetve
+kivon!
+Bemenet
+A standard bemenet két sorában a két – pozitív – hosszúság van: a mérföld, a yard, a láb
+és a hüvelyk értéke egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenetre két sort kell írni, az első sorba a beolvasott hosszúságok összegét,
+a másodikba a különbségét (mindig az elsőből vonjuk ki a másodikat), a bemenet szerinti formá-
+tumban! Ha a különbség negatív, akkor a második sor elejére egy mínusz jelet kell kiírni!
+Példa
+Bemenet                                          Kimenet
+2 850 2 7                                        4 21 0 11
+1 930 1 4                                        0 1680 1 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

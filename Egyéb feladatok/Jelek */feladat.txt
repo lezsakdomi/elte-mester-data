@@ -1,0 +1,47 @@
+Egyéb                                                                                           *
+
+
+                                              Jelek
+A csillagászok naponta észlelnek távoli égitestekről érkező jelsorozatokat. Minden jelsorozat egy-
+egy bitsorozattal azonosítható. Megfigyelték, hogy az A és a B égitestről érkező jelek nagyon sza-
+bályosak.
+Az A égitest esetén:
+   A1.     A 0 és a 01 két észlelt jelsorozat.
+   A2.     Ha az U észlelt jelsorozat, akkor az U0U1 és az U1U0 is észlelt jelsorozat.
+   A3.     Minden észlelt jelsorozat megkapható az A1. és A2. szabályok véges számú többszöri
+           alkalmazásával.
+A B égitest esetén:
+   B1.     A 01 egy észlelt jelsorozat.
+   B2.     Ha az U észlelt jelsorozat, akkor a 0U1 is észlelt jelsorozat.
+   B3.     Ha az U és a V észlelt jelsorozatok, akkor az UV is észlelt jelsorozat.
+   B4.     Minden észlelt jelsorozat megkapható a B1., B2. és B3. szabályok véges számú több-
+           szöri alkalmazásával.
+Készíts programot, amely meghatározza, hogy a vizsgált jelsorozatok melyik égitestről érkezhet-
+tek!
+Bemenet
+A standard bemenet első sorában a vizsgálandó jelsorozatok száma (1N10 000) van. A
+következő N sor mindegyikében egy-egy jelsorozat van, amelynek hossza nem nagyobb, mint
+1000, és csak a 0 és az 1 karaktereket tartalmazhatja.
+Kimenet
+A standard kimenetre pontosan N sort kell írni! Az i-edik sor tartalma az i-edik vizsgált
+jelsorozathoz tartozó válasz, amely egy vagy két karakterből álló szöveg:
+        A, ha a jelsorozat csak az A égitestről érkezhetett,
+        B, ha a jelsorozat csak a B égitestről érkezhetett,
+        AB, ha a jelsorozat az A és a B égitestről egyaránt érkezhetett,
+        C, ha a jelsorozat sem az A, sem a B égitestről nem érkezhetett.
+Példa
+Bemenet                                           Kimenet
+4                                                 A
+0100                                              C
+101011                                            B
+000111                                            AB
+010011
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

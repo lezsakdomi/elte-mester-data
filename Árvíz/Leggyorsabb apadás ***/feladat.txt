@@ -1,0 +1,50 @@
+Árvíz                                                                                      ****
+
+
+                                 Leggyorsabb apadás
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza a leggyorsabb apadás helyét, azaz azt a helyet, ahol leg-
+közelebb van egymáshoz harmadfokú készültségű és árvízmentes hely!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy-egy mérési eredményt tartalmaz (0Ai3000).
+Kimenet
+A standard kimenet első sorába a harmadfokú árvízvédelmi készültségű folyószakaszok K
+darabszámát kell írni (0, ha nincs ilyen folyószakasz, ebben az esetben nincsenek további sorok)!
+A második sorba ezen K folyószakasz kezdetének és végének a sorszáma kerüljön! A 3. sorba az
+árvízmentes folyószakaszok M darabszámát kell írni (0, ha nincs ilyen folyószakasz, ebben az
+esetben nincsenek további sorok)! A 4. sorba ezen M folyószakasz kezdetének és végének a sor-
+száma kerüljön! Az 5. sorba azon harmadfokú árvízvédelmi készültségű folyószakaszok P darab-
+számát kell írni, amelyeket követ még árvízmentes folyószakasz anélkül, hogy közben lenne még
+harmadfokú árvízvédelmi készültségű szakasz (0, ha nincs ilyen, ebben az esetben nincsenek to-
+vábbi sorok)! A 6. sorba ezen P folyószakasz végének és az azt követő árvízmentes szakasz kez-
+detének a sorszáma kerüljön! Végül a 7. sor tartalmazza az egymáshoz legközelebbi harmadfokú
+készültségű és árvízmentes folyószakaszok kezdetét és végét! Az egyes részfeladatoknál az árvize-
+ket kezdetük sorszáma szerinti sorrendben kell kiírni!
+Példa
+Bemenet              Kimenet
+8                    2               1400
+1100                 1   2 7 7       1200
+1050                 2
+870                  4   6 8 8       1000
+700                  2                800
+720                  2   4 7 8        600
+720                  7   7 8 8
+1200                                  400
+600                                   200
+
+Korlátok                                0
+                                            1         2    3    4       5      6      7      8
+Időlimit: 0,1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                1. oldal
+

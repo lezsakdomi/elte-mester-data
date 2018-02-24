@@ -1,0 +1,45 @@
+Szimuláció                                                                                    *
+
+
+                                    Vonatok szemben
+A Kukutyin-Piripócs útvonalon naponta egy-egy vonat közlekedik, az egyik Kukutyinból megy
+Piripócsra, a másik pedig Piripócsról Kukutyinba. Minden állomáson van kitérő, de az állomások
+közötti szakaszok csak egyetlen vágányból állnak. Egy szakaszon egyszerre csak egy vonat halad-
+hat. Ha egy szakasz foglalt, a vonatnak az állomáson kell megvárnia a szembe jövő vonatot. Azo-
+nos továbbindulási idő esetén a Kukutyinból jövő vonatnak van elsőbbsége, a Piripócs felől érke-
+zővel szemben.
+Készíts programot, amely soronként kiírja az alábbiakat:
+    Annak az állomásnak a sorszámát, ahol a két vonat találkozik. (Kukutyin a 0., Piripócs az
+     N+1. állomás.)
+    Annak a végállomásnak a nevét, amelyikből jövő vonatnak várakoznia kell a másikra. A sor
+     legyen üres, ha nem kell várnia egyiknek sem!
+    A várakozási időt percben.
+    A Kukutyinból jövő vonat indulási idejét az egyes állomásokról, valamint a végállomásra
+     érkezés idejét (egy sorba, szóközökkel elválasztva).
+    A Piripócsról jövő vonat indulási idejét az egyes állomásokról, valamint a végállomásra ér-
+     kezés idejét (egy sorba, szóközökkel elválasztva).
+Bemenet
+A standard bemenet első sora a kukutyini indulást tartalmazza (óra és perc), a második pe-
+dig a piripócsit. A harmadik sorban a két végállomás közötti állomások száma (1N100) talál-
+ható, a következő N+1 sorban pedig az I–1. és az I. állomás közötti távolság megtételéhez szük-
+séges idő és az I. állomáson várakozással eltöltendő idő percben.
+Kimenet
+A standard kimenet 5 sorból álljon melyek a fentebb leírtakat tartalmazzák!
+Példa
+Bemenet                                      Kimenet
+11   20                                      2
+11   30                                      Piripócs
+2                                            2
+10   5                                       11 20 11 35 11 50 11 58
+10   5                                       11 30 11 45 12 0 12 10
+8
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

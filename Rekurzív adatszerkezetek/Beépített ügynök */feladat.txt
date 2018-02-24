@@ -1,0 +1,40 @@
+Rekurzív adatszerkezetek                                                                         *
+
+
+                                     Beépített ügynök
+Egy kémszervezetben mindenkinek legfeljebb 2 közvetlen beosztottja lehet, s mindenkinek is-
+merjük a közvetlen felettesét. Egyetlen tagnak nincs felettese, ő a főnök. A szervezetbe egy ügy-
+nököt szeretnénk beépíteni, a következő két feltétellel:
+     a lehető legközelebb legyen a főnökhöz,
+     ha több legközelebbi hely is van, akkor azt kell választani közvetlen főnöknek, akinek a leg-
+      több – nem csak közvetlen – beosztottja van!
+Készíts programot, amely megadja, hogy ki legyen a beépített ügynök közvetlen főnöke!
+Bemenet
+A standard bemenet első sorában a tagok száma (1N10 000) van. A következő N-1
+sor mindegyike két számot tartalmaz (1XYN), ami azt jelenti, hogy X-nek Y a közvetlen felet-
+tese.
+Kimenet
+A standard kimenet egyetlen sorába annak a tagnak a sorszámát kell írni, aki a feltételek-
+nek megfelelően a beépített ügynök közvetlen felettese lesz! Ha több megoldás is van, akkor a
+legkisebb sorszámút kell kiírni!
+Példa
+Bemenet                                           Kimenet
+                                                                                1
+6                                                 2
+2   1
+                                                                          2            3
+3   1
+4   2
+5   4                                                                     4            6
+6   3
+Korlátok
+                                                                          5
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤500
+
+
+
+
+                                              1. oldal
+

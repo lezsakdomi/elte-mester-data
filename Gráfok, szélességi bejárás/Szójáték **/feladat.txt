@@ -1,0 +1,44 @@
+Gráfok – Szélességi bejárás                                                                     **
+
+
+                                           Szójáték
+A Cserebere logikai szójátékot egy szótár alapján játszhatjuk. A játék alapja: egy kiinduló szóból
+egy szósorozatot kell előállítani, amely csak a szótárban levő szavakból állhat, s a sorozat egymást
+követő szavai egy elemi átalakítással kaphatók az őket megelőző szóból. Kétféle szabály alkal-
+mazható átalakításra:
+   A. szabály: egy betű kicserélése egy másikra;
+   B. szabály: egy betű kicserélése egy másikra vagy egy betű írása a szó végére.
+Készíts programot, amely kiszámítja, hogy egy szóból egy másikba el lehet-e jutni a szabály egy-
+más utáni alkalmazásával és ha igen, akkor hány lépésben, illetve ami kiszámolja az összes szót,
+amely ily módon előállítható!
+Bemenet
+A standard bemenet első sorában a szótár szavainak száma (1N1000), a további N sor-
+ban pedig egy-egy, a szótárban szereplő szó van. A szavak legfeljebb 20 karakterből állnak. A kö-
+vetkező sorban az alkalmazandó szabály betűjele (A vagy B), utána pedig két, a szótárban szereplő
+szó (P és Q) van.
+Kimenet
+A standard kimenet első sorában a legkisebb szabályalkalmazás szám, amivel a Q a P-ből
+előállítható. Ha nem állítható elő, akkor -1-et kell kiírni. A második sorba a P szóból a szabály
+szerint (nem feltétlenül egyetlen sorozatban) előállítható szavak számát kell írni.
+Példa
+Bemenet                                            Kimenet
+7                                                  3
+OKOS                                               6
+ÁKOS
+ÁKOM
+OKOD
+ÁLOM
+ALOM
+HALOM
+A
+OKOS
+ÁLOM
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

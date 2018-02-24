@@ -1,0 +1,29 @@
+Programozási tételek összeépítése                                                             ***
+
+
+                                     Pénzfeldobások
+Egy játékban N-szer dobnak fel egy pénzérmét. Fej szériának nevezzük az egymás utáni leghosz-
+szabb fej dobásokból álló részsorozatokat. Hasonlóan definiáljuk az írás szériát is.
+Készíts programot, amely megadja egy pénzfeldobás sorozatra a leggyakoribb fej-, illetve írás szé-
+ria hosszát!
+Bemenet
+A standard bemenet első sorában a pénzfeldobások száma van (1≤N≤1 000 000) van. A
+második sorban pontosan N karakter szerepel (F vagy I betű), az N dobás értéke (fej vagy írás).
+Kimenet
+A standard kimenet első sorába a legtöbbször előforduló leghosszabb fej széria hosszát
+kell kiírni! A második sorba a legtöbbször előforduló leghosszabb írás széria hossza kerüljön! Ha
+bármelyikből több van, akkor közülük a hosszabb hosszát kell kiírni! Ha nincs fej, vagy nincs írás,
+akkor a megfelelő sorba egyetlen 0-t kell kiírni!
+Példa
+Bemenet                                          Kimenet
+13                                               2
+IFFIIIFFIFIII                                    3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

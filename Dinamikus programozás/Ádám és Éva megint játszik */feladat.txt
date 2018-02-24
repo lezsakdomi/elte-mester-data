@@ -1,0 +1,45 @@
+Dinamikus programozás                                                                          *
+
+
+                            Ádám és Éva megint játszik
+Ádám és Éva kétszemélyes játékot játszik egy N mezőt tartalmazó játéktáblán. A játék során az el-
+ső mezőről indulva, felváltva lépve, egy bábut mozgatnak a játéktáblán, ugyanarra a mezőre több-
+ször is léphetnek. Egy adott mezőről csak szomszédos mezőre lehet lépni egy lépésben. Minden
+mezőre rá van írva egy pontszám. Ádám kezdi a játékot. Ha Ádám az aktuális lépésében az m me-
+zőre lép, amire p pontszám van írva, akkor összpontszáma p értékkel növelődik. Ha Éva az m
+mezőre lép, amire p pontszám van írva, akkor Ádám összpontszámát csökkentik p értékkel.
+Ádám célja, hogy a lehető legtöbb pontot szerezze, Éva célja pedig az, hogy Ádám a lehető legke-
+vesebb pontot szerezzen a játék során. Az összpontszám lehet negatív is, ekkor Ádám fizet Évá-
+nak a játék végén.
+Készíts programot, amely kiszámítja, hogy mekkora az a legnagyobb összpontszám, amit Ádám
+biztosan meg tud szerezni K lépéses játékban, bárhogyan is lép Éva!
+Bemenet
+A standard bemenet első sorában két egész szám van egy szóközzel elválasztva, a játéktáb-
+lán lévő mezők száma (1≤N≤500) és a játékban megteendő lépések száma (1≤K≤200). (Tehát
+mindkét játékos K lépést tesz felváltva.) A második sor pontosan N pozitív egész számot tartal-
+maz, az m-edik szám az m sorszámú mezőn lévő pontszám értéke, legfeljebb 1000. A következő
+N sor írja le a mezők szomszédjait, tehát, hogy adott mezőről mely mezőkre lehet lépni közvetle-
+nül. Közülük az m-edik sor az m-edik mező szomszédjait tartalmazza, 0-val zárva. Minden mező-
+ről legalább egy másik mezőre lehet lépni. Minden mezőnek önmaga is lehet szomszédja.
+Kimenet
+A standard kimenet első és egyetlen sorába a legnagyobb összpontszámot kell írni, amit
+Ádám meg tud szerezni K lépéses játékban, bárhogyan is lép Éva!
+Példa
+Bemenet                                         Kimenet
+5   2                                           4
+2   5   8 9 3
+3   2   0
+4   1   0
+2   5   0
+3   2   0
+4   2   1 0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N, K≤100.
+
+
+
+
+                                            1. oldal
+
