@@ -1,0 +1,58 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: "node"
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - npmdeps-v1-{{ arch }}-{{ checksum "package.json" }}
+            - npmdeps-v1-
+      - run:
+          name: Install dependencies
+          command: yarn
+      - save_cache:
+          key: npmdeps-v1-{{ arch }}-{{ checksum "package.json" }}
+          paths:
+            - "node_modules/"
+            - "yarn.lock"
+
+      - run:
+          name: Compile CSS
+          command: find . -name \*.styl -exec node_modules/stylus/bin/stylus {} \;
+
+      # Maybe do a restore_cache for bower_components here?
+      - run:
+          name: Install bower components
+          command: node_modules/bower/bin/bower --allow-root install
+
+      - run:
+          name: Build polymer project
+          command: node_modules/polymer-cli/bin/polymer.js build
+      - store_artifacts:
+          path: "build"
+
+      - run:
+          name: Prepare for deployment
+          working_directory: "build/default"
+          command: |
+            git config --global user.email "$CIRCLE_BUILD_URL"
+            git config --global user.name "CircleCI"
+            git init
+            git remote add --fetch origin "`git --git-dir=../../.git config remote.origin.url`"
+            if git rev-parse --verify origin/gh-pages > /dev/null 2>&1; then
+              git symbolic-ref HEAD refs/heads/gh-pages
+              git reset
+            else
+              echo "Creating orphan branch gh-pages..."
+              git checkout --orphan gh-pages
+            fi
+      - deploy:
+          name: Deploy to gh-pages
+          working_directory: "build/default"
+          command: |
+            git add -A
+            git commit --allow-empty -m "Automated CI deployment [$CIRCLE_BRANCH: $CIRCLE_SHA1]"
+            git push --force origin gh-pages
