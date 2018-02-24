@@ -1,5 +1,12 @@
 {
+    "entrypoint": "index.html",
+    "extraDependencies": [
+    	"bower_components/pdfjs-dist/build/pdf.worker.min.js"
+    ],
     "lint": {
       "rules": ["polymer-2"]
-    }
+    },
+    "builds": [{
+    	"js": {"compile": true}
+    }]
 }
