@@ -16,12 +16,14 @@ const gatherToken = new Promise.Deferred(resolve => getInitialCookies.then(cooki
         let token = prompt(
             "Authentication required\n" +
             "\n" +
-            "Authentication required to fetch data from GitHub. GitHub needs this to ensure nobody is trying to spam" +
-            "their service. Authenticated users can do 5000 requests per hour, but for unauthenticated requests the " +
-            "maximum is 60/hr. See https://developer.github.com/v3/#rate-limiting for more information.\n" +
+            "Authentication required to fetch data from GitHub. GitHub needs this to ensure nobody is trying to " +
+            "spam their service. Authenticated users can do 5000 requests per hour, but for unauthenticated " +
+            "requests the maximum is 60/hr. See https://developer.github.com/v3/#rate-limiting for more " +
+            "information.\n" +
             "\n" +
             "Please paste a valid GitHub personal access token below\n" +
-            "To obtain such, please visit https://github.com/settings/tokens to generate a new one.\n" +
+            "To obtain such, please visit https://github.com/settings/tokens to generate a new one. Make sure " +
+            "not to tick any special permission, because this token would be stored in an unencrypted cooke.\n" +
             "\n" +
             "Leave this field empty to continue anonymously\n"
         )
@@ -32,9 +34,13 @@ const gatherToken = new Promise.Deferred(resolve => getInitialCookies.then(cooki
 }))
 
 const initOcto = gatherToken.then(token => {
-    return new Octokat({
-        token: token
-    })
+    if (token) {
+        return new Octokat({
+            token: token
+        })
+    } else {
+        return new Octokat;
+    }
 })
 
 const tsvOptions = {
