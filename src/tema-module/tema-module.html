@@ -10,10 +10,12 @@
                 display: none;
             }
         </style>
+        <!--suppress HtmlUnknownAttribute, SpellCheckingInspection -->
         <paper-card image="src/tema-module/programcode.png" tema$="[[tema]]">
             <pre class="card-content" inner-h-t-m-l="[[tema.description]]"></pre>
         </paper-card>
     </template>
+    <!--suppress JSUnusedGlobalSymbols -->
     <script>
         class TemaModule extends Polymer.Element {
             static get is() { return 'tema-module'; }
@@ -26,9 +28,8 @@
             } }
 
             _temaChanged(tema) {
-                console.log(tema)
                 if (tema) {
-                    tema.fetchDescription.run().then(description => this.notifyPath('tema.description'));
+                    tema.fetchDescription.run().then(() => this.notifyPath('tema.description'));
                 }
             }
         }
