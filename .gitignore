@@ -1,0 +1,12 @@
+# Contains caret positions
+.idea/workspace.xml
+
+# Built files
+build/
+style.css
+
+node_modules
+bower_components
+yarn.lock
+**/*.swp
+**/*.swo
