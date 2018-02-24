@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+<dom-module id="tema-module">
+    <template>
+        <style>
+            paper-card:not([tema]) {
+                display: none;
+            }
+        </style>
+        <paper-card image="/src/tema-module/programcode.png" tema$="[[tema]]">
+            <pre class="card-content" inner-h-t-m-l="[[tema.description]]"></pre>
+        </paper-card>
+    </template>
+    <script>
+        class TemaModule extends Polymer.Element {
+            static get is() { return 'tema-module'; }
+            static get properties() { return {
+                tema: {
+                    type: Object,
+                    notify: true,
+                    observer: '_temaChanged'
+                }
+            } }
+
+            _temaChanged(tema) {
+                console.log(tema)
+                if (tema) {
+                    tema.fetchDescription.run().then(description => this.notifyPath('tema.description'));
+                }
+            }
+        }
+
+        customElements.define(TemaModule.is, TemaModule);
+    </script>
+</dom-module>

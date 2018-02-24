@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/pdf-viewer/pdf-viewer.html">
+
+<dom-module id="feladat-module">
+    <template>
+        <style>
+            paper-card:not([feladat]) {
+                display: none;
+            }
+
+            pdf-viewer {
+                width: 1280px;
+                height: 1024px;
+            }
+        </style>
+        <paper-card feladat$="[[feladat]]">
+            <div class="card-content">
+                <pdf-viewer src="[[feladat.pdfUrl]]" initial-zoom="fit-width"></pdf-viewer>
+            </div>
+            <div class="card-actions">
+                <a href$="[[feladat.pdfUrl]]" target="_blank">
+                    <paper-button>
+                        <iron-icon icon="file-download"></iron-icon>
+                        Feladatleírás
+                    </paper-button>
+                </a>
+                <a href$="[[feladat.mintaUrl]]" target="_blank">
+                    <paper-button>
+                        <iron-icon icon="file-download"></iron-icon>
+                        Minta bemenet
+                    </paper-button>
+                </a>
+            </div>
+        </paper-card>
+    </template>
+    <script>
+        class FeladatModule extends Polymer.Element {
+            static get is() { return 'feladat-module'; }
+            static get properties() { return {
+                feladat: {
+                    type: Object,
+                    notify: true
+                }
+            } }
+        }
+
+        customElements.define(FeladatModule.is, FeladatModule);
+    </script>
+</dom-module>

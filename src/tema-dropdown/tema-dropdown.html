@@ -1,0 +1,90 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/polymer/lib/elements/dom-repeat.html">
+<link rel="import" href="../../bower_components/paper-dropdown-input/paper-dropdown-input.html">
+
+<style>
+    tema-dropdown {
+        display: inline-block;
+        position: relative;
+    }
+</style>
+<dom-module id="tema-dropdown">
+    <template>
+        <paper-ripple noink></paper-ripple>
+        <paper-dropdown-input label="Téma" items="[[items]]" filter-property="title" selected-item="{{selection}}">
+            <template>
+                <template is="dom-repeat" items="[[items]]">
+                    <template is="dom-if" if="[[item.new]]">
+                        <hr disabled>
+                    </template>
+                    <paper-item style$="[[item.style]]" data="[[item]]">[[item.title]]</paper-item>
+                </template>
+            </template>
+        </paper-dropdown-input>
+    </template>
+    <script>
+        class TemaDropdown extends Polymer.Element {
+            static get is() { return 'tema-dropdown'; }
+            static get properties() { return {
+                tree: Array,
+                temaList: Array,
+                items: {
+                    type: Array,
+                    computed: '_getItems(temaList, tree)',
+                    observer: '_itemsChange'
+                },
+                selection: {
+                    type: Object,
+                    notify: true,
+                    //readOnly: true,
+                    value: undefined
+                }
+            } }
+
+            constructor() {
+                super();
+                generateRealTree.then(tree => this.set('tree', [...tree]));
+            }
+
+            _getItems(temaList, tree) {
+                let result = [];
+
+                result.push({
+                    title: "(none)",
+                    temaList: []
+                }, {
+                    title: "(any)",
+                    temaList: allTema // Could be not complete, but that's OK, the user doesn't know that :)
+                });
+
+                if (tree) tree.forEach(szint => {
+                    result.push({
+                        title: szint.name,
+                        object: szint,
+                        style: "font-weight: lighter;",
+                        new: true,
+                        temaList: szint.temaList
+                    });
+                    result.push(...szint.temaSet.map(tema => ({
+                        title: tema.name,
+                        object: tema,
+                        temaList: [tema]
+                    })));
+                });
+                else if (temaList) result.push(...temaList.map(tema => ({
+                    title: tema.name,
+                    object: tema,
+                    temaList: [tema]
+                })));
+
+                return result;
+            }
+
+            _itemsChange() {
+                this.getElementsByTagName('paper-ripple')[0].simulatedRipple();
+            }
+        }
+
+        customElements.define(TemaDropdown.is, TemaDropdown);
+    </script>
+</dom-module>

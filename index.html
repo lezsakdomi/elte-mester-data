@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MESTER database</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="bower_components/polymer/lib/elements/dom-bind.html">
+    <link rel="import" href="src/tema-dropdown/tema-dropdown.html">
+    <link rel="import" href="src/feladat-dropdown/feladat-dropdown.html">
+    <link rel="import" href="src/tema-module/tema-module.html">
+    <link rel="import" href="src/feladat-module/feladat-module.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+
+    <script src="bower_components/octokat/dist/octokat.js"></script>
+    <script src="bower_components/comma-separated-values/csv.js"></script>
+    <script src="polyfills.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <paper-button raised id="initTemaFilterButton" onclick="initTemaFilter.run(); this.disabled=true;">
+        <iron-icon icon="file-download"></iron-icon>
+        Témák betöltése
+    </paper-button>
+    <paper-button id="clearGhTokenButton" onclick="document.cookie='ghToken=;expires='+(new Date).toUTCString(); this.disabled=true;">
+        <iron-icon icon="perm-identity"></iron-icon>
+        GitHub token törlése
+    </paper-button>
+</header>
+
+<dom-bind>
+    <template>
+        <nav>
+            <tema-dropdown selection="{{temaSelection}}"></tema-dropdown>
+            <feladat-dropdown tema-list="[[temaSelection.data.temaList]]" selection="{{feladatSelection}}"></feladat-dropdown>
+        </nav>
+        <main>
+            <tema-module tema="[[onlyItem(temaSelection.data.temaList)]]"></tema-module>
+            <feladat-module feladat="[[feladatSelection.data.feladat]]"></feladat-module>
+        </main>
+    </template>
+</dom-bind>
+<script>
+    var autobind = document.querySelector('dom-bind');
+    autobind.onlyItem = function(list) {
+        if (!list) return list;
+        if (list.length !== 1) return false;
+        return list[0];
+    }
+</script>
+
+<script id="__bs_script__">//<![CDATA[
+if (location.port==3000) document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>
