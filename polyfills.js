@@ -42,21 +42,30 @@ if (Promise) {
     }
 
     if (!Promise.Deferred) {
-        Promise.Deferred = function (executor = (() => {
-        })) {
-            this.defer = new Promise((resolve, reject) => {
-                this.resolve = resolve;
-                this.reject = reject;
-            });
-            if (executor.accept) {
-                if (!executor.reject) {
-                    this.promise = this.defer.then(executor.accept);
-                } else { // executor.reject
-                    this.promise = this.defer.then(executor.accept, executor.reject);
-                }
+        Promise.Deferred = function (executor = (() => {}), autoResolve = true, defer = true) {
+            if (defer === true) {
+                this.defer = new Promise((resolve, reject) => {
+                    this.resolve = resolve;
+                    this.reject = reject;
+                });
+            } else if (defer === false) {
+                this.defer = new Promise((resolve, reject) => {
+                    this.resolve = resolve;
+                    this.reject = reject;
+                    resolve();
+                })
+            } else if (('defer' in defer) && ('resolve' in defer) && ('reject' in defer)) {
+                this.defer = defer.defer;
+                this.resolve = defer.resolve;
+                this.reject = defer.reject;
             } else {
-                this.promise = this.defer.then(executor);
+                throw Error("defer is invalid (got: "+defer+", expected: Boolean or Promise.Deferred-like)");
             }
+
+            this.promise = new Promise((resolve, reject) => {
+                this.start = this.defer.then(value => executor(value, resolve, reject));
+                if (autoResolve) this.start.then(resolve, reject);
+            });
 
             this.run = (value) => {
                 this.resolve(value);
@@ -83,7 +92,7 @@ if (Promise) {
                                 enumerable: descriptor.enumerable,
                                 writable: false,
                                 value: function () {
-                                    let result = new Promise.Deferred(this.run);
+                                    let result = new Promise.Deferred(this.run, true, this);
                                     result.promise = this.promise[name].apply(this.promise, arguments);
                                     return result;
                                 }
