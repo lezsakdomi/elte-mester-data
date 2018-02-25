@@ -8,29 +8,30 @@ jobs:
 
       - restore_cache:
           keys:
-            - npmdeps-v1-{{ arch }}-{{ checksum "package.json" }}
-            - npmdeps-v1-
+            - npmdeps-v2-{{ arch }}-{{ checksum ".circleci/package.json" }}
+            - npmdeps-v2-
       - run:
-          name: Install dependencies
+          name: Install CI dependencies
+          working_directory: ".circleci"
           command: yarn
       - save_cache:
-          key: npmdeps-v1-{{ arch }}-{{ checksum "package.json" }}
+          key: npmdeps-v2-{{ arch }}-{{ checksum ".circleci/package.json" }}
           paths:
-            - "node_modules/"
-            - "yarn.lock"
+            - ".circleci/node_modules/"
+            - ".circleci/yarn.lock"
 
       - run:
           name: Compile CSS
-          command: find . -name \*.styl -exec node_modules/stylus/bin/stylus {} \;
+          command: find . -name \*.styl -exec .circleci/node_modules/stylus/bin/stylus {} \;
 
       # Maybe do a restore_cache for bower_components here?
       - run:
           name: Install bower components
-          command: node_modules/bower/bin/bower --allow-root install
+          command: .circleci/node_modules/bower/bin/bower --allow-root install
 
       - run:
           name: Build polymer project
-          command: node_modules/polymer-cli/bin/polymer.js build
+          command: .circleci/node_modules/polymer-cli/bin/polymer.js build
       - store_artifacts:
           path: "build"
 

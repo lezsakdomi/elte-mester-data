@@ -1,0 +1,12 @@
+{
+  "name": "polymer-circleci",
+  "version": "1.0.0",
+  "description": "A package pack for building polymer projects on CircleCI",
+  "author": "Lezsák Domonkos <lezsakdomi1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "polymer-cli": "^1.6.0",
+    "stylus": "^0.54.5"
+  }
+}
