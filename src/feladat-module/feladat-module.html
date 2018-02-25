@@ -1,21 +1,17 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../shared-styles.html">
 <link rel="import" href="../../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/pdf-viewer/pdf-viewer.html">
 
 <dom-module id="feladat-module">
     <template>
-        <style>
-            paper-card:not([feladat]) {
-                display: none;
-            }
-
+        <style include="shared-styles">
             pdf-viewer {
-                width: 1280px;
-                height: 1024px;
+                width: 100%;
             }
         </style>
-        <paper-card feladat$="[[feladat]]">
+        <paper-card hidden$="[[!feladat]]">
             <div class="card-content">
                 <pdf-viewer src="[[feladat.pdfUrl]]" initial-zoom="fit-width"></pdf-viewer>
             </div>

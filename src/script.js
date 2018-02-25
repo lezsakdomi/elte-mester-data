@@ -10,10 +10,61 @@ async function getCookies() {
 
 const getInitialCookies = getCookies();
 
+let tokenStatus = new Proxy({
+    saved: false,
+    _observers: {},
+}, {
+    get: (target, p) => {
+        if (p == 'listen' || p == 'observe') {
+            return function (property, callback) {
+                if (!(property in target._observers)) {
+                    target._observers[property] = [];
+                }
+                return target._observers[property].push(callback);
+            }
+        }
+        {
+            let match = /(?:listen(?:For)?|observe)([A-Z].*)/.exec(p);
+            if (match) {
+                let property = match[1].charAt(0).toLowerCase()+match[1].slice(1);
+                if (true || property in target) {
+                    return function (callback) {
+                        if (!(property in target._observers)) {
+                            target._observers[property] = [];
+                        }
+                        return target._observers[property].push(callback);
+                    }
+                } else {
+                    throw Error("No property named "+property);
+                }
+            }
+        }
+        return target[p];
+    },
+    set: (target, p, value) => {
+        if (p in target._observers) {
+            target._observers[p].forEach(observer => {
+                observer.call(target, value, p);
+            });
+        }
+        return target[p] = value;
+    }
+});
+getInitialCookies.then(value => tokenStatus.saved = value);
+async function saveToken(token) {
+    document.cookie = "ghToken=" + token;
+    tokenStatus.saved = true;
+}
+async function deleteToken() {
+    document.cookie='ghToken=;expires='+(new Date).toUTCString();
+    tokenStatus.saved = false;
+}
+
 const gatherToken = new Promise.Deferred(() => getInitialCookies.then(cookies => {
     let token;
     // noinspection JSUnresolvedVariable
-    if (cookies.ghToken) {
+    if ('ghToken' in cookies) {
+        tokenStatus.saved = true;
         // noinspection JSUnresolvedVariable
         return cookies.ghToken;
     } else {
@@ -32,7 +83,7 @@ const gatherToken = new Promise.Deferred(() => getInitialCookies.then(cookies =>
             "Leave this field empty to continue anonymously\n"
         );
         if (token === null) throw new Error("Token is too secret for us");
-        document.cookie = "ghToken=" + token;
+        saveToken(token);
         return token
     }
 }));
@@ -132,15 +183,3 @@ let realTree; generateRealTree.then(value => realTree = value);
 const generateTemaSet = generateRealTree.then(
     tree => new Set( [...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []) )
 );
-
-const initTemaFilter = generateTemaSet.wait(window.webComponentsReady).then(temaSet => {
-    const e = document.querySelector('tema-dropdown');
-    e.set('temaList', [...temaSet]);
-    return e
-});
-
-initTemaFilter.then(() => {
-    document.getElementById('initTemaFilterButton').classList.add("fulfilled")
-}, () => {
-    document.getElementById('initTemaFilterButton').classList.add("rejected")
-});

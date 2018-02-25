@@ -1,62 +1,112 @@
-<!DOCTYPE html>
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MESTER database</title>
+    <meta charset="utf-8">
+    <meta name="generator" content="Polymer Starter Kit">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mester2</title>
+    <meta name="description" content="Browse lezsakdomi's mirror to mester.inf.elte.hu">
 
+    <!--
+      The `<base>` tag below is present to support two advanced deployment options:
+      1) Differential serving. 2) Serving from a non-root path.
+
+      Instead of manually editing the `<base>` tag yourself, you should generally either:
+      a) Add a `basePath` property to the build configuration in your `polymer.json`.
+      b) Use the `--base-path` command-line option for `polymer build`.
+
+      Note: If you intend to serve from a non-root path, see [polymer-root-path] below.
+    -->
+    <base href="/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffd180">
+    <!-- https://codepen.io/lezsakdomi/pen/XZPGeY/ -->
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Mester2">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mester2">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3f51b5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <script>
+      /**
+      * [polymer-root-path]
+      *
+      * By default, we set `Polymer.rootPath` to the server root path (`/`).
+      * Leave this line unchanged if you intend to serve your app from the root
+      * path (e.g., with URLs like `my.domain/` and `my.domain/view1`).
+      *
+      * If you intend to serve your app from a non-root path (e.g., with URLs
+      * like `my.domain/my-app/` and `my.domain/my-app/view1`), edit this line
+      * to indicate the path from which you'll be serving, including leading
+      * and trailing slashes (e.g., `/my-app/`).
+      */
+      window.Polymer = {rootPath: '/'};
+
+      // Load and register pre-caching Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js', {
+            scope: Polymer.rootPath,
+          });
+        });
+      }
+    </script>
+
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-    <link rel="import" href="bower_components/polymer/lib/elements/dom-bind.html">
-    <link rel="import" href="src/tema-dropdown/tema-dropdown.html">
-    <link rel="import" href="src/feladat-dropdown/feladat-dropdown.html">
-    <link rel="import" href="src/tema-module/tema-module.html">
-    <link rel="import" href="src/feladat-module/feladat-module.html">
-    <link rel="import" href="bower_components/paper-button/paper-button.html">
-    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
 
-    <script src="bower_components/octokat/dist/octokat.js"></script>
-    <script src="bower_components/comma-separated-values/csv.js"></script>
-    <script src="polyfills.js"></script>
-    <script src="script.js"></script>
-</head>
-<body>
+    <!-- Load your application shell -->
+    <link rel="import" href="src/my-app.html">
 
-<header>
-    <paper-button raised id="initTemaFilterButton" onclick="initTemaFilter.run(); this.disabled=true;">
-        <iron-icon icon="file-download"></iron-icon>
-        Témák betöltése
-    </paper-button>
-    <paper-button id="clearGhTokenButton" onclick="document.cookie='ghToken=;expires='+(new Date).toUTCString(); this.disabled=true;">
-        <iron-icon icon="perm-identity"></iron-icon>
-        GitHub token törlése
-    </paper-button>
-</header>
-
-<dom-bind>
-    <template>
-        <nav>
-            <tema-dropdown selection="{{temaSelection}}"></tema-dropdown>
-            <feladat-dropdown tema-list="[[temaSelection.data.temaList]]" selection="{{feladatSelection}}"></feladat-dropdown>
-        </nav>
-        <main>
-            <tema-module tema="[[onlyItem(temaSelection.data.temaList)]]"></tema-module>
-            <feladat-module feladat="[[feladatSelection.data.feladat]]"></feladat-module>
-        </main>
-    </template>
-</dom-bind>
-<script>
-    var autobind = document.querySelector('dom-bind');
-    autobind.onlyItem = function(list) {
-        if (!list) return list;
-        if (list.length !== 1) return false;
-        return list[0];
-    }
-</script>
-
-<script id="__bs_script__">
-	if (location.port===3000) {
-		document.write('<script async src="//'+location.hostname+':'+location.port+'/browser-sync/browser-sync-client.js?v=2.23.6"><'+'/script>');
-	}
-</script>
-</body>
+    <!-- Add any global styles for body, document, etc. -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', 'Noto', sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+  <body>
+    <my-app></my-app>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+    <!-- Built with love using Polymer Starter Kit -->
+  </body>
+</html>

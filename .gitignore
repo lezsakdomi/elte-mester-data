@@ -5,8 +5,8 @@
 build/
 style.css
 
-node_modules
-bower_components
+node_modules/
+bower_components/
 yarn.lock
 **/*.swp
 **/*.swo

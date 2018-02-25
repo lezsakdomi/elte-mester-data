@@ -1,0 +1,137 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<link rel="import" href="../bower_components/paper-styles/color.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/polymer/lib/elements/dom-if.html">
+<link rel="import" href="tema-dropdown/tema-dropdown.html">
+<link rel="import" href="feladat-dropdown/feladat-dropdown.html">
+<link rel="import" href="tema-module/tema-module.html">
+<link rel="import" href="feladat-module/feladat-module.html">
+
+<script src="../bower_components/octokat/dist/octokat.js"></script>
+<script src="../bower_components/comma-separated-values/csv.js"></script>
+<script src="../polyfills.js"></script>
+<script src="script.js"></script>
+
+<dom-module id="my-browse">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px;
+            }
+
+            #failedMessage {
+                background: var(--paper-red-100);
+                color: black;
+            }
+            #failedMessage > a {
+                color: black;
+            }
+        </style>
+        <div class="card">
+            <paper-button raised id="initTemaFilterButton" on-click="initTemaFilter">
+                <iron-icon icon="file-download"></iron-icon>
+                Témák betöltése
+            </paper-button>
+            <paper-button id="clearGhTokenButton" disabled="[[!tokenSaved]]" on-click="deleteToken">
+                <iron-icon icon="perm-identity"></iron-icon>
+                GitHub token törlése
+            </paper-button>
+        </div>
+        <template is="dom-if" if="[[failed]]">
+            <div class="card" id="failedMessage">
+                Nem sikerült betölteni az alapadatokat.<br>
+                <a href="javascript:window.location.reload();">Töltse újra az oldalt</a>, ha újra szeretné próbálni.
+            </div>
+        </template>
+        <div class="card" hidden$="[[!loaded]]">
+            <tema-dropdown id="temaFilter" selection="{{_temaSelection}}"></tema-dropdown>
+            <feladat-dropdown id="feladatFilter" selection="{{_feladatSelection}}"
+                              tema-list="[[_temaSelection.data.temaList]]"></feladat-dropdown>
+        </div>
+        <template is="dom-if" if="[[tema]]">
+            <tema-module tema="[[tema]]"></tema-module>
+        </template>
+        <template is="dom-if" if="[[feladat]]">
+            <feladat-module feladat="[[feladat]]"></feladat-module>
+        </template>
+    </template>
+    <script>
+        class MyBrowse extends Polymer.Element {
+            static get is() { return 'my-browse'; }
+            static get properties() { return {
+                tema: {
+                    type: Object,
+                    computed: '_onlyItem(_temaSelection.data.temaList)',
+                    notify: true
+                },
+                feladat: {
+                    type: Object,
+                    computed: '_firstArg(_feladatSelection.data.feladat)',
+                    notify: true
+                },
+                loaded: {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                failed: {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                tokenSaved: {
+                    type: Boolean,
+                    value: tokenStatus.saved,
+                    notify: true,
+                    readOnly: true
+                },
+                _feladatSelection: {
+                    type: Object,
+                    notify: true
+                },
+                _temaSelection: {
+                    type: Object,
+                    notify: true
+                }
+            } }
+            connectedCallback() {
+                super.connectedCallback();
+
+                this.$.temaFilter.init.then(() => this._setLoaded(true), () => this._setFailed(true));
+                this.$.temaFilter.init.defer.then(() => this.$.initTemaFilterButton.disabled = true);
+
+                tokenStatus.observeSaved(this._setTokenSaved.bind(this));
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            initTemaFilter() {
+                this.$.temaFilter.init.run();
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            deleteToken() {
+                window.deleteToken();
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            _onlyItem(list) {
+                if (!list) return list;
+                if (list.length !== 1) return false;
+                return list[0];
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            _firstArg(arg) { //TODO remove this hack
+                return arg;
+            }
+        }
+
+        window.customElements.define(MyBrowse.is, MyBrowse);
+    </script>
+</dom-module>

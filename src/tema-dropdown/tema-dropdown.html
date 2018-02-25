@@ -38,12 +38,16 @@
                     notify: true,
                     //readOnly: true,
                     value: undefined
+                },
+                init: {
+                    type: Object,
+                    readOnly: true
                 }
             } }
 
             constructor() {
                 super();
-                generateRealTree.then(tree => this.set('tree', [...tree]));
+                this._setInit(generateRealTree.then(tree => this.set('tree', [...tree])));
             }
 
             _getItems(temaList, tree) {

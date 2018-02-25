@@ -2,25 +2,35 @@
   "name": "elte-mester-data-browser",
   "description": "Browse the lezsakdomi/elte-mester-data repo (downloaded version of mester.inf.elte.hu)",
   "authors": [
-    "Domonkos Lezsák <lezsakdomi1@gmail.com>"
+    "Domonkos Lezsák <lezsakdomi1@gmail.com>",
+    "The Polymer Authors"
   ],
-  "license": "MIT",
+  "license": "https://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/lezsakdomi/elte-mester-data",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "octokat": "^0.9.2",
     "comma-separated-values": "^3.6.4",
     "paper-card": "PolymerElements/paper-card#^2.1.0",
-    "polymer": "Polymer/polymer#^2.5.0",
     "paper-dropdown-input": "Juravenator/paper-dropdown-input#^2.5.2",
     "paper-button": "PolymerElements/paper-button#^2.0.0",
     "pdf-viewer": "telecomsante/pdf-viewer#^2.0.1",
-    "iron-icon": "PolymerElements/iron-icon#^2.1.0"
-  }
+    "iron-icon": "PolymerElements/iron-icon#^2.1.0",
+    "app-layout": "PolymerElements/app-layout#^2.0.0",
+    "app-route": "PolymerElements/app-route#^2.0.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^2.0.0",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^2.0.0",
+    "iron-media-query": "PolymerElements/iron-media-query#^2.0.0",
+    "iron-pages": "PolymerElements/iron-pages#^2.0.0",
+    "iron-selector": "PolymerElements/iron-selector#^2.0.0",
+    "paper-icon-button": "PolymerElements/paper-icon-button#^2.0.0",
+    "polymer": "Polymer/polymer#^2.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0"
+  },
+  "private": true
 }
