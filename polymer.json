@@ -23,8 +23,11 @@
   "builds": [
     {
       "name": "default",
-      "preset": "es5-bundled",
-      "basePath": "/elte-mester-data/"
+      "preset": "es5-bundled"
+    },
+    {
+      "name": "light",
+      "preset": "es6-unbundled"
     }
   ]
 }
