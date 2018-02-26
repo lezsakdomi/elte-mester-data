@@ -62,6 +62,10 @@ if (Promise) {
                 throw Error("defer is invalid (got: "+defer+", expected: Boolean or Promise.Deferred-like)");
             }
 
+            if (autoResolve===true && executor.length>1) {
+                console.warn(new Error("autoResolve left true, but executor expects resolve"));
+            }
+
             this.promise = new Promise((resolve, reject) => {
                 this.start = this.defer.then(value => executor(value, resolve, reject));
                 if (autoResolve) this.start.then(resolve, reject);
