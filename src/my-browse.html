@@ -10,7 +10,6 @@
 <link rel="import" href="tema-module/tema-module.html">
 <link rel="import" href="feladat-module/feladat-module.html">
 
-<script src="../bower_components/octokat/dist/octokat.js"></script>
 <script src="../bower_components/comma-separated-values/csv.js"></script>
 <script src="../polyfills.js"></script>
 <script src="script.js"></script>
@@ -35,10 +34,6 @@
             <paper-button raised id="initTemaFilterButton" on-click="initTemaFilter">
                 <iron-icon icon="file-download"></iron-icon>
                 Témák betöltése
-            </paper-button>
-            <paper-button id="clearGhTokenButton" disabled="[[!tokenSaved]]" on-click="deleteToken">
-                <iron-icon icon="perm-identity"></iron-icon>
-                GitHub token törlése
             </paper-button>
         </div>
         <template is="dom-if" if="[[failed]]">
@@ -85,12 +80,6 @@
                     notify: true,
                     readOnly: true
                 },
-                tokenSaved: {
-                    type: Boolean,
-                    value: tokenStatus.saved,
-                    notify: true,
-                    readOnly: true
-                },
                 _feladatSelection: {
                     type: Object,
                     notify: true
@@ -105,18 +94,11 @@
 
                 this.$.temaFilter.init.then(() => this._setLoaded(true), () => this._setFailed(true));
                 this.$.temaFilter.init.defer.then(() => this.$.initTemaFilterButton.disabled = true);
-
-                tokenStatus.observeSaved(this._setTokenSaved.bind(this));
             }
 
             // noinspection JSUnusedGlobalSymbols
             initTemaFilter() {
                 this.$.temaFilter.init.run();
-            }
-
-            // noinspection JSUnusedGlobalSymbols
-            deleteToken() {
-                window.deleteToken();
             }
 
             // noinspection JSUnusedGlobalSymbols
