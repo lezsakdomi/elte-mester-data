@@ -1,3 +1,36 @@
+const ghUser = "lezsakdomi";
+const ghRepo = "elte-mester-data";
+const ghTag = "master";
+const useCdn = true;
+
+// with trailing slash
+const ghFetchBase = "https://"+(useCdn?"cdn.rawgit.com":"rawgit.com")+"/"+ghUser+"/"+ghRepo+"/"+ghTag+"/";
+
+async function fetchFile(path) {
+    const url = ghFetchBase + path.replace(/^\//, "");
+    const response = await fetch(url);
+    if (response.ok) return response;
+    else throw new Error("Fetch for "+url+" failed: Returned "+response.status+" ("+response.statusText+")");
+}
+
+async function readBinaryFile(path) {
+    const response = await fetchFile(path);
+    const blob = response.blob();
+    return blob;
+}
+
+async function readFile(path) {
+    const response = await fetchFile(path);
+    const text = await response.text();
+    return text;
+}
+
+async function readJson(path) {
+    const response = await fetchFile(path);
+    const json = await response.json();
+    return json;
+}
+
 async function getCookies() {
     return document.cookie
         .split('; ')
@@ -74,9 +107,14 @@ const gatherRepo = initOcto.then(octo => octo.repos("lezsakdomi", "elte-mester-d
 
 const baseUrl = "https://cdn.rawgit.com/lezsakdomi/elte-mester-data/master";
 
-const fetchTemaCSV = new Promise.Deferred((value) =>
-    gatherRepo.run(value).then(repo => repo.contents("temak.tsv").read().then(newTSV))
-);
+// const fetchTemaCSV = new Promise.Deferred((value) =>
+//     gatherRepo.run(value).then(repo => repo.contents("temak.tsv").read().then(newTSV))
+// );
+const fetchTemaCSV = new Promise.Deferred((init, resolve, reject) => {
+    readFile("temak.tsv")
+        .then(newTSV)
+        .then(resolve, reject);
+}, false);
 
 const generateLazyTree = fetchTemaCSV.then(csv => {
     let result = {};
@@ -111,17 +149,24 @@ function Tema(id, name, szint) {
 
     this.url = baseUrl + "/"+this.name;
 
-    this.fetchDescription = new Promise.Deferred(() =>
-        gatherRepo.run().then(repo => repo.contents(name+"/leiras.txt").read())
-    );
+    this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
+        //gatherRepo.run().then(repo => repo.contents(name+"/leiras.txt").read())
+        readFile(name + "/leiras.txt").then(resolve, reject)
+    }, false);
     this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
-    this.fetchFeladatList = new Promise.Deferred(() => gatherRepo.run().then(repo => repo
-        .contents(name+"/flist.tsv")
-        .read()
-        .then(newTSV)
-        .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
-    ));
+    // this.fetchFeladatList = new Promise.Deferred(() => gatherRepo.run().then(repo => repo
+    //     .contents(name+"/flist.tsv")
+    //     .read()
+    //     .then(newTSV)
+    //     .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
+    // ));
+    this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
+        readFile(name+"/flist.tsv")
+            .then(newTSV)
+            .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
+            .then(resolve, reject);
+    }, false);
     // noinspection JSUnusedGlobalSymbols
     this.feladatList = undefined;
     // noinspection JSUnusedGlobalSymbols
