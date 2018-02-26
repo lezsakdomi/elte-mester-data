@@ -10,45 +10,8 @@ async function getCookies() {
 
 const getInitialCookies = getCookies();
 
-let tokenStatus = new Proxy({
-    saved: false,
-    _observers: {},
-}, {
-    get: (target, p) => {
-        if (p == 'listen' || p == 'observe') {
-            return function (property, callback) {
-                if (!(property in target._observers)) {
-                    target._observers[property] = [];
-                }
-                return target._observers[property].push(callback);
-            }
-        }
-        {
-            let match = /(?:listen(?:For)?|observe)([A-Z].*)/.exec(p);
-            if (match) {
-                let property = match[1].charAt(0).toLowerCase()+match[1].slice(1);
-                if (true || property in target) {
-                    return function (callback) {
-                        if (!(property in target._observers)) {
-                            target._observers[property] = [];
-                        }
-                        return target._observers[property].push(callback);
-                    }
-                } else {
-                    throw Error("No property named "+property);
-                }
-            }
-        }
-        return target[p];
-    },
-    set: (target, p, value) => {
-        if (p in target._observers) {
-            target._observers[p].forEach(observer => {
-                observer.call(target, value, p);
-            });
-        }
-        return target[p] = value;
-    }
+let tokenStatus = new Observable({
+    saved: false
 });
 getInitialCookies.then(value => tokenStatus.saved = value);
 async function saveToken(token) {
