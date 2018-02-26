@@ -151,6 +151,51 @@ if (window) {
         window.webComponentsReady = new Promise.Deferred;
         window.addEventListener('WebComponentsReady', window.webComponentsReady.resolve);
     }
+
+    if (!window.Observable) {
+        window.Observable = function (target = {}) {
+            if ('_observers' in target) throw Error("_observers should not be defined in target");
+            else target._observers = {};
+
+            return new Proxy(target, {
+                get: (target, p) => {
+                    if (p === 'listen' || p === 'observe') {
+                        return function (property, callback) {
+                            if (!(property in target._observers)) {
+                                target._observers[property] = [];
+                            }
+                            return target._observers[property].push(callback);
+                        }
+                    }
+                    {
+                        let match = /(?:listen(?:For)?|observe)([A-Z].*)/.exec(p);
+                        if (match) {
+                            let property = match[1].charAt(0).toLowerCase()+match[1].slice(1);
+                            if (true || property in target) {
+                                return function (callback) {
+                                    if (!(property in target._observers)) {
+                                        target._observers[property] = [];
+                                    }
+                                    return target._observers[property].push(callback);
+                                }
+                            } else {
+                                throw Error("No property named "+property);
+                            }
+                        }
+                    }
+                    return target[p];
+                },
+                set: (target, p, value) => {
+                    if (p in target._observers) {
+                        target._observers[p].forEach(observer => {
+                            observer.call(target, value, p);
+                        });
+                    }
+                    return target[p] = value;
+                }
+            });
+        }
+    }
 }
 
 function tcl(promise) {
