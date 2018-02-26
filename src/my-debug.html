@@ -1,0 +1,46 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<script src="../bower_components/octokat/dist/octokat.js"></script>
+<script src="../bower_components/comma-separated-values/csv.js"></script>
+<script src="../polyfills.js"></script>
+
+<dom-module id="my-debug">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px 20px;
+            }
+        </style>
+
+        <h1>Debugging</h1>
+        <div class="card">
+            <table>
+                <tr>
+                    <th>rootPath</th>
+                    <td>[[rootPath]]</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card">
+            <script src="[[importPath]]script.js"></script>
+            <p>(script)</p>
+        </div>
+    </template>
+
+    <script>
+        class MyDebug extends Polymer.Element {
+            static get is() { return 'my-debug'; }
+            static get properties() {
+                return {
+                    // This shouldn't be neccessary, but the Analyzer isn't picking up
+                    // Polymer.Element#rootPath
+                    rootPath: String,
+                };
+            }
+        }
+
+        window.customElements.define(MyDebug.is, MyDebug);
+    </script>
+</dom-module>
