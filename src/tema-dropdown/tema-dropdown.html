@@ -85,7 +85,7 @@
             }
 
             _itemsChange() {
-                this.getElementsByTagName('paper-ripple')[0].simulatedRipple();
+                this.shadowRoot.querySelector('paper-ripple').simulatedRipple();
             }
         }
 

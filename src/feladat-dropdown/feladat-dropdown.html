@@ -59,7 +59,7 @@
 
             _temaListChanged(temaList) {
                 if (this.items) this.items.obsolete=false;
-                this.getElementsByTagName('paper-dropdown-input')[0].classList.remove("loaded");
+                this.shadowRoot.querySelector('paper-dropdown-input').classList.remove("loaded");
                 this.set('items', []);
                 const itemsRef = this.items;
                 if (temaList) {
@@ -93,8 +93,8 @@
                         if (itemsRef.obsolete) {
                             throw new Error("Items are obsolete");
                         } else {
-                            this.getElementsByTagName('paper-dropdown-input')[0].classList.add("loaded");
-                            this.getElementsByTagName('paper-ripple')[0].simulatedRipple();
+                            this.shadowRoot.querySelector('paper-dropdown-input').classList.add("loaded");
+                            this.shadowRoot.querySelector('paper-ripple').simulatedRipple();
                         }
                     });
                 }
