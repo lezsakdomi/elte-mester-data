@@ -1,0 +1,121 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-about">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px 20px;
+            }
+
+            ol > li {
+                margin: 5px;
+            }
+
+            #tech a {
+                color: inherit;
+            }
+        </style>
+
+        <h1>About</h1>
+        <div class="card">
+            <p>
+                Ez a weboldal a
+                <a href="https://github.com/lezsakdomi/elte-mester-data">lezsakdomi/elte-mester-data</a> GitHub
+                repository-hoz készült, ami egy publikusan elérhető tükör a
+                <a href="http://mester.inf.elte.hu">Mester online feladatbank</a>hoz.
+            </p>
+            <p>
+                A cél egy jobban kezelhető felület biztosítása, ahol lehet akár keresni is.
+            </p>
+        </div>
+        <div class="card" id="tech">
+            <h2>Technológia</h2>
+            <p>
+                Az adatok elérése több rétegben történik:
+            </p>
+            <ol>
+                <li>
+                    Az adatok forrása: <a href="http://mester.inf.elte.hu">mester.inf.elte.hu</a>
+                </li>
+                <li>
+                    Az <a href="https://github.com/lezsakdomi/elte-mester-crawler">elte-mester-crawler</a>
+                    segítségével az ott található adatokat bárki automatizáltan le tudja tölteni.
+                    <a href="https://github.com/lezsakdomi/">lezsakdomi</a> (terve szerint) redszeresen letölti
+                    az adatokat a <a href="https://github.com/lezsakdomi/elte-mester-crawler">elte-mester-crawler</a>en
+                    található szkript lefuttatásával, majd feltölti azokat az
+                    <a href="https://github.com/lezsakdomi/elte-mester-data">elte-mester-data repository</a>ba.
+                </li>
+                <li>
+                    Ez a weboldal az adatokat (vagy egy részüket) a
+                    <a href="https://github.com/lezsakdomi/elte-mester-data">repository</a>ból a
+                    <a href="https://rawgit.com">RawGit</a> CDN-én keresztül (ez beállítással felülbírálható) betölti a
+                    böngésző memóriájába.
+                </li>
+                <li>
+                    A betöltött adatokat Ön mint felhasználó számára a weboldal megjeleníti<br>
+                    <small>
+                        (Megjegyzés: Az itt felkínált letöltési linkek az
+                        <a href="https://github.com/lezsakdomi/elte-mester-data">elte-mester-data</a> githubos
+                        felületére mutatnak.
+                        [<a href="https://github.com/lezsakdomi/elte-mester-data/master/flist.tsv">példa</a>])
+                    </small>
+                </li>
+            </ol>
+        </div>
+        <div class="card">
+            <h2>Hibák, észrevételek</h2>
+            <p>
+                A GitHub nagyszerű felületet biztosít ezek kezelésére bejelentésére.
+            </p>
+            <ul>
+                <li>
+                    Hibák, elírások a feladatokban: mester.inf.elte.hu
+                </li>
+                <li>
+                    <a href="https://github.com/lezsakdomi/elte-mester-crawler/issues">
+                        Hibák bejelentése az adatok letöltésével kapcsolatban
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/lezsakdomi/elte-mester-data/issues">
+                        Hibák bejelentése az itt megjelnített adatok helyességével, elavultságával kapcsolatban
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/lezsakdomi/elte-mester-data/issues">
+                        Hibák bejelentése ezzel a webes felülettel kapcsolatban
+                    </a><br>
+                    (kérjük a <em>browser</em> tag használatát)
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Egy korábbi verzió elérése:
+                    <ul>
+                        <li>
+                            <a href="https://github.com/lezsakdomi/elte-mester-data/commits/master">
+                                Az adatok tekintetében
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/lezsakdomi/elte-mester-data/tree/browser">
+                                A webes felület tekintetében
+                            </a><br>
+                            (ennek lefordítása, futtatása, ... szaktudást igényel)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </template>
+
+    <script>
+        class MyAbout extends Polymer.Element {
+            static get is() { return 'my-about'; }
+        }
+
+        window.customElements.define(MyAbout.is, MyAbout);
+    </script>
+</dom-module>
