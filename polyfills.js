@@ -66,10 +66,15 @@ if (Promise) {
                 console.warn(new Error("autoResolve left true, but executor expects resolve"));
             }
 
-            this.promise = new Promise((resolve, reject) => {
-                this.start = this.defer.then(value => executor(value, resolve, reject));
-                if (autoResolve) this.start.then(resolve, reject);
-            });
+            if ('then' in executor) {
+                this.promise = executor;
+                // autoResolve makes no sense here
+            } else {
+                this.promise = new Promise((resolve, reject) => {
+                    this.start = this.defer.then(value => executor(value, resolve, reject));
+                    if (autoResolve) this.start.then(resolve, reject);
+                });
+            }
 
             this.run = (value) => {
                 this.resolve(value);
