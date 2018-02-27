@@ -3,6 +3,7 @@
 
 <script src="../bower_components/comma-separated-values/csv.js"></script>
 <script src="../polyfills.js"></script>
+<script src="script.js"></script>
 
 <dom-module id="my-debug">
     <template>
@@ -21,10 +22,6 @@
                     <td>[[rootPath]]</td>
                 </tr>
             </table>
-        </div>
-        <div class="card">
-            <script src="[[importPath]]script.js"></script>
-            <p>(script)</p>
         </div>
     </template>
 
