@@ -1,0 +1,49 @@
+Elemi feladatok
+
+**
+
+Húsvét
+Írj programot, amely megadja, hogy egy évben milyen napra esik húsvét, illetve pünkösd!
+A húsvét meghatározásának szabálya:
+Húsvét a tavaszi napéjegyenlőség (március 21.) utáni első holdtölte utáni első vasárnap, illetve
+hétfő. A holdtölték egymástól 29 és fél napra vannak.
+Megjegyzés: Ha március 21. holdtölte is és vasárnap is, akkor már egyben húsvétvasárnap is.
+Például: 1991. január 1. kedd volt, az első holdtölte: január 30.-án délelőtt volt, akkor a következők: február 28. délután, március 30. délelőtt.
+A pünkösd meghatározásának szabálya:
+Pünkösdvasárnap a húsvétvasárnap utáni hetedik vasárnap, pünkösdhétfő pedig az azt követő
+hétfő.
+A program számítsa ki a húsvétvasárnap és húsvéthétfő, valamint a pünkösdvasárnap és pünkösdhétfő dátumát!
+
+Bemenet
+A standard bemenet első sorában az adott év van(1≤EV≤10 000). A második sorban lévő szám azt jelenti, hogy az év első napja a hét hányadik napjára esik (1≤ELSO≤7, ahol 1 hétfőt,
+2 keddet, stb. jelenti). A harmadik sorban lévő szám az első holdtölte napját adja meg januárban
+(1≤HOLD≤30). Végül a negyedik sorban pedig „de” vagy „du” szöveg szerepel annak megfelelően, hogy a holdtölte délelőtt vagy délután következik be.
+
+Kimenet
+A standard kimenet első sorába húsvétvasárnap, a másodikba húsvéthétfő, a harmadikba
+pünkösdvasárnap, a negyedikbe pedig pünkösdhétfő dátumát kell írni! Mindegyik dátumnál csak a
+hónapnevet és a napot kell megadni, a hónapnév nem tartalmazhat ékezetes karaktereket (pl.
+„marcius”), a napot pedig pont követi (pl. „marcius 29.”)!
+
+Példa
+Bemenet
+
+Kimenet
+
+1991
+2
+30
+de
+
+marcius 31.
+aprilis 1.
+majus 19.
+majus 20.
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+1. oldal
+
+
