@@ -52,7 +52,9 @@ function newTSV(string) {
     return new CSV(string, tsvOptions)
 }
 
-const baseUrl = "https://cdn.rawgit.com/lezsakdomi/elte-mester-data/master";
+const baseUrl = "https://github.com/lezsakdomi/elte-mester-data/tree/master";
+//const rawBaseUrl = "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
+const rawBaseUrl = ghFetchBase;
 
 const fetchTemaCSV = new Promise.Deferred((init, resolve, reject) => {
     readFile("temak.tsv")
@@ -77,10 +79,11 @@ function Feladat(tema, id, name, nehezseg) {
     this.nehezseg = nehezseg;
 
     this.url = this.tema.url + "/"+encodeURI(this.name);
+    this.rawUrl = this.tema.rawUrl + "/"+encodeURI(this.name);
     // noinspection JSUnusedGlobalSymbols
-    this.pdfUrl = this.url + "/feladat.pdf";
+    this.pdfUrl = this.rawUrl + "/feladat.pdf";
     // noinspection JSUnusedGlobalSymbols
-    this.mintaUrl = this.url + "/minta.zip";
+    this.mintaUrl = this.rawUrl + "/minta.zip";
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
         readFile(this.tema.url+"/"+this.name+"/feladat.txt").then(resolve, reject);
@@ -97,6 +100,7 @@ function Tema(id, name, szint) {
     this.szint = szint;
 
     this.url = baseUrl + "/"+encodeURI(this.name);
+    this.rawUrl = rawBaseUrl + "/"+encodeURI(this.name);
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
         readFile(name + "/leiras.txt").then(resolve, reject)

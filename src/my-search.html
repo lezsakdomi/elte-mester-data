@@ -64,13 +64,15 @@
                 <paper-input label="Keresés..." type="search" value="{{searchQuery}}"></paper-input>
                 <paper-listbox id="results">
                     <template is="dom-repeat" items="[[results]]">
-                        <paper-item>
-                            <paper-item-body two-line>
-                                <div>[[item.item.name]]</div>
-                                <div secondary inner-h-t-m-l="[[_formattedDesc(item)]]"></div>
-                                <!--div secondary>Egyezés: [[_formatScore(item.score)]]</div-->
-                            </paper-item-body>
-                        </paper-item>
+                        <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
+                            <paper-item>
+                                <paper-item-body two-line>
+                                    <div>[[item.item.name]]</div>
+                                    <div secondary inner-h-t-m-l="[[_formattedDesc(item)]]"></div>
+                                    <!--div secondary>Egyezés: [[_formatScore(item.score)]]</div-->
+                                </paper-item-body>
+                            </paper-item>
+                        </a>
                     </template>
                 </paper-listbox>
             </div>
