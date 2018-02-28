@@ -1,0 +1,259 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/udes-functions-mixins/udes-logical-operators-mixin.html">
+<link rel="import" href="shared-styles.html">
+
+<link rel="import" href="../bower_components/polymer/lib/elements/dom-if.html">
+<link rel="import" href="../bower_components/neon-animation/web-animations.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-item/paper-item-body.html">
+<link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="script.html">
+<script src="../bower_components/fuse/dist/fuse.min.js"></script>
+
+<dom-module id="my-search">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px 20px;
+            }
+
+            #results {
+                --paper-item-secondary: { /* fixme */
+                    font-size: x-small;
+                    line-height: 1.4em;
+                    white-space: pre-wrap;
+                }
+            }
+        </style>
+
+        <h1>Search</h1>
+        <div class="card">
+            <paper-dropdown-menu id="place" label="Keresés itt"
+                                 on-selected-item-changed="_searchCategoryChanged" selected-item="{{categoryItem}}">
+                <paper-listbox slot="dropdown-content">
+                    <paper-item data="[[_fetchAllTemaDescription]]">
+                        Témák leírása
+                    </paper-item>
+                    <paper-item data="[[_fetchAllFeladatDescription]]">
+                        Feladatok szövege
+                    </paper-item>
+                </paper-listbox>
+            </paper-dropdown-menu>
+            <template is="dom-if" if="[[and(categoryValid, _loadNotRequestedYet)]]">
+                <paper-button on-click="_requestLoad">
+                    <iron-icon icon="file-download"></iron-icon>
+                    Leírások betöltése
+                </paper-button>
+            </template>
+            <paper-spinner active="[[loading]]"></paper-spinner>
+            <template is="dom-if" if="[[and(_loadNotRequestedYet, categoryItem.data.estimate)]]">
+                <p>
+                    Várható adatforgalom:
+                    <span>[[categoryItem.data.estimate]]</span>
+                </p>
+            </template>
+        </div>
+        <template is="dom-if" if="[[loaded]]">
+            <div class="card">
+                <paper-input label="Keresés..." type="search" value="{{searchQuery}}"></paper-input>
+                <paper-listbox id="results">
+                    <template is="dom-repeat" items="[[results]]">
+                        <paper-item>
+                            <paper-item-body two-line>
+                                <div>[[item.item.name]]</div>
+                                <div secondary inner-h-t-m-l="[[_formattedDesc(item)]]"></div>
+                                <!--div secondary>Egyezés: [[_formatScore(item.score)]]</div-->
+                            </paper-item-body>
+                        </paper-item>
+                    </template>
+                </paper-listbox>
+            </div>
+        </template>
+    </template>
+
+    <script>
+        class MySearch extends UdeS.LogicalOperatorsMixin(Polymer.Element) {
+            static get is() { return 'my-search'; }
+            static get properties() { return {
+                '_fetchAllTemaDescription': {
+                    type: Object,
+                    value: function () {
+                        let result = fetchAllTemaDescription;
+                        result.estimate = "60 request, 34KB";
+                        return result;
+                    }
+                },
+                '_fetchAllFeladatDescription': {
+                    type: Object,
+                    value: function () {
+                        let result = fetchAllFeladatDescription;
+                        result.estimate = "1700 request, 2.7MB";
+                        return result;
+                    }
+                },
+                'categoryValid': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                '_categoryInvalid': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'not(categoryValid)'
+                },
+                'loadRequested': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                '_loadNotRequestedYet': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'not(loadRequested)'
+                },
+                'loaded': {
+                    type: Boolean,
+                    value: false,
+                    notfy: true,
+                    readOnly: true
+                },
+                '_notLoadedYet': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'not(loaded)'
+                },
+                'failed': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                '_notFailedYet': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'not(failed)'
+                },
+                'loading': {
+                    type: Boolean,
+                    computed: 'and(loadRequested, _notLoadedYet, _notFailedYet)',
+                    notify: true,
+                },
+                'data': {
+                    type: Array,
+                    value: [],
+                    notify: true,
+                    readOnly: true
+                },
+                '_fuse': {
+                    type: Object,
+                    notfy: true,
+                    computed: '_initFuse(data)'
+                },
+                'searchQuery': {
+                    type: String,
+                    notify: true
+                },
+                'results': {
+                    type: Array,
+                    notify: true,
+                    computed: '_search(_fuse, searchQuery)'
+                }
+            } }
+
+            _searchCategoryChanged(event) {
+                if (this._promiseStatus) this._promiseStatus.obsolete = true;
+
+                this.setProperties({
+                    categoryValid: false,
+                    loadRequested: false,
+                    loaded: false,
+                    failed: false,
+                    data: []
+                }, true);
+
+                if (event.detail.value && event.detail.value.data) {
+                    this._setCategoryValid(true);
+
+                    const promise = event.detail.value.data;
+                    const promiseStatus = this._promiseStatus = {
+                        promise: promise,
+                        obsolete: false
+                    }
+
+                    promise.defer.finally(() => {
+                        if (!promiseStatus.obsolete) {
+                            this._setLoadRequested(true);
+                        }
+                    });
+                    promise.then((data) => {
+                        if (!promiseStatus.obsolete) {
+                            this._setData(data);
+                            this._setLoaded(true);
+                        }
+                    }, () => {
+                        if (!promiseStatus.obsolete) {
+                            this._setFailed(true);
+                        }
+                    })
+                }
+            }
+
+            _requestLoad() {
+                this._promiseStatus.promise.run(); // Supposing _promiseStatus initiated
+            }
+
+            _initFuse(data) {
+                return new Fuse(data.map(([description, object], index) => {
+                    return {
+                        description: description,
+                        name: object.name,
+                        url: object.url,
+                        index: index
+                    }
+                }), {
+                    includeScore: true,
+                    threshold: 0.6,
+                    location: 0,
+                    distance: 100,
+                    maxPatternLength: 32,
+                    minMatchCharLength: 1,
+                    keys: [
+                        'description',
+                        'name'
+                    ]
+                });
+            }
+
+            _search(fuse, query) {
+                return fuse.search(query);
+            }
+
+            _formatScore(score) {
+                return Math.round(score*100)+"%";
+            }
+
+            _formattedDesc(item) {
+                let description = item.item.description;
+                this.searchQuery.split(' ').forEach(word => {
+                    description = description.replace(word, '<mark>'+word+'</mark>');
+                });
+                return description;
+            }
+
+            _clog(value) {
+                console.log(value);
+                if (value && value.data) console.log("->", value.data);
+            }
+        }
+
+        window.customElements.define(MySearch.is, MySearch);
+    </script>
+</dom-module>

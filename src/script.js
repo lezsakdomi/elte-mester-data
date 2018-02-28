@@ -82,6 +82,11 @@ function Feladat(tema, id, name, nehezseg) {
     // noinspection JSUnusedGlobalSymbols
     this.mintaUrl = this.url + "/minta.zip";
 
+    this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
+        readFile(this.tema.url+"/"+this.name+"/feladat.txt").then(resolve, reject);
+    }, false);
+    this.description = undefined; this.fetchDescription.then(description => this.description = description);
+
     allFeladat.push(this)
 }
 
@@ -128,3 +133,37 @@ let realTree; generateRealTree.then(value => realTree = value);
 const generateTemaSet = generateRealTree.then(
     tree => new Set( [...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []) )
 );
+
+const fetchAllTemaDescription = new Promise.Deferred((init, resolve, reject) => {
+    generateTemaSet.run(init).then(temaSet => {
+        let temaList = [...temaSet];
+        Promise.all(temaList.map(tema => tema.fetchDescription.run()))
+            .then(fetchedDescriptions => {
+                resolve(fetchedDescriptions.map((fetchedDescription, index) =>
+                    [fetchedDescription, temaList[index]]
+                ));
+            }, reject);
+    }, reject);
+}, false);
+
+const generateFeladatSet = new Promise.Deferred((init, resolve, reject) => {
+    generateTemaSet.run(init).then(
+        temaSet => Promise.all([...temaSet].map(tema => tema.fetchFeladatList.run()))
+            .then(feladatListList =>
+                new Set( feladatListList.reduce((accumulator, value) => accumulator.concat(value), []) )
+            ).then(resolve, reject),
+        reject);
+}, false);
+
+const fetchAllFeladatDescription = new Promise.Deferred((init, resolve, reject) => {
+    generateFeladatSet.run(init).then(feladatSet => {
+        let feladatList = [...feladatSet];
+        Promise.all(feladatList.map(feladat => feladat.fetchDescription.run().catch(reason => {
+            console.error(new Error(reason));
+        }))).then(fetchedDescriptions => {
+            resolve(fetchedDescriptions.map((fetchedDescription, index) =>
+                [fetchedDescription, feladatList[index]]
+            ));
+        }, reject);
+    }, reject);
+}, false);
