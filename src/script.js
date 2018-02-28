@@ -76,7 +76,7 @@ function Feladat(tema, id, name, nehezseg) {
     this.name = name;
     this.nehezseg = nehezseg;
 
-    this.url = this.tema.url + "/"+this.name;
+    this.url = this.tema.url + "/"+encodeURI(this.name);
     // noinspection JSUnusedGlobalSymbols
     this.pdfUrl = this.url + "/feladat.pdf";
     // noinspection JSUnusedGlobalSymbols
@@ -96,7 +96,7 @@ function Tema(id, name, szint) {
     this.name = name;
     this.szint = szint;
 
-    this.url = baseUrl + "/"+this.name;
+    this.url = baseUrl + "/"+encodeURI(this.name);
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
         readFile(name + "/leiras.txt").then(resolve, reject)
