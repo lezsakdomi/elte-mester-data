@@ -25,11 +25,7 @@
   "builds": [
     {
       "name": "default",
-      "preset": "es5-bundled",
-      "js": {
-        "minify": true,
-        "compile": false
-      }
+      "preset": "es5-bundled"
     },
     {
       "name": "light",
