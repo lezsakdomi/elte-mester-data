@@ -30,7 +30,6 @@
       </option>
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
-    <inspection_tool class="JSDeclarationsAtScopeStart" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="UnterminatedStatementJS" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoreSemicolonAtEndOfBlock" value="true" />
     </inspection_tool>

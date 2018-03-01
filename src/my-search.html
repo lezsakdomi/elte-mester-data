@@ -10,6 +10,7 @@
 <link rel="import" href="../bower_components/paper-item/paper-item-body.html">
 <link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="script.html">
@@ -61,7 +62,14 @@
         </div>
         <template is="dom-if" if="[[loaded]]">
             <div class="card">
-                <paper-input label="Keresés..." type="search" value="{{searchQuery}}"></paper-input>
+                <paper-input label="Keresés..." type="search"
+                             value="{{searchQuery}}" on-keydown="_searchKeyDown"></paper-input>
+                <template is="dom-if" if="[[resultsIncomplete]]">
+                    <p class="info">
+                        <iron-icon icon="info-outline"></iron-icon>
+                        Nyomjon entert a teljes kereséshez
+                    </p>
+                </template>
                 <paper-listbox id="results">
                     <template is="dom-repeat" items="[[_results]]">
                         <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
@@ -166,13 +174,41 @@
                 'results': {
                     type: Array,
                     notify: true,
-                    //computed: '_search(_fuse, searchQuery)'
+                    //computed: '_fullSearch(_fuse, searchQuery)'
                     readOnly: true
                 },
                 '_results': {
                     type: Array,
                     notify: true,
-                    computed: 'limit(results, 20)'
+                    computed: 'limit(results, 50)'
+                },
+                'fastSeachDone': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                'fullSearchDone': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                '_noFullSearchDoneYet': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'not(fullSearchDone)'
+                },
+                'searchInitiated': {
+                    type: Boolean,
+                    value: false,
+                    notify: true,
+                    readOnly: true
+                },
+                'resultsIncomplete': {
+                    type: Boolean,
+                    notify: true,
+                    computed: 'and(searchInitiated, _noFullSearchDoneYet)'
                 }
             } }
             static get observers() { return [
@@ -187,7 +223,10 @@
                     loadRequested: false,
                     loaded: false,
                     failed: false,
-                    data: []
+                    data: [],
+                    fastSearchDone: false,
+                    fullSearchDone: false,
+                    searchInitiated: false
                 }, true);
 
                 if (event.detail.value && event.detail.value.data) {
@@ -230,6 +269,7 @@
                         index: index
                     }
                 }), {
+                    shouldSort: true,
                     includeScore: true,
                     threshold: 0.6,
                     location: 0,
@@ -243,26 +283,84 @@
                 });
             }
 
-            _search(fuse, query) {
+            _fastSeach(fuse, query) {
+                return fuse.list.filter(
+                    item => query.split(' ').some(
+                        word => fuse.options.keys.some(
+                            key => item[key] && item[key].includes(word)
+                        )
+                    )
+                ).map(item => ({item: item}));
+            }
+
+            _fullSearch(fuse, query) {
                 return fuse.search(query);
             }
 
-            _doSearch(fuse, query) {
-                if (this._doSearchStatus) this._doSearchStatus.obsolete = true;
-                const status = this._doSearchStatus = {
-                    obsolete: false
-                };
-                (async function(that, fuse, query) {
-                    return that._search(fuse, query)
-                })(this, fuse, query).then(value => {
-                    if (!status.obsolete) {
-                        Polymer.RenderStatus.afterNextRender(this, function(){
-                            if (!status.obsolete) {
-                                this._setResults(value);
-                            }
-                        });
+            _searchKeyDown(event) {
+                if (event.keyCode === 13) {
+                    this._doSearch(this._fuse, this.searchQuery, true);
+                    event.preventDefault();
+                }
+            }
+
+            _doSearch(fuse, query, full = false) {
+                if (!fuse || !query) return;
+                if (this._searchStatus) {
+                    this._searchStatus.obsolete = true;
+                    if (this._searchStatus.fullSearchTimeout) {
+                        window.clearTimeout(this._searchStatus.fullSearchTimeout);
                     }
-                });
+                }
+                if (fuse && query) {
+                    this.setProperties({
+                        fullSearchDone: false,
+                        fastSearchDone: false,
+                        searchInitiated: true
+                    }, true);
+                    const status = this._searchStatus = {
+                        obsolete: false
+                    };
+
+                    const doFullSearch = async function (that, fuse, query) {
+                        const results = that._fullSearch(fuse, query);
+                        if (!status.obsolete) {
+                            Polymer.RenderStatus.afterNextRender(that, function () {
+                                if (!status.obsolete) {
+                                    this.setProperties({
+                                        results: results,
+                                        fullSearchDone: true
+                                    }, true);
+                                }
+                            });
+                        }
+                    };
+                    const doSimpleSearch = async function (that, fuse, query) {
+                        const results = that._fastSeach(fuse, query);
+                        if (!status.obsolete) {
+                            Polymer.RenderStatus.afterNextRender(that, function () {
+                                if (!status.obsolete) {
+                                    this.setProperties({
+                                        results: results,
+                                        fastSearchDone: true
+                                    }, true);
+                                }
+                            });
+                            status.fullSearchTimeout = window.setTimeout(() => {
+                                if (!status.obsolete) doFullSearch(that, fuse, query);
+                            }, 700);
+                        }
+                    };
+
+                    if (full) doFullSearch(this, fuse, query);
+                    else doSimpleSearch(this, fuse, query);
+                } else {
+                    this.setProperties({
+                        fullSearchDone: false,
+                        fastSearchDone: false,
+                        searchInitiated: false
+                    })
+                }
             }
 
             _formatScore(score) {
