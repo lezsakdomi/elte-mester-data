@@ -86,7 +86,7 @@ function Feladat(tema, id, name, nehezseg) {
     this.mintaUrl = this.rawUrl + "/minta.zip";
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile(this.tema.url+"/"+this.name+"/feladat.txt").then(resolve, reject);
+        readFile(this.tema.name+"/"+this.name+"/feladat.txt").then(resolve, reject);
     }, false);
     this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
@@ -103,7 +103,7 @@ function Tema(id, name, szint) {
     this.rawUrl = rawBaseUrl + "/"+encodeURI(this.name);
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile(name + "/leiras.txt").then(resolve, reject)
+        readFile(name+"/leiras.txt").then(resolve, reject)
     }, false);
     this.description = undefined; this.fetchDescription.then(description => this.description = description);
 

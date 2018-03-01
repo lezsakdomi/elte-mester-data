@@ -63,7 +63,7 @@
             <div class="card">
                 <paper-input label="Keresés..." type="search" value="{{searchQuery}}"></paper-input>
                 <paper-listbox id="results">
-                    <template is="dom-repeat" items="[[results]]">
+                    <template is="dom-repeat" items="[[_results]]">
                         <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
                             <paper-item>
                                 <paper-item-body two-line>
@@ -166,9 +166,18 @@
                 'results': {
                     type: Array,
                     notify: true,
-                    computed: '_search(_fuse, searchQuery)'
+                    //computed: '_search(_fuse, searchQuery)'
+                    readOnly: true
+                },
+                '_results': {
+                    type: Array,
+                    notify: true,
+                    computed: 'limit(results, 20)'
                 }
             } }
+            static get observers() { return [
+                '_doSearch(_fuse, searchQuery)'
+            ] }
 
             _searchCategoryChanged(event) {
                 if (this._promiseStatus) this._promiseStatus.obsolete = true;
@@ -238,16 +247,42 @@
                 return fuse.search(query);
             }
 
+            _doSearch(fuse, query) {
+                if (this._doSearchStatus) this._doSearchStatus.obsolete = true;
+                const status = this._doSearchStatus = {
+                    obsolete: false
+                };
+                (async function(that, fuse, query) {
+                    return that._search(fuse, query)
+                })(this, fuse, query).then(value => {
+                    if (!status.obsolete) {
+                        Polymer.RenderStatus.afterNextRender(this, function(){
+                            if (!status.obsolete) {
+                                this._setResults(value);
+                            }
+                        });
+                    }
+                });
+            }
+
             _formatScore(score) {
                 return Math.round(score*100)+"%";
             }
 
             _formattedDesc(item) {
-                let description = item.item.description;
-                this.searchQuery.split(' ').forEach(word => {
-                    description = description.replace(word, '<mark>'+word+'</mark>');
-                });
-                return description;
+                if (item && item.item && item.item.description) {
+                    let description = item.item.description;
+                    this.searchQuery.split(' ').forEach(word => {
+                        description = description.replace(word, '<mark>' + word + '</mark>');
+                    });
+                    return description;
+                } else {
+                    return "No description avalilable";
+                }
+            }
+
+            limit(array, size) {
+                return array.slice(0, size);
             }
 
             _clog(value) {
