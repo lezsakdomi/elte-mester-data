@@ -7,6 +7,9 @@ const useCdn = true;
 const ghFetchBase = "https://"+(useCdn?"cdn.rawgit.com":"rawgit.com")+"/"+ghUser+"/"+ghRepo+"/"+ghTag+"/";
 
 async function fetchFile(path) {
+    if (path instanceof Array) path = path
+        .map(component => encodeURIComponent(component).replace('%2F', '/'))
+        .join('/');
     const url = ghFetchBase + path.replace(/^\//, "");
     const response = await fetch(url);
     if (response.ok) return response;
@@ -86,7 +89,7 @@ function Feladat(tema, id, name, nehezseg) {
     this.mintaUrl = this.rawUrl + "/minta.zip";
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile(this.tema.name+"/"+this.name+"/feladat.txt").then(resolve, reject);
+        readFile([this.tema.name, this.name, "feladat.txt"]).then(resolve, reject);
     }, false);
     this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
@@ -103,12 +106,12 @@ function Tema(id, name, szint) {
     this.rawUrl = rawBaseUrl + "/"+encodeURIComponent(this.name);
 
     this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile(name+"/leiras.txt").then(resolve, reject)
+        readFile([name, "leiras.txt"]).then(resolve, reject)
     }, false);
     this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
     this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
-        readFile(name+"/flist.tsv")
+        readFile([name, "flist.tsv"])
             .then(newTSV)
             .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
             .then(resolve, reject);
