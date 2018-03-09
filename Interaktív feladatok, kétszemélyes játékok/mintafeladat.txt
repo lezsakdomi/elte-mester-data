@@ -1,0 +1,210 @@
+Interaktı́v feladatok, kétszemélyes játékok                                                                              *
+
+
+                                                        Számjáték
+    Tekintsük az alábbi alábbi kétszemélyes játékot. A játék úgy kezdődik, hogy véletlenszerűen leraknak az
+asztalra n darab pozitı́v egész számot egy sorba. A két játékos felváltva lép. Egy lépés azt jelenti, hogy a játékos
+leveszi az asztalról a számsorozat bal avagy jobb végén lévő számot. A kiválasztott számot törlik a tábláról és
+a játékos pontszámához adódik. A játék akkor ér véget, ha a számok elfogytak.
+Mindkét játékos arra törekszik, hogy a lehető legtöbb pontot gyűjtse. A játékot az első játékos kezdi.
+
+ Feladat
+Írjunk olyan programot, amely az kezdő játékos szerepét játssza! A második játékos lépéseit egy már adott
+számı́tógépes program szolgáltatja. A két játékos a rendelkezésre bocsátott Play modul műveleteinek fel-
+használásával kommunikál egymással.
+
+ Könytári műveletek
+TablaMeret a kezdeti játékállásban a táblán lévő számok számát adja ami páros szám. Minden más Play
+    modul műveletet meg kell előznie egy TablaMeret végrehajtásának. A táblaméret legfeljebb 1000 lehet.
+Tabla(i) a kezdeti játékállásban a táblán lévő i-edik számot adja.
+Lepesem(L) hı́vással közli az első játékos a választását; ha balról vesz le, akkor az L aktuális paraméter értéke
+    a B karakter, ha jobbról, akkor a J karakter legyen.
+Lepesed a második játékos (a gép) utolsó lépését adja, a B karaktert, ha balról választott számot, a J karaktert,
+    ha jobbról.
+
+ A Play modul műveletei Pascal nyelv esetén
+   • function TablaMeret:integer;
+   • function TablaMeret:integer;
+   • procedure Lepesem(L:char);
+   • function Lepesed:char;
+
+ A Play modul műveletei C/C++ nyelv esetén
+   • int TablaMeret();
+   • int Tabla(int i);
+   • void Lepesem(char L);
+   • char Lepesed();
+
+ Feltételek
+   • n páros szám és 2 ≤ n ≤ 1000.
+   • Programod nem ı́rhat és nem olvashat egyetlen fájlt sem, beleértve a standard bemenetet és kimenetet!
+
+ Gyakrolás
+A minta.zip letölthető állomány tartalmazza a Play modulnak egy megvalósı́tását Pascal és C++ nyelven.
+Pascal esetén elegendő csak a uses Play; import direktı́va megadása a program elején.
+C/C++ esetén projektet célszerű készı́teni és a Play.h és Play.cpp állományokat is hozzá kell adni a projekthez.
+A program végrahajtásakor a standard bemenetről olvassa először az n értékét, majd a kezdeti játékállást
+megadó számokat. A program hibátlan kommunikáció esetén a standard kimenetre két számot ı́r ki, az első az
+első játékos összpontszáma, a második pedig a második játékosé. A letölthető minta Play modulban a második
+játékos nem optimálisan játszik, hanem mohó módon mindig a nagyobbikat választja!
+
+
+                                                          1 . oldal
+Interaktı́v feladatok, kétszemélyes játékok                                                                                   *
+
+
+ Példa
+ Bemenet                                                                Kimenet
+ 6                                                                      18 6
+ 4 7 2 9 5 2
+                                                          Megoldás
+     Jelölje ha1 , . . . , an i a kezdeti játékállást. Minden lehetséges játékállást egyértelműen meghatározza az, hogy
+mely számok vannak még a táblán. Tehát minden játékállás azonosı́tható (i, j) számpárral, ami azt jelenti,
+hogy a táblán az hai , . . . , aj i számsorozat van. Mivel n páros szám, ı́gy minden esetben, amikor az első játékos
+lép, vagy i páros és j páratlan, vagy fordı́tva. Tehát az első játékos kényszerı́theti a második játékost, hogy
+az mindig vagy csak páros, vagy csak páratlan indexű elemét válassza a számsorozatnak. Tehát ha a páros
+indexűek összege nagyobb, vagy egyenlő, mint a páratlanok összege, akkor az első játékos mindig páratlan
+indexűt választ, egyébként mindig párosat.
+Érdekesebb a játék, ha az a cél, hogy az első játékos a lehető legtöbbet szerezze meg, feltéve, hogy erre törekszik
+a második játékos is.
+Ábrázoljuk a játékállásokat gráffal.
+
+                                                                  1,8
+
+                                                         2,8               1,7
+
+                                                   3,8            2,7            1,6
+
+                                            4,8          3,7               2,6         1,5
+
+                                      5,8          4,7            3,6            2,5         1,4
+
+                               6,8          5,7          4,6               3,5         2,4         1,3
+
+                        7,8           6,7          5,6            4,5            3,4         2,3         1,2
+
+                  8,8          7,7          6,6           5,5              4,4         3,3         2,2         1,1
+
+
+1. ábra. A játékállások gráfja n = 8 esetén. Körrel jelölt állásból (i + j páratlan) az első, négyzettel jelölt
+állásból (i + j páros) a második játékos lép.
+
+
+
+
+                                                               2 . oldal
+Interaktı́v feladatok, kétszemélyes játékok                                                                           *
+
+
+     Definiáljuk minden (i, j) játékállásra azt a maximális pontszámot, amit az első játékos elérhet ebből a
+játékállásból indulva, feltéve, hogy a második játékos is arra törekszik, hogy a lehető legtöbb pontot szerezze.
+Jelölje ezt az értéket Opt(i, j). Opt(i, j) a következő rekurzı́v összefüggés számı́tható.
+                              
+                               0                                                 ha i = j
+                  Opt(i, j) =      max(ai + Opt(i + 1, j), aj + Opt(i, j − 1) ha i < j és i + j páratlan
+                                   min(Opt(i + 1, j), Opt(i, j − 1)               ha i < j és i + j páros
+                              
+
+ Tehát alkalmazható a dinamikus programozás módszere, vagyis az Opt(i, j) értékeket a játék megkezdése
+
+
+                                           i,j       Min(B,J)                                 i,j       Max(B,J)
+
+
+
+
+                           i-1,j   B                      i,j+1       J       i-1,j       B                  i,j+1   J
+
+
+
+                                                     2. ábra. Mini-max szabály.
+
+
+előtt kiszámı́tjuk. Tároljuk minden (i, j) játékállásra a Lep[i,j] tömbelemben az optimális lépést, tehát a B
+karaktert, ha a képletben ai + Opt(i + 1, j) > aj + Opt(i, j − 1), mert ekkor balról kell elvenni, egyébként pedig
+az J karaktert, mert ekkor jobbról kell elvenni.
+
+                                       n                                                                0
+                                                                                                    0
+                                                                                              0
+                                   j                       ?      !                       0
+                                                           !!                         0
+                                                                              0
+                                                                          0
+                                                                  0
+                                                           0
+                                                      0
+
+                                                 0
+                                   1       0
+                                           1               i                                             n
+
+              3. ábra. Táblázatkitöltési sorrend. Opt(i, j) összetevői: Opt(i + 1, j) és Opt(i, j − 1)
+
+
+
+
+                                                                  3 . oldal
+     Interaktı́v feladatok, kétszemélyes játékok                                                  *
+
+
+     Megvalósı́tás C++ nyelven
+ 1   # define maxN 1001
+ 2   # include "Play.h"       //a 2. játékost        megvalósı́tó modul m}
+                                                                             u veletei
+ 3   int N;                   // táblaméret
+ 4   int A[maxN ];            //a táblán lév}
+                                               o       számok sorozata
+ 5   char Lep[maxN ][ maxN ]; // az 1. játékos       optimális lépései
+ 6   int Opt[maxN ][ maxN ]; // az 1. játékos        Opt[i][j] pontot szerezhet (i,j) játékállásból
+ 7
+ 8   void Elofeldolgoz (){
+ 9      int PontBal , PontJobb ;
+10      for(int j=1; j <=N;j++){
+11          Opt[j][j]=0;
+12          for(int i=j -1; i >0; i--)
+13          if((i+j )%2==1){ // 1. játékos lép
+14              PontBal =A[i]+ Opt[i+1][j];
+15              PontJobb =A[j]+ Opt[i][j -1];
+16              if(PontBal > PontJobb ){
+17                  Opt[i][j]= PontBal ;
+18                  Lep[i][j]= ’B’;
+19              }else{
+20                  Opt[i][j]= PontJobb ;
+21                  Lep[i][j]= ’J’;
+22              }
+23          }else{// 2. játékos lép
+24              if(Opt[i+1][j]<Opt[i][j -1])
+25                  Opt[i][j]= Opt[i+1][j];
+26              else
+27                  Opt[i][j]= Opt[i][j -1];
+28          }
+29      }
+30   }
+31   void Jatszas (){
+32      int Bal =1, Jobb=N;
+33      char L2;
+34      while (Bal <Jobb ){
+35          if(Lep[Bal ][ Jobb ]== ’B’){
+36              Bal ++;
+37              Lepesem (’B’);
+38          }else{
+39              Jobb --;
+40              Lepesem (’J’);
+41          }
+42          L2= Lepesed (); //a válaszlépés lekérdezése
+43          if(L2 == ’B’)
+44              Bal ++;
+45          else
+46              Jobb --;
+47      }
+48   }
+49   int main (){
+50      N= TablaMeret ();
+51      for (int i=1;i <=N;i++) A[i]= Tabla (i);
+52      Elofeldolgoz ();
+53      Jatszas ();
+54   }
+
+
+                                                       4 . oldal
+

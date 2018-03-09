@@ -1,0 +1,61 @@
+Programozási tételek – kiválogatás                                                                  *
+
+
+                                     Kieséses verseny
+Egy kieséses versenyben ismerjük a csapatok mérkőzéseit: ki kit győzött le. Írj programot, amely
+megadja:
+    A. a még versenyben levőket;
+    B. azokat a csapatokat, amelyek legalább egyszer győztek, de már kiestek!
+Bemenet
+A standard bemenet első sorában a csapatok száma (1≤N≤1000) és mérkőzések száma
+(1≤M≤10 000) van. A következő M sorban egy-egy mérkőzés győztese (1≤A≤N) és vesztese
+(1≤B≠A≤N) sorszáma található.
+Kimenet
+A standard kimenet első sorába azon csapatok sorszámát kell írni, amelyek még verseny-
+ben vannak, a második sorba pedig azokat, amelyek legalább egyszer győztek, de már kiestek!
+Példa
+Bemenet                                         Kimenet
+8   5                                           4 5 7
+1   2                                           1
+4   3                                                       4
+4   1                                               1               4           5           7
+7   8
+5   6                                           1       2       3       4   5       6   7       8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                         Megoldás
+Első lépésként minden csapatra leszámoljuk, hogy hány győzelme és hány veresége van. Bár vere-
+ségből egy kieséses versenyen maximum egy lehet, de lehet megszámolásként is kezelni.
+Ezután mindkét részfeladat egy kiválogatás. Az A részfeladat megoldása azok kiválogatása, akikre
+a vereségek száma 0, a B részfeladaté pedig azok kiválogatása, akik győzelmei és veresége száma
+sem nulla.
+Számolás(N,M,Adb,A,Bdb,B):
+  Gy:=[0,…,0]; V:=[0,…,0]
+  Ciklus i=1-től M-ig
+    Be: A,B                    [A legyőzte B-t]
+    Gy[A]:=Gy[A]+1
+    V[B]:=V[B]+1               [lehetne V[B]:=1 is]
+  Ciklus vége
+  Adb:=0
+  Ciklus i=1-től N-ig
+    Ha V[i]=0 akkor Adb:=Adb+1; A[Adb]:=i
+  Ciklus vége
+
+
+                                            1. oldal
+Programozási tételek – kiválogatás                *
+
+  Bdb:=0
+  Ciklus i=1-től N-ig
+    Ha Gy[i]*V[i]>0 akkor Bdb:=Bdb+1; B[Bdb]:=i
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                     2. oldal
+

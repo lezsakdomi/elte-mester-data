@@ -1,0 +1,139 @@
+Gráfok, bejárás                                                                                                        *
+
+
+                                                    Nincs visszaút
+     Egy légiközlekedési társaság n város között közlekedtek járatokat. Ismerjük azt, hogy mely városok között
+van járata a társaságnak. Ha az u városból a v városba van járat, akkor nem biztos, hogy a v városból is van
+járata az u városba.
+
+ Feladat
+Ijunk olyan programot, amely kiszámı́tja azokat a városokat, amelyekbe a társaság járataival el lehet jutni egy
+kijelölt v városból, de nem lehet visszajutni a v városba a társaság járataival!
+
+ Bemenet
+A standard bemenet első sora három egész számot tartalmaz, avárosok n számát (1 ≤ n ≤ 200000), a járatok
+m számát (0 ≤ m ≤ 1000000) és a kijelölt v (1 ≤ v ≤ n) várost. a városokat az 1, . . . , n számokkal azonosı́tjuk.
+
+ Kimenet
+A standard kimenet első azon városok k számát tartalmazza, amelyekbe a társaság járataival el lehet jutni
+a v városból, de nem lehet visszajutni a v városba a társaság járataival! A második sor ezeket a városokat
+tartalmazza tetszőleges sorrendben, egy-egy szóközzel elválasztva.
+
+ Példa
+ Bemenet                                                        Kimenet
+ 9   14 4                                                       4
+ 1   2                                                          6 7 8 9
+ 2   3
+ 2   1                                                                        2
+ 1   6
+ 3   4
+ 4   5
+ 5   3                                                            1            3
+ 5   8
+ 6   7
+ 7   6
+ 7   8                                                            6            5           4
+ 8   9
+ 9   8
+ 3   6
+                                                                  7            8           9
+
+
+ Korlátok
+Időlimit: 0.1 mp.
+Memórilimit: 32 MiB
+Pontozás: a tesztesetek 40%-ában n < 1000
+
+
+
+                                                       Megoldás
+    Tekintsük azt az irányı́tott G = (V, E) gráfot, amelynek pontjai a városok azaz V = {1, . . . , n}, és (u, v)
+akkor és csak akkor él a gráfban, ha a v városból van közvetlen járat az u városba.
+Jelölje GT a G gráf transzponáltját, tehát azt a gráfot, amelyben u → v akkor és csak akkor él, ha v → u él
+
+
+                                                         1 . oldal
+     Gráfok, bejárás                                                                                              *
+
+
+     a G gráfban. Jelölje Eler(G, p) a G gráf azon q pontjainak halmazát, amelyekhez van út a p pontból. Tehát a
+     feladat megoldásai azok és csak azok a p pontok, amelyekre teljesül, hogy
+
+                                            p ∈ Eler(G, v) és p ∈
+                                                                 / Eler(GT, v)
+
+
+     Tehát a megoldás lényegi része megadni egy olyan algoritmust, amely előállı́tja az Eler(G, p) halmazt. Több
+     módszer is ismert ezen probléma megoldására, mi most az alábbi rekurzı́v algoritmust haználjuk.
+
+     eljárás Eler(G,p,Elert)
+          Elert[p]:=igaz
+          ciklus minden olyan q elemre, amelyre (p,q) él a G gráfban
+                ha Elert[q]=hamis akkor
+                    Eler(G,q,Elert)
+                elágazás vége
+          ciklus vége
+     eljárás vége
+                                            Megvalósı́tás C++ nyelven
+
+ 1   # include <iostream >
+ 2   # include <vector >
+ 3   # define maxN 200001
+ 4   using namespace std;
+ 5   typedef vector <int > Graf [];
+ 6   vector <int > G[maxN ];
+ 7   vector <int > GT[maxN ];
+ 8   int n, p0;
+ 9
+10   void Beolvas (){
+11   // Globális : G,GT ,n,p0
+12       int m,p,q;
+13       cin >>n>>m>>p0;
+14       for (int i=0;i<m;i++){
+15           cin >>p>>q;
+16           G[p]. push_back (q);
+17           GT[q]. push_back (p);
+18       }
+19   }
+20   void Eler(Graf G, int p, bool E[]){
+21       E[p]= true;
+22       for(int q:G[p])
+23           if(!E[q])
+24               Eler(G,q,E);
+25   }
+26
+27   int main (){
+28      Beolvas ();
+29      bool E[n+1];
+30      bool ET[n+1];
+31
+32       for (int p=1;p <=n;p++){
+33          E[p]= false ;
+34          ET[p]= false ;
+35       }
+36
+
+
+                                                         2 . oldal
+     Gráfok, bejárás                        *
+
+
+37      Eler(G,p0 ,E);
+38      Eler(GT ,p0 ,ET );
+39      int k=0;
+40      for(int p=1;p <=n;p++)
+41         if(E[p] && !ET[p])
+42             k++;
+43      cout <<k<<endl;
+44      for(int p=1;p <=n;p++)
+45         if(E[p] && !ET[p])
+46                cout <<p<<" ";
+47      cout <<endl;
+48    return 0;
+49    }
+
+
+
+
+                                   3 . oldal
+

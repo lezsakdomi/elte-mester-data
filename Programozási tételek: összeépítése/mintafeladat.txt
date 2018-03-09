@@ -1,0 +1,49 @@
+Programozási tételek összeépítése                                                             *
+
+
+                      Kiesettek közül a legtöbbször győző
+Egy kieséses versenyben ismerjük a csapatok mérkőzéseit: ki kit győzött le.
+Írj programot, amely megadja azt a csapatot, amely a kiesettek közül a legtöbbször győzött!
+Bemenet
+A standard bemenet első sorában a csapatok száma (1≤N≤1000) és mérkőzések száma
+(1≤M≤10 000) van. A következő M sorban egy-egy mérkőzés győztese (1≤A≤N) és vesztese
+(1≤B≠A≤N) sorszáma található.
+Kimenet
+A standard kimenet első sorába annak a csapatnak a sorszámát kell írni, amely a kiesettek
+közül a legtöbbször győzött!
+Példa
+Bemenet                                          Kimenet
+6   5                                            4
+1   2
+6   4
+3   1
+4   5
+4   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                         Megoldás
+Első lépésként minden csapatra leszámoljuk, hogy hány győzelme és hány veresége van. Bár vere-
+ségből egy kieséses versenyen maximum egy lehet, de mégis egyszerűbb megszámolásként kezel-
+ni.
+Ezután a feladat egy kiválogatás és egy maximumkiválasztás összeépítése.
+Számolás(N,M,Max):
+  Gy:=[0,…,0]; V:=[0,…,0]
+  Ciklus i=1-től M-ig
+    Be: A,B                     {A legyőzte B-t}
+    Gy[A]:=Gy[A]+1
+    V[B]:=V[B]+1                [lehetne V[B]:=1 is]
+  Ciklus vége
+  Max:=0
+  Ciklus i=1-től N-ig
+    Ha V[i]>0 akkor Ha Gy[i]>Gy[Max] akkor Max:=i
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                             1. oldal
+

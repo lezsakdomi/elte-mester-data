@@ -1,0 +1,75 @@
+Programozási tételek – rendezés                                                               *
+
+
+                      Kiesettek közül a legtöbbször győző
+Az Olimpiai Játékokon M ország vesz részt. Az országokat 1 és M közötti sorszámukkal azono-
+sítjuk.
+Készíts programot, amely az eredmények ismeretében előállítja az olimpia éremtáblázatát! Az
+éremtáblázat aranyérmek száma szerint csökkenő sorrendű legyen. Azonos aranyérem szám ese-
+tén a több ezüst-, azonos ezüstérem szám esetén a több bronzérem döntsön! Ha mindhárom
+éremből ugyanannyi van, akkor a kisebb sorszámú ország legyen elöl!
+Bemenet
+A standard bemenet első sorában az országok száma van (1≤M≤200). A következő M
+sorban egy-egy ország aranyérmesei, ezüstérmesei és bronzérmesei száma található (0≤Aranyi,
+Ezüsti,Bronzi≤100).
+Kimenet
+A standard kimenet első sorába az érmet szerzett országok sorszámát kell kiírni, az i-edik
+az éremtáblázat i-edik helyezettje legyen!
+Példa
+Bemenet                                         Kimenet
+6                                               3 4 1 5
+1   2   0
+0   0   0
+3   1   2
+3   1   1
+1   0   9
+0   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                         Megoldás
+Ez első lépésként egy egyszerű rendezési feladat, amiben csak a rendezési relációt kell megírni!
+Vigyázni kell azonban arra, hogy az értékek helyett azok sorszámát rendezzük át!
+A rendezés után le kell hagyni a rendezett sorozat végéről a 0 éremmel rendelkezőket!
+
+
+
+
+                                            1. oldal
+Programozási tételek – rendezés                                *
+
+
+
+Rendezés(M,Arany,Ezüst,Bronz,Db,Sor):
+  Sor:=(1,2,…,M)
+  Ciklus i=1-től M-1-ig
+    max:=i
+    Ciklus j=i+1-től M-ig
+      Ha nagyobb(Sor[j],Sor[max]) akkor max:=j
+    Ciklus vége
+    x:=Sor[max]; Sor[max]:=Sor[i]; Sor[i]:=x
+  Ciklus vége
+  Db:=M
+  Ciklus amíg Db>0 és
+              Arany[Sor[Db]]+Ezüst[Sor[Db]]+Bronz[Sor[Db]]=0
+    Db:=Db-1
+  Ciklus vége
+Eljárás vége.
+nagyobb(i,j):
+  nagy:=hamis
+  Ha Arany[i]>Arany[j] akkor nagy:=igaz
+  különben ha Arany[i]=Arany[j] akkor
+               Ha Ezüst[i]>Ezüst[j] akkor nagy:=igaz
+               különben ha Ezüst[i]=Ezüst[j] akkor
+                           Ha Bronz[i]>Bronz[j]
+                              akkor nagy:=igaz
+  nagyobb:=nagy
+Függvény vége.
+
+
+
+
+                                  2. oldal
+

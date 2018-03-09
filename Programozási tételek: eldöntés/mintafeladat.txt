@@ -1,0 +1,42 @@
+Programozási tételek – eldöntés                                                                 *
+
+
+                                  Marad a hőmérséklet
+Az időjárás előrejelzésben ismerjük előre N nap várható minimális és maximális hőmérsékletét.
+Készíts programot, amely eldönti, hogy van-e olyan nap, amikor napközben nem változik a hő-
+mérséklet!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000) van. A következő N sor-
+ban egy-egy napra előre jelzett minimális és maximális hőmérséklete (1≤Mini≤Maxi≤N) találha-
+tó.
+Kimenet
+A standard kimenet első sorába a VAN szót kell írni, ha van olyan nap, amikor nem válto-
+zik a hőmérséklet, egyénként pedig a NINCS szót!
+Példa
+Bemenet                                         Kimenet
+5                                               VAN
+-10 2
+-6 6
+3 3
+4 5
+4 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                        Megoldás
+Azt kell eldönteni, hogy létezik-e olyan i index, amelyre Mini=Maxi!
+Eldöntés(N,X,Van):
+  i:=1
+  Ciklus amíg i≤N és Min[i]≠Max[i]
+    i:=i+1
+  Ciklus vége
+  Van:=i≤N
+Eljárás vége.
+
+
+
+
+                                            1. oldal
+

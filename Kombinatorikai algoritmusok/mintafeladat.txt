@@ -1,0 +1,145 @@
+Kombinatorikai feladatok                                                                                                 *
+
+
+                                      3-1-2-minta mentes permutációk
+Az 1, . . . , n természetes számoknak egy p1 , p2 , . . . , pn permutációját 3-1-2-minta mentesnek nevezzük, ha nincs
+három olyan 1 ≤ i < j < k ≤ n index, hogy pi > pj , pi > pk és pj < pk teljesülne.
+
+ Feladat
+Ijunk olyan programot, amely kiszámı́tja egy adott 3-1-2-minta mentes permutáció lexikografikus rendezés
+szerinti rákövetkezőjét!
+
+ Bemenet
+A standard bemenet első sora egy egész számot tartalmaz, az n (1 ≤ n ≤ 100 000) értékét. A második
+sor pontosan n pozitı́v egész számot tartalmat egy-egy szóközzel elválasztva, az 1, . . . , n természetes számoknak
+egy 3-1-2-minta mentes p1 , p2 , . . . , pn permutációját. Feltehetjük, hogy a bemenet nem a n, n−1, . . . , 1 monoton
+csökkenő sorozat.
+
+ Kimenet
+A standard kimenet első sora n egész számot tartalmazzon (egy-egy szóközzel elválasztva), azt a 3-1-2-minta
+mentes prmutációt, amely a bemenetben adott permutáció rákövetkezője a lexikografikus rendezésben.
+
+ Példa
+ Bemenet                                                       Kimenet
+ 5                                                             2 4 3 1 5
+ 2 3 5 4 1
+
+
+
+ Korlátok
+Időlimit: 0.1 mp.
+Memórilimit: 32 MiB
+Pontozás: a tesztesetek 30%-ában n < 100
+                                                      Megoldás
+ Tekintsük az alábbi három verem műveletet.
+
+
+                                                                            1 2 3 4 5 6
+
+                                  A         B                         C                D
+
+
+
+
+                                                        E
+
+
+
+
+                                                        F
+
+
+                                                        1. ábra.
+
+
+
+Verembe Az C-D szakaszon lévő számsorozat első eleme átmegy az E-F szakasz elejére.
+Átmegy Az C-D szakaszon lévő számsorozat első eleme átmegy az A-B szakaszon lévő számsorozat végére.
+
+Vereből Az E-F szakaszon lévő számsorozat első eleme átmegy az A-B szakaszon lévő számsorozat végére.
+
+
+                                                        1 . oldal
+     Kombinatorikai feladatok                                                                                                    *
+
+
+     Állı́tás
+     Egy π = (p1 , p2 , . . . , pn ) akkor és csak akkor 3-1-2-minta mentes, ha előállı́tható az 1, . . . , n sorozatból verem
+     műveletekkel.
+
+     Bizonyı́tás
+     Ha a π = (p1 , p2 , . . . , pn ) számsorozatot veremmel állı́tottuk elő, akkor nem lehet benne 3-1-2 minta, azaz olyan
+     1 ≤ i < j < k ≤ n index, hogy pi > pj , pi > pk és pj < pk , mivel akkor, amikor pi kikerült az A-B szakasz
+     végére, akkor pj -nek és pk -nak a veremben kellett lennie, de ekkor pk előbb állna, mint pj .
+     Forditva, legyen π egy 3-1-2-minta mentes permutáció. Teljes indukcióval megmutatjuk, hogy π előállı́tható
+     veremmel. Nyilvánvaló, hogy n = 2 esetén mindkét permutáció 3-1-2-minta mentes és előállı́tható veremmel.
+     Tfh. bármely m < n-re minden m elemű 3-1-2-minta mentes permutáció előállı́tható veremmel.
+     Tekintsük a π permutációnak a π = α, 1, β felbontását. Tehát α az 1 szám előtti, β pedig az utáni számsorozat.
+     α és β is 3-1-2-minta mentes, tehát az indukciós feltevésünk szerint előállı́tható veremmel. Ha az α sorozat
+     legnagyobb eleme k, akkor a 3-1-2-minta mentesség miatt a 2, . . . , k számok mindegyike előfordul α-ban, tehát α
+     a 2, . . . , k számok egy 3-1-2-minta mentes permutációja, ı́gy indukciós feltevésünk szerint előállı́tható veremmel
+     a 2, . . . , k bemenetből. Hasonlóan, β előállı́tható veremmel a k + 1, . . . , n számsorozatból. Jelölje [α] azon verem
+     műveletek sorozatát, amelyekkel α előállı́tható, [β] pedig a β-t előállı́tó műveletsor. Ekkor az
+     Verembe,[α],Veremböl,[β]
+     műveletsor az 1, 2, . . . , k, k + 1, . . . , n bemenetből a π számsort állı́tja elő. 
+     Megjegyezzük, hogy a verem műveletekkel történő előállı́tás egyértelmű, ha nem engedünk meg Verembe; Veremböl
+     kombinációt, hanem helyette Átmegy műveletet használunk.
+     Bonsuk fel a bemeneti π számsorozatot az n szám előfordulása alapján: π = α, u, n, β
+     Ha β üres sorozat, akkor a megoldás α, n, u. Egyébként β a 3-1-2-minta mentes tulajdonság miatt monoton
+     csökkenő sorozat, tehát π = α, u, n, n − 1, . . . , v, γ alakban ı́rható, ahol v a legkisebb olyan elem, amelyre u < v.
+     Megmutatjuk, hogy ekkor a
+                                                          ρ = α, v, u, γ, v + 1, . . . , n
+     permutáció π-t követő, 3-1-2-mentes permutáció lesz.
+     Tekitnsük a π veremmel történő előállı́tásának azt a pillanatát, amikor az u szám bekerül a kimeneti sorozatba
+     (Átvisz, vagy Veremböl művelettel). Ekkor a veremben a γ sorozat van, a C-D bemeneten pedig a v, . . . , n
+     sorozat. Hiszen n csak ı́gy kerülhet u-t követő elemként a π sorozatba. Tehát a ρ permutáció is előállı́tható
+     veremmel, tehát 3-1-2-minta mentes. Az is világos, hogy ρ hátrább van a lexikografikus rendezésben, mint
+     π, mert v > u. Mivel a γ sorozat minden eleme kisebb, mint v, ezért nem lehet olyan 3-1-2-minta mentes
+     permutáció, amely π és ρ között lenne.
+     Tehát a feladat megoldásához elegendő meghatározni a u és v értékek inxedét a bemeneti sorozatban.
+
+      Megvalósı́tás C++ nyelven
+
+ 1   # include <iostream >
+ 2   # include <stack >
+ 3   # define maxN 100001
+ 4
+ 5   using namespace std;
+ 6
+ 7   int main (){
+ 8      int n;
+ 9      cin >>n;
+10      int P[n];
+11      int ui =0; P[0]=n;
+12      for(int i=1; i <=n; i++){
+13          cin >>P[i];
+14          if(P[i -1] <P[i]) ui=i -1;
+15      }
+16      //P[ui +1]=n;
+
+
+                                                               2 . oldal
+     Kombinatorikai feladatok                         *
+
+
+17       int u=P[ui ];
+18       int vi=ui +1;
+19       while (P[vi]>u) vi ++;
+20       vi --;
+21       //v=P[j]
+22       for(int i=1;i<ui;i++)
+23           cout <<P[i]<<" ";
+24       cout <<P[vi]<<" "<<u;;
+25       for(int i=vi +1;i <=n;i++)
+26           cout <<" "<<P[i];
+27       for (int x=P[vi ]+1;x <=n;x++)
+28           cout <<" "<<x;
+29       cout <<endl;
+30       return 0;
+31   }
+
+
+
+
+                                          3 . oldal
+

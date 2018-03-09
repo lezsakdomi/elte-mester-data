@@ -1,0 +1,120 @@
+Egyéb feladatok                                                                                                           *
+
+
+                                                          Kı́sérlet
+Egy biológiai kı́sérlet során feljegyezték, hogy az egyes sejtek mettől meddig voltak életképesek. A kutatók azt
+szeretnék tudni, hogy melyik volt az a sejt, amelyik esetén a legtöbb másik sejt volt életben a sejt élettartama
+alatt. Ezt úgy értik, hogy ha egy sejt az a1 időponttól a b1 időpontig volt életben, akkor az a sejt, amelyik
+az a2 időponttól a b2 időpontig volt életben, életben volt az első sejt élettartama alatt, ha a1 ≤ a2 ≤ b1 vagy
+a2 ≤ a1 ≤ b2.
+
+ Feladat
+Ijunk olyan programot, amely meghatároz egy olyan sejtet, amelyik élettartama alatt a legtöbb sejt volt életben
+a kı́sérlet során!
+
+ Bemenet
+A standard bemenet első sora egy egész számot tartalmaz, a kı́sérletben keletkezett és elpusztult sejtek n számát
+(1 ≤ n ≤ 1 000 000). A további n sor mindegyike két egész számot tartalmaz, egy a kı́sérletben keletkezett sejt
+keletkezésének a és elhalásának b (1 ≤ a ≤ b ≤ 10 000) időpontját. A sejteket az 1, . . . , n számokkal azonosı́tjuk,
+az i-edik sejt adata az i + 1 sorban van.
+
+ Kimenet
+A standard kimenet első és egyetlen sorába két egész számot kell ı́rni! Az első szám egy olyan sejt sorszáma
+legyen, amelynek az élettartama alatt a legtöbb sejt volt életben! A második szám ezen sejtek száma legyen.
+Több megoldás esetén bármelyik megadható.
+
+ Példa
+ Bemenet                                                         Kimenet
+ 6                                                               2 5
+ 3   6
+ 3   8
+ 4   5
+ 6   13
+ 1   5
+ 7   9
+
+
+
+ Korlátok
+Időlimit: 0.1 mp.
+Memórilimit: 32 MiB
+A tesztek 40%-ában n < 1000
+                                                         Megoldás
+Jekölje S)i).a i-edik sejt kelezkezési, S(i).b pedig az elhalási idejét.
+
+Jelölje E(i) azon sejtek számát, amelyek korábban keletkeztek, de már nem éltek i. sejt keletkezésének
+időpontjában. Hasonlóan, jelölje K(i) azon sejtek számát, amelyek később keletkeztek, mint i. elhalásának
+ideje.
+
+                                            E(i)    = |{j : S(j).b < S(i).a}|
+                                            K(i)    = |{j : S(i).b < S(j).a}|
+
+Tehát a megoldás
+                                                     n
+                                             M = max{n − (E(i) + K(i))}
+                                                    i=1
+
+A kummulatı́v összegzés módszerével az összes i-re E(i) és K(i) kiszámı́tható lineáris (n-el arányos) időben.
+
+
+                                                          1 . oldal
+     Egyéb feladatok                                   *
+
+
+         ciklus x:=1-töl maxAB-ig
+             E[x]:=0; K[x]:=0;
+         ciklus vége
+         ciklus i:=1-töl n-ig
+             E[S[i].b]:=E[S[i].b]+1
+             K[S[i].a]:=K[S[i].a]+1
+         ciklus vége
+         ciklus x:=1-töl maxAB-ig
+             E[x]:=E[x]+E[x-1];
+         ciklus vége
+         ciklus x:=maxAB-1-töl 1-ig
+             K[x]:=K[x]+K[x+1]
+         ciklus vége
+
+     Megvalósı́tás C++ nyelven
+
+ 1   # include <iostream >
+ 2   # define maxN 1000001
+ 3   # define maxAB 10001
+ 4   using namespace std;
+ 5   typedef struct { int a,b; } Par;
+ 6   Par S[maxN ];
+ 7   int E[ maxAB ];
+ 8   int K[ maxAB ];
+ 9
+10   int main (){
+11      int n,x,y;
+12      for(int x=0;x< maxAB ; x++){
+13          E[x]=0; K[x]=0;
+14      }
+15      cin >>n;
+16      for(int i=1;i <=n;i++){
+17          cin >>x>>y;
+18          S[i].a=x; S[i].b=y;
+19          E[y]++;
+20          K[x]++;
+21      }
+22      for(x=1;x< maxAB ; x++)
+23              E[x]+=E[x -1];
+24      for(x=maxAB -1;x >0; x--)
+25              K[x]+=K[x+1];
+26      int M=n+1, Mi =0;
+27      for(int i=1;i <=n; i++){
+28          int hany=E[S[i].a -1] + K[S[i].b+1];
+29          if (hany <M) {
+30              M=hany; Mi=i;
+31          }
+32      }
+33      cout <<Mi <<" "<<n-M-1<< endl;
+34      return 0;
+35   }
+
+
+
+
+                                            2 . oldal
+

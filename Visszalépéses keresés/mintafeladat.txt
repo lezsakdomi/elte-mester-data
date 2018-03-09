@@ -1,0 +1,493 @@
+Visszalépéses keresés                                                                                            *
+
+
+                                           Pénzváltás nagy számokkal
+Adott n darab pénz; p1 , . . . , pn és egy kifizetendő E összeg.
+
+ Feladat
+Ijunk olyan programot, amely kiszámı́t egy kifizetést, azaz pénzek egy olyan halmazát, amelyek összege E!
+
+ Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a pénzek n (1 ≤ n ≤ 25) számát és a felváltandó E
+(1 ≤ E ≤ 2 000 000 000) összeget. A második sor pontosan n pozitı́v egész számot tartalmat egy-egy szóközzel
+elválasztva, a felváltáshoz használható pénzek értékeit. Egy pénz csak egyszer szerepelhet a felváltásban.
+
+ Kimenet
+A standard kimenet első sora a kifizetéshez kiválasztott pénzek m számot tartalmazza. A második sor tartal-
+mazza a kifizetésben szereplő pénzek sorszámait egy-egy szóközzel elválasztva, tetszőleges sorrendben. Több
+megoldás esetén bárnelyik megadható.
+Ha az E összeget nem lehet kifizetni, akkor az első és egyetlen sor a -1 számot tartalmazza.
+
+ Példa
+ Bemenet                                                         Kimenet
+ 6 100000                                                        2
+ 1000 40000 50000 60000 70000 3000                               2 4
+
+
+ Korlátok
+Időlimit: 1 mp.
+Memórilimit: 32 MiB
+Pontozás: a tesztesetek 40
+                                                        Megoldás
+   Láttuk, hogy ha n × E nem túl nagy, azaz használhatunk 4 × n × E byte memóriát, akkor még optimális
+megoldást is elő tudunk állı́tani n × E -val arányos futási időben, a dinamikus programozás módszerével.
+Esetünkben, mivel E nagyon nagy is lehet, ez a módszer nem alkalmazható.
+Minden megoldása pénzek egy részhalmaza, ami megadható a kiválasztott pénzek indexeinek megadásával.
+Azaz egy megoldás az {1, . . . , n} halmaz egy olyan M = {i1 , . . . ik } ⊆ {1, . . . , n} részhalmaz, hogy
+                                                              k
+                                                              X
+                                                        E=          piu
+                                                              u=1
+
+Alkalmazhatjuk a nyers erőszak módszerét: vegyük sorra az összes lehetséges M részhalmazt, és ellenőrı́zzük,
+hogy az adott indexű pénzek összege E-e? Mivel összesen 2n részhalmaz van, ezért az ilyen algoritmus futási
+ideje exponenciálisan függ n-től.
+Gyorsı́thatunk az algoritmuson, ha figyelembe vesszük, hogy ha egy M részhalmaz nem megoldás, akkor nem
+lehet megoldás semmilyen olyan M részhalmaz, amelynek M részhalmaza. Tehát a keresésből kizárjuk az ilyen
+M részhalmazokat.
+Hogyan valósı́tható meg egy ilyen keresés?
+A megoldás megadható egy sorozattal (vektorral). Tekintsük az összes olyan sorozatot, amely valamely meg-
+oldás vektor kezdőszelete. Ezek a vektorok alkotják a megoldásteret. Tehát úgy keresünk megoldást, hogy
+szisztematikusan sorravesszük a megoldástér elemeit és minden pontról eldöntjük, hogy megoldás-e. Ha meg-
+oldás, akkor befejezzük a keresést. Ha nem, akkor azt ellenőrizzük, hogy lehet-e olyan folytatása a meg-
+oldáskezdeménynek, amely megoldás. Ha nem lehet, akkor a keresésből kizárjuk az összes folytatását a meg-
+oldáskezdeménynek.
+
+
+                                                          1 . oldal
+Visszalépéses keresés                                                                                                                            *
+
+
+                                                                  0                             1
+
+
+                                              0               1                                     0               1
+
+                                  0           1               0           1                 0       1               0           1
+
+                              0       1       0       1   0           0       1     0       1       0       1   0       1   0       1
+
+
+
+                        1. ábra. Bináris megoldástér a pénzváltás probléma n = 4 esetében
+
+
+
+A megoldást kifejezhetjük és kereshetjük bitvektor formában, tehát olyan X = hx1 , . . . , xn i vektort keresünk,
+amelyre
+                                                         Xn
+                                                    E=       xi p i
+                                                                              i=1
+
+Ekkor a megoldástér fája bináris fa lesz.
+
+  A megoldást kifejezhetjük és kereshetjük mint a pénzek indexeinek olyan M ⊆ {1, . . . , n} halmazának
+X = hik , . . . , im i növekvő felsorolásáként is, azaz i1 < i2 < . . . < im , hogy .
+                                                                                  m
+                                                                                  X
+                                                                      E=                pik
+                                                                                  k=1
+
+Ekkor a megoldástér formája a 8. ábrán látható n = 5 esetére. A megoldástér mindkét esetben fa szerkezetű, a
+
+
+                                                                      1                                 2           3       4               5
+
+                              2                   3       4       5                             3       4 5                 4           5       5
+
+                             5            4       5           5                         4       5           5
+                    3 4
+
+                4     5 5             5                                            5
+
+                5
+
+
+                     2. ábra. Nem bináris megoldástér a pénzváltás probléma n = 5 esetében
+
+
+fa gyökere az üres megoldáskezdemény, és a q akkor és csak akkor fia a fa p pontjának, ha q küzvetlen folytatása
+a p megoldáskezdeménynek.
+
+
+
+
+                                                                          2 . oldal
+Visszalépéses keresés                                                                                             *
+
+
+   A megoldástér fájának bejárásához elegendő megadni az alábbi műveleteket:
+ElsoFiu(X) Ha van X-nek fia, akkor X az első fiúra változik és a függvényhı́vás értéke igaz, egyébként hamis
+     és X nem változik.
+Testver(X) Ha van X-nek még benemjárt testvére, akkor X a következő testvér lesz és a függvényhı́vás értéke
+     igaz, egyébként hamis és X nem változik.
+Apa(X) Ha van X-nek apja, akkor X az apjára változik és a függvényhı́vás értéke igaz, egyébként hamis és X
+    nem változik.
+
+Megoldas(X) Akkor és csak akkor ad igaz értéket, ha X megoldása a problémának.
+Lehet(X) hamis értéket ad, ha nincs megoldás az X gyökerű részfában. Ha Lehet(X) igaz, abból nem követ-
+    kezik, hogy van X-nek olyan folytatása, ami megoldás.
+
+
+
+
+                          3. ábra. Fa teljes bejárása ElsoFiu, Testver, Apa műveletekkel
+
+
+Ha a bejárás során olyan p pontba jutunk, amelyre a Lehet(p) hamis értéket ad, akkor a bejárásból kihagyható
+a p-gyökerű részfa minden pontja.
+eljaras Keres(X)
+van:=igaz; elsore:=igaz;
+ciklus amı́g van=igaz
+    ha elsore=igaz akkor
+         ha nem Lehet(X) akkor
+              elsore=hamis
+         egyébként
+              ha Megoldas(X) akkor
+                   eljárás vége
+              egyébként
+                   elsore=ElsoFiu(X)
+              elágazás vége
+         elágazás vége
+    egyébként//nem elöször érintjük a pontot
+         elsore=Testver(X)
+         ha elsore=hamis akkor//visszalépés
+              van=Apa(X)
+         elágazás vége
+    elágazás vége
+ciklus vége
+eljaras vege
+
+
+
+                                                      3 . oldal
+Visszalépéses keresés                                                                                                *
+
+
+Látható, hogy a visszalépéses keresés algoritmusának fenti megfogalmazása nem függ attól hogy konkrétan mi
+a probléma, minden olyan probléma megoldására alkalmazható, ahol meg tudjuk adni az ElsoFiu, Testver,
+Apa, Megoldas és Lehet műveleteket.
+Ha a pénzváltás problémánál a megoldáskezdeményt a beválasztott pénzek indexeinek (növekvő) felsorolásával
+adjuk meg, akkor a szükséges műveletek hatása az X =< i1 , . . . , ik > esetén:
+   • ElsoFiu(X): X =< i1 , . . . , ik , ik + 1 > ha ik < n
+   • Testver(X): X =< i1 , . . . , ik + 1 > ha ik < n
+
+   • Apa(X): X =< i1 , . . . , ik−1 > ha k > 0
+Ahhoz, hogy a Megoldás és a Lehet műveleteket hatékonyan meg tudjuk valósı́tani, célszerű az X =< i1 , . . . , ik >
+megoldáskezdemény esetén a megoldástér pontjában tárolni az
+                                                       k
+                                                       X                             n
+                                                                                     X
+                                          osszeg =           P [iu ] és maradt =             P [u]
+                                                       u=1                          u=ik +1
+
+értékeket. Ekkor Lehet(X) akkor és csak akkor igaz, ha X.osszeg ≤ E és X.osszeg + X.maradt ≥ E, továbbá
+Megoldas(X)= X.osszeg = E.
+
+
+
+                                                       
+
+
+
+
+                                                       
+
+
+
+
+                                                  
+
+
+
+
+                                                                    
+
+
+
+
+                                                             
+
+
+
+
+                                                  
+
+
+
+
+                                                                   
+
+
+
+
+                                                             
+
+
+
+
+                                                  
+
+
+
+
+                                                                    
+
+
+
+
+                                                                          +
+
+
+
+
+                                    Érintetlen
+                                  + Aktuális
+                                    Aktı́v
+                             
+
+
+
+
+                                    Bevégzett
+                             
+
+
+
+
+                             
+
+
+
+
+                                    Kizárt
+                                    Érintetlen-kizárt
+
+                     4. ábra. A megoldástér pontjainak osztályozása visszalépéses keresésnél
+
+
+Érintetlen az olyan pontja a megoldástérnek, amelyet a keresés során még nem érintettünk.
+Aktuális az a pont, amelyet éppen vizsgálunk.
+Aktı́v az olyan pont, amelyet már érintettünk a keresés során, de még nem bevégzett. Pontosan azok az aktı́v
+pontok, amelyek az aktuális pont ősei a fában. A keresés során az aktı́v pontokba még visszatérünk.
+Kizárt a pont, ha olyan megoldáskezdemény, amelynek egyetlen folytatása (leszármazottja a fában) sem lehet
+megoldás.
+Bevégzett a pont, ha minden fia vagy kizárt vagy bevégzett.
+Érintetlen-kizárt a pont, ha leszármazottja valamely kizárt pontnak. Tehát a megoldástér ezen pontjait nem
+érinti a keresés.
+Látható, hogy a megoldás gyorsaságát alapvetően meghatározza az, hogy milyen kizárást tudunk megvalósı́tani
+a Lehet függvénnyel. A pénzváltás probléma esetén a futási idő legrosszabb esetben exponenciálisan függ a
+pénzek n számától, tehát 2n -el arányos!
+
+
+                                                                 4 . oldal
+     Visszalépéses keresés                                        *
+
+
+                                    Megvalósı́tás C++ nyelven
+
+ 1   # include <iostream >
+ 2   # define maxN 25
+ 3   using namespace std;
+ 4   typedef struct {
+ 5       int E;        //a kifizetend}  o összeg
+ 6       int n;        //a pénzek száma
+ 7       int P[maxN ]; //a pénzek
+ 8       int k;        //a megoldáskezdemény elemszáma
+ 9       int V[maxN ]; //a megoldáskezdemény vektora
+10       int osszeg , //a beválasztott pénzek osszege
+11       maradt ;      // még ennyi pénz maradt =szum(P[k+1..n])
+12   } MTerPont ;
+13
+14   bool Lehet ( MTerPont &X);
+15   bool Megoldas ( MTerPont &X);
+16   bool ElsoFiu ( MTerPont &X);
+17   bool Testver ( MTerPont &X);
+18   bool Apa( MTerPont &X);
+19   // nem rekurzı́v visszalépéses keresés
+20   bool Keres ( MTerPont &X){
+21       bool van=true , elsore =true;
+22       while (van ){
+23          if( elsore ){
+24              if(! Lehet (X))
+25                  elsore = false ;
+26              else{
+27                  if( Megoldas (X))
+28                      return true;
+29                  else
+30                      elsore = ElsoFiu (X);
+31              }
+32          }else{// nem elsore érintjük a pontot
+33              elsore = Testver (X);
+34              if(! elsore )
+35                  van=Apa(X);
+36          }
+37       }
+38       return van;
+39   }
+40
+41   void KiIr( MTerPont X){
+42      for(int i=1;i <=X.k;i++) cout <<X.V[i]<<","; cout <<endl;
+43   }
+44
+45   int main (){
+46      MTerPont X;
+47      bool van;
+48      cin >>X.n>>X.E;
+49      for(int i=1;i <=X.n;i++){
+50          cin >>X.P[i];
+51          X. maradt +=X.P[i];
+52      }
+53      X. osszeg =0; X.k=0; X.V [0]=0;
+
+
+                                               5 . oldal
+     Visszalépéses keresés                                                                                         *
+
+
+54      van= Keres (X);
+55      if(van) KiIr(X);
+56   return 0;
+57   }
+58   bool Lehet ( MTerPont &X){
+59      return X.osszeg <=X.E && X. osszeg +X.maradt >=X.E;
+60   }
+61   bool Megoldas ( MTerPont &X){
+62      return X. osszeg ==X.E;
+63   }
+64   bool ElsoFiu ( MTerPont &X){
+65      if(X.V[X.k]<X.n){
+66         X.V[X.k+1]=X.V[X.k]+1;
+67         (X.k)++;
+68         X. osszeg +=X.P[X.V[X.k]];
+69         X.maradt -=X.P[X.V[X.k]];
+70         return true;
+71      }else
+72         return false ;
+73   }
+74   bool Testver ( MTerPont &X){
+75      if(X.V[X.k]<X.n){
+76         X.osszeg -=X.P[X.V[X.k]];
+77         X.V[X.k]++;
+78         X. osszeg +=X.P[X.V[X.k]];
+79         X.maradt -=X.P[X.V[X.k]];
+80         return true;
+81      }else
+82         return false ;
+83   }
+84   bool Apa( MTerPont &X){
+85      if(X.k >1){
+86         X.osszeg -=X.P[X.V[X.k]];
+87         X.k--;
+88         return true;
+89      }else
+90         return false ;
+91   }
+     A visszalépéses keresés megfogalmazható rekurzı́v függvénnyel is. Ekkor azonban a függvény paramétere csak
+     a legszükségesebb adatokat tartalmazza, minden más legyen globális. Ha a nemrekurzı́v változatban használt
+     MTerPont tı́pust használnánk, akkor nagyon memória pazarló lenne a megoldás. Elegendő a (k, u) párt megadni,
+     ahol k a megoldáskezdemény elemszáma, u pedig a megoldáskezdemény utolsó eleme. Célszerű továbbá az
+     osszeg és maradt értékeket is tárolni a pontban.
+
+      Rekurzı́v megvalósı́tás
+
+1    # include <iostream >
+2    # define maxN 25
+3    using namespace std;
+4    typedef struct {
+5        int k;       //a megoldáskezdemény elemszáma
+6        int u;       //a megoldáskezdemény k. eleme u
+7        int osszeg , //a beválasztott pénzek osszege
+8        maradt ;     // még ennyi pénz maradt =szum(P[k+1..n])
+9    } MTerPont ;
+
+
+                                                          6 . oldal
+     Visszalépéses keresés                                               *
+
+
+10
+11   typedef struct {
+12      int E;        //a       kifizetend} o összeg
+13      int n;        //a       pénzek száma
+14      int P[maxN ]; //a       pénzek
+15      int X[maxN ]; //a       megoldásvektor
+16   } Global ;
+17   Global GData ;
+18
+19   bool   Lehet ( MTerPont &X);
+20   bool   Megoldas ( MTerPont &X);
+21   bool   EFiu( MTerPont &X);
+22   bool   Testver ( MTerPont &X);
+23
+24   bool RKeres ( MTerPont X){
+25      if( Megoldas (X)) return true;
+26      if(! EFiu(X)) return false ;
+27      do{
+28          if ( Lehet (X))
+29             if ( RKeres (X)){
+30                 GData .X[X.k]=X.u; //a megoldás komponens bejegyzése
+31                 return true;
+32             }
+33      }while ( Testver (X));
+34   }
+35
+36   void KiIr (){
+37      for(int i=1;i <= GData .n;i++) cout << GData .X[i]<<",";
+38   }
+39
+40   int main (){
+41      MTerPont X;
+42      bool van;
+43      cin >> GData .n>> GData .E;
+44      X. maradt =0;
+45      for(int i=1;i <= GData .n;i++){
+46          cin >> GData .P[i];
+47          X. maradt += GData .P[i];
+48      }
+49      X. osszeg =0; X.k=0; X.u=0;
+50      RKeres (X);
+51      KiIr ();
+52
+53   return 0;
+54   }
+55   bool Lehet ( MTerPont &X){
+56      return true;
+57      return X.osszeg <= GData .E && X. osszeg +X.maradt >= GData .E;
+58   }
+59   bool Megoldas ( MTerPont &X){
+60      return X. osszeg == GData .E;
+61   }
+62   bool EFiu( MTerPont &X){
+63      if(X.u< GData .n){
+64         X.k++;
+
+
+
+                                                        7 . oldal
+     Visszalépéses keresés                         *
+
+
+65          X.u++;
+66          X. osszeg += GData .P[X.u];
+67          X.maradt -= GData .P[X.u];
+68          return true;
+69       }else
+70          return false ;
+71   }
+72   bool Testver ( MTerPont &X){
+73      if(X.u< GData .n){
+74         X.osszeg -= GData .P[X.u];
+75         X.u++;
+76         X. osszeg += GData .P[X.u];
+77         X.maradt -= GData .P[X.u];
+78         return true;
+79      }else
+80         return false ;
+81   }
+
+
+
+
+                                          8 . oldal
+

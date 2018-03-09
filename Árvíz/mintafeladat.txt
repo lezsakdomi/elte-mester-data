@@ -1,0 +1,42 @@
+Árvíz                                                                                      ***
+
+
+                                     Árvizek folyón
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja az 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely megadja a legmagasabb vízállást!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy-egy mérési eredményt tartalmaz (0Ai3000).
+Kimenet
+A standard kimenet első sorába a legmagasabb vízállás értékét kell írni!
+Példa
+Bemenet              Kimenet
+7                    850
+110
+820
+                                   900
+200
+                                   800
+110
+                                   700
+850
+150                                600
+120                                500
+                                   400
+Korlátok                           300
+Időlimit: 0,1 mp.                  200
+                                   100
+Memórialimit: 32 MB
+                                     0
+                                         1       2       3        4       5        6       7
+
+
+
+
+                                             1. oldal
+

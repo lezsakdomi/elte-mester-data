@@ -1,0 +1,1 @@
+//nincs minta megoldás

@@ -1,0 +1,41 @@
+Programozási tételek – sorozatszámítás                                                  *
+
+
+                                      Gólkülönbség
+Egy labdarúgó csapat összes eredményét ismerjük. Tudjuk, hogy az egyes mérkőzéseken hány
+gólt rúgtak és hány gólt kaptak.
+Írj programot, amely megadja a csapat gólkülönbségét!
+Bemenet
+A standard bemenet első sorában a mérkőzések száma van (1≤N≤1000). A következő N
+sorban egy-egy mérkőzés rúgott (1≤Ri≤N) és kapott (1≤Ki≤N) góljai száma található.
+Kimenet
+A standard kimenet egyetlen sorába a csapat rúgott és kapott góljai számát kell írni!
+Példa
+Bemenet                                          Kimenet
+5                                                14 9
+3   0
+0   2
+7   1
+3   3
+1   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                         Megoldás
+Számoljuk ki a rúgott gólok összegét és a kapott gólok összegét!
+A két összegzés azonos elemszámú tömbön végezhető, így a két ciklus összevonható.
+Gólkülönbség(N,R,K,Rúg,Kap):
+  Rúg:=0; Kap:=0
+  Ciklus i=1-től N-ig
+    Rúg:=Rúg+R[i]
+    Kap:=Kap+K[i]
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                             1. oldal
+

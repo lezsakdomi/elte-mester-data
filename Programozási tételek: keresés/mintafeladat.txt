@@ -1,0 +1,43 @@
+Programozási tételek – keresés                                                           *
+
+
+                                        Lehűlés
+Megkaptuk N napon a napi minimális és maximális hőmérsékletet.
+Készíts programot, amely megad egy napot, amelyen a maximális hőmérséklet kisebb volt, mint
+az előző nap minimuma!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000) van. A következő N sor-
+ban egy-egy napon mért minimális és maximális hőmérséklet (1≤Mini≤Maxi≤N) található.
+Kimenet
+A standard kimenet első sorába a VAN szót kell írni, ha van olyan nap, amelyen a maximá-
+lis hőmérséklet kisebb volt, mint az előző nap minimuma, egyénként pedig a NINCS szót! Ha
+van ilyen nap, akkor a második sorba egy ilyen nap sorszámát kell írni!
+Példa
+Bemenet                                       Kimenet
+5                                             VAN
+-10 2                                         4
+-6 6
+3 3
+-4 0
+4 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                       Megoldás
+Meg kell keresni egy olyan i indexet (i≥2), amelyre Mini-1>Maxi!
+Keresés(N,X,Van,Index):
+  i:=1
+  Ciklus amíg i≤N és Min[i]≤Max[i]
+    i:=i+1
+  Ciklus vége
+  Van:=i≤N
+  Ha Van akkor Index:=i
+Eljárás vége.
+
+
+
+
+                                          1. oldal
+

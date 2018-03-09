@@ -1,0 +1,140 @@
+Mohó algoritmusok                                                                                                       *
+
+
+                                                  Fényképezkedés
+    Egy rendezvényre sok vendéget hı́vtak meg. Minden vendég előre jelezte, hogy mettől meddig lesz jelen. A
+szervezők fényképeken akarják megörökı́teni a rendezvényen résztvevőket. Azt tervezik, hogy kiválasztanak k
+időpontot és minden kiválasztott időpontban az akkor éppen jelenlevőkről csoportképet készı́tenek. Az a céljuk,
+hogy a lehető legkevesebb képet kelljen készı́teni, de mindenki rajta legyen legalább egy képen.
+
+ Feladat
+Írjunk olyan programot, amely kiszámı́tja, hogy legkevesebb hány fényképet kell készı́teni, és megadja azokat
+az időpontokat is amikor csoportképet kell készı́teni!
+
+ Bemenet
+A standard bemenet első sorában a vendégek n száma van (1 ≤ n ≤ 3000000). A következő n sor mindegyike
+két egész számot tartalmaz egy szóközzel elválasztva, egy vendég e érkezési és t távozási időpontját (1 ≤ e <
+t ≤ 100000). Ha egy fényképet az x időpontban készı́tik és e ≤ x < t, akkor azon a fényképen rajta lesz az e
+időben érkező és t időben távozó vendég.
+
+ Kimenet
+A standard kimenet első sorába a készı́tendő fényképek k számát kell ı́rni! A második sor pontosan k egész
+számot tartalmazzon egy-egy szóközzel elválasztva, azon időpontokat (tetszőleges sorrendben), amikor a cso-
+portképeket készı́teni kell.
+
+ Példa
+ Bemenet                                                            Kimenet
+  6                                                                   2
+  2   4                                                               3 9
+  1   4
+  2   7
+  7   13
+  5   10
+  3   9
+
+
+
+ Korlátok
+Időlimit: 0.1 mp.
+Memórilimit: 32 MiB
+Pontozás: a tesztesetek 40%-ában n < 1000
+
+
+                                                        Megoldás
+Tehát a bemenet balról zárt és jobbról nyitott intervallumok egy
+
+                                             I = {[e1 , t1 ), . . . , [e, tn )}
+
+halmaza, mivel ha egy vendég távozási idejében készı́tenek fényképet, azon a vendég nem lesz rajta. A kimenet
+pedig olyan minimális elemszámú
+
+                                                 M = {f1 , . . . , fk }
+
+számhalmaz, hogy minden i-re i = 1, . . . , n van olyan f ∈ M , hogy ei ≤ f < ti .
+
+
+
+                                                           1 . oldal
+Mohó algoritmusok                                                                                                        *
+
+
+A megoldás elemzése.
+Tegyük fel, hogy az intervallumok jobb-végpontjuk szerint növekvően rendezettek, tehát ti < ti+1 , i = 1, . . . , n−
+1 és az M megoldáshalmazra f1 < . . . < fk .
+Mohó választás.
+Válasszuk a megoldáshalmaz első elemének t1 − 1-et.
+Megmutatjuk, hogy az optimális megoldásban f1 helyett állhat a mohó választás, tehát t1 −1. Először is f1 < t1 ,
+mert különben az 1. intervallumba nem esne egy pontja sem az optimális megoldásnak. Továbbá, minden olyan
+intervallum, amelyben benne van f1 , benne van t1 − 1 is, hiszen ha ei ≤ f1 < ti .
+Redukált részprobléma.
+
+                                    f1            t1 − 1
+
+
+
+
+1. ábra. Mohó választás és probléma redukálás. A redukált részprobléma a fekete intervallumokat tartalmazza.
+
+
+Tehát a redukált részproblémát úgy kapjuk, hogy töröljünk I-ből mindan olyan intervallumot, amelyben benne
+van a t1 − 1 mohó választás: I 0 = I − {[ei , ti ) : ei < t1 }. Az M 0 = {f2 , . . . , fk } ponthalmaz megoldása lesz az
+I 0 problémának. I 0 optimális is, mert ha lenne kevesebb pontot tartalmazó megoldása I 0 -nek, akkor hozzávéve
+t1 − 1-et, vagy f1 -et, a kiindulási I probléma kisebb elemszámú megoldását kapnánk, mint k.
+Tehát a helyes algoritmus:
+     rendezzük a bemeneti intervallumokat a jobb végpontjuk szerint növekvöen;
+     Utolso:=0;
+     ciklus minden [e,t) intervallumra
+         ha Utolso<e akkor
+              tegyük be t-1 -et a megoldáshalmazba;
+              Utolso:=t-1;
+         elágazás vége
+     ciklus vége
+Vegyük észre, hogy ha két intervallum jobb-végpontja megegyezik, ti = tj akkor amelyik bal-végpontja kisebb,ei <
+ej az elhagyható, hiszen ha f ∈ [ej , tj ), akkor f ∈ [ei , ti ). Tehát a rendezés megspórolható úgy, hogy a beme-
+neti intervallumokat ábrázoljuk egy Int[] tömbbel, úgy, hogy ha [e, t) eleme a bemenetnek, akkor Int[t] = e
+egyébként, ha nincs olyan bemenet, amelynek jobb végpontja t, akkor Int[t] = 0.
+
+
+
+
+                                                         2 . oldal
+     Mohó algoritmusok                                          *
+
+
+                                   Megvalósı́tás C++ nyelven
+
+ 1   # include <iostream >
+ 2   # define maxN 3000000
+ 3   # define maxT 100000
+ 4   using namespace std;
+ 5
+ 6   int Int[maxT ];
+ 7   int M[maxT ];
+ 8
+ 9   int main (){
+10       int n, e,t;
+11       cin >>n;
+12       for(int x=1;x <= maxT;x++) Int[x]=0;
+13       for(int i=0;i<n;i++){
+14             cin >>e>>t;
+15             if(e>Int[t])
+16               Int[t]=e;
+17       }
+18       int Utolso =0, k=0;
+19       for(int x=1; x <= maxT; x++)
+20           if(Int[x]>0 && Utolso <Int[x]){
+21               Utolso =x -1;
+22               M[k++]= Utolso ;
+23           }
+24       cout <<k<<endl;
+25       for(int i=0;i<k;i++)
+26           cout <<M[i]<<" ";
+27       cout <<endl;
+28     return 0;
+29   }
+
+
+
+
+                                                3 . oldal
+

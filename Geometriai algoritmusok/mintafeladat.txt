@@ -1,0 +1,281 @@
+Geometriai algoritmusok                                                                                                 *
+
+
+                                     Pontok összekötése zárt poligonná
+    Adott a sı́kon n pont, amelyek nem esnek egy egyenesre. Kössünk össze pontpárokat egyenenes szakaszokkal
+úgy, hogy egy zárt, nem-metsző törtvonalat, poligont kapjunk. Egy ilyen poligon megadható a pontok egy
+felsorolásával, a felsorolásban az egymást követő pontpárokat, továbbá az utolsót az elsővel kötjük össze.
+
+ Bemenet
+A standard bemenet első sora egy egész számot tartalmaz, a pontok n számát (1 ≤ n ≤ 100 000). A következő
+n sor mindegyike két egész számot tartalmaz, egy pont x és y koordinátáját (−100 000 ≤ x, y ≤ 100 000). A
+pontokat az 1, . . . , n számokkal azonosı́tjuk, az állomány i + 1-edik sora tartalmazza az i-edik pont koordinátáit.
+
+ Kimenet
+A standard kimenet első sora a pontok azonosı́tóinak egy olyan felsorolását tartalmazza (egy-egy szóközzel
+elválasztva), hogy ha az egymást követő pontpárokat, és az utolsót az elsővel összekötjük egyenes szakasszal,
+akkor zárt, nem-metsző poligont kapunk. Több megoldás esetén bármelyik megadható.
+
+ Példa
+ Bemenet                                                       Kimenet
+ 6                                                             3 1 4 5 6 2
+ 2   0
+ 1   4
+ 0   2
+ 3   2
+ 2   4
+ 2   6
+
+
+
+ Korlátok
+Időlimit: 0.5 mp.
+Memórilimit: 32 MiB
+Pontozás: a tesztesetek 40%-ában n < 200
+
+ Megoldás
+Három lépésben határozhatjuk meg a pontok megfelelő sorrendetjét:
+
+1. lépés
+Határozzuk meg a ponthalmaz bal alsó Q sarokpontját.
+A P = {p1 , . . . , pn } ponthalmaz (bal alsó) sarokpontja a legkisebb x-koordinátájú pont, ha több ilyen van, akkor
+ezek közül a legkisebb y-koordinátájú pont.
+
+2. lépés
+Rendezzük a ponthalmazt a Q sarokpontra vonatkozó szög szerint. Ha az A és B pont azonos szögben látszik
+Q-ból, akkor az legyen előbb, amelyik közelebb van Q-hoz.
+Az ı́gy rendezett sorrendet jelölje q1 , . . . , qn
+
+
+
+
+                                                        1 . oldal
+Geometriai algoritmusok                                                                                                *
+
+
+3. lépés
+Legyen j a legnagyobb olyan index, hogy a Q, qj és qn pontok nem esnek egy egyenesre. Ilyen biztosan van,
+mert a bemeneti feltétel szerint a pontok nem esnek egy egyenesre. Ekkor egy helyes sorrend az alábbi:
+q1 , q2 , . . . , qj , qn , . . . , qj+1
+Hogyan valósı́tható meg a fenti három lépés?
+
+
+
+
+                                                Q
+
+
+
+
+                                                          1. ábra.
+
+
+A rendezés megvalósı́tásához pontok viszonyának meghatározása alapján juthatunk, ami a legalapvetőbb algoritmikus-
+geometriai művelet.
+
+Két pont viszonya
+Először tekintsük két pont viszonyának meghatározását: adott a sı́kon két pont, p1 és p2. Döntsük el, hogy az
+alábbi 3 lehetőség közül melyik igaz?
+   1. az origóból nézve p2 az órajárással ellentétes igányban van p1-hez képest
+   2. az origó, p1 és p2 egy egyenesre esnek
+
+   3. az origóból nézve p2 az órajárással megegyező igányban van p1-hez képest
+
+
+                           y                                                     y
+                                  x2                x1    p1+p2
+                                                                                            p
+                          y1
+                                          p2
+                                                          y2
+                                                                                                x
+                           y2
+                                                p1
+                                                          y1
+
+                          (0,0)      x1              x2        x
+
+                                          (a)                                     (b)
+
+                                                          2. ábra.
+
+
+
+                                                          2 . oldal
+     Geometriai algoritmusok                                                                                                 *
+
+
+     A kérdés megválaszolásához tekintsük a 2.a ábrán látható (0, 0), p1, p2 és p1 + p2 pontok által meghatározott
+     paralelogramma előjeles területét, amit p1 és p2 keresztszorzatának neveznek, és p1 × p2-vel jelölünk. A terület:
+
+                               T (x1 + x2)(y1 + y2) − x1y1 − x2y2 − x2y1 − x2y1           =
+                       x1y1 + x1y2 + x2y1 + x2y2 − x1y1 − x2y2 − x2y1 − x2y1              =     x1y2 − x2y1
+
+                                              p1 × p2 = x1y2 − x2y1 = −p2 × p1
+     p1 × p2 > 0 ⇔ p2 az órajárással ellentétes irányban van p1-hez képest
+     p1 × p2 = 0 ⇔ a (0, 0), p1 és p2 pontok egy egyenesre estnek (kollineárisak)
+     p1 × p2 < 0 ⇔ p2 az órajárással megegyező irányban van p1-hez képest.
+
+     Három pont viszonya
+
+                                                        p2
+
+
+
+                                                                                          p2
+                                                   p1                     p1
+
+
+                                       p0                      p0
+
+                                            3. ábra. Csatlakozó szakaszok viszonya
+
+
+        Adott a sı́kon három pont, p0, p1 és p2. Döntsük el, hogy az alábbi három lehetőség közül melyik teljesül:
+        1. a p0 pontból nézve p2 az órajárással ellentétes igányban van p1-hez képest
+        2. a p0 p1 és p2 egy egyenesre esnek
+        3. a p0 pontból nézve p2 az órajárással megegyező igányban van p1-hez képest
+                                  −−−→         −−−→
+     Másképpen fogalmazva, ha p0, p1 és a p1, p2 csatlakozó irányı́tott szakaszokat tekintjük, akkor az a kérdés, hogy
+     −−−→                −−−→
+     p1, p2 merre fordul p0, p1-hez képest.
+     A válasz a (p1 − p0) × (p2 − p0) keresztszorzat előjele alapján megadható:
+                                 −−−→
+     (p1 − p0) × (p2 − p0) > 0 p1, p2 balra fordul,
+                                 −−−→         −−−→
+     (p1 − p0) × (p2 − p0) = 0 p0, p1 és a p1, p2 kollineárisak,
+                                 −−−→
+     (p1 − p0) × (p2 − p0) < 0 p1, p2 jobbra fordul.
+     Definiáljuk a Fordul(p0,p1,p2) műveletet úgy, hogy annak értéke a (p1 − p0) × (p2 − p0) előjele legyen.
+
+     Megvalósı́tás C++ nyelven
+     Mivel a keresztszorzat értéke nagy lehet, ezért a kiszámı́tást 64-bites aritmetikában kell végyezni. Ez automa-
+     tikusan megvalósul, ha pontok koordinátai eleve 64-bites egész tı́pusú.
+ 1   typedef   struct {
+ 2      long long    x,y;
+ 3      long   azon;
+ 4   } Pont;
+ 5
+ 6   int Fordul (Pont p0 , Pont p1 , Pont p2 ){
+ 7      long long Kereszt =( p1.x-p0.x)*( p2.y-p0.y)-(p2.x-p0.x)*( p1.y-p0.y);
+ 8      if ( Kereszt <0)
+ 9         return -1;
+10      else if ( Kereszt >0)
+
+
+                                                             3 . oldal
+     Geometriai algoritmusok                                                                                                     *
+
+
+11          return 1;
+12       else
+13          return 0;
+14   }
+     A pontok rendezésének meghatározásához el kell tudni dönteni, hogy ha három pont egy egyenesre esik, akkor
+     melyik van középpen. Tehát legyen Kozte(A,B,C) művelet értéke igaz akkor és csak akkor, a B pont az A és C
+     pont között van. Feltesszük, hogy a három pont kollineáris.
+     A megvalósı́tás az alábbi ábrán szemléltethetően a koordináta értékek alapján egyszerűen kifejezhető a feltétel.
+
+
+
+
+                                           C
+                                 C.y
+
+
+                                 B.y                                         B
+                                                                                        A
+                                 A.y
+
+                                          C.x                               B.x         A.x
+
+                                            4. ábra. Három kollineáris pont viszonya
+
+
+
+                                                 |B.x − A.x|      ≤   |C.x − A.x| és
+                                                 |C.x − B.x|      ≤   |C.x − A.x| és
+                                                  |B.y − A.y|     ≤   |C.y − A.y| és
+                                                  |C.y − B.y|     ≤   |C.y − A.y|
+
+     Most már a sarokpont szerinti rendezés relációját meg tudjuk adni a Fordul és a Kozte műveletekkel: a p1 pont
+     akkor és csak akkor előzi meg a p2 pontot, ha
+
+                            F ordul(Q, p1, p2) > 0 vagy F ordul(Q, p1, p2) = 0 és Kozte(Q, p1, p2)
+     Fontos megjegyezni, hogy ha a pontok koordinátái egész számok, akkor mindkét alapművelet (Fordul és Kozte)
+     kiszámı́tható egész aritmetikában, nem kell lebegőpontos aritmetikát hasznáélni (és nem is használjunk!).
+                                                Megvalósı́tás C++ nyelven
+
+
+ 1   # include <iostream >
+ 2   # include <algorithm >
+ 3   # include <limits .h>
+ 4   # define   maxN 100000
+ 5   using    namespace     std ;
+ 6
+ 7   typedef    struct {
+ 8      long long      x,y;
+ 9      long    azon;
+10   } Pont;
+11   Pont    P[maxN ];
+12   Pont Q;      // sarokpont
+13   int Fordul (Pont A, Pont B, Pont C){
+14   /*
+
+
+                                                                4 . oldal
+     Geometriai algoritmusok                                              *
+
+
+15   Kimenet : +1 ha A->B->C balra fordul ,
+16                0 ha A--B--C kollineárisak ,
+17              -1 ha A->B->C jobbra fordul .
+18   */
+19       long long Kereszt =(B.x-A.x)*(C.y-A.y)-(C.x-A.x)*(B.y-A.y);
+20       if ( Kereszt <0)
+21          return -1;
+22       else if ( Kereszt >0)
+23          return 1;
+24       else
+25          return 0;
+26   }
+27   bool Kozte (Pont A, Pont B, Pont C){
+28   // Bemenet : A-B-C kolineáris
+29   // Kimenet : A és C között van B
+30       return abs(B.x-A.x) <= abs(C.x-A.x) &&
+31                abs(C.x-B.x) <= abs(C.x-A.x) &&
+32                abs(B.y-A.y) <= abs(C.y-A.y) &&
+33                abs(C.y-B.y) <= abs(C.y-A.y) ;
+34   }
+35   bool SarokRend (Pont A, Pont B){
+36   // Globális : Q
+37       return Fordul (Q,A,B)>0 || Fordul (Q,A,B)==0 && Kozte (Q,A,B);
+38   }
+39
+40   int       main (){
+41         int     n,x,y;
+42         cin >>n;
+43         Q.x= INT_MAX ;
+44         for( int i=0; i<n; i++){
+45             cin >>x>>y;
+46             P[i]. azon=i+1;
+47             P[i].x=x; P[i].y=y;
+48             if (x<Q.x || x==Q.x && y<Q.y)
+49                 Q=P[i];
+50         }
+51         sort( begin (P), begin (P)+n, SarokRend );
+52         int j=n -2;
+53         while (j >0 && Fordul (Q, P[n -1] , P[j ])==0) j--;
+54         for (int i=0; i <=j; i++)
+55             cout <<P[i]. azon <<" ";
+56         for (int i=n -1; i>j; i--)
+57             cout <<P[i]. azon <<" ";
+58
+59         return 0;
+60   }
+
+
+
+
+                                               5 . oldal
+

@@ -1,0 +1,39 @@
+Szülők                                                                                          *
+
+
+                            Szülő – gyerek kapcsolatok
+Adott K szülő-gyerek kapcsolat.
+Készíts programot, amely megadja az elsőnek megadott szülő gyerekei számát!
+Bemenet
+A standard bemenet első sorában az emberek száma (0<N≤1000), majd a kapcsolatok
+száma (0<K≤2000) van. Az ezt követő K sor mindegyikében egy szülő sorszáma, majd egy gye-
+rek sorszáma van (0<Sz≠Gy≤N).
+Példa
+Bemenet                      Kimenet
+12 14                        2
+7 2
+7 4
+8 2
+8 3                                                                           11       12
+9 3
+9 4
+9 5
+9 6
+                                                      7      8                9        10
+10 5
+10 6
+11 7
+11 10
+12 7                                      1           2      3         4           5        6
+12 10
+
+Korlátok
+Időlimit: 0,3 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a N≤100, K≤200.
+
+
+
+
+                                           1. oldal
+

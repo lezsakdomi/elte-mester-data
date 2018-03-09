@@ -1,0 +1,43 @@
+Programozási tételek – megszámolás                                                        *
+
+
+                                  Szegények száma
+Készíts programot, amely családok létszámának, illetve jövedelmének alapján kiszámítja, hogy
+hány család él a létminimum alatt!
+Bemenet
+A standard bemenet első sorában a családok száma (1≤N≤1000) és családtagok maximá-
+lis száma (1≤M≤10) van. A következő N sorban egy-egy család létszáma és havi jövedelme van
+(1≤Létszámi≤M, 1≤Jövi≤1 000 000). Az utolsó sorban pontosan M egész szám található
+(1≤LMi≤M), ahol LMi az i tagú család létminimuma.
+Kimenet
+A standard kimenet egyetlen sorába a létminimum alatt élő családok számát kell kiírni!
+Példa
+Bemenet                                      Kimenet
+6 5                             2
+3 200000
+5 200000
+2 90000
+3 130000
+2 120000
+3 160000
+75000 100000 150000 175000 200000 210000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                       Megoldás
+Minden családi létszámhoz megadható az a jövedelem, amely a létminimumhoz kell, a megoldás-
+ban ezt használjuk fel.
+Megszámolás(N,Jöv,Létszám,M,LM,Db):
+  Db:=0
+  Ciklus i=1-től N-ig
+    Ha Jöv[i]LM[Létszám[i]] akkor DB:=DB+1
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                          1. oldal
+
