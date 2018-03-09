@@ -1,0 +1,32 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny, 2-3. korcsoport             3. forduló
+
+
+                                      DNS vizsgálat
+Kutatók DNS szekvenciákat vizsgálnak. Minden DNS szekvencia leírható olyan karaktersorozat-
+tal, amely csak az A, C, G és T karaktereket, a báziselemek jelét tartalmazza. Azt szeretnék meg-
+tudni, hogy adott szekvencia esetén mekkora az a legkisebb K érték, hogy a szekvencia minden K
+hosszú összefüggő része tartalmazza mind a négy báziselemet.
+Készíts programot, amely meghatározza azt a legkisebb K értéket, hogy a szekvenciában minden
+K hosszú összefüggő rész tartalmazza mind a négy báziselemet!
+Bemenet
+A standard bemenet első és egyetlen sora a vizsgált S DNS szekvenciát tartalmazza, amely
+legfeljebb 20 000 karakterből álló szöveg.
+Kimenet
+A standard kimenet első sorába azt a legkisebb K egész számot kell írni, amelyre teljesül,
+hogy a bemeneti szekvenciában minden K hosszú összefüggő rész tartalmazza mind a négy bázis-
+elemet! Ha valamely báziselem nem fordul elő a bemenetben, akkor az S hosszát kell kiírni!
+Példa
+Bemenet                                         Kimenet
+ACCGTTAA                                        6
+
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában a kódok legfeljebb 1000 karaktert tartalmaznak.
+
+
+
+
+                                            1. oldal
+

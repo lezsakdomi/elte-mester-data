@@ -1,0 +1,42 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny, 1. korcsoport                 3. forduló
+
+
+                                 Távoli bolygó DNS-e
+Egy távoli bolygón az egyes élőlények genetikai leírása 26-féle jelet tartalmazó sorozat. A jeleket
+az angol ábécé kisbetűivel jelöljük. A jelsorozatot K szomszédos tagból álló csoportokra bontjuk,
+ezeket a csoportokat genetikai kódnak nevezzük. Két élőlény azonos fajba tartozik, ha a genetikai
+kódok mindegyike ugyanannyiszor fordul elő a leírásukban.
+Készíts programot, amely meghatározza, hogy M élőlény párból melyek tartozhatnak ugyanabba a
+fajba!
+Bemenet
+A standard bemenet első sorában az élőlény párok száma (1≤M≤10) és a genetikai kód
+hossza (1≤K≤3) van. A következő M sorpár mindegyikében két-két élőlény kódja szerepel, ami
+legfeljebb 100 000 karakter az angol ábécé kisbetűiből. A karakterek száma biztosan osztható K-
+val.
+Kimenet
+A standard kimenet M sorába egy-egy választ kell kiírni: az IGEN szót, ha az i. pár ugyan-
+abba a fajba tartozó két élőlény kódja, illetve a NEM szót egyébként!
+Példa
+Bemenet                                          Kimenet
+2 1                                              IGEN
+abacad                                           NEM
+dcbaaa
+abccba
+abcabcabc
+Bemenet                                          Kimenet
+2 3                                              IGEN
+abacad                                           NEM
+cadaba
+abccbaabc
+abcabcabc
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában K értéke 1.
+
+
+
+
+                                             1. oldal
+
