@@ -67,25 +67,27 @@
             <div class="card">
                 <paper-input label="Keresés..." type="search"
                              value="{{searchQuery}}" on-keydown="_searchKeyDown"></paper-input>
-                <template is="dom-if" if="[[resultsIncomplete]]">
-                    <p class="info">
-                        <iron-icon icon="info-outline"></iron-icon>
-                        Nyomjon entert a teljes kereséshez
-                    </p>
-                </template>
-                <paper-listbox id="results">
-                    <template is="dom-repeat" items="[[_results]]">
-                        <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
-                            <paper-item>
-                                <paper-item-body two-line>
-                                    <div>[[item.item.name]]</div>
-                                    <div secondary inner-h-t-m-l="[[_formattedDesc(item)]]"></div>
-                                    <!--div secondary>Egyezés: [[_formatScore(item.score)]]</div-->
-                                </paper-item-body>
-                            </paper-item>
-                        </a>
+                <template is="dom-if" if="[[searchQuery]]">
+                    <template is="dom-if" if="[[resultsIncomplete]]">
+                        <p class="info">
+                            <iron-icon icon="info-outline"></iron-icon>
+                            Nyomjon entert a teljes kereséshez
+                        </p>
                     </template>
-                </paper-listbox>
+                    <paper-listbox id="results">
+                        <template is="dom-repeat" items="[[_results]]">
+                            <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
+                                <paper-item>
+                                    <paper-item-body two-line>
+                                        <div>[[item.item.name]]</div>
+                                        <div secondary inner-h-t-m-l="[[_formattedDesc(item)]]"></div>
+                                        <!--div secondary>Egyezés: [[_formatScore(item.score)]]</div-->
+                                    </paper-item-body>
+                                </paper-item>
+                            </a>
+                        </template>
+                    </paper-listbox>
+                </template>
             </div>
         </template>
     </template>
@@ -187,10 +189,17 @@
                     //computed: '_fullSearch(_fuse, searchQuery)'
                     readOnly: true
                 },
+                'resultLimit': {
+                    type: Number,
+                    notify: true,
+                    value: function () {
+                        return searchLimit;
+                    }
+                },
                 '_results': {
                     type: Array,
                     notify: true,
-                    computed: 'limit(results, 50)'
+                    computed: 'limit(results, resultLimit)'
                 },
                 'fastSeachDone': {
                     type: Boolean,
@@ -390,7 +399,9 @@
             }
 
             limit(array, size) {
-                return array.slice(0, size);
+                if (array && size) {
+                    return array.slice(0, size);
+                } else return array;
             }
 
             _clog(value) {

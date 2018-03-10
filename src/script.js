@@ -4,6 +4,7 @@ const ghTag = "master";
 const useCdn = true;
 const useRawgitEverywhere = true;
 const preferredCodeLang = "cpp";
+const searchLimit = 50;
 
 // with trailing slash
 const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" + ghRepo +
