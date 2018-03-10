@@ -60,22 +60,72 @@ const generateLazyTree = fetchTemaCSV.then(csv => {
     return result;
 });
 
-let allFeladat = [];
+class NotImplementedError extends Error {
+    constructor(method, superObject = undefined) {
+        // noinspection JSCheckFunctionSignatures
+        super("You should implement " + method +
+            (superObject ? " when extending " + superObject.constructor : ""));
+    }
+}
 
-class Feladat {
-    constructor(tema, id, name, nehezseg) {
-        this.tema = tema;
-        this.id = id;
+let allThings = [];
+
+class Thing {
+    constructor(name) {
         this.name = name;
-        this.nehezseg = nehezseg;
 
-        this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-            readFile([this.tema.name, this.name, "feladat.txt"]).then(resolve, reject);
-        }, false);
+        allThings.push(this);
+    }
+}
+
+let allEntries = [];
+
+class Entry extends Thing {
+    constructor(name) {
+        super(name);
+
+        this.fetchDescription = this._createFetchDescriptionDeferred();
         this.description = undefined;
         this.fetchDescription.then(description => this.description = description);
 
+        allEntries.push(this);
+    }
+
+    get _descriptionPath() {
+        throw NotImplementedError('get _descriptionPath', this);
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get url() {
+        throw NotImplementedError('get url', this);
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get rawUrl() {
+        throw NotImplementedError('get rawUrl', this);
+    }
+
+    _createFetchDescriptionDeferred() {
+        return new Promise.Deferred((init, resolve, reject) => {
+            readFile(this._descriptionPath).then(resolve, reject)
+        }, false);
+    }
+}
+
+let allFeladat = [];
+
+class Feladat extends Entry {
+    constructor(tema, id, name, nehezseg) {
+        super(name);
+        this.tema = tema;
+        this.id = id;
+        this.nehezseg = nehezseg;
+
         allFeladat.push(this);
+    }
+
+    get _descriptionPath() {
+        return [this.tema.name, this.name, "feladat.txt"];
     }
 
     // noinspection JSUnusedGlobalSymbols
@@ -100,17 +150,11 @@ class Feladat {
 
 let allTema = [];
 
-class Tema {
+class Tema extends Entry {
     constructor(id, name, szint) {
+        super(name);
         this.id = id;
-        this.name = name;
         this.szint = szint;
-
-        this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-            readFile([name, "leiras.txt"]).then(resolve, reject);
-        }, false);
-        this.description = undefined;
-        this.fetchDescription.then(description => this.description = description);
 
         this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
             readFile([name, "flist.tsv"])
@@ -133,11 +177,15 @@ class Tema {
     get rawUrl() {
         return rawBaseUrl + "/" + encodeURIComponent(this.name);
     }
+
+    get _descriptionPath() {
+        return [this.name, "leiras.txt"];
+    }
 }
 
-class Szint {
+class Szint extends Thing {
     constructor(name, lazyTree) {
-        this.name = name;
+        super(name);
         this.lazyTree = lazyTree;
     }
 
