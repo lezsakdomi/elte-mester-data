@@ -3,6 +3,7 @@ const ghRepo = "elte-mester-data";
 const ghTag = "master";
 const useCdn = true;
 const useRawgitEverywhere = true;
+const preferredCodeLang = "cpp";
 
 // with trailing slash
 const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" + ghRepo +
@@ -148,6 +149,48 @@ class Feladat extends Entry {
     }
 }
 
+class MintaFeladat extends Feladat {
+    constructor(tema) {
+        super(tema, 0, tema.name + " mintafeladat", "kidolgozott");
+    }
+
+    get _descriptionPath() {
+        return [this.tema.name, "mintafeladat.txt"];
+    }
+
+    get url() {
+        return undefined;
+    }
+
+    get rawUrl() {
+        return undefined;
+    }
+
+    get mintaUrl() {
+        return undefined;
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get pdfUrl() {
+        return this.tema.rawUrl + "/mintafeladat.pdf";
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get cppUrl() {
+        return this.tema.url + "/feladat.cpp";
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get pasUrl() {
+        return this.tema.url + "/feladat.pas";
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get codeUrl() {
+        return this[preferredCodeLang + "Url"];
+    }
+}
+
 let allTema = [];
 
 class Tema extends Entry {
@@ -165,6 +208,8 @@ class Tema extends Entry {
                 })
                 .then(resolve, reject);
         }, false);
+
+        this.mintafeladat = new MintaFeladat(this);
 
         allTema.push(this);
     }
