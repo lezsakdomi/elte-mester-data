@@ -31,7 +31,7 @@
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
     <inspection_tool class="UnterminatedStatementJS" enabled="true" level="WEAK WARNING" enabled_by_default="true">
-      <option name="ignoreSemicolonAtEndOfBlock" value="true" />
+      <option name="ignoreSemicolonAtEndOfBlock" value="false" />
     </inspection_tool>
   </profile>
 </component>

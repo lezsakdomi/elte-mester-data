@@ -2,79 +2,66 @@ const ghUser = "lezsakdomi";
 const ghRepo = "elte-mester-data";
 const ghTag = "master";
 const useCdn = true;
+const useRawgitEverywhere = true;
 
 // with trailing slash
-const ghFetchBase = "https://"+(useCdn?"cdn.rawgit.com":"rawgit.com")+"/"+ghUser+"/"+ghRepo+"/"+ghTag+"/";
+const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" + ghRepo +
+    "/" + ghTag + "/";
 
 async function fetchFile(path) {
-    if (path instanceof Array) path = path
-        .map(component => encodeURIComponent(component).replace('%2F', '/'))
-        .join('/');
+    if (path instanceof Array) {
+        path = path
+            .map(component => encodeURIComponent(component).replace('%2F', '/'))
+            .join('/');
+    }
     const url = ghFetchBase + path.replace(/^\//, "");
     const response = await fetch(url);
-    if (response.ok) return response;
-    else throw new Error("Fetch for "+url+" failed: Returned "+response.status+" ("+response.statusText+")");
-}
-
-async function readBinaryFile(path) {
-    const response = await fetchFile(path);
-    const blob = response.blob();
-    return blob;
+    if (response.ok) {
+        return response;
+    } else {
+        throw new Error("Fetch for " + url + " failed: Returned " + response.status + " ("
+            + response.statusText +
+            ")");
+    }
 }
 
 async function readFile(path) {
     const response = await fetchFile(path);
-    const text = await response.text();
-    return text;
+    return await response.text();
 }
 
-async function readJson(path) {
-    const response = await fetchFile(path);
-    const json = await response.json();
-    return json;
-}
-
-async function getCookies() {
-    return document.cookie
-        .split('; ')
-        .map(value => value.split('='))
-        .reduce((accumulator, [key, value]) => {
-            accumulator[key]=value;
-            return accumulator;
-        }, {})
-}
-
-const getInitialCookies = getCookies();
-
-const tsvOptions = {
-    cellDelimiter: "\t",
-    lineDelimiter: "\n",
-    header: true
-};
-function newTSV(string) {
-    return new CSV(string, tsvOptions)
+class TSV extends CSV {
+    constructor(string) {
+        super(string, {
+            cellDelimiter: "\t",
+            lineDelimiter: "\n",
+            header: true
+        });
+    }
 }
 
 const baseUrl = "https://github.com/lezsakdomi/elte-mester-data/tree/master";
-//const rawBaseUrl = "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
-const rawBaseUrl = ghFetchBase;
+const rawBaseUrl = useRawgitEverywhere
+    ? ghFetchBase
+    : "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
 
 const fetchTemaCSV = new Promise.Deferred((init, resolve, reject) => {
     readFile("temak.tsv")
-        .then(newTSV)
+        .then(value => new TSV(value))
         .then(resolve, reject);
 }, false);
 
 const generateLazyTree = fetchTemaCSV.then(csv => {
     let result = {};
     csv.forEach(record => {
-        if (result[record.szint]===undefined) result[record.szint] = {};
-        result[record.szint][record.tema] = record.id
+        if (result[record.szint] === undefined) result[record.szint] = {};
+        result[record.szint][record.tema] = record.id;
     });
-    return result
+    return result;
 });
 
 let allFeladat = [];
+
 class Feladat {
     constructor(tema, id, name, nehezseg) {
         this.tema = tema;
@@ -85,17 +72,34 @@ class Feladat {
         this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
             readFile([this.tema.name, this.name, "feladat.txt"]).then(resolve, reject);
         }, false);
-        this.description = undefined; this.fetchDescription.then(description => this.description = description);
+        this.description = undefined;
+        this.fetchDescription.then(description => this.description = description);
 
         allFeladat.push(this);
     }
-    get url() { return this.tema.url + "/"+encodeURIComponent(this.name) }
-    get rawUrl() { return this.tema.rawUrl + "/"+encodeURIComponent(this.name) }
-    get pdfUrl() { return this.rawUrl + "/feladat.pdf" }
-    get mintaUrl() { return this.rawUrl + "/minta.zip" }
+
+    // noinspection JSUnusedGlobalSymbols
+    get url() {
+        return this.tema.url + "/" + encodeURIComponent(this.name);
+    }
+
+    get rawUrl() {
+        return this.tema.rawUrl + "/" + encodeURIComponent(this.name);
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get pdfUrl() {
+        return this.rawUrl + "/feladat.pdf";
+    }
+
+    // noinspection JSUnusedGlobalSymbols
+    get mintaUrl() {
+        return this.rawUrl + "/minta.zip";
+    }
 }
 
 let allTema = [];
+
 class Tema {
     constructor(id, name, szint) {
         this.id = id;
@@ -103,23 +107,32 @@ class Tema {
         this.szint = szint;
 
         this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-            readFile([name, "leiras.txt"]).then(resolve, reject)
+            readFile([name, "leiras.txt"]).then(resolve, reject);
         }, false);
-        this.description = undefined; this.fetchDescription.then(description => this.description = description);
+        this.description = undefined;
+        this.fetchDescription.then(description => this.description = description);
 
         this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
             readFile([name, "flist.tsv"])
-                .then(newTSV)
-                .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
+                .then(value => new TSV(value))
+                .then(csv => {
+                    // noinspection JSUnresolvedFunction
+                    return csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg));
+                })
                 .then(resolve, reject);
         }, false);
 
-        this.feladatList = undefined; this.fetchFeladatList.then(feladatList => this.feladatList = feladatList);
-
         allTema.push(this);
     }
-    get url() { return baseUrl + "/"+encodeURIComponent(this.name) }
-    get rawUrl() { return rawBaseUrl + "/"+encodeURIComponent(this.name) }
+
+    // noinspection JSUnusedGlobalSymbols
+    get url() {
+        return baseUrl + "/" + encodeURIComponent(this.name);
+    }
+
+    get rawUrl() {
+        return rawBaseUrl + "/" + encodeURIComponent(this.name);
+    }
 }
 
 class Szint {
@@ -127,17 +140,24 @@ class Szint {
         this.name = name;
         this.lazyTree = lazyTree;
     }
-    get temaList() { return Object.entries(this.lazyTree).map(([name, id]) => new Tema(id, name, this)) }
-    get temaSet() { return new Set(this.temaList) }
+
+    get temaList() {
+        return Object.entries(this.lazyTree).map(([name, id]) => new Tema(id, name, this));
+    }
+
+    get temaSet() {
+        return new Set(this.temaList);
+    }
 }
 
 const generateRealTree = generateLazyTree.then(
-    tree => new Set( Object.keys(tree).map(szint => new Szint(szint, tree[szint])) )
+    tree => new Set(Object.keys(tree).map(szint => new Szint(szint, tree[szint])))
 );
-let realTree; generateRealTree.then(value => realTree = value);
+let realTree;
+generateRealTree.then(value => realTree = value);
 
 const generateTemaSet = generateRealTree.then(
-    tree => new Set( [...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []) )
+    tree => new Set([...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []))
 );
 
 const fetchAllTemaDescription = new Promise.Deferred((init, resolve, reject) => {
@@ -156,7 +176,7 @@ const generateFeladatSet = new Promise.Deferred((init, resolve, reject) => {
     generateTemaSet.run(init).then(
         temaSet => Promise.all([...temaSet].map(tema => tema.fetchFeladatList.run()))
             .then(feladatListList =>
-                new Set( feladatListList.reduce((accumulator, value) => accumulator.concat(value), []) )
+                new Set(feladatListList.reduce((accumulator, value) => accumulator.concat(value), []))
             ).then(resolve, reject),
         reject);
 }, false);
