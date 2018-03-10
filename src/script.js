@@ -75,61 +75,60 @@ const generateLazyTree = fetchTemaCSV.then(csv => {
 });
 
 let allFeladat = [];
-function Feladat(tema, id, name, nehezseg) {
-    this.tema = tema;
-    this.id = id;
-    this.name = name;
-    this.nehezseg = nehezseg;
+class Feladat {
+    constructor(tema, id, name, nehezseg) {
+        this.tema = tema;
+        this.id = id;
+        this.name = name;
+        this.nehezseg = nehezseg;
 
-    this.url = this.tema.url + "/"+encodeURIComponent(this.name);
-    this.rawUrl = this.tema.rawUrl + "/"+encodeURIComponent(this.name);
-    // noinspection JSUnusedGlobalSymbols
-    this.pdfUrl = this.rawUrl + "/feladat.pdf";
-    // noinspection JSUnusedGlobalSymbols
-    this.mintaUrl = this.rawUrl + "/minta.zip";
+        this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
+            readFile([this.tema.name, this.name, "feladat.txt"]).then(resolve, reject);
+        }, false);
+        this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
-    this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile([this.tema.name, this.name, "feladat.txt"]).then(resolve, reject);
-    }, false);
-    this.description = undefined; this.fetchDescription.then(description => this.description = description);
-
-    allFeladat.push(this)
+        allFeladat.push(this);
+    }
+    get url() { return this.tema.url + "/"+encodeURIComponent(this.name) }
+    get rawUrl() { return this.tema.rawUrl + "/"+encodeURIComponent(this.name) }
+    get pdfUrl() { return this.rawUrl + "/feladat.pdf" }
+    get mintaUrl() { return this.rawUrl + "/minta.zip" }
 }
 
 let allTema = [];
-function Tema(id, name, szint) {
-    this.id = id;
-    this.name = name;
-    this.szint = szint;
+class Tema {
+    constructor(id, name, szint) {
+        this.id = id;
+        this.name = name;
+        this.szint = szint;
 
-    this.url = baseUrl + "/"+encodeURIComponent(this.name);
-    this.rawUrl = rawBaseUrl + "/"+encodeURIComponent(this.name);
+        this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
+            readFile([name, "leiras.txt"]).then(resolve, reject)
+        }, false);
+        this.description = undefined; this.fetchDescription.then(description => this.description = description);
 
-    this.fetchDescription = new Promise.Deferred((init, resolve, reject) => {
-        readFile([name, "leiras.txt"]).then(resolve, reject)
-    }, false);
-    this.description = undefined; this.fetchDescription.then(description => this.description = description);
+        this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
+            readFile([name, "flist.tsv"])
+                .then(newTSV)
+                .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
+                .then(resolve, reject);
+        }, false);
 
-    this.fetchFeladatList = new Promise.Deferred((init, resolve, reject) => {
-        readFile([name, "flist.tsv"])
-            .then(newTSV)
-            .then(csv => csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg)))
-            .then(resolve, reject);
-    }, false);
-    // noinspection JSUnusedGlobalSymbols
-    this.feladatList = undefined;
-    // noinspection JSUnusedGlobalSymbols
-    this.fetchFeladatList.then(feladatList => this.feladatList = feladatList);
+        this.feladatList = undefined; this.fetchFeladatList.then(feladatList => this.feladatList = feladatList);
 
-    allTema.push(this)
+        allTema.push(this);
+    }
+    get url() { return baseUrl + "/"+encodeURIComponent(this.name) }
+    get rawUrl() { return rawBaseUrl + "/"+encodeURIComponent(this.name) }
 }
 
-function Szint(name, lazyTree) {
-    this.name = name;
-    // noinspection JSUnusedGlobalSymbols //TODO sure?
-    this.lazyTree = lazyTree;
-    this.temaList = Object.entries(lazyTree).map(([name, id]) => new Tema(id, name, this));
-    this.temaSet = new Set(this.temaList)
+class Szint {
+    constructor(name, lazyTree) {
+        this.name = name;
+        this.lazyTree = lazyTree;
+    }
+    get temaList() { return Object.entries(this.lazyTree).map(([name, id]) => new Tema(id, name, this)) }
+    get temaSet() { return new Set(this.temaList) }
 }
 
 const generateRealTree = generateLazyTree.then(
