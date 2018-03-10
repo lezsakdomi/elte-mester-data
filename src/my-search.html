@@ -44,6 +44,9 @@
                     <paper-item data="[[_fetchAllFeladatDescription]]">
                         Feladatok szövege
                     </paper-item>
+                    <paper-item data="[[_fetchAllMintafeladatDescription]]">
+                        Kidolgozott mintafeladatok
+                    </paper-item>
                 </paper-listbox>
             </paper-dropdown-menu>
             <template is="dom-if" if="[[and(categoryValid, _loadNotRequestedYet)]]">
@@ -104,6 +107,13 @@
                     value: function () {
                         let result = fetchAllFeladatDescription;
                         result.estimate = "1700 request, 1.7MB";
+                        return result;
+                    }
+                },
+                '_fetchAllMintafeladatDescription': {
+                    type: Object,
+                    value: function () {
+                        let result = fetchAllMintafeladatDescription;
                         return result;
                     }
                 },

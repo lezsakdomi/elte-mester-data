@@ -159,7 +159,7 @@ class MintaFeladat extends Feladat {
     }
 
     get url() {
-        return undefined;
+        return this.pdfUrl;
     }
 
     get rawUrl() {
@@ -262,6 +262,19 @@ const fetchAllTemaDescription = new Promise.Deferred((init, resolve, reject) => 
                     [fetchedDescription, temaList[index]]
                 ));
             }, reject);
+    }, reject);
+}, false);
+
+const fetchAllMintafeladatDescription = new Promise.Deferred((init, resolve, reject) => {
+    generateTemaSet.run(init).then(temaSet => {
+        let feladatList = [...temaSet].map(tema => tema.mintafeladat);
+        Promise.all(feladatList.map(feladat => feladat.fetchDescription.run().catch(reason => {
+            console.error(new Error(reason));
+        }))).then(fetchedDescriptions => {
+            resolve(fetchedDescriptions.map((fetchedDescription, index) =>
+                [fetchedDescription, feladatList[index]]
+            ));
+        }, reject);
     }, reject);
 }, false);
 
