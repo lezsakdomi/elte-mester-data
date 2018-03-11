@@ -1,14 +1,72 @@
-const ghUser = "lezsakdomi";
-const ghRepo = "elte-mester-data";
-const ghTag = "master";
-const useCdn = true;
-const useRawgitEverywhere = true;
-const preferredCodeLang = "cpp";
-const searchLimit = 50;
+const preferences = new Proxy({
+    ghUser: "lezsakdomi",
+    ghRepo: "elte-mester-data",
+    ghTag: "master",
+    useCdn: true,
+    useRawgitEverywhere: true,
+    preferredCodeLang: "cpp",
+    searchLimit: 50
+}, {
+    prefix: 'preferences.',
+    storage: window.localStorage,
+    get: function (target, p, receiver) {
+        if (p.startsWith('default')) {
+            const prop = p[7].toLowerCase() + p.slice(8);
+            return target[prop];
+        }
+
+        if (p.startsWith('get')) {
+            let prop = p[3].toLowerCase() + p.slice(4);
+            return () => {
+                if (this.storage) {
+                    const item = this.storage.getItem(this.prefix + prop);
+                    if (item) {
+                        return JSON.parse(item);
+                    }
+                }
+                return receiver['default' + prop[0].toUpperCase() + prop.slice(1)];
+            };
+        }
+
+        if (p.startsWith('set')) {
+            const prop = p[3].toLowerCase() + p.slice(4);
+            return value => {
+                if (this.storage) {
+                    this.storage.setItem(this.prefix + prop, JSON.stringify(value));
+                }
+                return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
+            };
+        }
+
+        if (p.startsWith('reset')) {
+            const prop = p[5].toLowerCase() + p.slice(6);
+            return () => {
+                if (this.storage) {
+                    this.storage.removeItem(this.prefix + prop);
+                }
+                return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
+            };
+        }
+
+        {
+            const prop = p;
+            if (!(prop in target)) {
+                throw new Error("Preference " + prop + " does not exists. Please use get" +
+                    prop[0].toUpperCase() + prop.slice(1) + "() to discard this error silently.");
+            }
+            return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
+        }
+    },
+    set: function (target, p, value, receiver) {
+        return receiver['set' + p[0].toUpperCase() + p.slice(1)]
+            .call(receiver, value);
+    }
+});
+
 
 // with trailing slash
-const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" +
-    ghRepo + "/" + ghTag + "/";
+const ghFetchBase = "https://" + (preferences.useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" +
+    preferences.ghUser + "/" + preferences.ghRepo + "/" + preferences.ghTag + "/";
 
 async function fetchFile(path) {
     if (path instanceof Array) {
@@ -42,7 +100,7 @@ class TSV extends CSV {
 }
 
 const baseUrl = "https://github.com/lezsakdomi/elte-mester-data/tree/master";
-const rawBaseUrl = useRawgitEverywhere
+const rawBaseUrl = preferences.useRawgitEverywhere
     ? ghFetchBase
     : "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
 
@@ -187,7 +245,7 @@ class MintaFeladat extends Feladat {
 
     // noinspection JSUnusedGlobalSymbols
     get codeUrl() {
-        return this[preferredCodeLang + "Url"];
+        return this[preferences.preferredCodeLang + "Url"];
     }
 }
 
