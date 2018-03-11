@@ -1,3 +1,4 @@
+// noinspection JSCheckFunctionSignatures
 const preferences = new Proxy({
     ghUser: "lezsakdomi",
     ghRepo: "elte-mester-data",
@@ -63,32 +64,6 @@ const preferences = new Proxy({
     }
 });
 
-
-// with trailing slash
-const ghFetchBase = "https://" + (preferences.useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" +
-    preferences.ghUser + "/" + preferences.ghRepo + "/" + preferences.ghTag + "/";
-
-async function fetchFile(path) {
-    if (path instanceof Array) {
-        path = path
-            .map(component => encodeURIComponent(component).replace('%2F', '/'))
-            .join('/');
-    }
-    const url = ghFetchBase + path.replace(/^\//, "");
-    const response = await fetch(url);
-    if (response.ok) {
-        return response;
-    } else {
-        throw new Error("Fetch for " + url + " failed: Returned " + response.status + " ("
-            + response.statusText + ")");
-    }
-}
-
-async function readFile(path) {
-    const response = await fetchFile(path);
-    return await response.text();
-}
-
 class TSV extends CSV {
     constructor(string) {
         super(string, {
@@ -98,11 +73,6 @@ class TSV extends CSV {
         });
     }
 }
-
-const baseUrl = "https://github.com/lezsakdomi/elte-mester-data/tree/master";
-const rawBaseUrl = preferences.useRawgitEverywhere
-    ? ghFetchBase
-    : "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
 
 const fetchTemaCSV = new Promise.Deferred((init, resolve, reject) => {
     readFile("temak.tsv")
@@ -135,6 +105,42 @@ class Thing {
 
         allThings.push(this);
     }
+
+    static get _baseUrl() {
+        return "https://github.com/lezsakdomi/elte-mester-data/tree/master";
+    }
+
+    static get _ghFetchBase() {
+        return "https://" + (preferences.useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" +
+            preferences.ghUser + "/" + preferences.ghRepo + "/" + preferences.ghTag + "/";
+    }
+
+    static get _rawBaseUrl() {
+        return preferences.useRawgitEverywhere
+            ? Thing._ghFetchBase
+            : "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
+    }
+
+    static async fetchFile(path) {
+        if (path instanceof Array) {
+            path = path
+                .map(component => encodeURIComponent(component).replace('%2F', '/'))
+                .join('/');
+        }
+        const url = Thing._ghFetchBase + path.replace(/^\//, "");
+        const response = await fetch(url);
+        if (response.ok) {
+            return response;
+        } else {
+            throw new Error("Fetch for " + url + " failed: Returned " + response.status + " ("
+                + response.statusText + ")");
+        }
+    }
+}
+
+async function readFile(path) {
+    const response = await Thing.fetchFile(path);
+    return await response.text();
 }
 
 let allEntries = [];
@@ -275,11 +281,11 @@ class Tema extends Entry {
 
     // noinspection JSUnusedGlobalSymbols
     get url() {
-        return baseUrl + "/" + encodeURIComponent(this.name);
+        return Thing._baseUrl + "/" + encodeURIComponent(this.name);
     }
 
     get rawUrl() {
-        return rawBaseUrl + "/" + encodeURIComponent(this.name);
+        return Thing._rawBaseUrl + "/" + encodeURIComponent(this.name);
     }
 
     get _descriptionPath() {
