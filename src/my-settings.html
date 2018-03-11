@@ -1,0 +1,88 @@
+<!--suppress JSUnfilteredForInLoop, JSUnresolvedFunction -->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../bower_components/paper-radio-group/paper-radio-group.html">
+<link rel="import" href="../bower_components/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="script.html">
+
+<dom-module id="my-settings">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px 20px;
+            }
+        </style>
+
+        <h1>Beállítások</h1>
+        <div class="card">
+            <h2>Adatok forrása</h2>
+
+            <paper-input label="Repository tulajdonosa" value="{{ghUser}}">
+                <paper-icon-button slot="suffix" onclick="preferences.resetGhUser();" icon="clear"
+                                   alt="reset" title="reset"></paper-icon-button>
+            </paper-input>
+
+            <paper-input label="Repository" value="{{ghRepo}}"></paper-input>
+
+            <paper-input label="Branch, tag, vagy commit" value="{{ghTag}}"></paper-input>
+        </div>
+        <div class="card">
+            <h2>Letöltési beállítások</h2>
+
+            <paper-toggle-button checked="{{useCdn}}">
+                CDN használata Rawgit lekérdezések esetén
+            </paper-toggle-button>
+            <br>
+
+            <paper-toggle-button checked="{{useRawgitEverywhere}}">
+                Rawgit használata ahol csak lehetséges, <a>raw.githubusercontent.com</a> helyett
+            </paper-toggle-button>
+        </div>
+        <div class="card">
+            <h2>Egyéb</h2>
+
+            Preferált nyelv:
+            <paper-radio-group selected="{{preferredCodeLang}}">
+                <paper-radio-button name="cpp">C++</paper-radio-button>
+                <paper-radio-button name="pas">Pascal</paper-radio-button>
+            </paper-radio-group>
+        </div>
+    </template>
+
+    <!--suppress JSUnusedGlobalSymbols, ES6ModulesDependencies -->
+    <script>
+        class MySettings extends Polymer.Element {
+            static get is() {
+                return 'my-settings';
+            }
+
+            static get properties() {
+                let result = {};
+                for (let p in preferences) {
+                    result[p] = {
+                        type: preferences.default(p).constructor,
+                        notify: true,
+                        value: function () {
+                            return preferences.get(p);
+                        },
+                        observer: '_' + p + 'Changed'
+                    };
+                }
+                return result;
+            }
+        }
+
+        for (let p in preferences) {
+            MySettings.prototype['_' + p + 'Changed'] = function (value) {
+                if (value !== preferences.get(p)) preferences.set(p, value);
+            };
+        }
+
+        window.customElements.define(MySettings.is, MySettings);
+    </script>
+</dom-module>
