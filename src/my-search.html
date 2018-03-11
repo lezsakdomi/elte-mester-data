@@ -370,7 +370,7 @@
                         }
                     };
                     const doSimpleSearch = async function (that, fuse, query) {
-                        const results = that._fastSeach(fuse, query);
+                        const results = that._fastSearch(fuse, query);
                         if (!status.obsolete) {
                             Polymer.RenderStatus.afterNextRender(that, function () {
                                 if (!status.obsolete) {
