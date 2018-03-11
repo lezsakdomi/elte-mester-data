@@ -1,3 +1,4 @@
+// noinspection JSUnusedGlobalSymbols
 // noinspection JSCheckFunctionSignatures
 const preferences = new Proxy({
     ghUser: "lezsakdomi",
@@ -10,6 +11,7 @@ const preferences = new Proxy({
 }, {
     prefix: 'preferences.',
     storage: window.localStorage,
+    observers: {},
     get: function (target, p, receiver) {
         // noinspection JSUnusedGlobalSymbols
         const propMethods = {
@@ -26,18 +28,36 @@ const preferences = new Proxy({
                 return receiver.default(p);
             },
             set: (p, value) => {
+                this.beforeChange(p, value, receiver);
                 if (this.storage) {
                     this.storage.setItem(this.prefix + p, JSON.stringify(value));
                 }
                 return receiver.get(p);
             },
             reset: p => {
+                this.beforeChange(p, receiver.default(p), receiver);
                 if (this.storage) {
                     this.storage.removeItem(this.prefix + p);
                 }
                 return receiver.get(p);
+            },
+            observe: (p, callback) => {
+                if (!(p in this.observers)) this.observers[p] = [];
+                return this.observers[p].push(callback);
+            },
+            clearObserver: (p, id) => {
+                const result = this.observers[p];
+                this.observers[p][id] = null;
+                return result;
+            },
+            clearObservers: p => {
+                const result = this.observers[p];
+                this.observers[p] = undefined;
+                return result;
             }
         };
+
+        if (p === '_handlers') return this;
 
         if (p in propMethods) {
             return propMethods[p].bind(this);
@@ -53,8 +73,9 @@ const preferences = new Proxy({
                 if (typeof methodName !== "string") continue;
 
                 if (p.startsWith(methodName)) {
-                    const prop = p[methodName.length] + p.slice(methodName.length + 1);
-                    return (...args) => propMethods[methodName].call(prop, ...args);
+                    const prop = p[methodName.length].toLowerCase() +
+                        p.slice(methodName.length + 1);
+                    return (...args) => propMethods[methodName].call(this, prop, ...args);
                 }
             }
         }
@@ -69,6 +90,26 @@ const preferences = new Proxy({
     },
     set: function (target, p, value, receiver) {
         return receiver.set(p, value);
+    },
+    beforeChange: function (p, newValue, receiver) {
+        if (this.observers[p] !== undefined) {
+            this.observers[p].forEach(observer => {
+                if (observer != null) {
+                    observer.call(receiver, newValue, p);
+                }
+            });
+        }
+    }
+});
+window.addEventListener('storage', event => {
+    // noinspection JSUnresolvedVariable
+    if (event.key.startsWith(preferences._handlers.prefix)) {
+        // noinspection JSUnresolvedVariable
+        const key = event.key.slice(preferences._handlers.prefix.length);
+        // noinspection JSUnresolvedVariable
+        preferences._handlers.beforeChange(key,
+            event.newValue !== null ? JSON.parse(event.newValue) : preferences.default(key),
+            preferences);
     }
 });
 
