@@ -28,16 +28,16 @@ const preferences = new Proxy({
                 return receiver.default(p);
             },
             set: (p, value) => {
-                this.beforeChange(p, value, receiver);
                 if (this.storage) {
                     this.storage.setItem(this.prefix + p, JSON.stringify(value));
+                    this.changed(p, value, receiver);
                 }
                 return receiver.get(p);
             },
             reset: p => {
-                this.beforeChange(p, receiver.default(p), receiver);
                 if (this.storage) {
                     this.storage.removeItem(this.prefix + p);
+                    this.changed(p, receiver.default(p), receiver);
                 }
                 return receiver.get(p);
             },
@@ -91,7 +91,7 @@ const preferences = new Proxy({
     set: function (target, p, value, receiver) {
         return receiver.set(p, value);
     },
-    beforeChange: function (p, newValue, receiver) {
+    changed: function (p, newValue, receiver) {
         if (this.observers[p] !== undefined) {
             this.observers[p].forEach(observer => {
                 if (observer != null) {
@@ -107,7 +107,7 @@ window.addEventListener('storage', event => {
         // noinspection JSUnresolvedVariable
         const key = event.key.slice(preferences._handlers.prefix.length);
         // noinspection JSUnresolvedVariable
-        preferences._handlers.beforeChange(key,
+        preferences._handlers.changed(key,
             event.newValue !== null ? JSON.parse(event.newValue) : preferences.default(key),
             preferences);
     }

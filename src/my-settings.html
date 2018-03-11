@@ -75,6 +75,12 @@
                 }
                 return result;
             }
+
+            constructor() {
+                super();
+
+                for (let p in preferences) preferences.observe(p, value => this[p] = value);
+            }
         }
 
         for (let p in preferences) {
