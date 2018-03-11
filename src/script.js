@@ -11,56 +11,64 @@ const preferences = new Proxy({
     prefix: 'preferences.',
     storage: window.localStorage,
     get: function (target, p, receiver) {
-        if (p.startsWith('default')) {
-            const prop = p[7].toLowerCase() + p.slice(8);
-            return target[prop];
-        }
-
-        if (p.startsWith('get')) {
-            let prop = p[3].toLowerCase() + p.slice(4);
-            return () => {
+        // noinspection JSUnusedGlobalSymbols
+        const propMethods = {
+            default: p => {
+                return target[p];
+            },
+            get: p => {
                 if (this.storage) {
-                    const item = this.storage.getItem(this.prefix + prop);
+                    const item = this.storage.getItem(this.prefix + p);
                     if (item) {
                         return JSON.parse(item);
                     }
                 }
-                return receiver['default' + prop[0].toUpperCase() + prop.slice(1)];
-            };
+                return receiver.default(p);
+            },
+            set: (p, value) => {
+                if (this.storage) {
+                    this.storage.setItem(this.prefix + p, JSON.stringify(value));
+                }
+                return receiver.get(p);
+            },
+            reset: p => {
+                if (this.storage) {
+                    this.storage.removeItem(this.prefix + p);
+                }
+                return receiver.get(p);
+            }
+        };
+
+        if (p in propMethods) {
+            return propMethods[p].bind(this);
         }
 
-        if (p.startsWith('set')) {
-            const prop = p[3].toLowerCase() + p.slice(4);
-            return value => {
-                if (this.storage) {
-                    this.storage.setItem(this.prefix + prop, JSON.stringify(value));
-                }
-                return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
-            };
-        }
+        if (typeof p === "string") {
+            if (p.startsWith('default')) {
+                const prop = p[7].toLowerCase() + p.slice(8);
+                return target[prop];
+            }
 
-        if (p.startsWith('reset')) {
-            const prop = p[5].toLowerCase() + p.slice(6);
-            return () => {
-                if (this.storage) {
-                    this.storage.removeItem(this.prefix + prop);
+            for (let methodName in propMethods) {
+                if (typeof methodName !== "string") continue;
+
+                if (p.startsWith(methodName)) {
+                    const prop = p[methodName.length] + p.slice(methodName.length + 1);
+                    return (...args) => propMethods[methodName].call(prop, ...args);
                 }
-                return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
-            };
+            }
         }
 
         {
-            const prop = p;
-            if (!(prop in target)) {
-                throw new Error("Preference " + prop + " does not exists. Please use get" +
-                    prop[0].toUpperCase() + prop.slice(1) + "() to discard this error silently.");
+            if (!(p in target)) {
+                throw new Error("Preference " + p + " does not exists. Please use get(" + p +
+                    ") to discard this error silently.");
             }
-            return receiver['get' + prop[0].toUpperCase() + prop.slice(1)].call(receiver);
+            return receiver.get(p);
         }
     },
     set: function (target, p, value, receiver) {
-        return receiver['set' + p[0].toUpperCase() + p.slice(1)]
-            .call(receiver, value);
+        return receiver.set(p, value);
     }
 });
 
