@@ -32,12 +32,16 @@
         </div>
     </template>
 
+    <!--suppress JSUnusedGlobalSymbols -->
     <script>
         class MyDebug extends Polymer.Element {
-            static get is() { return 'my-debug'; }
+            static get is() {
+                return 'my-debug';
+            }
+
             static get properties() {
                 return {
-                    // This shouldn't be neccessary, but the Analyzer isn't picking up
+                    // This shouldn't be necessary, but the Analyzer isn't picking up
                     // Polymer.Element#rootPath
                     rootPath: String,
                 };

@@ -14,15 +14,19 @@
             paper-dropdown-input {
                 color: var(--paper-red-900);
             }
+
             paper-ripple {
                 color: var(--paper-green-500);
             }
+
+            /*noinspection CssUnusedSymbol*/
             paper-dropdown-input.loaded {
                 color: initial;
             }
         </style>
         <paper-ripple noink></paper-ripple>
-        <paper-dropdown-input label="Feladat" items="[[items]]" filter-property="title" selected-item="{{selection}}">
+        <paper-dropdown-input label="Feladat" items="[[items]]" filter-property="title"
+                              selected-item="{{selection}}">
             <template>
                 <template is="dom-repeat" items="[[items]]">
                     <template is="if" if="[[item.new]]">
@@ -33,32 +37,41 @@
             </template>
         </paper-dropdown-input>
     </template>
+    <!--suppress JSUnusedGlobalSymbols -->
     <script>
         class FeladatDropdown extends Polymer.Element {
-            static get is() { return 'feladat-dropdown'; }
-            static get properties() { return {
-                temaList: {
-                    type: Array
-                },
-                items: {
-                    type: Array,
-                    notify: true
-                    //, readOnly: true
-                },
-                selection: {
-                    type: Object,
-                    notify: true,
-                    //readOnly: true,
-                    value: undefined
-                }
-            } }
-            static get observers() { return [
-                '_temaListChanged(temaList)',
-                '_temaAddedOrRemoved(temaList.slices)'
-            ] }
+            static get is() {
+                return 'feladat-dropdown';
+            }
+
+            static get properties() {
+                return {
+                    temaList: {
+                        type: Array
+                    },
+                    items: {
+                        type: Array,
+                        notify: true
+                        //, readOnly: true
+                    },
+                    selection: {
+                        type: Object,
+                        notify: true,
+                        //readOnly: true,
+                        value: undefined
+                    }
+                };
+            }
+
+            static get observers() {
+                return [
+                    '_temaListChanged(temaList)',
+                    '_temaAddedOrRemoved(temaList.slices)'
+                ];
+            }
 
             _temaListChanged(temaList) {
-                if (this.items) this.items.obsolete=false;
+                if (this.items) this.items.obsolete = false;
                 this.shadowRoot.querySelector('paper-dropdown-input').classList.remove("loaded");
                 this.set('items', []);
                 const itemsRef = this.items;
@@ -67,7 +80,9 @@
                         tema.fetchFeladatList.run(this).then(value => {
                             if (itemsRef.obsolete) {
                                 throw new Error("Items are obsolete");
-                            } else return value;
+                            } else {
+                                return value;
+                            }
                         }).then(feladatList => {
                             this.push('items', {
                                 title: tema.name,
@@ -90,11 +105,13 @@
                                 this.set('items', itemsBackup);
                             }
                         })
-                    )).then(promises => {
+                    )).then(() => {
                         if (itemsRef.obsolete) {
                             throw new Error("Items are obsolete");
                         } else {
-                            this.shadowRoot.querySelector('paper-dropdown-input').classList.add("loaded");
+                            this.shadowRoot.querySelector('paper-dropdown-input')
+                                .classList
+                                .add("loaded");
                             this.shadowRoot.querySelector('paper-ripple').simulatedRipple();
                         }
                     });

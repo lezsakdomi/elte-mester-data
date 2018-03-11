@@ -7,8 +7,8 @@ const preferredCodeLang = "cpp";
 const searchLimit = 50;
 
 // with trailing slash
-const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" + ghRepo +
-    "/" + ghTag + "/";
+const ghFetchBase = "https://" + (useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" + ghUser + "/" +
+    ghRepo + "/" + ghTag + "/";
 
 async function fetchFile(path) {
     if (path instanceof Array) {
@@ -22,8 +22,7 @@ async function fetchFile(path) {
         return response;
     } else {
         throw new Error("Fetch for " + url + " failed: Returned " + response.status + " ("
-            + response.statusText +
-            ")");
+            + response.statusText + ")");
     }
 }
 
@@ -109,7 +108,7 @@ class Entry extends Thing {
 
     _createFetchDescriptionDeferred() {
         return new Promise.Deferred((init, resolve, reject) => {
-            readFile(this._descriptionPath).then(resolve, reject)
+            readFile(this._descriptionPath).then(resolve, reject);
         }, false);
     }
 }
@@ -205,7 +204,8 @@ class Tema extends Entry {
                 .then(value => new TSV(value))
                 .then(csv => {
                     // noinspection JSUnresolvedFunction
-                    return csv.map(record => new Feladat(this, record.id, record.feladat, record.nehezseg));
+                    return csv.map(
+                        record => new Feladat(this, record.id, record.feladat, record.nehezseg));
                 })
                 .then(resolve, reject);
         }, false);
@@ -251,7 +251,8 @@ let realTree;
 generateRealTree.then(value => realTree = value);
 
 const generateTemaSet = generateRealTree.then(
-    tree => new Set([...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []))
+    tree => new Set(
+        [...tree].reduce((accumulator, value) => accumulator.concat([...value.temaSet]), []))
 );
 
 const fetchAllTemaDescription = new Promise.Deferred((init, resolve, reject) => {
@@ -283,7 +284,8 @@ const generateFeladatSet = new Promise.Deferred((init, resolve, reject) => {
     generateTemaSet.run(init).then(
         temaSet => Promise.all([...temaSet].map(tema => tema.fetchFeladatList.run()))
             .then(feladatListList =>
-                new Set(feladatListList.reduce((accumulator, value) => accumulator.concat(value), []))
+                new Set(
+                    feladatListList.reduce((accumulator, value) => accumulator.concat(value), []))
             ).then(resolve, reject),
         reject);
 }, false);

@@ -32,6 +32,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="my-app">
     <template>
+        <!--suppress CssUnusedSymbol -->
         <style>
             :host {
                 /* https://codepen.io/lezsakdomi/pen/XZPGeY */
@@ -88,19 +89,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-drawer-layout fullbleed narrow="{{narrow}}">
             <!-- Drawer content -->
             <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
-                <app-toolbar>Menu</app-toolbar>
-                <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-                    <a name="browse" href="#browse">Browse</a>
-                    <a name="search" href="#search">Search</a>
-                    <a name="about" href="#about">About</a>
+                <app-toolbar>Menü</app-toolbar>
+                <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list"
+                               role="navigation">
+                    <a name="browse" href="#browse">Böngészés</a>
+                    <a name="search" href="#search">Keresés</a>
+                    <a name="about" href="#about">Az oldalról</a>
                     <a href="http://mester.inf.elte.hu/">
                         <iron-icon icon="exit-to-app"></iron-icon>
                         Mester
                     </a>
                     <a href="https://github.com/lezsakdomi/elte-mester-data"
                        style="margin-top: 1.5em;">
-                        <img src="[[importPath]]../images/GitHub-Logos/GitHub_Logo.png" alt="Fork me on GitHub"
-                             style="height: 1.5em;"/>
+                        <!--suppress RequiredAttributes -->
+                        <img src$="[[importPath]]../images/GitHub-Logos/GitHub_Logo.png"
+                             alt="Fork me on GitHub" style="height: 1.5em;"/>
                     </a>
                 </iron-selector>
             </app-drawer>
@@ -111,7 +114,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <app-header slot="header" condenses reveals effects="waterfall">
                     <app-toolbar>
                         <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
-                        <div main-title>Mester mirror</div>
+                        <div main-title>Mester tükör</div>
                     </app-toolbar>
                 </app-header>
 
@@ -130,13 +133,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </app-drawer-layout>
     </template>
 
+    <!--suppress JSUnusedGlobalSymbols -->
     <script>
         // Gesture events like tap and track generated from touch will not be
         // preventable, allowing for better scrolling performance.
         Polymer.setPassiveTouchGestures(true);
 
         class MyApp extends Polymer.Element {
-            static get is() { return 'my-app'; }
+            static get is() {
+                return 'my-app';
+            }
 
             static get properties() {
                 return {
@@ -147,7 +153,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     },
                     routeData: Object,
                     subroute: Object,
-                    // This shouldn't be neccessary, but the Analyzer isn't picking up
+                    // This shouldn't be necessary, but the Analyzer isn't picking up
                     // Polymer.Element#rootPath
                     rootPath: String,
                 };

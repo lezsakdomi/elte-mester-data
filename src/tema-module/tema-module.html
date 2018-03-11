@@ -25,14 +25,19 @@
     <!--suppress JSUnusedGlobalSymbols -->
     <script>
         class TemaModule extends Polymer.Element {
-            static get is() { return 'tema-module'; }
-            static get properties() { return {
-                tema: {
-                    type: Object,
-                    notify: true,
-                    observer: '_temaChanged'
-                }
-            } }
+            static get is() {
+                return 'tema-module';
+            }
+
+            static get properties() {
+                return {
+                    tema: {
+                        type: Object,
+                        notify: true,
+                        observer: '_temaChanged'
+                    }
+                };
+            }
 
             _temaChanged(tema) {
                 if (tema) {

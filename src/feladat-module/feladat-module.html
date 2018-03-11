@@ -37,15 +37,21 @@
             </div>
         </paper-card>
     </template>
+    <!--suppress JSUnusedGlobalSymbols -->
     <script>
         class FeladatModule extends Polymer.Element {
-            static get is() { return 'feladat-module'; }
-            static get properties() { return {
-                feladat: {
-                    type: Object,
-                    notify: true
-                }
-            } }
+            static get is() {
+                return 'feladat-module';
+            }
+
+            static get properties() {
+                return {
+                    feladat: {
+                        type: Object,
+                        notify: true
+                    }
+                };
+            }
         }
 
         customElements.define(FeladatModule.is, FeladatModule);

@@ -12,7 +12,8 @@
 <dom-module id="tema-dropdown">
     <template>
         <paper-ripple noink></paper-ripple>
-        <paper-dropdown-input label="Téma" items="[[items]]" filter-property="title" selected-item="{{selection}}">
+        <paper-dropdown-input label="Téma" items="[[items]]" filter-property="title"
+                              selected-item="{{selection}}">
             <template>
                 <template is="dom-repeat" items="[[items]]">
                     <template is="dom-if" if="[[item.new]]">
@@ -23,28 +24,34 @@
             </template>
         </paper-dropdown-input>
     </template>
+    <!--suppress JSUnusedGlobalSymbols, JSUnresolvedFunction -->
     <script>
         class TemaDropdown extends Polymer.Element {
-            static get is() { return 'tema-dropdown'; }
-            static get properties() { return {
-                tree: Array,
-                temaList: Array,
-                items: {
-                    type: Array,
-                    computed: '_getItems(temaList, tree)',
-                    observer: '_itemsChange'
-                },
-                selection: {
-                    type: Object,
-                    notify: true,
-                    //readOnly: true,
-                    value: undefined
-                },
-                init: {
-                    type: Object,
-                    readOnly: true
-                }
-            } }
+            static get is() {
+                return 'tema-dropdown';
+            }
+
+            static get properties() {
+                return {
+                    tree: Array,
+                    temaList: Array,
+                    items: {
+                        type: Array,
+                        computed: '_getItems(temaList, tree)',
+                        observer: '_itemsChange'
+                    },
+                    selection: {
+                        type: Object,
+                        notify: true,
+                        //readOnly: true,
+                        value: undefined
+                    },
+                    init: {
+                        type: Object,
+                        readOnly: true
+                    }
+                };
+            }
 
             constructor() {
                 super();
@@ -62,25 +69,28 @@
                     temaList: allTema // Could be not complete, but that's OK, the user doesn't know that :)
                 });
 
-                if (tree) tree.forEach(szint => {
-                    result.push({
-                        title: szint.name,
-                        object: szint,
-                        style: "font-weight: lighter;",
-                        new: true,
-                        temaList: szint.temaList
+                if (tree) {
+                    tree.forEach(szint => {
+                        result.push({
+                            title: szint.name,
+                            object: szint,
+                            style: "font-weight: lighter;",
+                            new: true,
+                            temaList: szint.temaList
+                        });
+                        result.push(...szint.temaSet.map(tema => ({
+                            title: tema.name,
+                            object: tema,
+                            temaList: [tema]
+                        })));
                     });
-                    result.push(...szint.temaSet.map(tema => ({
+                } else if (temaList) {
+                    result.push(...temaList.map(tema => ({
                         title: tema.name,
                         object: tema,
                         temaList: [tema]
                     })));
-                });
-                else if (temaList) result.push(...temaList.map(tema => ({
-                    title: tema.name,
-                    object: tema,
-                    temaList: [tema]
-                })));
+                }
 
                 return result;
             }

@@ -23,6 +23,7 @@
                 background: var(--paper-red-100);
                 color: black;
             }
+
             #failedMessage > a {
                 color: black;
             }
@@ -35,8 +36,9 @@
         </div>
         <template is="dom-if" if="[[failed]]">
             <div class="card" id="failedMessage">
-                Nem sikerült betölteni az alapadatokat.<br>
-                <a href="javascript:window.location.reload();">Töltse újra az oldalt</a>, ha újra szeretné próbálni.
+                Nem sikerült betölteni az adatokat.<br>
+                <a href="javascript:window.location.reload();">Töltse újra az oldalt</a>, ha újra
+                szeretné próbálni.
             </div>
         </template>
         <div class="card" hidden$="[[!loaded]]">
@@ -51,46 +53,55 @@
             <feladat-module feladat="[[feladat]]"></feladat-module>
         </template>
     </template>
+    <!--suppress JSUnusedGlobalSymbols, JSUnresolvedVariable, JSUnresolvedFunction, JSMethodCanBeStatic, JSMethodCanBeStatic -->
     <script>
         class MyBrowse extends Polymer.Element {
-            static get is() { return 'my-browse'; }
-            static get properties() { return {
-                tema: {
-                    type: Object,
-                    computed: '_onlyItem(_temaSelection.data.temaList)',
-                    notify: true
-                },
-                feladat: {
-                    type: Object,
-                    computed: '_firstArg(_feladatSelection.data.feladat)',
-                    notify: true
-                },
-                loaded: {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                failed: {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                _feladatSelection: {
-                    type: Object,
-                    notify: true
-                },
-                _temaSelection: {
-                    type: Object,
-                    notify: true
-                }
-            } }
+            static get is() {
+                return 'my-browse';
+            }
+
+            static get properties() {
+                return {
+                    tema: {
+                        type: Object,
+                        computed: '_onlyItem(_temaSelection.data.temaList)',
+                        notify: true
+                    },
+                    feladat: {
+                        type: Object,
+                        computed: '_firstArg(_feladatSelection.data.feladat)',
+                        notify: true
+                    },
+                    loaded: {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    failed: {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    _feladatSelection: {
+                        type: Object,
+                        notify: true
+                    },
+                    _temaSelection: {
+                        type: Object,
+                        notify: true
+                    }
+                };
+            }
+
             connectedCallback() {
                 super.connectedCallback();
 
-                this.$.temaFilter.init.then(() => this._setLoaded(true), () => this._setFailed(true));
-                this.$.temaFilter.init.defer.then(() => this.$.initTemaFilterButton.disabled = true);
+                this.$.temaFilter.init.then(() => this._setLoaded(true),
+                    () => this._setFailed(true));
+                this.$.temaFilter.init.defer.then(
+                    () => this.$.initTemaFilterButton.disabled = true);
             }
 
             // noinspection JSUnusedGlobalSymbols

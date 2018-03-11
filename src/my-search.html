@@ -33,17 +33,21 @@
             }
         </style>
 
-        <h1>Search</h1>
+        <h1>Keresés</h1>
         <div class="card">
             <paper-dropdown-menu id="place" label="Keresés itt"
-                                 on-selected-item-changed="_searchCategoryChanged" selected-item="{{categoryItem}}">
+                                 on-selected-item-changed="_searchCategoryChanged"
+                                 selected-item="{{categoryItem}}">
                 <paper-listbox slot="dropdown-content">
+                    <!--suppress HtmlUnknownAttribute -->
                     <paper-item data="[[_fetchAllTemaDescription]]">
                         Témák leírása
                     </paper-item>
+                    <!--suppress HtmlUnknownAttribute -->
                     <paper-item data="[[_fetchAllFeladatDescription]]">
                         Feladatok szövege
                     </paper-item>
+                    <!--suppress HtmlUnknownAttribute -->
                     <paper-item data="[[_fetchAllMintafeladatDescription]]">
                         Kidolgozott mintafeladatok
                     </paper-item>
@@ -76,7 +80,8 @@
                     </template>
                     <paper-listbox id="results">
                         <template is="dom-repeat" items="[[_results]]">
-                            <a class="paper-item-link" href="[[item.item.url]]" tabindex="-1" target="_blank">
+                            <a class="paper-item-link" href$="[[item.item.url]]" tabindex="-1"
+                               target="_blank">
                                 <paper-item>
                                     <paper-item-body two-line>
                                         <div>[[item.item.name]]</div>
@@ -92,147 +97,157 @@
         </template>
     </template>
 
+    <!--suppress JSMethodCanBeStatic, JSUnusedGlobalSymbols, JSUnresolvedFunction -->
     <script>
         class MySearch extends UdeS.LogicalOperatorsMixin(Polymer.Element) {
-            static get is() { return 'my-search'; }
-            static get properties() { return {
-                '_fetchAllTemaDescription': {
-                    type: Object,
-                    value: function () {
-                        let result = fetchAllTemaDescription;
-                        result.estimate = "60 request, 40KB";
-                        return result;
+            static get is() {
+                return 'my-search';
+            }
+
+            static get properties() {
+                return {
+                    '_fetchAllTemaDescription': {
+                        type: Object,
+                        value: function () {
+                            let result = fetchAllTemaDescription;
+                            result.estimate = "60 requests, 40KB";
+                            return result;
+                        }
+                    },
+                    '_fetchAllFeladatDescription': {
+                        type: Object,
+                        value: function () {
+                            let result = fetchAllFeladatDescription;
+                            result.estimate = "1700 requests, 1.7MB";
+                            return result;
+                        }
+                    },
+                    '_fetchAllMintafeladatDescription': {
+                        type: Object,
+                        value: function () {
+                            let result = fetchAllMintafeladatDescription;
+                            result.estimate = "60 requests, 80KB";
+                            return result;
+                        }
+                    },
+                    'categoryValid': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_categoryInvalid': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'not(categoryValid)'
+                    },
+                    'loadRequested': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_loadNotRequestedYet': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'not(loadRequested)'
+                    },
+                    'loaded': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_notLoadedYet': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'not(loaded)'
+                    },
+                    'failed': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_notFailedYet': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'not(failed)'
+                    },
+                    'loading': {
+                        type: Boolean,
+                        computed: 'and(loadRequested, _notLoadedYet, _notFailedYet)',
+                        notify: true,
+                    },
+                    'data': {
+                        type: Array,
+                        value: [],
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_fuse': {
+                        type: Object,
+                        notify: true,
+                        computed: '_initFuse(data)'
+                    },
+                    'searchQuery': {
+                        type: String,
+                        notify: true
+                    },
+                    'results': {
+                        type: Array,
+                        notify: true,
+                        //computed: '_fullSearch(_fuse, searchQuery)'
+                        readOnly: true
+                    },
+                    'resultLimit': {
+                        type: Number,
+                        notify: true,
+                        value: function () {
+                            return searchLimit;
+                        }
+                    },
+                    '_results': {
+                        type: Array,
+                        notify: true,
+                        computed: 'limit(results, resultLimit)'
+                    },
+                    'fastSearchDone': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    'fullSearchDone': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    '_noFullSearchDoneYet': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'not(fullSearchDone)'
+                    },
+                    'searchInitiated': {
+                        type: Boolean,
+                        value: false,
+                        notify: true,
+                        readOnly: true
+                    },
+                    'resultsIncomplete': {
+                        type: Boolean,
+                        notify: true,
+                        computed: 'and(searchInitiated, _noFullSearchDoneYet)'
                     }
-                },
-                '_fetchAllFeladatDescription': {
-                    type: Object,
-                    value: function () {
-                        let result = fetchAllFeladatDescription;
-                        result.estimate = "1700 request, 1.7MB";
-                        return result;
-                    }
-                },
-                '_fetchAllMintafeladatDescription': {
-                    type: Object,
-                    value: function () {
-                        let result = fetchAllMintafeladatDescription;
-                        return result;
-                    }
-                },
-                'categoryValid': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                '_categoryInvalid': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'not(categoryValid)'
-                },
-                'loadRequested': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                '_loadNotRequestedYet': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'not(loadRequested)'
-                },
-                'loaded': {
-                    type: Boolean,
-                    value: false,
-                    notfy: true,
-                    readOnly: true
-                },
-                '_notLoadedYet': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'not(loaded)'
-                },
-                'failed': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                '_notFailedYet': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'not(failed)'
-                },
-                'loading': {
-                    type: Boolean,
-                    computed: 'and(loadRequested, _notLoadedYet, _notFailedYet)',
-                    notify: true,
-                },
-                'data': {
-                    type: Array,
-                    value: [],
-                    notify: true,
-                    readOnly: true
-                },
-                '_fuse': {
-                    type: Object,
-                    notfy: true,
-                    computed: '_initFuse(data)'
-                },
-                'searchQuery': {
-                    type: String,
-                    notify: true
-                },
-                'results': {
-                    type: Array,
-                    notify: true,
-                    //computed: '_fullSearch(_fuse, searchQuery)'
-                    readOnly: true
-                },
-                'resultLimit': {
-                    type: Number,
-                    notify: true,
-                    value: function () {
-                        return searchLimit;
-                    }
-                },
-                '_results': {
-                    type: Array,
-                    notify: true,
-                    computed: 'limit(results, resultLimit)'
-                },
-                'fastSeachDone': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                'fullSearchDone': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                '_noFullSearchDoneYet': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'not(fullSearchDone)'
-                },
-                'searchInitiated': {
-                    type: Boolean,
-                    value: false,
-                    notify: true,
-                    readOnly: true
-                },
-                'resultsIncomplete': {
-                    type: Boolean,
-                    notify: true,
-                    computed: 'and(searchInitiated, _noFullSearchDoneYet)'
-                }
-            } }
-            static get observers() { return [
-                '_doSearch(_fuse, searchQuery)'
-            ] }
+                };
+            }
+
+            static get observers() {
+                return [
+                    '_doSearch(_fuse, searchQuery)'
+                ];
+            }
 
             _searchCategoryChanged(event) {
                 if (this._promiseStatus) this._promiseStatus.obsolete = true;
@@ -255,7 +270,7 @@
                     const promiseStatus = this._promiseStatus = {
                         promise: promise,
                         obsolete: false
-                    }
+                    };
 
                     promise.defer.finally(() => {
                         if (!promiseStatus.obsolete) {
@@ -271,7 +286,7 @@
                         if (!promiseStatus.obsolete) {
                             this._setFailed(true);
                         }
-                    })
+                    });
                 }
             }
 
@@ -286,7 +301,7 @@
                         name: object.name,
                         url: object.url,
                         index: index
-                    }
+                    };
                 }), {
                     shouldSort: true,
                     includeScore: true,
@@ -302,7 +317,7 @@
                 });
             }
 
-            _fastSeach(fuse, query) {
+            _fastSearch(fuse, query) {
                 return fuse.list.filter(
                     item => query.split(' ').some(
                         word => fuse.options.keys.some(
@@ -366,24 +381,32 @@
                                 }
                             });
                             status.fullSearchTimeout = window.setTimeout(() => {
-                                if (!status.obsolete) doFullSearch(that, fuse, query);
+                                if (!status.obsolete) {
+                                    // noinspection JSIgnoredPromiseFromCall
+                                    doFullSearch(that, fuse, query);
+                                }
                             }, 700);
                         }
                     };
 
-                    if (full) doFullSearch(this, fuse, query);
-                    else doSimpleSearch(this, fuse, query);
+                    if (full) {
+                        // noinspection JSIgnoredPromiseFromCall
+                        doFullSearch(this, fuse, query);
+                    } else {
+                        // noinspection JSIgnoredPromiseFromCall
+                        doSimpleSearch(this, fuse, query);
+                    }
                 } else {
                     this.setProperties({
                         fullSearchDone: false,
                         fastSearchDone: false,
                         searchInitiated: false
-                    })
+                    });
                 }
             }
 
             _formatScore(score) {
-                return Math.round(score*100)+"%";
+                return Math.round(score * 100) + "%";
             }
 
             _formattedDesc(item) {
@@ -394,14 +417,16 @@
                     });
                     return description;
                 } else {
-                    return "No description avalilable";
+                    return "No description available";
                 }
             }
 
             limit(array, size) {
                 if (array && size) {
                     return array.slice(0, size);
-                } else return array;
+                } else {
+                    return array;
+                }
             }
 
             _clog(value) {

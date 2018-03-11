@@ -5,10 +5,37 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="3">
+          <list size="30">
             <item index="0" class="java.lang.String" itemvalue="items" />
             <item index="1" class="java.lang.String" itemvalue="inner-h-t-m-l" />
             <item index="2" class="java.lang.String" itemvalue="include" />
+            <item index="3" class="java.lang.String" itemvalue="on-selected-item-changed" />
+            <item index="4" class="java.lang.String" itemvalue="if" />
+            <item index="5" class="java.lang.String" itemvalue="on-click" />
+            <item index="6" class="java.lang.String" itemvalue="active" />
+            <item index="7" class="java.lang.String" itemvalue="label" />
+            <item index="8" class="java.lang.String" itemvalue="type" />
+            <item index="9" class="java.lang.String" itemvalue="value" />
+            <item index="10" class="java.lang.String" itemvalue="on-keydown" />
+            <item index="11" class="java.lang.String" itemvalue="href$" />
+            <item index="12" class="java.lang.String" itemvalue="two-line" />
+            <item index="13" class="java.lang.String" itemvalue="secondary" />
+            <item index="14" class="java.lang.String" itemvalue="selected" />
+            <item index="15" class="java.lang.String" itemvalue="attr-for-selected" />
+            <item index="16" class="java.lang.String" itemvalue="fallback-selection" />
+            <item index="17" class="java.lang.String" itemvalue="name" />
+            <item index="18" class="java.lang.String" itemvalue="fullbleed" />
+            <item index="19" class="java.lang.String" itemvalue="effects" />
+            <item index="20" class="java.lang.String" itemvalue="src$" />
+            <item index="21" class="java.lang.String" itemvalue="hidden$" />
+            <item index="22" class="java.lang.String" itemvalue="selection" />
+            <item index="23" class="java.lang.String" itemvalue="tema-list" />
+            <item index="24" class="java.lang.String" itemvalue="tema" />
+            <item index="25" class="java.lang.String" itemvalue="feladat" />
+            <item index="26" class="java.lang.String" itemvalue="style$" />
+            <item index="27" class="java.lang.String" itemvalue="data" />
+            <item index="28" class="java.lang.String" itemvalue="src" />
+            <item index="29" class="java.lang.String" itemvalue="initial-zoom" />
           </list>
         </value>
       </option>
@@ -17,7 +44,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="7">
+          <list size="10">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -25,6 +52,9 @@
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
             <item index="6" class="java.lang.String" itemvalue="dom-repeat" />
+            <item index="7" class="java.lang.String" itemvalue="app-route" />
+            <item index="8" class="java.lang.String" itemvalue="iron-selector" />
+            <item index="9" class="java.lang.String" itemvalue="iron-iconset-svg" />
           </list>
         </value>
       </option>
