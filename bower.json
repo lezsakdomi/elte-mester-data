@@ -34,7 +34,8 @@
     "udes-functions-mixins": "UdeSElements/udes-functions-mixins#^3.0.0",
     "fuse": "krisk/fuse#^3.2.0",
     "paper-toggle-button": "PolymerElements/paper-toggle-button#^2.1.0",
-    "paper-radio-group": "PolymerElements/paper-radio-group#^2.1.0"
+    "paper-radio-group": "PolymerElements/paper-radio-group#^2.1.0",
+    "paper-slider": "PolymerElements/paper-slider#^2.0.4"
   },
   "resolutions": {
     "polymer": "^2.0.0"

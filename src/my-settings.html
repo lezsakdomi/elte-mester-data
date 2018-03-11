@@ -7,6 +7,10 @@
 <link rel="import" href="../bower_components/paper-radio-group/paper-radio-group.html">
 <link rel="import" href="../bower_components/paper-toggle-button/paper-toggle-button.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
 <link rel="import" href="script.html">
 
 <dom-module id="my-settings">
@@ -16,20 +20,53 @@
                 display: block;
                 padding: 10px 20px;
             }
+
+            paper-input > paper-icon-button[slot=suffix] {
+                color: var(--paper-red-300);
+                --paper-icon-button-ink-color: var(--paper-red-a100);
+                width: 23px;
+                height: 23px;
+                padding: 0 4px;
+            }
+
+            paper-button.red {
+                background: var(--paper-red-500);
+                color: white;
+            }
+
+            .card > paper-slider {
+                width: 100%;
+            }
         </style>
 
         <h1>Beállítások</h1>
+        <div class="card">
+            <paper-button raised on-click="_reload">
+                <iron-icon icon="done"></iron-icon>
+                Újratöltés
+            </paper-button>
+            <paper-button class="red" on-click="_resetAll">
+                <iron-icon icon="clear"></iron-icon>
+                Mindet alaphelyzetbe
+            </paper-button>
+        </div>
         <div class="card">
             <h2>Adatok forrása</h2>
 
             <paper-input label="Repository tulajdonosa" value="{{ghUser}}">
                 <paper-icon-button slot="suffix" onclick="preferences.resetGhUser();" icon="clear"
-                                   alt="reset" title="reset"></paper-icon-button>
+                                   alt="reset" title="Alaphelyzetbe állítás"></paper-icon-button>
             </paper-input>
 
-            <paper-input label="Repository" value="{{ghRepo}}"></paper-input>
+            <paper-input label="Repository" value="{{ghRepo}}">
+                <paper-icon-button slot="suffix" onclick="preferences.resetGhRepo();" icon="clear"
+                                   alt="reset" title="Alaphelyzetbe állítás"></paper-icon-button>
+            </paper-input>
 
-            <paper-input label="Branch, tag, vagy commit" value="{{ghTag}}"></paper-input>
+            <paper-input label="Branch, tag, vagy commit" value="{{ghTag}}">
+                <paper-icon-button slot="suffix" onclick="preferences.resetGhTag();" icon="clear"
+                                   alt="reset" title="Alaphelyzetbe állítás"></paper-icon-button>
+            </paper-input>
         </div>
         <div class="card">
             <h2>Letöltési beállítások</h2>
@@ -51,10 +88,16 @@
                 <paper-radio-button name="cpp">C++</paper-radio-button>
                 <paper-radio-button name="pas">Pascal</paper-radio-button>
             </paper-radio-group>
+            <br>
+
+            <br>
+
+            Megjelenített találatok száma:
+            <paper-slider min="10" max="100" value="{{searchLimit}}" editable></paper-slider>
         </div>
     </template>
 
-    <!--suppress JSUnusedGlobalSymbols, ES6ModulesDependencies -->
+    <!--suppress JSUnusedGlobalSymbols, ES6ModulesDependencies, JSMethodCanBeStatic -->
     <script>
         class MySettings extends Polymer.Element {
             static get is() {
@@ -80,6 +123,14 @@
                 super();
 
                 for (let p in preferences) preferences.observe(p, value => this[p] = value);
+            }
+
+            _resetAll() {
+                for (let p in preferences) preferences.reset(p);
+            }
+
+            _reload() {
+                location.reload();
             }
         }
 
