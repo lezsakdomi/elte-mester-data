@@ -43,7 +43,7 @@ jobs:
             git config --global user.email "$CIRCLE_BUILD_URL"
             git config --global user.name "CircleCI"
             git init
-            git remote add --fetch origin "`git --git-dir=../../.git config remote.origin.url`"
+            git remote add origin "`git --git-dir=../../.git config remote.origin.url`"
             if git rev-parse --verify origin/gh-pages > /dev/null 2>&1; then
               git symbolic-ref HEAD refs/heads/gh-pages
               git reset
