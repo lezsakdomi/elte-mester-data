@@ -1,0 +1,35 @@
+version: 2
+jobs:
+        build:
+                docker:
+                        - image: "lezsakdomi/elte-mester-data"
+                steps:
+                        - restore_cache:
+                                keys:
+                                        - source-v1-{{ .Branch }}-{{ .Revision }}
+                                        - source-v1-{{ .Branch }}
+                                        - source-v1-
+                        - checkout
+                        - save_cache:
+                                key: source-v1-{{ .Branch }}-{{ .Revision }}
+                                paths:
+                                        - ".git"
+
+                        - run: "md5deep -rl temak.tsv */ | sort -k2 >MD5SUMS"
+                        - run: "sha1deep -rl temak.tsv */ | sort -k2 >SHA1SUMS"
+                        - run: "sha256deep -rl temak.tsv */ | sort -k2 >SHA256SUMS"
+                        - run: "tigerdeep -rl temak.tsv */ | sort -k2 >TIGERSUMS"
+                        - run: "whirlpooldeep -rl temak.tsv */ | sort -k2 >WHIRLPOOLSUMS"
+
+                        - run:
+                                name: Commit & Push (if needed)
+                                command: |
+                                        git status
+                                        [ -n "`git ls-files -m`" ] || { echo "Nothing changed; no commit needed"; exit 0; }
+                                        git config --global user.name "CircleCI"
+                                        git config --global user.email "$CIRCLE_BUILD_URL"
+                                        git commit -am "Automated CI maintatinment
+
+                                        Build URL: $CIRCLE_BUILD_URL
+                                        Built on branch **$CIRCLE_BRANCH** from commit $CIRCLE_SHA1 on `date`"
+                                        git push
