@@ -3,15 +3,16 @@
 <link rel="import" href="../../bower_components/paper-dropdown-input/paper-dropdown-input.html">
 <link rel="import" href="../script.html">
 
-<style>
-    tema-dropdown {
-        display: inline-block;
-        position: relative;
-    }
-</style>
 <dom-module id="tema-dropdown">
     <template>
-        <paper-ripple noink></paper-ripple>
+        <style>
+            :host {
+                display: inline-block;
+                position: relative;
+            }
+        </style>
+
+        <paper-ripple id="ripple" noink></paper-ripple>
         <paper-dropdown-input label="Téma" items="[[items]]" filter-property="title"
                               selected-item="{{selection}}">
             <template>

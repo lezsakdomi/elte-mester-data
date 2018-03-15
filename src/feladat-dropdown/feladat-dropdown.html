@@ -2,12 +2,6 @@
 <link rel="import" href="../../bower_components/polymer/lib/elements/dom-repeat.html">
 <link rel="import" href="../../bower_components/paper-dropdown-input/paper-dropdown-input.html">
 
-<style>
-    feladat-dropdown {
-        display: inline-block;
-        position: relative;
-    }
-</style>
 <dom-module id="feladat-dropdown">
     <template>
         <style>
@@ -23,10 +17,15 @@
             paper-dropdown-input.loaded {
                 color: initial;
             }
+
+            :host {
+                display: inline-block;
+                position: relative;
+            }
         </style>
-        <paper-ripple noink></paper-ripple>
+        <paper-ripple id="ripple" noink></paper-ripple>
         <paper-dropdown-input label="Feladat" items="[[items]]" filter-property="title"
-                              selected-item="{{selection}}">
+                              selected-item="{{selection}}" id="dropdown">
             <template>
                 <template is="dom-repeat" items="[[items]]">
                     <template is="if" if="[[item.new]]">
@@ -37,7 +36,7 @@
             </template>
         </paper-dropdown-input>
     </template>
-    <!--suppress JSUnusedGlobalSymbols -->
+    <!--suppress JSUnusedGlobalSymbols, JSUnresolvedVariable -->
     <script>
         class FeladatDropdown extends Polymer.Element {
             static get is() {
@@ -72,7 +71,7 @@
 
             _temaListChanged(temaList) {
                 if (this.items) this.items.obsolete = false;
-                this.shadowRoot.querySelector('paper-dropdown-input').classList.remove("loaded");
+                this.$.dropdown.classList.remove("loaded");
                 this.set('items', []);
                 const itemsRef = this.items;
                 if (temaList) {
@@ -109,10 +108,8 @@
                         if (itemsRef.obsolete) {
                             throw new Error("Items are obsolete");
                         } else {
-                            this.shadowRoot.querySelector('paper-dropdown-input')
-                                .classList
-                                .add("loaded");
-                            this.shadowRoot.querySelector('paper-ripple').simulatedRipple();
+                            this.$.dropdown.classList.add("loaded");
+                            this.$.ripple.simulatedRipple();
                         }
                     });
                 }
