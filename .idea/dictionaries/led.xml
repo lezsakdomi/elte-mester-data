@@ -8,6 +8,7 @@
       <w>feladatbank</w>
       <w>flist</w>
       <w>githubusercontent</w>
+      <w>hashtables</w>
       <w>homescreen</w>
       <w>iconset</w>
       <w>kidolgozott</w>
@@ -21,15 +22,18 @@
       <w>msapplication</w>
       <w>nehezseg</w>
       <w>rawgit</w>
+      <w>reversable</w>
       <w>subroute</w>
       <w>szint</w>
       <w>tema</w>
       <w>temak</w>
+      <w>tigersums</w>
       <w>udes</w>
       <w>unreg</w>
       <w>unregister</w>
       <w>webcomponents</w>
       <w>webcomponentsjs</w>
+      <w>whirlpoolsums</w>
     </words>
   </dictionary>
 </component>

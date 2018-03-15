@@ -4,6 +4,7 @@
   "fragments": [
     "src/my-browse.html",
     "src/my-search.html",
+    "src/my-files.html",
     "src/my-settings.html",
     "src/my-about.html",
     "src/my-view404.html"

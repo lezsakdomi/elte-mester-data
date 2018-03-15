@@ -26,6 +26,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="lazy-import" href="my-browse.html">
 <link rel="lazy-import" href="my-search.html">
+<link rel="lazy-import" href="my-files.html">
+<link rel="lazy-import" href="my-settings.html">
 <link rel="lazy-import" href="my-about.html">
 <link rel="lazy-import" href="my-debug.html">
 <link rel="lazy-import" href="my-view404.html">
@@ -94,6 +96,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                role="navigation">
                     <a name="browse" href="#browse">Böngészés</a>
                     <a name="search" href="#search">Keresés</a>
+                    <a name="files" href="#files">Gyorslinkek</a>
                     <a name="settings" href="#settings">Beállítások</a>
                     <a name="about" href="#about">Az oldalról</a>
                     <a href="http://mester.inf.elte.hu/">
@@ -126,6 +129,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         role="main">
                     <my-browse name="browse"></my-browse>
                     <my-search name="search"></my-search>
+                    <my-files name="files" route="{{subroute}}"></my-files>
                     <my-settings name="settings"></my-settings>
                     <my-about name="about"></my-about>
                     <my-debug name="debug"></my-debug>
