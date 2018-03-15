@@ -56,5 +56,8 @@ jobs:
           working_directory: "build/default"
           command: |
             git add -A
-            git commit --allow-empty -m "Automated CI deployment [$CIRCLE_SHA1]"$'\n'$'\n'"Build URL: $CIRCLE_BUILD_URL"$'\n'"Built form branch **$CIRCLE_BRANCH** on `date` [ci skip]"
+            git commit -m "Automated CI deployment [$CIRCLE_SHA1]
+
+            Build URL: $CIRCLE_BUILD_URL
+            Built form branch **$CIRCLE_BRANCH** on `date` [ci skip]"
             git push --force origin gh-pages
