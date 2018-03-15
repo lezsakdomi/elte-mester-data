@@ -42,7 +42,7 @@ jobs:
                                 name: Commit & Push (if needed)
                                 command: |
                                         git status
-                                        [ -n "`git diff`" -a -n "`git diff --cached`" ] || { echo "Nothing changed; no commit needed"; exit 0; }
+                                        [ -n "`git diff`" -o -n "`git diff --cached`" ] || { echo "Nothing changed; no commit needed"; exit 0; }
                                         git config --global user.name "CircleCI"
                                         git config --global user.email "$CIRCLE_BUILD_URL"
                                         git commit -am "Automated CI maintatinment
