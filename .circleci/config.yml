@@ -37,7 +37,7 @@ jobs:
                         - run: "sha256deep -rl temak.tsv */ | sort -k2 >SHA256SUMS"
                         - run: "tigerdeep -rl temak.tsv */ | sort -k2 >TIGERSUMS"
                         - run: "whirlpooldeep -rl temak.tsv */ | sort -k2 >WHIRLPOOLSUMS"
-                        - run: "find temak.tsv */ | sort >files.list"
+                        - run: "find temak.tsv */ -type f -o -type l | sort >files.list"
 
                         - deploy:
                                 name: Commit & Push (if needed)
