@@ -12,7 +12,6 @@
     "paper-card": "PolymerElements/paper-card#^2.1.0",
     "paper-dropdown-input": "Juravenator/paper-dropdown-input#^2.5.2",
     "paper-button": "PolymerElements/paper-button#^2.0.0",
-    "pdf-viewer": "telecomsante/pdf-viewer#^2.0.1",
     "iron-icon": "PolymerElements/iron-icon#^2.1.0",
     "app-layout": "PolymerElements/app-layout#^2.0.0",
     "app-route": "PolymerElements/app-route#^2.0.0",
@@ -35,7 +34,8 @@
     "fuse": "krisk/fuse#^3.2.0",
     "paper-toggle-button": "PolymerElements/paper-toggle-button#^2.1.0",
     "paper-radio-group": "PolymerElements/paper-radio-group#^2.1.0",
-    "paper-slider": "PolymerElements/paper-slider#^2.0.4"
+    "paper-slider": "PolymerElements/paper-slider#^2.0.4",
+    "pdf-viewer": "lezsakdomi/pdf-viewer#patch-1"
   },
   "resolutions": {
     "polymer": "^2.0.0"
