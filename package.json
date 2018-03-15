@@ -2,14 +2,30 @@
   "name": "polymer-starter-kit",
   "license": "BSD-3-Clause",
   "devDependencies": {
+    "bower": "^1.8.2",
     "eslint": "^3.19.0",
     "eslint-config-google": "^0.7.0",
-    "eslint-plugin-html": "^2.0.0"
+    "eslint-plugin-html": "^2.0.0",
+    "polymer-cli": "^1.6.0",
+    "yarn": "^1.5.1"
   },
   "scripts": {
     "lint": "npm run lint:javascript && polymer lint",
     "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
     "test": "polymer test",
-    "test:integration": "polymer build # test that psk builds without error with the CLI"
-  }
+    "test:integration": "polymer build # test that psk builds without error with the CLI",
+    "polyserve": "polymer serve -p 8081 --compile newer",
+    "browsersync": "browser-sync start --logLevel quiet --proxy localhost:8081 --files . --https",
+    "start": "bash -c 'trap \"kill \\`jobs -p\\`\" EXIT; yarn run polyserve & sleep 1; yarn run browsersync & wait'",
+    "serve": "prpl-server --root build --config polymer.json --host 0.0.0.0 --port $PORT",
+    "build": "polymer build",
+    "postinstall": "bower install && yarn run build"
+  },
+  "dependencies": {
+    "prpl-server": "^1.0.0"
+  },
+  "cacheDirectories": [
+    "bower_components",
+    "node_modules"
+  ]
 }

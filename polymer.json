@@ -24,14 +24,18 @@
       "polymer-2"
     ]
   },
+  "autoBasePath": true,
   "builds": [
+    {
+      "name": "modern",
+      "browserCapabilities": [
+        "es2015",
+        "push"
+      ]
+    },
     {
       "name": "default",
       "preset": "es5-bundled"
-    },
-    {
-      "name": "light",
-      "preset": "es6-unbundled"
     }
   ]
 }
