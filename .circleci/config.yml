@@ -16,6 +16,23 @@ jobs:
                                 paths:
                                         - ".git"
 
+                        - run:
+                                name: Convert PDFs to TXT
+                                command: |
+                                        shopt -s globstar
+                                        for pdf in **/*.pdf; do
+                                                txt="$(echo "$pdf" | sed 's/\.pdf$/.txt/')"
+                                                if [ -s "$pdf" ]; then
+                                                        [ -s "$txt" ] || {
+                                                                echo -e "\033[33m$pdf\033[0m"
+                                                                pdftotext -layout "$pdf" || exit 1
+                                                                git add -- "$txt"
+                                                        }
+                                                else
+                                                        echo -e "\033[31m$pdf\033[0m"
+                                                fi
+                                        done
+
                         - run: "md5deep -rl temak.tsv */ | sort -k2 >MD5SUMS"
                         - run: "sha1deep -rl temak.tsv */ | sort -k2 >SHA1SUMS"
                         - run: "sha256deep -rl temak.tsv */ | sort -k2 >SHA256SUMS"
@@ -26,7 +43,7 @@ jobs:
                                 name: Commit & Push (if needed)
                                 command: |
                                         git status
-                                        [ -n "`git ls-files -m`" ] || { echo "Nothing changed; no commit needed"; exit 0; }
+                                        [ -n "`git diff`" -a -n "`git diff --cached`" ] || { echo "Nothing changed; no commit needed"; exit 0; }
                                         git config --global user.name "CircleCI"
                                         git config --global user.email "$CIRCLE_BUILD_URL"
                                         git commit -am "Automated CI maintatinment
