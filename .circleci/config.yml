@@ -3,6 +3,7 @@ jobs:
         build:
                 docker:
                         - image: "lezsakdomi/elte-mester-data"
+                parallelism: 2
                 steps:
                         - restore_cache:
                                 keys:
@@ -21,7 +22,7 @@ jobs:
                         - run: "tigerdeep -rl temak.tsv */ | sort -k2 >TIGERSUMS"
                         - run: "whirlpooldeep -rl temak.tsv */ | sort -k2 >WHIRLPOOLSUMS"
 
-                        - run:
+                        - deploy:
                                 name: Commit & Push (if needed)
                                 command: |
                                         git status
