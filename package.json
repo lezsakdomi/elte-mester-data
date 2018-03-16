@@ -16,10 +16,9 @@
     "test:integration": "polymer build # test that psk builds without error with the CLI",
     "polyserve": "polymer serve -p 8081 --compile newer",
     "browsersync": "browser-sync start --logLevel quiet --proxy localhost:8081 --files . --https",
-    "start": "bash -c 'trap \"kill \\`jobs -p\\`\" EXIT; yarn run polyserve & sleep 1; yarn run browsersync & wait'",
-    "serve": "prpl-server --root build --config polymer.json --host 0.0.0.0 --port $PORT",
-    "build": "polymer build",
-    "postinstall": "bower install && yarn run build"
+    "debug": "bash -c 'trap \"kill \\`jobs -p\\`\" EXIT; yarn run polyserve & sleep 1; yarn run browsersync & wait'",
+    "start": "prpl-server --root build --config polymer.json --host 0.0.0.0 --port $PORT",
+    "build": "bower install && polymer build"
   },
   "dependencies": {
     "prpl-server": "^1.0.0"

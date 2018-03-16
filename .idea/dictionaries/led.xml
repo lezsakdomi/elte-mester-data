@@ -6,6 +6,7 @@
       <w>circleci</w>
       <w>dropdown</w>
       <w>elte</w>
+      <w>entrypoint</w>
       <w>eslint</w>
       <w>feladat</w>
       <w>feladatbank</w>
@@ -24,6 +25,7 @@
       <w>mintafeladatok</w>
       <w>msapplication</w>
       <w>nehezseg</w>
+      <w>pdfjs</w>
       <w>rawgit</w>
       <w>reversable</w>
       <w>subroute</w>
