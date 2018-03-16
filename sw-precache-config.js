@@ -19,7 +19,7 @@ module.exports = {
     ],
     runtimeCaching: [
         {
-            urlPattern: /\/(\w+\/)?bower_components\/webcomponentsjs\/.*.js/,
+            urlPattern: /^\/bower_components\/webcomponentsjs\/.*\.js$/,
             handler: 'fastest',
             options: {
                 cache: {
@@ -28,7 +28,7 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\/(\w+\/)?index\.html/,
+            urlPattern: /^\/(index\.html)?$/,
             handler: 'networkFirst',
             options: {
                 cache: {
@@ -37,8 +37,8 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\/(\w+\/)?src\/my-app\.html/,
-            handler: 'networkFirst',
+            urlPattern: /^\/src\/my-app\.html$/,
+            handler: 'fastest',
             options: {
                 cache: {
                     name: 'appshell-cache',
@@ -46,7 +46,7 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\/(\w+\/)?bower_components\/.*/,
+            urlPattern: /^\/bower_components\//,
             handler: 'fastest',
             options: {
                 cache: {
@@ -55,7 +55,7 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\/(\w+\/)?src\/.*/,
+            urlPattern: /^\/src\//,
             handler: 'fastest',
             options: {
                 cache: {
@@ -64,7 +64,7 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\/.*/,
+            urlPattern: /^\//,
             handler: 'networkFirst',
             options: {
                 cache: {
@@ -73,27 +73,30 @@ module.exports = {
             },
         },
         {
-            urlPattern: /https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com\/[\w-]+\/[\w-]+\/[\w-]+)\/temak\.tsv/,
+            urlPattern: /\/temak\.tsv$/,
             handler: 'networkFirst',
             options: {
+                origin: /^https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com)$/,
                 cache: {
                     name: 'temaktsv-cache',
                 },
             },
         },
         {
-            urlPattern: /https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com\/[\w-]+\/[\w-]+\/[\w-]+)\/(.*\.tsv|.*SUMS)/,
-            handler: 'fastest',
+            urlPattern: /\.tsv$|\/\w+SUMS$/,
+            handler: 'networkFirst',
             options: {
+                origin: /^https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com)$/,
                 cache: {
                     name: 'metadata-cache',
                 },
             },
         },
         {
-            urlPattern: /https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com\/[\w-]+\/[\w-]+\/[\w-]+)\/.*\.(txt|pas|cpp)/,
-            handler: 'fastest',
+            urlPattern: /\.(txt|pas|cpp)$/,
+            handler: 'networkOnly',
             options: {
+                origin: /^https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com)$/,
                 cache: {
                     name: 'textdata-cache',
                     maxAgeSeconds: 60 * 60 * 24 * 30,
@@ -101,9 +104,10 @@ module.exports = {
             },
         },
         {
-            urlPattern: /https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com\/[\w-]+\/[\w-]+\/[\w-]+)\/.*/,
+            urlPattern: /.*/,
             handler: 'networkOnly',
             options: {
+                origin: /https?:\/\/((cdn\.)?rawgit\.com|raw\.githubusercontent\.com)/,
                 cache: {
                     name: 'fallback-gh-cache',
                 },
@@ -113,6 +117,7 @@ module.exports = {
             urlPattern: /.*/,
             handler: 'networkOnly',
             options: {
+                origin: /.*/,
                 cache: {
                     name: 'fallback-cache',
                 },
