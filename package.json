@@ -17,8 +17,9 @@
     "polyserve": "polymer serve -p 8081 --compile newer",
     "browsersync": "browser-sync start --logLevel quiet --proxy localhost:8081 --files . --https",
     "debug": "bash -c 'trap \"kill \\`jobs -p\\`\" EXIT; yarn run polyserve & sleep 1; yarn run browsersync & wait'",
-    "start": "prpl-server --root build --config polymer.json --host 0.0.0.0 --port $PORT",
-    "build": "bower install && polymer build"
+    "start": "prpl-server --root ${ROOT:-build} --config ${CONFIG:-polymer.json} --host ${HOST:-0.0.0.0} --port ${PORT:-8080} ${HTTPS:+--https-redirect}",
+    "build": "bower install && polymer build",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "prpl-server": "^1.0.0"

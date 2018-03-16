@@ -1,1 +1,1 @@
-web: yarn run start
+web: HTTPS=1 yarn run start
