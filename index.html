@@ -74,7 +74,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
          * to indicate the path from which you'll be serving, including leading
          * and trailing slashes (e.g., `/my-app/`).
          */
-        window.Polymer = {rootPath: '{{base}}'};
+        window.Polymer = {rootPath: '/'};
+
+        if (document.querySelector('base')) {
+            Polymer.rootPath = document.querySelector('base').href;
+        }
 
         // Load and register pre-caching Service Worker
         if ('serviceWorker' in navigator) {
@@ -84,10 +88,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     scope: Polymer.rootPath,
                 });
             });
-        }
-
-        if (document.querySelector('base')) {
-            document.querySelector('base').href = Polymer.rootPath;
         }
     </script>
 
