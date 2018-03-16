@@ -31,7 +31,7 @@ jobs:
 
       - run:
           name: Build polymer project
-          command: .circleci/node_modules/polymer-cli/bin/polymer.js build --preset es5-bundled --base-path elte-mester-data
+          command: .circleci/node_modules/polymer-cli/bin/polymer.js build --name default --preset es5-bundled --base-path elte-mester-data
           no_output_timeout: 30m
       - store_artifacts:
           path: "build"
