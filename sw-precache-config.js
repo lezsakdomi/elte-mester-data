@@ -15,7 +15,10 @@ module.exports = {
         'bower_components/webcomponentsjs/webcomponents-loader.js',
         'manifest.json',
         'bower_components/**',
-        'src/*',
+        'src/**',
+        'images/**',
+        'index.html',
+        'polyfills.js',
     ],
     runtimeCaching: [
         {
