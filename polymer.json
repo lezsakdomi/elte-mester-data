@@ -34,9 +34,6 @@
     },
     {
       "preset": "es5-bundled"
-    },
-    {
-      "name": "debug"
     }
   ]
 }
