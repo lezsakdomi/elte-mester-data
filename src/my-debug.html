@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 
+<link rel="import" href="../bower_components/polymer/lib/elements/dom-if.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
@@ -15,12 +16,21 @@
             }
         </style>
 
-        <h1>Debugging</h1>
+        <h1>
+            <iron-icon icon="build"></iron-icon>
+            Debugging
+        </h1>
         <div class="card">
-            <paper-button raised on-click="_unregSw">
-                <iron-icon icon="refresh"></iron-icon>
-                Unregister ServiceWorker
-            </paper-button>
+            <template is="dom-if" if="[[swReg]]">
+                <paper-button raised on-click="_unregSw">
+                    <iron-icon icon="refresh"></iron-icon>
+                    Unregister ServiceWorker
+                </paper-button>
+            </template>
+            <template is="dom-if" if="[[noSwReg]]">
+                <iron-icon icon="error-outline"></iron-icon>
+                No service worker registered
+            </template>
         </div>
         <div class="card">
             <table>
@@ -28,11 +38,21 @@
                     <th>rootPath</th>
                     <td>[[rootPath]]</td>
                 </tr>
+                <tr>
+                    <th>Polymer version</th>
+                    <td>[[version]]</td>
+                </tr>
+                <tr>
+                    <th>License key</th>
+                    <td>
+VGhpcyBpbnRlbmRlZCB0byBiZSBhbiBFYXN0ZXJFZ2c=
+        </td>
+                </tr>
             </table>
         </div>
     </template>
 
-    <!--suppress JSUnusedGlobalSymbols -->
+    <!--suppress JSUnusedGlobalSymbols, JSUnresolvedFunction -->
     <script>
         class MyDebug extends Polymer.Element {
             static get is() {
@@ -44,18 +64,37 @@
                     // This shouldn't be necessary, but the Analyzer isn't picking up
                     // Polymer.Element#rootPath
                     rootPath: String,
+                    swReg: {
+                        type: Object,
+                        value: undefined,
+                        readOnly: true,
+                        notify: true
+                    },
+                    noSwReg: {
+                        type: Boolean,
+                        value: false,
+                        readOnly: true,
+                        notify: true
+                    },
+                    version: {
+                        type: String,
+                        readOnly: true,
+                        value: Polymer.version
+                    }
                 };
             }
 
+            constructor() {
+                super();
+                navigator.serviceWorker.getRegistration().then(reg => {
+                    this._setSwReg(reg);
+                    if (!reg) this._setNoSwReg(true);
+                });
+            }
+
             _unregSw() {
-                navigator.serviceWorker.getRegistration().then((reg) => {
-                    if (reg) {
-                        reg.unregister().then(() => {
-                            window.location.reload();
-                        });
-                    } else {
-                        console.log("No serviceWorker found");
-                    }
+                this.swReg.unregister().then(() => {
+                    window.location.reload();
                 });
             }
         }
