@@ -1,9 +1,12 @@
 <component name="ProjectDictionaryState">
   <dictionary name="led">
     <words>
+      <w>appshell</w>
+      <w>bowercomponents</w>
       <w>circleci</w>
       <w>dropdown</w>
       <w>elte</w>
+      <w>eslint</w>
       <w>feladat</w>
       <w>feladatbank</w>
       <w>flist</w>
@@ -27,6 +30,8 @@
       <w>szint</w>
       <w>tema</w>
       <w>temak</w>
+      <w>temaktsv</w>
+      <w>textdata</w>
       <w>tigersums</w>
       <w>udes</w>
       <w>unreg</w>
