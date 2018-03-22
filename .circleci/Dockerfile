@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-	bash make curl \
+	bash make curl node npm \
 	md5deep \
 	poppler-utils \
 	&& rm -rf /var/lib/apt/lists/*
