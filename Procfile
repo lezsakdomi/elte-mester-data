@@ -1,1 +1,1 @@
-web: HTTPS=1 yarn run start
+web: HTTPS=${HTTPS:-1} yarn run start
