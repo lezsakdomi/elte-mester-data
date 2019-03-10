@@ -1,3 +1,26 @@
+c8736b222e394a8c8bfb9b1983ae8cc7  2018/19 tanév/I/S.28./feladat.pdf
+153b15e8e6ff16d6aee0e5a1eab70a08  2018/19 tanév/I/S.28./feladat.txt
+f63bbfa2294f370ce16377a352fc9901  2018/19 tanév/I/S.28./minta.zip
+96b425f6a6c49f2a98cdafa6fadcc4bf  2018/19 tanév/I/S.29./feladat.pdf
+8c08854150f51b4c9bfba7d51f08357f  2018/19 tanév/I/S.29./feladat.txt
+9806f02b6af48b5a5f729acd3e36cda0  2018/19 tanév/I/S.29./minta.zip
+677e358dddce38b58316852d64591c7b  2018/19 tanév/I/S.30./feladat.pdf
+61cc353b97cf2332fcce9ae39ebd7dc7  2018/19 tanév/I/S.30./feladat.txt
+9ce4b5649ba433b46ef026c80f0ac6dd  2018/19 tanév/I/S.30./minta.zip
+b362c4c6763b393a4a39659729f6efab  2018/19 tanév/S.127./feladat.pdf
+7b3fb5ef74cbfd4246a97d723fe2f15c  2018/19 tanév/S.127./feladat.txt
+615e3a10c56f50fc1b9973ea87a1369f  2018/19 tanév/S.127./minta.zip
+5f21d6aa2c53e2455252caa42959cd45  2018/19 tanév/S.128./feladat.pdf
+031dfab4dda3b0b6dc222d3720d77aa8  2018/19 tanév/S.128./feladat.txt
+6a14f32ccd7a5e1a0cfc5cb3f8a6bd50  2018/19 tanév/S.128./minta.zip
+fc5fd3f21702d2e094bf45868703d5f3  2018/19 tanév/S.129./feladat.pdf
+93c7518ea63520c03fde6998b255dfb7  2018/19 tanév/S.129./feladat.txt
+3eb76eee6ed1d7eb1e53041059f6e3d2  2018/19 tanév/S.129./minta.zip
+d41d8cd98f00b204e9800998ecf8427e  2018/19 tanév/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  2018/19 tanév/feladat.pas
+289d7293305e8a3acba90b405c6af3de  2018/19 tanév/flist.tsv
+ca806c5ffd2390bd1e131177f7763e52  2018/19 tanév/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  2018/19 tanév/mintafeladat.pdf
 427f8ed6e58aa6efa5ba7c569e81f1a4  Dinamikus programozás/Alternáló részsorozat **/feladat.pdf
 026fd8829135b30326d11b870a837ce8  Dinamikus programozás/Alternáló részsorozat **/feladat.txt
 4b5411d1939d5d0c549047043613f28a  Dinamikus programozás/Alternáló részsorozat **/minta.zip
@@ -1554,8 +1577,64 @@ cf5e02f9b03a450bdf99913df2ff73fb  IOI Válogató 2017/Vasutak/minta.zip
 d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2017/feladat.cpp
 d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2017/feladat.pas
 8cf1afd551797ecd4179fa455b9a8951  IOI Válogató 2017/flist.tsv
-9a95cde0b70c33826c1e3aa20b08c0cf  IOI Válogató 2017/leiras.txt
+947c73aa2d8bbf6f3ce4a8e676bf8cd4  IOI Válogató 2017/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2017/mintafeladat.pdf
+826581e219f288215a6f82d271ccbe27  IOI Válogató 2018/Facsemete/feladat.pdf
+e93c45cfb4c379afac12e814888c99c2  IOI Válogató 2018/Facsemete/feladat.txt
+7d5ab1d6a0c8a804b055d0bddd7fff3b  IOI Válogató 2018/Facsemete/minta.zip
+56484e4e16b850ca492075d46e304ec4  IOI Válogató 2018/Fizetős utak/feladat.pdf
+d5b727ba055cad77e9cbf30512fef0f5  IOI Válogató 2018/Fizetős utak/feladat.txt
+c3ebca544b32e58a81e2bb5ef64f654c  IOI Válogató 2018/Fizetős utak/minta.zip
+6af31112c6a6317efc1b8fa511bb5ece  IOI Válogató 2018/Futárszolgálat/feladat.pdf
+363023bb370042b9a27b3e9bcb90c141  IOI Válogató 2018/Futárszolgálat/feladat.txt
+b62571e6d73755de07d4881424761144  IOI Válogató 2018/Futárszolgálat/minta.zip
+03806d3f109e737db1645c4debd31a59  IOI Válogató 2018/Hálózat kettéosztás/feladat.pdf
+3ac825f85c04f5d39ede89428429ee6a  IOI Válogató 2018/Hálózat kettéosztás/feladat.txt
+93865b6776b7d5235bd7820fd3ded2be  IOI Válogató 2018/Hálózat kettéosztás/minta.zip
+55e4a659afade77cd4b24b2207dd2d78  IOI Válogató 2018/Konténer pakolás/feladat.pdf
+60bafe353b0e7f39c76beb717dc9c93c  IOI Válogató 2018/Konténer pakolás/feladat.txt
+588d2d8f4c82283400bd7f0056792e26  IOI Válogató 2018/Konténer pakolás/minta.zip
+758b7cd9807addfec66bf087b0d7d146  IOI Válogató 2018/Permutációk/feladat.pdf
+03d18d5fd2756d2fb09b01a49900d6d5  IOI Válogató 2018/Permutációk/feladat.txt
+22ae87a0dc8338d8679ae6a6fed514e7  IOI Válogató 2018/Permutációk/minta.zip
+335a329c40521a994d7fb0041e34ca54  IOI Válogató 2018/Pálya ellenőrzés/feladat.pdf
+5f95acd4f180f009e5593b73fd1bc6d9  IOI Válogató 2018/Pálya ellenőrzés/feladat.txt
+ff228633ce48cc3fee9551de1747f4f4  IOI Válogató 2018/Pálya ellenőrzés/minta.zip
+25369b6652500d1e1ab75b173e7c05b6  IOI Válogató 2018/Párhuzamos kiszámítás/feladat.pdf
+40d481b8cc11b0acab9daef049643f2d  IOI Válogató 2018/Párhuzamos kiszámítás/feladat.txt
+37753137fdc8861a0287f787abd8b2b2  IOI Válogató 2018/Párhuzamos kiszámítás/minta.zip
+2a7646b75b0514f1a8313910f94a5dfb  IOI Válogató 2018/Szuperhuszár/feladat.pdf
+b431d1133b35a46493ca502c7e3ad330  IOI Válogató 2018/Szuperhuszár/feladat.txt
+099932fad906272130f06c1acf9fa9bf  IOI Válogató 2018/Szuperhuszár/minta.zip
+6b2f0e91515f5f9b12a42f7f1dcbc86a  IOI Válogató 2018/Szótár/feladat.pdf
+2bcb7820a390d201931ef4de591d5ccf  IOI Válogató 2018/Szótár/feladat.txt
+9c08eec004be72200adf3156adb80ba4  IOI Válogató 2018/Szótár/minta.zip
+24498e48408060a820a9a0b07b1e5264  IOI Válogató 2018/Sűrű részsorozat/feladat.pdf
+c54ba989c08c7e4f02902c48f7ea9030  IOI Válogató 2018/Sűrű részsorozat/feladat.txt
+51bea1968da87cd08112051ca08209ea  IOI Válogató 2018/Sűrű részsorozat/minta.zip
+d4f25db71233a2f1e600493bdca28ad1  IOI Válogató 2018/Találkozó/feladat.pdf
+8140e674dd88ea457a350bb4178e6b36  IOI Válogató 2018/Találkozó/feladat.txt
+a93f05b277581c22f3f5afe93472a8c8  IOI Válogató 2018/Találkozó/minta.zip
+f8ad20c051fb375d5fb35301811e1fda  IOI Válogató 2018/Telephelyek/feladat.pdf
+8929e1b4b999383013d7fa1a3b19638a  IOI Válogató 2018/Telephelyek/feladat.txt
+4daffe0c6f4c729b25fe7483999b6e88  IOI Válogató 2018/Telephelyek/minta.zip
+414c6869574ecac9226e7be4d0ce0b49  IOI Válogató 2018/Táblás játék/feladat.pdf
+af1b9d55d45e78cb728e9033bd63c106  IOI Válogató 2018/Táblás játék/feladat.txt
+9da9e29cc2cb95a4f94d62150e9eee16  IOI Válogató 2018/Táblás játék/minta.zip
+e6599052b40e4966d8201be847e6603b  IOI Válogató 2018/Vásárlások/feladat.pdf
+8847c5baee3a8583cb0de67a1ec49212  IOI Válogató 2018/Vásárlások/feladat.txt
+9a4053d41bc8cfdf1e9573604040396a  IOI Válogató 2018/Vásárlások/minta.zip
+398f6a77144c04de6e15d9e5a887fd8d  IOI Válogató 2018/Zárkód/feladat.pdf
+6043ad42c7a4a8a1aa105fe02680bbd3  IOI Válogató 2018/Zárkód/feladat.txt
+55a60823eef5d0828faf3e63e4ce0b35  IOI Válogató 2018/Zárkód/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2018/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2018/feladat.pas
+b74bca66a5cd73e9c865d8c9f5f8828f  IOI Válogató 2018/flist.tsv
+9a95cde0b70c33826c1e3aa20b08c0cf  IOI Válogató 2018/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  IOI Válogató 2018/mintafeladat.pdf
+274e3d350246191a85b1c50393089e68  IOI Válogató 2018/Átfedő intervallumok/feladat.pdf
+5402279f5eed87c7c64875e823ca7164  IOI Válogató 2018/Átfedő intervallumok/feladat.txt
+45f33ff2880cbf9338e04b180c7bd493  IOI Válogató 2018/Átfedő intervallumok/minta.zip
 44f9ad7a451f5fae2aa4a1faabc46de1  Időjárás/A települések legalább felében melegedő napok/feladat.pdf
 5237aa122ad20156295432559e2f4a1d  Időjárás/A települések legalább felében melegedő napok/feladat.txt
 7cde5b0f6adcc7d0356499d156e86569  Időjárás/A települések legalább felében melegedő napok/minta.zip
@@ -2026,6 +2105,119 @@ ccdd9993e40ea10fb2d17f18b88d718a  Kutyaszépségverseny/mintafeladat.txt
 a4362d91bc0484fe72c3492c48da01bc  Kutyaszépségverseny/Éppen minimális pontszámú kutyák */feladat.pdf
 e57c1ea66d06c733bdfe0b7699091dba  Kutyaszépségverseny/Éppen minimális pontszámú kutyák */feladat.txt
 78ab0c31b94b8cb430a4869c7e59421b  Kutyaszépségverseny/Éppen minimális pontszámú kutyák */minta.zip
+156d8d2e771921b6e1e6c35d47690703  Közismereti emeltszintű érettségi feladatok/Anagramma- 2010. október/feladat.pdf
+ad84749fe5524fc458f927103236f9cd  Közismereti emeltszintű érettségi feladatok/Anagramma- 2010. október/feladat.txt
+2f35b79adb53e7139cb4561988d99583  Közismereti emeltszintű érettségi feladatok/Anagramma- 2010. október/minta.zip
+55fcc24feac0acac74c52ce5cb5ecc14  Közismereti emeltszintű érettségi feladatok/Automata - 2009. május angol/feladat.pdf
+899eb37b71e4a0cdd9f09dff560a10f7  Közismereti emeltszintű érettségi feladatok/Automata - 2009. május angol/feladat.txt
+df3579926914a7b692c1c85fe37151ec  Közismereti emeltszintű érettségi feladatok/Automata - 2009. május angol/minta.zip
+5f3a7c2f8096b507c292e3bb5b657e94  Közismereti emeltszintű érettségi feladatok/Céllövészet - 2014. május angol/feladat.pdf
+174ae58615a3477035f46f7642f4d7f4  Közismereti emeltszintű érettségi feladatok/Céllövészet - 2014. május angol/feladat.txt
+c6987b48cf88d218a4638778ebc191d5  Közismereti emeltszintű érettségi feladatok/Céllövészet - 2014. május angol/minta.zip
+85d28d59a278048a12baf62e3035f1dd  Közismereti emeltszintű érettségi feladatok/Expedíció - 2015. május/feladat.pdf
+b2fb22313d5227f91eb0401cb3c1cbd5  Közismereti emeltszintű érettségi feladatok/Expedíció - 2015. május/feladat.txt
+414f0f54cf9a33a22628f687a714cf15  Közismereti emeltszintű érettségi feladatok/Expedíció - 2015. május/minta.zip
+df3e98bba197bcca6d9b23767e222a08  Közismereti emeltszintű érettségi feladatok/Fehérje - 2006. május/feladat.pdf
+f08d7e1d12d3530b2ecb61fa3a802d1a  Közismereti emeltszintű érettségi feladatok/Fehérje - 2006. május/feladat.txt
+38e035c0a4f4178280d13ddfe150e12b  Közismereti emeltszintű érettségi feladatok/Fehérje - 2006. május/minta.zip
+d8556fca3cb599b66ea29b32efc37306  Közismereti emeltszintű érettségi feladatok/Fej vagy írás - 2015. október/feladat.pdf
+f49309093a5db3b62d4f7ed2b25fbcbe  Közismereti emeltszintű érettségi feladatok/Fej vagy írás - 2015. október/feladat.txt
+f12094297eee676cec3fd32f963ee87e  Közismereti emeltszintű érettségi feladatok/Fej vagy írás - 2015. október/minta.zip
+5e8ba64f88d5c49e6bfc945b6fc5bbf1  Közismereti emeltszintű érettségi feladatok/Foci - 2007. november/feladat.pdf
+91180ca601d181eb8754ece53bae5c67  Közismereti emeltszintű érettségi feladatok/Foci - 2007. november/feladat.txt
+6f6e60f2f6b80be35083e7e13bd189c0  Közismereti emeltszintű érettségi feladatok/Foci - 2007. november/minta.zip
+f26dcc9f79332705c7cd551c36161241  Közismereti emeltszintű érettségi feladatok/Furdo - 2017. majus/feladat.pdf
+4537d66efb46475baaf468a82910d42b  Közismereti emeltszintű érettségi feladatok/Furdo - 2017. majus/feladat.txt
+1178e297e7decec7ffb636f5076e702e  Közismereti emeltszintű érettségi feladatok/Furdo - 2017. majus/minta.zip
+1ef0ad02318c88549afccb6012d608c9  Közismereti emeltszintű érettségi feladatok/Futár - 2012. május/feladat.pdf
+5df2edcac969f21a21fcd68ec551a48e  Közismereti emeltszintű érettségi feladatok/Futár - 2012. május/feladat.txt
+4d0fe50f27b52e62814093b9910e47c2  Közismereti emeltszintű érettségi feladatok/Futár - 2012. május/minta.zip
+9368eca96a1ba6298cc2bb3cc0a9ec9c  Közismereti emeltszintű érettségi feladatok/Helyjegy - 2010. majus/feladat.pdf
+ff515df59fad0f07115aa9597dd54d2d  Közismereti emeltszintű érettségi feladatok/Helyjegy - 2010. majus/feladat.txt
+6801e29e7235bcb3896276ab399e40c2  Közismereti emeltszintű érettségi feladatok/Helyjegy - 2010. majus/minta.zip
+a0e91cec8912b2bd2f04a7f138ff7079  Közismereti emeltszintű érettségi feladatok/IPv6 - 2014. május/feladat.pdf
+69f8e997ee716f51777670bcc8232cf5  Közismereti emeltszintű érettségi feladatok/IPv6 - 2014. május/feladat.txt
+0d0b7dbb350864aab1b5c76404b1a8ca  Közismereti emeltszintű érettségi feladatok/IPv6 - 2014. május/minta.zip
+993ee26438f48484b01090aecae45300  Közismereti emeltszintű érettségi feladatok/Kozúti ellenőrzés - 2013. október/feladat.pdf
+18f5ce97bdd3633a519a6b81396f458c  Közismereti emeltszintű érettségi feladatok/Kozúti ellenőrzés - 2013. október/feladat.txt
+773453a5999ddd6711ce9e0b925829c9  Közismereti emeltszintű érettségi feladatok/Kozúti ellenőrzés - 2013. október/minta.zip
+8328b7f75d6d9526e0937026467debbe  Közismereti emeltszintű érettségi feladatok/Latin tanc - 2015. majus/feladat.pdf
+f4b74dec7df0a78ddc8ada70a69f4419  Közismereti emeltszintű érettségi feladatok/Latin tanc - 2015. majus/feladat.txt
+b62dd8da653c41bdc4689f22cba04925  Közismereti emeltszintű érettségi feladatok/Latin tanc - 2015. majus/minta.zip
+d3c9666fd0c1748185f4bb4482770547  Közismereti emeltszintű érettségi feladatok/Lift - 2009. május/feladat.pdf
+a640657c2da52fe59e004a9a8ea5eaea  Közismereti emeltszintű érettségi feladatok/Lift - 2009. május/feladat.txt
+5260d58fd31cf786bddfb1ed2370d226  Közismereti emeltszintű érettségi feladatok/Lift - 2009. május/minta.zip
+df15dcb0013bf579bcdd7cd4d66f2a18  Közismereti emeltszintű érettségi feladatok/Lotto - 2005. majus/feladat.pdf
+20ea120fffc3b399447e424430b70845  Közismereti emeltszintű érettségi feladatok/Lotto - 2005. majus/feladat.txt
+43db0586a2d84b786a2583dde4be8242  Közismereti emeltszintű érettségi feladatok/Lotto - 2005. majus/minta.zip
+5de6e00e52e8fe24978ee02ed1599f87  Közismereti emeltszintű érettségi feladatok/Otszaz - 2016. majus/feladat.pdf
+7e225bfc9e461876ff08cbd45485bb56  Közismereti emeltszintű érettségi feladatok/Otszaz - 2016. majus/feladat.txt
+15e05b5423aba660cd4b86479efcf7c1  Közismereti emeltszintű érettségi feladatok/Otszaz - 2016. majus/minta.zip
+b8b60d4b34bcb50e3bf96ba6fb58a33f  Közismereti emeltszintű érettségi feladatok/Pitypang - 2011. október/feladat.pdf
+f7bccd38060e6f8b0b2bec2fe0e47767  Közismereti emeltszintű érettségi feladatok/Pitypang - 2011. október/feladat.txt
+da3a0d005d1dd6cd84fc33fba864a17a  Közismereti emeltszintű érettségi feladatok/Pitypang - 2011. október/minta.zip
+9faccf6c7223b7dbdaed4563a2a10216  Közismereti emeltszintű érettségi feladatok/Rejtvény- 2011. május angol/feladat.pdf
+d41594c6524b77af00d9645fa32ddbb2  Közismereti emeltszintű érettségi feladatok/Rejtvény- 2011. május angol/feladat.txt
+8be674d5918fe14cecf79622d14025b7  Közismereti emeltszintű érettségi feladatok/Rejtvény- 2011. május angol/minta.zip
+4fb546ae8e78bf6984aa55547da993c2  Közismereti emeltszintű érettségi feladatok/Robot - 2008. október/feladat.pdf
+12db29e520eec3f0863d75d8f47b3640  Közismereti emeltszintű érettségi feladatok/Robot - 2008. október/feladat.txt
+51b99cb83ab6cb99c0f91ad54b744f06  Közismereti emeltszintű érettségi feladatok/Robot - 2008. október/minta.zip
+e5bdf32350f85928043f1c84a30cb31e  Közismereti emeltszintű érettségi feladatok/SMS - 2008. május/feladat.pdf
+a6707c0b5a488d297e19ce2b8f9a4b2d  Közismereti emeltszintű érettségi feladatok/SMS - 2008. május/feladat.txt
+a9570686a5b25162fef8eeb01aebe6c5  Közismereti emeltszintű érettségi feladatok/SMS - 2008. május/minta.zip
+e9f023f314b431e64f3fc9467576a925  Közismereti emeltszintű érettségi feladatok/SMS Szavak - 2007. május/feladat.pdf
+8c1b30af7548f67c7812d31ab9e9001e  Közismereti emeltszintű érettségi feladatok/SMS Szavak - 2007. május/feladat.txt
+bd0ccd8cee64eee3b76c869526886f46  Közismereti emeltszintű érettségi feladatok/SMS Szavak - 2007. május/minta.zip
+9628ebb3e725d575769953475446ea2d  Közismereti emeltszintű érettségi feladatok/Személyazonositó jel - 2004. május/feladat.pdf
+b7de17c6e4c6487f9d0114ab0d3928c9  Közismereti emeltszintű érettségi feladatok/Személyazonositó jel - 2004. május/feladat.txt
+8025d60357e43ccd1c5c6c45fbfc9a75  Közismereti emeltszintű érettségi feladatok/Személyazonositó jel - 2004. május/minta.zip
+c0962d0a562fc72f197c3c7519bc1c1f  Közismereti emeltszintű érettségi feladatok/Számok- 2013. május angol/feladat.pdf
+383176ead8c1554e485cdbcebebea734  Közismereti emeltszintű érettségi feladatok/Számok- 2013. május angol/feladat.txt
+73f0c94f82c47c80e6145a8b5b4f80d5  Közismereti emeltszintű érettségi feladatok/Számok- 2013. május angol/minta.zip
+8d6c0cb5d7f082f22ed527242c69a1c6  Közismereti emeltszintű érettségi feladatok/Szín-kép 2012. október/feladat.pdf
+d96df2f82449b534d8874ad217da166f  Közismereti emeltszintű érettségi feladatok/Szín-kép 2012. október/feladat.txt
+95417c3384aaceb3a67e82aa040e6bb8  Közismereti emeltszintű érettségi feladatok/Szín-kép 2012. október/minta.zip
+f55c1d961ef46263a09625d4b7c78a2b  Közismereti emeltszintű érettségi feladatok/Szójáték - 2011. május/feladat.pdf
+84af3fac35ef08b0ae381a137d7b2e10  Közismereti emeltszintű érettségi feladatok/Szójáték - 2011. május/feladat.txt
+b4299f2d1888a705ce7cc61ed52f06ba  Közismereti emeltszintű érettségi feladatok/Szójáték - 2011. május/minta.zip
+dd8e59c6e7eb48b27baae9c0efc5948c  Közismereti emeltszintű érettségi feladatok/Telefonos ügyfélszolgálat - 2016. október/feladat.pdf
+779cc3f531455f42af3e41f94a1901cc  Közismereti emeltszintű érettségi feladatok/Telefonos ügyfélszolgálat - 2016. október/feladat.txt
+4d42ad4681e4746e616cc87ae5c5b38f  Közismereti emeltszintű érettségi feladatok/Telefonos ügyfélszolgálat - 2016. október/minta.zip
+a126fbccca00861d9cf21db74e043f6d  Közismereti emeltszintű érettségi feladatok/Telefonszámla - 2006. február/feladat.pdf
+38723f3b71e430e3d918295848228e89  Közismereti emeltszintű érettségi feladatok/Telefonszámla - 2006. február/feladat.txt
+4d4c09e67339b5f849a5edf9f1c48e09  Közismereti emeltszintű érettségi feladatok/Telefonszámla - 2006. február/minta.zip
+f0315895a03c67024d60bd7990d3d7ee  Közismereti emeltszintű érettségi feladatok/Telek - 2010. május angol/feladat.pdf
+c9029d0a6f38dc28a7fc3f44d8fa548c  Közismereti emeltszintű érettségi feladatok/Telek - 2010. május angol/feladat.txt
+8b54cea9f0971277350aca63e23235a3  Közismereti emeltszintű érettségi feladatok/Telek - 2010. május angol/minta.zip
+6d83652cd28871bc33d6b0fbf2c111cd  Közismereti emeltszintű érettségi feladatok/Tesztverseny - 2017. majus/feladat.pdf
+a4e932795a2dff9939bd010348779551  Közismereti emeltszintű érettségi feladatok/Tesztverseny - 2017. majus/feladat.txt
+2d2b71d0a3caceeeaf5df81ca58dd5ef  Közismereti emeltszintű érettségi feladatok/Tesztverseny - 2017. majus/minta.zip
+8af3842708b0521865a2e5e8ab28f70d  Közismereti emeltszintű érettségi feladatok/Tortek- 2012. majus angol/feladat.pdf
+2540a48b32b82a6d0be1bb173949189b  Közismereti emeltszintű érettségi feladatok/Tortek- 2012. majus angol/feladat.txt
+c910162d937cfb3c6e4977fe7fbf56a4  Közismereti emeltszintű érettségi feladatok/Tortek- 2012. majus angol/minta.zip
+17ca2a36f4f7b0bb430463b42d96fd4c  Közismereti emeltszintű érettségi feladatok/Vigenere tabla - 2005. oktober/feladat.pdf
+7f6d14efd49247174ea74c9f9333b6e7  Közismereti emeltszintű érettségi feladatok/Vigenere tabla - 2005. oktober/feladat.txt
+cf037017e763e4845f1097da8337a603  Közismereti emeltszintű érettségi feladatok/Vigenere tabla - 2005. oktober/minta.zip
+c2e67970fe384d59e5bc71a43cd96d30  Közismereti emeltszintű érettségi feladatok/Választások - 2013 május/feladat.pdf
+5728317d6a0c69e319b8bb685c73fb94  Közismereti emeltszintű érettségi feladatok/Választások - 2013 május/feladat.txt
+bbeb680d5363083c0d5492827f5da265  Közismereti emeltszintű érettségi feladatok/Választások - 2013 május/minta.zip
+1d3499e853cb04a6057dbf5e3b418d5c  Közismereti emeltszintű érettségi feladatok/Zenei adók - 2006. november/feladat.pdf
+14de9e4a105134a6220f3aaafac54f85  Közismereti emeltszintű érettségi feladatok/Zenei adók - 2006. november/feladat.txt
+7f31add59be63968ce5d4ef6146b47c3  Közismereti emeltszintű érettségi feladatok/Zenei adók - 2006. november/minta.zip
+be1aea1f3a07a7779ecbe157468e65f4  Közismereti emeltszintű érettségi feladatok/Zár - 2016. május/feladat.pdf
+e0f468b5ac7def0dbbe7e4cd8d5b8412  Közismereti emeltszintű érettségi feladatok/Zár - 2016. május/feladat.txt
+ffcd8d34184a2505bb005f608db2c0a9  Közismereti emeltszintű érettségi feladatok/Zár - 2016. május/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Közismereti emeltszintű érettségi feladatok/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Közismereti emeltszintű érettségi feladatok/feladat.pas
+cc6a30b6e4efa37d76024d52c3ba0c8b  Közismereti emeltszintű érettségi feladatok/flist.tsv
+7c611f9afd48597edd50edefff28e590  Közismereti emeltszintű érettségi feladatok/kidolgozás alatt/feladat.pdf
+d961bcc747ef6b5ea246e822ffb417a2  Közismereti emeltszintű érettségi feladatok/kidolgozás alatt/feladat.txt
+d41d8cd98f00b204e9800998ecf8427e  Közismereti emeltszintű érettségi feladatok/kidolgozás alatt/minta.zip
+2a2565bc5c6201e42cf2aec0650ce899  Közismereti emeltszintű érettségi feladatok/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Közismereti emeltszintű érettségi feladatok/mintafeladat.pdf
+fa3dceaaf0d41391ec8b8534d41ce0ec  Közismereti emeltszintű érettségi feladatok/Útépítés - 2009. október/feladat.pdf
+ae15b59f9e0250030eb14141b22054d6  Közismereti emeltszintű érettségi feladatok/Útépítés - 2009. október/feladat.txt
+6445a5f8bed3c248322cb176f3dff206  Közismereti emeltszintű érettségi feladatok/Útépítés - 2009. október/minta.zip
 dd539c1b4706f4643e85fa0447f99cec  Madármegfigyelés/Ahol a madár se jár */feladat.pdf
 c3e47579d6f0a6f67d0c1988e55647a6  Madármegfigyelés/Ahol a madár se jár */feladat.txt
 a339372612b3bceab9a9b52fc4a0cc4d  Madármegfigyelés/Ahol a madár se jár */minta.zip
@@ -2308,6 +2500,62 @@ c929f19104d84164613f94e274f08871  Mohó algoritmusok/flist.tsv
 1dd7a850c2c11a04b057af6a5c9e6007  Mohó algoritmusok/Ütemezés ***/feladat.pdf
 0132436f2e1f72145dbeaada01f373a5  Mohó algoritmusok/Ütemezés ***/feladat.txt
 f075107896c0dd806eca89694b3ebf8a  Mohó algoritmusok/Ütemezés ***/minta.zip
+f3e258ac963cfe2c41e9c44d41062c6a  NT Online 2018/19 1. forduló/Hideg és meleg napok/feladat.pdf
+1d7550e861fd8c65e7d8162aa14253c6  NT Online 2018/19 1. forduló/Hideg és meleg napok/feladat.txt
+9792658385ffa5e2a8c2c412558b80ff  NT Online 2018/19 1. forduló/Hideg és meleg napok/minta.zip
+b54ea52ea120fd900b055c83e2f9a1e9  NT Online 2018/19 1. forduló/Középső életkorú/feladat.pdf
+bc8d4b6d57efd0ce208efba0f1f5727d  NT Online 2018/19 1. forduló/Középső életkorú/feladat.txt
+7c36f115a68f255eb3021dcf89bf5229  NT Online 2018/19 1. forduló/Középső életkorú/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 1. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 1. forduló/feladat.pas
+1392b27a00af803c90f5b4b414a59d65  NT Online 2018/19 1. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  NT Online 2018/19 1. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 1. forduló/mintafeladat.pdf
+7ff9cf0e317b65b080e7bed306c9a812  NT Online 2018/19 1. forduló/Ügyelet/feladat.pdf
+24f98c97723213bbdd8b5a54db8fc783  NT Online 2018/19 1. forduló/Ügyelet/feladat.txt
+836bd617a88a3a30c924ce0bb546d759  NT Online 2018/19 1. forduló/Ügyelet/minta.zip
+99c215e3c046b0bdc567106d14249c85  NT Online 2018/19 2. forduló/Bástya a sakktáblán/feladat.pdf
+ae806da9caa2caa6a56c399900de1ebf  NT Online 2018/19 2. forduló/Bástya a sakktáblán/feladat.txt
+b826227d5d7918fbdb42a17d1ee9c1c3  NT Online 2018/19 2. forduló/Bástya a sakktáblán/minta.zip
+e3eab5727aca3ec1792ebbe949538f68  NT Online 2018/19 2. forduló/Ellenőrzés/feladat.pdf
+673d4de83f83afb321926e0778d057d5  NT Online 2018/19 2. forduló/Ellenőrzés/feladat.txt
+c707bba51e44be9d323975c281e41c3b  NT Online 2018/19 2. forduló/Ellenőrzés/minta.zip
+2ff6f0e616cc59fabdec15f766337262  NT Online 2018/19 2. forduló/Két csoportra osztás/feladat.pdf
+361ec4714bce56c5ea1dd1cd2b24500a  NT Online 2018/19 2. forduló/Két csoportra osztás/feladat.txt
+0036b200a5a0f5bd97b02de1bb3bcc8b  NT Online 2018/19 2. forduló/Két csoportra osztás/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 2. forduló/feladat.pas
+ced43bae258388f67babab12cfd5dcc4  NT Online 2018/19 2. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  NT Online 2018/19 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  NT Online 2018/19 2. forduló/mintafeladat.pdf
+5f0f88c3aa6f8d96e92be416a247f75b  Nemes Tihamér 1. 2016/17 2. forduló/Ajándékozás/feladat.pdf
+7538fa44ee88028b10c49497ef3cf840  Nemes Tihamér 1. 2016/17 2. forduló/Ajándékozás/feladat.txt
+0ddd3b56152c0dbd0e92cd3ece9f70a9  Nemes Tihamér 1. 2016/17 2. forduló/Ajándékozás/minta.zip
+5c51e9fe17c1b4e7dcd016ab75fed018  Nemes Tihamér 1. 2016/17 2. forduló/Globális felmelegedés/feladat.pdf
+92428afe78a46be723f054f70f0259d2  Nemes Tihamér 1. 2016/17 2. forduló/Globális felmelegedés/feladat.txt
+42bbc694fa91c88ab55a6b5a78c44c06  Nemes Tihamér 1. 2016/17 2. forduló/Globális felmelegedés/minta.zip
+04048a182caa61ca6b6283113b15f30f  Nemes Tihamér 1. 2016/17 2. forduló/Maja naptár/feladat.pdf
+186d000ef9019a12bc728a8d4d6330d0  Nemes Tihamér 1. 2016/17 2. forduló/Maja naptár/feladat.txt
+106ea6a29adf8c2395ecc8dccd61f28d  Nemes Tihamér 1. 2016/17 2. forduló/Maja naptár/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 2. forduló/feladat.pas
+c7245f4fa674bb10e304b3c66fc1f79e  Nemes Tihamér 1. 2016/17 2. forduló/flist.tsv
+fc85a55d33fb3fe45d2d8720b0094d19  Nemes Tihamér 1. 2016/17 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 2. forduló/mintafeladat.pdf
+63e11b40188657ea9d00dc4f3310f4bb  Nemes Tihamér 1. 2016/17 3. forduló/Konténerek rendezése/feladat.pdf
+2e98d0116329f9f37d972eaaaeb37bf1  Nemes Tihamér 1. 2016/17 3. forduló/Konténerek rendezése/feladat.txt
+f04dda40328e3b8a5d01352d55263095  Nemes Tihamér 1. 2016/17 3. forduló/Konténerek rendezése/minta.zip
+03ab3203727bcf77c8f3d7cfd980ef60  Nemes Tihamér 1. 2016/17 3. forduló/Napszámosok/feladat.pdf
+c2d2b0496ea748031336f8261d127e5e  Nemes Tihamér 1. 2016/17 3. forduló/Napszámosok/feladat.txt
+46b9872daf2662902cee7a5a5ef90223  Nemes Tihamér 1. 2016/17 3. forduló/Napszámosok/minta.zip
+30019199ed2d85b8d9dab8f1c3aca06d  Nemes Tihamér 1. 2016/17 3. forduló/Páratlan számok/feladat.pdf
+d9ed70a784fd7da6388e7b3c6e723800  Nemes Tihamér 1. 2016/17 3. forduló/Páratlan számok/feladat.txt
+49833a9130da1cc26341f38cd585ac50  Nemes Tihamér 1. 2016/17 3. forduló/Páratlan számok/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 3. forduló/feladat.pas
+8cbf0dd0e98bcd8aa36e4f7f2c65ae38  Nemes Tihamér 1. 2016/17 3. forduló/flist.tsv
+3ccc4b17265998c94d71083331ef4198  Nemes Tihamér 1. 2016/17 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/17 3. forduló/mintafeladat.pdf
 74ae6e895dc4bbcf2d2a04ed5dfe5a5e  Nemes Tihamér 1. 2016/2017 2. forduló/Ajándékozás/feladat.pdf
 7538fa44ee88028b10c49497ef3cf840  Nemes Tihamér 1. 2016/2017 2. forduló/Ajándékozás/feladat.txt
 e6b87b072117684d5ef177f6335f2a76  Nemes Tihamér 1. 2016/2017 2. forduló/Ajándékozás/minta.zip
@@ -2336,6 +2584,37 @@ d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/2017 3. forduló/felada
 8cbf0dd0e98bcd8aa36e4f7f2c65ae38  Nemes Tihamér 1. 2016/2017 3. forduló/flist.tsv
 3ccc4b17265998c94d71083331ef4198  Nemes Tihamér 1. 2016/2017 3. forduló/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2016/2017 3. forduló/mintafeladat.pdf
+3958da771495b66c8ea4b17606955ffc  Nemes Tihamér 1. 2017/18 2. forduló/Legtöbb hegycsúcs/feladat.pdf
+c67e95cb77c843d962b9082c30624d8d  Nemes Tihamér 1. 2017/18 2. forduló/Legtöbb hegycsúcs/feladat.txt
+ee54a1cca41e7e32a6add57af451d0fc  Nemes Tihamér 1. 2017/18 2. forduló/Legtöbb hegycsúcs/minta.zip
+9e549f5ca75e82751704495353b0ea34  Nemes Tihamér 1. 2017/18 2. forduló/Osztályzatok/feladat.pdf
+fbf17c7bac1523f5b7d7e2cbc49ea31e  Nemes Tihamér 1. 2017/18 2. forduló/Osztályzatok/feladat.txt
+60a24826faa7fe85ce3943bac8a91842  Nemes Tihamér 1. 2017/18 2. forduló/Osztályzatok/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 2. forduló/feladat.pas
+e2ee7edfe8e37ff339cd89084e70b52b  Nemes Tihamér 1. 2017/18 2. forduló/flist.tsv
+498b0f80c3261f41be21ab79e1b6c64d  Nemes Tihamér 1. 2017/18 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 2. forduló/mintafeladat.pdf
+4e365469c76fd4089d654b44abf7ec43  Nemes Tihamér 1. 2017/18 2. forduló/Órák/feladat.pdf
+44e664b7d514728a645b13fab9eb72cc  Nemes Tihamér 1. 2017/18 2. forduló/Órák/feladat.txt
+31bd45fa28f73e5cf0a12e2752608efc  Nemes Tihamér 1. 2017/18 2. forduló/Órák/minta.zip
+7eaa9f8faae764d900c6245ff8bb9b37  Nemes Tihamér 1. 2017/18 3. forduló/Hónapok első napjai/feladat.pdf
+8cd0336680c85ba7837f7358600fbb3f  Nemes Tihamér 1. 2017/18 3. forduló/Hónapok első napjai/feladat.txt
+865a210c38f372a4d1e2936e2059af51  Nemes Tihamér 1. 2017/18 3. forduló/Hónapok első napjai/minta.zip
+bc5286a8c39fcf2a63aeedef71454228  Nemes Tihamér 1. 2017/18 3. forduló/Kastély/feladat.pdf
+cc18c84c3d80abacd6d15af1a90d9fd9  Nemes Tihamér 1. 2017/18 3. forduló/Kastély/feladat.txt
+cee7adb1e1d739248b5b702955db2a62  Nemes Tihamér 1. 2017/18 3. forduló/Kastély/minta.zip
+4e414a2fcffa7bdcd0f38b8d42e24798  Nemes Tihamér 1. 2017/18 3. forduló/Kereskedők/feladat.pdf
+5b9950e2da87f57a2d2f4524757a8e44  Nemes Tihamér 1. 2017/18 3. forduló/Kereskedők/feladat.txt
+7884f674a02f573f51aa4e836f3eb4b1  Nemes Tihamér 1. 2017/18 3. forduló/Kereskedők/minta.zip
+a7e1dc41d4b49d7f8d0eecc443bdc2b0  Nemes Tihamér 1. 2017/18 3. forduló/Távoli bolygó/feladat.pdf
+b9df9b9d5d89a418b1732c0a80a36a66  Nemes Tihamér 1. 2017/18 3. forduló/Távoli bolygó/feladat.txt
+2010173fb89d4d1d8468c73d52b2107a  Nemes Tihamér 1. 2017/18 3. forduló/Távoli bolygó/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 3. forduló/feladat.pas
+cde0982e168e81ddcb1c56aa7d5b579a  Nemes Tihamér 1. 2017/18 3. forduló/flist.tsv
+055671a87e2f7066dd820be40eb26b5c  Nemes Tihamér 1. 2017/18 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/18 3. forduló/mintafeladat.pdf
 885617f3a3a67bf368e95e5a9ce16da1  Nemes Tihamér 1. 2017/2018 2. forduló/Legtöbb hegycsúcs/feladat.pdf
 c67e95cb77c843d962b9082c30624d8d  Nemes Tihamér 1. 2017/2018 2. forduló/Legtöbb hegycsúcs/feladat.txt
 f333904703f3d6a54558f5789c993c20  Nemes Tihamér 1. 2017/2018 2. forduló/Legtöbb hegycsúcs/minta.zip
@@ -2367,6 +2646,68 @@ d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/2018 3. forduló/felada
 cde0982e168e81ddcb1c56aa7d5b579a  Nemes Tihamér 1. 2017/2018 3. forduló/flist.tsv
 055671a87e2f7066dd820be40eb26b5c  Nemes Tihamér 1. 2017/2018 3. forduló/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2017/2018 3. forduló/mintafeladat.pdf
+811ca0f6157400afc1b38523030b56c3  Nemes Tihamér 1. 2018/19 2. forduló/Ajándék/feladat.pdf
+1fb513eafb6961616e8f982102b7f218  Nemes Tihamér 1. 2018/19 2. forduló/Ajándék/feladat.txt
+ff4d274ce03c92b5d27e51ec2f474c7a  Nemes Tihamér 1. 2018/19 2. forduló/Ajándék/minta.zip
+0a0bd507ca98230b45bb3f876518357b  Nemes Tihamér 1. 2018/19 2. forduló/Időpontok/feladat.pdf
+bf833028061f18a59e9266a87a1b01cf  Nemes Tihamér 1. 2018/19 2. forduló/Időpontok/feladat.txt
+2f3bb3476d6d3207e78f9807300b2d72  Nemes Tihamér 1. 2018/19 2. forduló/Időpontok/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 2. forduló/feladat.pas
+6bfb2312198ba2bddc63b71a9008bbe6  Nemes Tihamér 1. 2018/19 2. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  Nemes Tihamér 1. 2018/19 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 2. forduló/mintafeladat.pdf
+aa61af2e1430f51e86b8ce3c979f2ebe  Nemes Tihamér 1. 2018/19 3. forduló/Autószállítás (40 pont)/feladat.pdf
+e312dfa9409fe0aafbc8d28683856f02  Nemes Tihamér 1. 2018/19 3. forduló/Autószállítás (40 pont)/feladat.txt
+7644af048fa11a0ebd1c62a7e6a36eab  Nemes Tihamér 1. 2018/19 3. forduló/Autószállítás (40 pont)/minta.zip
+66b6fdd3958b5049f5df427a309ea29c  Nemes Tihamér 1. 2018/19 3. forduló/Kereskedő (40 pont)/feladat.pdf
+2e8835ae21e02737f6acf86e29c99cdd  Nemes Tihamér 1. 2018/19 3. forduló/Kereskedő (40 pont)/feladat.txt
+8a619f2647586c20a650671460b3fa4c  Nemes Tihamér 1. 2018/19 3. forduló/Kereskedő (40 pont)/minta.zip
+6949e517011489b378b5c1bfd26611a7  Nemes Tihamér 1. 2018/19 3. forduló/Közös főnök (30 pont)/feladat.pdf
+fd753ed667e33655a6412b0f53b638f0  Nemes Tihamér 1. 2018/19 3. forduló/Közös főnök (30 pont)/feladat.txt
+2d3c931abeb54ebfb5174abad099ee10  Nemes Tihamér 1. 2018/19 3. forduló/Közös főnök (30 pont)/minta.zip
+a95c7f8f9cd9599f7a74824cde81379b  Nemes Tihamér 1. 2018/19 3. forduló/Műkincsgyüjtő (40 pont)/feladat.pdf
+3d03ced4bc819586bbca7350f7d33caf  Nemes Tihamér 1. 2018/19 3. forduló/Műkincsgyüjtő (40 pont)/feladat.txt
+d4a4699d7303c95dbf060a9a2fa8c608  Nemes Tihamér 1. 2018/19 3. forduló/Műkincsgyüjtő (40 pont)/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 3. forduló/feladat.pas
+8a5b5fa2c88b69db0311fc24c463cf39  Nemes Tihamér 1. 2018/19 3. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  Nemes Tihamér 1. 2018/19 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 1. 2018/19 3. forduló/mintafeladat.pdf
+f199894886120a0fb8c224cbb4651f12  Nemes Tihamér 2. 2016/17 2. forduló/Csak egy bolygón volt élet/feladat.pdf
+2e29d74bef6b9c593af14a44cf3d4c74  Nemes Tihamér 2. 2016/17 2. forduló/Csak egy bolygón volt élet/feladat.txt
+2a4ddcaef8fad5739a07386413d55443  Nemes Tihamér 2. 2016/17 2. forduló/Csak egy bolygón volt élet/minta.zip
+e4fbbd28847b56c74a6e98af6bfc4c71  Nemes Tihamér 2. 2016/17 2. forduló/Függőhíd/feladat.pdf
+b43967fe370ebb31fa745e89638db45b  Nemes Tihamér 2. 2016/17 2. forduló/Függőhíd/feladat.txt
+80ce3ffa935b6f212980c440017d9397  Nemes Tihamér 2. 2016/17 2. forduló/Függőhíd/minta.zip
+782dc10090602f8312602dddbc72978f  Nemes Tihamér 2. 2016/17 2. forduló/Ritka szám/feladat.pdf
+6a68853521f0f366efa97cea4174afec  Nemes Tihamér 2. 2016/17 2. forduló/Ritka szám/feladat.txt
+d982774fc8e42daeba358a5e9bd6004c  Nemes Tihamér 2. 2016/17 2. forduló/Ritka szám/minta.zip
+eb8cfeb42d7bc4ccc155417ac6487a84  Nemes Tihamér 2. 2016/17 2. forduló/Várólista/feladat.pdf
+d9abaf56232fa9baeb0bb39f03c47ddd  Nemes Tihamér 2. 2016/17 2. forduló/Várólista/feladat.txt
+da8a398d7be1caa905e62ebd348dc7fe  Nemes Tihamér 2. 2016/17 2. forduló/Várólista/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 2. forduló/feladat.pas
+547276773f9b2ac54e628d9a338eaf2e  Nemes Tihamér 2. 2016/17 2. forduló/flist.tsv
+e1f861e6d40ccf392a618070e5d71aff  Nemes Tihamér 2. 2016/17 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 2. forduló/mintafeladat.pdf
+b92d1ef8228bdd65d268bcf086c4556d  Nemes Tihamér 2. 2016/17 3. forduló/Banda/feladat.pdf
+d8885fc568adeb07ab15c93a0ea65fce  Nemes Tihamér 2. 2016/17 3. forduló/Banda/feladat.txt
+67743d2300146e0796c5f055cb0bfa87  Nemes Tihamér 2. 2016/17 3. forduló/Banda/minta.zip
+ce2d1da341d927ac2454cd2c0455b216  Nemes Tihamér 2. 2016/17 3. forduló/Körutak/feladat.pdf
+7303ff9ee3243c925a74829b1199df25  Nemes Tihamér 2. 2016/17 3. forduló/Körutak/feladat.txt
+79dd7218525e41cfee76445c3e897e42  Nemes Tihamér 2. 2016/17 3. forduló/Körutak/minta.zip
+7a58588ca60145d33bc603e36c1f292e  Nemes Tihamér 2. 2016/17 3. forduló/Legnépszerűbb tagok/feladat.pdf
+d3bc1d69c8075be0ab10fb2c2539023c  Nemes Tihamér 2. 2016/17 3. forduló/Legnépszerűbb tagok/feladat.txt
+87b6fb668502fd4d1f8837b9f427ac5c  Nemes Tihamér 2. 2016/17 3. forduló/Legnépszerűbb tagok/minta.zip
+b5951d766a7a96c95310849f570bc859  Nemes Tihamér 2. 2016/17 3. forduló/Tanúk/feladat.pdf
+379847faa219810e847a070ccde7939a  Nemes Tihamér 2. 2016/17 3. forduló/Tanúk/feladat.txt
+f082b25acf15db622065f8728419509f  Nemes Tihamér 2. 2016/17 3. forduló/Tanúk/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 3. forduló/feladat.pas
+37986adaae7014c64e2d7f27996672a4  Nemes Tihamér 2. 2016/17 3. forduló/flist.tsv
+705ccc9245c32fe7ce5300e33ce5875e  Nemes Tihamér 2. 2016/17 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/17 3. forduló/mintafeladat.pdf
 22232db06eceb3a985038215a7a057e0  Nemes Tihamér 2. 2016/2017 2. forduló/Csak egy bolygón volt élet/feladat.pdf
 2e29d74bef6b9c593af14a44cf3d4c74  Nemes Tihamér 2. 2016/2017 2. forduló/Csak egy bolygón volt élet/feladat.txt
 2cceba3a0773740960379821a2c75b24  Nemes Tihamér 2. 2016/2017 2. forduló/Csak egy bolygón volt élet/minta.zip
@@ -2407,6 +2748,43 @@ d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/2017 3. forduló/felada
 10bee0984d737b1d02548ce89b0ebee1  Nemes Tihamér 2. 2016/2017 3. forduló/flist.tsv
 705ccc9245c32fe7ce5300e33ce5875e  Nemes Tihamér 2. 2016/2017 3. forduló/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2016/2017 3. forduló/mintafeladat.pdf
+04533f80309c865406420f0e67f5d3ae  Nemes Tihamér 2. 2017/18 2. forduló/Családfa/feladat.pdf
+f4f2012ee08f875e1ef2badbb5fc9370  Nemes Tihamér 2. 2017/18 2. forduló/Családfa/feladat.txt
+a2e07b2a8d3f4a786357fe1f5f425030  Nemes Tihamér 2. 2017/18 2. forduló/Családfa/minta.zip
+21d95a9e21a1b32e042fbfd963eaab68  Nemes Tihamér 2. 2017/18 2. forduló/Kihalt állatok/feladat.pdf
+54948b61acd718b52abfe688e80d7d7a  Nemes Tihamér 2. 2017/18 2. forduló/Kihalt állatok/feladat.txt
+2fd738daa9f16d241b4586802c4c941b  Nemes Tihamér 2. 2017/18 2. forduló/Kihalt állatok/minta.zip
+cbfaa11bb14c41dd7e081787d521798e  Nemes Tihamér 2. 2017/18 2. forduló/Ponthatárok/feladat.pdf
+e6e321f5aebc977a6be52d12e889f761  Nemes Tihamér 2. 2017/18 2. forduló/Ponthatárok/feladat.txt
+bd445bfd607717c99f02512f468409e5  Nemes Tihamér 2. 2017/18 2. forduló/Ponthatárok/minta.zip
+d4935fd967b6c0cf0c87bd45dc0cb8f7  Nemes Tihamér 2. 2017/18 2. forduló/Zsákfalvak/feladat.pdf
+de11e402ddfed50614d7d81c6fd8825c  Nemes Tihamér 2. 2017/18 2. forduló/Zsákfalvak/feladat.txt
+70acc16cfaa19182955dd0e4897a1c4e  Nemes Tihamér 2. 2017/18 2. forduló/Zsákfalvak/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 2. forduló/feladat.pas
+ab85c377e787975f09117fa27b3c45c5  Nemes Tihamér 2. 2017/18 2. forduló/flist.tsv
+2cb2a6e722be0f10036372d9084953b5  Nemes Tihamér 2. 2017/18 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 2. forduló/mintafeladat.pdf
+fb40ce5aba5f9193cbb84a12da6f7dd9  Nemes Tihamér 2. 2017/18 3. forduló/DNS vizsgálat/feladat.pdf
+7036b3d92f7aa2d38727158a971b7a2e  Nemes Tihamér 2. 2017/18 3. forduló/DNS vizsgálat/feladat.txt
+c467f83530c2d827cf21737613309e37  Nemes Tihamér 2. 2017/18 3. forduló/DNS vizsgálat/minta.zip
+1d7346fcc532e1bb8e5c23445f90f39a  Nemes Tihamér 2. 2017/18 3. forduló/Szókereső/feladat.pdf
+a72986697525e14dbffaee9caf44e0cd  Nemes Tihamér 2. 2017/18 3. forduló/Szókereső/feladat.txt
+8ce10cde8a9383b63918c89f57f2802b  Nemes Tihamér 2. 2017/18 3. forduló/Szókereső/minta.zip
+1456c287cf1171eac22aafa200a3e96d  Nemes Tihamér 2. 2017/18 3. forduló/Találkozások/feladat.pdf
+6e979529a6cad37d8f107cb41e5b057a  Nemes Tihamér 2. 2017/18 3. forduló/Találkozások/feladat.txt
+917d3be86ac59844029304b72c372e52  Nemes Tihamér 2. 2017/18 3. forduló/Találkozások/minta.zip
+b803dd3b3b939fbdf6905e682c055ca6  Nemes Tihamér 2. 2017/18 3. forduló/Vizitúra/feladat.pdf
+b1a2b3ad14511578ad1b8321a811d0e7  Nemes Tihamér 2. 2017/18 3. forduló/Vizitúra/feladat.txt
+97a05805fdf8fc123165bc9dcda78762  Nemes Tihamér 2. 2017/18 3. forduló/Vizitúra/minta.zip
+72649a5c8aabb54c04cfade6d737ade7  Nemes Tihamér 2. 2017/18 3. forduló/Vonatok/feladat.pdf
+03dbff3d45863b87db31ea8d9a2e5fe9  Nemes Tihamér 2. 2017/18 3. forduló/Vonatok/feladat.txt
+e45c142cc65d67f842b4dd269f007f2b  Nemes Tihamér 2. 2017/18 3. forduló/Vonatok/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 3. forduló/feladat.pas
+09abf6a2b6ff3b04755f3a58110cd6a0  Nemes Tihamér 2. 2017/18 3. forduló/flist.tsv
+c2cf7906830e8345f886de0675e7d903  Nemes Tihamér 2. 2017/18 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/18 3. forduló/mintafeladat.pdf
 b8a53509d042faf085cd5afcbdc28a6d  Nemes Tihamér 2. 2017/2018 2. forduló/Családfa/feladat.pdf
 f4f2012ee08f875e1ef2badbb5fc9370  Nemes Tihamér 2. 2017/2018 2. forduló/Családfa/feladat.txt
 eecf8b3e251a2bcd2d4deae4db17d797  Nemes Tihamér 2. 2017/2018 2. forduló/Családfa/minta.zip
@@ -2450,6 +2828,43 @@ d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/2018 3. forduló/felada
 695221ed0929f74e3febf64076230f6b  Nemes Tihamér 2. 2017/2018 3. forduló/flist.tsv
 c2cf7906830e8345f886de0675e7d903  Nemes Tihamér 2. 2017/2018 3. forduló/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2017/2018 3. forduló/mintafeladat.pdf
+8c713a5d054a877fed3be613ff80ebbc  Nemes Tihamér 2. 2018/19 2. forduló/Időjárási csúcsok/feladat.pdf
+78601da25744b2a2f6467eb0358d1da9  Nemes Tihamér 2. 2018/19 2. forduló/Időjárási csúcsok/feladat.txt
+3db1bc23f97aefbf09d9e3ffdf0d29b9  Nemes Tihamér 2. 2018/19 2. forduló/Időjárási csúcsok/minta.zip
+d056ee70ae94fa430227d0c9e03e761c  Nemes Tihamér 2. 2018/19 2. forduló/Központ/feladat.pdf
+ee14e7380a0d4de96e39930a2f7d3b45  Nemes Tihamér 2. 2018/19 2. forduló/Központ/feladat.txt
+a99eec89a9eb737775ac8cc0ba1fb977  Nemes Tihamér 2. 2018/19 2. forduló/Központ/minta.zip
+b898066103dd5c854dab6b4093ad319c  Nemes Tihamér 2. 2018/19 2. forduló/Programgráf/feladat.pdf
+955d51533db2bf5b5f0026ef8b2ece41  Nemes Tihamér 2. 2018/19 2. forduló/Programgráf/feladat.txt
+dcad29d59a0b552e54a558204c35971a  Nemes Tihamér 2. 2018/19 2. forduló/Programgráf/minta.zip
+505956024ed3a62b4763e4fe7da2cdeb  Nemes Tihamér 2. 2018/19 2. forduló/Téglalapok asztalon/feladat.pdf
+070381d3b909a59471a07835c864606a  Nemes Tihamér 2. 2018/19 2. forduló/Téglalapok asztalon/feladat.txt
+ee2eb929d46989d0cd6e2259d34bcb0c  Nemes Tihamér 2. 2018/19 2. forduló/Téglalapok asztalon/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 2. forduló/feladat.pas
+e97dca8bcf014c76c3590a71434a8d78  Nemes Tihamér 2. 2018/19 2. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  Nemes Tihamér 2. 2018/19 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 2. forduló/mintafeladat.pdf
+aed1d7e111ab3da7b9cba6823063e7f6  Nemes Tihamér 2. 2018/19 3. forduló/Körmérközés (25 pont)/feladat.pdf
+3adc3895d7b53c604f97d5ffb89563a8  Nemes Tihamér 2. 2018/19 3. forduló/Körmérközés (25 pont)/feladat.txt
+759a71c3fdac1e576689b00e32c812bb  Nemes Tihamér 2. 2018/19 3. forduló/Körmérközés (25 pont)/minta.zip
+ba6845af9d12c21e95202d686a717958  Nemes Tihamér 2. 2018/19 3. forduló/Maximális növekedés (25 pont)/feladat.pdf
+3918c4fa4497f4d57ad785b702cafb32  Nemes Tihamér 2. 2018/19 3. forduló/Maximális növekedés (25 pont)/feladat.txt
+f4da91df45998aaafc9c0b0029717b32  Nemes Tihamér 2. 2018/19 3. forduló/Maximális növekedés (25 pont)/minta.zip
+68742a6285cdc812c5814ae8ace8f02f  Nemes Tihamér 2. 2018/19 3. forduló/Nyaralás (25 pont)/feladat.pdf
+7cf4c96335899e54e6ca55f0e636bee5  Nemes Tihamér 2. 2018/19 3. forduló/Nyaralás (25 pont)/feladat.txt
+911f0818afc9a502e74e8c8d31a238f4  Nemes Tihamér 2. 2018/19 3. forduló/Nyaralás (25 pont)/minta.zip
+4ac9e8a73910609dbe246f8cec4f5f10  Nemes Tihamér 2. 2018/19 3. forduló/Pontgyűjtő (25 poont)/feladat.pdf
+e9b0665a8f6903df4a5cf199fef29dac  Nemes Tihamér 2. 2018/19 3. forduló/Pontgyűjtő (25 poont)/feladat.txt
+d4e006edf8697804d1cdf95e571d838e  Nemes Tihamér 2. 2018/19 3. forduló/Pontgyűjtő (25 poont)/minta.zip
+29e8c919535e6e6c10d49b84a3026e93  Nemes Tihamér 2. 2018/19 3. forduló/Találós kérdés (25 pont)/feladat.pdf
+536d45d7ad614c37292a17ce0db8b081  Nemes Tihamér 2. 2018/19 3. forduló/Találós kérdés (25 pont)/feladat.txt
+86300cef9b7aaf29c3c01842994d3fd3  Nemes Tihamér 2. 2018/19 3. forduló/Találós kérdés (25 pont)/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 3. forduló/feladat.pas
+2d670adf05e63ae85f61f25bdd743d34  Nemes Tihamér 2. 2018/19 3. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  Nemes Tihamér 2. 2018/19 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Nemes Tihamér 2. 2018/19 3. forduló/mintafeladat.pdf
 a4eece5d775bc9f3a3ca86e3cf74d24c  OKTV 2016/2017 2. forduló/Gyémántok/feladat.pdf
 152e65e1065a7614941ca292b44c0cfc  OKTV 2016/2017 2. forduló/Gyémántok/feladat.txt
 f63450540c5b6d85ddd0bc7f3b6f14b7  OKTV 2016/2017 2. forduló/Gyémántok/minta.zip
@@ -2534,6 +2949,46 @@ d41d8cd98f00b204e9800998ecf8427e  OKTV 2017/2018 3. forduló/feladat.pas
 a36a249b2372abc57113ca887290cc32  OKTV 2017/2018 3. forduló/flist.tsv
 14b5a1e32506ecb868697c44160cea67  OKTV 2017/2018 3. forduló/leiras.txt
 d41d8cd98f00b204e9800998ecf8427e  OKTV 2017/2018 3. forduló/mintafeladat.pdf
+340d631153d21825ad4c9ead722dc6ce  OKTV 2018/19 2. forduló/Filmgyártás/feladat.pdf
+eda323aa767e0a75637d048f89ca7ed1  OKTV 2018/19 2. forduló/Filmgyártás/feladat.txt
+bef48c9a27bdc5ef32ef4475a48d5ff2  OKTV 2018/19 2. forduló/Filmgyártás/minta.zip
+95e956c891cd8612d4714a388d683499  OKTV 2018/19 2. forduló/Szavak/feladat.pdf
+badf52835a6e113e659f78f494b17482  OKTV 2018/19 2. forduló/Szavak/feladat.txt
+bd4133a6389f11946aac4f89ea1a1f1c  OKTV 2018/19 2. forduló/Szavak/minta.zip
+75ea2ac1a69abc7c28f7be0a371c23cf  OKTV 2018/19 2. forduló/Vásár/feladat.pdf
+f97f80274ba2fc8163450abd45272802  OKTV 2018/19 2. forduló/Vásár/feladat.txt
+a7712125168a9ba2ff52f58f34f0c6a1  OKTV 2018/19 2. forduló/Vásár/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 2. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 2. forduló/feladat.pas
+ce55fa042f9e001fc867f0f7fc3cf32d  OKTV 2018/19 2. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  OKTV 2018/19 2. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 2. forduló/mintafeladat.pdf
+288cc8da266f64ba66e11cf430c93748  OKTV 2018/19 2. forduló/Üres téglalap/feladat.pdf
+ef78dc4fe06ba45111f269ccc4037fd1  OKTV 2018/19 2. forduló/Üres téglalap/feladat.txt
+e8a7ee21cde96876f40c5e1556f26bef  OKTV 2018/19 2. forduló/Üres téglalap/minta.zip
+2fb8c80e0cf86aa1c7bfb8999c35cf44  OKTV 2018/19 3. forduló/Fesztivál (16 pont)/feladat.pdf
+e3308844730173f605527a225802866b  OKTV 2018/19 3. forduló/Fesztivál (16 pont)/feladat.txt
+6dc578797b9f66898e1a317c17cf1075  OKTV 2018/19 3. forduló/Fesztivál (16 pont)/minta.zip
+8285cc7492e372337f899b810050d1e4  OKTV 2018/19 3. forduló/Határidős ütemezés (20 pont)/feladat.pdf
+27e184b560ad33dc974718d05a85f36f  OKTV 2018/19 3. forduló/Határidős ütemezés (20 pont)/feladat.txt
+75c52671c0e1d2704e0224c37fcbda2e  OKTV 2018/19 3. forduló/Határidős ütemezés (20 pont)/minta.zip
+7ce8b05557100cf1ac927f37dd5a68f1  OKTV 2018/19 3. forduló/Karavánok (20 pont)/feladat.pdf
+6caab0682c6eec76599ba1c9c2e0fa7d  OKTV 2018/19 3. forduló/Karavánok (20 pont)/feladat.txt
+48bc731b3ec7539ad0817ac5bad047f5  OKTV 2018/19 3. forduló/Karavánok (20 pont)/minta.zip
+c5d54e79925212a6a338690d9700042e  OKTV 2018/19 3. forduló/Keresősorozatok (16 pont)/feladat.pdf
+59f435df47acb37d3422f42a551c1575  OKTV 2018/19 3. forduló/Keresősorozatok (16 pont)/feladat.txt
+25b0549541de717369185a0652596653  OKTV 2018/19 3. forduló/Keresősorozatok (16 pont)/minta.zip
+8be8b5c52896324828e6e00837386e8b  OKTV 2018/19 3. forduló/Konvex négyszög (35 pont)/feladat.pdf
+3380340509e46f26cc9ee324fbdb58c5  OKTV 2018/19 3. forduló/Konvex négyszög (35 pont)/feladat.txt
+db0a36f4ce1208560b90430d5d0f755e  OKTV 2018/19 3. forduló/Konvex négyszög (35 pont)/minta.zip
+9c32458b4d30486210f03ae0a22cb81b  OKTV 2018/19 3. forduló/Vizsga (13 pont)/feladat.pdf
+87094663ca9b3f0c9ef5bb8cac068ccb  OKTV 2018/19 3. forduló/Vizsga (13 pont)/feladat.txt
+c74e11de5edb2c4f2c0c34e432c30812  OKTV 2018/19 3. forduló/Vizsga (13 pont)/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 3. forduló/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 3. forduló/feladat.pas
+e1248001fb5b8034a5fa20dfef8c4d7c  OKTV 2018/19 3. forduló/flist.tsv
+db67280d2b64ee608ae36e22cc5adb31  OKTV 2018/19 3. forduló/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  OKTV 2018/19 3. forduló/mintafeladat.pdf
 e40296bcda9f693c982bad852f99b171  Programozási tételek: eldöntés/Buszmenetrend */feladat.pdf
 e996fc15527dead6761082195194079f  Programozási tételek: eldöntés/Buszmenetrend */feladat.txt
 4d113372e6fdf22ae5f085146fe1952c  Programozási tételek: eldöntés/Buszmenetrend */minta.zip
@@ -3923,6 +4378,274 @@ e61edbaf4bc554bc31390d4feb2ea328  Sorozatok/Átló */minta.zip
 c7987462828e018e33ecf7109146fb43  Sorozatok/Étterem **/feladat.pdf
 c8978ba011506eeaf3f9b547ae9106d3  Sorozatok/Étterem **/feladat.txt
 2eb3882900f9d24dfde7d08792941f98  Sorozatok/Étterem **/minta.zip
+62053a1b3dec42ca8c2404369e7ac861  Szakmai emelt szintű érettségi feladatok/Amőba - 2013. október/feladat.pdf
+3d0914d098cf6700183267e89a7319b3  Szakmai emelt szintű érettségi feladatok/Amőba - 2013. október/feladat.txt
+56ac43953eadde4e2730195f5f542f19  Szakmai emelt szintű érettségi feladatok/Amőba - 2013. október/minta.zip
+110b9f9a5604bb1933e41f98eaf31a6a  Szakmai emelt szintű érettségi feladatok/Az ország karácsonyfája/feladat.pdf
+05341ed01515e046776f5efbe5131737  Szakmai emelt szintű érettségi feladatok/Az ország karácsonyfája/feladat.txt
+32e00e39f207f86fda3692e0f105a0a5  Szakmai emelt szintű érettségi feladatok/Az ország karácsonyfája/minta.zip
+c47c49e11396565036a174cfd2533e7d  Szakmai emelt szintű érettségi feladatok/Betűkeverés - 2011. október/feladat.pdf
+3d7ddc9af057c5120e0c4163918ec0ec  Szakmai emelt szintű érettségi feladatok/Betűkeverés - 2011. október/feladat.txt
+b43fa6a11d23d7a5c34721e0b6f30956  Szakmai emelt szintű érettségi feladatok/Betűkeverés - 2011. október/minta.zip
+39ac60d15c11716f1403be6f81f7d9cc  Szakmai emelt szintű érettségi feladatok/Bástyák - 2016. október/feladat.pdf
+9eb40b8a054df83b2df21fbce59fee47  Szakmai emelt szintű érettségi feladatok/Bástyák - 2016. október/feladat.txt
+59c2bbf0fbd21319cc1a40f934e3a6f9  Szakmai emelt szintű érettségi feladatok/Bástyák - 2016. október/minta.zip
+6190216101044b33718d5f53af9be996  Szakmai emelt szintű érettségi feladatok/Bővelkedő számok/feladat.pdf
+b5cedeb2b5193a020e6e8183e67cb0e2  Szakmai emelt szintű érettségi feladatok/Bővelkedő számok/feladat.txt
+b3a1774f29c23e59ff9c0a9743a8ebc7  Szakmai emelt szintű érettségi feladatok/Bővelkedő számok/minta.zip
+ff8fffbec6acb8d2590642e9b47e88d1  Szakmai emelt szintű érettségi feladatok/Célbadobás - 2008. október - emelt/feladat.pdf
+5824569a3dbd6b0c98d8883a4b1fb24a  Szakmai emelt szintű érettségi feladatok/Célbadobás - 2008. október - emelt/feladat.txt
+247d917bb92a8cb8e2abfcd04ae9b3f7  Szakmai emelt szintű érettségi feladatok/Célbadobás - 2008. október - emelt/minta.zip
+0fc096f7a9b3e3249010fe0c60f3d2b0  Szakmai emelt szintű érettségi feladatok/FAT fájlrendszer- 2006. október/feladat.pdf
+4c893e8f3a7a8e343de13c3659858c3a  Szakmai emelt szintű érettségi feladatok/FAT fájlrendszer- 2006. október/feladat.txt
+be5bfbd4d7966f1f310bc861381fd6e9  Szakmai emelt szintű érettségi feladatok/FAT fájlrendszer- 2006. október/minta.zip
+492b2f447b2dc012cc56e445676eccaa  Szakmai emelt szintű érettségi feladatok/Fej vagy írás - 2006. január/feladat.pdf
+4eeb68da3f7dd524ae38b82c60b3c4bc  Szakmai emelt szintű érettségi feladatok/Fej vagy írás - 2006. január/feladat.txt
+c22fb25d6c41f08ea388faf380c63ff1  Szakmai emelt szintű érettségi feladatok/Fej vagy írás - 2006. január/minta.zip
+756439e1e35bf7b53c84e87a34312835  Szakmai emelt szintű érettségi feladatok/Felesleges szóközök/feladat.pdf
+cdb7c4b07123ed811edb2713e1381045  Szakmai emelt szintű érettségi feladatok/Felesleges szóközök/feladat.txt
+b4443c20ed63a06c978ee1c78ffc4fae  Szakmai emelt szintű érettségi feladatok/Felesleges szóközök/minta.zip
+18ba9d27605d166c676a9c1c620bf652  Szakmai emelt szintű érettségi feladatok/Ferde hajítás - 2010. október/feladat.pdf
+24ccf04c358751d6357f796d8aedb50d  Szakmai emelt szintű érettségi feladatok/Ferde hajítás - 2010. október/feladat.txt
+3578d5fba6a79ce8b594edaf17e789e5  Szakmai emelt szintű érettségi feladatok/Ferde hajítás - 2010. október/minta.zip
+5fef9e73aa27689175db252efbca7aac  Szakmai emelt szintű érettségi feladatok/Futóverseny - 2008. május - emelt/feladat.pdf
+05c2916920334c27843f9cfda3975eaf  Szakmai emelt szintű érettségi feladatok/Futóverseny - 2008. május - emelt/feladat.txt
+db3711583ce5293f1cd3767481abe578  Szakmai emelt szintű érettségi feladatok/Futóverseny - 2008. május - emelt/minta.zip
+06153eae1c5226075cc8684a0cb066c7  Szakmai emelt szintű érettségi feladatok/Gazdaság - 2015. május/feladat.pdf
+f2617ab2308d5b87edac254441f0b487  Szakmai emelt szintű érettségi feladatok/Gazdaság - 2015. május/feladat.txt
+f70be229489fcd4ffcd55c289277ec80  Szakmai emelt szintű érettségi feladatok/Gazdaság - 2015. május/minta.zip
+8149468e4ef5bdbddc68d8315569776c  Szakmai emelt szintű érettségi feladatok/Géza csempézik - 2005. május/feladat.pdf
+2fd92a454daf50156a61fed2789dc36e  Szakmai emelt szintű érettségi feladatok/Géza csempézik - 2005. május/feladat.txt
+55f0f143d3905616de395b2eb96f55eb  Szakmai emelt szintű érettségi feladatok/Géza csempézik - 2005. május/minta.zip
+e59a9993bae3a2e11d44a41899ac4617  Szakmai emelt szintű érettségi feladatok/Hangya barangolás/feladat.pdf
+d28f865239a57fc331c055325c18f355  Szakmai emelt szintű érettségi feladatok/Hangya barangolás/feladat.txt
+4e74572d66ecca48562668c694b12b8f  Szakmai emelt szintű érettségi feladatok/Hangya barangolás/minta.zip
+635f5f377b5fbe32b2e7ccaaae427a13  Szakmai emelt szintű érettségi feladatok/Helyes kifejezés- 2006. május/feladat.pdf
+f4cc48b9d8826f758e36bdbb4b25fa7f  Szakmai emelt szintű érettségi feladatok/Helyes kifejezés- 2006. május/feladat.txt
+5ba398c6c76abc235f77cbd23fd6c07e  Szakmai emelt szintű érettségi feladatok/Helyes kifejezés- 2006. május/minta.zip
+f54dd56a7a84d93ab7533ca41adb4818  Szakmai emelt szintű érettségi feladatok/Háromszög szerkeszthetősége/feladat.pdf
+e03a1dd84725c51b4c4270e5e211783b  Szakmai emelt szintű érettségi feladatok/Háromszög szerkeszthetősége/feladat.txt
+1bedfde348d9e4bfd973606a0626144c  Szakmai emelt szintű érettségi feladatok/Háromszög szerkeszthetősége/minta.zip
+80c8533bd17b026778b42092dd74cefb  Szakmai emelt szintű érettségi feladatok/Háromszögek - 2012. október/feladat.pdf
+0abf181b97fd5df7cb508618bf9a4932  Szakmai emelt szintű érettségi feladatok/Háromszögek - 2012. október/feladat.txt
+4993977dca2b95589e6e0681b3f2dbd9  Szakmai emelt szintű érettségi feladatok/Háromszögek - 2012. október/minta.zip
+7f69320a709c82df1bf2b20b79fc2b43  Szakmai emelt szintű érettségi feladatok/Inga - 2008. május - emelt/feladat.pdf
+b7dc5714014ca5367cc0dd61a8ec3f96  Szakmai emelt szintű érettségi feladatok/Inga - 2008. május - emelt/feladat.txt
+e82b89d97edde5eefb1362192f14ace9  Szakmai emelt szintű érettségi feladatok/Inga - 2008. május - emelt/minta.zip
+c4ca3e950da50bf5f966e12066c73f11  Szakmai emelt szintű érettségi feladatok/Kerékpárverseny - 2010. október/feladat.pdf
+3a88a4fdddf123432b18cb7f287d8cad  Szakmai emelt szintű érettségi feladatok/Kerékpárverseny - 2010. október/feladat.txt
+59b539e05472e3dfec6062200ebfff43  Szakmai emelt szintű érettségi feladatok/Kerékpárverseny - 2010. október/minta.zip
+3be26ffd102ae93a0beae9097785e57f  Szakmai emelt szintű érettségi feladatok/Kockadobás - 2007. május/feladat.pdf
+7de6d0d0f6d05a0d73951bd5fb0af5fc  Szakmai emelt szintű érettségi feladatok/Kockadobás - 2007. május/feladat.txt
+bc4859652ed08e52c6bb4cdc2b967f7c  Szakmai emelt szintű érettségi feladatok/Kockadobás - 2007. május/minta.zip
+571758b149f507640f425f7729d3f4b0  Szakmai emelt szintű érettségi feladatok/Kockahajtogatás - 2007. május/feladat.pdf
+009f1669f188e29e4b0169d97002a96e  Szakmai emelt szintű érettségi feladatok/Kockahajtogatás - 2007. május/feladat.txt
+8438b8c772d85e0375a4d2167dc00517  Szakmai emelt szintű érettségi feladatok/Kockahajtogatás - 2007. május/minta.zip
+c669af5acede53965b49261ff726c215  Szakmai emelt szintű érettségi feladatok/Körlemez - 2011. október/feladat.pdf
+ec8809e0f7ce2602e0bed4afd3d07691  Szakmai emelt szintű érettségi feladatok/Körlemez - 2011. október/feladat.txt
+16436cd3d2f980117a5b9cca02601364  Szakmai emelt szintű érettségi feladatok/Körlemez - 2011. október/minta.zip
+a0e96b330030fe5c6cec2c7731f5dae6  Szakmai emelt szintű érettségi feladatok/Körök - 2013. május/feladat.pdf
+4dcf3f6dd34d52508604e1a8d6a7fc75  Szakmai emelt szintű érettségi feladatok/Körök - 2013. május/feladat.txt
+a60beaa4a241b2a2b35ef1687b80849c  Szakmai emelt szintű érettségi feladatok/Körök - 2013. május/minta.zip
+f474e7022f0f293b4bc0ab715658ffd5  Szakmai emelt szintű érettségi feladatok/Legkisebb terület - 2005. május/feladat.pdf
+fc0be2348d22ace307d9b27c7579ab52  Szakmai emelt szintű érettségi feladatok/Legkisebb terület - 2005. május/feladat.txt
+6c52e5a2be9ce4e6e9f2a82519e11e76  Szakmai emelt szintű érettségi feladatok/Legkisebb terület - 2005. május/minta.zip
+ff2ae28c1abef22775c2e97621b32099  Szakmai emelt szintű érettségi feladatok/Lokális csúcsok - 2007. május/feladat.pdf
+356e386aa1d6d6f74dc85e1e3a4e1ad1  Szakmai emelt szintű érettségi feladatok/Lokális csúcsok - 2007. május/feladat.txt
+e20ab9a7781af24f3324f13566520e53  Szakmai emelt szintű érettségi feladatok/Lokális csúcsok - 2007. május/minta.zip
+c52b083f6935555da98f56c8af5454a3  Szakmai emelt szintű érettségi feladatok/Lotto - 2008. október - emelt/feladat.pdf
+f84483a7aaefc19757e1ccce0da4cf07  Szakmai emelt szintű érettségi feladatok/Lotto - 2008. október - emelt/feladat.txt
+bcaf9ff26b52619c271299aacca01fb9  Szakmai emelt szintű érettségi feladatok/Lotto - 2008. október - emelt/minta.zip
+c9baa187bfec297aba56a84356a742d4  Szakmai emelt szintű érettségi feladatok/Lottóhúzás - 2006. február/feladat.pdf
+622790e107878ab940bf408eb0316cae  Szakmai emelt szintű érettségi feladatok/Lottóhúzás - 2006. február/feladat.txt
+ed5e3c20b5f896146b67947c750a5dda  Szakmai emelt szintű érettségi feladatok/Lottóhúzás - 2006. február/minta.zip
+8ad47406c0deb01e3952d648c27d1d1d  Szakmai emelt szintű érettségi feladatok/Madármegfigyelés - 2008. október - emelt/feladat.pdf
+09d3fe7faa7794b41d177ad0ada5eaa9  Szakmai emelt szintű érettségi feladatok/Madármegfigyelés - 2008. október - emelt/feladat.txt
+72ee6737ff1e962782b7e92c5e14321e  Szakmai emelt szintű érettségi feladatok/Madármegfigyelés - 2008. október - emelt/minta.zip
+5bd4c6b2780063d4d7ffa479320e80a7  Szakmai emelt szintű érettségi feladatok/Másodfokú egyenlet - 2006. február/feladat.pdf
+2cfbd467ad54b89cc08c38d005b14948  Szakmai emelt szintű érettségi feladatok/Másodfokú egyenlet - 2006. február/feladat.txt
+4128422b0cffdc58db256645c43b1973  Szakmai emelt szintű érettségi feladatok/Másodfokú egyenlet - 2006. február/minta.zip
+90f3ffbec713c8b87c1e8966fb3e89e7  Szakmai emelt szintű érettségi feladatok/Mérések/feladat.pdf
+045491cbc8c46922c5b69345a5185034  Szakmai emelt szintű érettségi feladatok/Mérések/feladat.txt
+a774147d143e9c3b43ed7eae89ac5570  Szakmai emelt szintű érettségi feladatok/Mérések/minta.zip
+fca0f523f7d84616946b591317803c6f  Szakmai emelt szintű érettségi feladatok/Napok sorrendje - 2005. május/feladat.pdf
+765b941c490ddb65ada38480c8e03b74  Szakmai emelt szintű érettségi feladatok/Napok sorrendje - 2005. május/feladat.txt
+75c341dfc22ce0c71e9b0859c856c250  Szakmai emelt szintű érettségi feladatok/Napok sorrendje - 2005. május/minta.zip
+fb13a2ebff4003a6917c3f9799e954a9  Szakmai emelt szintű érettségi feladatok/Osztálypénztár - 2011. május/feladat.pdf
+2f2dea1b5496a2f3a0fa9263d64d8120  Szakmai emelt szintű érettségi feladatok/Osztálypénztár - 2011. május/feladat.txt
+e14dfdc78c4971dc840b19fe52c222ba  Szakmai emelt szintű érettségi feladatok/Osztálypénztár - 2011. május/minta.zip
+2b2bd1d05603855d3814c9406758ffe8  Szakmai emelt szintű érettségi feladatok/Pontok - 2015. október/feladat.pdf
+f78cf33e745b309a7fd64f6118b58378  Szakmai emelt szintű érettségi feladatok/Pontok - 2015. október/feladat.txt
+4199de3eb7ee8084b9c0bd0ec02164da  Szakmai emelt szintű érettségi feladatok/Pontok - 2015. október/minta.zip
+8b388a7f9cc79dc00572cb8dda815744  Szakmai emelt szintű érettségi feladatok/Részvények - 2008. május - emelt/feladat.pdf
+50432c5010dc563e79fae3f5c62230de  Szakmai emelt szintű érettségi feladatok/Részvények - 2008. május - emelt/feladat.txt
+e6ebd69802ac6537be49c0a5e4a274d6  Szakmai emelt szintű érettségi feladatok/Részvények - 2008. május - emelt/minta.zip
+6723186e8f60f25a63d2f7a9c248283f  Szakmai emelt szintű érettségi feladatok/Római számok - 2011. május/feladat.pdf
+d34be310248e93a5395b58bb139d291f  Szakmai emelt szintű érettségi feladatok/Római számok - 2011. május/feladat.txt
+f946fd7c517154c8c9daaced7017ce69  Szakmai emelt szintű érettségi feladatok/Római számok - 2011. május/minta.zip
+a4f5f47367346be1b0e307dca157a06a  Szakmai emelt szintű érettségi feladatok/Szakaszok - 2012. május/feladat.pdf
+d24e6d42c83ee3d17537f73c21de2f73  Szakmai emelt szintű érettségi feladatok/Szakaszok - 2012. május/feladat.txt
+2bd997585427bba042daa735442d4f74  Szakmai emelt szintű érettségi feladatok/Szakaszok - 2012. május/minta.zip
+66c592836c468c7ee443214ca197817e  Szakmai emelt szintű érettségi feladatok/Szókereső - 2016. május/feladat.pdf
+54bf1b82f47162af4eb34aabb8c87869  Szakmai emelt szintű érettségi feladatok/Szókereső - 2016. május/feladat.txt
+ec80c4c0085e6b3cc4a5c560c34db753  Szakmai emelt szintű érettségi feladatok/Szókereső - 2016. május/minta.zip
+248655c9aef93727c15767e928c965b7  Szakmai emelt szintű érettségi feladatok/Tenisz adogatógép - 2011. május/feladat.pdf
+593c5488bbf1a80fdf8a19ba5dfa454a  Szakmai emelt szintű érettségi feladatok/Tenisz adogatógép - 2011. május/feladat.txt
+8886209c7dec45f95b80d5d2194f38dc  Szakmai emelt szintű érettségi feladatok/Tenisz adogatógép - 2011. május/minta.zip
+f386ed4686d702e81ca5a86ea208d403  Szakmai emelt szintű érettségi feladatok/Torpedó - 2014. május/feladat.pdf
+3388278aef4786888618812b8e5159c1  Szakmai emelt szintű érettségi feladatok/Torpedó - 2014. május/feladat.txt
+079d8405fd6d11af82d5e5cd16e76d80  Szakmai emelt szintű érettségi feladatok/Torpedó - 2014. május/minta.zip
+f5b27d671d426048c336764b4c5df171  Szakmai emelt szintű érettségi feladatok/Traffipax - 2010. október/feladat.pdf
+69bf706d34712a6460761055c9bb466a  Szakmai emelt szintű érettségi feladatok/Traffipax - 2010. október/feladat.txt
+14663075a92b6708b908bbca03efb3d5  Szakmai emelt szintű érettségi feladatok/Traffipax - 2010. október/minta.zip
+53fd4ed99b7f905047a9f9911a578c38  Szakmai emelt szintű érettségi feladatok/Txt2Srt - 2017. május/feladat.pdf
+e2879ea10391e5de4427d1ae24b9f24b  Szakmai emelt szintű érettségi feladatok/Txt2Srt - 2017. május/feladat.txt
+90a7b53265bf41d00dfc2d6ccfe45269  Szakmai emelt szintű érettségi feladatok/Txt2Srt - 2017. május/minta.zip
+ad0c1e7bd5770a7a90e1c51aa4b4839f  Szakmai emelt szintű érettségi feladatok/Török szultán- 2006. május/feladat.pdf
+144fcfcd0f4cca0b84e335225022f91e  Szakmai emelt szintű érettségi feladatok/Török szultán- 2006. május/feladat.txt
+20c523aefb3d849b9a6cfd3adfa64ded  Szakmai emelt szintű érettségi feladatok/Török szultán- 2006. május/minta.zip
+5e05c72e1b81db9e22f4074c76d52c62  Szakmai emelt szintű érettségi feladatok/Tőzsdei stabilitás- 2006. május/feladat.pdf
+4d7b882b4bfd05a1af01101aff8120df  Szakmai emelt szintű érettségi feladatok/Tőzsdei stabilitás- 2006. május/feladat.txt
+301f7e367a1044b4d932ecf76dcf101f  Szakmai emelt szintű érettségi feladatok/Tőzsdei stabilitás- 2006. május/minta.zip
+f765dba37e175719760055dc5d0cc4bb  Szakmai emelt szintű érettségi feladatok/Zárójelek- 2006. október emelt/feladat.pdf
+9f96bf9055c95cdfd0dbacbd3957a8b2  Szakmai emelt szintű érettségi feladatok/Zárójelek- 2006. október emelt/feladat.txt
+a39ace25734a281aed32b47c7a143ddb  Szakmai emelt szintű érettségi feladatok/Zárójelek- 2006. október emelt/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Szakmai emelt szintű érettségi feladatok/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Szakmai emelt szintű érettségi feladatok/feladat.pas
+936cc05cb59f805feb4e4cd3b7d94f5b  Szakmai emelt szintű érettségi feladatok/flist.tsv
+fa4f956751b2a54c6996254979522acb  Szakmai emelt szintű érettségi feladatok/legporosabb napok - 2005. május/feladat.pdf
+1c24e560d42a8dca16934d75236e45be  Szakmai emelt szintű érettségi feladatok/legporosabb napok - 2005. május/feladat.txt
+5399afcc7eb76b622bb59596a5d20578  Szakmai emelt szintű érettségi feladatok/legporosabb napok - 2005. május/minta.zip
+8220d861c8ef3d4f2963cec573d725b3  Szakmai emelt szintű érettségi feladatok/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Szakmai emelt szintű érettségi feladatok/mintafeladat.pdf
+d5ee9049be5f0bb2926f3329904ccdbf  Szakmai emelt szintű érettségi feladatok/Átlagsebesség - 2005. május/feladat.pdf
+902103f26f08b043d6c6a9524248ac23  Szakmai emelt szintű érettségi feladatok/Átlagsebesség - 2005. május/feladat.txt
+871027fd62601c1b5351aa79a05b9c17  Szakmai emelt szintű érettségi feladatok/Átlagsebesség - 2005. május/minta.zip
+b916268d357dade942b4d0e263eef346  Szakmai emelt szintű érettségi feladatok/Érettségi- 2006. október/feladat.pdf
+da76b8aeb0ff73c1b99090aaf5832db1  Szakmai emelt szintű érettségi feladatok/Érettségi- 2006. október/feladat.txt
+cb08182ee312fe1a0701a83ad18fbbf8  Szakmai emelt szintű érettségi feladatok/Érettségi- 2006. október/minta.zip
+4c8bac2d089b1d218e1a2f9016f98273  Szakmai emelt szintű érettségi feladatok/Összetett szavak - 2005. május/feladat.pdf
+1cd71b78183f57eb1007371a881f5205  Szakmai emelt szintű érettségi feladatok/Összetett szavak - 2005. május/feladat.txt
+96ed08310d5616ec01400962d8c6c820  Szakmai emelt szintű érettségi feladatok/Összetett szavak - 2005. május/minta.zip
+0e4c051ba9ff1a773bbad5a40160240c  Szakmai középszintű érettségi feladatok/ABC- 2006. május/feladat.pdf
+daa346bc1554d2aace4d58a595eac703  Szakmai középszintű érettségi feladatok/ABC- 2006. május/feladat.txt
+c15dcae39890efab91d7c0088cbc33ec  Szakmai középszintű érettségi feladatok/ABC- 2006. május/minta.zip
+f17eaeb118df5ab05eb8df50a7b37a84  Szakmai középszintű érettségi feladatok/Armstrong szám- 2006. október/feladat.pdf
+1515ae4980a7bcdefdd95d2aa5c4d492  Szakmai középszintű érettségi feladatok/Armstrong szám- 2006. október/feladat.txt
+8cc08c924cb2456dd899b9db36f50eec  Szakmai középszintű érettségi feladatok/Armstrong szám- 2006. október/minta.zip
+24c87233796008c2a1ab073f90fa8db7  Szakmai középszintű érettségi feladatok/Autó - 2007. október - közép/feladat.pdf
+94baf238200c27880dff71dba6d87a25  Szakmai középszintű érettségi feladatok/Autó - 2007. október - közép/feladat.txt
+99e24235663defad8344fe356a2354db  Szakmai középszintű érettségi feladatok/Autó - 2007. október - közép/minta.zip
+6ed8b60a2de916eb4b346f8b40b23645  Szakmai középszintű érettségi feladatok/Barkochba - 2010. október/feladat.pdf
+8238a2cad8dd4d384596b39e1fbb8aa1  Szakmai középszintű érettségi feladatok/Barkochba - 2010. október/feladat.txt
+80433e3bebc397bb21c894880ad613f7  Szakmai középszintű érettségi feladatok/Barkochba - 2010. október/minta.zip
+75dad8f5c0f18b4712a867b544ba3ce4  Szakmai középszintű érettségi feladatok/Barátságos számok - 2011. október/feladat.pdf
+0a324b2056bb766b52bc36a45c6b3869  Szakmai középszintű érettségi feladatok/Barátságos számok - 2011. október/feladat.txt
+5bf9662b68ac7d96a5c63c0d469ef456  Szakmai középszintű érettségi feladatok/Barátságos számok - 2011. október/minta.zip
+ae19798d989742985fefcaf4528ad0cc  Szakmai középszintű érettségi feladatok/Bővelkedő számok/feladat.pdf
+f5e44b85633c3e728bdcf09824f6c297  Szakmai középszintű érettségi feladatok/Bővelkedő számok/feladat.txt
+49f941f57707a9a146c705bcb2bd336a  Szakmai középszintű érettségi feladatok/Bővelkedő számok/minta.zip
+21fafcb91d0e772f4b382aaf9109aff9  Szakmai középszintű érettségi feladatok/Csillagvizsgáló - 2011. május/feladat.pdf
+be0297f52b97d61ec3cf47340aa63de3  Szakmai középszintű érettségi feladatok/Csillagvizsgáló - 2011. május/feladat.txt
+dc99ec830a328204fda3c7de4ecb2183  Szakmai középszintű érettségi feladatok/Csillagvizsgáló - 2011. május/minta.zip
+9946ba1f0123f92d8c1995ef10e90606  Szakmai középszintű érettségi feladatok/Dolgozat - 2011. október/feladat.pdf
+77cd384d7d71800207b183ef96d6d02e  Szakmai középszintű érettségi feladatok/Dolgozat - 2011. október/feladat.txt
+18ea5bf5c9d8cf90c8acd7561cd34ff7  Szakmai középszintű érettségi feladatok/Dolgozat - 2011. október/minta.zip
+676fc6485bcfa4f545d1e7c5efb1a526  Szakmai középszintű érettségi feladatok/Dolgozat/feladat.pdf
+c0062597d234faab4aa58d59c5537e1c  Szakmai középszintű érettségi feladatok/Dolgozat/feladat.txt
+143990f0b10e7352d29da06dabac45e2  Szakmai középszintű érettségi feladatok/Dolgozat/minta.zip
+03c962cb6b1c91cb565ab1931b569a8b  Szakmai középszintű érettségi feladatok/Euklideszi algoritmus - 2010. május/feladat.pdf
+244f6eb3d21697653d9c3eeca6364aba  Szakmai középszintű érettségi feladatok/Euklideszi algoritmus - 2010. május/feladat.txt
+e7547ceb41c4a9cfad5a7f2cbc3e91c2  Szakmai középszintű érettségi feladatok/Euklideszi algoritmus - 2010. május/minta.zip
+3b94e242d88f39020e5b8fd376e0a337  Szakmai középszintű érettségi feladatok/Fagy - 2009. május/feladat.pdf
+b9c5c799f1451f57398a872f5b6648cf  Szakmai középszintű érettségi feladatok/Fagy - 2009. május/feladat.txt
+e227d7ad3c73957c26f300fba77ce5e8  Szakmai középszintű érettségi feladatok/Fagy - 2009. május/minta.zip
+62d845e0951114aa2032d3626577e68d  Szakmai középszintű érettségi feladatok/Helsinki 1952 - 2017. május/feladat.pdf
+679d1060e1a0c81c7e126682e7b04e7c  Szakmai középszintű érettségi feladatok/Helsinki 1952 - 2017. május/feladat.txt
+2ec2c031f9d0b6afb831b62b83c1bf7f  Szakmai középszintű érettségi feladatok/Helsinki 1952 - 2017. május/minta.zip
+d2530e397f0d8a869059addf415788db  Szakmai középszintű érettségi feladatok/Hőingadozás - 2005. május/feladat.pdf
+e05109ea304099c150a0f40470edba67  Szakmai középszintű érettségi feladatok/Hőingadozás - 2005. május/feladat.txt
+f36809aa1dfb1a52a68b9ad9b8e16a0e  Szakmai középszintű érettségi feladatok/Hőingadozás - 2005. május/minta.zip
+572180a59f1a754c6c73696aa43995b2  Szakmai középszintű érettségi feladatok/Keszthely Triatlon - 2015. május/feladat.pdf
+ad9477cc1163596acd85ecf5cd46b135  Szakmai középszintű érettségi feladatok/Keszthely Triatlon - 2015. május/feladat.txt
+83f75dd451fa061f0226b007ea704890  Szakmai középszintű érettségi feladatok/Keszthely Triatlon - 2015. május/minta.zip
+c345e040b8467eb58b29f1f9f935d4c2  Szakmai középszintű érettségi feladatok/Kettes számrendszer - 2011. május/feladat.pdf
+06b1f0958cee2df65690f0919cd606af  Szakmai középszintű érettségi feladatok/Kettes számrendszer - 2011. május/feladat.txt
+7aa03ae33d588ab15ac97813abfc9923  Szakmai középszintű érettségi feladatok/Kettes számrendszer - 2011. május/minta.zip
+c9ded74c18a2eaa690637c1a1c02d97f  Szakmai középszintű érettségi feladatok/Körök - 2005. május/feladat.pdf
+5dddb3700f87d42f5f2804c697d30d60  Szakmai középszintű érettségi feladatok/Körök - 2005. május/feladat.txt
+fc11174b9eba9013e8461ceea80ce7d3  Szakmai középszintű érettségi feladatok/Körök - 2005. május/minta.zip
+0ae00053d8907e14b19f3e074b94bbcd  Szakmai középszintű érettségi feladatok/Kő-papír-olló - 2014. október/feladat.pdf
+e6c214dfa2dc95ee2d4ce90408cdb438  Szakmai középszintű érettségi feladatok/Kő-papír-olló - 2014. október/feladat.txt
+b8c911b03d26d917d519c47d6be5fb54  Szakmai középszintű érettségi feladatok/Kő-papír-olló - 2014. október/minta.zip
+caebf09efaed173f4fd373ccc731846e  Szakmai középszintű érettségi feladatok/Olimpia - 2014. május/feladat.pdf
+97a5e7d7b40d2fc70158bc6c0d56c2ba  Szakmai középszintű érettségi feladatok/Olimpia - 2014. május/feladat.txt
+aa5e5f46094e0a9e89a8cf0bec0194a7  Szakmai középszintű érettségi feladatok/Olimpia - 2014. május/minta.zip
+c335015d86091f57053419fb4dda21bc  Szakmai középszintű érettségi feladatok/Palindrom szöveg/feladat.pdf
+8f53b18e4b25728d9d496e747db9ad84  Szakmai középszintű érettségi feladatok/Palindrom szöveg/feladat.txt
+c0df181e90aec20d08d77f78bb6637dc  Szakmai középszintű érettségi feladatok/Palindrom szöveg/minta.zip
+7f18b340980d9c162e372df308da4a29  Szakmai középszintű érettségi feladatok/Pénzváltó - 2007. október - közép/feladat.pdf
+58f8737a86b542e4603cc8528cd701de  Szakmai középszintű érettségi feladatok/Pénzváltó - 2007. október - közép/feladat.txt
+991350a2c25b202285fda3584847778e  Szakmai középszintű érettségi feladatok/Pénzváltó - 2007. október - közép/minta.zip
+36ff537c6a9d7b99ae486f1c84670d14  Szakmai középszintű érettségi feladatok/Robotvezérlés - 2015. október/feladat.pdf
+c4478813c1765da770582e25e6b81e98  Szakmai középszintű érettségi feladatok/Robotvezérlés - 2015. október/feladat.txt
+1c74528fd9cf9005b559dc7cf35fa308  Szakmai középszintű érettségi feladatok/Robotvezérlés - 2015. október/minta.zip
+cf3f01bfebbe995792aff750ab99d214  Szakmai középszintű érettségi feladatok/Snowboard verseny - 2009. október/feladat.pdf
+3f491b83ab05c4841eb6cfc675d99d8e  Szakmai középszintű érettségi feladatok/Snowboard verseny - 2009. október/feladat.txt
+e1fe41b11e69272ff1694eeda0da2ca4  Szakmai középszintű érettségi feladatok/Snowboard verseny - 2009. október/minta.zip
+5a6450314f4e698d5796f2b8820cda95  Szakmai középszintű érettségi feladatok/Szabálysértők - 2005. október/feladat.pdf
+9f87a4b1a917407f39a785f76dc04f6b  Szakmai középszintű érettségi feladatok/Szabálysértők - 2005. október/feladat.txt
+f3b33d33d11ac3912ef923f993374bc0  Szakmai középszintű érettségi feladatok/Szabálysértők - 2005. október/minta.zip
+3edbfaa01c0016240f145d2b54714ebd  Szakmai középszintű érettségi feladatok/Szakkör - 2007. május - közép/feladat.pdf
+36bc64d85f751a70e8202f020bfd2868  Szakmai középszintű érettségi feladatok/Szakkör - 2007. május - közép/feladat.txt
+367d2040091dde81d2f1d9d7e9caee27  Szakmai középszintű érettségi feladatok/Szakkör - 2007. május - közép/minta.zip
+f6ce2c86bd3474dc75ba23a63a35997a  Szakmai középszintű érettségi feladatok/Szavak száma- 2006. október/feladat.pdf
+20f074af5d197bedcab5203fbd9f4e6b  Szakmai középszintű érettségi feladatok/Szavak száma- 2006. október/feladat.txt
+56f024c8f4f1f6f6c129300447dd2a83  Szakmai középszintű érettségi feladatok/Szavak száma- 2006. október/minta.zip
+b037ad3ed617af253b6f262d96334a60  Szakmai középszintű érettségi feladatok/Szavazás - 2012. október/feladat.pdf
+b33f807f805a70cadf5b3df6a8835c1e  Szakmai középszintű érettségi feladatok/Szavazás - 2012. október/feladat.txt
+c14e485c5809fdc716b8695df3c19e55  Szakmai középszintű érettségi feladatok/Szavazás - 2012. október/minta.zip
+ccce7bd213c1ca42f70229e80bdfe9f2  Szakmai középszintű érettségi feladatok/Számrendszerek - 2009. október/feladat.pdf
+59546eddcdcfe960214efb8e0518957e  Szakmai középszintű érettségi feladatok/Számrendszerek - 2009. október/feladat.txt
+d3a2cb4ae23121afbdfe61ddf0b3ec63  Szakmai középszintű érettségi feladatok/Számrendszerek - 2009. október/minta.zip
+de74a56f128797bfa9c0614491240984  Szakmai középszintű érettségi feladatok/Számsorozat - 2016. október/feladat.pdf
+e63fc29855b46533a661752bb26fbda9  Szakmai középszintű érettségi feladatok/Számsorozat - 2016. október/feladat.txt
+1cb0792801b32b4d50a6c5f2360304a1  Szakmai középszintű érettségi feladatok/Számsorozat - 2016. október/minta.zip
+47dee2f2d4e88997c09ddeb21ca601e0  Szakmai középszintű érettségi feladatok/Számváltó/feladat.pdf
+ade4af8c67559573d60260033bb186a0  Szakmai középszintű érettségi feladatok/Számváltó/feladat.txt
+d4aed8060c8690af4a82e44a330be06a  Szakmai középszintű érettségi feladatok/Számváltó/minta.zip
+0584d96154a38e6361b3abc9adf93f19  Szakmai középszintű érettségi feladatok/Születésnap paradoxon - 2012. május/feladat.pdf
+c0da76d4746aa7d360bc68d4e1cc825a  Szakmai középszintű érettségi feladatok/Születésnap paradoxon - 2012. május/feladat.txt
+ccffc2d99309d69865c0ff0221f29f48  Szakmai középszintű érettségi feladatok/Születésnap paradoxon - 2012. május/minta.zip
+b84d341e9b1ee02428c19a5bfb313197  Szakmai középszintű érettségi feladatok/Tankolás - 2005. október/feladat.pdf
+f62d5106bc1477aad15ddd8b8c37ac18  Szakmai középszintű érettségi feladatok/Tankolás - 2005. október/feladat.txt
+4389ccf80046cffb44be7eeb1ade9964  Szakmai középszintű érettségi feladatok/Tankolás - 2005. október/minta.zip
+745ed14bd315175a293bab36230c4525  Szakmai középszintű érettségi feladatok/Tanulócsoport - 2013. május/feladat.pdf
+e470ed8abaafa13cdae24778e2c7bd39  Szakmai középszintű érettségi feladatok/Tanulócsoport - 2013. május/feladat.txt
+9352befa192e77b929cd7568cfcf6aab  Szakmai középszintű érettségi feladatok/Tanulócsoport - 2013. május/minta.zip
+1dbfee57ea42d37caa9418d597d3abb1  Szakmai középszintű érettségi feladatok/Teljesítőképesség vizsgálat - 2010. május/feladat.pdf
+6f3c9f8eb5a28e5997986a18edadde41  Szakmai középszintű érettségi feladatok/Teljesítőképesség vizsgálat - 2010. május/feladat.txt
+209d2445f87b87cdcd61e5b45e74aea9  Szakmai középszintű érettségi feladatok/Teljesítőképesség vizsgálat - 2010. május/minta.zip
+4fdd1e8471413af3a74e8a9d3cf17ee4  Szakmai középszintű érettségi feladatok/Tengerparti vízállás - 2010. október/feladat.pdf
+0104cc4e914c293cded57a8f26eae24a  Szakmai középszintű érettségi feladatok/Tengerparti vízállás - 2010. október/feladat.txt
+6ff88d5f96668743b33d2328bc62b756  Szakmai középszintű érettségi feladatok/Tengerparti vízállás - 2010. október/minta.zip
+57a1614e0df3316f535db81108af7367  Szakmai középszintű érettségi feladatok/Titanic - 2016. május/feladat.pdf
+f2b1b3a62f707769dbdce7bbdf9abc5f  Szakmai középszintű érettségi feladatok/Titanic - 2016. május/feladat.txt
+d68d62f6030d2004a5c1985c45796120  Szakmai középszintű érettségi feladatok/Titanic - 2016. május/minta.zip
+e7218da77bbcd5ddcd45de5548d20a17  Szakmai középszintű érettségi feladatok/Tőzsde- 2006. oktober/feladat.pdf
+bfbc136f556efa9f83217a025dc2e36c  Szakmai középszintű érettségi feladatok/Tőzsde- 2006. oktober/feladat.txt
+f6268673489e27e2daf44c1ba1b77804  Szakmai középszintű érettségi feladatok/Tőzsde- 2006. oktober/minta.zip
+d41d8cd98f00b204e9800998ecf8427e  Szakmai középszintű érettségi feladatok/feladat.cpp
+d41d8cd98f00b204e9800998ecf8427e  Szakmai középszintű érettségi feladatok/feladat.pas
+ce93d5c8ff6c6105a5997d001041abcd  Szakmai középszintű érettségi feladatok/flist.tsv
+f8f9ae4b9b1d36a3f59e5adf93791a0b  Szakmai középszintű érettségi feladatok/leiras.txt
+d41d8cd98f00b204e9800998ecf8427e  Szakmai középszintű érettségi feladatok/mintafeladat.pdf
+2d9e84bc7533556cd3419cdc2ff44fa6  Szakmai középszintű érettségi feladatok/Átváltás - 2009. május/feladat.pdf
+848417a74a051339a8a26b99fcbc7a50  Szakmai középszintű érettségi feladatok/Átváltás - 2009. május/feladat.txt
+3d918748aa1570b79fca42aa30ce1e1f  Szakmai középszintű érettségi feladatok/Átváltás - 2009. május/minta.zip
+45d939d546aa4113434d40da8f6b4bfb  Szakmai középszintű érettségi feladatok/Óra - 2007. május - közép/feladat.pdf
+200f183a1888ad251e0d1de9f960afa7  Szakmai középszintű érettségi feladatok/Óra - 2007. május - közép/feladat.txt
+f34911769099eeee6d03b1055c300167  Szakmai középszintű érettségi feladatok/Óra - 2007. május - közép/minta.zip
 25467a5435f6cf59390d21126229274b  Szigetek/A második felében alacsonyabb csúcs volt? */feladat.pdf
 6bb76878f27e9bd7d68beffe4aea1c35  Szigetek/A második felében alacsonyabb csúcs volt? */feladat.txt
 1d377c8ff20f5be2f81c6b2755322817  Szigetek/A második felében alacsonyabb csúcs volt? */minta.zip
@@ -4846,7 +5569,7 @@ cbede9512c1fd9957f9b2e2e713c6852  Visszalépéses keresés/Üvegválogatás */mi
 1b0d47dfc9d154f601cac2242cd9c136  Visszalépéses keresés/Üzletek */feladat.pdf
 0a42ffe06352f2cef1ad869e62c9b4f1  Visszalépéses keresés/Üzletek */feladat.txt
 2317abb4af80818aaa9548822c10714a  Visszalépéses keresés/Üzletek */minta.zip
-65e2a9d461ae04485043c3b3a0bb96c8  temak.tsv
+f67d37506e785e7c8c3635769aec5a1d  temak.tsv
 0ee3c4fcb39dac6d03203fda50b47a86  Árvíz/A csúcsmagassága után leggyorsabban elapadó árvíz helye ***/feladat.pdf
 b3233c37471af408a578e6b80d0a398e  Árvíz/A csúcsmagassága után leggyorsabban elapadó árvíz helye ***/feladat.txt
 be8d2d769e39a0539995cee3c27da341  Árvíz/A csúcsmagassága után leggyorsabban elapadó árvíz helye ***/minta.zip
