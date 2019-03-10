@@ -1,0 +1,60 @@
+Informatikai alapismeretek – középszint                                        2010. október 18.
+
+
+                                          Barkochba
+Barkochba során egy játékosnak eldöntendő kérdéseket feltéve kell rájönni egy szóra vagy kifeje-
+zésre, amit egy másik játékos gondolt. Számokkal játszott változata esetén a válaszadó megad egy
+egész számokat tartalmazó intervallumot a másik félnek, ezután kiválaszt („gondol”) rajta egy
+számot. A másik fél feladata, hogy kitalálja ezt. Találgatás során a kérdező megkérdezheti a vá-
+laszadót, hogy az adott számra gondolt-e? Erre háromfajta választ kaphat: a gondolt szám kisebb,
+nagyobb vagy eltalálta.
+Találgatás során az alábbi szabályok követendők:
+   a. A megadott intervallumból kiválasztjuk a középső számot (páros elemű intervallum ese-
+      tén a középső kettő közül a nullához közelebbit), és rákérdezünk, hogy az-e a gondolt
+      szám.
+   b. Ha a gondolt szám kisebb, akkor a továbbiakban az eddigi találgatásra használt interval-
+      lum első feléből kérdezünk (a) pont alapján. (a megkérdezett szám már nem lesz része az
+      intervallumnak).
+   c. Ha a gondolt szám nagyobb, akkor a továbbiakban az eddigi találgatásra használt interval-
+      lum második feléből kérdezünk (a) pont alapján. (a megkérdezett szám már nem lesz ré-
+      sze az intervallumnak).
+   d. Ha megtaláltuk a gondolt számot, akkor vége a játéknak.
+     e. Ha a válaszok alapján nincs ilyen szám (az intervallum üres lesz), akkor a válaszadó hibá-
+        zott, és ezt jelezni kell neki!
+Írj programot, amely egy adott intervallumon a fenti szabályok alapján kitalálja a gondolt számot.
+Bemenet
+A standard bemenet első sorában egy egész számokat tartalmazó zárt intervallum kezdő és
+végpontja (-1 000 000≤A≤B≤1 000 000), valamint a megadott válaszok száma (1≤N≤100)
+található. A második sortól kezdődően, soronként egy-egy válasz található:
+       ha a gondolt szám kisebb: kisebb,
+       ha a gondolt szám nagyobb: nagyobb,
+       ha megtalálta a kívánt számot: megvan.
+Feltehető, hogy a bemeneten mindig van legalább annyi válasz, hogy abból egyértelműen meg le-
+het állapítani a gondolt számot vagy ne legyen a válaszoknak megfelelő szám és kiderüljön a hiba.
+Kimenet
+A standard kimenetre a találgatás során kérdezett számokat kell kiírni, ahol az utolsó
+sorban vagy a gondolt szám vagy hiba esetén a „hiba” szó szerepel.
+Példa
+Bemenet                                            Kimenet
+4 20 4                                             12
+nagyobb                                            16
+kisebb                                             14
+nagyobb                                            15
+megvan
+
+
+
+
+                                             1. oldal
+Informatikai alapismeretek – középszint              2010. október 18.
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

@@ -1,0 +1,33 @@
+Informatikai alapismeretek – középszint                                         2010. május 14.
+
+
+                                Euklideszi algoritmus
+Adott N természetes számpár.
+Írj programot, amely az adott számpárok alapján az euklideszi algoritmus segítségével, kiszámolja
+két szám legnagyobb közös osztóját!
+Bemenet
+A standard bemenet első sorában a megadott számpárok N száma (1≤N≤20 000) áll. Az
+ezt követő N sor mindegyikében két természetes szám (0≤A,B≤10 000 000) található, egy-
+mástól szóközzel elválasztva.
+Kimenet
+A standard kimenetre a megadott számpárok legnagyobb közös osztóit kell kiírni, külön-
+külön sorba, a bemenettel megegyező sorrendben.
+Példa
+Bemenet                                         Kimenet
+4                                               30
+14850 2940                                      4
+4 4                                             1
+11 13                                           16
+48 32
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

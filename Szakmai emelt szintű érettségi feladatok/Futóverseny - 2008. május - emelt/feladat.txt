@@ -1,0 +1,34 @@
+Emelt szintű informatikai alapismeretek érettségi                              2008. május 26.
+
+
+                                         Futóverseny
+Egy futóversenyen a versenyzők a távot a 400 méteres körpályán teljesítik. A versenyzők rajtszá-
+mai 1-től kerülnek folyamatosan kiosztásra. A számítógépes időmérő rendszer minden verseny-
+zőnek rögzíti az egyes körök megtételéhez szükséges időt.
+Írj programot, amely elkészíti a verseny eredmény listáját.
+Bemenet
+A standard bemenet első sora tartalmazza a versenyzők számát (1≤N≤1000) és a ver-
+senytáv teljesítéséhez szükséges körök számát (1≤L≤100). A következő N sor L számot tartal-
+maz, az i+1-edik sor az i rajtszámú versenyzőnek az egyes körök megtételéhez szükséges szá-
+zadmásodpercek számai (1≤Ti,j≤100 000).
+Kimenet
+A standard kimenetre N sort kell írni, az i-edik sorba az i-edik helyezett sorszámát és
+összidejét! Az idő formátuma P:MM:SS, ahol P a perceket, MM a másodperceket, SS a század-
+másodperceket jelöli. Holtverseny esetén a versenyzők rajtszámát kell figyelembe venni!
+Példa
+Bemenet                                               Kimenet
+5 3                                                   5   0:57:06
+4000 3900 3980                                        1   1:58:80
+23547 21348 25405                                     3   2:04:08
+4235 4122 4051                                        4   2:04:08
+4324 4075 4009                                        2   11:43:00
+1986 1864 1856
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

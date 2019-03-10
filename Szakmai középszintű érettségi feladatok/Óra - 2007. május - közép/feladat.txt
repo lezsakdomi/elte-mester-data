@@ -1,0 +1,27 @@
+Középszintű informatikai alapismeretek érettségi                              2007. május 25.
+
+
+                                             Óra
+Készíts programot, amely meghatározza két időpont között eltelt időt óra:perc:másodperc formá-
+tumban!
+Bemenet
+A standard bemenet első sorában a problémák száma (1≤N≤10000) van. A bemenet
+következő N sorában két időpont szerepel, a második időpont nem korábbi az elsőnél
+(0≤Ó1,Ó2<24, 0≤P1,P2,MP1,MP2<60)
+Kimenet
+A standard kimenetre N sorba kell a két időpont között eltelt időt kiírni ÓÓ:PP:MM
+formátumban, a bemeneti sorrendben!
+Példa
+Bemenet                                            Kimenet
+2                                                  01:00:00
+1 50 50 2 50 50                                    10:25:19
+11 36 48 22 2 7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

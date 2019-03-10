@@ -1,0 +1,70 @@
+Informatikai alapismeretek – középszint                                          2015. október 12.
+
+
+                                       Robotvezérlés
+Ebben a feladatban tanulók által írt robotvezérlő kódsorozatokat kell elemezned. Az elemzésre
+azért van szükség, hogy a tényleges kipróbálás előtt kiszűrjük a hibákat tartalmazó
+munkákat.
+Írj programot, amely
+   1. megszámolja, hogy hány tanuló használt olyan karaktert a kódsorozatban, amit a robot nem
+      tud értelmezni,
+   2. a hibátlan kódsorozatokban megszámolja az irányváltásokat,
+   3. szintén a hibátlan kódsorozatok közül megkeresi azt, amelyik végrehajtása után a robot a
+      kiindulási ponttól legmesszebbre jutott!
+Bemenet
+A standard bemenet első sorában a kódsorozatok száma (1≤N≤200) található, a követ-
+kező N sorban pedig maguk a kódsorozatok. Egy-egy sor tartalmazza a tanuló keresztnevét (maxi-
+mum 10 karakter), és az általa készített kódsorozatot (maximum 200 karakter) egy szóközzel elvá-
+lasztva. A keresztnév és a kódsorozat az angol abc betűiből állnak. A helyes kódsorozatokban csak
+a robot által értelmezhető négy karakter szerepelhet:
+    • "E" az előre haladást jelenti,
+    • "B" a balra haladást jelenti,
+    • "J" a jobbra haladást jelenti,
+    • "H" a hátra haladást jelenti.
+Egy-egy ilyen vezérlőkód hatására a robot egy egységnyit halad a megadott irányba. A bemenetben
+nem fordul elő egy név kétszer, és biztosan van legalább egy helyes kódsorozat.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Egyetlen számot kell kiírni, a hibás (érvénytelen karaktert tartalmazó) kódsorozatok
+számát. Ezeket a sorozatokat a további feladatokban nem kell figyelembe venni.
+2. részfeladat: Hibátlan kódsorozatonként egy-egy sort kell kiírni, ami a tanuló keresztnevét és az
+irányváltások számát tartalmazza szóközzel elválasztva. A sorozatokat abban a sorrendben kell ki-
+írni, ahogy a bemenetben szerepeltek.
+3. részfeladat: Annak a tanulónak a keresztnevét kell kiírni, akinek a (hibátlan) kódsorozatát vég-
+rehajtva a robot a legmesszebbre jut. Ha több ilyen tanuló is van, akkor mindegyiket ki kell írni
+szóközökkel elválasztva, a bemenetbeli sorrendjükben.
+
+
+
+
+                                              1. oldal
+Informatikai alapismeretek – középszint                      2015. október 12.
+
+
+Példa
+ Bemenet                                       Kimenet
+ 4                                             #
+ Aladar EHEHEHEH                               1
+ Bela BBBB                                     #
+ Csilla JJJJ                                   Aladar 7
+ Diana EEEEEF                                  Bela 0
+                                               Csilla 0
+                                               #
+                                               Bela Csilla
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

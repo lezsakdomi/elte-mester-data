@@ -1,0 +1,42 @@
+Emeltszintű informatikai alapismeretek                                              2010. május 14.
+
+
+                                Az ország karácsonyfája
+Karácsony közeledtével versenyt hirdetnek a fenyőfatermelők számára, „Ki adja az ország kará-
+csonyfáját?” címmel. A verseny győztese szállíthatja a Parlament előtt felállítandó fenyőfát, termé-
+szetesen illő díjazásért.
+Egy fa térfogatának kiszámításához a henger térfogatképletét alkalmazzák, amely szerint 𝑉 = 𝑟 2 ∗
+𝜋 ∗ 𝑙 (Itt az egyszerűség kedvéért π-t vegyük 3-nak.), ahol V a térfogat, r a fatörzs átlagos sugara,
+l pedig a fa magassága. Az egyszerűbb számítás kedvéért nem veszik figyelembe az ágakat, illetve
+a fa alakjának egyéb „szabálytalanságait” sem!
+Az a termelő a győztes, akinek a fái a legnagyobb összesített térfogatértéket adják az előzőekben
+leírt számítás alapján. A győztes termelő legmagasabb fája lesz a győztes fa, azaz az „Ország kará-
+csonyfája”.
+Írj programot, amely meghatározza győztes termelőt, illetve a győztes fa magasságát!
+Bemenet
+A standard bemenet első sora tartalmazza a termelők számát (1≤N≤1000). A követ-
+kező N blokkban egy-egy termelő adatai következnek. A blokk első sorában az adott termelő által
+benevezett fák száma (1≤Ki≤100) van. A következő Ki sorban egy-egy fa adata található
+(1≤li,j,di,j≤1000), ahol li,j a fa magassága, di,j pedig az átlagos átmérője.
+Kimenet
+A standard kimenet első sorába a győztes termelő sorszámát, második sorába pedig a
+győztes fa magasságát kell írni! Egyezőség esetén a kisebb indexű termelőt kell írni!
+Példa
+Bemenet                                               Kimenet
+2                                                     2
+2                                                     7
+3   6
+1   2
+3
+1   3
+7   4
+3   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

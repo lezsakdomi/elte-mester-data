@@ -1,0 +1,86 @@
+Emelt szintű informatika érettségi                                                       2005. október 27.
+
+
+                                         Vigenère tábla
+Már a XVI. században komoly titkosítási módszereket találtak ki az üzenetek elrejtésére. A század
+egyik legjobb kriptográfusa, Blaise de Vigenère, a kódoláshoz egy táblázatot és egy ún. kulcsszót
+használt. A használt táblázat a következő:
+     A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U    V   W   X   Y   Z
+ A   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U    V   W   X   Y   Z
+ B   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V    W   X   Y   Z   A
+ C   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W    X   Y   Z   A   B
+ D   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X    Y   Z   A   B   C
+ E   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y    Z   A   B   C   D
+ F   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z    A   B   C   D   E
+ G   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A    B   C   D   E   F
+ H   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B    C   D   E   F   G
+ I   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C    D   E   F   G   H
+ J   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D    E   F   G   H   I
+ K   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E    F   G   H   I   J
+ L   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F    G   H   I   J   K
+ M   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G    H   I   J   K   L
+ N   N   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H    I   J   K   L   M
+ O   O   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I    J   K   L   M   N
+ P   P   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J    K   L   M   N   O
+ Q   Q   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K    L   M   N   O   P
+ R   R   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L    M   N   O   P   Q
+ S   S   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M    N   O   P   Q   R
+ T   T   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N    O   P   Q   R   S
+ U   U   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O    P   Q   R   S   T
+ V   V   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P    Q   R   S   T   U
+ W   W   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q    R   S   T   U   V
+ X   X   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R    S   T   U   V   W
+ Y   Y   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S    T   U   V   W   X
+ Z   Z   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T    U   V   W   X   Y
+
+Írj programot, amely
+     1. Átalakítja a titkosítandó szöveget, hogy a kódolás feltételeinek megfeleljen, melyek az
+        alábbiak:
+            1. A szövegeben csak az angol ábécé betűi szerepelhetnek.
+            2. A szöveg csupa nagybetűs.
+     2. Átalakítja a használandó kulcsot a szöveghez megegyező szabályokkal.
+     3. Elvégzi a kódolást az alábbi módon:
+            1. Összefűzi a kulcsszót egymás után annyiszor, hogy az így kapott karaktersorozat
+                hossza legyen egyenlő a kódolandó szöveg hosszával.
+            2. A kódolandó szöveg első karakterét megkeresi a táblázat első sorában, a kulcs első
+                karakterét a táblázat első oszlopában. Az így kiválasztott sor és oszlop metszés-
+                pontjában lévő karakter lesz a kódolt szöveg első karaktere. Ezt elvégzi a kódo-
+                landó szöveg minden karakterére.
+Bemenet
+A standard bemenet első sora a kódolandó szöveget (1≤hossz(S)≤10 000) tartal-
+mazza, a második sora a kódoláshoz használandó kulcsot (1≤hossz(K)≤100).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+
+                                                 1. oldal
+Emelt szintű informatika érettségi                                              2005. október 27.
+
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A titkosítandó szöveget kell kiírni, a kódolás feltételeinek megfelelő formátumban!
+2. részfeladat: A titkosításhoz használandó kulcsot kell kiírni, a kódolás feltételeinek megfelelő
+formátumban!
+3. részfeladat: A kódolt szöveget kell kiírni!
+Példa
+Bemenet                                             Kimenet
+Ez a proba szoveg, amit kodolunk!                   #
+auto                                                EZAPROBASZOVEGAMITKODOLUNK
+                                                    #
+                                                    AUTO
+                                                    #
+                                                    ETTDRIUOSTHJEATAINDCDIEINE
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                 2. oldal
+

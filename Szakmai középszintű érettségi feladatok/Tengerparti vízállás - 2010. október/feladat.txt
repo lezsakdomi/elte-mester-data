@@ -1,0 +1,41 @@
+Informatikai alapismeretek – középszint                                           2010. október 18.
+
+
+                                   Tengerparti vízállás
+Egy tengerparti üdülőhelyen N napon keresztül naponta kétszer mérik a vízállást, majd egyszerű
+statisztikai számításokat végeznek el a rögzített adatokkal.
+Írj programot, amely a mért adatok alapján
+     1. megadja a napi vízszintingadozások (a napi maximum és minimum értékek közötti kü-
+        lönbségek) átlagát,
+     2. kiírja az első olyan napot, amelyen az egészekre kerekített átlagnál nagyobb volt a napi in-
+        gadozás.
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤10 000), az ezt követő N sor
+mindegyikében pedig egyes napokon elsőként és másodikként mért vízszintállások találhatóak
+(0≤h1,h2≤1000). Az értékeket centiméterben jegyezték fel egészekre kerekítve.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ.
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni. Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A napi vízszintingadozások átlagát kell kiírni, egészekre kerekítve!
+2. részfeladat: Az első olyan nap sorszámát kell kiírni, amelyen a napi ingadozás meghaladta az
+átlagos napi ingadozást! A napok sorszáma 1-től indul. Ha nincs ilyen nap, akkor 0 értéket kell ki-
+írni!
+Példa
+Bemenet                                           Kimenet
+4                                                 #
+345   312                                         18
+300   300                                         #
+298   335                                         1
+302   299
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

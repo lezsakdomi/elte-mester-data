@@ -1,0 +1,26 @@
+Infotmatikai alapismerete – középszint                                         2011. május 13.
+
+
+                                 Kettes számrendszer
+Írj programot, amely összead két 2-es számrendszerben megadott pozitív egész számot!
+A program az összeadást a papíron végzett összeadáshoz hasonlóan végezze!
+Bemenet
+A standard bemenet kér sorában az összeadandó két szám kettes számrendszerbeli alakja
+található. A bemenet csak egyesekből és nullákból áll, mindkét szám első számjegye 1-es. A meg-
+adott számok hossza legfeljebb 1000 karakter.
+Kimenet
+A standard kimenet első és egyetlen sorába a két szám összegét kell írni, kettes szám-
+rendszerben! A kimenet 1-essel kezdődjön!
+Példa
+Bemenet                                        Kimenet
+110110                                         1000101
+1111
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

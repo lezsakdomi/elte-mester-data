@@ -1,0 +1,43 @@
+Informatika OKTV                                                                  2. forduló
+
+
+                                        Üres téglalap
+Egy téglalap alakú területen K fa található.
+Készíts programot, amely megadja a területen belüli legnagyobb téglalap alakú területet, ahol
+nincs fa!
+Bemenet
+A standard bemenet első sorában található a terület sorainak és oszlopainak száma
+(1≤M,N≤10 000 000), valamint a fák száma (1≤K≤7000). A következő K sorban egy-egy fa
+sor- és oszlopindexe van (1≤Sori≤M , 1≤Oszlopi≤N ). A sorokat felülről-lefelé, az oszlopo-
+kat balról-jobbra sorszámozzuk.
+Kimenet
+A standard kimenet egytelen sorába a legnagyobb területű téglalap alakú rész területét kell
+írni, ahol nincs fa!
+Példa
+Bemenet                                            Kimenet
+7   9 4                                            25
+3   2
+1   5
+7   3
+4   8
+                F
+
+    F
+                             F
+
+
+
+          F
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 20%-át lehet szerezni olyan bemenetekre, ahol K<=10.
+A pontok további 20%át lehet szerezni olyan bemenetekre, ahol K<=100.
+A pontok további 20%át lehet szerezni olyan bemenetekre, ahol K<=1000.
+
+
+
+
+                                               1. oldal
+

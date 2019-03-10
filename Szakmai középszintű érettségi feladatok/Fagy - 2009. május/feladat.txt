@@ -1,0 +1,36 @@
+Középszintű informatikai alapismeretek érettségi                                  2009. május 22.
+
+
+                                             Fagy
+Egy meteorológiai állomáson egy héten keresztül minden nap délben megmérik a levegő hőmér-
+sékletét (hétfővel kezdődik a hét). Fagynak nevezzük, ha a hőmérséklet kevesebb, mint 0 fok.
+Készíts programot, amely meghatározza, hogy hányszor és mely napokon volt fagy!
+Írj programot, amely
+   1. meghatározza, hogy hányszor fagyott a héten;
+   2. megadja, hogy mely napokon fagyott!
+Bemenet
+A standard bemenet egy sora a hét egyes napjain mért hőmérsékleteket (-15≤napi≤30)
+tartalmazza.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A napok számát kell kiírni, melyeken fagyott!
+2. részfeladat: A napokat kell kiírni, melyeken fagyott, szóközzel elválasztva. (hetfo, kedd, szer-
+da, csutortok, pentek, szombat, vasarnap)
+Bemenet                                            Kimenet
+12 8 4 -1 0 -2 -5                                  #
+                                                   3
+                                                   #
+                                                   csutortok szombat vasarnap
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

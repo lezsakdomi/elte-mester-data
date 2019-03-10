@@ -1,0 +1,93 @@
+Emelt szintű informatika érettségi                                                            2009. május 15.
+
+
+                                             Automata
+A Csokibolt Kft. a város több pontján üzemeltet csokoládé-automatát. Az automatákból sokféle
+csokoládét lehet vásárolni pénzérmék bedobásával. A vásárláshoz az 1, 2, 5, 10, 20, 50 és 100
+fabatkás érmék használhatók. Egyszerre csak egyfajta csokoládé vásárolható. A vásárlás során
+először ki kell választani a csokoládét, majd be kell állítani a kívánt darabszámot, végül be kell
+dobni a pénzt. Ha a szükségesnél több pénzt dobnak be, a gép a csokoládé mellett kiadja a
+visszajárót is. Amennyiben az automatában már nincs a kívánt darabszámú csokoládé, vagy a
+bedobott összeg nem elegendő, a vásárlás meghiúsul.
+Írj programot, amely
+     megadja, hogy milyen értékben van csokoládé az automatában,
+     meghatározza, hogy mely rekeszekből próbáltak csokoládét vásárolni,
+     megadja, hogy mely rekeszekből lehet 7 db egyforma csokoládét venni adott pénzösszegért,
+     az adott rekeszhez, és az adott darabszámhoz megadja, hogy mely címleteket kell
+      felhasználni a fizetéshez, ha pontosan kell fizetni, és a lehető legkevesebb pénzérmét szabad
+      felhasználni. (A feladat megoldása során a következő algoritmust szabad használni: Megkeresi
+      a legnagyobb címletet, amely nem haladja meg a fizetendő összeget! Ebből a címletből kell egyet használni!
+      A fizetendőt csökkenti a címlet értékével, majd elölről kezdi az algoritmust, ha az nem nulla! Ez az
+      algoritmus a feladatban szereplő címletek esetén működik, de létezhet olyan címletlista,
+      amelynél nem alkalmazható.),
+     megadja, hogy hányas sorszámú vásárlások során hány darabot vettek az utolsó rekeszből.
+Bemenet
+A standard bemenetben adottak az árult csokoládék adatai, valamint a vásárlások adatai.
+Az első sor tartalmazza az automata rekeszeinek a számát (1≤N≤100). Az ezután következő N
+sorban, soronként egy-egy rekesz adatsora olvasható. Az első szám a rekesz sorszáma (1≤S≤N), a
+második a rekeszben található csokoládé darabszáma (0≤db≤100), a harmadik pedig az egységára
+(1≤ar≤300).
+Az ezt követő sorban a vásárlások száma (0≤V≤100), egy adott pénzösszeg (3. részfeladat,
+1≤P≤2100), egy adott rekesz sorszáma (1≤R≤N) és egy darabszám (4. részfeladat, 1≤C≤40)
+található. Az ezt követő V sorban, soronként 9 szám szerepel, ami egy vásárlás adatait jelenti. Az
+első szám a választott rekesz sorszáma, a második a kívánt darabszám, a többi szám pedig azt jelzi,
+hogy az egyes címletekből hány darabot (sz≤100) dobtak a gépbe. Az első az 1 fabatkás, a többi
+növekvően szerepel mögötte, így az utolsó a 100 fabatkás.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output
+formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az automatában található csokoládék összértékét kell kiírni!
+2. részfeladat: Azon rekeszek sorszámát kell kiírni, amikből próbáltak csokoládét vásárolni,
+    tetszőleges sorrendben! Egy rekesz sorszámát csak egyszer szabad megjeleníteni! Ha nem volt
+    ilyen, akkor -1-et kell kiírni!
+
+                                                       1
+Emelt szintű informatika érettségi                                                  2009. május 15.
+
+3. részfeladat: Azon rekeszek sorszámát kell megadni tetszőleges sorrendben, amikből a P
+    pénzösszegből lehet 7 db egyforma csokoládét vásárolni! Ha nincs ilyen, akkor -1-et kell kiírni!
+4. részfeladat: Azokat a címleteket és a darabszámukat kell megadni címlet szerint növekvő
+    sorrendben, amelyeket fel kell használni a fizetéshez, ha R rekeszből C darab csokoládét
+    akarunk vásárolni, és a lehető legkevesebb pénzérmét szeretnénk bedobni, de pontosan
+    szeretnénk fizetni! Csak a felhasznált címleteket szabad megadni! Egy sorba egy címlet kerüljön;
+    először a címlet értéke, majd mögötte a darabszám jelenjen meg! Nem kell vizsgálni, hogy van-
+    e elég csokoládé a rekeszben!
+5. részfeladat: Azt kell kiírni, hogy az egyes vásárlások során hány darabot vettek az utolsó
+    rekeszből! Soronként egy vásárlási próbálkozást kell feltüntetni! A sor elején a vásárlási
+    próbálkozás sorszáma jelenjen meg, mellette pedig a vásárlás eredménye legyen olvasható! Az
+    eredmény sikeres vásárlás esetén a darabszám. Ha nem volt megadott mennyiségnek megfelelő
+    csokoládé, akkor a sorszám mögé a „keves a csoki” üzenet kerüljön! Ha a vásárló kevés pénzt
+    dobott be, akkor a „nem volt eleg penz” szöveget írja ki! Amennyiben a vásárlás több okból is
+    meghiúsult, akkor csak az egyik indokot írja ki! Ha nem volt vásárlás az utolsó rekeszből, akkor
+    -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+5                                                #
+1 23 76                                          3173
+2 8 111                                          #
+3 0 0                                            1 2 3 4 5
+4 3 121                                          #
+5 2 87                                           1
+10 532 1 7                                       #
+2 3 1 1 0 1           1   0   3                  2 1
+1 4 0 2 0 1           0   1   1                  10 1
+4 4 1 0 1 1           0   1   1                  20 1
+2 1 1 1 1 0           0   0   0                  100 5
+5 2 1 1 1 0           0   1   3                  #
+2 4 1 0 0 1           0   1   0                  5 2
+1 5 1 0 1 0           1   0   2
+1 6 1 1 1 1           1   1   1
+3 2 0 1 0 0           0   0   0
+4 2 0 0 1 0           0   1   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                 2
+

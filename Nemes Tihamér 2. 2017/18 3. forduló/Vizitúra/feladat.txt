@@ -1,0 +1,42 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny, 2-3. korcsoport               3. forduló
+
+
+                                           Vizitúra
+Egy folyó vízgyűjtő területéről az összes folyó végül ebbe az egyetlen folyóba folyik bele, eseten-
+ként más folyókon keresztül. Ismerjük N folyóparti település távolságát a valamely folyó mentén
+szomszédos településektől. Tudjuk, hogy a folyók biztosan településeknél folynak bele másik fo-
+lyóba, egy helyen akár több is. Vizitúrának nevezzük az olyan település felsorolást, amely szom-
+szédos településeken át halad és minden folyószakaszt legfeljebb egyszer érint, akár folyásiránnyal
+szemben is haladhat.
+Készíts programot, amely megadja a leghosszabb lehetséges vizitúra hosszát, valamint lehetséges
+kezdő- és végpontját!
+Bemenet
+A standard bemenet első a települések száma van (1≤N≤100 000). A következő N-1 sor
+mindegyikében két szomszédos település sorszáma (1≤Ai≠Bi≤N), ami azt jelenti, hogy a folyó itt
+az Ai településtől a Bi település felé folyik, valamint a távolságuk (1≤Ti≤1000) van.
+Kimenet
+A standard kimenet első sorába a leghosszabb vizitúra hosszát kell írni! A második sorba a
+leghosszabb vizitúra kezdő- és végpontjának lehetséges sorszáma kerüljön!
+Példa
+Bemenet                                           Kimenet
+10                                                29
+2 1 3                                             8 9
+3 1 1
+6 4 2
+4 2 6
+7 5 1
+5 2 5
+8 7 9
+9 6 6
+10 2 8
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N értéke legfeljebb 100.
+
+
+
+
+                                              1. oldal
+

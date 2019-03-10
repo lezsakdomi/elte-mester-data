@@ -1,0 +1,34 @@
+Infotmatikai alapismeretek – középszint                                        2011. október 17.
+
+
+                                   Barátságos számok
+A matematikában barátságos számoknak nevezzük azokat a pozitív egész számpárokat, amelyekre
+teljesül, hogy az egyik szám felírható a másik szám (saját magánál kisebb) osztóinak az összege-
+ként és fordítva. Például: a 220 és a 284 barátságos számpár, mert
+       220 önmagánál kisebb osztói: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110 és 1 + 2 + 4 + 5 + 10
+        + 11 + 20 + 22 + 44 + 55 + 110 = 284
+       284 önmagánál kisebb osztói: 1, 2, 4, 71, 142 és 1 + 2 + 4 + 71 + 142 = 220
+Írj programot, amely eldönti számpárokról, hogy barátságos számok-e!
+Bemenet
+A standard bemenet első sorában az adott számpárok darabszáma (1≤N≤1000) találha-
+tó. Az ezt követő N sor mindegyike két pozitív egész számot tartalmaz (1≤X,Y≤105).
+Kimenet
+A standard kimenetre N sort kell írni, az i-edik sorba az „Igen” szót kell írni, ha az
+i-edik számpár barátságos, különben a „Nem” szót kell kiírni!
+Példa
+Bemenet                                          Kimenet
+5                                                Igen
+220 284                                          Nem
+219 283                                          Nem
+120 60                                           Igen
+1210 1184                                        Nem
+2017 1997
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

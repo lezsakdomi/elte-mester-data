@@ -1,0 +1,45 @@
+Diákolimpiai Válogatóverseny                                                                  2018
+
+
+                                       Szuperhuszár
+A Szuperhuszár olyan kétszemélyes játék, amelyet egy négyzetrácsos táblán játszanak egy bábut
+mozgatva. A bábú kezdetben a (0,0) koordinátájú pontban, az origóban van. A bábú L különböző
+lépést tehet. Minden megengedett lépés egy (dx,dy) relatív koordinátákkal adott, ami azt jelen-
+ti, hogy ha a bábú az (x,y) pontban van, akkor ezen lépés végrehajtásával az (x+dx,y+dy)
+pontba jut. A játékot úgy játszák, hogy a kezdő játékos tesz valahány (tetszőleges számú) lépést. A
+második játékosnak az a célja, hogy a megengedett lépésekkel visszajuttassa a bábút az origóba
+akárhány lépéssel. Ha sikerül neki, akkor ő nyer, különben az első játékos.
+Készíts programot, amely K játék mindegyikére megadja, hogy a második játékosnak van-e nyerő
+stratégiája, azaz mindig vissza tudja juttatni a bábút az origóba, akárhogy is kezdett az első játé-
+kos!
+Bemenet
+A standard bemenet első sorában a játékok K száma (1≤K≤20) száma van. Ezt követi K
+játék leírása. Mindegyik első sorában a játékban megengedett lépések L (1≤L≤200000) száma
+van. A következő L sorban egy-egy megengedett lépés (dx,dy) relatív koordinátái vannak
+(-100000≤dx,dy≤100000).
+Kimenet
+A standard kimenet pontosan K sort tartalmazzon! Az i-edik sor az „IGEN” szót tartal-
+mazza, ha az i-edik játékban a második játékosnak van nyerő stratégiája, különben a „NEM” szót!
+Példa
+bemenet                                           kimenet
+2                                                 IGEN
+3                                                 NEM
+1 0
+0 1
+-2 -1
+5
+3 4
+-3 -6
+2 -2
+5 6
+4 2
+
+Korlátok
+Időlimit: 0.25 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

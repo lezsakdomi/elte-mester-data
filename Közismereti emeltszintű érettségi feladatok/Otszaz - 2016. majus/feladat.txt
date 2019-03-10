@@ -1,0 +1,87 @@
+Emelt szintű informatika érettségi                         2016. május 10.
+
+
+                                 Ötszáz
+Egy apróságokat árusító boltban minden árucikk darabja 500 Ft. Ha egy
+vásárlás során valaki egy adott árucikkből több darabot is vesz, a második
+ára már csak 450 Ft, a harmadik pedig 400 Ft, de a negyedik és további
+darabok is ennyibe kerülnek, tehát az ár a harmadik ugyanazon cikk
+vásárlása után már nem csökken tovább.
+Írj programot, amely
+   1. meghatározza, hogy hányszor fizettek a pénztárnál,
+   2. megadja az első vásárló által vásárolt árucikkek számát,
+   3. megadja, hogy egy adott árucikkből melyik vásárlásnál vásároltak
+      először és melyiknél utoljára,
+   4. megadja, hogy egy adott árucikkből összesen hány alkalommal
+      vásároltak,
+   5. meghatározza, hogy adott darabszámot vásárolva egy termékből
+      mennyi a fizetendő összeg,
+   6. meghatározza, hogy egy adott sorszámú vásárlásnál mely
+      árucikkekből és milyen mennyiségben vásároltak,
+   7. megadja az egyes vásárlásoknál fizetendő összeget!
+Bemenet
+A standard bemenet első sora a bemenet hosszát írja le (2≤N≤3000). A
+következő N sor egy-egy árucikk nevét tartalmazza (1≤|Ai|≤30), vagy
+egyetlen F karaktert. Az F karakter jelzi, hogy aktuális vásárló kosara
+nem tartalmaz több árucikket, fizetés következik (egy vásárló kosara
+minimum 1 terméket tartalmaz). Az árucikkek neve ékezeteket nem
+tartalmaz, de több szóból is állhat.
+A következő sorban egy árucikk neve található (ARU, 3. és 4. részfeladat),
+amit biztosan vásároltak. A következő sorban egyetlen darabszám (0≤|
+DB|≤106) található (5. részfeladat). A bemenet utolsó sorában egy létező
+vásárló sorszáma van megadva (SORSZAM, 6. részfeladat).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy,
+egyetlen # karaktert tartalmazó sort kell kiírni, amelyet a részfeladat
+eredményét tartalmazó egy vagy több sor követ! Ha egy részfeladatot
+nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több #
+karaktert ír ki) akkor „Output formátum hiba” üzenetet ad az értékelő
+(akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A fizetések darabszámát kell írni!
+2. részfeladat: Az első vásárló által vásárolt árucikkek számát kell írni!
+3. részfeladat: Az ARU első és utolsó vásárlásának sorszámát kell írni,
+külön sorba!
+4. részfeladat: Azon vásárlások darabszámát kell írni, amelyekben az
+ARU árucikk előfordul!
+
+
+                                  1. oldal
+Emelt szintű informatika érettségi                      2016. május 10.
+
+5. részfeladat: Azt az összeget kell írni, amely DB számú, azonos termék
+vásárlása esetén fizetendő!
+6. részfeladat: Az első sorba a SORSZAM sorszámú vásárlásnál vett
+különböző termékek K számát kell írni, majd a következő K sorba egy-egy
+árucikk nevét és a vásárolt darabszámot kell írni, szóközzel elválasztva.
+Az árucikkek tetszőleges sorrendben kiírhatók!
+7. részfeladat: Az egyetlen sor a vásárlások sorrendjében, szóközökkel
+elválasztva tartalmazza az egyes vásárlásoknál fizetendő összeget!
+Példa
+Bemenet                              Kimenet
+11                                   #
+HB ceruza                            3
+elem                                 #
+HB ceruza                            3
+F                                    #
+papir zsebkendo                      2
+toll                                 3
+F                                    #
+szatyor                              2
+toll                                 #
+toll                                 1750
+F                                    #
+toll                                 2
+4                                    HB ceruza 2
+1                                    elem 1
+                                     #
+                                     1450 1000 1450
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                 2. oldal
+

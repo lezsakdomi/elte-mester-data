@@ -1,0 +1,73 @@
+Informatikai alapismeretek – középszint                                             2015. május 19.
+
+
+                                     Keszthely Triatlon
+Ebben a feladatban a 2014-es Keszthely Triatlon verseny sprint távjának eredményeit kell feldol-
+goznod.
+Írj programot, amely
+   1. megszámolja, hogy egy megadott kategóriában hány versenyző indult, és megadja a rajtszá-
+      maikat,
+   2. meghatározza a versenyzők átlagéletkorát,
+   3. megadja, hogy a női versenyzők között ki volt a győztes!
+Bemenet
+A standard bemenet első sorában a célba ért versenyzők száma (1≤N≤200) és egy kate-
+gória szám (1≤K≤11) található, a következő N sorban pedig a versenyzők adatai és az elért idő-
+eredményeik. Egy-egy sor tartalmazza egy versenyző nevét (maximum 50 angol betű), születési
+évét, rajtszámát (1≤rajtszám≤1000), nemét (egyetlen karakter, n = nő, f = férfi), kategóri-
+áját (1≤kategória≤11) és időeredményeit. Az időeredmények a verseny öt szakaszán (úszás,
+első depó, kerékpározás, második depó, futás) eltöltött időt mutatják perc:másodperc formá-
+tumban, két-két helyiértéken. A versenyt az a versenyző nyeri, akinek a legkisebb az öt idő összege.
+A versenyzők között biztosan nincs két azonos nevű vagy azonos rajtszámú, és biztosan volt női
+versenyző.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A K kategóriában induló versenyzők számát és ezen versenyzők rajtszámait kell
+kiírni a bemenetbeli sorrendjükben, szóközökkel elválasztva!
+2. részfeladat: A versenyzők átlagéletkorát kell kiírni egy tizedesjegyre kerekítve (a tizedespont
+után pontosan egy számjegyet kell írni)! Egy versenyző életkorát a 2014-születési év kép-
+lettel számold ki!
+3. részfeladat: Annak a női versenyzőnek a nevét kell kiírni, akinek az összesített ideje a legkisebb!
+Ha több ilyen van, akkor mindegyiket ki kell írni külön sorokba, a bemenetbeli sorrendjükben!
+
+
+
+
+                                               1. oldal
+Informatikai alapismeretek – középszint               2015. május 19.
+
+
+Példa
+ Bemenet
+ 3 2
+ NagyMate 1996 4 f 2 12:47 00:34 31:40 00:26 17:42
+ KissTimea 1990 9 n 4 44:09 01:82 17:35 08:00 14:56
+ KissAemit 1990 8 n 4 44:09 01:82 17:35 08:00 14:56
+
+
+
+
+ Kimenet
+ #
+ 1 4
+ #
+ 22.0
+ #
+ KissTimea
+ KissAemit
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

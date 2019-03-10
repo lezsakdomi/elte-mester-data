@@ -1,0 +1,45 @@
+Emeltszintű informatikai alapismeretek érettségi        2011. május 13.
+
+
+                       Tenisz adogatógép
+Egy tenisz adogatógép tesztelése során a teniszlabdákat különböző
+kezdősebességgel és szöggel lövik ki, majd lemérik, hogy milyen
+távolságra repültek a labdák.
+Írj programot, amely az adott adatok segítségével kiszámolja egyes kilőtt
+labdák várható távolságát a következő képlettel:
+                                    v 20 ⋅sin ( 2 α )
+                               s=           g
+ahol s a megtett távolság, v0 a kezdősebesség, α a kilövési szög és g a
+gravitációs állandó (g = 9,81 m/s2).
+A program írja ki a teszteset sorszámát, amelynél maximális volt a
+százalékban vett abszolút eltérés a mért és számított távolságok között!
+Az eltérés számítása:
+                              mért − számított
+                                 számított
+Tehát ha a számított távolság 100 m, a mért távolság pedig 90 m, akkor
+az eltérés -10%, így az abszolút eltérés 10%.
+Bemenet
+A standard bemenet első sora tartalmazza az tesztek számát (1≤N≤104).
+Ezután N sorban egy-egy kilövés kezdősebességét (10≤v0≤40), kilövési
+szögét (30≤α≤70) és a mért távolságot (6<s<164).
+Kimenet
+A standard kimenetre a mért és számított távolságok között a
+százalékban vett maximális abszolút eltérésű tesztelés sorszámát írd ki
+(több maximális esetén egy tetszőlegeset közülük)!
+Példa
+Bemenet                                  Kimenet
+5                                        4
+13   69 11
+40   30 130
+15   9 8
+17   67 24
+38   38 136
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                1. oldal
+

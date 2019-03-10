@@ -1,0 +1,39 @@
+Informatika OKTV                                                                         3. forduló
+
+
+                                     Keresősorozatok
+Egy bináris keresőfa minden pontjára teljesül, hogy tőle balra csak nála kisebb, jobbra csak nála
+nagyobb elemek vannak. Egy elem hatékonyan megtalálható egy ilyen adatszerkezetben úgy, hogy
+a gyökérből kiindulva minden lépés során a keresőfa tulajdonságot kihasználva egyértelmű, hogy a
+bal vagy a jobb oldali részfában kell folytatni a keresést. Egy keresősorozat azon elemek felsorolá-
+sa, amelyeket egy adott elem megkeresése közben megvizsgáltunk.
+Készíts programot, amely K sorozatra megadja, hogy azok lehetséges keresősorozatok-e!
+Bemenet
+A standard bemenet első sorában a sorozatok száma (1≤K≤100) van. A következő K sor
+első száma egy sorozat hossza (1≤Hi≤1000), amelyet a sorozat Hi száma követ
+(1≤Si,j≤1 000 000).
+Kimenet
+A standard kimenet K sorába kell írni az eredményt! Az i. sorba az IGEN szó kerüljön, ha
+az i. sorozat lehet keresősorozat, egyébként pedig a NEM szó!
+Példa                                                                             2
+Bemenet                                           Kimenet                               25
+5                                                 IGEN
+                                                                                             40
+8   2 25 40 39 33 34 38 36                        IGEN
+                                                                                        39
+8   92 22 91 24 89 25 36 37                       NEM
+7   92 20 90 24 90 25 36                          IGEN                            33
+7   2 39 38 21 26 37 36                           NEM                                   34
+7   93 27 34 62 39 29 35
+                                                                                              38
+Az ábrán az első sorozathoz tartozó keresőfa részlet látható.
+                                                                                        36
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

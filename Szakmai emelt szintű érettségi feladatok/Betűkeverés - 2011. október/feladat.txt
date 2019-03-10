@@ -1,0 +1,29 @@
+Informatikai alapismeretek – emeltszint                                                    2011. október 17.
+
+
+                                             Betűkeverés
+„Egy aailgni eetegym kasátatui szniret nem szímát melyin sebdnerron vannak a bűtek egy szabón, az eeltegyn
+fotnos dolog, hogy az eslő és az uslotó bűtek a hökülyen lenegyek. A tbböi bteű lehet tejles össze-vabgásasszin,
+migés pmélbora nüklél otahsavló a szevög. Eennk oka, hogy nem onusavlk el mednin bűtet mágat, henam a szót
+eebészégn.”
+Írj programot, amely egy megadott szöveg alapján a szövegben szereplő szavak belsejében meg-
+fordítja a betűk sorrendjét!
+Bemenet
+A standard bemenet első és egyetlen sorában egy szöveg található, ami csak az angol ábécé
+kis- és nagybetűit, szóközöket, valamit számokat tartalmazhat. A szöveg maximum 1 000 000
+karakterből áll.
+Kimenet
+A standard kimenet egyetlen sorába a megfordított belsejű szavakból álló szöveget kell ki-
+írni!
+Példa
+Bemenet                                                 Kimenet
+Lenni vagy nem lenni                                    Lnnei vgay nem lnnei
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                   1. oldal
+

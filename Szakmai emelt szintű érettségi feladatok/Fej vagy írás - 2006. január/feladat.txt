@@ -1,0 +1,29 @@
+Infotmatikai alapismeretek – emelt szint                                     2006. február 20.
+
+
+                                       Fej vagy írás
+Kísérlet sorozatot végzünk pénzfeldobással.
+Írj programot, amely megadja a leghosszabb „fej” és leghosszabb „írás” sorozatok hosszát és he-
+lyét a kísérletsorozatban!
+Bemenet
+A standard bemenet első sorában az kísérletsorozat hossza (1≤N≤100 000) található. Az
+ezt követő sorban egy N karakter hosszú szöveg található, melynek minden karaktere ’F’ (fej)
+vagy ’I’ (írás).
+Kimenet
+A standard kimenetre első sorába a leghosszabb ’F’ sorozat hosszát és kezdetének a
+helyét, a második sorba a leghosszabb ’I’ sorozat hosszát és kezdetének a helyét kell írni! Ha
+több azonos hosszú leghosszabb sorozat is van, akkor a legkorábban kezdődőt kell kiírni! Ha
+egyetlen ’I’ vagy ’F’ sorozat sem volt, akkor a megfelelő sorba két darab 0-t kell írni!
+Példa
+Bemenet                                          Kimenet
+9                                                3 5
+FFIIFFFII                                        2 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

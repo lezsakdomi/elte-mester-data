@@ -1,0 +1,38 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny 2-3, korcsoport             3. forduló
+
+
+                                       Nyaralások
+Nyaralásra a következő N héten F forintot szánunk. Egy utazási iroda N darab 1 hetes utat hirde-
+tett meg, ahova szívesen elmennénk, minden hétre egyet. Az N hét alatt pontosan 3 utazásra tu-
+dunk elmenni.
+Készíts programot, amely megadja, hogy melyik három héten menjünk nyaralni, ha az F forintot a
+lehető legpontosabban akarjuk elkölteni!
+Bemenet
+A standard bemenet első sorában a hetek száma (3≤N≤5000) és a pénzösszeg van
+(1≤F≤1 000 000). A következő N sor az egyes utak árát tartalmazza (1≤Ki≤1 000 000),
+nemcsökkenő sorrendben.
+Kimenet
+A standard kimenet első sorába három utazás sorszámát kell írni, növekvő sorrendben,
+amelyek ára összesen nem nagyobb F-nél és a legközelebb van az F forinthoz! Ha nincs megol-
+dás, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6 28                                            1 4 5
+3
+                                                Magyarázat: 2 4 5 is jó megoldás, szintén 27
+3
+                                                forintba kerül.
+7
+9
+15
+19
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

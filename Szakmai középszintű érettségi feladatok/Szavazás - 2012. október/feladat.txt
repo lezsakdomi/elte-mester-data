@@ -1,0 +1,65 @@
+Informatikai alapismeretek – középszint                                            2012. október 15.
+
+
+                                             Szavazás
+Egy iskola diákönkormányzata elnökválasztást rendez. Minden szavazásra jogosult tag egy elnök-
+jelöltre szavazhat, olyan módon, hogy a jelölt sorszámát felírja egy papírra. Öt jelölt esetén például
+a szavazásra jogosultak egy 1 és 5 közötti egész szám megadásával szavazhatnak. Ha a megadott
+szám nem esik a megfelelő tartományba, akkor a szavazat érvénytelen. Nem kötelező minden sza-
+vazásra jogosultnak szavaznia. A szavazás már akkor is érvényes, ha a jogosultak több mint fele
+érvényes szavazatot ad le.
+Írj programot, amely
+   1.   megadja az érvényes és az érvénytelen szavazatok számát,
+   2.   kiszámítja, hogy a szavazásra jogosultak hány százaléka szavazott érvényesen,
+   3.   megállapítja, hogy a szavazás érvényes volt-e,
+   4.   megadja az egyes jelöltek által szerzett szavazatok számát és százalékos arányát!
+Bemenet
+A standard bemenet első sorában az elnökjelöltek száma (1≤N≤20) és a szavazásra jogo-
+sultak száma (1≤M≤200) található, a következő legfeljebb M sorban pedig a szavazatok. Egy-egy
+sor egyetlen pozitív egész számot (1≤X≤200) tartalmaz, egy (nem feltétlenül érvényes) szavaza-
+tot. Az utolsó sorban egyetlen 0 jelzi, hogy nincs több szavazat. Biztosan van legalább egy érvényes
+szavazat.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az érvényes és az érvénytelen szavazatok számát kell kiírni!
+2. részfeladat: Egy egész számot és egy % jelet kell kiírni, az érvényesen szavazók százalékos ará-
+nyát a szavazásra jogosultakhoz képest, egészre kerekítve!
+3. részfeladat: "igen"-t kell kiírni, ha a szavazás érvényes volt, különben "nem"-et!
+4. részfeladat: Jelöltenként külön sorba kell kiírni a jelölt sorszámát, a kapott szavazatok számát
+és hogy hány százalékát szerezte az érvényes szavazatoknak (egészre kerekítve), a szavazatok száma
+szerint csökkenő sorrendben! Azonos számú szavazat esetén a kisebb sorszámú jelölt legyen előbb!
+
+
+
+
+                                                1. oldal
+Informatikai alapismeretek – középszint                  2012. október 15.
+
+
+Példa
+ Bemenet                                       Kimenet
+ 4 5                                           #
+ 3                                             3 1
+ 4                                             #
+ 10                                            60%
+ 3                                             #
+ 0                                             igen
+                                               #
+                                               3 2 67%
+                                               4 1 33%
+                                               1 0 0%
+                                               2 0 0%
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

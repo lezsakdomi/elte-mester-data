@@ -1,0 +1,67 @@
+Informatikai alapismeretek – emeltszint                                             2013. május 23.
+
+
+                                               Körök
+Ebben a feladatban a síkon megadott köröket kell elemezni. Az első síknegyedben mindkét koor-
+dináta pozitív, és a síknegyedek számozása az óra járásával ellentétesen történik.
+Írj programot, amely
+   1. megadja az egyes síknegyedekben fekvő körök számát (a tengelyek érintése megengedhető);
+   2. meghatározza azon körök területeinek összegét két tizedesjegyre kerekítve, amelyeknek mind
+      a négy síknegyedben találhatóak pontjaik (a tengelyek itt nem számítanak egyik síknegyedbe
+      sem);
+   3. megkeresi a két legtávolabbi kört (körök távolságán a két legközelebbi pontjuk távolságát
+      értjük);
+   4. meghatározza az x-tengelyt „felülről” érintő vagy az x-tengely feletti egymást metsző körpá-
+      rokat!
+Bemenet
+A standard bemenet minden sora egy kört ad meg. Egy kört 3 egész szám ír le. Az első két
+szám rendre a kör középpontjának x és y koordinátáját (-1000≤x,y≤1000) jelöli, amit a kör
+r sugara (1≤r≤100) követ. A bemenet legalább 2 és legfeljebb 100 kört tartalmaz.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Négy számot kell kiírni, rendre az első, második, harmadik és negyedik síknegyedbe
+eső körök számát!
+2. részfeladat: A területösszeg két tizedesjegyre kerekített értékét kell kiírni!
+3. részfeladat: Három számot kell kiírni! A két legtávolabbi kör sorszámát (a bemenetben található
+sorrendben sorszámozva) a kisebbel kezdve, majd távolságukat két tizedesjegyre kerekítve. Több
+megoldás esetén a lexikografikusan legelső megoldást kell megadni!
+4. részfeladat: Minden megfelelő metsző körpárhoz egy sort kell kiírni, benne a két kör sorszámá-
+val (a kisebbel kezdve)! A sorokat lexikografikusan rendezve kell kiírni!
+
+
+
+
+                                                1. oldal
+Informatikai alapismeretek – emeltszint                       2013. május 23.
+
+
+Példa
+ Bemenet                                       Kimenet
+ -52 65 34                                     #
+ 100 100 89                                    2 3 1 2
+ 90 -45 30                                     #
+ 32 34 60                                      29936.24
+ -50 -50 45                                    #
+ 6 105 54                                      10 11 287.40
+ 46 -53 77                                     #
+ -100 68 44                                    1 6
+ -74 154 23                                    1 8
+ 27 -164 27                                    2 6
+ 156 138 14
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

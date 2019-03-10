@@ -1,0 +1,38 @@
+Nemes Tihamér OITV 2017             Programozás kategória                             Döntő
+
+
+                                          Banda
+Egy bandát hierarchikusan szerveztek, ahol a közvetlen főnökén kívül mindenki csak a közvetle-
+nül alá tartozó embereket ismeri. A banda főnöke az 1. sorszámú tag.
+Írj programot, amely megadja a bandatagok legnagyobb részhalmazát, amelyben senki nem ismer
+senkit!
+Bemenet
+A standard bemenet első sorában a tagok száma van (1≤N≤100 000). Az i. sorban az i.
+bandatag főnökének sorszáma található (1≤Si<i).
+Kimenet
+A standard kimenet első sorába azon bandatagok K maximális számát kell írni, amelyek
+közül senki nem ismer senkit! A második sorba a K ilyen bandatag sorszámát kel írni, növekvő
+sorrendben!
+Példa
+bemenet                                       kimenet
+10                                            6
+1                                             1 6 7 8 9 10
+2
+2
+1
+3
+3
+4
+2
+5
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában M≤1000.
+
+
+
+
+                                           1. oldal                    2017.02.25. 10:00-16:00
+

@@ -1,0 +1,34 @@
+Diákolimpiai Válogatóverseny                                                                    2108
+
+
+                                             Zárkód
+Egy zár pontosan egy N karakteres titkos kóddal nyitható ki. A karakterek egy K elemű ábécéből
+kerülnek ki. Az ajtón van K gomb, az egyes karakterekkel felcímkézve. A gombokat egyesével
+nyomhatjuk be, és az ajtó akkor nyílik ki, ha az utoljára megnyomott N darab gomb épp a titkos
+kódot adja ki. Egy M karaktert tartalmazó karaktersorozatot nyitó sorozatnak nevezzük, ha bár-
+mely N karakteres titkos kód esetén kinyitja a zárat. Például, ha két elemű az ábécé (’0’, ’1’), akkor
+a 00110 sorozat biztosan kinyitja az ajtót, és nincs ennél rövidebb ilyen sorozat.
+Készíts programot, amely K és N ismeretében kiszámít egy legrövidebb nyitó sorozatot!
+Bemenet
+A standard bemenet első sorában K (2≤K≤10) és az N (2≤N≤10) érték van. Teljesül
+még, hogy KN≤2000000. Az ábécé elemeit a ’0’,…,’k-1’ decimális számjegyekkel azonosítjuk.
+Kimenet
+A standard kimenet első és egyetlen sorába egy legrövidebb nyitó sorozatot kell írni! Több
+megoldás esetén bármelyik megadható.
+Példa
+bemenet                                            kimenet
+3 2                                                0102112200
+
+
+
+
+Korlátok
+Időlimit: 0.15 mp.
+Memórialimit: 32 MB
+A pontok 20%-szerezhető olyan bemenetekre, ahol N≤4 és K≤4.
+
+
+
+
+                                               1. oldal
+

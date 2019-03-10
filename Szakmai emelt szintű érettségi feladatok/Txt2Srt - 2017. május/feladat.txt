@@ -1,0 +1,97 @@
+Informatikai alapismeretek – emelt szint                                            2017. május 17.
+
+
+                                             Txt2Srt
+A videókhoz a legtöbb lejátszóprogram meg tud jeleníteni feliratokat. A feliratokat egy külön srt
+kiterjesztésű feliratfájlban szokták megadni, amely tartalmazza a feliratok sorszámát, az időzítéseket
+és a feliratokat. Ebben a feladatban egy videóhoz SRT formátumú, angol nyelvű feliratfájlt kell
+készítened. A feliratok és azok időzítése rendelkezésre állnak, de a formátumuk nem megfelelő.
+Írj programot, amely
+   1. megkeresi a legtöbb szóból álló feliratot,
+   2. elkészíti az SRT formátumú feliratot a lenti specifikáció és minta alapján!
+Bemenet
+A standard bemenet első sorában a feliratok száma (1≤N≤200) található, a következő
+2*N sorban pedig maguk a feliratok. Egy-egy felirat első sora négy egész számból áll kp:kmp –
+vp:vmp formátumban, az első kettő a megjelenítés kezdetét (perc és másodperc), a második kettő
+pedig a végét adja meg két karakteren ábrázolva(0≤kp,vp≤99, 0≤kmp,vmp<60). Az első
+időpont biztosan nem későbbi, mint a második. A második sorban a felirat szövege van, ami az
+angol ábécé kis- és nagybetűit, szóközöket és írásjeleket tartalmazhat, a hossza legfeljebb 200 ka-
+rakter lehet.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A legtöbb szóból álló felirat szövegét kell kiírni, egyenlőség esetén a bemenetben
+előbb szereplőt! Szónak tekintünk minden nem bővíthető karaktersorozatot, amely nem tartalmaz
+szóközt. Tudjuk, hogy a felirat szövegek elején és végén nincs szóköz, valamint nincs bennük két
+szóköz egymás mellett.
+2. részfeladat: Minden felirathoz 4 sort kell kiírni! Az első sorba egyetlen egész szám kerüljön, a
+felirat sorszáma 1-től számozva! A második sorba az időzítést kell kiírni óó:pp:mm -->
+óó:pp:mm formátumban, vagyis minden időadatot két karakteren ábrázolva, ahol óra<24,
+perc<60 és másodperc<60! A harmadik sorba kerüljön a felirat szövege, a negyedik sor pedig le-
+gyen üres!
+
+
+Példa
+ Bemenet
+ 4
+ 00:01 - 00:03
+ So phase two - tank creation.
+ 00:05 - 00:07
+ So what we're going to do in this one
+ 00:07 - 00:09
+ is we're going to put in our tank model
+ 00:09 - 00:11
+ and then that tank needs a number of different
+
+
+                                               1. oldal
+Informatikai alapismeretek – emelt szint                                           2017. május 17.
+
+ Kimenet
+ #
+ So what we're going to do in this one
+ #
+ 1
+ 00:00:01 --> 00:00:03
+ So phase two - tank creation.
+
+ 2
+ 00:00:05 --> 00:00:07
+ So what we're going to do in this one
+
+ 3
+ 00:00:07 --> 00:00:09
+ is we're going to put in our tank model
+
+ 4
+ 00:00:09 --> 00:00:11
+ and then that tank needs a number of different
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Megvalósítás
+A feladatot célszerű az objektumorientált (OOP) módszertant követve megoldani, erre vonatkoz-
+nak a következő ajánlások:
+      Hozz létre saját osztályt IdozitettFelirat azonosítóval és definiálj benne két szöveg típusú
+       adattagot, melyben egy felirat időzítését és magát a feliratot tudod majd tárolni!
+      Készítsd el az osztály konstruktorát, ami a következő feladatokat hajtja végre!
+           o Beállítja az időzítést tároló adattag értékét a konstruktor paraméterében megadott
+             értékkel.
+           o Beállítja a felirat szövegét tároló adattag értékét a konstruktor paraméterében
+             megadott értékkel.
+      Hozz létre osztálypéldányt (objektumot) minden egyes időzítés−felirat párhoz! Az osz-
+       tálypéldányokat egy összetett változóban (pl. vektor, lista stb.) tárold!
+      Készíts az IdozitettFelirat osztályban jellemzőt vagy metódust SzavakSzama azonosítóval!
+      Készíts az IdozitettFelirat osztályban jellemzőt vagy metódust SrtIdozites azonosítóval! A
+       létrehozott jellemző vagy metódus az időzítéshez tartozó adattag értékét alakítsa át az
+       SRT formátumnak megfelelően!
+
+
+
+
+                                             2. oldal
+

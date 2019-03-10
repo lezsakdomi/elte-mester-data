@@ -1,0 +1,49 @@
+Informatikai alapismeretek – emeltszint                                           2016. október 17.
+
+
+                                            Bástyák
+Ebben a feladatban egy 8x8-as mátrixban mint sakktáblán elhelyezett bástyákkal és gyalogokkal
+fogsz dolgozni.
+Írj programot, amely
+   1. minden bástyához megadja a lépésértékét,
+           o lépésérték alatt azon irányok számát értjük, amelyeken a bástya elérheti a tábla szélét
+                egy lépésben
+   2. kiszámítja, hogy hányféle lépésértékű bástya szerepel a bemenetben!
+Bemenet
+A standard bemenet 8 sorból áll, minden sor 8 karaktert tartalmaz, mely a sakktáblát repre-
+zentálja. A megfelelő karakter ’B’, ha az adott mezőn bástya áll, ’G’, ha gyalog. Az üres mezőket ’.’
+karakter kódolja.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A bemenetnek megfelelően kell a táblát kiírni! A bástyákat jelölő karaktereket kell
+az adott bábú lépésértékére lecserélni a példának megfelelően!
+2. részfeladat: A különböző lépésértékek számát kell kiírni!
+Példa
+ Bemenet                                    Kimenet
+ ...B....                                   #
+ .B..GB..                                   ...3....
+ ...B....                                   .3..G2..
+ ...G..B.                                   ...2....
+ .....B..                                   ...G..2.
+ G....GB.                                   .....2..
+ B.......                                   G....G2.
+ ........                                   3.......
+                                            ........
+                                            #
+                                            2
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

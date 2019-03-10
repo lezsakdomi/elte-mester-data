@@ -1,0 +1,44 @@
+Emelt szintű informatikai alapismeretek érettségi                               2008. október 20.
+
+
+                                             Lottó
+Egy lottóhúzás alkalmával 1 és 90 közötti szám közül húznak ki 5 különbözőt. Vizsgáld meg egy
+időszak húzásainak eredményét!
+Írj programot, amely
+   1. Megadja, hogy hány nyerőszám került legalább egyszer kihúzásra!
+   2. Meghatározza, hogy az egyes nyerőszámok hányszor lettek kihúzva!
+Bemenet
+A standard bemenet első sora tartalmazza a húzások számát (1≤N≤5000). A bemenet
+következő N sora 5 számot tartalmaz, az egyes húzások során kihúzott 5 számot.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A legalább egyszer kihúzott nyerőszámok K számát kell kiírni!
+2. részfeladat: K sorba egy-egy nyerőszámot és a kihúzásainak számát kell kiírni, kihúzások szá-
+ma szerint csökkenő sorrendben! Ha két nyerőszámot ugyanannyiszor húztak ki, a kisebb nyerő-
+számot kell előbb kiírni!
+Példa
+Bemenet                                             Kimenet
+2                                                   #
+49 19 21 56 22                                      8
+49 82 22 90 2                                       #
+                                                    22 2
+                                                    49 2
+                                                    2 1
+                                                    19 1
+                                                    21 1
+                                                    56 1
+                                                    82 1
+                                                    90 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

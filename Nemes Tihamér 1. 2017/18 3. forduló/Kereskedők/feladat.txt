@@ -1,0 +1,42 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny, 1. korcsoport              3. forduló
+
+
+                                       Kereskedők
+Ismerjük, hogy két gyümölcskereskedő milyen termékeket forgalmaz.
+Készíts programot, amely megadja azokat a gyümölcsöket, amelyek a két kereskedő közül csak az
+egyiknél kaphatók!
+Bemenet
+A standard bemenet első sorában az első kereskedő által árult gyümölcsök száma van
+(1≤N≤1000). A következő N sorban egy-egy általa árult gyümölcs neve található (az angol ábécé
+kisbetűivel írva), ábécé sorrendben. A következő sorban a második kereskedő által árult gyümöl-
+csök száma van (1≤M≤1000). Ezt követi M sorban egy-egy általa árult gyümölcs neve (az angol
+ábécé kisbetűivel írva), ábécé sorrendben. Ha valamelyik árus egy gyümölcsből többfélét is árul,
+akkor a neve a bemenetben többször jelenik meg.
+Kimenet
+A standard kimenet első sorába azon gyümölcsök K számát kell kiírni, amelyek csak az
+egyik kereskedőnél kaphatók! A következő K sorba egy-egy ilyen gyümölcs nevét kell kiírni, ábécé
+sorrendben! Minden nevet csak egyszer szabad kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               4
+alma                                            alma
+alma                                            mandula
+barack                                          szeder
+barack                                          szilva
+eper
+szilva
+4
+barack
+eper
+mandula
+szeder
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

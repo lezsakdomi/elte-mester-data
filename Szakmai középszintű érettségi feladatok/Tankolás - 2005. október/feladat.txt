@@ -1,0 +1,26 @@
+Középszintű informatikai alapismeretek érettségi                                 2005. május 21.
+
+
+                                          Tankolás
+Egy autó üzemanyag-fogyasztását olyan módon adjuk meg, hogy 100 kilométer távolságú út meg-
+tételéhez hány liter benzinre van szüksége.
+Készíts programot, amely eldönti, hogy egy autónak kell-e tankolnia az útja során!
+Bemenet
+A standard bemenet első sorában van az út hossza kilométerben (1≤H≤1013) az autó
+tankjának a mérete (1≤T≤1013) és az autó fogyasztása literben (1≤F≤105). A bemenet mindig
+olyan, hogy F osztója T-nek.
+Kimenet
+A standard kimenetre egyetlen sort kell kiírni, igen szerepeljen, ha kell tankolnia az autó-
+nak, nem ha nem kell tankolnia!
+Példa
+Bemenet                                             Kimenet
+350 12 3                                            nem
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

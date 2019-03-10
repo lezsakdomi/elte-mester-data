@@ -1,0 +1,38 @@
+Emeltszintű informatikai alapismeretek érettségi                                2010. október 18.
+
+
+                                          Traffipax
+Egy út mellé felállított traffipax készülék rögzíti a mellette elhaladó járművek sebességének nagy-
+ságát. Az úton van sebességkorlát.
+Írj programot, amely
+   1. meghatározza a sebességkorlátot betartó járművek átlagsebességét
+   2. megadja, hogy hány jármű lépte túl a megengedett sebességet.
+Bemenet
+A standard bemenet első sora tartalmazza a járművek számát (1≤N≤105) és a sebesség-
+korlátot (50≤vlimit≤130). Ezután N sorban egy-egy jármű sebessége (20≤v≤200) található.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A sebességkorlátot betartó járművek átlagsebességét kell kiírni, két tizedesjegyre
+kerekítve! Ha nincs ilyen jármű, akkor ebbe sorba 0-t kell írni!
+2. részfeladat: A sebességkorlátot túllépő járművek számát kell kiírni!
+Példa
+Bemenet                                            Kimenet
+5 90                                               #
+110                                                86.33
+90                                                 #
+80                                                 2
+89
+105
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

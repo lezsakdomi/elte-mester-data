@@ -1,0 +1,29 @@
+Infotmatikai alapismeretek – emelt szint                                       2007. május 25.
+
+
+                                       Kockadobás
+Statisztikai kísérlet sorozatot végzünk egy szabályos dobókockával. Egy összefüggő részsorozat
+monoton csökkenő, ha minden eleme (a legelső kivételével) kisebb vagy egyenlő a megelőző
+elemnél.
+Írj programot, amely megadja a kísérletsorozatban szereplő leghosszabb összefüggő monoton
+csökkenő részsorozat hosszát és kezdetének helyét!
+Bemenet
+A standard bemenet első sorában az adott kísérlet sorozat hossza (1≤N≤100 000) ta-
+lálható. A következő sor a kísérletsorozat elemeit (1≤Ei≤6) tartalmazza.
+Kimenet
+A standard kimenetre egyetlen sorába a leghosszabb összefüggő monoton csökkenő
+részsorozat hosszát és első elemének indexét kell írni! Ha több azonos hosszú ilyen részsorozat
+van, a legkorábban kezdődőt kell kiírni!
+Példa
+Bemenet                                        Kimenet
+8                                              4 3
+1 2 6 4 4 2 3 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

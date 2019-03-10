@@ -1,0 +1,39 @@
+Középszintű informatikai alapismeretek érettségi                                 2009. október 19.
+
+
+                                     Számrendszerek
+Írj programot, amely előállítja a felhasználó által megadott 16 bites, bináris, előjel nélküli egész
+szám hexadecimális alakját! A hexadecimális forma előállításához az alábbiakban részletezett algo-
+ritmust használhatod.
+Bináris érték átváltása hexadecimális formára:
+   1. a bináris számjegyek sorozatát 4 bites csoportokra osztjuk
+   2. meghatározzuk az egyes csoportok 10-es számrendszerbeli értékét
+   3. a kapott értékeket egy-egy hexadecimális számjeggyé alakítjuk
+Például:
+Adott a következő 16 bites bináris szám: 1011001111011010
+   1. 4 bites csoportokra bontjuk: 1011 0011 1101 1010
+   2. a 4 bites csoportok 10-es számrendszerbeli értéke sorrendben: 11 3 13 10
+   3. a kapott értékek hexadecimális számjegy formájában: B 3 D A
+A hexadecimális alak tehát: B3DA
+Bemenet
+A standard bemenet első sora tartalmazza az átváltások számát (1≤N≤104). Ezután N
+sorban következik egy-egy 16 bites bináris szám.
+Kimenet
+A standard kimenet i-edik sorába az adott hexadecimális számot írd ki (nagybetűkkel)!
+Példa
+Bemenet                                            Kimenet
+5                                                  535B
+0101001101011011                                   2D42
+0010110101000010                                   3B45
+0011101101000101                                   9FBA
+1001111110111010                                   528B
+0101001010001011
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

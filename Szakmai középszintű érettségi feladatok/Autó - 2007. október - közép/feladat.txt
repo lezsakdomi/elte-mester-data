@@ -1,0 +1,36 @@
+Középszintű informatikai alapismeretek érettségi                               2007. október 24.
+
+
+                                             Autó
+Egy autó 1 liter üzemanyag felhasználásával K kilométert képes megtenni. Ismerjük, hogy minden
+nap reggelén hány liter üzemanyagot tankoltunk, hogy ismét tele legyen a tank.
+Írj programot, amely
+   1. Meghatározza, hogy a vizsgált időszakban összesen hány liter üzemanyagot tankoltunk
+   2. Meghatározza, hogy hány kilométert tehetett meg így az autó!
+Bemenet
+A standard bemenet első sora tartalmazza a vizsgált napok számát (0≤N≤50 000) és az
+egy liter üzemanyaggal megtehető kilométerek számát (1≤K≤100). A második sor N számot tar-
+talmaz, az egyes reggeleken tankolt üzemanyag mennyiségét (1≤Ti≤5000).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A vizsgált időszakban összesen tankolt üzemanyag mennyiségét kell kiírni!
+2. részfeladat: A tankolt üzemanyagmennyiséggel megtehető kilométerek számát kell kiírni!
+Példa
+Bemenet                                             Kimenet
+5 12                                                #
+10 15 20 20 15                                      80
+                                                    #
+                                                    960
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

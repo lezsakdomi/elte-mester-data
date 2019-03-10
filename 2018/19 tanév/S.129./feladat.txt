@@ -1,0 +1,17 @@
+Középiskolai Matematikai Lapok, 2018/19                          Feladatot készítette: Busa Máté
+
+
+                                   S. 129. Papírcsónak
+A feladatleírás a KöMaL honlapján érhető el, az alábbi linken:
+https://www.komal.hu/verseny/feladatok.h.shtml
+Pontozás
+90 pont kapható a KöMaL-hoz beküldött program bemenetekre adott megoldása alapján. A
+bemenetek 20%-ra lehet tesztelni mester.inf.elte.hu oldalon.
+10 pont kapható a feladat elején kommentbe írt elméleti megoldás helyességére, valamint a kód
+átláthatóságára.
+
+
+
+
+                                             1. oldal
+

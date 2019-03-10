@@ -1,0 +1,28 @@
+Nemes Tihamér Nemzetközi Programozási Verseny, 1. korcsoport                       2. forduló
+
+
+                                       Időpontok
+Egy éven belül egy időpontról megadhatjuk, hogy az év hányadik hetére, a hét hányadik napjára
+esik, s azon belül hány óra, hány perc, hány másodperckor volt.
+Készíts programot, amely megadja két időpont távolságát, valamint egy újabb időpontot, amelyik
+a későbbitől ugyanolyan messze van, mint a későbbi a korábbitól!
+Bemenet
+A standard bemenet két sorában a két időpont szerepel. Mindegyik 5 számmal írható le
+(1≤Hét≤25, 1≤Nap≤7, 0≤Óra≤23, 0≤Perc≤59, 0≤Másodperc≤59).
+Kimenet
+A standard kimenet első sorába a két időpont távolságát, a másodikba pedig egy újabb
+időpontot kell írni, amelyik a későbbitől ugyanolyan messze van, mint a későbbi a korábbitól!
+Példa
+Bemenet                                        Kimenet
+5 2 15 8 14                                    1 6 3 0 56
+3 3 12 7 18                                    7 1 18 9 10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

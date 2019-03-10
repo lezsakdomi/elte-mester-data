@@ -1,0 +1,37 @@
+Emeltszintű informatikai alapismeretek                                      2010. május 14.
+
+
+                                         Kombináció
+
+(𝑛𝑘) a kombinatorikában használatos függvény (kombináció), értéke megadja, hogy n különböző
+elem közül hányféleképpen tudunk kiválasztani k darabot úgy, hogy a kiválasztott elemek sor-
+rendje nem számít!
+           𝑛        𝑛!                                      9         9!
+          ( )=                                      𝑃é𝑙𝑑𝑎: ( ) =           = 126
+           𝑘   𝑘! (𝑛 − 𝑘)!                                  4      4! ∗ 5!
+                                                                       𝑛
+Írjon programot, amely adott N darab n k számpár esetén meghatározza (𝑘 ) értékét (kombiná-
+ciójukat) a fentiekben leírt módszerrel!
+Bemenet
+A standard bemenet első sora tartalmazza a kombinációjukat kiszámítandó számpárok
+(1≤M≤100 000) számát. A következő N sor egy-egy n és k (1≤n,k≤12, k≤n) számból áll.
+Kimenet
+A standard kimenet N sorába egy-egy kiszámolt kombinációt kell írni, a bemenet sorrend-
+jében!
+Példa
+Bemenet                                           Kimenet
+5                                                 126
+9 4                                               3
+3 2                                               12
+12 1                                              36
+9 7                                               20
+6 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

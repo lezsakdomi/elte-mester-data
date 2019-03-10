@@ -1,0 +1,35 @@
+Nemes Tihamér Nemzetközi Informatikai Tanulmányi Verseny 2-3. korcsoport          3. forduló
+
+
+                                     Körmérkőzés
+Egy asztalitenisz versenyen minden résztvevő pontosan egyszer játszott mindenkivel, döntetlen
+soha nem volt.
+Készíts programot, amely megadja a versenyzők egy olyan felsorolását, amelyben mindenki le-
+győzte a közvetlenül előtte állót!
+Bemenet
+A standard bemenet első sorában a versenyzők száma van (1≤N≤100). A következő
+N*(N-1)/2 sorban soronként egy-egy eredmény szerepel (1≤Ai≠Bi≤N), ami azt jelenti, hogy Ai
+legyőzte Bi-t.
+Kimenet
+A standard kimenet első sorába a versenyzők egy olyan felsorolását kell írni, amelyben
+mindenki legyőzte a közvetlenül előtte állót! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+4                                              3 2 1 4                                  3
+1   2
+2   3
+                                                                        1         2
+2   4
+3   1                                                                                       4
+4   1
+4   3
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

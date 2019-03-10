@@ -1,0 +1,64 @@
+Emelt szintű informatika érettségi                                                  2012. május 14.
+
+
+                                             Törtek
+A matematikában sokszor van szükségünk műveletvégzésre a közönséges törtekkel. A legtöbb
+számológép és számítógépes program csak a tizedestörteket ismeri.
+Írj programot, amely
+  1.    egy közönséges tört számlálója és nevezője alapján eldönti, hogy a tört felírható-e egész
+        számként,
+  2.    a közönséges törtet legegyszerűbb alakra hozza,
+  3.    műveleteket végez két közönséges tört között (összead, szoroz)
+Bemenet
+A standard bemenet tartalmazza a törtek számát. (1≤N≤1000) és az elvégzendő műve-
+letek számát (1≤M≤1000). A következő N sor mindegyike két egész számot tartalmaz, rendre az
+adott tört számlálóját és nevezőjét. A következő M sor soronként 4 számot és egy műveleti jelet
+tartalmaz, melyeket mindenhol egy szóköz választ el. A számok sorban az első szám számlálója,
+nevezője, a második szám számlálója és nevezője. Műveleti jelként csak összeadás és szorzás sze-
+repel.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Minden törtről döntsd el, hogy felírható-e egész számként! Ha igen, írd ki az értékét
+egész számként, ha nem, a sorba a „Nem” szó kerüljön! Egy sorba csak egy adat kerüljön!
+2. részfeladat: Minden törtet hozz legegyszerűbb alakra! Ha a tört felírható egész számként, az
+értéke kerüljön a sorba, ha nem, akkor rendre a számláló és a nevező értéke kerüljön kiírásra!
+3. részfeladat: Végezd el a megadott műveleteket és az eredményt hozd legegyszerűbb alakra!
+Minden sorba egy megoldás kerüljön! Ha a tört felírható egész számként, az értéke kerüljön a sorba,
+ha nem, akkor rendre a számláló és a nevező értéke kerüljön kiírásra!
+Példa
+Bemenet                                           Kimenet
+5 4                                               #
+12 5                                              Nem
+12 2                                              6
+12 16                                             Nem
+17 1001                                           Nem
+60 6                                              10
+24 32 8     3   +                                 #
+24 32 8     3   *                                 12 5
+22 4 27     6   +                                 6
+22 4 27     6   *                                 3 4
+                                                  17 1001
+                                                  10
+                                                  #
+                                                  41 12
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi              2012. május 14.
+
+                                        2
+                                        10
+                                        99 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

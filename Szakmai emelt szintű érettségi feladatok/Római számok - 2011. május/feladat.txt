@@ -1,0 +1,38 @@
+Emeltszintű informatikai alapismeretek érettségi                                   2011. május 13.
+
+
+                                       Római számok
+Írj programot, amely előállítja egy pozitív egész szám római szám alakját az alábbiak szerint!
+− Az átváltandó szám az [1..3999] egész intervallumba esik.
+− Az átváltás szabályai:
+
+
+
+
+− A különböző helyi értékeket külön-külön át kell váltanunk, és egyszerűen egymás mellé kell
+írnunk.
+− Példák:
+
+
+
+
+Bemenet
+A standard bemenet első sora tartalmazza az átváltandó számok számát (1≤N≤105). Ez-
+után N sorban egy-egy szám következik (1≤szám≤3999).
+Kimenet
+A standard kimenet i-edik sorába az i-edik átváltott római számot írjuk (nagybetűkkel)!
+Példa
+Bemenet                                            Kimenet
+3                                                  LXXII
+72                                                 CMLIII
+953                                                MMDCXVIII
+2618
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

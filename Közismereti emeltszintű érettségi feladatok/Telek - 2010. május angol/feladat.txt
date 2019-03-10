@@ -1,0 +1,103 @@
+Emelt szintű informatikai érettségi                                                2010. május 11.
+
+
+                                             Telek
+Patakfalván a faluszélen levő beépítetlen területet szeli ketté a Dirib patak. Az önkormányzat
+elhatározta, hogy építési telkek kialakításával létrehozza a Szép jövő lakótelepet. A beépítés után
+egy téglalap alakú területen két utca jön létre: Gazdagsor és Jólétsor. A két sor lakói
+„lábszomszédok”, de telkeiket elválasztja egymástól a Dirib patak. A két utca párhuzamos, az
+utcafrontokat 80 méter választja el egymástól. Mindkét soron azonos számú téglalap alakú telket
+jelöltek ki, soronként legfeljebb 50-et. Gazdagsoron csak páratlan, Jólétsoron csak páros
+házszámokat adnak ki (1-től, illetve 2-től indulva kihagyásmentesen számozva). Egy telek
+szélessége maximum 40 méter. Az utcák végén egy-egy híd köti össze a patak két partját. A telkek
+kijelölésénél figyelembe vették a patak medrének nyomvonalát.
+
+
+
+
+Az önkormányzat telekadót fog kivetni. Az adót Fabatkában számolják. A 700 négyzetméteres és
+annál kisebb telkek esetén ez 51 Fabatka négyzetméterenként, az ennél nagyobb telkeknél az első
+700 négyzetméterre vonatkozóan szintén 51 Fabatka, 700 négyzetméter felett egészen 1000
+négyzetméterig 39 Fabatka a négyzetméterenkénti adó. Az 1000 négyzetméter feletti részért
+négyzetméter árat nem, csak 200 Fabatka egyösszegű átalányt kell fizetni. A 15 m vagy annál
+keskenyebb, illetve a 25 m vagy annál rövidebb telkek tulajdonosai 20% adókedvezményben
+részesülnek. Az adó meghatározásánál 100 Fabatkás kerekítést kell használni (pl. 6238 esetén 6200,
+6586 esetén 6600)!
+A telkeket úgy alakítják ki, hogy a szemben fekvő telkek patak felőli határvonalait az utcafrontra
+merőleges irányban legalább 10 méter válassza el egymástól. Szemben fekvőnek számítanak a telkek
+akkor is, ha csak a telkek valamelyik széle van egymással szemben. (Például a 10-es számú telekkel
+csak a 9-es és 11-es számú telek van szemben.) A telkeket a feltételeknek megfelelően, de a lehető
+leghosszabbra alakítják ki.
+                                                 1
+Emelt szintű informatikai érettségi                                                2010. május 11.
+
+Írj programot, amely
+      megadja, hogy hány métert kell gyalogolnia, annak, aki körbe akarja járni a két utcát,
+      meghatározza, hogy hány 20 méter széles vagy annál szűkebb ház van a Jólétsoron,
+      megadja, hogy hány háznyira van egymástól a legnagyobb és a legkisebb területű telek
+       Gazdagsoron,
+      meghatározza mekkora lesz az adóbevétel a Gazdagsor után,
+      megadja, melyik a három utolsó telek a Jóllétsoron,
+      valamint meghatározza a Jólétsor telkeinek a hosszúságát!
+
+Bemenet
+A standard bemenetben adottak a telkeknek az adatai. Az első sorban a kiosztandó telkek
+száma (0<N≤100) van megadva. Az ezt követő sorokban az egyes telkek adatai szerepelnek. Az
+első adat a házszám (1≤H≤N), a második a telek szélessége (1≤SZ≤40), míg a harmadik az erre
+merőlegesen mért hosszúsága (1≤Hoszz≤69). Gazdagsor esetén az összes adat rendelkezésre
+áll, Jólétsor esetében viszont a hosszúság adatok helyén 0 áll.
+
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Meg kell adni, hogy hány métert kell gyalogolnia, annak aki körbe akarja járni
+mindkét utcát!
+2. részfeladat: A Jólétsoron lévő húsz méter széles vagy annál szűkebb házak számát kell kiírni!
+3. részfeladat: A Gazdagsoron lévő legnagyobb területű telek, és a legkisebb területű telek között
+elhelyezkedő telkek számát, valamint a legnagyobb és legkisebb telek házszámát, illetve a
+legnagyobb és a legkisebb telek területét kell kiírni a képernyőre!
+4. részfeladat: A Gazdagsor utáni adóbevételt kell kiírni!
+5. részfeladat: A Jólétsoron lévő utolsó három telek házszámát és az adott teleknek a Jólétsor
+elejétől mért távolságát kell kiírni! Minden telket külön sorba kell írni, a házszámok szerint
+csökkenő sorrendben! Ha nincs három telek a Jólétsoron, akkor -1-et kell kiírni!
+6. részfeladat: A Jólétsor telkeinek adatait kell megadni! Az egyes sorokba a házszámot, a
+szélességet és a hosszúságot kell kiírni, egymástól pontosvesszővel elválasztva!
+
+
+
+
+                                                 2
+Emelt szintű informatikai érettségi                        2010. május 11.
+
+Példa
+Bemenet                                   Kimenet
+8                                         #
+1   20   20                               310
+2   10   0                                #
+5   10   50                               3
+3   20   40                               #
+7   25   40                               2 7 1 1000 400
+8   20   0                                #
+4   25   0                                123700
+6   20   0                                #
+                                          8 55
+                                          6 35
+                                          4 10
+                                          #
+                                          2;10;50
+                                          4;25;30
+                                          6;20;20
+                                          8;20;30
+Korlátok
+Időlimit: 0.1 mp.
+
+Memórialimit: 32 MiB
+
+
+
+
+                                      3
+

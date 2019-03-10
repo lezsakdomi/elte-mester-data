@@ -1,0 +1,39 @@
+Nemes Tihamér Online Programozási Verseny                                           1. forduló
+
+
+                                         Ügyelet
+Egy iskola N diákja megadta egy M napos időszakban, hogy melyikük mely napon vállalna iskolai
+ügyeletet.
+Készíts programot, amely megadja a leghosszabb időszak hosszát, amelyen minden napra van
+ügyeletes jelentkező, valamint ezen időszakon belül az egy napra jelentkezők maximális számát!
+Bemenet
+A standard bemenet első sorában a diákok száma (1≤N≤100 000) és a napok száma
+(1≤M≤100 000) van. A következő N sorban az egyes diákok által vállalt ügyeleti nap sorszáma
+található (1≤Si≤M).
+Kimenet
+A standard kimenet első sorába a leghosszabb időszak napjai számát kell írni, amely min-
+den napján van ügyeletre jelentkező! A második sorba az ezen időszakon belüli egy napra jelent-
+kező diákok maximális száma kerüljön!
+Példa
+Bemenet                                        Kimenet
+10 10                                          3
+2                                              2
+3
+7
+10
+8
+7
+6
+3
+3
+2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

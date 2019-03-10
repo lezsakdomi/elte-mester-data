@@ -21,38 +21,51 @@ id	szint	tema
 1 20	Középhaladó	Vasútvonal
 1 21	Középhaladó	Árvíz
 1 22	Középhaladó	Kutyaszépségverseny
-1 23	Középhaladó	Emeltszintű érettségi feladatok
-2 24	Haladó	Sorozatok
-2 25	Haladó	Rekurzív kiszámítás
-2 26	Haladó	Rekurzív adatszerkezetek
-2 27	Haladó	Mohó algoritmusok
-2 28	Haladó	Dinamikus programozás
-2 29	Haladó	Gráfok, elemi feladatok
-2 30	Haladó	Gráfok, körmentes gráfok
-2 31	Haladó	Gráfok, bejárás
-2 32	Haladó	Gráfok, szélességi bejárás
-2 33	Haladó	Gráfok, mélységi bejárás
-2 34	Haladó	Gráfok, legrövidebb utak
-2 35	Haladó	Gráfok, feszítőfák
-2 36	Haladó	Geometriai algoritmusok
-2 37	Haladó	Interaktív feladatok, kétszemélyes játékok
-2 38	Haladó	Interaktív feladatok, kitalálós feladatok
-2 39	Haladó	Interaktív feladatok, online algoritmusok
-2 40	Haladó	Visszalépéses keresés
-2 41	Haladó	Kombinatorikai algoritmusok
-2 42	Haladó	Szimuláció
-2 43	Haladó	Számelméleti algoritmusok
-2 44	Haladó	Egyéb feladatok
-3 45	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2016/2017 2. forduló
-3 46	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2016/2017 2. forduló
-3 47	Nemes T., OKTV, IOI Válogató	OKTV 2016/2017 2. forduló
-3 48	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2016/2017 3. forduló
-3 49	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2016/2017 3. forduló
-3 50	Nemes T., OKTV, IOI Válogató	OKTV 2016/2017 3. forduló
-3 51	Nemes T., OKTV, IOI Válogató	IOI Válogató 2017
-3 52	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2017/2018 2. forduló
-3 53	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2017/2018 2. forduló
-3 54	Nemes T., OKTV, IOI Válogató	OKTV 2017/2018 2. forduló
-3 55	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 1. 2017/2018 3. forduló
-3 56	Nemes T., OKTV, IOI Válogató	Nemes Tihamér 2. 2017/2018 3. forduló
-3 57	Nemes T., OKTV, IOI Válogató	OKTV 2017/2018 3. forduló
+1 23	Középhaladó	Közismereti emeltszintű érettségi feladatok
+1 24	Középhaladó	Szakmai középszintű érettségi feladatok
+1 25	Középhaladó	Szakmai emelt szintű érettségi feladatok
+1 26	Középhaladó	Összetett feladatok
+2 27	Haladó	Sorozatok
+2 28	Haladó	Rekurzív kiszámítás
+2 29	Haladó	Rekurzív adatszerkezetek
+2 30	Haladó	Mohó algoritmusok
+2 31	Haladó	Dinamikus programozás
+2 32	Haladó	Gráfok, elemi feladatok
+2 33	Haladó	Gráfok, körmentes gráfok
+2 34	Haladó	Gráfok, bejárás
+2 35	Haladó	Gráfok, szélességi bejárás
+2 36	Haladó	Gráfok, mélységi bejárás
+2 37	Haladó	Gráfok, legrövidebb utak
+2 38	Haladó	Gráfok, feszítőfák
+2 39	Haladó	Geometriai algoritmusok
+2 40	Haladó	Interaktív feladatok, kétszemélyes játékok
+2 41	Haladó	Interaktív feladatok, kitalálós feladatok
+2 42	Haladó	Interaktív feladatok, online algoritmusok
+2 43	Haladó	Visszalépéses keresés
+2 44	Haladó	Kombinatorikai algoritmusok
+2 45	Haladó	Szimuláció
+2 46	Haladó	Számelméleti algoritmusok
+2 47	Haladó	Egyéb feladatok
+3 48	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2016/17 2. forduló
+3 49	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2016/17 2. forduló
+3 50	NT, OKTV, IOI Válogató	OKTV 2016/2017 2. forduló
+3 51	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2016/17 3. forduló
+3 52	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2016/17 3. forduló
+3 53	NT, OKTV, IOI Válogató	OKTV 2016/2017 3. forduló
+3 54	NT, OKTV, IOI Válogató	IOI Válogató 2017
+3 55	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2017/18 2. forduló
+3 56	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2017/18 2. forduló
+3 57	NT, OKTV, IOI Válogató	OKTV 2017/2018 2. forduló
+3 58	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2017/18 3. forduló
+3 59	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2017/18 3. forduló
+3 60	NT, OKTV, IOI Válogató	OKTV 2017/2018 3. forduló
+3 61	NT, OKTV, IOI Válogató	NT Online 2018/19 1. forduló
+3 62	NT, OKTV, IOI Válogató	NT Online 2018/19 2. forduló
+3 63	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2018/19 2. forduló
+3 64	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2018/19 2. forduló
+3 65	NT, OKTV, IOI Válogató	OKTV 2018/19 2. forduló
+3 67	NT, OKTV, IOI Válogató	IOI Válogató 2018
+3 68	NT, OKTV, IOI Válogató	Nemes Tihamér 1. 2018/19 3. forduló
+3 69	NT, OKTV, IOI Válogató	Nemes Tihamér 2. 2018/19 3. forduló
+3 70	NT, OKTV, IOI Válogató	OKTV 2018/19 3. forduló
+4 66	KöMal Informatika	2018/19 tanév

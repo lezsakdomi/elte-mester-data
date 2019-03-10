@@ -1,0 +1,43 @@
+Nemes Tihamér OITV 2017              Programozás kategória                                Döntő
+
+
+                                Konténerek rendezése
+N különböző mérető konténer van egy sorban, a sor végén van egy szabad konténerhely. A kon-
+ténerek méretei 1 és N közötti egész számok. Át kell rendezni a konténersort úgy, hogy az első N
+helyen nagyság szerint növekvően legyenek! A rendezés során konténereket egymásra is rakha-
+tunk, de csak nagyobbra lehet rakni. Egy lépésben adott helyről a legfelsőt át lehet rakni valame-
+lyik szomszédos helyre, ha az üres, vagy az ott lévők legfelső konténere nagyobb, mint az átra-
+kandó.
+Írj programot, amely megad egy műveletsort, amely rendezi a konténersort!
+Bemenet
+A standard bemenet első sorában a konténerek száma van (2≤N≤100 ). A második sor-
+ban N különböző egész szám van, egy-egy konténer mérete (1≤Mi≤N).
+Kimenet
+A standard kimenet minden sora egy-egy művelet leírása legyen a végrehajtásuk sorrend-
+jében! Minden műveletet P L formában kell megadni, ahol P annak a helynek a sorszáma
+(1≤P≤N+1), amelyről az ott levő legfelső konténert mozgatjuk, L pedig a ’B’ karakter, vagy a ’J’
+karakter! A ’B’ azt jelenti, hogy a szomszédos helyre balra, a ’J’ pedig azt, hogy a szomszédos
+helyre jobbra rakjuk át az ott lévő legfelső konténert.
+Példa
+bemenet                                          kimenet
+4                                                2   J
+3 1 4 2                                          1   J
+                                                 3   B
+                                                 2   B
+                                                 4   J
+                                                 3   J
+                                                 2   J
+                                                 5   B
+                                                 4   B
+                                                 3   B
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤10.
+
+
+
+
+                                             1. oldal                     2017.02.25. 10:00-13:00
+

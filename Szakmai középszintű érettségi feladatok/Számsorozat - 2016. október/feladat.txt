@@ -1,0 +1,48 @@
+Informatikai alapismeretek – középszint                                          2016. október 17.
+
+
+                                        Számsorozat
+Ebben a feladatban egy számsorozat feldolgozása a feladat.
+Írj programot, amely
+   1.   meghatározza a sorozat elemszámát,
+   2.   kiszámítja a páratlan számok összegét és darabszámát,
+   3.   megadja a sorozat átlagát,
+   4.   meghatározza a leghosszabb szigorúan növekvő, összefüggő részsorozatot!
+Bemenet
+A standard bemenet legfeljebb 1000 sora egy-egy kétjegyű számot tartalmaz.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A sorozatban található számok számát kell kiírni!
+2. részfeladat: A páratlan számok összegét és darabszámát kell kiírni!
+3. részfeladat: A sorozatban szereplő számok átlagát kell kiírni legalább 10-5 pontossággal!
+4. részfeladat: Az első sorba a leghosszabb szigorúan növekvő összefüggő részsorozat hosszát, a
+másodikba a kezdőindexét kell kiírni! Több azonos hosszúságú megoldás esetén a legkorábban
+kezdődőt kell megadni!
+Példa
+ Bemenet                                           Kimenet
+ 55                                                #
+ 66                                                5
+ 88                                                #
+ 75                                                130 2
+ 64                                                #
+                                                   69.600000000
+                                                   #
+                                                   3
+                                                   1
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

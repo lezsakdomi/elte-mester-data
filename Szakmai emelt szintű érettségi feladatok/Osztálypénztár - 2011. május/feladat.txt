@@ -1,0 +1,33 @@
+Emeltszintű informatikai alapismeretek érettségi                                 2011. május 13.
+
+
+                                     Osztálypénztár
+Egy osztály egy tanévre vonatkozó pénzügyi nyilvántartásában megtalálható az év elején a tanulók
+számláján lévő pénz. Egy tanév 10 hónapból áll. A tanulók havonta kötelesek befizetni legalább
+1000 Ft-ot (ezt minden tanuló biztosan betartja), azonban befizethetik ennek többszörösét is, ha
+előre akarnak fizetni (lehetséges, hogy egy tanuló többet fizet be, mint köteles lenne egy évben).
+Havonta van az osztálynak kiadása, ennek egy főre eső része levonódik minden tanulótól (egészre
+felfelé kerekítve). Minden tanulónak lehet egyéni kiadása az év során, ami a számlájáról vonódik
+le.
+Írj programot, amely megadja, hogy a diákoknak egyenként mennyi pénz maradt a számlájukon a
+tanév végén!
+Bemenet
+A standard bemenet első sora tartalmazza a tanulók számát (20≤N≤40) és az összes vál-
+tozás számát az év során (N+(N+1)*10≤K≤N*3+(N+1)*10). Ezután N sorban egy-egy ta-
+nuló kezdeti számlaegyenlege található (1000≤egyenlegi≤3500). A követkető K sorban
+egy-egy változás található a következő formában: tanuló sorszáma és a változás mértéke a szám-
+lán (a befizetés pozitív, a kiadás negatív szám). Ha egész osztályra vonatkozó változás van, akkor
+a tanuló sorszáma helyén 0 található.
+Kimenet
+A standard kimenet i-edik sorába az i. tanuló tanévvégi egyenlegét írd ki!
+Példa
+A minta.zip-ben található.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

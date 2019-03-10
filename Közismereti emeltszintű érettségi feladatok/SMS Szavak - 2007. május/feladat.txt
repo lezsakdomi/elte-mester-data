@@ -1,0 +1,88 @@
+Emelt szintű informatika érettségi                                                 2007. május 16.
+
+
+                                         SMS szavak
+Az SMS küldés a telefonos kommunikáció egyik formája. Az erre alkalmas telefonok képesek
+prediktív szóbevitelre, amely azt jelenti, hogy minden karakternek az ő hozzá tartozó billentyűt
+feleltetjük meg. A betűk és billentyűk megfeleltetése az alábbi:
+           a, b, c               2                               m,   n,   o          6
+           d, e, f               3                               p,   q,   r, s       7
+           g, h, i               4                               t,   u,   v          8
+           j, k, l               5                               w,   x,   y, z       9
+Írj programot, amely megadja
+   1.   a leghosszabb szót, illetve annak hosszát a listában;
+   2.   a legfeljebb öt karakterből álló szavak számát;
+   3.   az adott számsorhoz tartozó lehetséges szavakat;
+   4.   a szógyűjteményben hány kódhoz tartozik több szó is;
+   5.   melyek ezek a kódok;
+   6.   mely kódhoz tartozó szavakból van a legtöbb;
+   7.   a listában található szavaknak megfelelő számsorokat!
+Bemenet
+A standard bemenet első sorában egy szóhoz tartozó számsor van (1≤hossz(X)≤15), a
+másodikban pedig a szavak száma (1≤N≤600). A következő N sorban egy-egy szó található
+(1≤hossz(Si)≤15). Minden szó csak egyszer szerepel és csak az angol ábécé kisbetűit tartal-
+mazza.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A leghosszabb szót és annak hosszát (több megoldás esetén bármelyiket) kell kiír-
+ni!
+2. részfeladat: Az öt karakternél rövidebb szavak számát kell írni!
+3. részfeladat: Írd ki az X számsorhoz tartozó szavak listáját, tetszőleges sorrendben!
+4. részfeladat: Azon szavak K számát írd ki, melyekhez olyan kód tartozik, amihez több szó is
+szerepel a listában!
+5. részfeladat: A K sorban szerepeljenek ezek: soronként egy kód és a hozzá tartozó szó!
+6. részfeladat: Azt a kódot kell írni az első sorba, amelyhez a legtöbb szó tartozik a gyűjtemény-
+ben (több megoldás esetén bármelyiket)!
+7. részfeladat: A sorban sorold fel az előző részfeladatban szereplő kódhoz tartozó összes szót,
+tetszőleges sorrendben!
+8. részfeladat: Az N db sorba írd ki a szógyűjteményben található szavaknak megfelelő számso-
+rokat, soronként egy darabot az eredeti sorrend szerint!
+
+
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi                                             2007. május 16.
+
+
+Példa
+Bemenet                                  Kimenet
+225                                      #
+5                                        elvesz 6
+alma                                     #
+baj                                      4
+bal                                      #
+elvesz                                   baj bal
+akna                                     #
+                                         4
+                                         #
+                                         225 baj
+                                         225 bal
+                                         2562 alma
+                                         2562 akna
+                                         #
+                                         2562
+                                         #
+                                         alma akna
+                                         #
+                                         2562
+                                         225
+                                         225
+                                         358379
+                                         2562
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Ha a részfeladatok valamelyikét nem tudod megoldani, akkor az eredménye helyett egy üres sort
+írj ki.
+
+
+
+
+                                           2. oldal
+

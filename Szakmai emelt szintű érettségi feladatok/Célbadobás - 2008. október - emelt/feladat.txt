@@ -1,0 +1,36 @@
+Emelt szintű informatikai alapismeretek érettségi                             2008. október 20.
+
+
+                                        Célbadobás
+Egy elektronikus céltábla a lövedék becsapódási helyének koordinátáit adja vissza, oly módon,
+hogy a derékszögű koordinátarendszer origója a tábla középpontja, a tengelyeken a skála pedig az
+origótól mért távolság milliméterben. A becsapódási adatok alapján a lövés pontértékét a közép-
+ponttól vett (Manhattan) távolságból számítjuk ki. Ha a pontszám negatív lenne, nulla pontot
+adunk.
+A pontérték meghatározásának képlete:
+                                     𝑃 = (𝐾 − 𝑑) 𝑚𝑜𝑑 𝑀
+                                     𝑑 = |𝑥| + |𝑦|
+ahol P a kapott pontszám, d a távolság, a becsapódás koordinátái x és y, K és M konstansok.
+Írj programot, amely meghatározza a dobások pontértékét!
+Bemenet
+A standard bemenet első sora tartalmazza a dobások számát (1≤N≤20 000) és a pont-
+szám meghatározásához használt K (1≤K≤100 000) és M (2≤M≤100 000) értékeket. A be-
+menet következő N sora 2 számot tartalmaz, az i. sor az i. dobás becsapódási koordinátáit
+(-100 000≤Xi,Yi≤100 000).
+Kimenet
+A standard kimenetre N sort kell kiírni, az i. sor tartalmazza az i. dobás pontértékét!
+Példa
+Bemenet                                             Kimenet
+3   5 4                                             1
+0   0                                               3
+2   0                                               0
+4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

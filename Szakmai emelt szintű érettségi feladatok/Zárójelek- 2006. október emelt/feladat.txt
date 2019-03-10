@@ -1,0 +1,31 @@
+Emeltszintű informatikai alapismeretek érettségi                                   2006. október 24.
+
+
+                                    Helyes zárójelezés
+Írj programot, mely eldönti, hogy a megadott matematikai kifejezés helyesen zárójelezett-e!
+A szöveges kifejezésben a következő karakterek szerepelhetnek: 0..9, +, -, *, /, (, ).
+A beolvasott kifejezésre a program a következő ellenőrzéseket végezze el:
+       a zárójelpárok megvannak-e (ugyanannyi nyitó, mint záró zárójel)!
+       a zárójelpárok megfelelően helyezkednek-e el! (Előbb nyit, azután zár, egymásba ágyazha-
+        tók.)
+Bemenet
+A standard bemenet első sora tartalmazza a kifejezések számát (1≤N≤100), majd a követ-
+kező N sor tartalmazza az egyes kifejezéseket (3≤Hossz≤1500).
+Kimenet
+A standard kimenet i. sorába kerüljön Igen, ha a bemenet i. kifejezése jól volt záróje-
+lezve, és kerüljön Nem, ha nem volt helyesen zárójelezve!
+Példa
+Bemenet                                               Kimenet
+3                                                     Igen
+(1+5)*((2-3)/(3))                                     Nem
++)(123-42)(-12                                        Nem
+((34)-34
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

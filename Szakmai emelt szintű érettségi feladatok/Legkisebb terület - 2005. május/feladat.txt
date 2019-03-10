@@ -1,0 +1,29 @@
+Emeltszintű informatikai alapismeretek érettségi                              2005. május 20.
+
+
+                                    Legkisebb terület
+Egy derékszögű koordinátarendszerben a pontok helyzetét egy koordináta párral adjuk meg. (Pl.:
+A(xa,ya) )
+Készíts programot, amely meghatározza, hogy mennyi az adott pontokat lefedő, a koordináta-
+rendszer tengelyeivel párhuzamos oldalú, legkisebb területű téglalap területe!
+Bemenet
+A standard bemenet első sora a pontokszámát tartalmazza (1≤N≤104). A következő N
+sor egyenként a pontok koordinátáit tartalmazza (-104≤Xi,Yi≤104).
+Kimenet
+A standard kimenetre a legkisebb lefedő téglalap területét kell kiírni!
+Példa
+Bemenet                                             Kimenet
+4                                                   121
+-1 0
+0 -1
+10 1
+1 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

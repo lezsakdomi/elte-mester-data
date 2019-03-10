@@ -1,0 +1,49 @@
+Informatika OKTV                                                                    3. forduló
+
+
+                                        Négyszög
+Adott a síkon K ponthalmaz. Mindegyik ponthalmazban meg kell adni négy olyan pontot, ame-
+lyek konvex négyszöget alkotnak és a ponthalmaz egyetlen más pontja sem esik a négyszög belse-
+jébe, sem az oldalára! Konvex sokszög minden szöge 180 foknál kisebb.
+Készíts programot, amely megadja a konvex négyszögeket!
+Bemenet
+A standard bemenet első sorában a ponthalmazok száma (1≤K≤10) található. A követke-
+ző K blokk egy-egy ponthalmazt ad meg. Minden blokk első sorában a ponthalmaz pontjainak
+száma van (1≤N≤100 000). A blokkban ezt követi N sor, soronként egy-egy pont x- és y-
+koordinátája (-1 000 000≤x,y≤1 000 000).
+Kimenet
+A standard kimenet K sorába kell írni az eredményt! Az i. sorba az i. ponthalmaz megol-
+dását kell írni! Ha a ponthalmazban nincs négy pont, amelyek olyan konvex négyszöget alkotnak,
+hogy a ponthalmaz egyetlen más pontja sem esik a négyszög belsejébe, sem az oldalára, akkor a
+„0 0 0 0” számnégyest kell kiírni! Ha van kívánt négyszög, akkor a négy pont sorszámát kell
+kiírni órajárással ellentétes felsorolás szerint!
+Példa
+Bemenet                                        Kimenet
+2                                              0 0 0 0
+5                                              4 2 6 5
+2   1
+9   2
+4   2
+6   3
+6   8
+6
+2   1
+9   2
+4   2
+6   3
+6   8
+9   6
+                                               A 2. ponthalmaz, benne egy konvex négyszög.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 10%-a szerezhető olyan tesztekre, ahol a pontok száma legfeljebb 100.
+A pontok további 20%-a szerezhető olyan tesztekre, ahol a pontok száma legfeljebb 500.
+
+
+
+
+                                           1. oldal
+

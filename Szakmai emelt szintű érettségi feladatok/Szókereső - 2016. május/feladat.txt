@@ -1,0 +1,78 @@
+Informatikai alapismeretek – emeltszint                                                2016. május 18.
+
+
+                                            Szókereső
+A szókereső játékokban egy karakterekkel feltöltött mátrixban kell megkeresni a megadott szavakat.
+Ebben a feladatban egy ilyen szókereső feladványt kell elkészítened magadott szavak alapján.
+Írj programot, amely
+   1. megadja, hány szó található a bemenetben,
+   2. kiírja a leghosszabb szót és annak hosszát,
+   3. megjeleníti a feladványt!
+Bemenet
+A standard bemenet minden sora egy a feladványba kerülő szót ír le. A sorokban az adatok
+’*’ karakterrel vannak elválasztva. Az első adat az angol ábécé kisbetűiből álló, legfeljebb 16 karakter
+hosszú szó, a második és harmadik adat a szó kezdőpozícióját jelöli sor- és oszlopindex formájában
+0-tól indexelve, a harmadik adat pedig a szó irányát jelöli az alábbi kódolással.
+
+
+
+
+Például a következő sor a szamár szó adatait adja meg: szamar*2*15*6
+Melyből kiderül, hogy az szó első karaktere („s”) a mátrix 3. sorában és a 16. oszlopában kezdő-
+dik, a további karaktereket átlósan balra-lefelé kell sorban elhelyezni.
+Feltételezhető, hogy a bemenet ellentmondás mentes és helyes feladványt ír le.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A bemenetben szereplő szavak számát kell kiírni!
+2. részfeladat: Az első sorba a leghosszabb szó hossza kerüljön, az ezt követő sorokba a maximális
+hosszú szavak kerüljenek lexikografikus sorrendben!
+3. részfeladat: A 16x16-os feladványt kell kiírni, amelyben a bemenetben megadott szavak a meg-
+felelő helyekre kerültek! A tetszőleges karakterek helyét ’.’ karakterrel kell kitölteni a minta alapján!
+A kimenetnek karakterre pontosan meg kell egyeznie a példában megadottal!
+
+
+
+
+                                                1. oldal
+Informatikai alapismeretek – emeltszint                      2016. május 18.
+
+
+Példa
+ Bemenet                                  Kimenet
+ elefant*4*4*7                            #
+ flamingo*13*13*4                         15
+ foka*12*5*1                              #
+ gorilla*6*9*2                            8
+ hod*0*0*8                                flamingo
+ kacsa*7*11*1                             oroszlan
+ kakukk*15*5*5                            #
+ kutya*10*0*3                             h..............a
+ lama*12*15*4                             .o..nalzsoro..l.
+ macska*3*2*7                             ..d......s...l.s
+ oroszlan*1*11*5                          ..m.....a...i.z.
+ roka*13*9*3                              ..a.e..s...r.a..
+ sas*2*9*6                                ..c.l.....o.m...
+ szamar*2*15*6                            a.s.e.o..g.a....
+ vizilo*15*10*1                           y.k.f..g..rkacsa
+                                          t.a.a...n.......
+                                          u...n....i..a...
+                                          k...t....am..m..
+                                          .........k.a..a.
+                                          .....fokao..l..l
+                                          .........r...f..
+                                          ................
+                                          kkukak....vizilo
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+

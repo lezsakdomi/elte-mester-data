@@ -1,0 +1,41 @@
+Diákolimpiai Válogatóverseny 2018
+
+
+                                   Hálózat kettéosztás
+Egy kereskedelmi hálózat N üzletet tartalmaz. Bizonyos üzletpárok együttműködési megállapo-
+dásban vannak. A hatóságok szerint a hálózat túl nagy, ezért az üzleteit két részre kell bontani (és
+külön kell értékesíteni). A két részre bontást úgy kell kialakítani, hogy mindkét részre teljesüljön,
+hogy bármely üzletnek a részen belül páros számú együttműködő partnere maradjon! Mindkét
+rész legalább egy üzletet tartalmazzon!
+Készíts programot, amely meghatároz egy megfelelő kettéosztást!
+Bemenet
+A standard bemenet első sora a hálózat üzleteinek számát (2≤N≤200) tartalmazza. A to-
+vábbi N sor mindegyike egy üzlet együttműködő társait adja meg. Az i-edik sor az i-edik üzlet
+partner üzletei számát tartalmazza (1≤Ki≤N-1), ezt követi a Ki különböző egész szám, a partner
+üzletek sorszámai. Minden bemenetre van megoldás.
+Kimenet
+A standard kimenet első sorába a kettéosztás egyik felének elemszámát kell írni! A máso-
+dik sorba kell kiírni ezen fél üzleteinek sorszámait tetszőleges sorrendben! Több megoldás esetén
+bármelyik megadható.
+Példa
+bemenet                                           kimenet
+
+5
+                                                  3
+3   2   3 4
+                                                  1 2 3               2
+2   1   3
+4   2   1 4 5
+2   1   3
+1   3
+                                                             1               3                5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB                                                   4
+A tesztek 30%-ában M≤100.
+
+
+
+
+                                              1. oldal
+

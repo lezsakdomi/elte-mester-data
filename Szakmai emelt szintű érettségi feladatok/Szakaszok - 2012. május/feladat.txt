@@ -1,0 +1,50 @@
+Informatikai alapismeretek – emelt szint                                            2012. május 25.
+
+
+                                           Szakaszok
+Ebben a feladatban színes szakaszokból álló képeken kell számításokat végezned. A kép bal felső
+sarka a (0,0) koordinátájú képpont. A szakaszok színei RGB kóddal vannak megadva, ami három
+0 és 255 közötti egész számmal írja le a szín vörös, zöld és kék komponensének intenzitását. A
+három alapszín a (255,0,0), a (0,255,0) és a (0,0,255). Két szakaszt csatlakozónak nevezünk, ha egyik
+végpontjuk közös, a másik különböző.
+Írj programot, amely
+   1. megkeresi azokat a szakaszokat, amelyek az első szakasz tükörképei a kép függőleges közép-
+      vonalára vonatkozóan és a színük is megegyezik vele,
+   2. megkeresi az első csatlakozó függőleges-vízszintes szakaszpárt,
+   3. meghatározza a leghosszabb olyan szakaszt, amelynek színe a három alapszín valamelyike!
+Bemenet
+A standard bemenet első sorában a kép képpontokban mért szélessége és magassága, vala-
+mint a szakaszok száma (1≤M,N,K≤200) található. A következő K sor tartalmazza egy-egy sza-
+kasz végpontjainak vízszintes és függőleges koordinátáit (X1,Y1,X2,Y2,0≤X1,X2<M,
+0≤Y1,Y2<N) és a színének RGB kódját (0≤R,G,B≤255). Egy szakasz két végpontja biztosan
+nem esik egybe.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Egyetlen sorba a kép olyan szakaszainak számát kell kiírni, amelyek az első szakasz
+tükörképei, majd az ilyen szakaszok sorszámait kell felsorolni növekvő sorrendben! Előfordulhat,
+hogy az első szakasz is tükörképe önmagának.
+2. részfeladat: Az első függőleges szakasz sorszámát, amelyhez csatlakozik vízszintes szakasz, és a
+hozzá csatlakozó első vízszintes szakasz sorszámát kell kiírni! Ha nincs csatlakozó szakaszpár, ak-
+kor egyetlen -1-et kell kiírni!
+3. részfeladat: A leghosszabb olyan szakasz sorszámát kell kiírni, amelynek színe a három alapszín
+valamelyike. Ha több ilyen szakasz is van, akkor a legkisebb sorszámút, ha nincs ilyen, akkor -1-et!
+Példa
+ Bemenet                                           Kimenet
+ 200 100 5                                         #
+ 10 10 20 20 127 255 127                           1 3
+ 189 10 179 20 0 255 0                             #
+ 179 20 189 10 127 255 127                         5 4
+ 0 0 1 0 0 0 0                                     #
+ 1 0 1 1 1 1 1                                     2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+                                              1. oldal
+

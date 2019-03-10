@@ -1,0 +1,36 @@
+Nemes Tihamér Online Programozási Verseny                                             2. forduló
+
+
+                                 Két csoportra osztás
+Ismerjük N versenyző korábbi versenyeken elért legmagasabb pontszámát. Két csoportra szerez-
+nék osztani őket az eredményeik szerint (erősek, illetve gyengék). A csoportokat úgy határozzuk
+meg, hogy a két csoport távolsága a lehető legnagyobb, előre adott T-nél nagyobb érték legyen! A
+csoportok távolsága az erősek csoportja leggyengébb tagja és a gyengék csoportja legerősebb tagja
+pontszámának különbsége.
+Készíts programot, amely megadja a két csoport közöti távolságot!
+Bemenet
+A standard bemenet első sorában a versenyzők száma (1≤N≤500 000), a legmagasabb
+pontszám (1≤M≤100 000) és a T érték (1≤T≤100) van. A következő N sorban az egyes ver-
+senyzők eredményei szerepelnek (1≤Ei≤M).
+Kimenet
+A standard kimenet egyetlen sorába a két csoport közötti legnagyobb távolságot kell írni!
+Ha nem lehet a versenyzőket a fentiek szerint két csoportra osztani, akkor -1-et kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6 100 2                                         7
+15
+8
+17
+22
+5
+7
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,73 @@
+Informatikai alapismeretek – középszint                                             2013. május 23.
+
+
+                                       Tanulócsoport
+Ebben a feladatban pontrendszer alapján szeretnénk értékelni egy tanulócsoport eredményét!
+Írj programot, amely
+   1. meghatározza a tanulók pontszámait a jegyeik alapján: az ötösök +3 pontot, a négyesek +2
+      pontot, a kettesek -1 pontot, az elégtelenek -2 pontot érnek,
+   2. kiszámítja a tanulók pontszámainak átlagát,
+   3. meghatározza az átlag felett teljesítő tanulókat és pontszámaikat,
+   4. megadja a legjobb pontszámot elérő tanuló nevét, holtverseny esetén neveiket!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤100) található, a következő 2*N
+sor a tanulók eredményeit írja le. Minden tanulóra egy sorban a tanuló neve található (legfeljebb
+255 karakter hosszú), a rákövetkező sorban pedig 5 szám a szerzett érdemjegyeinek a darabszámát
+írja le, rendre az ötösök, négyesek, hármasok, kettesek és az elégtelenek számát. Egy érdemjegyből
+minden tanuló legfeljebb 255 darabot szerzett.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: N számot kell kiírni szóközökkel elválasztva. A tanulók pontszámait a bemenettel
+megegyező sorrendben.
+2. részfeladat: A tanulók pontszámainak átlagát kell kiírni legalább 10-5 pontossággal.
+3. részfeladat: Az átlag feletti pontszámot elért tanulókat kell kiírni. Minden tanulót két sorral az
+elsőbe a nevét majd a következő sorba a pontszámát kell kiírni a bemenetnek megfelelő sorrendben.
+4. részfeladat: A legmagasabb pontszámmal rendelkező tanulók neveit kell kiírni külön sorokba.
+
+
+
+
+                                              1. oldal
+Informatikai alapismeretek – középszint                            2013. május 23.
+
+
+
+Példa
+ Bemenet                                       Kimenet
+ 11                                            #
+ Kis Ramóna                                    166 45 35 345 1 101 292 173
+ 43 34 14 19 6                                 211 345 286
+ Nagy Kálmán                                   #
+ 23 19 20 18 22                                181.818181818
+ Horváth Tamás                                 #
+ 17 29 29 14 30                                Szabó János
+ Szabó János                                   345
+ 101 21 3 0 0                                  Takács Márton
+ Magyar Béla                                   292
+ 12 34 27 33 35                                Nagy Kitti
+ Németh Jenő                                   211
+ 25 31 22 14 11                                Török Beáta
+ Takács Márton                                 345
+ 86 19 5 2 1                                   Kiss Ferenc
+ Kovács Kázmér                                 286
+ 43 33 18 8 7                                  #
+ Nagy Kitti                                    Szabó János
+ 51 32 15 4 1                                  Török Beáta
+ Török Beáta
+ 95 30 6 0 0
+ Kiss Ferenc
+ 80 24 6 2 0
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

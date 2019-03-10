@@ -1,0 +1,31 @@
+Emeltszintű informatikai alapismeretek érettségi                                2005. május 20.
+
+
+                                    Géza csempézik
+Síkfelületek (pl. fürdőszobák, konyhák stb. padlózatának) burkolását Géza mester a felület nagy-
+ságánál 20%-kal több felületet lefedő burkolólap felhasználásával vállalja.
+Készíts programot, mely megadja, hogy hány darab burkolólapra van szüksége Géza mesternek a
+munka elvégzéséhez!
+A program feltételezd, hogy a szélességek és hosszúságok megadásánál azonos mértékegységet, a
+métert használjuk! Terület megadásánál pedig feltételezzük, hogy az négyzetméterben lett megad-
+va. A tényleges lefedést nem kell modellezned, csak az anyagszükségletet kell kiszámítani!
+Bemenet
+A standard bemenet első sora a burkolandó felület méreteit tartalmazza (1≤W,H≤104). A
+második sorban a burkoló lapok méretei szerepelnek (1≤bw,bh≤103). W*H mindig olyan, hogy
+a 20%-a is egész szám.
+Kimenet
+A standard kimenetre azt kell kiírni, hogy hány burkolólapra van szüksége Géza mes-
+ternek!
+Példa
+Bemenet                                             Kimenet
+4 5                                                 12
+1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

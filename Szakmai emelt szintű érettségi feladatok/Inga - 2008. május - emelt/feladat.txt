@@ -1,0 +1,38 @@
+Emelt szintű informatikai alapismeretek érettségi                                2008. május 26.
+
+
+                                               Inga
+A matematikai (fonál) inga lengési idejét az alábbi képlettel számolhatjuk ki:
+
+                                                    𝑙
+                                            𝑇 = 2𝜋√
+                                                   𝑔
+
+ahol T a lengési idő másodpercben, 𝜋 a pi szám, melynek a feladatban használandó közelítő érté-
+ke 3.14159, l a fonálhossz méterben, g pedig a gravitációs gyorsulás, mely közelítő értéke 9.81
+m/s2.
+Írj programot, amely meghatározza, hogy M másodperc alatt hány teljes lengést tesz meg adott
+fonálhosszú inga! A számításokhoz használj dupla pontosságú lebegőpontos számokat!
+Bemenet
+A standard bemenet első sora tartalmazza a vizsgált ingák számát (1≤N≤20 000). A be-
+menet következő N sora 2 számot tartalmaz, az egyes ingák fonálhosszát milliméterben megadva
+(1≤li≤1000000) és a vizsgált intervallum hosszát másodpercben (0≤Mi≤1 000 000).
+Kimenet
+A standard kimenetre N sort kell kiírni, az i. sorban szerepeljen az i. inga által teljesen
+megtett lengések száma!
+Példa
+Bemenet                                               Kimenet
+4                                                     0
+1   0                                                 15
+1   1                                                 7
+5   1                                                 98
+5   14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

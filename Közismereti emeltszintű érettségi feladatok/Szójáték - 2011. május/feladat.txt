@@ -1,0 +1,74 @@
+Emelt szintű informatika érettségi                                                2011. május 10.
+
+
+                                           Szójáték
+Sok szórakoztató szójátékkal lehet elütni az időt. Ezek közül némelyekhez segítségül hívhatjuk a
+technikát is. Az alábbiakban szójátékokhoz kapcsolódó problémákat kell megoldani.
+A szólétra építés egy olyan játék, amikor adott egy szó közepe, például „isz”, amit a létra foká-
+nak nevezünk. Ennek a szócsonknak az elejére és a végére kell egy-egy betűt illesztenünk úgy,
+hogy értelmes szót hozzunk létre, például „hiszi” vagy „liszt”. Ezt az értelmes szót a já-
+tékban létraszónak nevezzük. Az adott szórészlethez minél több létraszót tudunk kitalálni, annál
+magasabb lesz a szólétra.
+Írj programot, amely
+   1. eldönti egy szóról, hogy hány magánhangzót tartalmaz!
+   2. meghatározza a leghosszabb szót, több ilyen esetén az összeset!
+   3. meghatározza, hogy hány olyan szó van, amelyekben több a magánhangzó, mint a más-
+      salhangzó!
+   4. egy szórészlethez meghatározza a szólétra építés szabályai szerint hozzátartozó szavakat!
+   5. meghatározza a létrehozható (legalább 2 szóból álló) szólétrákat!
+Bemenet
+A standard bemenet első sora tartalmazza az első részfeladatban vizsgálandó szót
+(1≤hossz(A)≤100). A második sor tartalmazza a negyedik részfeladathoz használandó szó-
+részletet (hossz(X)=3). A harmadik sora tartalmazza a szavak számát (1≤N≤1000). A követ-
+kező N sor mindegyike egy szót (1≤hossz(Si)≤100) tartalmaz. Minden szó legfeljebb egyszer
+szerepel és csak az angol ábécé kisbetűit tartalmazza.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az A szóban található magánhangzók K számát kell kiírni!
+2. részfeladat: A leghosszabb szavakat kell írni egy sorba, szóközzel elválasztva, ábécé sorrend-
+ben!
+3. részfeladat: A több magánhangzót, mint mássalhangzót tartalmazó szavak M számát kell kiírni!
+4. részfeladat: Az első sorba az X szórészlethez tartozó szavak L számát kell írni, a következő
+sorba ezeket a szavakat kell írni, tetszőleges sorrendben!
+5. részfeladat: Az első sorba a szólétrák P számát kell írni! A következő P sorba egy-egy szólétrát
+kell írni, tetszőleges sorrendben!
+
+
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                              2011. május 10.
+
+
+Példa
+Bemenet                                     Kimenet
+krisztina                                   #
+isz                                         3
+10                                          #
+almafa                                      almafa tiszta
+apa                                         #
+eszik                                       1
+hisz                                        #
+hiszi                                       3
+iszik                                       hiszi liszt tiszt
+liszt                                       #
+tiszt                                       2
+tiszta                                      eszik iszik
+ugrik                                       hiszi liszt tiszt
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

@@ -1,0 +1,90 @@
+Emelt szintű informatika érettségi                                                 2008 május 19.
+
+
+                                              SMS
+Esemes Ernő szenvedélyes SMS-küldő, ezért a MaMobil nevű cég tesztelésre kérte fel. Ehhez egy
+új, kézre álló telefont adnak, amelynek tesztüzemben egyetlen hátránya, hogy legfeljebb az először
+érkező (1≤M≤20) darab, egyenként legalább 1, de legfeljebb 100 karakteres üzenetet tud eltárolni.
+Ha ettől több üzenet van, akkor azokat korlátlan számban a szolgáltató őrzi meg a hangpostához
+hasonlóan, tehát azokhoz csak bizonyos díj fejében juthat hozzá. Az üzenetek nem tartalmazhat-
+nak ékezetes karaktereket.
+Készíts programot, amely megadja
+   1. az utolsó üzenet érkezésekor a telefon memóriájában legfrissebb üzenetet;
+   2. a leghosszabb üzenet adatait;
+   3. a legrövidebb üzenet adatait;
+   4. a karakterhossz szerinti statisztikát: 1-20, 21-40, 41-60, 61-80, 81-100!
+   5. Ha Ernő minden óra 0. percében elolvasná a memóriában lévő üzeneteket (az éppen ekkor
+      érkező üzeneteket nem látja), majd ki is törölné, akkor hány olyan üzenet lenne, amelynek
+      elolvasásához fel kellene hívnia a szolgáltatót? (Az üzeneteket először 0, utoljára 23 órakor
+      olvassa el.)
+   6. Ernő barátnője gyakran küld sms-t a standard bemenet első sorában megadott szám-
+      ról. Mennyi volt a leghosszabb idő, amennyi eltelt két egymás utáni üzenete között?
+   7. Írj egy listát az üzenetekről telefonszám szerinti csoportosításban, telefonszám első hívása
+      szerint növekvő sorrendben!
+Bemenet
+Az standard bemenet első sorában a készülékre a mai napon érkezett üzenetek száma
+(1≤K≤100), majd az szerepel, hogy a telefon az először érkező üzenetek közül legfeljebb hányat
+tud eltárolni (1≤M≤20), illetve Ernő barátnőjének telefonszáma (Tel). Ezt követik az üzenetek
+K*2 sorban, érkezési idő szerinti sorrendben. Minden üzenethez 2 sor tartozik. Az elsőben elő-
+ször az érkezés órája (0≤ORA≤23), az érkezés perce (0≤PERC≤59) és a telefonszám (pontosan
+9 jegyű szám), a másodikban pedig az üzenet (legfeljebb 100 karakternyi szöveg) található.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az utolsó üzenet érkezésekor a telefon memóriájában levő legfrissebb üzenetet
+kell kiírni!
+2. részfeladat: Az első sorba leghosszabb sms adatait írd ki: óra, perc, telefonszám, üzenet (több
+megoldás esetén a legelsőt)!
+3. részfeladat: Az első sorba legrövidebb sms adatait írd ki: óra, perc, telefonszám, üzenet (több
+megoldás esetén a legelsőt)!
+4. részfeladat: A karakterhossz szerinti statisztikát (5 egész számot) kell kiírni: milyen hosszú
+sms-típusból hány darab érkezett!
+5. részfeladat: A szolgáltatónál levő üzenetek számát kell írni, ha Ernő törölné minden óra kez-
+detekor a memóriában levő üzeneteket!
+
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                                             2008 május 19.
+
+6. részfeladat: Ha legfeljebb 1 üzenet érkezett Ernő barátnőjétől, akkor írd ki, hogy „nem”,
+egyébként pedig a leghosszabb időtartamot két egymás utáni üzenete között, percekben!
+7. részfeladat: A használt telefonszámok T számát kell kiírni az első sorba! Ezután a T csoport
+első sorában a telefonszám és a hozzá tartozó üzenetek U száma, majd U sorban az ehhez a
+számhoz tartozó sms feladási ideje, sms szövege a bemenetnek megfelelő sorrenden!
+Példa
+Bemenet                                  Kimenet
+5 3 123456789                            #
+9 11 123456789                           Hova menjek erted?
+Szia, mikor jossz?                       #
+9 13 434324223                           9 20 123456789 Hozd el a mintas pulcsimat!
+Nem kerek ebedet!                        9 13 434324223 Nem kerek ebedet!
+9 14 434324223                           #
+Hova menjek erted?                       3 2 0 0 0
+9 20 123456789                           #
+Hozd el a mintas pulcsimat!              2
+9 21 434324223                           #
+Nyertünk a palyazaton!                   0 9
+                                         #
+                                         2
+                                         #
+                                         123456789 2
+                                         9 11 Szia, mikor jossz?
+                                         9 20 Hozd el a mintas pulcsimat!
+                                         434324223 3
+                                         9 13 Nem kerek ebedet!
+                                         9 14 Hova menjek erted?
+                                         9 21 Nyertünk a palyazaton!
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+
