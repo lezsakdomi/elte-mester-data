@@ -160,7 +160,7 @@ class Thing {
     }
 
     static get _ghFetchBase() {
-        return "https://" + (preferences.useCdn ? "cdn.rawgit.com" : "rawgit.com") + "/" +
+        return "https://" + (preferences.useCdn ? "rawcdn.githack.com" : "raw.githack.com") + "/" +
             preferences.ghUser + "/" + preferences.ghRepo + "/" + preferences.ghTag + "/";
     }
 
