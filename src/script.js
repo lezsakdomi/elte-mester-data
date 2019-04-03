@@ -395,7 +395,10 @@ const fetchAllMintafeladatDescription = new Promise.Deferred((init, resolve, rej
 
 const generateFeladatSet = new Promise.Deferred((init, resolve, reject) => {
     generateTemaSet.run(init).then(
-        temaSet => Promise.all([...temaSet].map(tema => tema.fetchFeladatList.run()))
+        temaSet => Promise.all([...temaSet].map(tema => tema.fetchFeladatList.run().catch(reason => {
+            console.error(new Error(reason));
+            return [];
+        })))
             .then(feladatListList =>
                 new Set(
                     feladatListList.reduce((accumulator, value) => accumulator.concat(value), []))
