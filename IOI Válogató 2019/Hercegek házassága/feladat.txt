@@ -1,0 +1,49 @@
+Diákolimpiai Válogatóverseny 2019                                                          2. forduló
+
+
+                                   Hercegek házassága
+Artúr királynak N fia van, akik az ország N legszebb lánya közül választhatnak párt maguknak.
+Minden hercegre ismert azon lányok listája, akik tetszenek neki. Nem könnyű feladat azonban
+úgy N házaspárt kijelölni, hogy minden fiúnak tetsszen a saját párja, ezért ezzel a feladattal a király
+varázslóját, Merlint bízta meg. Merlin megadott a királynak egy megfelelő házaspár listát. A király
+így szólt:
+"Tetszik nekem a lista, de nem vagyok teljesen elégedett. Minden hercegre szeretném ismerni
+azoknak a lányoknak a listáját, akikkel összeházasodhat úgy, hogy a többieknek továbbra is lehes-
+sen megfelelő párt osztani!" Ez már túl nehéz volt Merlinnek, a segítségedet kéri.
+Készíts programot, amely megadja minden hercegre a lehetséges házastársainak listáját! Erre le-
+gyen igaz, hogy ha ő választ ezek közül, akkor még mindenki más is kaphasson egy neki tetsző
+feleséget!
+Bemenet
+A standard bemenet első sorában a hercegek száma (1≤N≤2000) található. Ezt követi N
+sor, az i-edik sor az i-edik hercegnek tetsző lányokat adja meg. Minden sorban az első szám a lá-
+nyok száma (1≤Ki), ezt követik a lányok sorszámai (1≤Si,j≤N) növekvő sorrendben. A Ki szá-
+mok összege legfeljebb 200 000. Az utolsó sorban a Merlin által javasolt párosítás van: a herce-
+gek feleségeinek sorszámai (1≤Hi≤N , a hercegek sorrendjében, mind különböző). Ez a párosítás
+megfelel a fenti feltételeknek.
+Kimenet
+A standard kimenet N sort tartalmazzon. Az i-edik sor első száma azon lányok Li darab-
+száma legyen, akik az i-edik hercegnek tetszenek és összeházasodhat velük úgy, hogy ezután min-
+den más hercegnek is lehet párt adni! Ugyanebben a sorban kell felsorolni növekvő sorrendben
+ennek az Li darab lánynak a sorszámát!
+Példa
+Bemenet                                            Kimenet
+4                                                  2   1 2                1       2        3       4
+2   1   2                                          2   1 2
+2   1   2                                          1   3
+2   2   3                                          1   4                  1       2        3       4
+2   3   4
+1   2   3 4
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 20%-a szerezhető olyan tesztekre, ahol N≤10.
+A pontok további 40%-a szerezhető olyan tesztekre, ahol N≤200 és a Ki-k összege legfeljebb
+1000.
+
+
+
+
+                                               1. oldal
+
