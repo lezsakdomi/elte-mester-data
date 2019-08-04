@@ -1,0 +1,41 @@
+Szimuláció                                                                                     **
+
+
+                                           Vonatok
+A Kukutyin-Piripócs vasútvonalon N állomás van (a két végállomást is beleértve), minden két
+szomszédos állomás között egyetlen vágánnyal. Kukutyin az 1, Piripócs az N sorszámú. Ismerjük
+M vonat indulása idejét valamelyik végállomásról, az egyes állomásszakaszok megtételéhez szük-
+séges időt, valamint az állomásokon az érkezés és indulás között eltöltendő minimális időt. Két
+szomszédos állomás közötti szakaszon egyszerre egyetlen vonat tartózkodhat, annak van elsőbb-
+sége, amely hamarabb indulna (egyszerre indulás esetén a Kukutyinból jövőnek).
+Készíts programot, amely meghatározza, hogy az M vonat mikor érkezik meg a végállomására!
+Bemenet
+A standard bemenet első sorában az állomások száma (2≤N≤100), a vonatok száma
+(1≤M≤1000) és az egyes állomásokon töltendő minimális várakozási idő (1≤Perc≤10) van. A
+második sorban az N-1 állomásszakasz megtételéhez szükséges percek száma van
+(1≤Idői≤1000), az i. szám az i. és i+1. állomás közötti menetidő. A következő M sor egy-egy
+vonat indulási információját tartalmazza: az indulás helyét (H=1 – Kukutyin, H=2 – Piripócs),
+valamint az indulás időpontját percben (0≤Indi≤100 000), indulási idő szerinti sorrendben.
+Kimenet
+A standard kimenet M sorába egy-egy vonat érkezési információját kell kiírni, végállomás-
+ra érkezési idő szerinti sorrendben (egyszerre érkezés esetén előbb a Piripócsra érkezőt)! Az egyes
+sorok első száma 1, ha a vonat Kukutyinba érkezik, illetve 2, ha Piripócsra. A második szám az
+érkezési időpont, percben.
+Példa
+Bemenet                                          Kimenet
+4 4 5                                            1   92
+20 10 30                                         2   100
+2 0                                              1   112
+1 5                                              2   130
+2 40
+1 52
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

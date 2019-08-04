@@ -1,0 +1,33 @@
+Kombinatorikai algoritmusok                                                                   ****
+
+
+                                        Táblás játék
+Tekintsük azt a játékot, amelyet egy négyzetrácsos táblán játszanak. A tábla N oszlopot tartalmaz,
+azonban az egyes oszlopok különböző magasságúak lehetnek. El kell helyeznünk K bábut a táblán
+úgy, hogy egyik se üsse a másikat. Két bábu akkor és csak akkor üti egymást, ha azonos sorban,
+vagy azonos oszlopban vannak és közöttük minden cella létezik a táblán.
+Készíts programot, amely kiszámítja, hogy hányféleképpen lehet elhelyezni K bábut a táblán úgy,
+hogy egyik se üsse a másikat! Az érték nagyon nagy is lehet, ezért moduló 1 000 000 007 kell kiírni
+az eredményt!
+Bemenet
+A standard bemenet első sorában a tábla oszlopainak száma (K≤N≤500) és a bábuk száma
+(1≤K≤500) van. A második sor i-edik száma a tábla i-edik oszlopának magassága
+(1≤Mi≤1 000 000).
+Kimenet
+A standard kimenet első sorába azt az értéket kell kiírni moduló 1 000 000 007,
+ahányféleképpen el lehet helyezni a táblán K bábut úgy, hogy egyik se üsse a másikat!
+Példa
+bemenet                            kimenet
+3 3                                2
+2 1 3
+bemenet                            kimenet
+4 1                                10
+1 2 3 4
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 30%-át lehet szerezni olyan bemenetekre, ahol minden szám legfeljebb 15.
+A pontok 60%-át lehet szerezni olyan bemenetekre, ahol minden szám legfeljebb 100.
+

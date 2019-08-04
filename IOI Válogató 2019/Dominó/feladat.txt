@@ -1,0 +1,50 @@
+Diákolimpiai Válogatóverseny 2019                                                      5. forduló
+
+
+                                          Dominó
+A dominó készletünkben a dominók mindkét felén tetszőleges számú pötty lehet 1 és K között.
+Néhány dominóból egy sort szeretnénk kirakni a szokásos szabállyal: az egymás melletti dominók
+érintkező felén ugyanannyi pötty legyen. Ez bizonyos halmazokra nem lehetséges, például, ha
+ezek a dominóink vannak: (1, 5), (1, 6), (5, 5), (2, 4), (2, 4). Amennyiben ehhez a halmazhoz hoz-
+závesszük a (2, 5) dominót, akkor ki lehet őket rakni így:
+
+
+
+A célunk a minimális összegű sor kirakása (vagyis amelyben a dominókon összesen a lehető leg-
+kevesebb pötty van). A fenti példában, ha a (2, 5) helyett két darab (1, 2)-t veszünk, akkor a kö-
+vetkező, eggyel kevesebb összegű sort rakhatjuk ki:
+
+
+
+Készíts programot, amely egy adott dominó halmazra meghatároz egy minimális összegű kiegé-
+szítő dominó halmazt (ami lehet üres halmaz is), úgy hogy ezek segítségével ki lehessen rakni egy
+sort az összes dominót felhasználva!
+Bemenet
+A standard bemenet első sorában a tesztesetek száma (1≤T≤10) van, melyet a tesztesetek
+leírása követ. Minden teszt első sorában a dominók száma (2≤N≤100 000) és a dominók egy
+oldalán lévő pöttyök maximális száma (1≤K≤100 000) van.
+Kimenet
+A standard kimenet i-edik sorába az i-edik teszteset megoldását kell írni! Minden sorban
+az első szám a kiegészítő dominók minimális összege legyen (ami 0 is lehet)! A második szám a
+kiegészítő dominók Li darabszáma legyen (szintén lehet 0)! Ezt kövesse a feltételeknek megfelelő
+Li darab kiegészítő dominót leíró számpár, tetszőleges sorrendben! A dominók két oldalának sor-
+rendje is felcserélhető. Több megoldás esetén bármelyik megadható.
+Példa
+bemenet                                          kimenet
+1                                                6 2 1 2 1 2
+5   6
+1   5
+6   1
+5   5
+2   4
+2   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 20%-a szerezhető olyan tesztekre, ahol K=6 és N≤20.
+A pontok további 20%-a szerezhető olyan tesztekre, amelyekben szerepel legalább egyszer min-
+den (x,x+1) alakú dominó, ahol x=1…K-1.
+
+                                             1. oldal
+

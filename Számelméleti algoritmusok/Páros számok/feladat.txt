@@ -1,0 +1,27 @@
+Izsák Imre Gyula komplex matematika-fizika-informatika verseny                  2017.10.20.
+
+
+                                     Páros számok
+Írj programot, amely előállítja az i. olyan természetes számot, amely kettes számrendszerbeli
+alakjában páros számú 1-es bit van!
+Bemenet
+A standard bemenet első sorában az i szám van (1≤i≤1 000 000).
+Kimenet
+A standard kimenet első sorába az i. olyan természetes számot kell írni, amely kettes
+számrendszerbeli alakjában páros számú 1-es bit van!
+Példa
+ bemenet                                         kimenet
+    11                                              23
+    Az első 10 ilyen szám: 3, 5, 6, 9, 10, 12, 15, 17, 18, 20
+    (azaz nem ilyen a 1, 2, 4, 7, 8, 11, 13, 14, 16, 19, …)
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában i≤1000.
+
+
+
+
+                                                1. oldal
+

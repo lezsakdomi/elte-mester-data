@@ -1,0 +1,41 @@
+Gráfok, elemi feladatok                                                                       ***
+
+
+                             Függvény periódushossza
+Egy F függvény az 1 és N közötti számokhoz rendel 1 és N közötti számokat. Minden ilyen
+függvényre igaz, hogy az x,F(x),F(F(x)),F(F(F(x))),… sorozat előbb-utóbb periodikus lesz, azaz az
+elemei ismétlődni fognak. Periódushossznak az ismétlődő értékek távolságát nevezzük.
+Készíts programot, amely megadja minden 1 és N közötti kezdőszámra az F függvény peridó-
+dushosszát és az első ismétlődő szakasz kezdetét!
+Bemenet
+A standard bemenet első sorában az N értéke van (1≤N≤100 000). A második sorban az
+i. szám az F(i) függvényérték (1≤F(i)≤100 000, i≠F(i)).
+Kimenet
+A standard kimenet i-edik sorába az i kezdőszámhoz tartozó periódushosszt és az első
+ismétlődő szakasz első elemének sorszámát kell kiírni!
+Példa
+Bemenet                                         Kimenet
+10                                              3   1            5     3        6         9
+6 9 1 10 3 3 4 9 6 4                            3   3
+                                                3   1
+                                                2   1                      1         2         8
+                                                3   2
+                                                3   1
+                                                             7             4        10
+                                                2   2
+                                                3   3
+                                                3   2
+                                                2   1
+Magyarázat: A 2-ből indulva a 2,9,6,3,1,6,… sorozatot kapjuk, aminél a periódushossz 3 és az is-
+métlődés e sorozat 3. elemétől kezdődik. A 7-ből indulva a 7,4,10,4,... sorozatot kapjuk, ahol a
+periódushossz 2 és az ismétlődés e sorozat 2. elemétől kezdődik. Más kezdőszámra is ugyanezek
+az értékek lehetnek a periódushosszak.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

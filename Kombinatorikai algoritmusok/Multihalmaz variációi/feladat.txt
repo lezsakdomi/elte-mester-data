@@ -1,0 +1,35 @@
+Kombinatorikai algoritmusok                                                                 ***
+
+
+                                       Multihalmaz variációi
+Egy multihalmaz variációi az összes rész-multihalmazának permutációi. Ezeket lexikografikus sor-
+rendbe rendezhetjük, például (1,2,2,3)-nak a variációi:
+(1), (1 2), (1 2 2), (1 2 2 3), (1 2 3), (1 2 3 2), (1 3), (1 3 2), (1 3 2 2), (2), ...
+Készíts programot, amely megadja egy multihalmaz adott variációját közvetlenül követő és meg-
+előző variációját!
+Bemenet
+A standard bemenet első sorában a multihalmaz elemei száma van (1≤N≤1000), a máso-
+dikban pedig a multihalmaz N eleme növekvő sorrendben (1≤Hi≤100 000) van. A harmadik
+sorban egy variáció elemei száma található (1≤M≤N), a negyedikben pedig a variáció elemei
+(1≤Vi≤100 000).
+Kimenet
+A standard kimenet első sorába az előző variáció E elemszámát kell írni, a második sorba
+pedig a variáció E elemét! A harmadik sorba a következő variáció K elemszáma kerüljön, a negye-
+dikbe pedig a variáció K eleme! A következő és az előző variáció ciklikusan értendő, azaz mindig
+van megoldás!
+Példa
+ Bemenet                                                   Kimenet
+ 4                                                         4
+ 1 2 2 3                                                   1 2 2 3
+ 3                                                         4
+ 1 2 3                                                     1 2 3 2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                      1. oldal
+

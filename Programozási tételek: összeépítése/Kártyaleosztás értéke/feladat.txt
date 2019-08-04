@@ -1,0 +1,34 @@
+Programozási tételek összeépítése                                                                  *
+
+
+                                    Kártyaleosztás értéke
+Egy kártyajátékban az egyes lapoknak számértékük van. Minden lapot egy színnel és egy figurával
+adunk meg. A színek: piros, zöld, tök, makk. A figurák: 7-es, 8-as, 9-es, 10-es, alsó, felső, király,
+ász. A számot tartalmazó figurák annyit érnek, amennyi a ráírt szám. Az alsó 2-t, a felső 3-at, a
+király 4-et, az ász 11-et ér. A piros lapoknál az értéket duplán kell számítani.
+Írj programot, amely megadja, hogy a lapok összesen hány pontot érnek!
+Bemenet
+A standard bemenet első sorában található a kihúzott lapok száma (1≤N≤32) van. Az ezt
+követő N*2 sorban pedig a kártyák színe és a figurái. Ékezetes betűket az adatok megadásánál
+nem használunk!
+Kimenet
+A standard kimenet egyetlen sor, amely az elért pontszámot tartalmazza!
+Kimenet
+Bemenet                                           Kimenet
+3                                                 22
+piros
+also
+tok
+7-es
+tok
+asz
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

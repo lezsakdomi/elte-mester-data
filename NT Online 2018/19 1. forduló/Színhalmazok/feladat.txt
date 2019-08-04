@@ -1,0 +1,46 @@
+Nemes Tihamér Online Programozási Verseny                                          1. forduló
+
+
+                                    Színhalmazok
+Ismerjük N ember kedvenc színeit.
+Készíts programot, amely megadja, hogy hány olyan ember van, akinek a kedvenc színei mind-
+egyike kedvence valamely más embernek!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N<1000). A következő N
+blokkban egy-egy ember kedvenc színei szerepelnek. Minden blokk első sorában az adott ember
+kedvenc színei száma van (1≤Di≤10), amit a színek neve követ (legfeljebb 10 karakteres angol
+szavak) Di darab sorban.
+Kimenet
+A standard kimenet egyetlen sorába azon emberek számát kell írni, akinek kedvenc színei
+mindegyike kedvence valamely más embernek!
+Példa
+Bemenet                                       Kimenet
+5                                             3
+3                                             Magyarázat: Az első, a harmadik és az ötödik
+red                                           ember ilyen.
+white
+green
+3
+red
+blue
+white
+2
+white
+red
+2
+green
+blue
+3
+green
+white
+red
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

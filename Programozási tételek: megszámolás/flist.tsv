@@ -19,7 +19,6 @@ id	feladat	nehezseg
 18	Kissé szeles napok száma *	
 19	Közös territóriummal rendelkező madarak *	
 20	Kukutyinhoz közelebb lévő települések száma *	
-21	Lakatlan territóriumok száma *	
 22	Leghosszabb szakaszok *	
 23	Légszennyezettségmérő javításainak száma *	
 24	Meleg napok száma *	
@@ -55,3 +54,17 @@ id	feladat	nehezseg
 54	Személyi számok **	
 55	Világcsúcs beállítások száma *	
 56	Világcsúcsok közötti legnagyobb időkülönbség *	
+57	Turistaház	
+58	Vitorlásverseny	
+59	Rendezőpályaudvar	
+60	Hajók	
+61	Földrengések	
+62	Visszhang	
+63	Csoportképek	
+64	Csoportképek	
+65	Véletlenszám ellenőrzés	
+66	Pontozásos verseny	
+67	Szerencsés napok	
+68	Versenyeredmények	
+69	Dinnyeárus	
+70	Ismétlődő karakterek részsorozatban	

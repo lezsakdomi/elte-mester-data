@@ -1,0 +1,66 @@
+Visszalépéses keresés                                                                          ***
+
+
+                                            Lámpák
+Egy barátod, aki elkötelezett környezetvédő, a következő problémával néz szembe a munkahe-
+lyén. A világítást egy NxN méretű négyzetrácson elhelyezkedő lámpák biztosítják, melyeket neki
+kell lekapcsolnia. Minden négyzetben van egy lámpa, kapcsolóval ellátva, viszont sajnos egy lám-
+pa átkapcsolásakor minden oldalszomszédos négyzetben elhelyezkedő lámpa is átkapcsolódik. (A
+rács szélén lévő lámpa így természetesen kevesebb másikra van hatással.)
+Az átkapcsolódás minden esetben azt jelenti, hogy ha a lámpa éppen világít, akkor elsötétül, míg
+ha épp sötét, akkor világítani fog. Az alábbi ábrák szemléltetik, hogy a középső lámpa átkapcsolá-
+sával hogyan változik a lámpák állapota, az 1 jelenti a felkapcsolt lámpát, a 0 a lekapcsoltat:
+                        000           010                000          010
+                        000          111                101         010
+                        000           010                000          010
+Készíts programot, amely meghatározza, hogy legalább hány kapcsolásra van szüksége a barátod-
+nak ahhoz, hogy az összes lámpát lekapcsolja, ha adott, hogy kezdetben mely lámpák világítanak!
+Adj meg egy kapcsolási sorrendet is!
+Bemenet
+A standard bemenet első sorában a feladványok száma (1≤T≤5) van, a következő sorok-
+ban az egyes feladványok leírása van. Minden feladvány első sorában a rács mérete (1≤N≤15)
+található, majd ezt követi N sorban N darab 0 vagy 1 karakter, melyek a kiinduló helyzetet írják le,
+az 1 jelöli a felkapcsolt, a 0 a lekapcsolt lámpát.
+Kimenet
+A standard kimenet i. sorába az i. feladvány megoldását kell írni! Minden sor első száma a
+minimálisan szükséges kapcsolások K száma legyen, ezt kövesse K számpár, az átkapcsolandó
+lámpák sor- és oszlopindexei! (A számpárok olyan sorrendben legyenek, ahogy a kapcsolásokat
+végre szeretnéd hajtani!) Több lehetséges optimális megoldás közül bármelyik megadható. Ha egy
+feladványban lehetetlen lekapcsolni az összes lámpát, akkor abba a sorba egyetlen -1 számot kell
+kiírni!
+Példa
+Bemenet                               Kimenet
+2                                     1 3 1
+3                                     3 2 2 5 4 5 5
+000
+                                      A második feladvány megoldása:
+100
+110                                    010000   000000   000000   000000
+6                                      111000   000000   000000   000000
+010000                                 010000   000000   000000   000000
+                                                              
+111000                                 000110   000110   000010   000000
+010000                                 001001   001001   000111   000000
+000110                                 000110   000110   000010   000000
+001001
+000110
+
+
+
+
+                                              1. oldal
+Visszalépéses keresés                                          ***
+
+
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 20%-a szerezhető olyan tesztekre, ahol N≤4.
+A pontok további 20%-a szerezhető olyan tesztekre, ahol N≤8.
+
+
+
+
+                                           2. oldal
+

@@ -1,0 +1,40 @@
+Programozási tételek: minimum, maximum számítás                                          ***
+
+
+                                Hideg és meleg napok
+N napon keresztül mértük délben a napi hőmérsékletet. Hideg napnak nevezzük azokat a napo-
+kat, amelyeken hidegebb volt, mint a két szomszédos napon, meleg napnak pedig azokat, amelye-
+ken melegebb volt, mint a két szomszédos napon. Az első és az utolsó nap sem nem hideg, sem
+nem meleg.
+Készíts programot, amely megadja az időszak azon intervallumai számát, amelyek hideg vagy me-
+leg nappal kezdődnek és végződnek, és ugyanannyi hideg és meleg napot tartalmaznak!
+Bemenet
+A standard bemenet első sorában a napok száma van (1≤N≤5000). A következő N sor-
+ban egy-egy nap hőmérséklete szerepel (-100≤Hi≤100).
+Kimenet
+A standard kimenet egyetlen sorába azon intervallumok számát kell írni, amelyek hideg
+vagy meleg nappal kezdődnek és végződnek, és ugyanannyi hideg és meleg napot tartalmaznak!
+Példa
+Bemenet                                          Kimenet
+8                                                6
+5
+                                                 Magyarázat: 6 ilyen intervallum van
+4
+6                                                4   6 7
+7                                                4   6 7 6 7
+6                                                7   6
+7                                                7   6 7 4
+4                                                6   7
+8                                                7   4
+Magyarázat: a vastagon szedett értékek a hideg
+vagy meleg napokat jelölik.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

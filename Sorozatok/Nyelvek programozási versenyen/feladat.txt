@@ -1,0 +1,44 @@
+Sorozatok                                                                                            **
+
+
+                           Nyelvek programozási versenyen
+Egy programozási versenyen minden versenyző választhat egy programozási nyelvet, amin dol-
+gozni fog.
+Készíts programot, amely megadja, hogy
+   A. mely tanulók választottak illegális nyelvet (olyat, ami nem szerepelt a felsoroltak között),
+   B. mely nyelveket nem választotta senki,
+   C. melyik választott nyelvet hányan választották!
+Bemenet
+A standard bemenet első sorában található a nyelvek száma (1≤N≤10) és a versenyzők
+száma (1≤M≤100). Az ezt követő N sorban az egyes nyelvek következnek. A nyelvfelsorolás egy-
+mástól eltérő, legalább 1 karakterből álló szövegek. Az N+1. sortól kezdődően M sorban az egyes
+tanulók által választott nyelv van.
+Kimenet
+A standard kimenet 3 sorból álljon! Első sora az A. feladat válasza: egy darabszámmal
+kezdődik, majd éppen ennyi tanuló sorszáma következik; a tanulók között vessző karakter. A má-
+sodik sor a B. feladathoz tartozik: egy darabszámmal kezdődik, majd éppen ennyi nyelv következik;
+a nyelvek között egy vessző az elválasztójel. A harmadik sorba a C. feladat válasza kerüljön: meg-
+felelő számú nyelv és szám párosa, a nyelv után közvetlenül egy kettőspont-jellel. A nyelv és darab-
+szám kettősöket vessző válassza el!
+Kimenet
+ Bemenet                                           Kimenet
+ 4 5                                               1 3
+ VISUAL BASIC                                      2 VISUAL BASIC,LOGO
+ PASCAL                                            PASCAL:3,C++:1
+ LOGO
+ C++
+ PASCAL
+ PASCAL
+ DELPHI
+ C++
+ PASCAL
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

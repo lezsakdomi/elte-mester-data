@@ -1,0 +1,31 @@
+Dinamikus programozás                                                                      **
+
+
+                                        Szóátalakítás
+Egy szövegre három műveletet definiáltunk:
+       betű beszúrás tetszőleges helyre;
+       betű törlése tetszőleges helyről;
+       egy betű helyére egy másik írása.
+Készíts programot, amely megadja, hogy egy adott szót minimum hány betű beszúrás, betű törlés,
+illetve betű cserélés művelettel lehet egy másik szóvá alakítani!
+Bemenet
+A standard bemenet első sorában az átalakítandó szó van (legfeljebb 100 karakteres), a
+második sorban pedig, amivé alakítani kell (legfeljebb 100 karakteres). Mindkettőben az angol
+ábécé kisbetűi lehetnek.
+Kimenet
+A standard kimenet egyetlen sorába az átalakításhoz szükséges műveletek minimális szá-
+mát kell írni!
+Példa
+Bemenet                                         Kimenet
+eper                                            3
+szeder
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

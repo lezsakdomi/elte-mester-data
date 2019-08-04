@@ -1,0 +1,45 @@
+Nemes Tihamér Online Programozási Verseny                                                4. forduló
+
+
+                                 Karavánok találkozása
+Egy sivatagban N oázis van, amelyek között több napos utat igénylő karavánutak vezetnek. K ka-
+raván indul útnak adott időpontban. Ha egy karaván egy oázisba érkezik, akkor egy napot ott tölt,
+azaz két éjszakára szállást kell nekik biztosítani. A karavánoknak az útjuk első és utolsó oázisában
+nem kell szállást biztosítani (azaz ott már nem találkoznak senkivel)!
+Készíts programot, amely megadja, hogy melyik karaván hány másikkal találkozik (együtt tölt éj-
+szakát) az útja során!
+Bemenet
+A standard bemenet első sorában az oázisok száma (1≤N≤100), a karavánutak száma
+(1≤M≤10 000) és a karavánok száma (1≤K≤100) van. A következő M sorban egy-egy karaván-
+út két végpontjának sorszáma (1≤Ai≠Bi≤N) és az útszakasz hossza (1≤Hi≤1000) van. Az utol-
+só K sorban a karavánok útvonala szerepel. Minden sor első száma a karaván indulási napjának
+sorszáma (1≤Napi≤100), az érintett oázisok száma (1≤Oi≤N), majd az érintett oázisok sorszá-
+mai (1≤Si,j≤N), a haladás sorrendjében!
+Kimenet
+A standard kimenet i-edik sorába azt a számot kell írni, ahány karavánnal találkozik az útja
+során az i-edik karaván!
+Példa
+bemenet                                           kimenet
+6   9   4                                         1
+1   2   5                                         1
+1   3   3                                         0
+2   3   2                                         0
+2   4   5
+2   5   10
+3   5   5
+4   5   2
+4   6   4
+5   6   3
+1   4   1 2   4 6
+1   4   1 3   2 5
+3   4   1 3   5 4
+4   3   5 4   6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

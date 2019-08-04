@@ -1,0 +1,38 @@
+Kombinatorikai algoritmusok                                                                  ***
+
+
+                      Előző és következő közeli elrendezés
+Az 1..N számok egy közeli permutációjának azt a sorozatot hívjuk, amelyben az i érték az i. pozí-
+ciótól legfeljebb 1-gyel távolodott el.
+N=4-re, illetve N=5-re ezek a közeli permutációk, lexikografikus sorrendben:
+1   2   3   4                                    1      2   3   4   5
+1   2   4   3                                    1      2   3   5   4
+1   3   2   4                                    1      2   4   3   5
+2   1   3   4                                    1      3   2   4   5
+2   1   4   3                                    1      3   2   5   4
+                                                 2      1   3   4   5
+                                                 2      1   3   5   4
+                                                 2      1   4   3   5
+Készíts programot, amely egy közeli permutáció ismeretében megadja a lexikografikusan előző és
+következő permutációt!
+Bemenet
+A standard bemenet első sorában a permutáció elemszáma van (1≤N≤100). A következő
+sorban a permutáció N tagja szerepel (1≤Pi≤N).
+Kimenet
+A standard kimenet első sorába a lexikografikusan előző közeli permutációt kell írni, a
+másodikba pedig a következőt! Az első ilyen permutációt az utolsó előzi meg, illetve az utolsót az
+első követi!
+Példa
+Bemenet                                         Kimenet
+6                                               2 1 3 4 5 6
+2 1 3 4 6 5                                     2 1 3 5 4 6
+
+Korlátok
+Időlimit: 0.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -15,7 +15,7 @@ id	feladat	nehezseg
 14	Párosítás *	
 15	Ütemez *	
 16	Üvegválogatás *	
-17	Földrengések *	
+17	Hallgató felező *	
 18	Hallgatók sorrendje **	
 19	Legnagyobb lakások *	
 20	Magasugró verseny ***	
@@ -30,3 +30,5 @@ id	feladat	nehezseg
 29	Kavicsok 3	
 30	Kavicsok 4	
 31	Konténerek rendezése	
+32	Sok csoportra osztás	
+33	Világranglista	

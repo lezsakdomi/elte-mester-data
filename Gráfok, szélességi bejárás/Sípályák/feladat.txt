@@ -1,0 +1,43 @@
+Gráfok, szélességi bejárás                                                                     **
+
+
+                                           Sípályák
+Egy sípályán a síelők S starthelyről indulhatnak és a verseny végén C célhelyre érkezhetnek. Min-
+den sípálya olyan szakaszokból áll, ahol a szakasz felső végpontja magasabban van, mint az alsó
+végpont. A különböző helyről indult síelők egyes pontokban találkozhatnak, egyes pontokból
+többfelé folytathatják síelésüket
+Készíts programot, amely megadja, hogy melyik célba lehet eljutni a lehető legtöbb starthelyről!
+Bemenet
+A standard bemenet első sorában a szakaszok végpontjai száma (2≤N≤100 000), a sza-
+kaszok száma (1≤M≤500 000) van. A következő N sorban egy-egy szakasz felső és alsó vég-
+pontja sorszáma (1≤Fi≠Ai≤100 000) található. Bármely pont legfeljebb 100 szakasz felső vagy
+alsó végpontja. Nincs olyan pont, amely ne lenne érintve egy szakasz által. A starthelyek és a cél-
+helyek száma is legfeljebb 32.
+Kimenet
+A standard kimenet első sorába azon starthelyek maximális számát kell írni, ahonnan
+ugyanarra a célhelyre el lehet jutni, a második sorba pedig egy ilyen célhely sorszáma kerüljön!
+Több megoldás esetén bármelyik kiírható.
+Példa
+bemenet                                          kimenet
+11 12                                            3
+1 4                                              10
+2 4
+2 5
+3 5
+4 6
+4 7
+5 7
+5 8
+6 9
+6 10
+7 10
+8 11
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 64 MB
+
+
+
+
+                                             1. oldal
+

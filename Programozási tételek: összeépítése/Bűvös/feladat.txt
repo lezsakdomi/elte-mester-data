@@ -1,0 +1,33 @@
+Programozási tételek összeépítése                                                                *
+
+
+                                       Bűvös négyzet
+A bűvös négyzetek N*N számot tartalmaznak, négyzetes elrendezésben. Minden bűvös négyzetre
+igaz, hogy minden sor és minden oszlop összege is ugyanaz a szám. Kaptunk egy bűvös négyze-
+tet, amiben lehet, hogy egyetlen számot elrontottak.
+Add meg, hogy a bűvös négyzet helyesen van-e kitöltve! Ha nem helyes, akkor azt is meg kell
+adnia, hogy hol van a hiba és milyen számot kellene oda írni!
+Bemenet
+A standard bemenet első sorában található a bűvös négyzet mérete (3≤N≤5). A követke-
+ző N sorban a bűvös négyzet adott sorában levő N szám (1≤Xi≤1000).
+Kimenet
+A standard kimenet egy vagy két sor, amely helyes bűvös négyzet esetén az első sorban a
+HELYES, hibás esetben a HELYTELEN szót tartalmazza! Ha a bűvös négyzet hibás, akkor a
+második sor a hibás szám előfordulási sorát, oszlopát és a helyette beírandó helyes értéket tartal-
+mazza!
+Kimenet
+Bemenet                                          Kimenet
+3                                                HELYTELEN
+2 3 2                                            2 1Hibás
+                                                     2    hely: 2. sor 1. oszlop
+3 1 4                                                    Helyes értéke: 2
+3 3 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,35 @@
+Programozási tételek: sorozatszámítás                                                     ***
+
+
+                               Középső születésnapú
+Ismerjük N ember születésnapját. Születésnap szerint középsőnek azt nevezzük, aki az embereket
+születésnap szerinti sorrendbe rendezve pontosan középre kerülne
+Készíts programot, amely megadja a születésnap szerint középsőt!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N<500 000, páratlan). A
+következő N sorban egy-egy ember születési hónapja és napja (1≤Hói≤12, 1≤Napi≤Hói
+napszáma) szerepel.
+Kimenet
+A standard kimenet első sorába azon ember születésnapját kell írni, aki sorba rendezés
+esetén középső lehetne, a második sorba pedig egy ilyen ember sorszámát, több megoldás esetén
+a legkisebb sorszámút!
+Példa
+Bemenet                                        Kimenet
+7                                              5 15
+1 3                                            2
+5 15
+12 1
+6 5
+5 15
+2 10
+1 8
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,48 @@
+Diákolimpiai Válogatóverseny 2019                                                    5. forduló
+
+
+                                         Csavarok
+Adott egy dobozban n különböző méretű csavar, egy másik dobozban pedig a hozzájuk illő
+anyák. Sajnos sem a csavarokat nem tudjuk egymással összehasonlítani, sem az anyákat. Azt tud-
+juk csak kipróbálni, hogy egy csavar külső átmérője kisebb, egyenlő vagy nagyobb egy anya belső
+átmérőjénél (megpróbáljuk az anyát rácsavarni a csavarra).
+Készíts programot a megfelelő csavarok és anyák összepárosítására! A párosítás akkor jó, ha min-
+den csavarhoz megadtuk azt az anyát, aminek a belső átmérője egyenlő a csavar átmérőjével.
+Könyvtár
+A megoldáshoz a csavarok könyvtár műveleteit kell használni! Programod nem olvashat és
+nem írhat semmilyen fájlt, beleértve a standard bemenetet és kimenetet.
+#include ”csavarok.h”                           A függvény osztály használatba vétele.
+int kezdet();                                   Megadja függvényértékként a csavarok n szá-
+                                                mát (1≤n<100 000). A programod elején,
+                                                egyszer kell hívni!
+int proba(int a, int b);                        A függvény értéke -1, ha az a. csavar átmérője
+                                                kisebb a b. anya belső átmérőjénél; 0, ha egy-
+                                                forma; +1, ha nagyobb.
+void eredmeny(int cs[]);                        A cs tömb i. eleme (0≤i<n) az i+1. csavar-
+                                                hoz tartozó anya sorszámát tartalmazza! A
+                                                programod végén, egyszer kell hívni! Végrehaj-
+                                                tásával a program terminál.
+Használat
+Teszteléshez letölthető a csavarok könyvtár C++ programja (nem feltétlenül azonos az érték-
+elő rendszerben levővel).
+A kezdet a standard bemenet első sorából beolvassa a csavarok n számát, a második sorból az
+n csavar átmérőjét olvassa, a harmadikról pedig az n anya belső átmérőjét.
+Az eredmeny a standard kimenet első sorába a TRUE vagy FALSE szót írja annak megfelelő-
+en, hogy a helyes-e a párosítás. A második sorba írt első szám a végrehajtott proba hívások
+száma, a második pedig a megengedett proba hívások száma.
+Példa a használathoz
+bemenet                                         kimenet
+4                                               TRUE
+30 10 20 40                                     4 4
+40 20 30 10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+Pontozás
+Csak akkor kapsz pontot (a tesztesetre járó összeset), ha a proba hívások száma n40 esetén
+legfeljebb n*n/4.
+
+
+                                            1. oldal
+

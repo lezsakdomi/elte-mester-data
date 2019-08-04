@@ -1,0 +1,38 @@
+Programozási tételek: megszámolás                                                         ***
+
+
+                                    Szerencsés napok
+Egy vállalkozó N napon keresztül vállalt munkákat. Szerencsétlen napnak nevezzük azokat a na-
+pokat, amelyeken kevesebbet keresett, mint a két szomszédos napon, szerencsés napnak pedig
+azokat, amelyeken többet keresett, mint a két szomszédos napon. Az első és az utolsó nap sem
+nem szerencsés, sem nem szerencsétlen.
+Készíts programot, amely megadja az időszak azon intervallumai számát, amelyek szerencsés
+nappal kezdődnek és végződnek, és több szerencsés, mint szerencsétlen napot tartalmaznak!
+Bemenet
+A standard bemenet első sorában a napok száma van (1≤N≤5000). A következő N sor-
+ban egy-egy nap keresete szerepel (0≤Fi≤100).
+Kimenet
+A standard kimenet egyetlen sorába azon intervallumok számát kell írni, amelyek szeren-
+csés nappal kezdődnek és végződnek, és több szerencsés, mint szerencsétlen napot tartalmaznak!
+Példa
+Bemenet                                        Kimenet
+8                                              6
+5
+                                               Magyarázat: 6 ilyen intervallum van
+7
+6                                              7
+8                                              7 6 8
+5                                              7 6 8 5 9
+9                                              8
+4                                              8 5 9
+8                                              9
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

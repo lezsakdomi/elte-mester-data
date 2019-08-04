@@ -1,0 +1,27 @@
+Nemes Tihamér Online Programozási Verseny                                        4. forduló
+
+
+                                  Számok összege
+Készíts programot, amely megadja egy rendezett számsorozat három elemét, amelyek összege
+pontosan egy előre megadott X érték!
+Bemenet
+A standard bemenet első sorában a számsorozat hossza (1≤N≤1000) és az X érték
+(1≤X≤300 000) van. A következő sor az N számot tartalmazza, növekvő sorrendben
+(1≤Si≤100 000).
+Kimenet
+A standard kimenet első sorába a sorozat három olyan elemét kell írni növekvő sorrend-
+ben, amelyek összege pontosan X! Ha nincs három ilyen szám, akkor egyetlen -1-et kell írni!
+Példa
+Bemenet                                      Kimenet
+7 25                                         4 6 15
+3 4 6 9 11 12 15
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          1. oldal
+

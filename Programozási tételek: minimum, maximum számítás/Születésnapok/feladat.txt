@@ -1,0 +1,35 @@
+Tehetségkutató Egyetemi Programozási Verseny                                        1. forduló
+
+
+                                     Születésnapok
+Ismerjük N ember születésnapját és névnapját.
+Készíts programot, amely megadja azokat az embereket, akinek egy adott évben a születésnapja a
+legközelebb van a legközelebbi névnapjához (a legközelebbi névnap lehet az előző és a következő
+évben is)!
+Bemenet
+A standard bemenet első sorában az emberek száma (1≤N≤1000) és egy évszám van
+(1900≤ÉV≤2100). A további N sor mindegyikében egy-egy ember születésnapja (1≤SHói≤12,
+1≤SNapi≤az SHói hónap napszáma) és névnapja (1≤NHói≤12, 1≤NNapi≤az SHói hónap
+napszáma) van.
+Kimenet
+A standard kimenet első sorába azon emberek DB számát kell írni, akiknek az ÉV évbeli
+születésnapjához legközelebb van névnapjuk, a következő sorba pedig DB egész számot szóköz-
+zel elválasztva, ezen emberek sorszámait, növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+5 2017                                          2
+1 20 6 18                                       2 4
+12 24 1 5
+7 12 12 10
+6 22 6 10
+6 22 7 10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,28 @@
+Számelméleti algoritmusok                                                           *
+
+
+                            Lineáris kombináció
+Írj programot, amely adott A,B,C természetes számokra megadja azt a legkisebb X egész
+számot, amelyre X≥C és valamely nem negatív K és L számra X=K*A+L*B!
+Bemenet
+A standard bemenet egyetlen sorában a három természetes szám értéke van
+(2≤A,B,C≤100 000 000).
+Kimenet
+A standard kimenet első sorába azt a legkisebb X számot kell írni, amelyre X≥C és
+valamely nem negatív K és L számra X=K*A+L*B!
+Példák
+ bemenet                                  kimenet
+ 7 11 30                                  32
+ bemenet                                  kimenet
+ 5 11 28                                  30
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                         1. oldal
+

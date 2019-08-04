@@ -1,0 +1,39 @@
+Programozási tételek összeépítése                                                                *
+
+
+                              Lövészverseny eredményei
+Egy lövészversenyen a versenyzők egymás után lőnek. Ismerjük N versenyző eredményét.
+Készíts programot, amely beolvassa N értékét és az N db eredményt, majd megadja:
+   A.   minden versenyzőre, hogy az addig szereplők közül hányan értek el nála jobb eredményt;
+   B.   azokat a versenyzőket, akik a verseny valamelyik időszakában álltak az első helyen;
+   C.   azokat a versenyzőket, akik a verseny valamelyik időszakában álltak az utolsó helyen;
+   D.   a verseny győztesét, holtverseny esetén a győzteseit!
+Bemenet
+A standard bemenet első sorában található a versenyzők száma (1≤N≤1000) Az ezt követő
+N sorban pedig az eredményeik (0≤eredmény≤600).
+Kimenet
+A standard kimenet négy sorból álljon: az első sor N darab számot tartalmazzon, az adott
+szám jelenti azt, hogy az annyiadik versenyzőnél hányan értek el jobb eredményt az addig szereplők
+közül. A második sor azokat a versenyzőket tartalmazza, növekvő sorrendben, akik a verseny vala-
+melyik időszakában az első helyen álltak. A harmadik sor azokat a versenyzőket tartalmazza, nö-
+vekvő sorrendben, akik a verseny valamelyik időszakában az utolsó helyen álltak. A negyedik sor a
+verseny győztesének vagy győzteseinek sorszámait tartalmazza.
+Példa
+ Bemenet                                          Kimenet
+ 6                                                0 0 2 0 3 3
+ 594                                              1 2 4
+ 596                                              1 3
+ 582                                              4
+ 599
+ 590
+ 590
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

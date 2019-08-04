@@ -1,0 +1,45 @@
+Gráfok – legrövidebb utak                                                                         **
+
+
+                                       Fizetős utak
+Egy országban N város van, bármely városból bármely másik városba el lehet jutni. Egyes utak fi-
+zetősek, mások ingyenesen használhatók. Bármely két város között legfeljebb egy közvetlen út
+van.
+Készíts programot, amely megadja, hogy két adott város között minimum hány fizetős útszakaszt
+kell használni és kiír egy ilyen utat!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤95000) és az utak száma
+(1≤K≤100 000) van. A következő N sorban egy-egy útszakasz két végpontjának sorszáma
+(1≤Ai≠Bi≤N) és a fizetősségét leíró karakter (F=fizetős, I=ingyenes) van. Az utolsó sorban a két
+város sorszáma van (1≤V≠W≤N)!
+Kimenet
+A standard kimenet első sorába a V és W város közötti útvonal minimális fizetős útszaka-
+szok számát kell kiírni! A második sorba egy ilyen útvonal által érintett városok sorszáma kerül-
+jön, az eljutás sorrendjében! Több megoldás esetén bármelyik kiírható.
+Példa
+bemenet                                         kimenet
+7   11                                          1
+1   2 F                                         1 5 2 3 4
+1   5 I
+2   5 I
+2   3 I                                                                  I           F
+5   3 F                                                    F
+                                                               2                 3         4
+5   6 F
+                                                                                     F
+3   6 I                                                1       I     F       I                F
+3   4 F                                                    I                         I
+6   4 F                                                        5     F
+                                                                             6            7
+6   7 I
+4   7 F
+1   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

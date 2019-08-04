@@ -1,0 +1,31 @@
+Informatikai alapismeretek – emeltszint                                    2011. október 17.
+
+
+                               Legtöbb magánhangzó
+Adott N darab szó.
+Írj programot, amely az adott szavak alapján megadja, hogy mennyi volt a legtöbb magánhangzót
+tartalmazó szóban a magánhangzók száma.
+Bemenet
+A standard bemenet első sorában a szavak N száma (1≤N≤10000), az ezt követő N sor-
+ban pedig egy-egy szó található (1≤hossz≤100). A szavak csak az angol ábécé kis- és nagybe-
+tűit, valamint kötőjelet tartalmazhatnak.
+Kimenet
+A standard kimenet egyetlen sorába legtöbb magánhangzót tartalmazó szóban szereplő
+magánhangzók számát kell kiírni.
+Példa
+Bemenet                                       Kimenet
+4                                             3
+Ing
+repulo
+Dobozok
+alma
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

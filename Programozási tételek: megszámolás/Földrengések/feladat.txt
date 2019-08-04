@@ -1,0 +1,29 @@
+Nemes Tihamér Online Programozási Verseny                                            3. forduló
+
+
+                                      Földrengések
+Földrengéseket követnek utórengések. Az utórengés a földrengéstől vagy az előző utórengéstől
+legfeljebb K percen belül történik és a földrengésnél kisebb erősségű (azaz egy földrengés egyes
+utórezgései a földrengéstől K-nál több percre is lehetnek). Ha K percen belül egy földrengésnél
+erősebb vagy vele egyforma rengést mérnek, az már új földrengésnek számít. Percenként mérjük a
+rengések erősségét (ez 0, ha épp akkor nincs rengés).
+Készíts programot, amely megszámolja, hogy a vizsgált időszakban hány földrengés volt!
+Bemenet
+A standard bemenet első sorában a vizsgált percek száma (1≤N≤100 000) és a K szám
+(1≤K≤100) van. A második sor az N mérés értékét tartalmazza (0≤S≤1000).
+Kimenet
+A standard kimenet első sorába az érzékelt földrengések számát kell írni!
+Példa
+Bemenet                                        Kimenet
+13 3                                           3
+0 5 0 1 0 6 6 2 1 1 0 0 2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,33 @@
+Gráfok – szélességi bejárás                                                                     *
+
+
+                                     Szigetek száma
+Az óceáni szigetvilág egy téglalap alakú területéről készült egy fénykép. A képen kék színű a ten-
+ger, zöld színűek a szigetek. Két különböző szigetnek biztosan nincs szomszédos pontja a sarok-
+kal érintkező szomszédokat is beleértve.
+Készíts programot, amely megadja, hogy a képen hány sziget van!
+Bemenet
+A standard bemenet első sorában a terület sorai és oszlopai száma van (1≤N,M≤1000). A
+következő N sor mindegyike pontosan M karaktert tartalmaz. Az i. sor j. tagja K, ha kék színű
+ponthoz tartozik, illetve Z, ha zöldhöz.
+Kimenet
+A standard kimenet első sorába egyetlen számot kell írni, a fényképen felismerhető szige-
+tek számát!
+Példa
+Bemenet                                         Kimenet
+5 6                                             2
+KKKKKK
+KZKKKK
+ZZKZZK
+ZKKZZK
+KKKKKK
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

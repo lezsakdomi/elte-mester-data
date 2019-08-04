@@ -1,0 +1,46 @@
+Nemes Tihamér Online Programozási Verseny                                                1. forduló
+
+
+                                             Hajók
+Egy szállítmányozási vállalat hajókkal szállít konténereket különböző városokba. Minden hajóra
+csak ugyanoda viendő konténereket lehet felrakni, legfeljebb K darabot. Minden hajóra a lehető
+legtöbb konténert tesznek fel, de ha egy városba akár csak egyetlen konténert kell szállítani, akkor
+is kell oda küldeni hajót.
+Készíts programot, amely megadja azt a három várost, ahova a hajókon a legtöbb szabad hely
+marad!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1≤N≤10 000) és az egyes hajókra
+pakolható konténerek maximális száma (1≤K≤100) van. A további N sor mindegyikében egy-egy
+város neve van (az angol ábécé betűivel írva), ahova az egyes konténereket vinni kell.
+Kimenet
+A standard kimenet három sorába három város nevét, az oda küldendő hajók számát és a
+szabad helyek számát kell írni, ahova a hajókon a legtöbb szabad hely marad, a szabad helyek
+száma szerint csökkenő sorrendben! Az azonos szabad hely számúakat hajók száma szerint csök-
+kenő sorrendben! Több megoldás esetén bármelyik kiírható, kevesebb város esetén kevesebb sort
+kell kiírni!
+Példa
+Bemenet                                           Kimenet
+13 2                                              London 3 1
+London                                            Hamburg 2 1
+Rotterdam                                         Rotterdam 1 1
+London
+Hamburg
+Hamburg
+Stockholm
+London
+Stockholm
+Hamburg
+Stockholm
+London
+London
+Stockholm
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

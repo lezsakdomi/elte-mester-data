@@ -1,0 +1,37 @@
+Tehetségkutató Egyetemi Programozási Verseny                                        2. forduló
+
+
+                                   Sikeres sorozatok
+Egy üzletben minden nap feljegyezték a napi forgalmat. Különösen sikeres napnak tekintik azokat
+a napokat, amelyeken a napi forgalom nagyobb volt, mint bármely korábbi napon. Az első nap is
+ilyen napnak számít.
+Készíts programot, amely megadja napok leghosszabb egymásutáni sorozatát, ahol minden nap
+különösen sikeres nap volt!
+Bemenet
+A standard bemenet első sorában a napok száma van (1≤N≤100 000). A következő N
+sor mindegyikében egy-egy nap bevétele van (0≤Bi≤100 000).
+Kimenet
+A standard kimenet első sorába az egymásutáni különösen sikeres napok maximális szá-
+mát kell írni! A második sorba egy ilyen napsorozat első napja sorszáma kerüljön (több megoldás
+esetén bármelyik)!
+Példa
+Bemenet                                        Kimenet
+8                                              3
+100                                            4
+120
+120
+130
+140
+145
+130
+100
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,39 @@
+Programozási tételek: rendezések                                                           ***
+
+
+                                   Sok csoportra osztás
+Ismerjük N versenyző korábbi versenyeken elért legmagasabb pontszámát. K csoportra szeretnék
+osztani őket az eredményeik szerint. Az első csoportba kerülnek a legerősebbek, a következőbe a
+náluk gyengébbek közül a legerősebbek, és így tovább (azaz pl. az első csoport leggyengébbje is
+erősebb a második csoport legerősebb tagjánál). A csoportokat úgy határozzuk meg, hogy bár-
+mely két szomszédos csoport távolsága a lehető legnagyobb, előre adott T-nél nagyobb érték le-
+gyen! A csoportok távolsága az erősebbek csoportja leggyengébb tagja és a gyengébbek csoportja
+legerősebb tagja pontszámának különbsége.
+Készíts programot, amely megadja a K csoport közöti távolságokat, csökkenő sorrendben!
+Bemenet
+A standard bemenet első sorában a versenyzők száma (1≤N≤500 000), a legmagasabb
+pontszám (1≤M≤100 000), a csoportok száma (2≤K≤10) és a T érték (1≤T≤100) van. A kö-
+vetkező N sorban az egyes versenyzők eredményei szerepelnek (1≤Ei≤M).
+Kimenet
+A standard kimenet egyetlen sorába a K csoport közötti legnagyobb távolságokat kell írni,
+csökkenő sorrendben (K-1 darab számot)! Ha nem lehet a versenyzőket a fentiek szerint K cso-
+portra osztani, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                        Kimenet
+6 100 3 2                                      7 5
+15                                             Magyarázat: a pontszámok növekvő sorrendben
+8                                              és a köztük levő távolságok
+17
+22                                             4 7 8 15 22
+4                                               3 1 7 5
+7
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,31 @@
+Visszalépéses keresés                                                                        **
+
+
+               N-ből K az összes lehetséges növekvő sorrendben
+Válasszunk ki N elemből K különböző elemet az összes lehetséges növekvő sorrendben (ismétlés
+nélküli kombináció)!
+Bemenet
+A standard bemenet egyetlen sora első száma a tanulók száma (0≤N≤10), a második a
+kiírandó elemek száma (1≤K≤N).
+Kimenet
+A standard kimenet annyi sorból áll, amennyi megfelelő sorozat van (N alatt a K). Minden
+egyes sora K növekvő (1..N közötti) értéket tartalmaz. A sorok sorrendje legyen lexikografikusan
+növekvő!
+Kimenet
+ Bemenet                                         Kimenet
+ 4 2                                             1     2
+                                                 1     3
+                                                 1     4
+                                                 2     3
+                                                 2     4
+                                                 3     4
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

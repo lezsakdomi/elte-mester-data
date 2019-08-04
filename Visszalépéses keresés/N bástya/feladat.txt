@@ -1,0 +1,29 @@
+Visszalépéses keresés                                                                    *
+
+
+                N bástya elhelyezése egy NxN-es sakktáblán
+Helyezzünk el egy NxN-es sakktáblán az összes lehetséges módon N bástyát úgy, hogy ne üssék
+egymást!
+Készíts programot, amely megadja az összes lehetséges módot!
+Bemenet
+A standard bemenet első sorában a bástyák száma (1≤N≤10) van.
+Kimenet
+A standard kimenet minden egyes sorában egy-egy lehetséges módot leíró indexek soroza-
+ta legyen, vagyis N darab különböző szám 1-től N-ig!
+Példa
+Bemenet                                        Kimenet
+3                                              1   2   3
+                                               1   3   2
+                                               2   1   3
+                                               2   3   1
+                                               3   1   2
+                                               3   2   1
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

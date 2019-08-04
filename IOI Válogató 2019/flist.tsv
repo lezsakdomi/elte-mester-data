@@ -1,7 +1,7 @@
 id	feladat	nehezseg
 1	Termek	
 2	Robotok összegyűjtése	
-4	Lámpák	
+3	Hálózati átvitel	
 5	Banda szétválasztása	
 6	Hercegek házassága	
 7	Keveset dolgozó vállalkozó	
@@ -10,3 +10,9 @@ id	feladat	nehezseg
 10	Segély	
 11	Csatornák	
 12	Hálózattervezés	
+13	Csavarok	
+14	Dominó	
+15	Úttisztítás	
+16	Hilbert-görbe	
+17	Játék	
+18	Fantasztikus feladat	

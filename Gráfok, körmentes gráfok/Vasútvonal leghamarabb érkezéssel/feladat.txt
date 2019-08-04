@@ -1,0 +1,41 @@
+Gráfok, körmentes gráfok                                                                     **
+
+
+                      Vasútvonal leghamarabb érkezéssel
+Egy vasútvonal minden állomásáról ismerjük, hogy hova mikor indul vonat és az a célállomásra
+mikor érkezik. Útközben egyik vonat sem áll meg. Egy vonatról egy állomáson akkor szállhatunk
+át egy másik vonatra, ha az érkezési ideje kisebb, mint a másik vonat indulási ideje.
+Készíts programot, amely megadja, hogy mikor érkezhetünk leghamarabb az utolsó állomásra az
+első állomásról indulva!
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤N≤1000) és a vonatok száma
+(1≤M≤100 000) található. A következő M sorban egy-egy vonat induló és végállomása
+(1≤Ai<Bi≤N ), valamint indulási és érkezési ideje (1≤Indi<Érki≤1 000 000) van, indulási
+idő szerint növekvő sorrendben.
+Kimenet
+A standard kimenet első sorába a legkorábbi időpontot kell írni, amikor az utolsó állomás-
+ra érhetünk az első állomásról indulva! Ha nincs megoldás, akkor -1-et kell kiírni!
+Példa
+Bemenet                                         Kimenet
+4   8                                           25
+1   3   5 18
+1   2   7 10
+3   4   10 15
+2   4   12 29
+1   2   15 19
+2   3   15 19
+2   4   20 25
+3   4   22 28
+
+Magyarázat
+A második és a ötödik vonattal is indulhatunk, a második állomáson át kell szállni a hatodik vo-
+natra, ami 25-re a végállomásra ér.
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

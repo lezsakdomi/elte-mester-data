@@ -1,0 +1,32 @@
+Kombinatorikai algoritmusok                                                                ***
+
+
+                                          Szavak
+Szavak összerakásához N darab, nem feltétlenül különböző betűt kaptunk az angol ábécé kisbetűi
+közül. Közülük tetszőleges számúból tetszőleges sorrendben összerakva szavakat alkothatunk.
+Például az (a,b,b,c) betűkből az alábbi szavak állíthatók elő, ábécésorrendben:
+a, ab, abb, abbc, abc, abcb, ac, acb, acbb, b, …
+Készíts programot, amely egy betűsorozat és egy belőlük alkotott szó alapján megadja a szót
+megelőző, illetve követő szót!
+Bemenet
+A standard bemenet első sorában a betűk száma (1≤N≤20 000) van. A második sorban
+az N betű következik. A harmadik sorban egy belőlük alkotott S szó található.
+Kimenet
+A standard kimenet első sorába az S szót megelőző szót kell írni! A második sorba az S
+szót lövető szó kerüljön! Az előző és a következő ciklikusan értendő, azaz az ábécében elsőt az
+ábécében utolsó előzi meg, illetve az ábécében utolsót az első követi.
+Példa
+Bemenet                                        Kimenet
+4                                              bbca
+abcb                                           bca
+bc
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

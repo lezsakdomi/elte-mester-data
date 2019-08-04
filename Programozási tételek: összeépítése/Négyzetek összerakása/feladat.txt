@@ -1,0 +1,24 @@
+Programozási tételek összeépítése                                                         *
+
+
+                                Négyzetek összerakása
+Van N darab egységnyi méretű négyzetlapunk. KxK-as négyzeteket kell összerakni belőlük, elő-
+ször a lehető legnagyobbat, utána a maradékból egyre kisebbeket,...
+Add meg, hogy a fenti elven mekkora oldalhosszúságú négyzetek rakhatók ki belőlük!
+Bemenet
+A standard bemenet első sorában található a négyzetek száma (1≤N≤100 000).
+Kimenet
+A standard kimenet a kirakható négyzetek oldalhosszúságait tartalmazza!
+Kimenet
+Bemenet                                       Kimenet
+72                                            8 2 2
+                                              [magyarázat: 8*8+2*2+2*2=72]
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

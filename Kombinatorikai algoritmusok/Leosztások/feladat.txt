@@ -1,0 +1,32 @@
+Kombinatorikai algoritmusok                                                                      **
+
+
+                                         Leosztások
+Egy kártyajátékban a játékosok kártyáit az angol ábécé betűivel azonosítjuk. Egy játékos N kártyát
+kap a kezébe, amelyből tetszőleges darabszámút, tetszőleges sorrendben lerakhat. Ezeket lexiko-
+grafikus sorrendbe rendezhetjük, például (a,b,b,c)-nek a lehetséges lerakásai: a, ab, abb, abbc, abc,
+abcb, ac, acb, acbb, b, ...
+Készíts programot, amely megad egy lerakást közvetlenül követő lerakást!
+Bemenet
+A standard bemenet első sorában a kártyák száma van (1≤N≤1000), a másodikban pedig
+a kártyák azonosítói növekvő sorrendben (’a’≤Hi≤’z’) van. A harmadik sorban egy lerakás
+elemei száma található (1≤M≤N), a negyedikben pedig a lerakás elemei (’a’≤Vi≤’z’).
+Kimenet
+A standard kimenet első sorába a következő lerakás K elemszámát kell írni, a második
+sorba pedig a lerakás K elemét!
+Példa
+Bemenet                                           Kimenet
+4                                                 2
+abbc                                              ac
+4
+abcb
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

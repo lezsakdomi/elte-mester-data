@@ -1,0 +1,42 @@
+Rekurzív adatszerkezetek                                                                        **
+
+
+                                        Közös ősök
+Egy családfában mindenkinek ismerjük az anyját (kivéve az összes tag közös ősét).
+Készíts programot, amely megadja adott számú emberpárról, hogy ki a legközelebbi közös ősük!
+Megjegyzés: saját magának mindenki őse, tudjuk továbbá, hogy bármely két családtagnak van a
+családfában legalább egy közös őse.
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤100 000). A következő
+N-1 sor mindegyike egy-egy anya-gyerek kapcsolatot tartalmaz (1≤Anyai≠Gyereki≤N), az első
+szám egy anya sorszáma, a második pedig egy gyerekéé. A következő sorban az emberpárok szá-
+ma található (1≤K≤100 000). Az utolsó K sor mindegyike két ember sorszámát tartalmazza
+(1≤Ai≠Bi≤N), akiknek a legközelebbi közös ősüket keressük.
+Kimenet
+A standard kimenet i-edik sorába az i-edik emberpár legközelebbi közös ősének sorszá-
+mát kell írni!
+Példa
+Bemenet                                         Kimenet
+9                                               4
+1   2                                           6                                   1
+1   3                                           1
+2   4                                                                      2                3
+4   5
+4   6
+6   7                                                                      4
+7   8
+7   9                                                             5            6
+3
+5   9
+6   8                                                                          7
+4   3
+                                                                       9                8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

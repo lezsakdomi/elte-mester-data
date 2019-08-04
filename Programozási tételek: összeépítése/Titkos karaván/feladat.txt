@@ -1,0 +1,41 @@
+Programozási tételek összeépítésa                                                           ***
+
+
+                                     Titkos karaván
+Egy sivatagban N oázis van, amelyek között több napos utat igénylő karavánutak vezetnek.
+Mindegyikről tudjuk, hogy mely éjszakákon vannak bennük pihenő utazók, de az első oázisban
+biztosan nincsenek. Egy titkos karavánnal szeretnénk sorban bejárni az oázisokat (sorszám szerint
+növekvő sorrendben), aminek az oázisokban senkivel nem szabad találkoznia. A titkos karaván
+minden oázisban egyetlen éjszakát tölt.
+Készíts programot, amely megadja, hogy mikor indíthatjuk legkorábban a titkos karavánt!
+Bemenet
+A standard bemenet első sorában az oázisok száma (1≤N≤100) van. A második sorban az
+egyes oázisokba (sorban a másodiktól az N-edikig) az előző oázisból eljutási idő található
+(1≤Idői≤10). A következő N-1 sorban az oázisok foglalt napjai szerepelnek (sorban a második-
+tól az N-edikig). Minden sor első száma az oázis foglalt napjai száma (0≤Napi≤10 000), amit a
+foglalt napok sorszáma követ (1≤Si,j≤100 000), növekvő sorrendben!
+Kimenet
+A standard kimenet első sorába a legkorábbi nap sorszámát kell kiírni, amikor a titkos ka-
+raván elindulhat!
+Példa
+bemenet                                         kimenet
+5                                               4
+3   2 4 5
+2   3 5
+2   4 9
+2   12 13
+0
+Magyarázat
+Az 1. napon induló karaván a 4. éjszakát töltené a második oázisban, a 7.-et a harmadikban és a
+12-et a negyedikben (ami nem jó). A 2. napon induló karaván az 5. éjszakát töltené a második oá-
+zisban, ami szintén nem jó. A harmadik napon induló a 6. éjszakát töltené a második oázisban, a
+9.-et a harmadik oázisban, ami szintén nem jó.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,48 @@
+Nemes Tihamér Online Programozási Verseny                                              2. forduló
+
+
+                                       Virágárusok
+Egy osztály a szalagavató bálra virágokat szeretne tenni a díszterembe. Eldöntötték, hogy milyen
+virágból hány darabra van szükségük. A közelben két virágárus van, akitől vehetnek virágokat.
+Mindkettőről tudjuk, hogy milyen virágból hány van az üzletükben. A két árus közül az egyiket
+kell választanunk!
+Készíts programot, amely megadja, hogy melyik árustól vegyék a virágokat, hogy a tervezetthez
+képest a lehető legkevesebb virág hiányozzon!
+Bemenet
+A standard bemenet első sorában a megvenni szándékozott virágfajták száma van
+(1≤N≤10 000). A következő N sor mindegyikében egy-egy virág neve (az angol ábécé betűivel
+írva) és a belőle vásárolni kívánt virágok száma van (név szerinti ábécésorrendben). Ezután kö-
+vetkező sorban az első árus virágfajtái száma (1≤A1≤10 000) van, amit A1 sorban a virágai neve
+és darabszáma követ (név szerinti ábécésorrendben). Az utolsó csoport első száma a második
+árus virágfajtái száma (1≤A2≤10 000), amit A2 sorban a virágai neve és darabszáma követ (szin-
+tén név szerinti ábécésorrendben).
+Kimenet
+A standard kimenet első sorába a virágárus sorszámát kell írni, akitől a virágokat vásárol-
+juk (több megoldás esetén bármelyik)! A második sorba azon virágok minimális száma kerüljön,
+amiket így nem tudunk megvenni!
+Példa
+Bemenet                                         Kimenet
+3                                               1
+ibolya 5                                        3
+kankalin 2
+                                                Így 1 ibolya, 1 kankalin, 1 orgona hiány lesz.
+orgona 3
+4                                               Ha a 2. árust választanánk, akkor 5 virág (mind
+ibolya 4                                        ibolya) hiányozna.
+kankalin 1
+liliom 20
+orgona 2
+3
+amarillisz 3
+kankalin 2
+orgona 3
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

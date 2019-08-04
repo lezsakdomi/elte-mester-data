@@ -1,0 +1,51 @@
+Rekurzív adatszerkezetek                                                                       ***
+
+
+                                Párhuzamos kiszámítás
+Egy kifejezés értékének kiszámításához legfeljebb annyi lépés szükséges, ahány művelet van ben-
+ne. Ha lenne akárhány processzorunk, akkor azonban egyes részkifejezések párhuzamosan, egy-
+szerre is kiszámíthatók, így a kifejezés kiszámítási ideje csökkenhet. Ismerünk egy kifejezés kiszá-
+mítási sorrendjét leíró bináris kifejezésfát, a fa csomópontjait 1-től N-ig sorszámozzuk, az 1-es
+sorszámú a gyökérelem. Ebben a kifejezésfában a műveleteknek mindig 2 paraméterük van.
+Készíts programot, amely megadja, hogy minimum hány időegység alatt végezhetünk egy kifeje-
+zés kiszámításával és minimum hány processzor szükséges a lehető legrövidebb idejű kiszámítá-
+sához!
+Bemenet
+A standard bemenet első sorában a kifejezésfa pontjai száma (1≤N≤100 000) van. A kö-
+vetkező N sorban egy-egy fa csomópont leírása szerepel, sorszámuk sorrendjében. A fa belső
+csomópontjainál a sorok első karaktere egy műveleti jel, amit két csomópont sorszáma követ
+(1≤V≠W≤N). A fa levélelemeinél a sorokban egyetlen szám található.
+Kimenet
+A standard kimenet első sorába a kiszámításhoz szükséges időegységek minimális számát,
+a másodikba pedig a legrövidebb lehetséges kiszámítási időhöz szükséges minimális processzor-
+számot kell kiírni!
+Példa
+bemenet                                           kimenet
+15                                            4
++ 2 3
++ 4 5
+                                              2                   1
++ 6 7
++ 8 9
+5                                         2                                             3
++ 10 11
++ 12 13
+8
+                                                5                              6                 7
+9                                4
++ 14 15
+11
+12                                                                  10             11     12           13
+13                         8             9
+14
+15                                                         14            15
+Megjegyzés: Az ábrán pirosak a műveleti csomópontok.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

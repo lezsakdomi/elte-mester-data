@@ -1,0 +1,34 @@
+Sorozatok                                                                                ***
+
+
+                                    Szabadnapok
+Ismerjük N ember szabadnapjai sorszámát a következő, legfeljebb 2 hónapra. Egy A ember leg-
+alább 1 szabadnapban eltér egy B embertől, ha van olyan szabadnapja A-nak, ami nem szabad-
+napja B-nek.
+Készíts programot, amely megadja azon emberek számát, akik legalább 1 szabadnapban eltérnek
+minden más embertől!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤5000) és a napok száma
+(1≤M≤61) van. A következő N sorban egy-egy ember szabadnapjai száma szerepel (1≤Si≤M),
+amit az Si darab szabadnapja sorszáma követ. (1≤Szi,j≤M).
+Kimenet
+A standard kimenet egyetlen sorába azon emberek számát kell írni, akik legalább 1 sza-
+badnapban eltérnek minden más embertől!
+Példa
+Bemenet                                      Kimenet
+5   10                                       2
+3   1 2 3                                    Magyarázat: Az első és az ötödik ember ilyen.
+3   8 4 6
+2   2 1                                      A második és a negyedik minden szabadnapja
+3   4 6 8                                    megegyezik, a harmadik minden szabadnapja
+2   4 3                                      szerepel az elsőnél is.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

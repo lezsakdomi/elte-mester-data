@@ -1,0 +1,32 @@
+Programozási tételek: - Maximumkiválasztás                                                        *
+
+
+                                        Kihalt állatok
+Kihalt állatfajokról tudjuk, hogy mikori az első és az utolsó csontváz, amit megtaláltak róluk.
+Készíts programot, amely megadja, hogy hány évvel ezelőtt élt a legtöbb faj!
+Bemenet
+A standard bemenet első sorában a legrégebbi csontváz kora (1≤M≤100 000) és a fajok
+száma (1≤N≤100 000) szerepel. A következő N sorban egy-egy faj legrégebbi és legújabb
+csontváza kora van (1≤Ui≤Ei≤M), a kor azt jelenti, hogy ezelőtt hány évvel élt.
+Kimenet
+A standard kimenet első sorába az egy évben élt fajok K számát kell írni, amikor a legtöbb
+faj élt! A második sorba a legrégebbi kor kerüljön, amikor K faj élt!
+Példa
+Bemenet                                           Kimenet
+10 5                                              3
+8 3                                               7
+2 1                                               Magyarázat: 6 és 7 évvel ezelőtt élt 3 faj, a leg-
+9 6
+                                                  régebbi ilyen a 7 év.
+10 10
+7 5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

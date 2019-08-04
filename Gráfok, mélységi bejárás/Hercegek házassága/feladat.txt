@@ -1,0 +1,45 @@
+Gráfok, mélységi bejárás                                                                       ***
+
+
+                                 Banda szétválasztása
+Egy bandában N bűnöző szerepel, de nem mindenki ismer közvetlenül mindenkit (közvetve vi-
+szont igen). A rendőrség szeretné egyetlen bandatag letartóztatásával a bandát a lehető legtöbb
+olyan részre vágni, amely részek között semmilyen kapcsolat nincs.
+Készíts programot, amely megadja, hogy melyik bandatagot tartóztassák le, hogy a banda lehető
+legtöbb független bandára essen szét!
+Bemenet
+A standard bemenet első sorában a bűnözők száma (1≤N≤10 000), valamint az ismeret-
+ségek száma (1≤M≤500 000) van. A következő M sorban egy-egy ismeretségben szereplő két
+tag sorszáma szerepel (1≤Ai≠Bi≤N ).
+Kimenet
+A standard kimenet első sorába egy olyan bandatag sorszámát kell írni, akinek a letartózta-
+tásával a banda a legtöbb független bandára esik szét! Több megoldás esetén azt kell kiírni, ame-
+lyiknél a keletkező bandák legnagyobbika a lehető legkisebb! Ha ezek is egyformák, akkor közülük
+a legkisebb sorszámú tagot kell kiírni!
+Példa
+Bemenet                                         Kimenet
+10 11                                           7
+1 3                                             Magyarázat: Ha a 3.-at vagy a 7.-et tartóztatják
+2 3                                             le, akkor 3 független banda keletkezik. A 3. ese-
+2 4                                             tén a legnagyobb banda 6 tagú, a 7. esetén pedig
+3 4                                             5 tagú lenne.
+3 5
+5 7                                                               1                8      10
+6 7
+7 8
+                                                          2       3       5        7       9
+7 9
+8 10
+9 10                                                              4                6
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 25%-a szerezhető olyan tesztesetekre, ahol N<1000 és M<6000.
+
+
+
+
+                                            1. oldal
+

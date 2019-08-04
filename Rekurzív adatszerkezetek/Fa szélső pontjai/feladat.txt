@@ -1,0 +1,37 @@
+Rekurzív adatszerkezetek                                                                    **
+
+
+                                    Fa szélső pontjai
+Egy irányított rendezett fa olyan pontját, amelynek szintjén nincs tőle balra, vagy jobbra más
+pont, szélső pontnak nevezzük.
+Készíts programot, amely meghatározza egy fa szélső pontjait!
+Bemenet
+A standard bemenet első sorában a fa pontjainak száma (1≤N≤30 000) van. A fa pontjait
+az 1,…,N számokkal azonosítjuk, a gyökér azonosítója 1. A további N sor mindegyikében egy
+pont közvetlen leszármazott pontjai vannak. Az i+1-edik sorban az i-edik pont közvetlen leszár-
+mazottjai vannak felsorolva, balról jobbra haladva. Minden sorban a felsorolást a 0 szám zárja.
+Kimenet
+A standard kimenet első sorába a bemeneti fa szélső pontjainak az M számát kell írni! A
+második sor tartalmazza a szélső pontokat, tetszőleges sorrendben.
+Példa
+Bemenet                                        Kimenet
+9                                              7
+2   3 4 0                                      1 2 5 4 7 9 8                     1
+5   6 0
+7   0
+0                                                                    2           3         4
+0
+0                                                                5       6       7
+9   8 0
+0
+0                                                                            9       8
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

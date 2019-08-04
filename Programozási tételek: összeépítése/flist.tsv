@@ -31,7 +31,6 @@ id	feladat	nehezseg
 30	Leghosszabb emelkedő *	
 31	Leghosszabb időintervallumban dobogón elért helyezés *	
 32	Leghosszabb időszakban folyamatos meleg *	
-33	Leghosszabb intervallum estére romló légszennyeződésre *	
 34	Leghosszabb intervallum kevés őrrel a múzeumban *	
 35	Leghosszabb intervallumban nem védett falak száma *	
 36	Leghosszabb intervallumban nem védett falak száma *	
@@ -61,7 +60,7 @@ id	feladat	nehezseg
 60	Összekevert sorrend **	
 61	Pontozásos verseny végeredménye **	
 62	Résztvevők száma kategóriánként a kihíváson *	
-63	Séta minél biztonságosabban **	
+63	Legkevesebb találkozás	
 64	Szigetek benépesítése *	
 65	Szólánc **	
 66	Teaforgalmazók száma *	
@@ -85,3 +84,26 @@ id	feladat	nehezseg
 84	Születések ***	
 85	Globális felmelegedés	
 86	Piac	
+87	Legtöbb hegycsúcs	
+88	DNS vizsgálat	
+89	Találkozások	
+90	Hegycsúcsok	
+91	Betűk intervalluma	
+92	Legtöbb csúcsot tartalmazó terület	
+93	Legrövidebb szakasz	
+94	Meleg pontok	
+95	Hegycsúcsok	
+96	Ádám vagy Éva nyert többször?	
+97	Nemzetközi vonat állomásai	
+98	Bűvös	
+99	Időjárás előrejelzés	
+100	Kártyaleosztás értéke	
+101	Lövészverseny eredményei	
+102	Négyzetek összerakása	
+103	Legnépszerűbb és legnépszerűtlenebb programozási nyelvek	
+104	Villamos statisztika	
+105	Titkos karaván	
+106	Nyereség	
+107	Szabadnapok	
+108	Felhasználó azonosítás	
+109	Fényképezés adott időtartam alatt	

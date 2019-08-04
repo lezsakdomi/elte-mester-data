@@ -1,0 +1,26 @@
+Visszalépéses keresés                                                                        *
+
+
+                    N vezér elhelyezése egy NxN-es sakktáblán
+Helyezzünk el egy NxN-es sakktáblán az összes lehetséges módon N vezért úgy, hogy ne üssék
+egymást! Az összes lehetséges megoldásból nagyon sok is lehet, de egyetlen megoldás megtalálása
+várhatóan sokkal gyorsabb.
+Készíts programot, amely megad egy lehetséges módot!
+Bemenet
+A standard bemenet első sorában a vezérek száma (1≤N≤10) van.
+Kimenet
+A standard kimenet első sorában egy lehetséges módot leíró indexek sorozata legyen,
+vagyis N darab különböző szám 1-től N-ig! Ha nincs megoldás, akkor -1-et kell kiírni!
+Példa
+Bemenet                                        Kimenet
+8                                              4 6 8 2 7 1 3 5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

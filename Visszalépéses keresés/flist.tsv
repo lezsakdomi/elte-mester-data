@@ -10,7 +10,23 @@ id	feladat	nehezseg
 9	Szoborpark **	
 10	Ültetés **	
 11	Üvegválogatás *	
-12	Üzletek *	
 13	Tehenészet	
 14	Hátizsák probléma – sok kicsi tárgy	
 15	Biztonságos leszállás	
+16	Szókereső	
+17	Iskolaválasztás	
+18	L üzlet K pékség	
+19	Munkásfelvétel maximált árral	
+20	Munkásfelvétel: N állás – N jelentkező	
+21	Munkásfelvétel: N állás – N jelentkező – backtrack	
+22	Munkásfelvétel: N állás – N jelentkező, nem lehet mind felvenni	
+23	N bástya	
+24	N vezér (összes megoldás)	
+25	N vezér (egy megoldás)	
+26	N-ből K az összes lehetséges sorrendben	
+27	N-ből K az összes lehetséges növekvő sorrendben	
+28	Szóösszeadó fejtörő	
+29	Az összes lehetséges speciális sorrend	
+30	Körmérkőzés új párosítása	
+31	Svájci rendszerű körmérkőzés	
+32	Banda szétválasztása	

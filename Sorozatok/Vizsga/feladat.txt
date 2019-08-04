@@ -1,0 +1,34 @@
+Sorozatok                                                                                     **
+
+
+                                           Vizsga
+A barátoddal egy N igaz-hamis tesztkérdésből álló vizsgát tettetek, amiben a helyes válasz 1 pon-
+tot, a hibás válasz 0 pontot ér. Ismered a barátod válaszait, és tudod, hogy hány pontot kapott
+(illetve ismered a saját válaszaidat is), de a te pontszámodat és a megoldókulcsot még nem tették
+közzé.
+Készíts programot, amely megadja, hogy ezek alapján te legalább hány pontot, illetve legfeljebb
+hány pontot érhettél el a vizsgán!
+Bemenet
+A standard bemenet első sorában a tesztkérdések száma (1≤N≤100 000), illetve a bará-
+tod pontszáma (0≤P≤N) van. A második sorban a barátod válaszai (N darab "H" vagy "I" karak-
+ter), a harmadik sorban a te válaszaid vannak.
+Kimenet
+A standard kimenet egyetlen sorába a lehetséges minimális és maximális pontszámodat kell írni!
+Példa
+Bemenet                                         Kimenet
+6 3                                             1 5
+HHIIII
+HHIIHH
+
+
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás
+A pontok 30%-a szerezhető olyan tesztekre, ahol N≤20.
+
+
+
+
+                                            1. oldal
+

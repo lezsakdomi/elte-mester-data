@@ -1,0 +1,48 @@
+Rekurzyv adatszerkezetek                                                                      **
+
+
+                                            Részfák
+Ismerünk egy F bináris fát. K darab kérdésben kérdezünk rá arra, hogy egy adott bináris fa teljes
+részfája-e az F bináris fának.
+Készíts programot, amely K darab fáról eldönti, hogy az F bináris fa teljes részfája-e!
+Bemenet
+A standard bemenet első blokkjában az F fa leírása van. Az első sorban az F bináris fában
+szereplő csomópontok száma van (1≤N<100 000, N páratlan). A második sorban az N
+csomópont tartalma szerepel, legfeljebb 10 karakteres szövegek, egy-egy szóközzel elválasztva. A
+harmadik sortól (N-1)/2 sorban a bináris fa szerkezete szerepel (1≤A≠B≠C≤N), ami azt jelenti,
+hogy a fában az A sorszámú csomópont bal gyereke a B sorszámú, jobb gyereke pedig a C
+sorszámú – a fa gyökere az 1-es sorszámú, 1 gyerekes csomópont nincs. A következő sorban a
+kérdések száma szerepel (1≤K≤10). A következő K blokk egy-egy kérdésben szereplő fa leírása,
+az F fának megfelelő szerkezetben.
+Kimenet
+A standard kimenet K sorába az IGEN vagy a NEM szót kell kiírni, attól függően, hogy
+az i. kifejezésfa része-e az F fának!
+Példa
+bemenet                                           kimenet
+9                                                 IGEN
+A   B   A C B C D D E                             NEM
+1   2   3                                                         A
+2   4   5
+3   6   7
+5   8   9                                                B                A
+2
+5                                                  C          B       C         D
+B   C B D E
+1   2 3                                                   D       E
+3   4 5
+5                                                        B                      A
+A   B A C D
+1   2 3                                            C          B            B         A
+3   4 5
+                                                          D       E              C        D
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤6.
+
+
+
+
+                                              1. page
+

@@ -1,0 +1,33 @@
+Diákolimpiai válogatóverseny
+
+
+                                    Leghosszabb kör
+Egy osztály tanulói közül mindenki megadja, hogy ki a legjobb barátja, akinek egy hírt sürgősen
+továbbítana. Egy ilyen hírláncban biztosan körbe tud járni üzenet, pl. A küldi B-nek, B küldi C-
+nek, C küldi D-nek és D küldi B-nek – B-C-D egy három hosszúságú körlánc.
+Készíts programot, amely megadja a leghosszabb körlánc hosszát (azaz a benne szereplő tanulók
+számát)!
+Bemenet
+A standard bemenet első sorában a diákok száma (1≤N≤10 000) van. A második sorban
+az egyes diákok legjobb barátjának sorszáma szerepel (1≤Bi≤N, ahol Bi≠i).
+Kimenet
+A standard kimenet első sorába a leghosszabb körlánc hosszát kell kiírni!
+Példa
+bemenet                                          kimenet
+9                                                4
+2 3 4 5 6 3 2 9 8
+
+                          1        2       3            4    8       9
+
+                                   7       6            5
+Megjegyzés: a 2 hosszú kör is körnek számít, a fenti példában a 8-9 egy kör, de nem a leghosz-
+szabb.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

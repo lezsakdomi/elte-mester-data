@@ -27,7 +27,6 @@ id	feladat	nehezseg
 26	Facsemeték bekerítése ***	
 27	Háromszög **	
 28	Oszlopok *	
-29	Épület elhagyása ***	
 30	Elválasztó egyenes ****	
 31	Pontok poligonban ****	
 32	Négyzetek ***	
@@ -35,3 +34,8 @@ id	feladat	nehezseg
 34	Épület ***	
 35	Autópálya ****	
 36	Poligon	
+37	Négyszög	
+38	Szuperhuszár	
+39	Facsemete	
+40	Konvex négyszög	
+41	Bekerítés konvex négyszöggel	

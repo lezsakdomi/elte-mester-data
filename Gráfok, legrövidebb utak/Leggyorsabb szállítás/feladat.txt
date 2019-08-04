@@ -1,0 +1,48 @@
+Gráfok – legrövidebb utak                                                                        **
+
+
+                                 Leggyorsabb szállítás
+Ismerjük egy ország vasútvonalairól az egyes várospárok közötti pályaszakaszok hosszát, valamint
+teherbírását. Bármely két város között csak egyetlen pályaszakasz van
+Készíts programot, amely megadja két városra a közöttük levő legrövidebb utat, több lehetséges
+útvonal esetén a legnagyobb teherbírásút!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤10 000) és a pályaszakaszok
+száma (1≤M≤100 000) van. A következő M sorban egy-egy pályaszakasz két végpontjának sor-
+száma (1≤Ai≠Bi≤N), a pályaszakasz hossza (1≤Hi≤10 000) és teherbírása (1≤Ti≤100 00)
+van. Az utolsó sorban a két város sorszáma szerepel (1≤V≠W≤N). A V városból a W városba biz-
+tosan el lehet jutni.
+Kimenet
+A standard kimenet első sorába a két város közötti legrövidebb út hosszát és ennek ma-
+ximális teherbírását kell kiírni! A második sorba egy olyan legrövidebb út pontjai sorszámai kerül-
+jenek, amelyen a legkisebb teherbírású pályaszakasz a lehető legnagyobb! A második sor első sor-
+száma A, az utolsó pedig B legyen! Ha több ilyen út is lenne, tetszőleges kiírható.
+Példa
+bemenet                                          kimenet
+6   9                                            9 4
+1   2   3   5                                    1 2 3 6
+1   4   7   7
+1   5   6   1
+                                                                3,5                4,4
+2
+2
+    3
+    5
+        4
+        3
+            4
+            5                                             1                2                 3
+4   5   8   8
+3   5   5   1
+3   6   2   4                                           7,7   6,1       3,5      5,1           2,4
+5   6   3   2
+1   6
+Korlátok                                                  4     8,8        5      3,2       6
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

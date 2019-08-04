@@ -1,0 +1,31 @@
+Tehetségkutató Egyetemi Programozási Verseny                                             3. forduló
+
+
+                                  Legrövidebb szakasz
+Ismerünk egy hosszú szöveget és betűknek egy R részhalmazát.
+Készíts programot, amely megadja a szöveg legrövidebb szakaszát, ahol a betűhalmaz összes be-
+tűje előfordul!
+Bemenet
+A standard bemenet első sorában a szöveg hossza van (1≤H≤250 000). A második sor a
+szöveg karaktereit tartalmazza (az angol ábécé kis- és nagybetűit, továbbá szóközöket és írásjele-
+ket tartalmazhat). A harmadik sorban az R betűhalmaz karakterei találhatók (legfeljebb 26 betű az
+angol ábécé kisbetűi közül).
+Kimenet
+A standard kimenet első sorába a legrövidebb olyan szakasz első és utolsó karakterének
+sorszámát kell írni, amelyben az R betűhalmaz minden betűje előfordul! (A nagy- és kisbetűk ek-
+vivalensek, elég minden betűből az egyik.) Ha nincs ilyen szakasz, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+20                                               11 19
+Abcde, Fghuoi EDCBA.
+aouei
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 128 MiB
+
+
+
+
+                                              1. oldal
+

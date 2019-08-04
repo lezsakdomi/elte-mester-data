@@ -27,7 +27,6 @@ id	feladat	nehezseg
 26	Legtöbb megfigyelt jármű egy helyen *	
 27	Legtöbbször lefényképezett terület műholdról *	
 28	Legvastagabb jég a Balatonon *	
-29	Leggyorsabb áradás ***	
 30	Maximális egyedszámú helységek *	
 31	Maximális utasszám a villamoson *	
 32	Múzeumban leghosszabb ideig szolgálatban lévő őr *	
@@ -47,3 +46,20 @@ id	feladat	nehezseg
 46	Születések	
 47	Autópálya	
 48	Napszámosok	
+49	Osztályzatok	
+50	Kihalt állatok	
+51	Születésnapok	
+52	Sikertelen napok	
+53	Sikeres sorozatok	
+54	Játékállások	
+55	Fogadások	
+56	Vizsga	
+57	Maximális növekedés	
+58	Hideg és meleg napok	
+59	Ügyelet	
+60	Földrengések	
+61	Két csoportra osztás	
+62	Rövid földrengések	
+63	Határőrök	
+64	Földrengésmentes időszak	
+65	Közeli legmelegebb nap	

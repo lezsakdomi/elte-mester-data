@@ -22,7 +22,6 @@ id	feladat	nehezseg
 21	Hatszög ***	
 22	Kanyarodó villamos ***	
 23	Karaván **	
-24	Két Mérőkanna *	
 25	Kommandó ***	
 26	Körút ***	
 27	Labirintus **	
@@ -59,3 +58,15 @@ id	feladat	nehezseg
 58	Ügynök útja ***	
 59	Cukrászok ***	
 60	Labor ***	
+61	Országok	
+62	Csatornák	
+63	DNS vizsgálat	
+64	Szigetek száma	
+65	Legnagyobb sziget	
+66	Futárszolgálat	
+67	Hálózat kettéosztás	
+68	Bástya a sakktáblán	
+69	Futó a sakktáblán	
+70	Repülési esetek	
+71	Hálózati átvitel	
+72	Sípályák	

@@ -9,7 +9,6 @@ id	feladat	nehezseg
 8	DNS ismétlődés ***	
 9	DNS kezdőszeletek ***	
 10	DNS legtöbbször előforduló kezdőszelet ***	
-11	Fa elágazásai *	
 12	Fa magassága *	
 13	Fa zárójelezéssel *	
 14	Faágak letörése ***	
@@ -57,3 +56,19 @@ id	feladat	nehezseg
 56	Konverzió	
 57	Banda	
 58	DNS	
+59	Családfa	
+60	Fa szélső pontjai	
+61	Vizitúra	
+62	Szigetek	
+63	Közös ősök	
+64	Közös ősök száma	
+65	Részfák	
+66	Szótár	
+67	Átfedő intervallumok	
+68	Párhuzamos kiszámítás	
+69	Közös főnök	
+70	Találós kérdések	
+71	Csővezetés	
+72	Csapok zárása	
+73	Fantasztikus feladat	
+74	Robotok összegyűjtése	

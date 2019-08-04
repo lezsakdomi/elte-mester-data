@@ -1,0 +1,46 @@
+Diákolimpiai Válogatóverseny 2019                                                      5. forduló
+
+
+                                         Út tisztítás
+Egy országban N város található, valamint a városok között M út. A kormány minden úthoz sze-
+retne hozzárendelni egy várost, amelyik takarítja azt. Ha egy út az A és a B városokat köti össze,
+akkor csak ezen két város valamelyikét rendelhetjük az út takarítására. Minden úthoz pontosan
+egy várost kell rendelni, minden városhoz legfeljebb egy út rendelhető. Tudjuk, hogy létezik ilyen
+hozzárendelés.
+Ha minden úthoz megmondjuk, hogy melyik városnak kell azt takarítania a megadott feltételek
+mellett, akkor azt egy lehetséges kijelölésnek nevezzük. Két kijelölés különböző, ha van olyan út,
+amit nem ugyanahhoz a városhoz rendelünk a két kijelölésben.
+Ha egy A és egy B város közti utat A-hoz rendelünk, akkor az út tisztításának költsége évente
+A2∙B. Egy kijelölés költsége az utak évi költségének összege.
+Írj programot, amely kiszámítja az összes lehetséges kijelölés költségének összegét! Ez a szám na-
+gyon nagy is lehet, ezért az 1 000 000 007-tel vett osztási maradékát add meg!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤100 000) és az utak száma
+(1≤M≤N) van. A következő M sorban soronként egy-egy út végpontjainak indexe található
+(1≤Ai≠Bi≤N). A bemenetre teljesül, hogy legalább 1 kijelölés lehetséges.
+Kimenet
+A standard kimenet egyetlen sorába az összes lehetséges kijelölés költségének összege ke-
+rüljön (mod 1 000 000 007)!
+Példa
+bemenet                                          kimenet                 1       5                   6   9
+5    4                                           436
+1    5
+1    5                                                                   3        2        4         7   8
+3    2
+2    4
+Magyarázat
+6 lehetséges kijelölés van. Ezek az alábbiak (az utak fenti sorrendjében írjuk a hozzájuk rendelt
+városokat):
+1.       1, 5, 3, 2, költsége: 12∙5+52∙1+32∙2+22∙4=5+25+18+16=64
+2.       1, 5, 2, 4, költsége: 12∙5+52∙1+22∙3+42∙2=5+25+12+32=74
+3.       1, 5, 3, 4, költsége: 12∙5+52∙1+32∙2+42∙2=5+25+18+32=80
+4.       5, 1, 3, 2, költsége: 52∙1+12∙5+32∙2+22∙4=25+5+18+16=64
+5.       5, 1, 2, 4, költsége: 52∙1+12∙5+22∙3+42∙2=25+5+12+32=74
+6.       5, 1, 3, 4, költsége: 52∙1+12∙5+32∙2+42∙2=25+5+18+32=80
+ez összesen 436.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+                                             1. oldal
+

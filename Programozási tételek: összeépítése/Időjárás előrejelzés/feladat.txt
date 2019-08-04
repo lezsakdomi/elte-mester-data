@@ -1,0 +1,41 @@
+Programozási tételek összeépítése                                                               *
+
+
+                                    Időjárás előrejelzés
+Az időjárás előrejelzésben ismerjük előre N nap várható minimális és maximális hőmérsékletét.
+Készíts programot, amely megadja:
+   A. azt a K napos időtartamot (ha van), amelyben az előrejelzés szerint folyamatosan fagy lesz;
+   B. azt a két szomszédos napot, ahol a legnagyobbat változik a hőmérséklet;
+   C. azokat a nap(ok)at (ha van(nak) ilyen(ek)), ahol a napi minimális hőmérséklet a napi átlag-
+      hőmérsékletek átlaga fölötti!
+Bemenet
+A standard bemenet első sorában található a napok száma (2≤N≤100). A második sor
+tartalmazza a K napos időtartamot (2≤K≤N). Az ezt követő N sorban pedig az adott napra előre-
+jelzett minimális és maximális hőmérséklet (-89≤min<max≤58).
+Kimenet
+A standard kimenet három sorból álljon: az első sor K darab számot tartalmazzon, növekvő
+sorrendben, amelyek az olyan napok sorszámmainak felelnek meg, amikor folyamatosan fagyott.
+Ha nincs ilyen időtartam, akkor a NINCS szöveget kell kiírni. A második sor két számot tartalmaz-
+zon, annak a két egymást követő napnak a sorszámát, amikor a legnagyobbat változik a hőmérsék-
+let. A harmadik sor annyi napsorszámot tartalmazzon, növekvő sorrendben, ahány napon a napi
+minimális hőmérséklet a napi átlaghőmérsékletek átlaga fölötti. Ha nincs ilyen nap, akkor a NINCS
+szöveget kell kiírni.
+Példa
+ Bemenet                                         Kimenet
+ 5                                               3 4
+ 2                                               4 5
+ -9 -2                                           2 5
+ -1 4
+ -5 -4
+ -6 -1
+ 5 8
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

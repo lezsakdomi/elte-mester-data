@@ -1,0 +1,36 @@
+Programozási tételek – Keresés                                                                 **
+
+
+                                        Ponthatárok
+Egy dolgozatban a tanulók megoldásait pontozták. Ezután megállapították az elégséges, közepes,
+jó, jeles osztályzatok alsó ponthatárát. Elképzelhető, hogy vannak olyan tanulók, akiknek 1 pont
+hiányzik a jobb jegyhez. Hogy ez ne forduljon elő, legfeljebb L-lel csökkenthető minden pontha-
+tár (például, ha egy ponthatár 60, és van 59 és 58 pontos tanuló, de nincs 57, akkor a ponthatárt
+58-ra csökkentjük, ha L legalább 2). Ha ez nem megy, akkor marad a korábbi ponthatár.
+Készíts programot, amely megadja, hogy mik lesznek a csökkentés utáni ponthatárok!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤100 000), a maximális elérhető
+pontszám (1≤K≤100 000) és a csökkentés mértéke (1≤L≤100) szerepel. A második sorban a
+kettes, hármas, négyes és ötös osztályzat alsó határa van (1≤KH<HH<NH<OH≤K) – a ponthatárok
+között minden tesztben nagyobb L-nél a különbség. A harmadik sorban az N tanuló pontszáma
+van (0≤Pi≤K).
+Kimenet
+A standard kimenet 4 sorába 4 egész számot kell írni, rendre a kettes, hármas, négyes és
+ötös osztályzat alsó határát a csökkentés után! Ha egy határnál többféle csökkentés is lehetne, ak-
+kor a legkisebb csökkentésűt kell kiírni!
+Példa
+Bemenet                                          Kimenet
+7 100 2                                          19
+20 40 60 80                                      40
+37 38 39 19 59 78 79                             59
+                                                 78
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,29 @@
+Programozási tételek összeépítése                                                             *
+
+
+                          Ádám vagy Éva nyert többször?
+Ádám és Éva N játékot játszott egymással. Minden játékról tudjuk, hogy melyikük nyerte meg.
+Készíts programot, amely megadja, hogy Ádám vagy Éva nyert-e többször! Páros N esetén elkép-
+zelhető, hogy egyik sem.
+Bemenet
+A standard bemenet első sorában található a játékok száma (1≤N≤100) Az ezt követő
+sorban pedig az egyes játékok győztesének kezdőbetűiből alkotott N hosszúságú szöveg. Értelem-
+szerűen e szöveg i. jele az i. játék győztesére utaló jel: Éva esetén „E”, Ádám esetén „A”.
+Kimenet
+A standard kimenet egyetlen szóból álljon: a többször győző neve (ékezetmentesen csupa
+nagybetűkkel írva), vagy ha ugyanannyi győzelmet könyvelhet el Éva, mint Ádám, akkor a „DON-
+TETLEN” szöveg!
+Kimenet
+ Bemenet                                        Kimenet
+ 9                                              EVA
+ AEAEAEAEE
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

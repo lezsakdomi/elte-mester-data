@@ -1,0 +1,33 @@
+Programozási tételek: sorozatszámítás                                                     **
+
+
+                                   Középső életkorú
+Ismerjük N ember életkorát. Életkor szerint középsőnek azt nevezzük, aki az embereket életkor
+szerinti sorrendbe rendezve pontosan középre kerülne.
+Készíts programot, amely megadja az életkor szerint középsőt!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N<500 000, páratlan). A
+következő N sorban egy-egy ember életkora szerepel (1≤Ki≤150).
+Kimenet
+A standard kimenet egyetlen sorába azon ember életkorát kell írni, aki sorba rendezés ese-
+tén középső lehetne, több megoldás esetén a legkisebb sorszámút!
+Példa
+Bemenet                                        Kimenet
+7                                              15
+13
+15
+1
+45
+15
+10
+80
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

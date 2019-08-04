@@ -1,0 +1,42 @@
+Rekurzív adatszerkezetek                                                                        ***
+
+
+                                            Szigetek
+Régészek nemrég egy feljegyzésre bukkantak, ami leírja, ahogyan egy polinéz törzs benépesített egy
+korábban lakatlan csendes-óceáni szigetcsoportot. A törzs kezdetben csak egy szigeten volt jelen,
+de ahogy nőtt a népesség, a zsúfolt szigetekről időről időre felfedezők indultak útnak új, ismeretlen
+földek felé. A törzs öregjei minden szigethez feljegyezték az onnan felfedezett új szigeteket. Hány-
+féle sorrendben fedezhette fel a törzs a szigetcsoport szigeteit, ha tudjuk, hogy minden szigetet
+pontosan egyszer fedeztek fel, és nem történt egyszerre két felfedezés?
+Bemenet
+A standard bemenet első sorában a szigetek száma (1≤N≤20 000) található. A következő
+N sor közül az i-edik tartalmazza az i-edik szigetről felfedezett új szigetek számát (0≤Si<N), majd
+a szigetek sorszámait (2≤Szi,j≤N). Tudjuk, hogy a törzs őshazája az 1-es sziget, ezt fedezték fel
+először.
+Kimenet
+A standard kimenetre a lehetséges felfedezési sorrendek számát kell kiírni! A megoldás
+nagyon nagy lehet, ezért az eredmény 109+7-es maradékát kell megadni!
+Példa
+ Bemenet            Kimenet              Magyarázat
+ 5                  8                    A lehetséges felfedezési sorrendek:
+ 2 2 3                                   1 2 3 4 5
+ 2 4 5                                   1 2 3 5 4
+ 0                                       1 2 4 3 5
+ 0                                       1 2 4 5 3
+ 0                                       1 2 5 3 4
+                                         1 2 5 4 3
+                                         1 3 2 4 5
+                                         1 3 2 5 4
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+N ≤ 13, 1.-5. teszt
+N ≤ 2000, 6.-13. teszt
+N ≤ 20000, 14.-15. teszt
+
+
+
+
+                                              1. oldal
+

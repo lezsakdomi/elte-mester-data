@@ -1,0 +1,29 @@
+Tehetségkutató Egyetemi Programozási Verseny                                          3. forduló
+
+
+                                         Visszhang
+A keletkezési helyre visszavert és itt ismét észrevett hangot nevezzük visszhangnak. A visszhang
+az eredeti hangtól vagy az előző visszhangtól legfeljebb K másodpercen belül történik és az előző
+hangnál kisebb erősségű. Ha K másodpercen belül egy visszhangnál erősebb vagy vele egyforma
+erősségű hangot hallunk, az már új hangadásnak számít. Másodpercenként mérjük a hangerőssé-
+get (ez 0, ha épp csend van).
+Készíts programot, amely megszámolja, hogy a vizsgált időszakban hány visszhangot hallhattunk!
+Bemenet
+A standard bemenet első sorában a vizsgált másodpercek száma (1≤N≤100 000) és a K
+szám (1≤K≤100) van. A második sor az N mérés értékét tartalmazza (0≤S≤1000).
+Kimenet
+A standard kimenet első sorába az érzékelt visszhangok számát kell írni!
+Példa
+Bemenet                                         Kimenet
+10 3                                            3
+0 5 0 1 0 6 6 2 1 1
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

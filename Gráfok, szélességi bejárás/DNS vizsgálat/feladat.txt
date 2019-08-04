@@ -1,0 +1,43 @@
+Gráfok – szélességi bejárás                                                                      *
+
+
+                                           Tanyák
+Egy megyében csak városok és tanyák vannak. A megye városairól tudjuk, hogy bármelyikből
+bármelyikbe el lehet jutni legalább kettő független, közös útszakaszt nem tartalmazó útvonalon. A
+városok közelében tanyák vannak, minden tanya ahhoz a városhoz tartozik, amelyikhez egyetlen
+útvonalon keresztül el lehet jutni (esetleg más tanyákon keresztül).
+Készíts programot, amely meghatározza, hogy melyik városhoz mely tanyák tartoznak!
+Bemenet
+A standard bemenet első sorában a települések száma van (3≤N≤10000). A következő N
+sor közül az i-edik az i-edik településről kivezető utak számát (1≤Di≤100), majd azon települé-
+sek sorszámait tartalmazza, ahova vezet út (1≤Si,j≤N).
+Kimenet
+A standard kimenet annyi sort tartalmazzon, ahány város van a megyében! Minden sor
+első száma az adott város sorszáma legyen, a második a hozzá tartozó tanyák száma, amit az ilyen
+tanyák sorszámai kövessenek, növekvő sorrendben! A sorok a város sorszáma szerint legyenek
+rendezettek!
+Példa
+Bemenet                                         Kimenet
+                                                                                  6
+8                                               1   1 6
+4   2   3 8 6                                   2   0
+                                                                                  1          8
+2   1   3                                       3   3 4 5 7
+4   1   2 8 5                                   8   0
+1   5                                                                             2          3
+3   7   4 3
+1   1
+1   5                                                                             4          5
+2   3   1
+                                                                                             7
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 40%-a szerezhető olyan bemenetekre, ahol N≤500
+
+
+
+
+                                            1. oldal
+

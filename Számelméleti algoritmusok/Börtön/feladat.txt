@@ -1,0 +1,30 @@
+Izsák Imre Gyula komplex matematika-fizika-informatika verseny                          2017.10.20.
+
+
+                                             Börtön
+Egy börtönben N cella található. Amnesztiát hirdetnek, amelyben azok a rabok szabadulnak ki,
+amelyek cellája a következő eljárás után nyitva lesz. N börtönőr megy a cellákhoz. A k-adik alka-
+lommal küldött börtönőr minden k-adik cella zárján állít egyet, ha nyitva volt, akkor bezárja, ha
+zárva volt, akkor kinyitja (azaz a második a 2,4,6, …, a harmadik a 3,6,9, .. cellákkal foglalkozik).
+Kezdetben minden cella zárva volt.
+Írj programot, amely megadja, mely sorszámú cellákban levő rabok szabadulnak ki, azaz mely cel-
+lák lesznek a végén nyitva!!
+Bemenet
+A standard bemenet első sorában a cellák száma van (1≤N≤1 000 000).
+Kimenet
+A standard kimenet egyetlen sorába azon cellák sorszámát kell írni növekvő sorrendben,
+amelyek a végén nyitva lesznek!
+Példa
+bemenet                                           kimenet
+10                                                1 4 9
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤1000.
+
+
+
+
+                                              1. oldal
+

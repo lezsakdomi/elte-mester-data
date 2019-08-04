@@ -1,0 +1,27 @@
+Elemi feladatok tömbökre                                                                  *
+
+
+                               Hónapok első napjai
+Szökőévek a következők: minden néggyel osztható év, kivéve a százzal is oszthatók. Szökőévek
+viszont a 400-zal osztható évek.
+Készíts programot, amely meghatározza, hogy egy adott éven belül hány hónap kezdődik hétfő-
+vel, keddel, …!
+Bemenet
+A standard bemenet első sorában az év (1900≤Év≤2100) és egy sorszám (1≤S≤7) sze-
+repel. S=1, ha az év első napja hétfő, S=2, ha kedd, … és így tovább.
+Kimenet
+A standard kimenet első sora 7 számot tartalmazzon! Az első a hétfővel kezdődő hóna-
+pok száma, a második a keddel kezdődőké, … a hetedik a vasárnappal kezdődőké legyen!
+Példa
+Bemenet                                       Kimenet
+2018 1                                        2 1 1 3 1 2 2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

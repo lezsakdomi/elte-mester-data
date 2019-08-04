@@ -1,0 +1,36 @@
+Sorozatok                                                                                         *
+
+
+                              Sorozatok fésűs egyesítésből
+Adott egy egész számokból álló sorozat.
+Készíts programot, amely kiszámít két olyan monoton növekvő sorozatot, amelyekből fésűs egye-
+sítéssel megkapható a bemeneti sorozat!
+Bemenet
+A standard bemenet első sorában a bemeneti sorozat elemeinek száma (0≤N≤1000) van.
+A második sor pontosan N egész számot tartalmaz, a bementi sorozatot. A sorozat minden elemére
+teljesül, hogy (0≤x≤30000).
+Kimenet
+A standard kimenet első és egyetlen sora a 0 0 számpárt tartalmazza, ha a bemeneti
+sorozat nem állítható elő két monoton növekvő sorozat fésűs egyesítéseként! Egyébként az első
+sorban a fésűs egyesítéshez kiszámított első sorozat K elemszáma álljon! A második sor pontosan
+K számot tartalmazzon, az első sorozat elemeit! A harmadik sor tartalmazza a második sorozat L
+elemszámát! A negyedik sor pontosan L számot tartalmazzon, a második sorozat elemeit! A kiszá-
+mított sorozatok egyike üres is lehet, ekkor a 0 számot és üres sort kell kiírni! A bemeneti sorozat
+minden eleme pontosan egyik kiszámított sorozat eleme! Több megoldás esetén bármelyik megad-
+ható.
+Kimenet
+ Bemenet                                           Kimenet
+ 6                                                 4
+ 2 3 1 4 9 6                                       2 3 4 9
+                                                   2
+                                                   1 6
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

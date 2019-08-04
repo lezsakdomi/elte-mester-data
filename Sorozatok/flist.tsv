@@ -36,7 +36,6 @@ id	feladat	nehezseg
 35	Utazó *	
 36	Valahol olcsóbb áru **	
 37	Vásárlás **	
-38	Veremautomata *	
 39	Veremsoros vasút *	
 40	Vitorlás verseny egy futamán indultak **	
 41	Vitorlás verseny minden futamán indultak **	
@@ -54,3 +53,27 @@ id	feladat	nehezseg
 53	Csak egy bolygón volt élet	
 54	Legalább 2 bolygón volt élet	
 55	Konténerhelyek	
+56	k-homogén sorozat	
+57	Kereskedők	
+58	Fal	
+59	Virágárusok	
+60	Állatkereskedők	
+61	Legyőzött és legyőző versenyző	
+62	Legyőzött és legyőző versenyzők	
+63	Nyelvek programozási versenyen	
+64	Sorozatok fésűs egyesítésből	
+65	Sűrű részsorozat	
+66	Zárkód	
+67	Ajándék	
+68	Időjárási csúcsok	
+69	Téglalapok asztalon	
+70	Üres téglalap	
+71	Autószállítás	
+72	Műkincsgyüjtő	
+73	Nyaralások	
+74	Keresősorozatok	
+75	Vizsga	
+76	Színhalmazok	
+77	Vasúti kocsik mellékvágányokon	
+78	Szabadnapok	
+79	Vasúti kocsik kitérő vágányon	

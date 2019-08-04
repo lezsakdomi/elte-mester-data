@@ -1,0 +1,42 @@
+Visszalépéses keresés                                                                       **
+
+
+                                  L üzlet – K pékség
+Egy üzletlánc L üzlete K pékségtől rendelhet kenyeret. Megadjuk, hogy az egyes üzletek mennyi
+kenyérre tartanak igényt, és azt, hogy az egyes pékségek mennyit sütnek naponta. Továbbá adott
+az is, hogy az egyes üzletek mely pékségekkel állnak kapcsolatban. Az üzletek csak egyetlen egy
+pékségtől rendelhetnek (az adott napon). Ismerjük azt is, hogy az egyes pékségek hány forintért
+adják a kenyeret.
+Készíts programot, amely megadja, hogy hova honnan szállítsák a kenyeret úgy, hogy az az üzlet-
+láncnak a lehető legkevesebbe kerüljön!
+Bemenet
+A standard bemenet első sorában az üzletek száma (1≤L≤12) és a pékségek száma
+(1≤K≤12) van. A következő sorban K darab szám van: a pékségek mennyi kenyeret sütnek na-
+ponta (1≤vani≤10 000). A harmadik sorban ugyancsak K darab szám van: a pékségek árai
+(1≤ari≤10 000). Az utolsó L sor mindegyikében K darab 1 vagy 0 szerepel (kapcsi,j) és az
+üzlet igénye (1≤igenyi≤10 000). Ezekben a sorokban az 1-es kapcsolatot jelent, a 0 pedig azt,
+hogy nincs kapcsolat az adott üzlet és pékség között.
+Kimenet
+A standard kimenet első sorába L számot kell írni, azon pékségek sorszámát, amelyikből
+kell szállítani a kenyeret!
+Példa
+Bemenet                                        Kimenet
+7 4                                            1 1 2 3 4 4 1
+400   600   400 400
+200   300   250 100
+1 0   0 0   200
+1 0   0 0   100
+0 1   0 0   300
+1 0   1 0   200
+0 0   0 1   200
+0 0   1 1   100
+1 0   1 0   100
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,27 @@
+Programozási tételek: megszámolás                                                           ***
+
+
+                      Ismétlődő karakterek részsorozatban
+Adott egy karaktersorozat, ami az angol ábécé kisbetűit tartalmazza. Egy karaktersorozat részso-
+rozatai úgy keletkeznek, hogy a karaktersorozatból tetszőleges számú karaktert kihagyunk.
+Készíts programot, amely megadja az ábécésorrendben utolsó olyan részsorozatát, amely minden
+betűje legalább K-szor szerepel az eredeti sorozatban!
+Bemenet
+A standard bemenet első sorában a karakterek száma (1≤N≤100 000) és a K értéke
+(1≤K≤N) van. A következő sorban a karaktersorozat található.
+Kimenet
+A standard kimenet első sorába az ábécésorrendben utolsó olyan részsorozatot kell írni,
+amely minden betűje legalább K-szor szerepel az eredeti sorozatban!
+Példa
+bemenet                                         kimenet
+7 2                                             zzzaa
+zzmzama
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

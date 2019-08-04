@@ -1,0 +1,40 @@
+Tehetségkutató Egyetemi Programozási Verseny                                          1. forduló
+
+
+                                      Almaszállítás
+Egy almatermesztőnél egymás melletti, különböző méretű konténerekbe szedték az almát, majd
+lezárták azokat. Jön egy megrendelő, aki pontosan K kilogramm almát szeretne venni. A megren-
+delő egymás melletti konténereket szállíthat el, felnyitás nélkül.
+Készíts programot, amely megadja, hogy mely konténereket vigye a fenti feltételekkel, hogy a le-
+hető legkevesebb konténert szállítsa el!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1≤N≤100 000) és az elviendő
+almák összsúlya (1≤K≤100 000) van. A további N sor mindegyikében egy-egy konténerben levő
+almák súlya van (1≤Si≤1000).
+Kimenet
+A standard kimenet első sorába az elszállítandó konténerek M minimális számát kell írni,
+amelyek összsúlya K. A második sorba pedig az első konténer sorszámát kell írni (1≤A≤N), ami
+azt jelenti, hogy az A. és az A+M-1. konténer közötti konténereket kell elszállítani! Több megol-
+dás esetén bármelyik kiírható. Amennyiben nincs olyan konténersorozat, amiben pontosan K ki-
+logramm alma van, akkor mindkét sorban 0 szerepeljen.
+Példa
+Bemenet                                         Kimenet
+8 50                                            3
+40                                              2
+12
+28
+10
+10
+10
+10
+10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

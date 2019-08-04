@@ -1,0 +1,37 @@
+Sorozatok                                                                                   *
+
+
+                                    Műkincsgyűjtő
+Egy műkincsgyűjtőnek egy képvásáron N kép tetszett meg. Mivel viszonylag kevés pénze van,
+ezért úgy döntött, hogy a pénzéből pontosan két képet fog vásárolni úgy, hogy az összes pénze
+elfogyjon!
+Készíts programot, amely megadja, hogy melyik két képet vegye meg a rendelkezésre álló összeg-
+ből!
+Bemenet
+A standard bemenet első sorában a képek száma (1≤N≤200 000) és a gyűjtő pénzösszege
+van (1≤P≤400 000). A következő N sor az egyes képek árát tartalmazza (1≤Ki≤200 000).
+Kimenet
+A standard kimenet első sorába két tetszőleges kép sorszámát kell írni, amelyek ára össze-
+sen P forint! Ha nincs ilyen két kép, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                        Kimenet
+7 10                                           2 5
+6
+                                               Magyarázat: 2 6 és 3 4 is jó megoldás, mind-
+3
+                                               egyik pár összege 10.
+2
+8
+7
+7
+1
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

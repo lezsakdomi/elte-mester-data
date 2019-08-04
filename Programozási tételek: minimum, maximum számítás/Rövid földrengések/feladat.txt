@@ -1,0 +1,36 @@
+Programozási tételek: minimum, maximum számítás                                         ***
+
+
+                                Rövid földrengések
+A Csendes óceán K szigetén M percen keresztül feljegyezték, hogy mikor volt földrengés. Tud-
+juk, hogy egy földrengés sem tartott egy percnél tovább.
+Készíts programot, amely megadja az M perc alatti leghosszabb időszak percei számát, amikor
+nem volt földrengés!
+Bemenet
+A standard bemenet első sorában a szigetek száma (1≤K≤10) és a percek száma
+(1≤M≤10 000 000) van. A következő 2*K sorban a szigetek földrengései következnek. A sor-
+párok első sorában a földrengések száma (1≤Fi≤10 000), a másodikban pedig a földrengések
+időpontjai szerepelnek (1≤Ri,j≤M ), növekvő sorrendben.
+Kimenet
+A standard kimenet egyetlen sorába az az M perc alatti leghosszabb időszak percei számát
+kell írni, amikor nem volt földrengés!
+Példa
+Bemenet                                       Kimenet
+3 1000                                        439
+2
+                                              Magyarázat: 60 és 500 között nem volt földren-
+10 500                                        gés, közöttük 439 perc van (61-től 499-ig).
+3
+60 700 900
+2
+30 40
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

@@ -2,7 +2,7 @@ id	feladat	nehezseg
 1	6174 *	
 2	Abszolút prímek ***	
 3	Armstrong számok *	
-4	Barátságos *	
+4	Barátságos számok *	
 5	Bitművelet *	
 6	Boldog számok *	
 7	Diofantoszi egyenlet ***	
@@ -25,7 +25,6 @@ id	feladat	nehezseg
 24	Összes prímosztó *	
 25	Pierce *	
 26	P-ig nem osztott *	
-27	Prímtényezős faktoriális *	
 28	Prímtényezős felbontás *	
 29	Részosztó *	
 30	Sajátszámok *	
@@ -45,3 +44,11 @@ id	feladat	nehezseg
 44	Ritka szám	
 45	Páratlan számok	
 46	Számok előállítása	
+47	Kastély	
+48	Börtön	
+49	Páros számok	
+50	Számok összege	
+51	Szám előállítási lehetőségei	
+52	Lineáris kombináció	
+53	Sokszögszámok	
+54	Terem	

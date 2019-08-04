@@ -1,0 +1,46 @@
+Rekurzív adatszerkezetek                                                                                      **
+
+
+                                    Találós kérdések
+Egy játékban találós kérdéseket tesznek fel, minden kérdésre IGEN vagy NEM választ kapha-
+tunk. A választól függ, hogy melyik kérdés a következőnek felteendő. Először az 1-es sorszámú
+kérdést kérdezik. Bármely kérdéshez eljutás az előző kérdéseken keresztül egyértelmű. Az utolsó-
+ként feltehető kérdések után a kitalálandók következnek. Minden kitalálandóhoz egy címkét ren-
+delünk, ami a hozzá vezető úton levő IGEN válaszok számából kivonva a NEM válaszok számát.
+Készíts programot, amely megadja a legtöbbször előforduló címkét és annak előfordulás számát!
+Bemenet
+A standard bemenet első sorában a kérdések száma van (1≤N≤10 000). A következő N
+sor közül az i-edikben az i-edik kérdés feltevése utáni két kérdés sorszáma (2≤Xi≠Yi≤2*N+1)
+van, ami azt jelenti, hogy IGEN válasz esetén az Xi, NEM válasz esetén az Yi kérdés következik.
+Ha valamelyik sorszám N-nél nagyobb, az egy kitalálandó sorszámát jelöli.
+Kimenet
+A standard kimenet első sorába a legtöbbször előforduló címkét és annak előfordulás
+számát kell írni! Ha több címke is ugyanannyiszor fordulna elő, akkor a legkisebb értékű címkét
+kell megadni!
+Példa
+Bemenet                                         Kimenet
+5                                               -1 2
+2 3
+6 4                                                                         1
+7 5                                                                  igen             nem
+8 9
+10 11                                                         2                          3
+Magyarázat. A 9 és a 10 sorszámú válaszhoz 1           igen          nem          igen         nem
+IGEN és 2 NEM válasszal juthatunk, azaz az
+IGEN-NEM válaszok számának különbsége                  6               4          7                 5
+                                                              igen          nem              igen       nem
+2-szer lehet -1.
+A 6-hoz 2 IGEN, a 8-hoz 2 IGEN és 1                            8             9               10          11
+NEM, a 7-hez 1 IGEN és 1 NEM, a 10-hez 3
+NEM, azaz az IGEN-NEM-ek számának kü-
+lönbsége mindre különböző.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

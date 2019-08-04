@@ -1,0 +1,48 @@
+Rekurzív adatszerkezetek                                                                         **
+
+
+                                     Csapok zárása
+Egy csővezeték hálózatban a fő csőtől bármely másik csomópontba egyértelmű úton lehet eljutni.
+Minden cső végén egy csap található, amely nyitható és zárható. Azt szeretnénk, hogy a csövek
+végén adott csapokon kapjunk vizet, a többieken pedig ne. Minden cső (az első kivételével) két
+csomópontot köt össze, a csapot azzal a csomóponttal azonosítunk, ahova a cső vége csatlakozik.
+Készíts programot, amely megadja a lehető legkevesebb csapot, amelyek bezárásával elérhető,
+hogy csak a kívánt helyeken kapjunk vizet!
+Bemenet
+A standard bemenet első sorában a csapok száma van (1≤N≤100 000). A következő N-1
+sorban az egyes csövek kezdő- és végcsomópontja szerepel (1≤Kezdi<Végi≤N ). A következő
+sorba azon csövek végén levő csapok száma van (1≤Cs≤N), amelyeken víznek kell kifolyni, amit
+a Cs ilyen csap sorszáma követ.
+Kimenet
+A standard kimenet első sorába a lehető legkevesebb csapok számát kell írni, amelyek be-
+zárásával elérhető, hogy csak a kívánt helyeken kapjunk vizet! A második sorba eszen csapok sor-
+számai kerüljenek, növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+14                                              3
+1 2                                             2 7 9
+1 3
+1 4
+2 5                                                               1
+2 6                                   5
+3 14
+                                                                                            9
+3 7                                                2
+7 10
+                                                                  3            4
+7 11
+4 8                                   6                 14            7                 8
+4 9
+8 12
+8 13
+                                                                                   13           12
+3 12 13 14                                                   10           11
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

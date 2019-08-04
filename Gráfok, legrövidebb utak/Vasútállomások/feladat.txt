@@ -1,0 +1,66 @@
+Gráfok, legrövidebb utak                                                                     ***
+
+
+                                     Vasútállomások
+Egy vasúttársaság N vasútállomás között üzemeltet M darab vonat járatot. Minden vonatról is-
+merjük a menetrendjét, azaz, hogy melyik állomásról indul, mely állomásokon áll meg, oda mikor
+érkezik, onnan mikor indul tovább, és mennyi a menetdíj a következő állomásig. Bármely U vo-
+natról át lehet szállni bármely olyan V vonatra, amely később indul ugyanarról az állomásról, mint
+ahova U érkezett. Az elsődleges szempont, hogy legkorábban mikorra lehet eljutni egy állomásra,
+másodlagos a költség, harmadlagos pedig az ehhez tartozó legkésőbbi indulási idő.
+Készíts programot, amely minden állomásra megadja, hogy legkorábban mikorra lehet eljutni az
+1. állomásról az N. állomásra, ez legkevesebb mennyibe kerül és mikor kell legkésőbb indulni eh-
+hez az 1. állomásról!
+Bemenet
+A standard bemenet első sorában a vasútállomások száma (1≤N≤1000) és a vonatok
+száma (1≤M≤5000) van. A következő M blokkban egy-egy vonat menetrendje található. A me-
+netrend első sorában a vonat megállói száma szerepel (2≤Megi≤N). A blokk következő Megi
+sorában egy-egy állomás sorszáma (1≤Sori,j≤N), a vonatnak az állomásra érkezési ideje
+(0≤Érki,j<100 000), indulási ideje (Érki,j<Indi,j≤100 000)), valamint a következő ál-
+lomásig fizetendő menetdíj (1≤Diji,j<100 000) szerepel érkezési idő szerinti sorrendben. Az
+induló és a végállomásnál az érkezési és indulási idő egyforma, vonat végállomásánál a menetdíj 0.
+A menetrendi elemek összes száma legfeljebb 200 000.
+Kimenet
+A standard kimenet N-1 sort tartalmazzon, soronként három egész számot, akkor is, ha
+nem mindhárom értéket számítod ki. Az i-1. sorban az első szám azt adja meg, hogy legkorábban
+mikorra lehet eljutni az 1. állomásról az i. állomásra, a második azt, hogy ez legkevesebb mennyi-
+be kerül, a harmadik pedig azt, hogy mikor kell legkésőbb indulni ehhez az 1. állomásról! Ha egy
+állomásra nem lehet eljutni az 1. állomásról, akkor a sorba 0 0 0-t kell kiírni!
+Példa
+Bemenet                                          Kimenet
+4   3                                            10 1 5
+4                                                10 1 0
+1   0 0 1                                        40 6 0
+3   10 20 2
+2   25 40 2
+4   45 45 0
+4
+1   5 5 1
+2   10 20 2
+3   30 35 5
+4   40 40 0
+3
+2   20 20 1
+3   30 40 4
+1   50 50 0
+
+Korlátok
+Időlimit: 0.4 mp.
+
+
+                                             1. oldal
+Gráfok, legrövidebb utak                                                                      ***
+
+Memórialimit: 32 MB
+Pontozás
+   1. Teljes pontszám jár, ha mindhárom érték helyes minden állomásra.
+   2. 2/3 pont jár, ha az első feltétel nem teljesül, de az első két érték helyes minden állomásra.
+   3. 1/3 pont jár, ha az első két feltétel egyike sem teljesül, de az első érték helyes minden ál-
+      lomásra.
+   4. 0 pont jár, ha 1-3 egyike sem teljesül.
+
+
+
+
+                                             2. oldal
+

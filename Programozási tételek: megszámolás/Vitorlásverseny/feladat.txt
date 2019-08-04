@@ -1,0 +1,30 @@
+Nemes Tihamér Online Programozási Verseny                                                1. forduló
+
+
+                                      Vitorlásverseny
+Ismerjük az időjárás előrejelzést N napra. Vitorlásversenyt szeles időben lehet lebonyolítani, szél-
+csendben vagy viharban nem. Egy versenyt pontosan egymás utáni K napon lehet megrendezni
+Készíts programot, amely megadja, hogy az N nap alatt legfeljebb hány K napos versenyt lehet
+rendezni és közülük legfeljebb hányat hosszabbíthatnak meg a rendezők egy nappal!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100 000) és a versenyek hossza
+van (1≤K≤N). A második sorban pontosan N karakter van, az i. karakter az S betű, ha az i. napon
+szeles idő várható, szélcsend esetén C betű, vihar esetén pedig V betű.
+Kimenet
+A standard kimenet első sorába a megrendezhető K napos versenyek számát kell írni! A
+második sorba ezek közül azon versenyek száma kerüljön, amelyek egy nappal meghosszabbítha-
+tók!
+Példa
+Bemenet                                           Kimenet
+15 3                                              3
+SSSCSSVSSSSSSSS                                   2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

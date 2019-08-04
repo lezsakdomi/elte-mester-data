@@ -1,0 +1,40 @@
+Rekurzív adatszerkezetek                                                                      *
+
+
+                                      Közös főnök
+Egy vállalatnál mindenkiről tudjuk, hogy ki a közvetlen főnöke, egyedül a vállalat vezetőjének
+nincsen főnöke.
+Készíts programot, amely megadja két dolgozó esetén, hogy ki a legközelebbi nem feltétlenül
+közvetlen) közös főnökük – az a legközelebbi közös főnöke két dolgozónak, akinek egyetlen be-
+osztottja sem közös főnökük!
+Bemenet
+A standard bemenet első sorában a dolgozók száma (1≤N≤100 000), valamint a két dol-
+gozó sorszáma (1≤A≠B≤N, egyik sem a vállalat vezetője) van. A következő N-1 sorban két-két
+ember sorszáma található (1≤Xi≠Yi≤N), ami azt jelenti, hogy Xi közvetlen főnöke Yi-nek.
+Kimenet
+A standard kimenet első sorába A és B legközelebbi közös főnökét kell írni! Ha A főnöke
+B-nek, akkor A közvetlen főnöke a legközelebbi közös főnök (a példában 6 és 5 legközelebbi
+közvetlen főnöke 7). Ha nincs ilyen, akkor -1-et kell kiírni!
+Példa
+Bemenet                                        Kimenet
+9   4 9                                        7                    3
+2   1
+3   2
+                                                              2                     7
+3   7
+7   5
+5   4                                                         1             5       8     9
+5   6
+7   8
+                                                                        4       6
+7   9
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

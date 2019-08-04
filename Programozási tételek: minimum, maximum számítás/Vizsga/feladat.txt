@@ -1,0 +1,43 @@
+Programozási tételek – maximumkiválasztás                                                       *
+
+
+                                            Vizsga
+Egy vizsgabizottságban egy nap feljegyezték, hogy az egyes vizsgázók mikor vizsgáztak (egyszerre
+egy vizsgázó lehet), mindenkiről 4 adatot tudunk: kezdőóra, kezdőperc, végóra,
+végperc. A vizsgázók adatait idő szerinti sorrendben kapjuk.
+Készíts programot, amely beolvassa a vizsgázók számát (1≤N≤100), az egyes vizsgázók vizsgájá-
+nak kezdetét és végét, majd megadja
+   A. annak a 60 perces időszaknak a kezdetét, amikor a legtöbb vizsgázó végzett a vizsgájával
+      (közülük az első pontosan ebben a percben végezzen);
+   B. a leghosszabb vizsgaszünet hosszát – óra, perc (amikor 2 vizsgázó között senki sem volt a
+      vizsgabizottságnál);
+   C. a leghosszabb időtartamot, amikor a vizsgabizottság nem tarthatott szünetet!
+Bemenet
+A standard bemenet első sorában található a vizsgázók száma (1≤N≤100) Az ezt követő
+N sorban pedig az adott vizsgázó számonkérésének kezdési ideje (0≤kezdőóra≤23, 0≤kez-
+dőperc≤59), valamint befejezési ideje (0≤végóra≤23, 0≤végperc≤59).
+Kimenet
+A standard kimenet három sorból álljon: az első sor tartalmazza annak a 60 perces idő-
+szaknak a kezdetét, amikor a legtöbb vizsgázó végzett a vizsgájával (közülük az első pontosan eb-
+ben a percben végezzen); a második sor a leghosszabb vizsgaszünet hosszát – óra, perc tartalmazza;
+a harmadik sor azt a leghosszabb időtartamot tartalmazza, amikor a vizsgabizottság nem tarthatott
+szünetet
+Példa
+ Bemenet                                          Kimenet
+ 6                                                10 10
+ 8 20 8 30                                        1 0
+ 8 50 9 0                                         1 5
+ 9 50 10 10
+ 10 10 10 30
+ 10 30 10 55
+ 11 55 12 10
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

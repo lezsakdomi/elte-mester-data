@@ -1,0 +1,58 @@
+Rekurzív kiszámítás                                                                            ***
+
+
+                                       Hilbert-görbe
+Az N-ed rendű Hilbert-görbe a síkon a (0,0) pontból indul és a (2N-1,0) pontban végződik,
+eközben pontosan egyszer áthalad minden olyan nem negatív egész koordinátájú ponton, amely-
+nek mindkét koordinátája kisebb, mint 2N.
+Az elsőrendű Hilbert-görbe a (0, 0), (0, 1), (1, 1), (1, 0) pontokat ebben a sorrendben köti össze.
+Az N-ed rendű Hilbert-görbét 4 darab (N-1)-ed rendűből készíthetjük el:
+       rakjuk a 4 görbét egy kétszer kettes rácsba,
+       a bal alsót forgassuk el 90 fokkal jobbra, majd tükrözzük függőlegesen,
+       a jobb alsót forgassuk el 90 fokkal balra, majd tükrözzük függőlegesen,
+       kapcsoljuk össze a 4 görbét a következő sorrendben: bal alsó, bal felső, jobb felső, jobb
+        alsó!
+
+
+
+
+                   Az elsőrendű és az ebből készült másodrendű Hilbert-görbe
+Készíts programot, amely sorbarendez egy ponthalmazt a Hilbert-görbe bejárási sorrendje alap-
+ján!
+Bemenet
+A standard bemenet első sorában a Hilbert-görbe rendje (1≤N≤30) és a pontok száma
+(1≤M≤100 000) szerepel. A következő M sor mindegyike egy-egy pont koordinátáit tartalmazza:
+(0≤xi,yi<2N).
+Kimenet
+A standard kimenet M sorába egy-egy pont koordinátáit kell kiírni a megfelelő sorrendben!
+Példa
+bemenet                                           kimenet
+3   6                                             1   4
+5   4                                             2   4
+6   5                                             5   4
+1   4                                             7   7
+2   4                                             7   6
+7   6                                             6   5
+7   7
+
+
+
+
+                                              1. oldal
+Rekurzív kiszámítás                                ***
+
+
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MB
+
+
+
+
+                      Az első négy Hilbert-görbe
+
+
+
+
+                               2. oldal
+
