@@ -21,6 +21,8 @@ jobs:
                                         shopt -s globstar
                                         for pdf in **/*.pdf; do
                                                 txt="$(echo "$pdf" | sed 's/\.pdf$/.txt/')"
+                                                stripped="$(echo "$pdf" | sed 's/\.pdf$/-stripped.txt/')"
+
                                                 if [ -s "$pdf" ]; then
                                                         [ -s "$txt" ] || {
                                                                 echo -e "\033[33m$pdf\033[0m"
@@ -29,6 +31,17 @@ jobs:
                                                         }
                                                 else
                                                         echo -e "\033[31m$pdf\033[0m"
+                                                fi
+
+                                                if [ -s "$txt" ]; then
+                                                        [ -s "$stripped" -a "$stripped" -nt "$txt" ] || {
+                                                                echo -e "\033[34m$txt\033[0m"
+                                                                cat "$txt" \
+                                                                        | tail -n +2 \
+                                                                        | grep -v "                               \*\**$" \
+                                                                        >"$stripped"
+                                                                git add -- "$stripped"
+                                                        }
                                                 fi
                                         done
 
