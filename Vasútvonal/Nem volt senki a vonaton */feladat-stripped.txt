@@ -1,0 +1,33 @@
+
+
+                               Nem volt senki a vonaton
+A Budapest-Székesfehérvár vasútvonalon egy vonat kalauza minden állomáson feljegyezte, hogy
+hányan szálltak fel a vonatra, illetve hányan szálltak le. (Budapesten biztos nincs leszálló, Székes-
+fehérváron biztos nincs felszálló, aki leszállt, az nem száll vissza.)
+
+Készíts programot, amely megadja, hogy mely állomástól kezdődően nem volt senki a vonaton!
+Bemenet
+A standard bemenet első sorában az állomások száma van (1≤N≤1000), majd soronként
+az egyes állomásokon leszállók (0≤le≤9000) és felszállók (0≤fel≤9000) száma.
+Kimenet
+A standard kimenet első sorába azon állomás sorszámát kell írni, amelytől kezdődően
+nem volt senki a vonaton!
+Példa
+Bemenet                                           Kimenet
+6                                                 6
+0 15
+10 30
+0 32
+48 0
+19 26
+26 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza ≤500, a leszállók és felszállók száma ≤400
+
+
+
+
+                                              1. oldal
+

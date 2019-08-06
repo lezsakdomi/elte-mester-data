@@ -1,0 +1,30 @@
+
+
+                                    Irányítószámok
+Byteland minden településének új irányítószámot kell adni, olyan természetes számot, ami nem
+nagyobb, mint 109. Két település nem kaphat azonos irányítószámot. Bármely két település irányí-
+tószámának legnagyobb közös osztója nem lehet 1, továbbá bárhogyan vesszük a települések
+több, mint felét, akkor azoknak az irányítószámoknak a legnagyobb közös osztója csak 1 lehet.
+Készíts programot, amely N település számára megadja az irányítószámot!
+Bemenet
+A standard bemenet egyetlen sorában a települések száma van (4N100).
+Kimenet
+A standard kimenet pontosan N sort tartalmazzon, az i-edik sorban az i-edik település
+irányítószáma legyen! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+5                                               714
+                                                2090
+                                                4485
+                                                29029
+                                                215441
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤10
+
+
+
+
+                                            1. oldal
+

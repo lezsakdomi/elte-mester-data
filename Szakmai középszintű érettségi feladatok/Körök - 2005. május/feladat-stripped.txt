@@ -1,0 +1,33 @@
+
+
+                                           Körök
+Egy kört három egész számmal írunk le: x, y és r. A kör középpontja (x,y) sugara r. Azt mondjuk,
+hogy egy (a,b) pont a körön belül van ha (x-a)2+(y-b)2 < r2 .
+Írj egy programot, ami pontokról megadja, hogy hány körön van belül!
+Bemenet
+A standard bemenet első sora tartalmazza a körök számát (1≤N≤10) és a pontok számát
+(1≤K≤104). Ezután N sorban egy-egy kör adatai következnek x y r formátumban. A körök
+adatai után K sorban a pontok adatai következnek a b formátumban.
+Kimenet
+A standard kimenetre K sort kell kiírni, az i-edik sorba azon körök darabszámát, ahá-
+nyon belül van az i-edik pont!
+Példa
+Bemenet                                            Kimenet
+2 6                                                2
+0 0 5                                              2
+1 1 2                                              2
+0 0                                                1
+1 1                                                0
+2 1                                                0
+2 3
+4 5
+10 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

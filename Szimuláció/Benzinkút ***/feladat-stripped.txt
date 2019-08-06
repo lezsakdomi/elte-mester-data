@@ -1,0 +1,38 @@
+
+
+                                        Benzinkút
+Szimuláljuk egy benzinkút forgalmát program segítségével! A kútnál L helyen lehet tankolni. Au-
+tók érkeznek a kúthoz, mindegyik olyan kiszolgáló helyhez áll, ahol a legkevesebb autó várakozik.
+Ha több ilyen van, akkor közülük a legkisebb sorszámút választják. Ha egy benzinkúthoz E idő-
+pontban érkező autó azonnal tankolni tud, akkor a benzinkútnál töltött ideje megegyezik a T
+tankolási idejével, az E+T-ben érkezővel már nem tartózkodik egyszerre a benzinkútnál. Ha az U
+időpontban kezdi a tankolást, akkor a várakozási ideje U-E+T, és az U+T-ben érkezővel már
+nem tartózkodik egyszerre a benzinkútnál.
+Készíts programot, amely megadja az autók benzinkútnál töltött maximális idejét és a benzinkút-
+nál egy időben tartózkodók számát!
+Bemenet
+A standard bemenet első sorában az autók száma (1≤N≤1000) és a kiszolgáló helyek
+száma (1≤L≤10) van. A további N sorban pedig soronként egy-egy autó adatai szerepelnek érke-
+zési idő szerinti sorrendben: mikor érkezik a benzinkúthoz (1≤Ei≤10 000, Ei≤Ei+1), valamint
+mennyi időre van szüksége a tankoláshoz (1≤Ti≤100).
+Kimenet
+A standard kimenet első sorába azt az időtartamot kell kiírni, amennyit a legtöbbet vára-
+kozó autónak kell várakoznia az érkezésétől a tankolás befejezéséig! A második sorba a benzin-
+kútnál azonos időpontban tartózkodó autók maximális száma kerüljön!
+Példa
+Bemenet                                         Kimenet
+5 2                                             37
+1 10                                            3
+3 20
+4 5
+16 20
+17 18
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

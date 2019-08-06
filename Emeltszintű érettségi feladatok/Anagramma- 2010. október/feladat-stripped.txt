@@ -1,0 +1,89 @@
+
+
+                                        Anagramma
+Az anagramma a szójátékok egy fajtája, melyben értelmes szavak vagy mondatok betűinek sor-
+rendjét úgy változtatjuk meg, hogy az eredmény szintén értelmes szó vagy mondat lesz. Sok anag-
+ramma esetén az eredeti szó és a végeredmény között humoros vagy egyéb kapcsolat van, ez nö-
+veli az anagramma érdekességét, értékét. Például a satu szó anagrammái: utas, tusa, suta. Minden
+szó csak az angol ábécé kisbetűit tartalmazhatja.
+Írj programot, amely
+   1. egy kapott szóban meghatározza az előforduló karakterek számát és mindegyik előfordu-
+      lásainak számát!
+   2. a feldolgozandó szavakat átalakítja úgy, hogy a szavak karaktereit egyenként ábécérendbe
+      teszi!
+   3. megkeresi egy adott szó anagrammáit!
+   4. meghatározza a feldolgozandó szavak között előforduló leghosszabb szót, ha több ilyen
+      fordul elő, meghatározza az összeset!
+   5. karakterek száma szerint rendezi a feldolgozandó szavakat és csoportosítja az anagram-
+      mákat!
+Bemenet
+A standard bemenet első sora tartalmazza a szavak N (2≤N≤500) számát és az A indexet
+(1≤A≤N).
+A következő N sor tartalmazza az feldolgozandó Si (2≤Hossz(Si)≤50) szavakat, soronként
+pontosan egy szót. Minden szó legfeljebb egyszer szerepel.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az első sorba az SA szóban előforduló különböző karakterek M számát kell írni. A
+következő M sorba egy karaktert és az előfordulásainak számát kell írni, ábécé sorrendben.
+2. részfeladat: A következő N sorba a kapott szavakat kell írni, megfelelően átalakítva, az eredeti
+sorrendben.
+3. részfeladat: Az első sorba kell az SA szó anagrammáinak M számát kiírni, a következő sorba a
+talált anagrammákat, tetszőleges sorrendben.
+4. részfeladat: Az első sorba a leghosszabb szó L hosszát és az L hosszúságú szavak K számát
+kell írni szóközzel elválasztva. A következő K sorba a leghosszabb szavakat kell megadni, tetsző-
+leges sorrendben.
+5. részfeladat: Az első sorba L-1 számot kell kiírni, az i-edik (1≤i<L) szám az i+1 hosszúsá-
+gú szavak csoportjainak Ti száma! Két szó pontosan akkor kerül egy csoportba, ha anagrammák.
+A következő T2 sorba a 2 hosszú szavak csoportjait kell írni, az anagrammákat azonos sorba! A
+következő T3 sorba a 3 hosszú szavakat, így folytatva az L hosszú szavakig. Az azonos hosszú
+szavak csoportjai és a csoportokon belüli anagrammák tetszőleges sorrendben szerepelhetnek.
+
+
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                  2010. október 22.
+
+
+Példa
+Bemenet                                 Kimenet
+7 1                                     #
+alma                                    3
+almafa                                  a 2
+berlet                                  l 1
+lama                                    m 1
+pek                                     #
+kep                                     aalm
+kek                                     aaaflm
+                                        beelrt
+                                        aalm
+                                        ekp
+                                        ekp
+                                        ekk
+                                        #
+                                        2
+                                        alma lama
+                                        #
+                                        6 2
+                                        almafa
+                                        berlet
+                                        #
+                                        0 2 1 0 2
+                                        kek
+                                        pek kep
+                                        alma lama
+                                        almafa
+                                        berlet
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

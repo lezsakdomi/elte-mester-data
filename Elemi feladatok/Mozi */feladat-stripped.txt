@@ -1,0 +1,46 @@
+
+
+                                             Mozi
+Iskolád közönségszervezőjeként Te tartod a kapcsolatot egy mozival. A mozi az alábbi kedvez-
+ményeket biztosítja, egyszerre közülük csak az egyik vehető igénybe:
+       Csoportos kedvezmény:
+                        A csoport létszáma     A kedvezmény mértéke
+
+                         10 fő alatt           0%
+                         10-19 fő              5%
+                         20-29 fő              8%
+                         30-40 fő              12%
+                         40 fő fölött          14%
+       Iskolai kedvezmény:
+                        A csoport létszáma     Ebből ingyenjegyet kap
+
+                       5 fő alatt               0 fő
+                       5-11 fő                  1 fő
+                       12-19 fő                 2 fő
+                       20-28 fő                 3 fő
+                       29-40 fő                 4 fő
+                       40 fő fölött             5 fő
+       Diákkedvezmény: egyénileg is jár, mértéke 10%.
+Írj programot, amely a moziba menők száma alapján megadja, hogy a háromféle kedvezményből
+melyiket kell igénybe venni, hogy a lehető legkevesebbe kerüljenek a jegyek!
+Megjegyzés: a jegyek árát nem ismerjük, de a százalékok alapján a kérdés megválaszolható.
+Bemenet
+A standard bemenet egyetlen sorában a moziba menők száma van (1≤N≤100).
+Kimenet
+A standard kimenet egyetlen sorába azt a kedvezménytípust kell szövegesen kiírni, amely
+igénybevételével a legkevesebbe kerülnek a jegyek! Háromféle érték közül választhatunk (ékezetek
+nélkül): csoportos, iskolai, diak. Több megoldás esetén a figyelembe veendő sorrend:
+diak - iskolai - csoportos.
+Példa1
+Bemenet                                          Kimenet
+3                                                diak
+Példa2
+Bemenet                                          Kimenet
+5                                                iskolai
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+                                             1. oldal
+

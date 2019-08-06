@@ -1,0 +1,81 @@
+
+
+                                              Autók
+Egy utat középen egy gyalogosátkelő két szakaszra oszt, a zebrához közlekedési lámpát helyeztek.
+Az útszakaszokat négyzetes cellákra osztjuk. N cella van a lámpa előtt, 1 cella a zebra, újabb N
+cella van a lámpa mögött. A mozgás szabályai:
+    egy autó egy időegység alatt egy cellával mozdulhat el;
+         Pl.: X      X          X     X      →         X      X          X       X
+    egy útszakaszon két autó között mindig kell lenni legalább 1 üres cellának (akkor is, ha sű-
+     rűbben érkeznének);
+         Pl.: X      X           X     X
+    a közlekedési lámpa minden P időtartam végén levő U időegységben piros, a többiben
+     zöld; piros lámpaállásnál autó nem léphet a zebrára.
+           Pl.: X          X       X      X     →      X      X          X      X
+Készíts programot, amely megadja, hogy az egyes autók mikor jutnak ki az útszakasz végén! (Ha
+nem lenne lámpa, akkor a kilépési idejük pontosan 2*N+1-gyel lenne több, mint a belépési ide-
+jük.)
+Bemenet
+A standard bemenet első sorában a 2 útszakasz hossza (1≤N≤1000) és a balról bejövő au-
+tók száma (1≤B≤100) van. A második sor a bejövő autók belépési idejét tartalmazza (1 és 1000
+közötti egész számok, növekvő sorrendben). A harmadik sorban a P és az U időtartam van
+(1≤U<P≤100).
+Kimenet
+A standard kimenet első sorába az egyes autók kilépési idejét kell írni, növekvő sorrend-
+ben!
+Példa
+Bemenet                                            Kimenet
+4 3                                                13 15 20
+3 6 9
+7 3
+             Idő=3    X
+             Idő=4        X
+             Idő=5            X
+             Idő=6    X           X
+             Idő=7        X       X
+             Idő=8            X       X
+             Idő=9    X           X       X
+             Idő=10       X           X        X
+             Idő=11           X           X         X
+             Idő=12               X            X         X
+             Idő=13               X                 X
+
+
+                                              1. oldal                               2014.04.25.
+
+             Idő=14               X                     X
+             Idő=15                   X
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                          Megoldás
+Az adatokat helyenként ábrázoljuk, annyi vektorban, ahány útszakaszunk van. Minden útszakasz
+pontjait haladási iránnyal ellentétes sorrendben vizsgálva, az útszakaszon levő autók a peremfelté-
+teleknek megfelelően elmozdíthatók vagy helyben hagyandók.
+Vegyük észre, hogy a második – lámpa utáni – útszakaszra belépő autók pontosan N időegység
+múlva lépnek ki onnan, azaz az eredmények az első útszakaszról kilépési idők N-nel megnövelve.
+Az N+1. helyen levő autó N időegység múlva lép ki. Az N. helyen levő autó akkor mozdulhat, ha
+a lámpa nem piros. A többi helyen levő autók akkor mozdulhatnak, ha előttük szabad hely van.
+Az 1. helyre beléphet autó, ha az adott időegységben már jöhetne és van neki szabad hely.
+Szimuláció:
+  út:=(0,…,0); db:=0; idő:=0; j:=1; be[b+1]:=+∞
+  Ciklus amíg db<b
+    idő:=idő+1
+    Ha út[n+1]=1 akkor db:=db+1; ki[db]:=idő+n; út[n+1]:=0
+    Ha út[n]=1 akkor
+       Ha (idő-1) mod p<p-u akkor út[n+1]:=1; út[n]:=0
+    Elágazások vége
+    Ciklus i=n-1-től 1-ig -1-esével
+      Ha út[i]=1 és út[i+2]=0 akkor út[i+1]:=1; út[i]:=0
+    Ciklus vége
+    Ha idő≥be[j] és út[1]+út[2]=0 akkor út[1]:=1; j:=j+1
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                             2. oldal                                  2014.04.25.
+

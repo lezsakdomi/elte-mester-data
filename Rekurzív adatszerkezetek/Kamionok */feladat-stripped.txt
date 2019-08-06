@@ -1,0 +1,43 @@
+
+
+                                         Kamionok
+Egy vállalat az ország különböző városaiban levő üzemeiben alkatrészeket termel. A heti terme-
+lést a hét végén kamionokkal szállítja a központi raktárába. A kamionforgalom korlátozása miatt
+minden városból pontosan egy másik városba (egy irányban) mehetnek a kamionok közvetlenül.
+Ezért a vállalat úgy tervezi a szállításokat, hogy minden olyan városból, amelybe más városból
+nem lehet eljutni, egy-egy kamiont indít, a többi városból viszont egyet sem. A korlátozások miatt
+így minden kamion útja a központi raktárig egyértelműen meghatározott.
+Minden kamion, amely útja során áthalad egy városon, az ott termelt alkatrészekből bármennyit
+felvehet, feltéve, hogy nincs tele.
+Készíts programot, amely kiszámítja azt a legkisebb kamionkapacitást, amellyel a szállítás megold-
+ható, ha minden kamion azonos kapacitású!
+Bemenet
+A standard bemenet első sorában a városok száma (1<N1000) van. A központi raktár
+az 1. városban van, és onnan nem kell szállítani. A következő N-1 sor mindegyike két egész
+számot tartalmaz, egy szóközzel elválasztva. Az i-edik sorban az első szám azt a várost adja meg,
+ahova az i-edik városból mehet kamion. A második szám pedig az i-edik városban termelt alkat-
+részek száma. (Az 1. városból nincs kivezető út megadva.)
+Kimenet
+A standard kimenet egyetlen sorába azt a legkisebb kamionkapacitást (egész szám) kell ír-
+ni, amekkora kapacitású kamionokkal az összes alkatrész elszállítható!
+Példa
+Bemenet                                          Kimenet
+8                                                13
+1   3
+1   3                                                                      1
+1   4
+2   5
+3   6
+3   6                                                       2/3          3/3          4/4
+4   9
+Korlátok
+                                                            5/5      6/6       7/6    8/9
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a városok száma N≤20
+
+
+
+
+                                             1. oldal
+

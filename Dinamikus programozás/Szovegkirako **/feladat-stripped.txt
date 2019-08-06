@@ -1,0 +1,35 @@
+
+
+                                      Szövegkirakó
+Egy szójátékot úgy játszanak, hogy egy kirakandó szöveget a lehető legkevesebb szövegtöredék
+segítségével kell kirakni. Az egyes szövegtöredékek többször is felhasználhatók, de ekkor több-
+szörösen számítanak az eredményben is.
+Készíts programot, amely kiszámítja, hogy minimálisan hány szövegtöredékkel lehet kirakni az
+adott szöveget.
+Bemenet
+A standard bemenet első sorában a kirakandó szöveg található, ami legfeljebb 5000 ka-
+rakter hosszú és csak az angol ABC kis betűit tartalmazhatja. A másodikban pedig a szövegtöre-
+dékek száma (1≤N≤1000) van. A további N sor mindegyikében egy szövegtöredék van, amelyek
+közül egyik sem hosszabb a kirakandó szövegnél.
+Kimenet
+A standard kimenet első sorába a megadott szöveg kirakásához szükséges szövegtöredé-
+kek minimális számát kell írni! Ha a szöveg nem rakható ki, akkor az eredmény -1 legyen!
+Példa
+Bemenet                                        Kimenet
+abababca                                       4
+5
+ab
+aba
+bc
+ca
+a
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és a kirakandó szöveg legfeljebb 500 karakter hosszú.
+
+
+
+
+                                           1. oldal
+

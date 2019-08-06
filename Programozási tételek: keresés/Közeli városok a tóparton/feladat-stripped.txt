@@ -1,0 +1,37 @@
+
+
+                                Közeli városok a tóparton
+Egy tó körül N település található, ismerjük mindegyik távolságát az első településtől.
+Készíts programot, amely megadja minden településre a K hozzá legközelebbi települést! Az egy-
+forma távolságra levő bal- és jobboldali szomszéd közül a baloldalit tekintjük közelebb levőnek.
+Bemenet
+A standard bemenet első sorában a települések száma (2≤N≤100 000) és a K érték
+(1≤K≤1000, K<N) van. A következő N sorban az egyes települések első településtől mért távol-
+sága van (1≤Ti≤1 000 000), növekvő sorrendben. Az első település távolsága saját magától a tó
+kerülete (azaz annak az útnak a hossza, amin az első településről indulva megkerüljük a tavat).
+Kimenet
+A standard kimenet N sorába az egyes településekhez legközelebbi K település közül a
+tőle balra levő első és a tőle jobbra levő utolsó sorszámát kell írni!
+Példa
+Bemenet                                           Kimenet
+10 3                                              9   2
+200                                               1   4
+30                                                1   4
+40                                                3   6
+70                                                3   6
+80                                                4   7
+100                                               5   8
+120                                               7   10
+160                                               8   1
+170                                               8   1
+180
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,39 @@
+
+
+                                   Racionális számok
+Egy pozitív racionális számot a következő alakban írhatunk fel:      azaz megadhatjuk az egészré-
+szét, a törtrésze számlálóját és nevezőjét. A számláló értéke mindig kisebb, mint a nevezőé. A ne-
+vező 0 értékű nem lehet.
+Írj programot, amely kiszámítja két ilyen szám összegét és szorzatát! Ha szükséges, az eredmény-
+ben egyszerűsíts, azaz a törtrész számlálójának és nevezőjének az 1-en kívül ne legyen közös osz-
+tója, ha a számláló nem 0!
+Példák:
+
+
+
+
+Bemenet
+A standard bemenet első sorában az egyik, második sorában a másik racionális számot tá-
+roljuk soronként három, szóközzel elválasztott egész szám formájában: az első szám a racionális
+szám A egészrésze (0≤A≤10), a második a törtrészének B számlálója (0≤B≤10), a harmadik pe-
+dig a törtrészének C nevezője (1≤C≤10).
+Kimenet
+A standard kimenet első sorába a beolvasott két racionális szám összegét, második sorába
+a szorzatukat kell írni. Mindkét sorba három egész számot kell kiírni szóközzel elválasztva, az
+eredményül kapott racionális szám egészrészét, törtrészének számlálóját és törtrészének nevező-
+jét. Mindhárom számot ki kell írni, még akkor is, ha az egészrész vagy a törtrész számlálója értéke
+0! Ha a törtrész számlálója 0, akkor a nevező bármilyen egész szám lehet.
+Példa
+Bemenet                                          Kimenet
+2 2 5                                            5 11 15
+3 1 3                                            8 0 15
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                             1. oldal
+

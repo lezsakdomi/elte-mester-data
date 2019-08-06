@@ -1,0 +1,47 @@
+
+
+                                      Egy kavicshalom
+Adott egy tetszőleges (ismert) számú kavicsból álló halom. Az első játékos ebből tetszőleges szá-
+mú kavicsot elvehet, de az összeset nem. Ezután mindkét játékos legfeljebb annyi kavicsot vehet
+el, mint az előző lépésben elvett kavicsok számának kétszerese (minden lépésben legalább egy ka-
+vicsot kötelező elvenni). A játékot az nyeri, aki az utolsó kavicsot vette el. Te vagy az első játékos,
+az értékelő rendszer pedig a második.
+Az értékelés csak olyan kezdeti kavicsszámmal történik, amikor az első játékosnak van nyerő stra-
+tégiája, azaz győzhet, bárhogyan is játszik az ellenfél.
+Készíts programot, amely győzelemre törekszik az értékelő rendszer ellen!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az ellenfel modul va-
+lósít meg.
+     GetN: Pontosan egyszer kell hívni a program elején és a visszaadott érték a kavicsok
+      száma kezdetben (4≤N≤1 000 000).
+     Elvesz(x): Az ellenfél válasza arra, ha x kavicsot elveszel a halomból. A kapott egész
+      szám értéke legalább 1 és legfeljebb 2*x. Az x értéke (az első hívás kivételével) nem lehet
+      több mint az ellenfél által előzőleg elvett kavicsok számának kétszerese. (Természetesen
+      nem lehet több annál sem, ahány kavics van éppen a halomban.)
+      Ha a te lépéseddel vagy az ellenfél lehetséges lépésével a játék véget ér, a programod eb-
+      ben a függvényben automatikusan leáll.
+A műveletek Pascal deklarációja:
+   uses ellenfel;
+   function GetN: longint;
+   function Elvesz(x: longint): longint;
+A műveletek C/C++ deklarációja:
+   #include ”ellenfel.h”
+   long GetN(void);
+   long Elvesz(long x);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) ellenfél modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy min-
+ta a gyakorláshoz, a tényleges értékelés nem ezzel történik. Az egyetlen bemeneti adatot, a kavi-
+csok kezdeti számát a standard bemenetről olvassa be a program.
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+Pontozás: Minden megnyert játékra 1 pontot kapsz. Csak olyan N-re tesztelünk, amire lehet nye-
+rő stratégiád.
+
+
+
+
+                                               1. oldal
+

@@ -1,0 +1,40 @@
+
+
+                                             Szavak
+Adott szóra alkalmazott betű-helyettesítésen azt értjük, hogy a szó minden betűjének helyére egy
+megadott (legalább egy betűből álló) szót írunk úgy, hogy minden betű minden előfordulását
+ugyanazon szóval helyettesítjük. Különböző betűk különböző szavakkal helyettesíthetőek. Adott
+szónak adott betű-helyettesítés melletti képén azt a szót értjük, amelyet a helyettesítés elvégzésé-
+vel kapunk.
+Készíts programot, amely kiszámítja, hogy van-e olyan betű-helyettesítés, amely mellett két adott
+szó képe megegyezik!
+Bemenet
+A standard bemenet első két sorában van a két szó, soronként egy-egy. Mindkét szó hosz-
+sza legfeljebb 200. A szavak csak az angol ábécé nagybetűit (A-tól Z-ig) tartalmazhatják. A két
+szóban pontosan ugyanazok a betűk fordulnak elő.
+Kimenet
+A standard kimenet első sorába egy L egész számot kell írni! L értéke 0 legyen, ha nincs
+olyan betű-helyettesítés, amely mellett a két szó egybeesik! Egyébként a legrövidebb olyan szó L
+hosszát kell írni, amire van olyan betű-helyettesítés, hogy a két szó képe megegyezik és hossza L!
+A további sorokban meg kell adni a betű-helyettesítést, annyi sort kell kiírni, ahány különböző be-
+tű szerepelt a két bemeneti szóban! Minden sor első karaktere a helyettesítendő betű legyen, majd
+egy szóközzel elválasztva álljon az a szó, amelyre a betűt helyettesítjük! A sorokat tetszőleges sor-
+rendben lehet kiírni.
+Példa
+Bemenet                                           Kimenet
+BAACBD                                            7
+ABDCD                                             A   A
+                                                  B   A
+                                                  C   A
+                                                  D   AA
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a szavak hossza legfeljebb 60 karakter. Helyes első sorral a
+pontok 40%-a szerezhető meg.
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,25 @@
+
+
+                                       Hofstadter
+A Hofstadter R-S sorozatok a következő szabályok szerint készülnek:
+    R1:=1, S1:=2
+    Rn:=Rn-1+Sn-1
+    Sn a legkisebb pozitív egész szám, amely nem szerepel R1,…,Rn és S1,…,Sn-1 között.
+Készíts programot, amely kiszámítja a Hofstadter R-S sorozatban szereplő N. számpárt!
+Bemenet
+A standard bemenet egyetlen sorában N értéke van (1 N  100 000).
+Kimenet
+A standard kimenet egyetlen sorába RN és SN értékét kell kiírni!
+Példa
+Bemenet                                       Kimenet
+15                                            150 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤100.
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,60 @@
+
+
+                                           Bandák
+Johannesburg rendőrsége az összes bűnözőt ismeri a városban. Tudják, hogy két bűnöző akkor
+tartozik ugyanabba a bandába, ha legalább egyszer közösen követtek el bűncselekményt (a bandák
+tagjai közül csak a közös bűncselekményt elkövetők ismerik egymást).
+A bűnözőket a nevük helyett a sorszámukkal azonosítják (1-től kezdve, folyamatos számozással).
+A rendőrség tárolja az egy bandába tartozó bűnözők sorszámát. Az állomány első sorában a bű-
+nözők száma (maximum 50), minden további sorában (maximum 100) pedig két bűnöző sorszá-
+ma van (egyetlen szóközzel elválasztva), akik közösen követtek el bűncselekményt. Lehetnek
+olyan magányos bűnözők is, akik egyetlen bandának sem tagjai (ahol bandákkal kapcsolatos ered-
+ményt kérünk, ott őket nem szabad figyelembe venni).
+Írj programot, amely meghatározza
+A. A magányos bűnözők sorszámát!
+B. A bandák számát!
+C. Az egyes bandák legtöbb kapcsolattal rendelkező tagját!
+D. A legnagyobb banda tagjainak számát!
+E. Az egyes bandák kulcsembereit, azaz azokat, akiket börtönbe zárva a bandák a lehető legtöbb
+független részre esnek szét!
+F. A biztonságosan szervezett bandák számát, azaz az olyanokét, amelyekből a rendőrség nem
+tud úgy letartóztatni egyetlen bűnözőt, hogy a banda több részre essen szét! (A példában 0, hiszen
+az 1. bűnöző letartóztatásával az 1. banda magányos bűnözőkre esik szét, a kéttagú bandák egyik
+tagjának letartóztatásával pedig a másik tag ugyancsak magányos bűnözővé válik.)
+G. A kockázatosan szervezett bandák számát, azaz az olyanokét, amelyekben csak a főnök ismer
+mindenkit, és ezért az ő letartóztatása esetén a banda magányos bűnözőkre esik szét! (A példában
+2, hiszen az 1. bűnöző letartóztatásával a 2., 3. és 4. magányos bűnözővé válik, a kéttagú bandák
+pedig mindig ilyenek.)
+H. A totálisan szervezett bandák számát, azaz az olyanokét, amelyekben mindenki ismer minden-
+kit! (A példában 1, hiszen a kéttagú bandák mindig ilyenek.)
+Bemenet
+A standard bemenet első sorában a bűnözők száma (maximum 50), minden további sorá-
+ban (maximum 100) pedig két bűnöző sorszáma van, akik közösen követtek el bűncselekményt.
+Az utolsó sorban a 0 0 érték szerepel.
+Kimenet
+A standard kimenetre soronként az egyes részfeladatok megoldását kell írni! Ha bárhol
+több megoldás van, akkor a minimális sorszámút kell kiírni! Ha egy sorozat a megoldás, azt sor-
+szám szerint növekvő sorrendben kell kiírni!
+Példa
+Bemenet                                         Kimenet
+7                                               7
+1   2                                           2
+1   4                                           1 5
+3   1                                           4
+5   6                                           1 5
+
+                                             1. oldal
+Gráfok – elemi feladatok              *
+
+2 3                           0
+1 2                           2
+0 0                           1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                           2. oldal
+

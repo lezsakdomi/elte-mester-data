@@ -1,0 +1,29 @@
+
+
+                                Legtöbb eső egy nap
+N napon át minden nap megmértük, hogy hány milliméter eső esett.
+Készíts programot, amely megadja, hogy melyik napon esett a legtöbb eső!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma van (1N100), alatta soronként
+pedig a napi mérések eredményei vannak (0≤Ei≤9000).
+Kimenet
+A standard kimenet első sorába azon nap sorszámát kell kiírni, amelyik nap a legtöbb eső
+esett! Több megoldás esetén a legkisebb sorszámút kell kiírni!
+Példa
+Bemenet                                         Kimenet
+5                                               3
+0
+15
+20
+0
+10
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤20
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,29 @@
+
+
+                                          Gyöngy
+Egy kör alakú nyakláncon N darab gyöngy van (többféle színűek). A nyakláncot az i-edik gyöngy
+után elvághatjuk.
+Készíts programot, amely megadja, hogy hol vágjuk el a nyakláncot, hogy a K távolságon belül tő-
+le balra levő piros, illetve jobbra levő zöld gyöngyök számának különbsége abszolút értékben a
+lehető legkisebb legyen!
+Bemenet
+A standard bemenet első sorában a gyöngyök száma (1≤N≤107) és a távolság (1≤K≤N/2)
+van. A következő sor N karaktert tartalmaz, közülük az i-edik az i-edik gyöngy színe. P betű je-
+löli a piros, Z betű a zöld gyöngyöket, a többi betű más színű gyöngyöt jelöl.
+Kimenet
+A standard kimenet első sorába annak a gyöngynek a sorszámát kell írni, amely után el-
+vágva a nyakláncot, a K távolságon belül tőle balra levő piros, illetve jobbra levő zöld gyöngyök
+számának különbsége a lehető legkisebb lesz! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+20 6                                            14
+ABPPZPPHH PPZZZ ZZPPPP
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

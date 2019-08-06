@@ -1,0 +1,37 @@
+
+
+                       Legtöbb tanár által tanított tantárgy
+Egy iskola tanárairól tudjuk, hogy mikor milyen órát tartanak. A tanárokat, a tantárgyakat, a hét
+napjait, a napokon belüli órákat sorszámukkal azonosítjuk.
+Készíts programot, amely megadja azt a tantárgyat, amit a legtöbb tanár tanít!
+Bemenet
+A standard bemenet első sorában az órák száma (1O1000), a tanárok száma
+(1N100), a tantárgyak száma (1M100), egy tanár sorszáma (1TN) és egy nap sorszáma
+van (1H5), egy-egy szóközzel elválasztva. A következő sorok mindegyikében 4 egész szám
+van, egy-egy szóközzel elválasztva: a tanár sorszám (1TS5), a tanított tantárgy sorszáma
+(1TTS5), nap (1Nap5), óra (0Óra8). Például 3 7 2 0 azt jelenti, hogy a harmadik tanár
+a hetedik tantárgyat a hét második napján a nulladik órában tanítja.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, annak a tantárgynak a sor-
+számát, amit a legtöbb tanár tanít (ha több ilyen is van, akkor a legkisebb sorszámút)!
+Példa
+Bemenet                                          Kimenet
+8   3   4   1 1                                  2
+1   1   1   6
+1   1   2   2
+1   2   1   3
+2   1   2   2
+2   2   3   1
+3   4   1   2
+3   2   1   4
+3   3   2   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

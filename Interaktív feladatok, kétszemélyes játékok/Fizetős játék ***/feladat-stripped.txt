@@ -1,0 +1,47 @@
+
+
+                                       Fizetős játék
+Ádám és Éva a következő játékot játssza. Éva kigondol egy 1 és N közötti egész számot. Ádám-
+nak ki kell találnia. Csak olyan kérdést tehet fel Évának, hogy „A gondolt szám kisebb, vagy
+egyenlő-e mint x?”. A válasz természetesen igen, vagy nem. Minden kérdésnek van költsége, amit
+Ádám előre ismer. Az x-kérdésnek a költsége P(x) forint. Ádám a lehető legkisebb összköltséggel
+akarja kitalálni a számot. Vigyázat! Éva csalfa válaszadó. Mindig úgy válaszol, hogy a válasza
+kompatibilis legyen azzal, amit eddig Ádám kérdezett, de a lehető legtöbbet keljen összességében
+fizetnie Ádámnak.
+Írj programot, amely a lehető legkevesebb összköltséggel kitalálja azt a számot, amit Éva gondolt!
+Könyvtár
+A játék lejátszásához az alábbi műveleteket lehet használni, amelyeket az eva modul valósít meg.
+    GetN: Pontosan egyszer kell hívni a program elején és a visszaadott érték egy egész szám,
+     ami azt jelenti, hogy az Éva által gondolt szám legfeljebb ennyi (2N400).
+    Kerdes(x): A feltehető kérdést valósítja meg; ha a gondolt szám kisebb vagy egyenlő,
+     mint x, akkor 1 értéket ad vissza, egyébként 0-át.
+    P(x): A Kerdes(x) kérdés költsége (0P(x)1000).
+    Megoldas(x): A kitalált számot ezzel a művelettel kell közölni, a kitalált szám az x ar-
+     gumentum. Blöffölni nem lehet! Csak akkor fogadható el a közölt x érték, ha a feltett
+     kérdések alapján a gondolt szám csak x lehet.
+Műveletek Pascal deklarációja:
+   uses eva;
+   function GetN: integer;
+   function Kerdes(x: integer): integer;
+   function P(x: integer): integer;
+   procedure Megoldas(x: integer);
+A műveletek C/C++ deklarációja:
+   #include ”eva.h”
+   int GetN(void);
+   int Kerdes(int x);
+   int P(int x);
+   void Megoldas(int x);
+Használat
+Az értékelő szerverről letölthető minta.zip állomány tartalmaz egy forrásnyelvű (C/C++ és
+Pascal) modult. Ezt kell hozzászerkeszteni a megoldásodhoz! Ez az ellenfél csak egy minta a gya-
+korláshoz, a tényleges értékelés nem ezzel történik.
+Saját gépen kipróbáláskor a standard bemenet első sorába az N számot kell írni! A második
+sor pontosan N egész számot tartalmazzon, az i-edik száma a Kerdes(i) kérdés költsége le-
+gyen!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+                                              1. oldal
+

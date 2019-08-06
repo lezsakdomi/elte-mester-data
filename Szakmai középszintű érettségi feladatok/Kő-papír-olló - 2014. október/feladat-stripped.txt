@@ -1,0 +1,78 @@
+
+
+                                               Kő-papír-olló
+Ebben a feladatban kő-papír-olló mérkőzésekhez készítünk statisztikát. A hagyományos játék sza-
+bályait ismertnek tekintjük.
+Írj programot, amely kő-papír-olló mérkőzések halmaza alapján
+   1.   meghatározza a mérkőzések számát,
+   2.   meghatározza az egyes mérkőzések eredményét,
+   3.   a lehetséges játszmák előfordulását egy táblázatban összegzi,
+   4.   kiszámítja az egyes kimenetelek előfordulásainak számát!
+Bemenet
+A standard bemenet legfeljebb 1000 sorból áll. Minden sor egy mérkőzést ír le a következő-
+képpen. Egy játékos választását a K, P, O karakterek jelölik (rendre kő, papír, ollót kódolva). Egy
+mérkőzést a két játékos választásának betűjele ír le egy kötőjel karakterrel elválasztva.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A bemenetben található mérkőzések számát kell kiírni!
+2. részfeladat: Minden mérkőzéshez 1 karaktert kell kiírni annak kimenetelének megfelelően.
+        1-est, ha az első játékos nyert,
+        2-est, ha a második,
+        X-et döntetlen esetén.
+3. részfeladat: Három sort kell kiírni, mindhárom sorban három darabszámmal! A következő fej-
+léccel ellátott táblázat törzséből hiányzó értékekkel, amelyek a megfelelő mérkőzések előfordulása-
+inak számát jelölik:
+
+                                                           1. játékos
+
+                                                            Kő          Papír   Olló
+                                2. játékos
+
+
+
+
+                                             Kő
+                                             Papír
+                                             Olló
+                                                     Mérkőzések száma
+
+4. részfeladat: Három számot kell kiírni egy sorba! Az első a döntetlennel végződő mérkőzések
+száma, a második az első játékos által megnyert mérkőzések száma, a harmadik pedig a második
+játékos által megnyert mérkőzések száma!
+
+
+
+
+                                                        1. oldal
+Informatikai alapismeretek – középszint                     2014. október 13.
+
+
+Példa
+ Bemenet                                       Kimenet
+ O-K                                           #
+ O-K                                           10
+ K-K                                           #
+ P-P                                           22XXXX2121
+ P-P                                           #
+ P-P                                           1 0 2
+ K-P                                           1 3 1
+ K-O                                           1 1 0
+ P-O                                           #
+ O-P                                           4 2 4
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

@@ -1,0 +1,49 @@
+
+
+                                Fazekas 2 kemencével
+Korondi József fazekas mester két kemencében égeti ki a termékeit. A kiégetésre váró tárgyak az
+elkészülés sorrendjében várakoznak a kiégetésre. Minden tárgyra rá van írva, hogy legkevesebb
+hány percig kell égetni a kemencében. Mindkét kemencébe egyidejűleg legfeljebb K darab tárgy
+rakható kiégetésre. Minden tárgyat az elkészülés sorrendjében betesz valamelyik kemencébe,
+mindkettőbe legalább egy tárgyat kell rakni egy menetben és a következő menet csak akkor kez-
+dődik, ha mindkét kemence befejezte az égetést. Ha valamelyik kemencében több tárgyat éget egy
+menetben, akkor az égetési idő az abba a kemencébe tett tárgyak egyedi égetési idejének a maxi-
+muma. Mivel a kemencék energia fogyasztása az égetési idő függvénye, ezért a fazekasnak arra
+kell törekednie, hogy az összesített égetési idő a lehető legkevesebb legyen.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi összesített égetési idő alatt lehet
+kiégetni az összes tárgyat!
+Bemenet
+A standard bemenet első sora a kiégetésre váró tárgyak számát (2≤N≤1 000) és a két ke-
+mence egyedi kapacitását (2≤K≤50) tartalmazza, azaz egyidejűleg legfeljebb K tárgy rakható
+mindkét kemencébe. A második sor pontosan N egész számot tartalmaz (egy-egy szóközzel elvá-
+lasztva), az i-edik szám az i-edik tárgy minimális égetési ideje. Minden égetési idő legfeljebb
+20 000.
+Kimenet
+A standard kimenet első sora egy egész számot tartalmazzon, a legkevesebb összesített
+égetési időt! A következő N sor mindegyike két egész számot tartalmazzon egy szóközzel elvá-
+lasztva! Az i-edik sorban az első szám annak a menetnek a sorszáma legyen, amelyikben az i-
+edik tárgyat kemencébe rakjuk, a második szám pedig 1, ha az első, 2, ha a második kemencébe
+rakjuk égetni! A kiírást a menetek sorrendjében kell megadni! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                         Kimenet
+8 2                                            22
+1 7 4 9 2 9 1 2                                1 1
+                                               1 2
+                                               1 2
+                                               2 1
+                                               2 2
+                                               2 1
+                                               3 1
+                                               3 2
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és K≤20. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,45 @@
+
+
+                       Leghosszabb bankban tartózkodás
+Egy bankfiók eseményeit kontrollálja egy automata, egy teljes napon keresztül (0:0..23:59). Érzé-
+keli és időrendben feljegyzi, hogy ki lép oda be vagy onnan ki, ui. az ügyfél csak bankkártyájának
+leolvastatása után léphet be vagy ki. Feljegyzésre kerül a fiókon belüli tranzakció (pénzfelvétel,
+pénzbetétel, valamint az összeg). Az adott napon N eseményt regisztrált az automata. Feljegyezte
+az esemény idejét (óra+perc; szigorúan monoton növekvően), az esemény jellegét (belépés, kilé-
+pés, pénz betétel, pénz kivétel), és az esemény numerikus jellemzőjét (ki-/belépéskor a kártyasor-
+szám, pénzműveletkor az összeg). Az esemény idejének értelmezéséhez: az esemény idejekor az
+esemény befejeződött, azaz pl. 12:00-kor belépés történt, akkor az azt jelenti, hogy 12:00-kor már
+bent van az illető.
+Írj programot, amely megadja mennyi volt a leghosszabb benntartózkodás (percekben), ha egy-
+szerre többen is bent lehetnek a fiókban (de mindenki csak a saját kártyájával léphet be és léphet
+ki, illetve a nap végén bent levőket 24:00-kor kitessékelik)!
+Bemenet
+A standard bemenet első sorában az események száma (1≤N≤100), alatta soronként egy-
+egy esemény adatai vannak, négy egész szám formájában egy-egy szóközzel elválasztva. Az első
+szám az esemény idejének órája (0≤Ó≤23), a második a perc része (0≤P≤59), a harmadik 1, ha
+az esemény belépés, -1, ha távozás, -2 pénzfelvétel esetén, 2 pedig pénz betételkor, s végül a ne-
+gyedik szám egy tetszőleges (legfeljebb 6-jegyű) pozitív egész szám, amely vagy egy kártyaszám
+vagy egy összeg – értelemszerűen az előző paramétertől függően.
+Kimenet
+A standard kimenet első sorába a leghosszabb benntartózkodás idejét kell írni (percek-
+ben)!
+Példa
+Bemenet                                          Kimenet
+7                                                60
+11   10   1 12345
+11   50   -2 10000
+12   10   -1 12345
+23   10   1 24680
+23   11   -2 5000
+23   15   1 13579
+23   20   1 98765
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

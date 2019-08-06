@@ -1,0 +1,48 @@
+
+
+                                          Városok
+Egy térképet egy NxM-es mátrixban ábrázolunk. A városokat a mátrixban a 2-es számjegy, az
+utakat pedig az 1-es számjegy jelzi. A többi ponthoz tartozó érték 0. Az utak minden pontból a 4
+szomszédos pont irányában folytatódhatnak, azaz átlósan lépni nem lehet. Egy város több 2-es
+értékű pontból is állhat, de két város sehol sem érintkezhet egymással, azaz nincs szomszédos
+pontjuk.
+Készíts programot, amely két város esetén megadja a városok területét (hány 2-es értékű pontból
+áll), valamint két a közöttük vezető legrövidebb út hosszát az alábbi háromféle módon:
+    a legrövidebb út az az út, ami a legkevesebb várost érint a kiindulásin kívül; a hossza pedig
+     az érintett városok száma
+    a legrövidebb út az az út, ami legkevesebb, egyik városhoz sem tartozó (1-es értékű) köz-
+     bülső ponton halad át, a hossza pedig ezen pontok száma
+    a legrövidebb út az az út, amin a leggyorsabban el lehet érni a másik városba, feltételezve,
+     hogy városban feleakkora a sebesség, mint a városok közötti utakon, azaz az 1-essel jelölt
+     pontot 1, a 2-essel jelölt pontot pedig 2 időegység alatt lehet elhagyni; s a hossza az út
+     megtételéhez szükséges idő.
+Bemenet
+A standard bemenet első sorában a térkép mérete van (1N,M200). A további N sor
+mindegyike pontosan M számjegyet tartalmaz (csak 0, 1 vagy 2 lehet) szóközök nélkül, a térkép
+egyes sorai leírását. Az utolsó sor két város indexeit tartalmazza (1X,UN,1Y,VM), s a
+feladat az (X,Y)-ból (U,V)-be vezető legrövidebb út megtalálása.
+Kimenet
+A standard kimenet összesen négy sort tartalmazzon! Az első sorba az (X,Y), illetve az
+(U,V) pontot tartalmazó város területét kell írni! A következő három sorban egyetlen szám sze-
+repeljen: a feladatban szereplő három megfogalmazásbeli legrövidebb út hossza! Ha nincs út a két
+város között, akkor -1-et kell írni mindhárom sorba!
+Példa
+Bemenet                                         Kimenet
+9 10                                            3 5
+2200000000                                      2
+0200000000                                      8
+0110000000                                      22
+0010000000
+0011200000
+0001220000
+0000211122
+0000000122
+0000000112
+1 1 9 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+                                            1. oldal
+

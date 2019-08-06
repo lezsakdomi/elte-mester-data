@@ -1,0 +1,32 @@
+
+
+                                         Gyufa
+Írj programot, amely megadja, hogy N gyufaszálból hány különböző háromszöget lehet össze-
+rakni!
+Példák:
+      N=3-ra 1-féle            N=5-re 1-féle           N=7-re 2-féle
+
+
+
+
+                                                               és
+Bemenet
+A standard bemenet egyetlen sorában a gyufaszálak száma található (3≤N≤100).
+Kimenet
+A standard kimenetre annyi sort kell írni, ahányféle különböző háromszög rakható ki az
+N gyufaszálból! Mindegyik sorban három egész szám legyen szóközzel elválasztva, a háromszög
+egyes oldalainak hossza gyufaszálak darabszámában megadva! Ha a megadott gyufaszálakból nem
+rakható ki háromszög, akkor nem szabad kiírni semmit!
+Példa
+Bemenet                                        Kimenet
+7                                              1 3 3
+                                               2 2 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          1. oldal
+

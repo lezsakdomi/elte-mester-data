@@ -1,0 +1,29 @@
+
+
+                                          Körlemez
+Adottak egy síkban lévő körlemez O(cx,cy) középpontja és r sugara, valamint egy P(x,y)
+síkbeli pont.
+Írj programot, amely a megadott adatok alapján eldönti, hogy a megadott P pont hol helyezkedik
+el a körlaphoz képest.
+Bemenet
+A standard bemenet első sorában a körlemez középpontjának koordinátái
+(-100000≤cx,cy≤100000) és sugara (0≤r≤100000) található. A második sorban a P pont
+koordinátái vannak (-100000≤x,y≤100000). A bemenet csak egész számokat tartalmaz. A
+P(x,y) pont a K(cx,cy,r) körlemezen helyezkedik el, ha (cx-x)2+(cy-y)2 <= r2.
+Kimenet
+A standard kimenet egyetlen sorába vagy a „rajta van” vagy a „kivul van” üzenetet kell ki-
+írni.
+Példa
+Bemenet                                       Kimenet
+5 -2 5                                        rajta van
+8 2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

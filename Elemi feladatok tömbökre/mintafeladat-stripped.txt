@@ -1,0 +1,39 @@
+
+
+                                    Számok betűkkel
+Írj programot, amely egy 1 és 99 közötti számot betűkkel ír ki!
+Bemenet
+A standard bemenet egyetlen sorában a szám értéke van (1≤Szám≤99).
+Kimenet
+A standard kimenet egyetlen sorába a szám értékét betűkkel kell írni!
+Példa
+Bemenet                                          Kimenet
+73                                               hetvenhárom
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                          Megoldás
+Vegyünk fel egy-egy konstans tömböt az egyes, illetve a tízes helyi-értéken előforduló szavak
+számára:
+Változó
+  Egyes:Tömb(1..10:Szöveg)=(””,”egy”,”kettő”,”három”,”négy”,
+        ”öt”,”hat”,”hét”,”nyolc”,”kilenc”)
+  Tízes:Tömb(1..10:Szöveg)=(””,”tizen”,”huszon”,”harmincs”,
+        ”negyven”,”ötven”,”hatvan”,”hetven”,”nyolcvan”,
+        ”kilencven”)
+Sajnos a 10 és a 20 külön kezelendő, a többi számot pedig felbontjuk egyes és tízes helyi-értékű
+részre, majd ezekkel indexeljük a megfelelő tömböt.
+Számok(Szám,Szöveg):
+   Ha Szám=10 akkor Szöveg="tíz"
+      különben Ha Szám=20 akkor Szöveg="húsz"
+         különben e:=(Szám mod 10)+1; t:=(Szám div 10)+1
+   Szöveg:=Tízes[t]+Egyes[e]
+Eljárás vége.
+
+
+
+
+                                             1. oldal
+

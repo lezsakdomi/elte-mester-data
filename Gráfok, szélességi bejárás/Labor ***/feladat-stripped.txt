@@ -1,0 +1,30 @@
+
+
+                                             Labor
+Egy különleges laboratóriumban sok azonos űrtartalmú kémcsővel dolgoznak, mindegyikben van
+valamennyi különleges folyadék. Ha egy adott mennyiségre van szükség, akkor egy robot öntöge-
+tésekkel állítja elő valamelyik kémcsőben a kívánt mennyiséget. A robot egy lépésben egy X kém-
+csőből egy Y kémcsőbe, vagy mindet áttölti X-ből (ha belefér Y-ba), vagy addig, amíg Y tele nem
+lesz.
+Írj programot, amely kiszámítja, hogy mely mennyiségeket tudja a robot öntögetésekkel előállítani!
+Bemenet
+A standard bemenet első sorában a kémcsövek száma (1≤N≤1000) és a kémcsövek közös
+űrtartalma (1≤K≤100 000) van egy szóközzel elválasztva. A második sor N nemnegatív egész
+számot tartalmaz, az i-edik szám az i-edik kémcső tartalma (0≤Ui≤K).
+Kimenet
+A standard kimenet első sorába a robot által előállítható mennyiségek M számát kell írni! A
+második sorba M egész számot kell írni, az előállítható mennyiségek értékét, tetszőleges sorrendben!
+Példa
+Bemenet                                           Kimenet
+6 7                                               7
+1 2 0 2 7 7                                       0 1 2 3 4 5 7
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32MB
+Pontozás: A tesztek 40%-ában K≤1000.
+
+
+
+
+                                              1. oldal
+

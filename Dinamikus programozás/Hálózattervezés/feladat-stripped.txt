@@ -1,0 +1,48 @@
+
+
+                                    Hálózattervezés
+Egy hálózatban ismerjük bizonyos csomópontpárokra, hogy köztük hány csomagot kell elküldeni.
+A többi csomópontpár nem kommunikál. Szeretnénk a csomópontokat egy bináris keresőfa há-
+lózatba szervezni. A bináris keresőfa hálózat egy olyan gyökeres bináris fa, amelynek minden csú-
+csára igaz, hogy tőle balra lefelé csak nála kisebb, jobbra lefelé pedig csak nagyobb sorszámú
+csomópontok vannak. Egy ilyen hálózatban minden útvonal egyértelmű. Egy csomag elküldésé-
+nek költsége megegyezik a két végpontot összekötő úton lévő élek számával. Olyan optimális há-
+lózatot szeretnénk építeni, amelynek gyökere az R sorszámú csomópont és a csomagok elküldé-
+sének összköltsége minimális.
+Készíts programot, amely megadja, hogy mennyi a csomagok elküldésének összköltsége optimális
+hálózat esetén!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1≤N≤500) és csomópontpárok
+száma (1≤M≤N*(N-1)/2), majd az gyökércsomópont sorszáma (1≤R≤N) szerepel. A követke-
+ző M sor mindegyikében két csomópont sorszáma (1≤si<di≤N) és a közöttük küldendő csoma-
+gok száma (1≤wi≤10 000) van. Az M csomópontpár leírása az első két szám alapján lexikografi-
+kusan rendezve szerepel, és nincs ismétlődés.
+Kimenet
+A standard kimenet egyetlen sorába a csomagok elküldésének minimális összköltségét kell
+írni!
+Példa
+Bemenet                                         Kimenet
+10 6 3                                          47
+1 6 4
+                                                Egy optimális hálózat:
+1 9 3
+2 7 1
+4 10 3
+7 9 5
+8 9 8
+Magyarázat:: A 3-as csomópont lesz a fa gyökere. Az 1-es és
+a 9-es csomópont távolsága ebben az esetben például 5, ezen
+3 csomagot kell elküldeni, ez 15 költséggel jár.
+Összesen: 4*2 + 3*5 + 1*5 + 3*2 + 5*1 + 8*1 = 47.
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 30%-a szerezhető olyan tesztekre, ahol minden megadott csomópontpár egyik eleme az
+R gyökér, azaz si=R vagy di=R minden lehetséges i-re.
+A pontok 16%-a szerezhető olyan tesztekre, ahol N≤40.
+A pontok 44%-a7szerezhető olyan tesztekre, ahol N≤100.
+
+
+                                            1. oldal
+

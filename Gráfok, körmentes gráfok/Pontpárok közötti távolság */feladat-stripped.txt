@@ -1,0 +1,39 @@
+
+
+                             Pontpárok közötti távolság
+Adott egy G=(V,E,c) irányítatlan súlyozott gráf, amelyre teljesül, hogy bármely két pontja között
+pontosan egy út van.
+Írj programot, amely adott pontpárokra kiszámítja pontpárok távolságát!
+Bemenet
+A standard bemenet első sorában gráf pontjainak száma (1N10 000) és a kérdések
+száma (1K10 000) van. A további N-1 sor mindegyike egy, a gráf u és v pontja közötti s sú-
+lyú élt ír le (1uvN, 0<s1000). A további K sor mindegyike gráf két a b pontját tartal-
+mazza, amelyek távolságát ki kell számítani.
+Kimenet
+A standard kimenet pontosan K sort tartalmazzon, a kérdéses pontpár távolságát!
+Példa
+Bemenet                                         Kimenet
+10 3                                            22                        2         3           4
+1 2 2                                           26
+                                                                  1            2            3       4
+1 8 8                                           16                 8                    6           5
+2 3 3                                                                               7
+3 4 4                                                             8            7            6       5
+3 6 6
+                                                                   9
+4 5 5
+6 7 7                                                                     10
+8 9 9                                                             9            10
+9 10 10
+5 7
+7 8
+2 7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,40 @@
+
+
+                                         Karavánok
+Egy sivatag N oázisa között M teherszállító karaván jár. Nem biztos azonban, hogy két oázis kö-
+zött közlekedő karaván mindkét irányba szállít árut. Egy kereskedő raktárt szeretne építeni egyet-
+len oázisban, ahonnan karavánokkal az összes többi oázisba el tudja juttatni az áruját!
+Készíts programot, amely megadja azokat az oázisokat, ahonnan az összes többi oázisba el lehet
+juttatni az árukat!
+Bemenet
+A standard bemenet első sorában az oázisok száma (1≤N≤5000) és a karavánok száma
+(1≤M≤100 000) szerepel. A következő M sorban 2-2 oázis sorszáma található, amelyek között
+karaván jár (1≤Ai≠Bi≤N), ami azt jelenti, hogy a karaván az Ai oázisból a Bi oázisba szállít árut.
+Kimenet
+A standard kimenet első sorába azon oázisok sorszámát kell írni növekvő sorrendben,
+amelyekbe telepíthető az egyetlen raktár! Ha nincs megoldás, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+7   10                                           2 3 6
+2   6
+3   1                                            2          3        4            6
+3   2
+3   4
+6   3                                                   6        1         7
+4   7
+7   5
+5   7
+5   4
+4   5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 40%-a szerezhető olyan tesztekre, ahol N≤500, M≤5000.
+
+
+
+
+                                             1. oldal
+

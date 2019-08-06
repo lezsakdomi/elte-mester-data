@@ -1,0 +1,39 @@
+
+
+                                   Konténer átpakolás
+Egy raktárban egyetlen sorban egymás mellett van N darab kocka alakú konténer. Mindegyik kon-
+téner egy konténerhelyet foglal el a méretétől függetlenül. A raktár teljesen tele van és a raktáros-
+nak helyet kell biztosítani újonnan érkező konténerek számára. Helyet csak úgy tud biztosítani, ha
+konténereket egymásra rak. A raktár biztonsági előírása szerint konténer csak nálánál nagyobb
+méretű konténerre, vagy üres helyre rakható, de ennek betartásával akárhány konténer rakható
+egymásra. A raktáros dolgát nehezíti, hogy az átpakolást olyan robottal végezheti, amely bármely
+konténert fel tud venni, de csak balról jobbra haladva tud szállítani.
+Készíts programot, amely megad egy olyan átrendezést, amely a lehető legtöbb szabad helyet adja!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1≤N≤100 000) és a legnagyobb
+konténer méret (1≤K≤100 000 000) van. A második sor pontosan N egész számot tartalmaz,
+a konténerek méretét balról jobbra haladó sorrendben (1≤Mi≤K).
+Kimenet
+A standard kimenet első sorába a konténer mozgatások M számát kell írni! A következő
+M sor egy-egy konténer áthelyezését tartalmazza, I J sorszámot, ami azt jelenti, hogy az I-edik he-
+lyen lévő konténert a J-edik helyre rakjuk át! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+10 20                                             8
+12 2 13 12 20 6 10 4 2 5                          8   10
+                                                  9   10
+                                                  5   9
+                                                  3   9
+                                                  4   9
+                                                  7   9
+                                                  6   9
+                                                  2   9
+Korlátok
+Időlimit: 0.6 mp.
+Memórialimit: 128 MiB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,44 @@
+
+
+                                            Rajtszámok
+Egy versenyre N rajtszámot (1 és N közötti különböző számok) osztottak ki. Egy versenyző a
+rajtnál nem jelent meg.
+Írj programot, amely megadja a hiányzó rajtszámú versenyzőt!
+Könyvtár
+Az alábbi műveleteket lehet használni, amelyeket a valasz modul valósít meg.
+    induloszam: Pontosan egyszer kell hívni a program elején és a visszaadott érték egy
+     egész szám, a versenyen indulók N száma (2N1024).
+    kerdes(x,y): az x. megjelent versenyző rajtszámának y. bitjét adja vissza (1x<N,
+     0y<32). Például, ha az x. versenyző az 5. rajtszámú, akkor kerdes(x,0) és kerdes(x,2) érté-
+     ke 1.
+    megoldas(a): Ezzel a művelettel kell közölni a hiányzó versenyző rajtszámát! A műve-
+     let végrehajtása a program befejezését eredményezi.
+A valasz modul használata
+   Műveletek Pascal deklarációja
+      uses valasz;
+      Function induloszam: integer;
+      Function kerdes(x,y: integer): integer;
+      Procedure megoldas(a: integer);
+   A műveletek C/C++ deklarációja
+      #include ”valasz.h”
+      int induloszam();
+      int kerdes(int x, int y);
+      void megoldas(int a);
+Gyakorlás
+A minta.zip fájlban letölthető egy egyszerű válaszadó modul. A standard bemenet első sora
+az indulók N számát tartalmazza. A második sor N különböző, 1 és N közötti számot tartalmaz-
+zon, tetszőleges sorrendben, az utolsó lesz a hiányzó versenyző rajtszáma.
+Korlátozások
+Időlimit: 1 mp.
+Memórialimit: 32MB
+A tesztek 30%-ában N<100.
+A programod nem írhat és nem olvashat semmilyen állományt, a standard outputra sem írhat!
+Pontozás
+A megoldás akkor elfogadható, ha a program helyes választ ad és legfeljebb 10*N kerdes mű-
+veletet hajtott végre. Tesztesetenként 3 pont jár, ha legfeljebb 2N-2 kerdes műveletet hajtott
+végre, 2 ha legfeljebb 3N-4 kerdes műveletet hajt végre, valamint 1 pont kapható, ha a prog-
+ram ennél több, de legfeljebb 10N kerdes műveletet hajt végre.
+
+
+                                              1. oldal
+

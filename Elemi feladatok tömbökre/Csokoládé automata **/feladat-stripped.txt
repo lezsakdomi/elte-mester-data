@@ -1,0 +1,31 @@
+
+
+                                 Csokoládé automata
+Egy csokoládéárusító automatát úgy alakítottak ki, hogy mindenféle pénzérmét elfogad, de egy
+vásárláskor maximum 3 érmét dobhatunk be. Ha többféleképpen is fizethetünk, akkor a célunk,
+hogy minél kevesebb érmét használjunk el.
+Írj programot, amely a csokoládé árának és a nálunk lévő pénzérmék ismeretében meghatározza,
+hogyan tudunk a legkevesebb pénzérme felhasználásával fizetni!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a csokoládé árát (1≤AR≤300),
+és a nálunk lévő pénzérmék számát (1≤N≤100). A második sor N számot tartalmaz szóközzel
+elválasztva, a nálunk lévő pénzérmék értékeit (1≤Ei≤100).
+Kimenet
+A standard kimenetre azoknak a pénzérméknek az értékeit kell kiírni egy-egy szóközzel
+elválasztva, amelyekkel a csokoládé ára a lehető legkevesebb pénzérme felhasználásával kifizethe-
+tő! Amennyiben nem lehetséges legfeljebb 3 érmével fizetni, akkor a program a „NEM LEHET”
+szöveget írja ki!
+Példa
+Bemenet                                         Kimenet
+150 4                                           50 100
+50 50 100 50
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 80%-ában N≤100
+
+
+
+
+                                            1. oldal
+

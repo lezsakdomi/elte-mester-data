@@ -1,0 +1,61 @@
+
+
+                                     Dominó nyertes
+Dominóval sokféle játékot lehet játszani. Mohó Marci a következő kétszemélyes változatot ked-
+veli. Minden dominó mindkét oldala legfeljebb 6 pöttyöt tartalmazhat, de üres is lehet. A játékban
+csak a 28 különböző dominó használható. A játékosok először megállapodnak, hogy az adott já-
+tékot hány dominóval fogják játszani. Jelöljük ezek számát N-el! Ez után mindkét játékos kap vé-
+letlenszerűen N (különböző) dominót, úgy, hogy legalább az egyiknek lesz dupla dominója
+(amelynek mindkét felén ugyanannyi pötty van). Az a játékos kezdi a játékot, akinél a legnagyobb
+dupla dominó van, amelyet első lépéseként le is rak. Felváltva lépnek, azonban ha a soron követ-
+kező játékos nem tud lépni, akkor átadja a lépés jogát az ellenfélnek. Egy lépés abból áll, hogy a
+játékos egy olyan saját dominóját, amely valamelyik felével illeszkedik a már lerakott dominósor
+bal végéhez, oda rakja.
+A játék akkor ér véget, ha
+     Egyik játékos sem tud lépni, és ekkor egyikük sem nyer, az eredmény döntetlen
+     A soron következő játékos lerakja az utolsó dominóját, és ekkor ő nyer.
+Készíts programot, amely meghatározza, hogy adott kezdeti játékállásra milyen kimenetele lehet a
+játéknak! (A feladat nem az, hogy meghatározzuk, hogy van-e és melyik játékosnak van nyerő
+stratégiája! Az összes lehetséges szabályos játékmenet eredménye a kérdés.)
+Bemenet
+A standard bemenet első sorában a tesztesetek (1T25) száma van. Minden teszteset há-
+rom sort tartalmaz. Az elsőben a játéban játékosonként kapott dominók száma (1N11) van. A
+következő két sor mindegyike pontosan 2*N egész számot tartalmaz egy-egy szóközzel elválaszt-
+va. Az első sor az első játékos (A), a második sor a második (B) játékos dominóit irja le, egy-egy
+számpár egy dominót ad meg.
+Kimenet
+A standard kimenetre pontosan T sort kell írni, soronként a megfelelő teszteset eredmé-
+nyét! Az adott sor az A betűt tartalmazza, ha bárhogyan is játszanak, csak az első (A) játékos
+nyerhet, a B betűt, ha csak a második (B) játékos nyerhet! Az AB betűpárt írd ki (szóközök nél-
+kül), ha mindkét játékos nyerhet, illetve a D betűt, ha egyikük sem nyerhet, bárhogy játszanak is!
+Példa
+Bemenet                                         Kimenet
+4                                               D
+4                                               B
+3   3 3 5 3 6 4 5                               A
+1   2 1 5 4 6 5 6                               AB
+4
+0   1 0 3 2 2 3 3
+1   5 3 5 5 5 5 6
+4
+3   3 3 5 3 6 4 6
+0   1 0 5 3 4 4 5
+6
+0   3 0 5 1 4 1 5 2 5 3 3
+1   1 2 6 3 6 4 4 4 6 6 6
+
+
+
+                                             1. oldal
+Egyéb                             **
+
+
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                       2. oldal
+

@@ -1,0 +1,41 @@
+
+
+                                Előadások beosztása
+Adott eseményeknek egy N elemű halmaza, amelyek egy közös erőforrást, például egy előadóter-
+met kívánnak használni, amit egy időben csak egyik használhat. Adott továbbá az ütemezési idő-
+tartam K kezdési és B befejezési ideje. Minden i eseményhez adott a ki kezdő időpontja és a bi
+befejező időpontja. Ha az i eseményt kiválasztjuk, akkor ez az esemény a [ki,bi] zárt időin-
+tervallumot foglalja le. Az i és j események kompatibilisek, ha a [ki,bi] és [kj,bj] interval-
+lumoknak nincs közös pontja (azaz i és j kompatibilisek, ha bi<kj vagy bj<ki). A terem leg-
+jobb kihasználtsága a lehető legkevesebb azon KtB egész értékű időpontok száma, amelyek
+egyik kiválasztott eseményhez tartozó intervallumban sincsenek benne, azaz bármely kiválasztott
+ai esemény esetén nem teljesül, hogy kitbi.
+Írj programot, amely kiszámít egy legjobb teremkihasználást adó, kölcsönösen kompatibilis ese-
+ményekből álló részhalmazt!
+Bemenet
+A standard bemenet első sorában az események száma (1N10 000), a kezdési és a befe-
+jezési időpont (1K<B1000) van. A következő N sor mindegyikében egy esemény kezdő idő-
+pontja és befejező időpontja van (Kki<biB), befejezési idejük szerint nemcsökkenő sorrend-
+ben.
+Kimenet
+A standard kimenet első sorába a legjobb teremkihasználás esetén a ki nem osztott ülőhe-
+lyek számát kell írni! A második sor a kiválasztott események M számát tartalmazza! A harmadik
+sor pontosan M számot tartalmazzon, a kiválasztott események sorszámát! Több megoldás esetén
+bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+5 1 100                                        39
+2 10                                           3
+8 21                                           2 3 5
+22 30
+25 40
+33 70
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                           1. oldal
+

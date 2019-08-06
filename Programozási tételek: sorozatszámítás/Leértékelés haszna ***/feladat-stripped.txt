@@ -1,0 +1,34 @@
+
+
+                                  Leértékelés haszna
+A Tesó™ üzletlánc N féle terméket árul, az 1. héten alapáron, a 2. héten kedvezményes áron. Is-
+merjük az összes termék beszerzési árát, alapárát, kedvezményes árát, első heti eladásai számát,
+második heti eladásai számát. Egy termére jutó haszon: a beszerzési ár felett képződő összeg.
+Írj programot, amely megadja az első és második heti bevétel különbségét és mindkét hét hasznát!
+Bemenet
+A standard bemenet első sorában a termékek száma (1≤N≤100) található. A következő N
+sorban soronként az egyes termékek különféle árai: beszerzési (0≤Ári≤100), az első heti alapár
+(0≤AÁri≤100), a második heti kedvezményes ár (0≤BÁri≤AÁri) és az első, valamint a máso-
+dik heti eladási szám (0≤ADbi,KDbi≤1000) van. Az adatok beszerzési ár szerint csökkenően
+rendezettek
+Kimenet
+A standard kimenet első sorába az első és második heti bevétel különbségét kell írni! A
+második sorba az első és a második hét haszna kerüljön!
+Példa
+Bemenet                                         Kimenet
+6                                               -221
+9   10   9   1   8                              60 54
+8   11   9   2   7
+8   11   9   0   9
+7   11   8   3   7
+6   10   8   4   8
+5   10   8   5   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

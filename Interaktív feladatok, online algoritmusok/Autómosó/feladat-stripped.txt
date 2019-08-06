@@ -1,0 +1,40 @@
+
+                                                Autómosó
+Egy autómosóban L helyen lehet autót mosatni, különböző ideig tartó mosóprogramokkal. Az autómosó kijelzi
+az egyes mosóhelyek legelső szabad időpontját. Autók érkeznek adott időpontokban az autómosóhoz. Minden
+autós a leghamarabb szeretne végezni, de csak olyan mosó sorba állhat, ahol K-nál kevesebb autó áll. Ha minden
+mosónál K autó áll, akkor az úton, ahonnan érkezett, a forgalmat a lehető legkevesebb ideig akadályozva meg
+kell várnia az első elmenő autót.
+Készíts programot, amely megadja minden autóra a mosása befejezése időpontját!
+A programod nem írhat, és nem olvashat semmilyen fájlt, beleértve a standard inputot és outputot is!
+Könyvtári műveletek
+A benzinkút használatát a moso könyvtár négy művelete biztosítja:
+MosoSzam, egyszer kell hívni a program elején, a mosó helyek számát (1≤KutSzam≤50) adja.
+Sorhossz, egyszer kell hívni az első függvény után, az egyes mosóknál álló sor maximális hosszát
+(1≤Sorhossz≤100) adja.
+Erkezik(e,t), az érkezési sorrendben következő autó autómosóhoz érkezési idejét és mosási idejét adja
+(legfeljebb 100 000 autó érkezik, 1≤e≤1 000 000, 1≤t≤100). Ha egy autó mosása x időpontban kezdődik és
+a mosás t ideig tart, akkor a következő autó mosása ugyanannál a mosónál leghamarabb x+t időpontban kez-
+dődhet.
+Tavozik(x), minden érkezés után meg kell hívni, paramétere az autó leghamarabbi távozási ideje legyen!
+Gyakorlás
+Letölthető egy minta moso modul C++ forrás programja. A moso a standard bemenet első sorából olvassa be
+a mosó helyek számát és az egy mosónál várakozók maximális számát. A következő sorokban található egy-egy
+érkezési idő és mosási idő számpár, érkezési idő szerint növekvő sorrendben. Az utolsó sorban a 0 0 számpár
+jelzi az érkezések végét. A gyakorló moso modul nem ellenőrzi, hogy helyes-e a válasz.
+A műveletek C/C++ deklarációja
+#include ” moso.h”
+int MosoSzam();
+int Sorhossz();
+void Erkezik(int &e, int &t);
+void Tavozik(int x);
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MB
+Pontozás: A tesztek 50%-ában legfeljebb 1000 autó érkezik.
+
+
+
+
+                                                    1. oldal
+

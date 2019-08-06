@@ -1,0 +1,28 @@
+
+
+                                    Munkagépek
+Egy vállalkozás egynapos munkákat vállal, minden munka elvégzéséhez egy munkagépre van
+szükség. Minden munkának van határideje, mindet el kell végezni a határidejére.
+Írj programot, amely kiszámítja, hogy a munkák határidőre elvégzéséhez minimálisan hány mun-
+kagépre van szükség!
+Bemenet
+A standard bemenet első sorában a munkák száma van (2≤N≤1 000 000). A következő
+sorban az N munka határideje van (1≤Hi≤100 000).
+Kimenet
+A standard kimenet első sorába az összes munka határidőre elvégzéséhez szükséges mun-
+kagépek számát kell írni!
+Példa
+bemenet                                       kimenet
+10                                            3
+2 3 2 3 2 9 4 4 4 4
+
+Korlátok
+Időlimit: 0.15 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                          1. oldal                   2017.03.28. 14:00-24:00
+

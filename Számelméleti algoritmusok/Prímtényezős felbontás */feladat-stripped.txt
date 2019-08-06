@@ -1,0 +1,25 @@
+
+
+                              Prímtényezős felbontás
+Készíts programot, amely megadja egy természetes szám prímtényezős felbontását!
+Bemenet
+A standard bemenet egyetlen sorában a természetes szám (2≤N≤100 000 000) van.
+Kimenet
+A standard kimenet annyi sort tartalmazzon, ahány prímosztója van a számnak! Minden
+sorban egy-egy prímtényező, illetve a kitevője szerepeljen; prímtényezők szerint növekvő sor-
+rendben!
+Példa
+Bemenet                                        Kimenet
+3960                                           2 3
+                                               3 2
+                                               5 1
+                                               11 1
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

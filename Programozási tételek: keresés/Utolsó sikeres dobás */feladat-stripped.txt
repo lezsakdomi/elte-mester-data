@@ -1,0 +1,29 @@
+
+
+                                 Utolsó sikeres dobás
+Egy kalapácsvető versenyen minden versenyző 6 dobást kísérel meg. A dobásokat centiméterben
+adják meg, sikertelen dobás esetén -1 értéket mértek.
+Írj programot, amely megadja minden versenyző utolsó sikeres dobása sorszámát!
+Bemenet
+A standard bemenet első sora a versenyzők számát tartalmazza (2≤N≤100). A következő
+N sorban egy-egy versenyző 6 dobása található (-1 vagy 1≤Di,j≤9000).
+Kimenet
+A standard kimenet egyetlen sorába az N versenyző utolsó sikeres dobásának a sorszáma
+kerüljön (0, ha nem volt egy sikeres dobása sem)!
+Példa
+Bemenet                                       Kimenet
+5                                             6 5 6 6 2
+7623 7625 7131 7222 7255 7575                 6 3 6 5 1
+-1 -1 3456 3465 3440 -1
+7200 7625 7230 7623 7578 7300
+5454 5554 5555 5444 -1 5445
+-1 100 -1 -1 -1 -1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

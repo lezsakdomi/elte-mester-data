@@ -1,0 +1,31 @@
+
+
+                                      Azonosító kód
+A processzorgyártó cégek megállapodtak abban, hogy milyen rendszert alkalmaznak az általuk
+gyártott processzorok azonosítására. Minden cég kap egy betűkészletet, és ezekből kell az azono-
+sító kódot képeznie, úgy, hogy minden betű meghatározott számszor szerepeljen az azonosító-
+ban. Például egy cég azt kapta, hogy minden azonosítója pontosan 3 db ’a’ betűt, 2 db ’b’ betűt és
+1 db ’c’ betűt tartalmazhat.
+Készíts programot, amely adott kódra meghatározza a lexikografikus (ábécé szerinti) sorrendben
+rákövetkező szabályos kódot, ha van rákövetkező!
+Bemenet
+A standard bemenet első sorában a kódok száma (1N100) van. A további N sorban
+az egyes kódok találhatók. Minden kód legfeljebb 100 betűből állhat, csak az angol ábécé kis betű-
+it tartalmazhatja.
+Kimenet
+A standard kimenetre összesen N sort kell írni! Az i-edik sorba a bemenet i+1-edik so-
+rában lévő kód rákövetkezőjét kell írni, ha nincs rákövetkezője, akkor a NINCS szót!
+Példa
+Bemenet                                          Kimenet
+2                                                ababac
+abaacb                                           NINCS
+cbbaaa
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

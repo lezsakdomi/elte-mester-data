@@ -1,0 +1,34 @@
+
+
+                                       Bányászrobot
+Egy robotot helyezünk egy labirintusba, megjelölve a kezdő- és a célpozícióját. A robot el kell ve-
+zetni a célig, feltéve, hogy minden lépés 1 időegységbe kerül. A robot a labirintus járatain közle-
+kedhet vízszintes vagy függőleges irányban a 4 szomszéd hely valamelyikére lépve, valamint képes
+a labirintus falait is kibontani. Egy egységnyi fal kibontása a robotnak F időegységbe kerül.
+Készíts programot, amely megadja, hogy minimum mennyi idő múlva érhet a robot a kezdőpozí-
+cióból a célpozícióba!
+Bemenet
+A standard bemenet első sorában a négyzetrács magassága és szélessége (1N,M500),
+valamint a fal kibontásához szükséges idő (1F100) van. A következő N sor mindegyike pon-
+tosan M karaktert tartalmaz, az üres helyeken szóközt, a foglalt helyeken *-ot, a robot kezdőpozí-
+cióján K betűt, célpozícióján pedig C betűt.
+Kimenet
+A standard kimenetre azt a minimális időtartamot kell írni, ami alatt a robot a kezdőhely-
+ről a célpozícióba érhet!
+Példa
+Bemenet                                    Kimenet
+4 6 5                                      8
+******
+*K    *
+******
+* C**
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤10
+
+
+
+
+                                               1. oldal
+

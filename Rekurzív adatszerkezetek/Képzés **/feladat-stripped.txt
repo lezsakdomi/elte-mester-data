@@ -1,0 +1,57 @@
+
+
+                                            Képzés
+Egy vállalat fel akarja készíteni a dolgozóit egy új szoftver használatára. Arra nincs lehetőség,
+hogy minden dolgozó részt vegyen kiképzésen. Ezért az igazgató elhatározta, hogy a lehető leg-
+kevesebb dolgozó vegyen részt kiképzésen, de teljesüljön, hogy ha egy dolgozó nem vett részt a
+kiképzésen, akkor a közvetlen főnöke biztosan részt vett. A vállalat hierarchikus felépítésű, tehát
+az igazgató kivételével (akinek nincs főnöke) minden dolgozónak pontosan egy közvetlen főnöke
+van, továbbá az igazgató mindenkinek a főnöke (közvetlenül, vagy közvetve).
+Készíts programot, amely kiszámítja, hogy legkevesebb hány dolgozónak kell részt vennie képzé-
+sen, és meg is adja, hogy kiknek!
+Bemenet
+A standard bemenet első sorában a dolgozók száma (1≤N≤100 000) van. Az igazgató
+azonosítója 1. A második sor pontosan N egész számot tartalmaz (egy-egy szóközzel elválasztva),
+az i-edik szám az i azonosítójú dolgozó közvetlen főnökének azonosítója. Mivel az igazgatónak
+nincs főnöke, ezért az első szám 0.
+Kimenet
+A standard kimenet első sorába azt az M számot kell írni, ahány dolgozónak rész kell ven-
+nie kiképzésen! A második sorba M számot kell írni egy-egy szóközzel elválasztva, azon dolgozók
+sorszámait, akik részt vesznek kiképzésen! A számok sorrendje közömbös. Több megoldás esetén
+bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+12                                               5
+0 1 1 1 2 12 12 12 3 9 10 3                      1 2 3 10 12
+
+                                                                        1
+
+
+
+
+                                                    2                    3                   4
+
+
+
+
+                                                    5
+                                                               9                   12
+
+
+
+                                                              10             6     7        8
+
+
+
+                                                               11
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤5000
+
+
+
+                                             1. oldal
+

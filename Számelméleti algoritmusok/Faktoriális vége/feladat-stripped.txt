@@ -1,0 +1,22 @@
+
+
+                                    Faktoriális vége
+Készíts programot, amely megadja, hogy a tízes számrendszerben felírt N faktoriális érték végén
+hány 0 számjegy található!
+Bemenet
+A standard bemenet első sorában az N értéke van (1≤N≤100 000).
+Kimenet
+A standard kimenet egyetlen sorába az N! végén álló 0-k számát kell írni!
+Példa
+Bemenet                                        Kimenet
+26                                             6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 30%-ában N≤20.
+
+
+
+
+                                           1. oldal
+

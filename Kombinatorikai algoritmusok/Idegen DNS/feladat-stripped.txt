@@ -1,0 +1,23 @@
+
+
+                                     Idegen DNS
+Egy idegen bolygón talált szerves anyag DNS-e a földivel szemben ötféle komponensből áll
+(a,b,c,d,e). A cd, ce, ed és ee párok nem fordulhatnak elő az idegen DNS-ben.
+Készíts programot, amely megadja, hogy hány N hosszúságú idegen DNS lánc lehetséges!
+Bemenet
+A standard bemenet első sorában az N értéke van (1≤N≤30).
+Kimenet
+A standard kimenet egyetlen sorába az N hosszúságú idegen DNS-ek számát kell írni!
+Példa
+Bemenet                                      Kimenet
+2                                            21
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 30%-ában N≤20.
+
+
+
+
+                                          1. oldal
+

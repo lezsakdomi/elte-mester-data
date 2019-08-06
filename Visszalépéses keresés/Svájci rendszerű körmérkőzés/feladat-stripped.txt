@@ -1,0 +1,37 @@
+
+
+                           Svájci rendszerű körmérkőzés
+Egy N csapatos körmérkőzéses versenyen már lejátszottak néhány fordulót. A versenyt egyszerű-
+sített svájci rendszerben bonyolítják le. A versenyen döntetlen nincs, győzelemért 1 pont jár, vere-
+ségért pedig 0.
+Készíts programot, amely megad egy olyan párosítást (melyik csapat melyikkel játsszon), amely-
+ben még senki nem találkozott senkivel és a párok pontszámkülönbségének összege minimális
+legyen!
+Bemenet
+A standard bemenet első sorában a csapatok száma (2≤N≤16, N páros) és a lejátszott
+fordulók száma (1≤M<N) van. A következő N sor mindegyikének első száma az adott csapat által
+legyőzött csapatok száma (1≤Si≤M), amelyet a legyőzött ellenfelei vannak (1≤Ei,j≤N)..
+Kimenet
+A standard kimenet első sorába a pátok pontszámkülönbségének összege minimális ös--
+szegét, a következő N/2 sorába pedig egy következő forduló lehetséges párosítását kell írni! Min-
+den sorban két csapat sorszáma szerepeljen, amelyek egymás ellen fognak játszani! A kiírás
+sorendje (mind soron belül, mind sorok között) tetszőleges.
+Példa
+Bemenet                                           Kimenet
+6   3                                             1 6
+3   2 3 4                                         2 3
+2   4 5                                           4 5
+1   5
+0
+0
+3   3 4 5
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

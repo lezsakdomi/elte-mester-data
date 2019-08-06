@@ -1,0 +1,43 @@
+
+
+                                     Csoportképek
+Egy eseményen N ember vesz részt. Mindenkinek ismerjük az érkezési és távozási időpontját. Az
+eseményen minden időpontban készül egy csoportkép a jelenlevőkről, de csak akkor, ha a jelen
+levők száma legfeljebb F, mert különben nem férnek rá egy képre. (Nem számít az, hogy ha már
+korábban készült csoportkép a társaságról, tehát ha két egymást követő időpontban senki sem ér-
+kezik vagy távozik, akkor is készül mindkét időpontban csoportkép.) Egy ember az érkezésének
+és távozásának időpontjában is jelen levőnek számít. Készül M darab videófelvétel is. A videókon
+látszódnak a fényképek készülésekor a vaku villanások (ha pont a videó kezdetén vagy végén vil-
+lan a vaku, akkor is látszik).
+Készíts programot, amely megadja minden videóra, hogy hányszor villan a vaku!
+Bemenet
+A standard bemenet első sorában az emberek száma (1≤N≤100 000) és az egy képre el-
+férők maximális száma (1≤F≤100 000) van. A következő N sorban egy-egy ember érkezési és
+távozási időpontja található (1≤Ei<Ti≤100 000). A következő sorban a videófelvételek száma
+van (1≤M≤50 000). Az utolsó M sorban a videófelvételek kezdete és vége található
+(1≤Ki<Vi≤100 000, ahol Vi<Ki+1).
+Kimenet
+A standard kimenet i-edik sorába az i-edik videofelvétel alatti vaku villanások számát kell
+írni!
+Példa
+Bemenet                                         Kimenet
+6   2                                           1
+1   3                                           3
+6   7
+2   4
+5   8
+2   4
+3   5
+2
+1   3
+4   7
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

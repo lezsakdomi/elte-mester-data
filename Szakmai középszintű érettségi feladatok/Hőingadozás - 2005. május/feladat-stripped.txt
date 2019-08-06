@@ -1,0 +1,24 @@
+
+
+                                      Hőingadozás
+Egy ideig minden nap délben megmértük a hőmérsékletet az udvaron. A hőingadozás a mért leg-
+nagyobb és legkisebb érték különbsége.
+Készíts programot, ami a mért értékek kiszámolja a hőingadozás mértékét!
+Bemenet
+A standard bemenet első sora tartalmazza a napok számát (1≤N≤106). Ezután N sorban
+egy-egy napon elvégzett mérések eredménye található (-106≤Hi≤106).
+Kimenet
+A standard kimenetre a hőingadozás mértékét kell a kiírni!
+Példa
+Bemenet                                            Kimenet
+10                                                 15
+1 2 3 4 1 2 4 10 -5 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

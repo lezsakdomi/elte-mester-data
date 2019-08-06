@@ -1,0 +1,64 @@
+
+
+                    Legkorábbi környezetvédelmi világnap
+Június 5-dike a környezetvédelmi világnap. E nap egyik különlegessége, hogy minden évben más
+ország ad otthont a világnaphoz kapcsolódó rendezvények számára. A rendezvényekről a követ-
+kezőket tudjuk: mely évben, hol volt, milyen mottót találtak ki hozzá. Voltak olyan évek is, ami-
+kor a rendezvényhez nem rendeltek mottót, sőt – sajnálatos módon – még az ország neve is a fe-
+ledés homályába veszett. Az adataink összekeveredtek (nincs feltétlenül időrendbe szedve), de az
+feltehető, hogy bármely év legfeljebb egyszer szerepel az adatok között.
+Írj programot, amely megadja, hogy melyik évben volt legkorábban rendezvény, és hol!
+Bemenet
+A standard bemenet 3 részből áll. Az első néhány sor az országnevek felsorolását tartal-
+mazza: első sora az országok száma (1≤N≤20), majd soronként a nevek (lehet több szóból álló
+szöveg: pl. „Egyesult Kiralysag”). A második rész első sorában a rendezvények száma (1≤R≤40);
+alatta az egyes rendezvények leírása következik. Minden rendezvényt 3 sor határoz meg. Első sora
+egy évszám (1900≤E≤2010), a második sor az ország előző blokkbeli sorszáma (1≤S≤N). Ha
+az ország nevét nem ismerjük, akkor 0 a második szám. A harmadik sorban egy mondat van, ami
+lehet üres szöveg is, ha nincs mottó. A bemenet 3. része két évszámot tartalmaz
+(1900≤év1év2≤2010).
+Kimenet
+A standard kimenet első sorába annak a rendezvénynek az évét és helyszínét kell kiírni,
+ahol a legkorábban volt ilyen rendezvény (ha a hely nem ismert, akkor az ország neve gyanánt írj
+egy kérdőjelet)!
+Példa
+Bemenet                                         Kimenet
+6                                               1986 ?
+Algeria
+Thaifold
+Norvegia
+Egyesult Kiralysag
+Oroszorszag
+Kenya
+5
+1988
+2
+
+1986
+0
+
+2006
+1
+Sivatagos es …
+1994
+4
+
+2007
+3
+Olvado jeg
+2007 2007
+
+Korlátok
+Időlimit: 0.1 mp.
+
+                                            1. oldal
+Programozási tételek – Maximumkiválasztás              *
+
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            2. oldal
+

@@ -1,0 +1,41 @@
+
+
+                                        Páros fotózás
+Egy rendezvényre sok vendéget hívtak meg. Minden vendég előre megadta, hogy mikor érkezik,
+és mikor távozik. A rendezők fényképeken akarják megörökíteni a résztvevőket. A rendezőknek
+két betartandó kikötése van:
+         1.) Minden képen pontosan két vendég legyen rajta.
+         2.) Minden vendég legfeljebb egy képen szerepelhet.
+Természetesen két vendég csak akkor szerepelhet azonos képen, ha van olyan F időpont, amikor
+mindketten jelen vannak. Egy vendég akkor és csak akkor van jelen az F időpontban, ha az E ér-
+kezési és T távozási idejére teljesül, hogy E≤F, és F<T.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány fénykép készülhet, és megadja,
+hogy mely párok szerepeljenek egy képen!
+Bemenet
+A standard bemenet első sorában a vendégek száma van (1≤N≤30 000). A további N sor
+mindegyikében két egész szám van egy szóközzel elválasztva: egy vendég E érkezési es T távozási
+ideje (1≤E<T<20000).
+Kimenet
+A standard kimenet első sorába a lehetséges legtöbb készíthető fényképek M számát kell
+írni! A további M sor mindegyikébe azon két vendég sorszámát kel írni(tetszőleges sorrendben),
+akik egy képen szerepelnek! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+8                                                 3
+1   3                                             3 1
+2   5                                             5 2
+2   3                                             6 7
+8   10
+2   4
+4   7
+5   8
+7   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

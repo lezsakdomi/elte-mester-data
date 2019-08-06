@@ -1,0 +1,41 @@
+
+
+                                   Van-e féltestvéred?
+Adott K szülő-gyerek kapcsolat.
+Készíts programot, amely eldönti, hogy adott sorszámú embernek vannak-e féltestvérei!
+Bemenet
+A standard bemenet első sorában az emberek száma (0<N≤1000), majd a kapcsolatok
+száma (0<K≤2000) van. Az ezt követő K sor mindegyikében egy szülő sorszáma, majd egy gye-
+rek sorszáma van (0<Sz≠Gy≤N). Az utolsó sorban a kérdezett ember sorszáma van (0<Y≤N).
+Kimenet
+A standard kimenet első sorába a „Van” vagy a „Nincs” szöveg kerüljön!
+Példa
+Bemenet                      Kimenet
+12 14                        Van
+7 2
+7 4
+                                                                            11          12
+8 2
+8 3
+9 3
+9 4
+9 5                                                   7       8             9           10
+9 6
+10 5
+10 6
+11 7                                       1          2       3         4        5           6
+11 10
+12 7
+12 10
+2
+
+Korlátok
+Időlimit: 0,1 mp.
+Memórialimit: 33 MB
+Pontozás: A tesztek 40%-ában a N≤100, K≤200.
+
+
+
+
+                                           1. oldal
+

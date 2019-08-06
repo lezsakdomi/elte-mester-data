@@ -1,0 +1,31 @@
+
+
+                          Legnagyobb hórétegű sípálya
+Egy hójelentés N sípályán mért hóréteget tartalmazza.
+Készíts programot, amely megadja, hogy melyik sípályán a legnagyobb a hóréteg!
+Bemenet
+A standard bemenet első sorában a sípályák száma van (1≤N≤100), majd soronként az
+egyes pályákon mért hóréteg vastagsága (0≤Vi≤200).
+Kimenet
+A standard kimenet első sorába a legnagyobb hórétegű sípálya sorszámát kell írni (ha több
+ilyen is van, akkor az elsőt)!
+Példa
+Bemenet                                         Kimenet
+7                                               3
+0
+150
+200
+0
+57
+0
+30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

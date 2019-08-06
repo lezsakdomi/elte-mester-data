@@ -1,0 +1,50 @@
+
+
+                                    Autóbusz járatok
+Ádám autóbuszjáratokkal szeretne eljutni lakhelyéről egy más településen rendezett eseményre.
+Ismerjük települések közötti egyirányú buszjáratok árát, ezek közül egyesek nem tudnak elindulni,
+mert munkaerőhiány miatt nincs hozzá autóbuszvezető. A járatok a két végállomásuk között nem
+állnak meg. Ádám eldöntötte, hogy ilyen esetekben a buszjegy áráért elvállalja az autóbusz vezeté-
+sét, hogy eljusson a céljához!
+Írj programot, amely kiszámítja, hogy maximum mennyi pénzt kereshet Ádám, illetve ha fizetnie
+kell, akkor mi lesz a legkisebb összeg, amibe kerül az útja!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000), a buszjáratok száma
+(1≤M≤100 000) van. A következő M sorban az egyes buszjáratok induló és végállomása sor-
+száma (1≤Ai≠Bi≤N), valamint a buszjegy ára (-1000≤Ci≤1000) van – negatív az ár, ha a
+buszhoz nincs buszvezető. Az utolsó sorban Ádám lakhelyének és az esemény helyszínének sor-
+száma van (1≤L≠E≤N). A bemenet olyan, hogy biztosan nincs olyan körutazás, amelyen Ádám
+többet keresne, mint amibe a körút kerül.
+Kimenet
+A standard kimenet első sorába a maximális haszon (vagy minimális ár) értékét kell kiírni!
+A második sorban az útvonalon levő települések T száma legyen (beleértve a lakhelyet és az ese-
+mény helyszínét is)! A harmadik sor T száma az útvonal települései T sorszáma legyen, a haladás
+sorrendjében!
+Példa
+Bemenet                                          Kimenet
+6   11                                           690
+1   2 -150                                       6
+2   3 150                                        1 2 5 4 3 6
+1   4 350                                                                150
+2   4 900                                                           2          3
+4   3 -350                                              -150            -350       -400
+                                                              900
+2   5 -400                                                 350                 150
+5   4 150                                           1               4                     5
+1   6 150
+                                                        150    200 60
+3   6 60                                                                       700
+4   6 200
+5   6 700
+                                                                    6
+1   6
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 64 MB
+
+
+
+
+                                             1. oldal
+

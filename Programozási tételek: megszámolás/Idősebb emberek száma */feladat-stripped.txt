@@ -1,0 +1,33 @@
+
+
+                               Idősebb emberek száma
+N embernek ismerjük a születési adatait: év, hónap, nap.
+Készíts programot, amely megadja, hogy mai dátum ismeretében, hány X évnél idősebb van köz-
+tük!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤1000). A következő so-
+rok mindegyike három egész számot tartalmaz egy-egy szóközzel elválasztva: az adott ember szü-
+letése évének (1900≤É≤2014), hónapjának (1≤H≤12) és napjának (1≤N≤30) sorszámát. Az
+utolsó sorban 4 egész szám található: egy életkor (1≤X≤100) és a mai dátum (év, hónap,
+nap) egy-egy szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába az X évnél idősebbek számát kell kiírni!
+Példa
+Bemenet                                          Kimenet
+5                                                3
+1957 1 20
+2000 1 22
+1917 1 8
+2001 2 22
+1950 5 5
+50 2013 1 9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

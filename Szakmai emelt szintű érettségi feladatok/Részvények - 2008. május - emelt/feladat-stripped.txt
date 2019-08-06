@@ -1,0 +1,35 @@
+
+
+                                          Részvények
+Egy időszakban megfigyeltük egy részvény árfolyamát, minden nap rögzítettük a napi tőzsdei zá-
+róárát.
+Írj programot, amely
+    1. Megadja az értékpapír záróárainak átlagát!
+    2. Megadja, hogy az értékpapír a vizsgált időszakban hányszor zárt a záróárainak átlagánál
+       nagyobb értéken!
+Bemenet
+A standard bemenet első sora tartalmazza a vizsgált időszak hosszát (1≤N≤100 000). A
+második sor N számot tartalmaz, az egyes napokon elért záróárat. (1≤Ári≤1 000 000).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A vizsgált időszakban az értékpapír záróárainak átlagát kell kiírni, lefelé kerekítve!
+2. részfeladat: Az átlag felett záró napok számát kell kiírni!
+Példa
+Bemenet                                                Kimenet
+5                                                      #
+1 2 3 4 5                                              3
+                                                       #
+                                                       2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

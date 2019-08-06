@@ -1,0 +1,47 @@
+
+
+                                        Gyűjtő robot
+Egy négyzetrácsos hálózat mezőin elhelyezett tárgyakat egy robotnak kell összegyűjtenie. A robot
+a bal felső sarokból indul, amelynek (1,1) a koordinátája, és a jobb alsó sarokba kell érkeznie,
+amely az (N,N) koordinátájú mező. A robot elemi parancsok sorozatából álló programot tud
+végrehajtani. Három elemi robotparancs van:
+    1. J : jobbra lép a szomszédos mezőre ( (sor,oszlop)-ról (sor,oszlop+1)-re),
+    2. L : lefelé lép a szomszédos mezőre ( (sor,oszlop)-ról (sor+1,oszlop)-ra ),
+    3. F : felfelé lép a szomszédos mezőre ( (sor,oszlop)-ról (sor-1, oszlop)-ra ).
+A robot nem tud visszafordulni, azaz a programban L után közvetlenül nem állhat F, és F után
+közvetlenül nem állhat L. Minden oszlopban található tárgy.
+Készíts programot, amely – feltételezve, hogy a feladat biztosan megoldható – kiszámít egy
+minimális útvonalat!
+Bemenet
+A standard bemenet első sora a négyzetrácsos hálózat méretét (1N1000) és a mezőkön
+található tárgyak számát (1K100 000) tartalmazza. A további K sor mindegyikében két egész
+szám van: egy olyan mező koordinátái, ahol tárgy van elhelyezve (1SORN,1OSZLOPN).
+Kimenet
+A standard kimenet első sora a lehetséges legkevesebb lépés M számát tartalmazza,
+amellyel a robot összegyűjtheti a tárgyakat! A második sor egy olyan robotprogramot írjon le,
+amelynek végrehajtásával a robot elvégzi a munkát! A sor pontosan M betűből álljon, ahol minden
+betű egy lehetséges robotparancs jele (J, L vagy F) lehet! A betűk között nem lehet szóköz!
+Példa
+Bemenet                                           Kimenet
+5   10                                            16
+5   1                                             LLLLJFFFFJLLJLJL
+2   2
+3   3
+4   4
+4   5
+3   4
+5   2
+1   2
+3   2
+4   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N101 és K300. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                              1. oldal
+

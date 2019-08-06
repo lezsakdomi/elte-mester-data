@@ -1,0 +1,34 @@
+
+
+                                  Kalapácsvető verseny
+Egy kalapácsvető versenyen minden versenyző K-szor dobhat. A végeredményt a legnagyobb
+dobások szerinti csökkenő sorrendben kell megadnod! Ha valamely két versenyző legnagyobb
+dobása egyforma, akkor közöttük a második legnagyobb dobás dönt. Ha az is egyforma, akkor a
+harmadik, … és így tovább. Ha minden dobásuk egyforma, akkor a sorrendjük a listában szereplő
+sorrend marad.
+Írj programot, ami segít a sorrend megadásában!
+Bemenet
+A standard bemenet első sorában található az elemek száma (1≤N≤100) és a dobások
+száma (1≤K≤20). Az ezt követő N sor mindegyikében K szám van szóközzel elválasztva, a dobá-
+sok értékei (0≤Di≤200).
+Kimenet
+A standard kimenet első sorába ki kell írni szóközzel elválasztva a sorrendet meghatározó
+sorszámokat!
+Példa
+Bemenet                                           Kimenet
+6 3                                               2 5 4 3 1 6
+19 20    18
+20 18    22
+21 20    18
+21 20    19
+21 20    20
+20 18    17
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

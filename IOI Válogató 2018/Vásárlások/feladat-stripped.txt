@@ -1,0 +1,32 @@
+
+
+                                       Vásárlások
+Ismerjük K termék árát N napon keresztül, az árak naponta különbözhetnek. Az N nap alatt
+mind a K terméket meg szeretnénk vásárolni, de minden napon legfeljebb 1 terméket vehetünk
+meg.
+Készíts programot, amely megadja, hogy melyik terméket melyik napon vegyük meg, hogy a K
+termék összesen a lehető legkevesebbe kerüljön!
+Bemenet
+A standard bemenet első sorában a termékek száma (1≤K<10) és a napok száma
+(K≤N≤100) van. A következő K sor mindegyike egy-egy termék N napon keresztüli árát tartal-
+mazza (1≤Ai,j≤100)
+Kimenet
+A standard kimenet első sorába a K termék megvásárlásához szükséges minimális költés
+M összegét kell írni, a második sorba pedig azon napok sorszámát, amelyeken az i. terméket meg
+kell vásárolni (M összeget költve)! Több megoldás esetén bármelyik kiírható.
+Példa
+bemenet                                        kimenet
+3   8                                          5
+6   9 5 2 8 9 1 6                              4 2 7
+8   2 6 2 7 5 7 2
+5   3 9 7 3 5 1 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában K≤5.
+
+
+
+
+                                           1. oldal
+

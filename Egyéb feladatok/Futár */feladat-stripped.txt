@@ -1,0 +1,49 @@
+
+
+                                               Futár
+Egy vállalat két telephelye (A és B) között csomagok kézbesítésére két futárt alkalmaz. A futárok
+a távolságot mindig azonos idő alatt teszik meg. Ha éppen szemben haladnak egymással, akkor ta-
+lálkozhatnak.
+Készíts programot, amely megadja, hogy a futárok hányszor, illetve hányadik kézbesítésükkor ta-
+lálkozhatnak egymással út közben!
+Bemenet
+A standard bemenet első sorában az első és a második futár kézbesítéseinek száma (1≤N,
+M≤500 000), továbbá a távolság megtételéhez szükséges idő (1≤O≤50) van, egy-egy szóközzel
+elválasztva. A következő N sorban az első, az azt követő M sorban pedig a második futár kézbesí-
+téseit írtuk le, mindegyiket indulási idő szerint növekvő sorrendben. Minden kézbesítéshez tarto-
+zó sor egy betűvel (A vagy B) kezdődik – annak a telephelynek az azonosítójával, ahonnan a fu-
+tárnak el kell indulnia. Ezt követi egy szóközzel elválasztva az indulás ideje (0≤idő≤108). (Fel-
+tesszük, hogy a futár az indulás idejében a megfelelő telephelyen van.)
+Kimenet
+A standard kimenet első sorába a találkozások K számát kell írni! A következő K sor
+mindegyikében két szám legyen egy szóközzel elválasztva: az első és a második futár kézbesítésé-
+nek sorszáma, ami alatt találkozhatnak! Ezek a sorok a találkozási idő szerint növekvő sorrendben
+legyenek!
+Példa
+(az ábrán a második futár útját szaggatott vonallal jelöltük)
+                                                                                   A     B
+Bemenet                                            Kimenet
+4   5 10                                           2
+A   10                                             2 2
+A   40                                             4 5
+B   70
+                                                                            Id õ
+
+
+
+
+A   100
+A   15
+B   35
+A   50
+B   75
+B   100
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

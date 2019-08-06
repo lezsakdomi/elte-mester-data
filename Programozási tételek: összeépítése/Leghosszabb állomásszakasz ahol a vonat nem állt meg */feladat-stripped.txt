@@ -1,0 +1,41 @@
+
+
+        Leghosszabb állomásszakasz, ahol a vonat nem állt meg
+A Piripócs-Kukutyin vasútvonalon pontosan N állomás van, beleértve a két végállomást is. A ka-
+lauz egy út során minden állomásról feljegyezte, hogy a vonat mikor ért oda, illetve mikor hagyta
+el az állomást. Ez a két szám egyenlő, ha a vonat az állomáson nem állt meg.
+Készíts programot, amely megadja azt a két legmesszebb levő állomást, amelyek között a vonat
+egy állomáson sem állt meg!
+Bemenet
+A standard bemenet első sorában az állomások száma (2≤N≤100) van, majd pedig fel-
+váltva az indulások és az érkezések időpontjai (óra: 0≤Ó≤23, perc: 0≤P≤59), mindegyik egy-egy
+sorban.
+Kimenet
+A standard kimenet első sorába azon két állomás sorszámát kell kiírni, amelyek között a
+vonat egy állomáson sem állt meg! Ha mindenhol megállt, akkor „0 0”-át kell kiírni! Ha több
+megoldás van, a legkisebb sorszámút kell kiírni!
+Példa
+Bemenet                                         Kimenet
+7                                               3 6
+8 40
+8 50
+8 50
+9 20
+9 25
+9 40
+9 40
+9 55
+9 55
+10 15
+10 25
+10 40
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

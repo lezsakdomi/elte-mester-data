@@ -1,0 +1,32 @@
+
+
+                                    Folyamatos fagy
+Az időjárás előrejelzésben ismerjük előre N nap várható minimális és maximális hőmérsékletét.
+Készíts programot, amely megadja azt a K napos időtartamot (ha van), amelyben az előrejelzés
+szerint folyamatosan fagy lesz!
+Bemenet
+A standard bemenet első sorában a napok száma (2≤N≤100), és K értéke (1≤K≤100)
+van. A következő N sorban egy-egy nap várható minimális és maximális hőmérsékletei vannak,
+egy szóközzel elválasztva (-20≤Min,Max≤50).
+Kimenet
+A standard kimenet első sorába annak a K napos időtartamnak az első és az utolsó napját
+kell kiírni, amikor K napon át folyamatosan fagy lesz (ha több ilyen is van, akkor az elsőt; ha
+nincs ilyen, akkor -1-et kell kiírni)!
+Példa
+Bemenet                                         Kimenet
+5 2                                             3 4
+-9 -2
+-1 4
+-5 -4
+-6 -1
+5 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

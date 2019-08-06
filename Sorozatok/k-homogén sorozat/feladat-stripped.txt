@@ -1,0 +1,31 @@
+
+
+                                 K-homogén sorozat
+Azt mondjuk, hogy az (a1,..,an) sorozat K-homogén, ha a sorozat legfeljebb K elemét törölve csu-
+pa azonos elemek maradnak. Például a (3,2,2,4,2,1,2) sorozat 3-homogén, de nem 2-homogén.
+Készíts programot, amely meghatározza egy számsorozat leghosszabb K-homogén összefüggő
+részsorozatát!
+Bemenet
+A standard bemenet első sora a számsorozat hosszát (1N200 000), a számsorozat
+elemeinek felső korlátját (1M500 000) és a K értékét (0KN) tartalmazza. A második sor
+tartalmazza a számsorozatot (1SiM).
+Kimenet
+A standard kimenet első sorába annak a leghosszabb összefüggő részsorozat H hosszát
+kell írni, amely K-homogén! A második sor tartalmazza ezen sorozat első elemének pozícióját, ha
+több ilyen lenne, akkor a legkisebbet!
+Példa
+Bemenet                                        Kimenet
+9 10 2                                         6
+1 2 7 2 3 2 4 2 2                              4
+
+Korlátok
+A pontok 25% szerezhető olyan esetek megoldására, ahol N10 000 és M10 000.
+A pontok 55% szerezhető olyan esetek megoldására, ahol N100 000 és M200 000.
+Időlimit: 0.24 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

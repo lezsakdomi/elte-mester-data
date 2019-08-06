@@ -1,0 +1,41 @@
+
+
+                                        Mozijegyek
+Egy mozielőadást olyan teremben tartanak, ahol N darab ülőhely van. A rendezvény szervezője
+megrendeléseket fogad. A megrendelésben meg kell adni, hogy milyen sorszámú ülőhelyet szeret-
+ne venni a megrendelő. Mivel ugyanazt a helyet többen is igényelhetik, ezért a jegyiroda csak azt
+ígéri, hogy olyan helyet ad, amelynek sorszáma legfeljebb D-vel nagyobb, mint az igényelt. Min-
+den megrendelés egy A F számpárt tartalmaz, ami azt jelenti, hogy a megrendelő olyan ülőhelyet
+kíván venni, amelynek S sorszámára teljesül, hogy ASA+D, és ezért F Eurót fizetne!
+Készíts programot, amely kiszámítja, hogy mekkora az elérhető legnagyobb bevétel és meg is ad
+egy olyan jegykiosztást, amely kielégíti a megrendeléseket és a lehető legnagyobb bevételt ered-
+ményezi!
+Bemenet
+A standard bemenet első sorában az ülőhelyek száma (1N1000), a megrendelések
+száma (1M3000) a jegyiroda által vállalt eltérés (1D100) van. A következő M sorban az
+egyes megrendelések A F leírása szerepel (1AN, 1F200), sorszám szerint nemcsökkenő
+sorrendben.
+Kimenet
+A standard kimenet első sorába a legnagyobb elérhető bevétel összegét kell írni! A máso-
+dik sorba a legnagyobb bevételt eredményező megrendelés részhalmaz K elemszámát kell írni! A
+következő K sor tartalmazza a jegykiosztást a kiválasztott K megrendelés számára! Minden sorban
+egy megrendelés sorszáma és annak az ülőhelynek a sorszáma legyen, amelyet a megrendelő kap!
+Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+6   5 1                                         41                              . X        . .
+2   6                                           4                               . .            .
+3   2                                           1 2
+                                                                                . . X          .
+3   20                                          3 3
+4   5                                           4 5                             . . .          X
+4   10                                          5 4                             . . . X
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

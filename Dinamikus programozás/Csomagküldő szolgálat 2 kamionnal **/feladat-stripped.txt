@@ -1,0 +1,33 @@
+
+
+                      Csomagküldő szolgálat 2 kamionnal
+A csomagküldő szolgálat központjában a beérkezés sorrendjében várakoznak a csomagok továb-
+bításra. Minden csomagnak ismert a súlya. A cégnek két kamionja van, mindegyik azonos K kapa-
+citású, tehát mindegyikre legfeljebb annyi csomag pakolható, hogy a csomagok összsúlya nem le-
+het K-nál nagyobb. A lehető legtöbb csomagot akarják továbbítani a két kamionnal. Tehát kiszá-
+mítandó az a legnagyobb M egész szám, hogy a sorban első M csomag mindegyike felpakolható a
+két kamion valamelyikére. Az ilyen pakolást nevezzük optimálisnak.
+Írj programot, amely kiszámít egy optimális pakolást!
+Bemenet
+A standard bemenet első sorában a kamion kapacitása (1K1000) és a csomagok száma
+(1N1000) van. A második sor pontosan N egész számot tartalmaz, az N csomag súlyát
+(1siK).
+Kimenet
+A standard kimenet első sorába azt a legnagyobb M indexet kell írni (1MN), amelyre tel-
+jesül, hogy az első M csomag felpakolható a két kamionra, betartva a K súlykorlátot! A második és
+harmadik sor azoknak a csomagoknak a sorszámait tartalmazza, amelyeket az első, illetve a máso-
+dik kamionra pakolnak egy optimális pakolás során! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+100 7                                            4
+3 12 45 64 56 23 42                              1 2 3
+                                                 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                             1. oldal
+

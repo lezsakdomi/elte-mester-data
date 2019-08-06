@@ -1,0 +1,85 @@
+
+
+                                            Fehérje
+A fehérjék óriás molekulák, amelyeknek egy része az élő szervezetekben végbemenő folyamatokat
+katalizálják. Egy-egy fehérje aminosavak százaiból épül fel, melyek láncszerűen kapcsolódnak
+egymáshoz. A természetben a fehérjék fajtája több millió. Minden fehérje aminosavak különböző
+mennyiségű és sorrendű összekapcsolódásával épül fel. Az aminosavak mindegyike tartalmaz sze-
+net (C), hidrogént (H), oxigént (O) és nitrogént (N), néhányban kén (S) is található.
+Egy fehérje összegképletét megkaphatjuk a felépítő aminosavak sorrendjéből, figyelembe véve,
+hogy az aminosavak összekapcsolódása során minden kapcsolat létrejöttekor egy vízmolekula
+(H2O) lép ki. Tudjuk, hogy a fehérjét felépítő aminosavakban előfordul a kiváláshoz szükséges
+számú oxigén-, és hidrogénatom.
+A fehérjék szekvencia szerkezetét hasításos eljárással határozzák meg. Egyes enzimek bizonyos
+aminosavak után kettéhasítják a fehérjemolekulát, míg más enzimek akkor, ha adott aminosavak
+megfelelő sorban követik egymást.
+Írj programot, amely
+   1. meghatározza az aminosavak relatív molekulatömegét és az aminosavakat a molekulatö-
+      megük, azon belül a rövidítésük alapján növekvő sorba rendezi!
+   2. meghatározza egy adott fehérje összegképletét!
+   3. meghatározza egy fehérjelánc hasítása után létrejövő leghosszabb darabjának a hosszát és
+      eredeti helyét (több ilyen létezése esetén a legelsőt kell megadni)!
+   4. meghatározza a hasítás során keletkező első fehérjeláncban egy adott aminosav előfordu-
+      lásainak számát!
+Bemenet
+A standard bemenet első sorában az 5 előforduló atom relatív atomtömege szerepel C, H,
+O, N, S sorrendben (1≤Ti≤1000).
+A következő sorban az aminosavak száma (2≤M≤26) szerepel. A következő M sorban egy-egy
+aminosav leírása található: az aminosav 3 karakteres rövidítése (angol ábécé kisbetűit tartalmazza),
+betűjele (angol ábécé egy nagybetűje) és az egyes atomok darabszáma (1≤C,H,O,N≤1000,
+0≤S≤1000) szén, hidrogén, oxigén, nitrogén, kén sorrendben. Minden aminosav rövidítése és
+betűjele különböző.
+A következő sor a 2-4. részfeladatokban feldolgozandó fehérje szerkezetét tartalmazza
+(1≤hossz(F)≤10 000).
+A következő sor azon aminosavak számát (1≤K≤M) tartalmazza, melyek után a 3. részfeladatban
+vizsgált enzim kettéhasítja a fehérjeláncot. A következő sor ezen aminosavak betűjelét tartalmaz-
+za.
+A következő sor egy L (1≤L<M) számot tartalmaz és a 4. részfeladatban megszámolandó ami-
+nosav betűjelét. A következő sor egy X aminosav betűjelét tartalmazza. A következő sorban L db
+aminosav betűjele van, melyek után hasítás történik, ha közvetlenül X után álltak (Li≠X).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi                                              2006. május 17.
+
+1. részfeladat: M sorba az aminosavak rövidítését és relatív atomtömegét kell írni, atomtömeg,
+majd rövidítés szerint növekvő sorban!
+2. részfeladat: A fehérje összegképletét kell írni szén, hidrogén, oxigén, nitrogén, kén sorrend-
+ben! Az összegképletben csak az előforduló tagok szerepelnek!
+3. részfeladat: A lánc hasítás utáni leghosszabb darabjának hosszát és az eredeti láncban előtte
+lévő aminosavak számát kell írni! MI VAN HA NINCS?
+4. részfeladat: Az adott aminosav előfordulásainak számát kell írni a hasítás után keletkező első
+láncban! MI VAN HA NINCS?
+Példa
+Bemenet                                         Kimenet
+12 1 16     14 32                               #
+3                                               gly 75
+gly G 2     5 2 1 0                             cys 121
+cys C 3     7 2 1 1                             glu 147
+glu E 5     9 4 1 0                             #
+GECEEC                                          C 23 H 46 O 18 N 6 S 2
+2                                               #
+G C                                             3 3
+2 E                                             #
+C                                               2
+E G
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            2. oldal
+

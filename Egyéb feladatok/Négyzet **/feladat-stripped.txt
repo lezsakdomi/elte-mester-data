@@ -1,0 +1,37 @@
+
+
+                                          Négyzet
+Egy zöldmezős beruházás keretében építendő csarnok elhelyezését kell megtervezni. Feltétel,
+hogy a csarnok alaprajza négyzet alakú legyen. Megkötés továbbá, hogy a csarnok négy sarok-
+pontját megadott pontok közül kell kiválasztani úgy, hogy a négyzet oldalai párhuzamosak legye-
+nek a koordináta rendszer tengelyeivel. A feltételeknek megfelelő, legnagyobb négyzetet keressük.
+Készíts programot, amely kiszámítja a feltételeknek megfelelő legnagyobb négyzetet!
+Bemenet
+A standard bemenet első sorában található a lehetséges sarokpontok pontok száma
+(1000≤N≤200 000). A következő N sor mindegyike két egész számot tartalmaz (1≤X,Y≤
+1 000 000), ami egy lehetséges sarokpont koordinátái.
+Kimenet
+A standard kimenet első sorába a lehető legnagyobb négyzet területét kell írni! A 0 érték
+szerepeljen itt, ha nem lehet négyzetet kialakítani, és ekkor nincs második sor! A második sor a
+legnagyobb négyzet négy csúcsának sorszámait tartalmazza órajárással ellentétes körüljárás sze-
+rint, az bal alsó sarokponttal kezdve! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+8                                               100
+1 10                                            2 7 3 5
+4 5
+14 15
+22 12
+4 15
+21 15
+14 5
+20 20
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

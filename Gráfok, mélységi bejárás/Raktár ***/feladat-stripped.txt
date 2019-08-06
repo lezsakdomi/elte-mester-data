@@ -1,0 +1,42 @@
+
+
+                                           Raktár
+Egy vállalat N városban üzemeltet termelő részleget. A részlegeket az R városban lévő központi
+raktárából látja el alapanyaggal.
+Készíts programot, amely meghatározza azokat a (R-től különböző) városokat, ahova pontosan
+egyféle útvonalon lehet csak szállítani a központi raktárból!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤10 000), a közvetlen utak szá-
+ma (1≤M≤1 000 000) és a központi raktár sorszáma (1≤R≤N) van. A további M sor mindegyike
+két közvetlen úttal összekötött város sorszámát tartalmazza (1≤U≠V≤N) Teljesül, hogy bármely
+két város között legfeljebb egy közvetlen út van, továbbá a központi raktárból bármely városba el
+lehet jutni.
+Kimenet
+A standard kimenet első sorába azon városok K számát kell írni, ahova pontosan egyféle
+útvonalon lehet csak szállítani a központi raktárból! A második sor a városok sorszámait tartal-
+mazza, tetszőleges sorrendben!
+Példa
+Bemenet                             Kimenet
+11 12 3                             2
+7 8                                 2 6
+3 1
+2 3                                             9          10
+
+3 4
+4 7
+7 11                                 8          5           1
+2 6
+1 5                                                                   3           2          6
+5 8
+5 9
+9 10                                 11         7           4
+5 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MB
+
+
+
+
+                                            1. oldal
+

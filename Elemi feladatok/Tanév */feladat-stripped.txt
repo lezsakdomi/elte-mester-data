@@ -1,0 +1,47 @@
+
+
+                                                Tanév
+Bergengóciában a következő szabályok szerint számítják a tanévet:
+    A. Az első tanítási nap szeptember első hétfője.
+    B. Az őszi szünet az október 23.-adikát tartalmazó teljes hét, az őt megelőző szombattal és
+       vasárnappal együtt.
+    C. A téli szünet két teljes hét, úgy, hogy tartalmazza karácsonyt és az újévet is, valamint az
+       azt megelőző szombat-vasárnap.
+    D. A tavaszi szünet a húsvétot megelőző teljes hét, húsvéthétfő, valamint a hetet megelőző
+       szombat-vasárnap.
+    E. Az utolsó tanítási nap június második péntekje.
+Írj programot, amely egy adott évben – szeptember 1. és húsvét vasárnap ismeretében – meghatá-
+rozza a tanév rendjét: első tanítási nap, az egyes szünetek előtti utolsó és szünetek utáni első taní-
+tási napok, valamint az utolsó tanítási nap dátumát.
+Bemenet
+A standard bemenet első sorában lévő egész szám az évet adja meg (1≤ev≤5000). A má-
+sodik sorban az van megadva egész számként, hogy szeptember elseje a hét hányadik napjára esik
+(hétfő az első, vasárnap a hetedik nap). Végül a harmadik sorban lévő két, szóközzel elválasztott
+egész szám azt mondja meg, hogy a tanévben húsvét vasárnap hányadik hónap hányadikán van.
+Kimenet
+A standard kimenetre 8 dátumot kell külön sorban kiírni a következő sorrendben: a tan-
+év első napját, az őszi szünet előtti utolsó tanítási napot, az őszi szünet utáni első tanítási napot, a
+téli szünet előtti utolsó tanítási napot, a téli szünet utáni első tanítási napot, a tavaszi szünet előtti
+utolsó tanítási napot, a tavaszi szünet utáni első tanítási napot, végül a tanév utolsó napját. A dá-
+tumot minden sorban „E.H.N.” formában kell megadni, ahol E, H és N is számként van kiírva
+(pl. „2015.9.3.”).
+Példa
+Bemenet                                             Kimenet
+2014                                                2014.9.1.
+1                                                   2014.10.17.
+4 5                                                 2014.10.27.
+                                                    2014.12.19.
+                                                    2015.1.5.
+                                                    2015.3.27.
+                                                    2015.4.7.
+                                                    2015.6.12.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                                 1. oldal
+

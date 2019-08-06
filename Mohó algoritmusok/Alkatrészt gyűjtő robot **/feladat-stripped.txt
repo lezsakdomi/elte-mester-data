@@ -1,0 +1,41 @@
+
+
+                                     Alkatrészt gyűjtő robot
+Egy üzemben a gyártást automatizálták. A szerszámgépek egy nagy gépcsarnokban négyzetrács
+mentén vannak elhelyezve. A műszak végén robotok gyűjtik össze a szerszámgépek gyártotta al-
+katrészeket. A robotok négyzetrács alakú pályán mozognak a szerszámgépek fölötti térben. A
+négyzetrács bal felső sarkából, az (1,1) pontból indulnak, és a jobb alsó sarokba viszik el az alkat-
+részeket. A robotokat úgy tervezték, hogy csak jobbra és „lefelé” haladhatnak.
+A feladat megoldásához rendelkezésre áll az üzemcsarnok térképe, amely egy 0 és 1 elemeket tar-
+talmazó M*N-es mátrix (M a sorok, N az oszlopok száma). A 0 jelöli az üres helyet gépcsarnokban,
+az 1 pedig azt, hogy azon a helyen szerszámgép van.
+Készíts programot, amely kiszámítja, hogy minimálisan hány robotot kell elindítani az összes al-
+katrész begyűjtéséhez, feltéve hogy minden robot tetszőleges számú alkatrészt szállíthat.
+Bemenet
+A standard bemenet első sorában az M és N értékek vannak, egyetlen szóközzel elválasztva
+(1M,N100). A következő M sor mindegyike a térkép egy-egy sora, azaz minden sorban N
+szám (0 vagy 1) van, a számokat ismét egyetlen szóköz választja el.
+Kimenet
+A standard kimenet első a feladat megoldásaként egyetlen számot kell írni!
+Példa
+Bemenet                                           Kimenet
+10 12                                             5
+0 1 1    1   0   0   1   0   1   0   0   0
+0 1 0    0   0   1   0   0   0   0   0   0
+0 0 0    1   0   0   0   0   1   0   0   0
+1 0 0    0   0   1   0   0   0   0   0   0
+0 0 0    1   0   0   0   0   0   0   0   0
+0 1 0    0   1   0   0   0   0   0   0   0
+1 0 0    0   0   1   1   1   1   0   0   0
+1 1 1    1   1   1   0   0   0   1   0   0
+1 0 0    0   0   0   0   0   0   1   0   0
+1 0 0    0   0   0   0   0   0   1   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

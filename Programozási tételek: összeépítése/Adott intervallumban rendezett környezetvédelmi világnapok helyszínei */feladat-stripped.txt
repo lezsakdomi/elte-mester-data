@@ -1,0 +1,70 @@
+
+
+    Adott intervallumban rendezett környezetvédelmi világnapok
+                            helyszínei
+Június 5. a környezetvédelmi világnap. E nap egyik különlegessége, hogy minden évben más or-
+szág ad otthont a világnaphoz kapcsolódó rendezvények számára. A rendezvényekről a követke-
+zőket tudjuk: mely évben, hol volt, milyen mottót találtak ki hozzá. Voltak olyan évek is, amikor a
+rendezvényhez nem rendeltek mottót, sőt – sajnálatos módon – még az ország neve is a feledés
+homályába veszett. Az adataink összekeveredtek (nincs feltétlenül időrendbe szedve), de az felte-
+hető, hogy bármely év legfeljebb egyszer szerepel az adatok között.
+Írj programot, amely az adatok ismeretében megadja, azon országok számát, és sorolja is föl a ne-
+vüket, amelyek két adott év között adtak otthont a világnapi eseményeknek (beleértve a két adott
+évet is)!
+Bemenet
+A standard bemenet 3 részből áll. Az első néhány sor az országnevek felsorolását tartal-
+mazza: első sora a darabszáma (1≤N≤20), majd soronként a nevek (lehet több szóból álló szö-
+veg:; pl. „Egyesult Kiralysag”). A második rész első sorában a rendezvények száma (1≤R≤40);
+alatta az egyes rendezvények leírása következik. Minden rendezvényt 3 sor határoz meg. Első sora
+egy évszám (1900≤E≤2010) és egy ország előző blokkbeli sorszáma (1≤S≤N). Ha az ország
+nevét nem ismerjük, akkor 0 a második szám. A második sorban egy mondat van, ami lehet üres
+szöveg is, ha nincs mottó. A bemenet harmadik része egyetlen sort tartalmaz: két évszámot
+(1900≤év1év2≤2010).
+Kimenet
+A standard kimenet első sorába azon országok számát és nevét kell kiírni, amelyek a két
+adott év között adtak otthont a világnapi eseményeknek (beleértve a két adott évet is)! Ha egy
+ilyen sem volt, akkor a válasz: „0 NINCS”. A felsorolásban nem lehet ismétlődés; az
+„anonimokat” ne vedd figyelembe! Az országok felsorolási sorrendje egyezzen meg a bemenet el-
+ső blokkbeli sorrenddel!
+Példa
+Bemenet                                          Kimenet
+6                                                0 NINCS
+Algeria
+Thaifold
+Norvegia
+Egyesult Kiralysag
+Oroszorszag
+Kenya
+5
+1988
+2
+
+1986
+0
+
+2006
+1
+Sivatagos es …
+1994
+4
+
+2007
+
+
+                                             1. oldal
+Programozási tételek összeépítése                  *
+
+3
+Olvado jeg
+2007 2007
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                        2. oldal
+

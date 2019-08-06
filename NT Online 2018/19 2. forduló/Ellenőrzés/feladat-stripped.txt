@@ -1,0 +1,36 @@
+
+
+                                       Ellenőrzés
+Egy véletlenszám generátor 1 és M közötti egész számot képes előállítani. Kaptunk N véletlen-
+számot, ami „véletlenszerűségének” ellenőrzéséhez K kérdést tehetünk fel. Minden kérdésben azt
+fogalmazhatjuk meg, hogy egy Ai érték két szomszédos előfordulása között maximum hány Bi
+érték fordul elő.
+Készíts programot, amely minden kérdésre megadja, hogy egy Ai érték két szomszédos előfordu-
+lása között maximum hány Bi érték fordul elő!
+Bemenet
+A standard bemenet első sorában a véletlenszámok száma (2≤N≤10 000), a maximális
+véletlenszám értéke (2≤M≤100) és a kérdések száma (1≤K<10 000) van. A második sorban az
+N véletlenszám van (1≤Vi≤M). A következő K sorban egy-egy kérdésben szereplő Ai és Bi szám
+van (1≤Ai≠Bi≤M).
+Kimenet
+A standard kimenet K sorába a kérdésekre adott válaszokat kell írni! Ha a sorozatban
+nincs a kérdésben szereplő két egyforma Ai érték, akkor arra a kérdésre -1 választ kell adni!
+Példa
+Bemenet                                        Kimenet
+12 10 5                                        2
+7 3 7 4 5 5 7 5 7 3 3 7                        3
+7 3                                            0
+3 5                                            -1
+5 3                                            1
+8 7
+5 7
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

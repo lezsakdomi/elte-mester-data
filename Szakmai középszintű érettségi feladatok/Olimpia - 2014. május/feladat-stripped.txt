@@ -1,0 +1,57 @@
+
+
+                                             Olimpia
+Ebben a feladatban egy nyári olimpia döntőinek adatait kell elemezni a következők szerint:
+        Az olimpia július 28-án kezdődött, és augusztus 12-én fejeződött be. (Július 31 napos.)
+        Minden sportághoz naponként ismert a sportágból rendezett döntők száma.
+Írj programot, amely
+   1.   Meghatározza, hogy hány napon rendeztek atlétikából (‘atletika’) döntőt,
+   2.   kiszámítja, hány aranyérmet osztottak úszásból (‘uszas’), azaz hány döntőt rendeztek,
+   3.   megadja, hogy hányadikán volt a legtöbb döntő,
+   4.   kiszámítja, hogy összesen hány döntőt rendeztek az olimpián,
+   5.   megadja, hogy július 29-én hány döntő volt!
+Bemenet
+A standard bemenet legfeljebb 50 sorában egy-egy sportág leírása található. Minden sorban
+a sportág nevét (angol kisbetűk, szóköz, kötőjel) a naponként rendezett döntők száma követi a
+minta szerint. Az értékek pontosvesszővel vannak elválasztva.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az atlétikai (‘atletika’) döntőt tartalmazó napok számát kell kiírni!
+2. részfeladat: Az úszás (‘uszas’) döntők számát kell kiírni!
+3. részfeladat: A legtöbb döntőt tartalmazó nap dátumából a nap értékét kell kiírni! (Egyértelműen
+azonosítja a napot.) Több maximális esetén a legkorábbit.
+4. részfeladat: Az összes döntő számát kell kiírni!
+5. részfeladat: A július 29-i döntők számát kell kiírni!
+Példa
+ Bemenet                                                                       Kimenet
+ atletika;0;4;0;0;1;0;1;2;4;2;1;3;4;3;2;3                                      #
+ sikvizi kajak-kenu;3;3;2;4;1;4;1;4;2;4;2;1;4;4;3;3                            12
+ uszas;1;4;0;2;2;0;0;2;4;1;2;3;0;2;4;4                                         #
+                                                                               31
+                                                                               #
+                                                                               29
+                                                                               #
+                                                                               106
+                                                                               #
+                                                                               11
+
+
+
+
+                                               1. oldal
+Informatikai alapismeretek – középszint              2014. május 20.
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

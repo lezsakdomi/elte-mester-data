@@ -1,0 +1,29 @@
+
+
+                                 Foglalt napok száma
+Egy rendezvénysorozatra N termet lehetett lefoglalni, M napra. Ismerjük a rendezvények beosz-
+tását: melyik termet, hányadik naptól, hányadik napig foglalták le.
+Írj programot, amely megadja az egyes termek foglalt napjai számát!
+Bemenet
+A standard bemenet első sora a termek (1≤N≤100), a napok (1≤M≤1000) és a foglalások
+számát tartalmazza (1≤K≤1000). A következő K sorban a foglalások teremsorszáma (1≤Ti≤N),
+első és utolsó napja (1≤Ei≤Ui≤M) található. Nincs ütköző, átfedő teremfoglalás!
+Kimenet
+A standard kimenet egyetlen sora N száma az N terem foglalt napjai száma legyen!
+Példa
+Bemenet                                         Kimenet
+3   10 5                                        5 7 5
+1   4 8
+2   3 5
+3   8 8
+2   6 9
+3   1 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,39 @@
+
+
+                                         Kincselosztás
+Egy kincskereső N gyémántot talált. Több mint N segítője volt ezért nem adhat belőle min-
+denkinek. A segítőket sorba rendezte (saját maga az első) és úgy szeretné elosztani a gyémántokat,
+hogy a sorban hátrább álló ne kaphasson több gyémántot, mint bármely nála előbb álló. Így min-
+den lehetséges elosztás egy M elemű X számsorozat, ahol
+                                  M
+                             N   X i , ahol i1  i  M  :X i  X i 1 .
+                                  i 1
+
+A lehetséges elosztásokat lexikografikusan csökkenő sorba rendezzük.
+Készíts programot, amely kiszámolja a lexikografikusan csökkenő sorrendben I-edik kincselosz-
+tást, valamint egy adott kincselosztásra megadja a lexikografikusan csökkenő sorrendben követ-
+kezőt, illetve előzőt (feltehető, hogy ilyen biztosan van)!
+Bemenet
+A standard bemenet első sorában a gyémántok száma (1N150) és az I szám
+(1I100 000 000) van, egy szóközzel elválasztva. A második pedig megad egy kincselosz-
+tást: az első M (1MN) szám megmutatja, hogy hányan kapnak gyémántot, az azt követő M+1
+szám pedig a segítők által kapott gyémántok számát.
+Kimenet
+A standard kimenet első sorába az I-edik kincselosztást leíró számok kerüljenek! A má-
+sodik sorba a bemenet második sorában levőt lexikografikusan követő, a harmadikba pedig a
+lexikografikusan megelőző kincseloszlást kell írni! Mindhárom sorban legfeljebb N szám lehet,
+monoton nemnövekvően.
+Példa
+Bemenet                                           Kimenet
+18 9                                              14 3 1
+5 8 7 1 1 1                                       8 6 4
+                                                  8 7 2 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,34 @@
+
+
+                                      Konferencia
+Egy konferencián párhuzamosan K szekcióban tarthatnak előadást. Minden szekció L egymás
+utáni előadásból áll. Az előadásokat témák szerint csoportosították, összesen N darab témát ne-
+veztek meg. Teljesül, hogy K*L=az előadások száma.
+Készíts programot, amely úgy osztja a témákat szekciókba, hogy minden téma előadásai azonos
+szekcióban, egymás után legyenek!
+Bemenet
+A standard bemenet első sorában a szekciók száma (1K10), az egymás utáni blokkok
+száma (1L10), valamint a témák száma (1N50) van, egy-egy szóközzel elválasztva. A kö-
+vetkező N sorban az egyes témák neve (pontosan 5 karakteren) s tőle egy szóközzel elválasztva a
+témához tartozó előadások száma szerepel (1DBiL).
+Kimenet
+A standard kimenetre pontosan K sort kell írni, az i-edik sorba az i-edik szekció téma-
+nevei kerüljenek, a beosztás sorrendjében, azaz pontosan L darab 5 karakteres név, egy-egy szó-
+közzel elválasztva! Tudjuk, hogy biztosan létezik megoldás.
+Példa
+Bemenet                                        Kimenet
+2 3 4                                          BBBBB BBBBB AAAAA
+AAAAA    1                                     CCCCC CCCCC DDDDD
+BBBBB    2
+CCCCC    2
+DDDDD    1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a témák száma N≤10
+
+
+
+
+                                           1. oldal
+

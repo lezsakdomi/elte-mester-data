@@ -1,0 +1,35 @@
+
+
+                                       FAT fájlrendszer
+A FAT fájlrendszer fontos eleme, hogy az adatokat ún. clusterekben tárolja el. A cluster mérete
+512 Bájt (= 1 szektor) és kettő valamilyen hatványának, szorzata. Általában KiloBájtban adják meg.
+A cluster lehet pl. 4 szektor (=4*512 Bájt= 2 KB), 8, 16 stb., de nem lehet 3, 5, 6 stb. szektoros. A
+FAT tehát minden fájt feldarabol cluster méretű szeletekre, eltárolja, majd bejegyzi egy táblázatba,
+hogy hova is tette a lemezen. Ha a fájl csak több clusterben fér el, azokat nem feltétlenül egymás
+mellett helyezi el. A táblázatból bármikor vissza tudja állítani az eredeti sorrendet. Egy clusterbe
+egyidejűleg csak egy fájl írhat. Ha nem tölti ki teljesen, akkor az a terület más célra nem használható.
+Egy 100 bájtos fájl is lefoglal tehát 2 KB-ot, ha ekkora a cluster.
+Írj programot, mely megadja a cluster mérete, illetve a megadott fájlok mérete alapján az általuk
+lefoglalt terület méretét!
+Bemenet
+A standard bemenet első sora tartalmazza a cluster méretét kilobájtban (1≤N≤512), a
+második pedig a fájlok számát (1≤M≤10 000). A következő M sor tartalmazza az egyes fájlok
+nevét és méretét bájtban.
+Kimenet
+A standard kimenetre a fájlok által lefoglalt terület kerüljön kilobájtban!
+Példa
+Bemenet                                                Kimenet
+2                                                      8
+3
+alma 1024
+korte 2048
+citrom 2049
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

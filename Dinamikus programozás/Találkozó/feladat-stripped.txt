@@ -1,0 +1,37 @@
+
+
+                                           Találkozó
+Egy téglalap alakú földterület minden mezőjén szamócát lehet szedni. Ádám a terület bal felső
+sarkából indul, a jobb alsó sarokba tart és csak jobbra és lefelé léphet. Éva a bal alsó sarokból in-
+dul, a jobb felső sarokba tart és csak jobbra és felfelé léphet. Amerre haladnak, leszedik az összes
+szamócát. Útjuk során egyetlen mezőn szabad találkozniuk (azaz bármely más mezőt csak az
+egyik érinthet), az itt levő szamócát közösen elfogyasztják (ha bármelyikük előbb érne ide, meg-
+várja a másikat, az itt lévő nem számít bele a begyűjtött szamócába).
+Készíts programot, amely megadja, hogy Ádám és Éva összesen maximum mennyi szamócát tud
+szedni és így melyik mezőn találkoznak!
+Bemenet
+A standard bemenet első sorában a terület sorai és oszlopai száma van (3≤N,M≤100). A
+következő N sor mindegyikében M szám található, az adott mezőn levő szamócák száma
+(1≤Si,j≤1000).
+Kimenet
+A standard kimenet első sorába az Ádám és Éva által együtt összegyűjthető szamócák
+maximális számát kell írni! A második sorba a találkozási hely sor- és oszlopindexét kell írni! A
+harmadik sorba Ádám útvonala leírása kerüljön: L betű, ha lefelé, J betű, ha jobbra lép! A negye-
+dik sorba Éva útvonala leírását kell tenni, F betű, ha felfelé, J betű, ha jobbra lép! Több megoldás
+esetén bármelyik megadható.
+Példa
+bemenet                                           kimenet
+4   4                                             54
+5   5   1   4                                     3 3
+1   5   4   4                                     JLLJJL
+1   5   6   5                                     JJFFJF
+4   4   4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

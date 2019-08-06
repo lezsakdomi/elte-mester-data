@@ -1,0 +1,34 @@
+
+
+                         Romló légszennyeződési értékek
+A város egy forgalmas pontján N napon keresztül minden nap mérték a légszennyeződés mérté-
+két reggel és este.
+Írj programot, amely megadja azon napok számát, amikor a reggeli érték nagyobb volt, mint az
+előző napi reggeli érték és az esti érték is nagyobb volt, mint az előző napi esti érték!
+Bemenet
+A standard bemenet első sorában a mérési napok száma (1≤N≤1000) van. A további N
+sor mindegyike két, egész számot tartalmaz egy szóközzel elválasztva, az első szám az adott na-
+pon reggel (1≤R≤300), a második pedig az este (1≤E≤300) mért szennyeződési érték.
+Kimenet
+A standard kimenet első sorába azon napok számát kell írni, amikor a reggeli érték na-
+gyobb volt, mint az előző napi reggeli érték és az esti érték is nagyobb volt, mint az előző napi es-
+ti érték!
+Példa
+Bemenet                                           Kimenet
+6                                                 1
+100 120
+200 122
+170 190
+100 222
+150 155
+75 60
+Korlátok
+Időlimit: 0,3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a bemenetek száma≤20
+
+
+
+
+                                              1. oldal
+

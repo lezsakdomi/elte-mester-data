@@ -1,0 +1,40 @@
+
+
+                                        Kockavilág
+Van N (1N10000) db azonos méretűkockánk (1, 2, ..., N számokkal jelöljük). A kockák vagy az
+asztalon vannak, vagy egy másik kocka tetején.
+Van egy robotkar, ami képes fentről megfogni a legfelső kockát és azt egy másik kocka tetejére
+vagy az asztalra helyezni. A cél az, hogy a robotkar segítségével úgy mozgassuk a kockákat, hogy a
+1. legyen legalul, a 2. az 1. kockán legyen, stb.
+Bemenet
+A standard bemenetelsősorában N értéke van. A további N sorban található, hogy az adott
+kocka melyik másik kocka tetején van. Ez a szám 0, ha a kocka az asztalon van. Tehát az
+állomány i-edik sorában lévő szám azt adja meg, hogy az i-1–edik kocka melyik kocka tetején van.
+Ha egy kocka a másik tetején van, az csak úgy lehet, hogy az érintkező oldaluk teljesen fedik
+egymást.
+Kimenet
+  A standard kimenetelső sorába a HIBAS szöveget, ha a bemenet valami oknál fogva
+nem megfelelő, egyébként a HELYES szót.
+Az állomány második sorától kezdődően a legkevesebb lépésszámú megoldást kell írni! (Ha több
+ilyen is van, akkor csak az egyiket.) Minden sorban két szám szerepeljen egy szóközzel
+elválasztva: melyik kockát melyikre kell tenni!
+Példa
+Bemenet                                          Kimenet
+                                                                            4
+4                                                HELYES
+2                   1           4                1 0                        3
+0                                                2 1
+0                   2           3                4 0                        2
+3                                                3 2
+                                                 4 3                        1
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

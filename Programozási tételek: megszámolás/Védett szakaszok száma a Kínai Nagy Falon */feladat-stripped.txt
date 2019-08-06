@@ -1,0 +1,36 @@
+
+
+                Védett szakaszok száma a Kínai Nagy Falon
+A Kínai Nagy Falon N őrhelyet létesítettek. Közülük azonban csak M helyen van őrség. Két
+szomszédos őrhely közötti fal védett, ha mindkét végén van őrség. Védett szakasznak nevezzük
+egymást követő védett falak nem bővíthető sorozatát.
+Készíts programot, amely megadja a védett szakaszok számát!
+Bemenet
+A standard bemenet első sorában az őrhelyek száma (1N100) és az őrségek száma
+(1M100) van, egy szóközzel elválasztva. A következő M sor az őrségek leírását tartalmazza,
+közülük az i-edik annak az őrhelynek a sorszáma, ahol az i-edik őrség van. Tudjuk, hogy minden
+helyen legfeljebb 1 őrség van.
+Kimenet
+A standard kimenet első sorába a védett szakaszok számát kell írni!
+Példa
+Bemenet                                        Kimenet
+15 9                                           3
+6
+3
+12
+11
+4
+5
+8
+15
+14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

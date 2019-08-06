@@ -1,0 +1,29 @@
+
+
+                                  Számpárok száma
+Ismerjük az első N természetes szám permutációját.
+Add meg a permutáció olyan számpárjainak számát, amire i<j és Ai<Aj!
+Bemenet
+A standard bemenet első sorában található N (maximum 100) értéke. Az ezt követő N sor-
+ban pedig az első N természetes szám egy permutációja van.
+Kimenet
+A standard kimenet első sorába ki kell írni az olyan számpárok számát, amire i<j és
+Ai<Aj!
+Példa
+Bemenet                                        Kimenet
+6                                              9
+4
+1
+5
+3
+2
+6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

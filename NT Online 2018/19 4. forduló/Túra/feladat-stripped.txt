@@ -1,0 +1,43 @@
+
+
+                                              Túra
+Egy vizitúrán a túrázók N kikötőben állnak meg. Minden kikötőben vehetnek fel élelmiszert, de
+legfeljebb annyit, amennyibe elfér a hajóban. A kikötők között a hajóban levő élelmiszert fo-
+gyaszthatják. Egyik kikötőből sem szeretnének több élelmiszert elvinni, mint amennyi feltétlenül
+szükséges az utolsó kikötőbe éréshez és a hajón minden szakasz kezdetén a ehető legkevesebb
+élelmiszer legyen.
+Készíts programot, amely megadja, hogy az első kikötőből indulva az egyes kikötőkben minimum
+mennyi élelmiszert kell felvenniük, hogy az utolsó kikötőig elérjenek!
+Bemenet
+A standard bemenet első sorában a kikötők száma (3≤N≤100 000) és a hajó kapacitása
+(1≤H≤1000) van. A következő N-1 sorban egy-egy kikötőben levő élelmiszer mennyisége
+(1≤Vani≤1000) és a következő kikötőig eljutáshoz szükséges élelmiszer mennyisége
+(1≤Kelli≤H) van.
+Kimenet
+A standard kimenet első sorába az N-1 kikötőkben felveendő minimális élelmiszer meny-
+nyiségét kell kiírni, amivel el lehet jutni az elsőből az utolsó kikötőig! Ha nem lehet eljutni az N.
+kikötőig, akkor annak a kikötőnek a sorszámát kell kiírni, ameddig maximum el lehet jutni!
+Példa
+Bemenet                                           Kimenet
+7 100                                             8 6 9 11 6 3
+10 5
+                                                  Magyarázat: az első kikötőben levő mennyiség-
+6 8
+                                                  ből kell fedezni a második hiányát (2) és a har-
+9 10
+                                                  madik hiányát (1). A negyedik kikötőből eggyel
+20 10
+                                                  többet kell vinni tartaléknak a hatodik kikötő-
+6 5
+                                                  höz. Az ötödikből szintén eggyel többet, így
+3 5                                               hatodik szakaszra is lesz 5 adag élelmiszer.
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

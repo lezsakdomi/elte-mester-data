@@ -1,0 +1,37 @@
+
+
+                   Szigeteken lévő hegycsúcsok magasságai
+Egy repülőgéppel Európából Amerikába repültünk. Az út során egyenlő távolságonként mértük a
+felszín tengerszint feletti magasságát. Az első és utolsó mérést vagy kontinens, vagy tenger fölött
+mértük. Pozitív magasságot ott mértünk, ahol szárazföld volt, 0 magasságot pedig ott, ahol ten-
+ger.
+
+
+
+
+Három egymást követő méterben mért mérési eredményt jelöljön A, B és C! Ekkor B
+    bal oldali partot jelez, ha B>0 és A=0;
+    jobb oldali partot jelez, ha B>0 és C=0;
+    hegycsúcsot jelez, ha B>500, továbbá 0<A<B és B>C>0.
+Készíts programot, amely megadja a szigeteken lévő hegycsúcsok magasságait!
+Bemenet
+A standard bemenet első sorában a mérések száma van (2≤N≤10 000). A második sor-
+ban N szám szerepel, mindegyik egy méterben mért tengerszint feletti magasság (0≤M<9000),
+melyek egymást időrendben követik – az első és az utolsó biztosan nem 0.
+Kimenet
+A standard kimenet első sorába a szigeteken lévő hegycsúcsok számát kell írni, a máso-
+dikba, amennyiben volt szigeten hegycsúcs, azok magasságait, abban a sorrendben, ahogy a méré-
+sek során következtek!
+Példa
+Bemenet                                          Kimenet
+12                                               1
+2 8 0 4 620 3 0 0 2 504 6 3                      620
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                             1. oldal
+

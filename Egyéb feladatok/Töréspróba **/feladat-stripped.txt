@@ -1,0 +1,31 @@
+
+
+                                        Töréspróba
+Egy ismeretlen anyag szilárdságát kell meghatározni, amely pozitív egész számérték. M számú
+anyagminta áll rendelkezésre, továbbá van egy berendezés, amellyel töréspróbát végezhetünk egy
+anyagmintán. A töréspróba abból áll, hogy a tesztelő eszközt beállítjuk egy adott erőre és ellen-
+őrizzük, hogy az anyagminta kibírja-e ezt az erőhatást. Ha az anyagminta szilárdsága kisebb, mint
+a beállított erő érték, akkor az anyagminta tönkremegy és a továbbiakban nem használható törés-
+próbára, egyébként az anyagminta ép marad és a továbbiakban ismét felhasználható töréspróbára.
+Ismerjük a vizsgálandó anyag lehetséges legnagyobb szilárdsági értékét. A tesztelő eszköz tetsző-
+leges nagyságú erővel képes töréspróbát végezni.
+Készíts programot, amely kiszámítja, hogy mennyi az a legkevesebb töréspróba, amellyel biztosan
+kideríthető az anyag szilárdsága, bármekkora egész szám is a megadott határon belül!
+Bemenet
+A standard bemenet egyetlen sorában az anyagminták száma (1M100) és a vizsgálandó
+anyag lehetséges legnagyobb szilárdsága (2H4 000 000) van.
+Kimenet
+A standard kimenet egyetlen sorába a legkevesebb töréspróbák számát kell írni, amellyel
+az anyag szilárdsága biztosan kideríthető töréspróbákkal!
+Példa
+Bemenet                                         Kimenet
+4 200                                           9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

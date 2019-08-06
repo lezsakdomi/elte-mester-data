@@ -1,0 +1,26 @@
+
+
+                                          Mérések
+Egy fizikai kutatóintézetben gyakran végeznek olyan méréseket, amelyek kiértékelése során fontos
+szempont, hogy egy-egy érték hányszor fordul elő a méréssorozatban.
+Készíts programot, amely lehetőséget ad egy méréssorozat ilyen jellegű kiértékelésére!
+Bemenet
+A standard bemenet első sora tartalmazza a mért adatok számát (1≤N≤100 000). A kö-
+vetkező sor N darab mérés eredményét (-1 000 000≤Ei≤1 000 000) tartalmazza.
+Kimenet
+A standard kimenet soraiba egy-egy mért adat előfordulásának darabszámát kell írni, a
+mért adatok szerint növekvő sorrendben!
+Példa
+Bemenet                                             Kimenet
+6                                                   2 3
+2 5 2 4 5 2                                         4 1
+                                                    5 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

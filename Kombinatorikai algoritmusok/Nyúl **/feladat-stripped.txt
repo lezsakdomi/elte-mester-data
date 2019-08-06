@@ -1,0 +1,37 @@
+
+
+                                          Nyúl
+Nyulakat tenyésztünk: minden nyúl L évig él, a K,K+1,…,L éves nyulak szaporodnak, minden
+ilyen évben az i éves nyulaknak Ri utódjuk születik. Tudjuk, hogy kezdetben hány 1 éves, 2-
+éves, … L éves nyulunk van.
+Készíts programot, amely megadja, hogy N év után hány nyulunk lesz! Mivel ez a szám nagyon
+nagy is lehet, a számot MOD 1 000 000 kell kiírni!
+Bemenet
+A standard bemenet első sora az évek számát (1≤N≤100), a nyúl maximális korát
+(1≤L≤10) és az első évet tartalmazza, amikor szaporodhat (1≤K≤L). A következő L sorból
+az i-edikben a kezdetben levő i éves nyulak száma van (0≤DBi≤100), amit i≥K esetén az
+utódjai Ri száma követ.
+Kimenet
+A standard kimenet egyetlen sorába az N év után élő nyulak számát kell írni (MOD
+1 000 000)!
+Példa
+Bemenet                                       Kimenet
+2   5 3                                       45
+2
+3
+4   1
+5   2
+6   1
+Magyarázat a példához
+0. év: 2+3+4+5+6=20 nyúl
+1. év: 20+2+3+4+5=34 nyúl
+2. év: 16+20+2+3+4=45 nyúl
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

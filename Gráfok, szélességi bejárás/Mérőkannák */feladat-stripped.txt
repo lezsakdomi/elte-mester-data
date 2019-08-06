@@ -1,0 +1,35 @@
+
+
+                                           Mérőkannák
+Egy gazdának két kannája van, az egyik A literes, a másik pedig B. Szeretne kimérni pontosan L
+liter vizet. Az alábbi műveleteket lehet végezni a kimérés során:
+   1)   Az A-literes kanna teletöltése
+   2)   A B-literes kanna teletöltése
+   3)   Az A-literes kanna kiürítése
+   4)   Az B-literes kanna kiürítése
+   5)   Áttöltés az A-literesből a B-literesbe (amíg az tele nem lesz, ill. van A-ban)
+   6)   Áttöltés a B-literesből az A-literesbe (amíg az tele nem lesz, ill. van B-ben)
+Írj programot, amely meghatároz egy legkevesebb lépésből álló kimérést, aminek az eredménye-
+ként az A-literes kannában L liter lesz!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a két kanna űrtartalmát: (0<A,
+B≤1000). A második sor a kimérendő mennyiséget (0<L≤A) tartalmazza.
+Kimenet
+A standard kimenet első sorába a kimérés lépéseinek minimális M számát kell írni! A má-
+sodik sor pontosan M egész számot tartalmazzon egy-egy szóközzel elválasztva, a kimérés lépése-
+it! Ha nincs megoldás, akkor az első és egyetlen sor a 0 számot tartalmazza! Több megoldás ese-
+tén bármelyik megadható.
+Példa
+Bemenet                                              Kimenet
+9 4                                                  8
+6                                                    1 5 4 5 4 5 1 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤200
+
+
+
+
+                                                 1. oldal
+

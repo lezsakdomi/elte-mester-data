@@ -1,0 +1,39 @@
+
+
+                                         Török szultán
+A Török szultán születésnapján gyönyörű ajándékot kapott. Annyira megörült, hogy rögtön valami
+jót akart cselekedni. Leküldte hát N fős szolgaseregének első szolgáját a börtönbe. Meghagyta neki,
+hogy mind az N cella ajtaját nyissa ki. Lett is nagy riadalom. A börtönőrök rettegtek. Ha szabadon
+engedik a rabokat, és őfelsége kedve változik, fejüket veszi. Leült hát N darab őr a nyitott cellák
+elé. Teljesítették is a szultán parancsát, de a rabokat sem engedték szabadon. Igazuk lett. A szultán
+megharagudott, mert a következő ajándék nem tetszett. Leküldte a második szolgát. Azt paran-
+csolta, minden második ajtót zárjon be. Kisvártatva meggondolta magát, és leküldte a harmadik
+szolgát, hogy minden harmadik ajtót nyissa ki, ha zárva van, és zárja be, ha nyitva van. Majd le-
+küldte a negyedik szolgát, hogy minden negyedik ajtón változtasson. Aztán az ötödiket, hatodi-
+kat… és így tovább egészen addig, míg az utolsó, a N. szolgának azt parancsolta: Menj le és az N.
+cellát nyisd ki, ha zárva van, De ha nyitva lenne, akkor zárd be. Így is lett. Azzal a szultán nyújtózott
+egyet, és lefeküdt aludni.
+A börtönparancsnok tudta, aznap már több parancs nem jön, és a szultán soha nem vonja vissza
+azokat a parancsait, amit előző nap adott. Szabadon engedte hát azokat, akiknek a cellája nyitva
+volt. Kiket is?
+Írj programot, mely szimulálja a fenti eseményeket, és megadja, mely cellák ajtaja lesz nyitva a nap
+végén!
+Bemenet
+A standard bemenet első sora tartalmazza az szolgák számát (1≤N≤1500).
+Kimenet
+A standard kimenetre növekvő sorrendben azon cellák sorszáma kerüljön, melyek nyitva
+lesznek a nap végén!
+Példa
+Bemenet                                                 Kimenet
+10                                                      1
+                                                        4
+                                                        9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,51 @@
+
+
+                                              Őrök
+Egy N*M-es téglalap alakú teremben K őr sétál az őrzött területén, vagy vízszintes, vagy függőle-
+ges irányban. Mindegyik őr L lépésre távolodhat el a kiinduló helyétől, azaz pontosan 2*L+1 me-
+zőt őriz. A vízszintesen haladó őr először balra indul, a függőlegesen haladó pedig felfelé, ha az
+őrzött terület végére ér, akkor visszafordul.
+Készíts programot, amely megadja, hogy hány helyen találkozhat két őr, melyik melyikkel és mi-
+kor! Két őr akkor találkozik, ha egy időegységben ugyanazon a pozíción van!
+Bemenet
+A standard bemenet első sorában a téglalap sorai (1≤N≤100) és oszlopai (1≤M≤100)
+száma, valamint az őrök száma (1≤K≤10) van, egy-egy szóközzel elválasztva. A következő K sor
+egy-egy őrt ír le. A sor első karaktere V, ha az őr vízszintesen, illetve F, ha függőlegesen halad. A
+betűt követi az őr sorának (1≤S≤N) és oszlopának (1≤O≤M) sorszáma, majd pedig az a távolság
+(1≤L≤10), amennyire az őr eltávolodhat kezdő helyétől. (Az őr biztosan a téglalapon belül ma-
+rad.)
+Kimenet
+A standard kimenet első sorába a találkozási helyek T számát kell írni! A következő T sor
+mindegyike egy találkozást írjon le! Az első két szám a két találkozó őr sorszáma, a következő ket-
+tő a találkozás sorának (1≤TS≤N) és oszlopának (1≤TO≤M) sorszáma, az ötödik pedig a kezdő-
+pillanattól az első találkozásig eltelt idő (ha a két őr kezdetben ugyanazon a helyen áll, akkor ez a
+szám 0)! Minden őr-párra csak az első találkozást szabad megadni! A találkozásokat időrendi sor-
+rendben kell kiírni, az azonos időbeli találkozások sorrendje tetszőleges!
+Példa
+Bemenet                                           Kimenet
+100 100 4                                         2
+F 10 10 3                                         3 4 14 5 3
+F 12 10 3                                         2 3 14 10 14
+V 14 8 6
+V 14 4 1
+                                                                         O         O
+Korlátok
+                                                                                        O
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB                                                                     O
+                                                               9
+                                                               8
+                                                               7
+                                                               6
+                                                               5
+                                                               4
+                                                               3
+                                                               2
+                                                               1
+                                                                   1 2 3 4 5 6 7 8 9
+
+
+
+
+                                              1. oldal
+

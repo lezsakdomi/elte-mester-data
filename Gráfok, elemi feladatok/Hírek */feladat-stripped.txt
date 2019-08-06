@@ -1,0 +1,36 @@
+
+
+                                              Hírek
+Egy osztályban N tanuló van. Mindenki ismeri valahány osztálytársának telefonszámát (ez nem
+mindig kölcsönös). Azt mondjuk, hogy egy A tanuló egy B tanulónak el tud juttatni egy hírt, ha A
+fel tud hívni valakit, aki fel tud hívni egy további tanulót, …, s végül az utolsó fel tudja hívni B-t.
+    Írj programot, amely megadja, hogy
+A. hány olyan tanulópár van, akik üzenetet küldhetnek egymásnak;
+B. hány olyan tanuló van, aki mindenkinek tud üzenetet küldeni!
+Bemenet
+A standard bemenetelső sorában a tanulók N (1≤N≤400) száma van. A következő N sor
+mindegyikében N ’i’ vagy ’n’ betű van, egy-egy szóközzel elválasztva: Ha az i-edik sor j-edik
+karaktere ’i’ betű, az azt jelenti, hogy az i-edik tanuló ismeri a j-edik tanuló telefonszámát.
+Kimenet
+A standard kimenetelsősorába az A feladat megoldását, a második sorába pedig a B
+feladat megoldását kell írni!
+Példa
+Bemenet                                            Kimenet
+5
+i   i   i   i   i                                  2      (az 1-3, illetve a 4-5)
+n   i   n   n   n                                  2      (az 1. és a 3.)
+i   n   i   n   i
+n   n   n   i   i
+n   n   n   i   i
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                               1. oldal
+

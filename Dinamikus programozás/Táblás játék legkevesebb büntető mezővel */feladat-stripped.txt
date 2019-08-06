@@ -1,0 +1,44 @@
+
+
+                        Táblás játék legkevesebb büntető mezővel
+Tekintsük azt az egyszemélyes játékot, amelyet egy N sorból és M oszlopból álló négyzetrácsos
+táblán lehet játszani. A tábla minden mezője vagy üres, vagy büntető mező, vagy csapda mező. A
+játék célja az, hogy egy bábut a lehető legkevesebb büntető mezőre lépve el kell juttatni tábla
+(N,M) koordinátájú jobb alsó sarkába.
+A játékszabály a következő:
+       Kezdetben a bábu a tábla (1,1) koordinátájú bal felső sarkában áll.
+       Csapda mezőre nem lehet lépni.
+       Egy lépésben a bábut csak szomszédos mezőre lehet mozgatni, vagy jobbra, vagy lefelé.
+       A játék akkor ér véget, ha a bábu az (N,M) célmezőre kerül, vagy ha nem lehet lépni.
+Írj programot, amely kiszámít egy olyan lépéssorozatot, amely a lehető legkevesebb büntető me-
+zőn keresztül haladva eljuttatja a bábut az (N,M) koordinátájú célba!
+Bemenet
+A standard bemenet első sorában a tábla sorainak és oszlopainak száma (1N,M400)
+van. A következő N sor a kezdeti táblaállást tartalmazza. Minden sorban pontosan M darab szám
+van. Ha a sorban a j-edik szám értéke 0, az azt jelenti, hogy a mező üres, az 1 érték azt, hogy a
+mező büntető mező, a 2 pedig azt, hogy a mező csapda.
+Kimenet
+A standard kimenet első sorába a lehető legkevesebb büntető mezők számát kell írni,
+amelyen át kell haladni, hogy a bábut az (N,M) célmezőbe juttassuk! Ha nem lehet eljutni az
+(N,M) célmezőre, akkor a -1 értéket kell kiírni! Ha el lehet jutni a célmezőre, akkor a második
+sor egy olyan lépéssorozatot tartalmazzon, amely a lehető legkevesebb büntető mezőn keresztül
+juttatja el a bábut a célba. (Az indulási mezőt nem kell beszámítani, ha az büntető mező). A jobb-
+ra lépés jele a 'J', a lefelé lépés jele pedig az 'L' karakter. A karakterek között nem lehet szó-
+köz, és az utolsó karakter után sem lehet szóköz! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+5   6                                           2
+1   1   2   1   0   1                           JLLJJJJLL
+2   0   2   1   2   1
+0   0   1   0   0   0
+2   1   0   0   1   0
+0   0   1   2   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                             1. oldal
+

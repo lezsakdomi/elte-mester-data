@@ -1,0 +1,40 @@
+
+
+                             Leglaposabb csúcsú sziget
+Egy repülőgéppel Európából Amerikába repültünk. Az út során egyenlő távolságonként mértük a
+felszín tengerszint feletti magasságát. Az első és utolsó mérést vagy kontinens, vagy tenger fölött
+mértük. Pozitív magasságot ott mértünk, ahol szárazföld volt, 0 magasságot pedig ott, ahol ten-
+ger.
+
+
+
+
+Három egymást követő méterben mért mérési eredményt jelöljön A, B és C! Ekkor B
+    bal oldali partot jelez, ha B>0 és A=0;
+    jobb oldali partot jelez, ha B>0 és C=0;
+    csúcsot jelez, ha 0<A<B és B>C>0.
+A szomszédos mérési eredmények különbségét meredekségnek tekintjük, egy csúcs meredekségét
+pedig a meredekebbik oldal határozza meg.
+Készíts programot, amely meghatározza az egyik legkevésbé meredek csúcsot tartalmazó sziget
+bal és jobb oldali partját!
+Bemenet
+A standard bemenet első sorában a mérések száma van (2≤N≤10 000). A második sor-
+ban N szám szerepel, mindegyik egy méterben mért tengerszint feletti magasság (0≤M<9000),
+melyek egymást időrendben követik – az első és az utolsó biztosan nem 0.
+Kimenet
+A standard kimenet első és egyetlen sorába az egyik leglaposabb csúcsot tartalmazó sziget
+bal és jobb oldali partját jelző mérések sorszámai szerepeljenek, vagy 0, ha nem mutatható ki csú-
+csos sziget!
+Példa
+Bemenet                                          Kimenet
+12                                               3 6
+3 0 1 2 5 3 0 4 5 2 0 2
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                             1. oldal
+

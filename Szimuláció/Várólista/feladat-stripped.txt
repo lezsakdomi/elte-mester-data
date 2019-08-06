@@ -1,0 +1,38 @@
+
+
+                                          Várólista
+Járóbeteg ellátásra egy napon N beteg jelent meg. Minden beteg érkezésekor feljegyezték, hogy
+mikor érkezett, és azt is, hogy hány percig tartott a kezelése. A betegeket érkezési sorrendben fo-
+lyamatosan kezeli egy orvos, tehát ha P perckor kezdte meg egy beteg kezelését, ami K percig tar-
+tott, akkor a következő beteg kezelését P+K perctől végezhette. Akit kezelnek, a kezelés alatt már
+nem számít várakozónak, azaz ha pl. valakit azonnal fogadnak, az semmit sem várakozik.
+Készíts programot, amely megadja, hogy
+A. melyik beteg várakozott a leghosszabb ideig,
+B. mennyi az egy időben várakozó betegek maximális száma!
+Bemenet
+A standard bemenet első sorában a betegek száma (1≤N≤1000) van. A további N sor
+mindegyikében egy-egy beteg érkezési ideje (0≤Erk≤720) és kezelési ideje (1≤Kez≤40) van, az
+érkezések sorrendjében. Egy időpontban több beteg is érkezhetett.
+Kimenet
+A standard kimenet első sorába annak a betegnek a sorszámát kell írni, aki a leghosszabb
+ideig várakozott! Ha több ilyen lenne, akkor ezek közül a legkisebb sorszámút kell megadni! Ha
+senki nem várakozott, akkor a 0 számot kell kiírni! A második sorba az egy időben várakozó be-
+tegek maximális számát kell kiírni!
+Példa
+bemenet                                           kimenet
+5                                                 5
+1   3                                             3
+2   4
+3   2
+3   5
+4   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                             1. oldal
+

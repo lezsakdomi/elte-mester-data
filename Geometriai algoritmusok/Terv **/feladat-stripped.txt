@@ -1,0 +1,41 @@
+
+
+                                              Terv
+Egy nagyszabású építkezés azzal kezdődött, hogy kijelölték az építési területen az építhető épüle-
+tek lehetséges helyeit, akár egymást átfedően is. Minden lehetséges épület alaprajza téglalap alakú,
+megadható egy rögzített koordinátarendszerben az épület bal alsó sarkának (x, y) koordinátáival
+és az x tengellyel, illetve az y tengellyel párhuzamos oldalainak dx, illetve dy hosszával. Az épí-
+tendő épületeket egymást nem takaró módon kell elhelyezni, azaz az origóból nézve egyik sem ta-
+karhatja bármely másik kiválasztott épület egyetlen pontját sem.
+Írj programot, amely kiszámítja az egymást nem takaró módon elhelyezhető épületek legnagyobb
+számát.
+Bemenet
+A standard bemenet első sora a lehetséges épület elhelyezések (1≤N≤100 000) számát
+tartalmazza. A további N sor mindegyike egy lehetséges épület elhelyezés adatait tartalmazza
+(0<x,y,dx,dy≤106). Az első két szám az épület bal alsó sarkának x, illetve y koordinátája, a
+harmadik szám az x tengellyel, a negyedik pedig az y tengellyel párhuzamos oldal hossza.
+Kimenet
+A standard kimenet első sora az egymást nem takaró módon elhelyezhető épületek legna-
+gyobb K számát tartalmazza! A második sorban pontosan K számot kell megadni, a kiválasztott
+elhelyezéseket tetszőleges sorrendben! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+9                                                4
+3 11 2 3                                         2 3 4 8
+1 8 2 4
+4 2 1 1
+6 10 2 2
+6 6 1 3
+6 6 1 7
+7 9 2 3
+11 1 3 2
+7 4 2 1
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

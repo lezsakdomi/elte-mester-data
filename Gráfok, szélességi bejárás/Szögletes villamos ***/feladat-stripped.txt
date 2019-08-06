@@ -1,0 +1,62 @@
+
+
+                                     Szögletes villamos
+Egy négyzetrács-szerkezetű városban különleges villamosok közlekednek, ugyanis olyan pályán
+járnak, amelynek a négyzet alakú elemeit el tudják forgatni. Az elemek a következők:
+
+
+
+
+   0:                   1:                    2:
+
+
+
+
+   3:                   4:
+   Minden elem négyféle helyzetben állhat:
+   0: az ábrán látható módon                  1: 90 fokkal jobbra elforgatva
+   2: 180 fokkal jobbra elforgatva            3: 270 fokkal jobbra elforgatva
+Készíts programot, amely megadja, hogy a villamos egy adott helyről egy másikra minimálisan
+hány lépésben (azaz a kezdőhelyet nem számítva hány elem érintésével) juthat el, illetve minimáli-
+san hány lépésben juthat el akkor, ha azt az elemet, amelyen éppen áll, el tudja forgatni jobbra 90
+fokkal! (Figyelem: a forgatás is lépésnek számít. Ugyanaz az elem több lépésben többször egymás
+után is elforgatható jobbra 90 fokkal.)
+Bemenet
+    A standard bemenet első sorában a négyzetrács sorainak (1N100) és oszlopainak
+(1M100) a száma van. A következő N sorban soronként M számjegy-pár (két szorosan egymás
+mellé írt számjegy) található egy-egy szóközzel elválasztva; mindegyik sor a négyzetrács egy sorát
+írja le. A négyzetrács minden elemét a fenti ábrán megadott azonosító számból és az elforgatás
+kódjából álló számjegy-párral adjuk meg. A bemenő állomány utolsó sorában négy egész szám
+van: a kezdőhely sor- és oszlopindexe, valamint a célhely sor- és oszlopindexe.
+Kimenet
+A standard kimenet állomány első sorába azt a minimális lépésszámot kell írni, amely ele-
+gendő ahhoz, hogy a villamos eljusson a kezdőhelyről a célhelyre; a második sorba pedig ugyanezt
+a számot abban az esetben, ha a villamos elforgathatja azt az elemet, amelyen éppen áll vagy átha-
+lad. A lépésszám legyen –1, ha nem lehet eljutni a kezdőhelyről a célhelyre!
+Példa
+Bemenet                                            Kimenet
+4 5                                                10
+00 21    00   00   13                              6
+20 40    20   20   32
+11 20    00   00   21
+40 20    20   32   33
+1 2 4    1
+
+
+
+
+                                             1. oldal
+
+
+Megjegyzés a példához
+Út az 1. esetben: (1,2),(2,2),(2,3),(2,4),(2,5),(3,5),(4,5),(4,4),(4,3),(4,2),(4,1)
+Út a 2. esetben: (1,2),(2,2),(2,1),fordít,(3,1),fordít,(4,1)
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                   2. oldal
+

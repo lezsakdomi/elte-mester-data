@@ -1,0 +1,27 @@
+
+
+                                         Számváltó
+A hexadecimális számok a 0..9, A, B, C, D, E, F számjegyeket tartalmazhatják minden helyérté-
+ken, ahol az ’A’=10,…,’F’=15. Például: 15410=9A16, (=9*16+10).
+Készíts programot, mely N egész számot hexadecimálisan ír ki!
+Bemenet
+A standard bemenet első sora tartalmazza a decimálisok (1≤N≤100 000) számát. A
+következő N sor egy-egy D decimális számot jelöl (0≤Di≤2 000 000 000).
+Kimenet
+A standard kimenet N sorába a decimális számok hexadecimális megfelelőjét kell írni!
+Példa
+Bemenet                                            Kimenet
+4
+154                                                9A
+250                                                FA
+13                                                 D
+1689                                               699
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

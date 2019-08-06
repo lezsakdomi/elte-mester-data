@@ -1,0 +1,41 @@
+
+
+                                      Képtömörítés változással
+Geometrikus elemekből álló képeket (pl. a mellékelt dán zászlót) úgy tömöríthe-
+tünk, hogy minden egyes sorában csupán azt írjuk le, hogy mi változott az előző so-
+rához képest. Ehhez az első sort a lehető leghosszabb azonos színű pontokból álló
+szakaszokra bontjuk (a példában az első sorban az 1. és a 3. pozíció között P, a 4. és
+a 4. pozíció között F, az 5. és a 10. pozíció között pedig P színű pontok vannak). Ezután csak
+azon sorokkal foglalkozunk, amelyek az előzőtől különböznek. Itt csak az előzőtől különböző ré-
+szeket vizsgáljuk (a példában a 4. és 5. sor 1-3., illetve 5-10. pozíciója), amelyeket az első sorral
+megegyező módon kódolunk.
+Írj programot, amely egy képet a fenti „változás”-tömörítési eljárással tömörít!
+Bemenet
+A standard bemenet első sorában a kép sorainak és oszlopainak száma (1N,M500)
+van, egyetlen szóközzel elválasztva. A következő N sor mindegyike M betűt tartalmaz (az angol
+ábécé betűi közül), egy-egy szóközzel elválasztva. Az i-edik sor j-edik oszlopában a kép i-edik
+sora j-edik oszlopában levő képpont színét leíró nagybetű található.
+Kimenet
+A standard kimenet első sorába a kép sorai és oszlopai számát kell írni, egyetlen szóközzel
+elválasztva! A következő sorok a kódolt képet tartalmazzák, soronként, azon belül pedig oszlo-
+ponként növekvő sorrendben! Ezekben három szám A, B, C és egy betű D van; jelentése: az A-
+adik sorban a B-edik pozíciótól a C-edik pozícióig D betű szerepelt a képen.
+Példa
+Bemenet                                           Kimenet
+7   10                                            7   10
+P   P P   F   P   P   P   P   P   P               1   1 3 P
+P   P P   F   P   P   P   P   P   P               1   4 4 F
+P   P P   F   P   P   P   P   P   P               1   5 10 P
+F   F F   F   F   F   F   F   F   F               4   1 3 F
+P   P P   F   P   P   P   P   P   P               4   5 10 F
+P   P P   F   P   P   P   P   P   P               5   1 3 P
+P   P P   F   P   P   P   P   P   P               5   5 10 P
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

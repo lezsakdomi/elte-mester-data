@@ -1,0 +1,35 @@
+
+
+                                            Mozi
+Egy moziban N egymás mellé helyezett szék mindegyikén egy-egy ember üldögél, akiket sorszá-
+mukkal azonosítunk. Az embereket véletlenszerűen ültették le, de közülük néhányan megmond-
+ták, hogy ki mellett szeretnének ülni. Ennek eléréséhez helyet kell cserélniük. Egy lépésben két
+szomszédos széken ülő ember cserélhet helyet.
+Készíts programot, amely megadja a minimális lépésszámot, ami alatt egy kezdő elrendezésből a
+megadott igények szerinti végső elrendezés elérhető!
+Bemenet
+A standard bemenet első sorában az emberek N száma (1N8) és az igények M száma
+(1M<N) van egy szóközzel elválasztva. A következő M sor mindegyikében két olyan ember sor-
+száma van egy szóközzel elválasztva, akik egymás mellé szeretnének ülni. Az utolsó (M+2.) sor-
+ban pontosan N egész szám van egy-egy szóközzel elválasztva, az emberek kezdeti elhelyezkedése
+(az i. szám az i. helyen ülő ember sorszáma).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a cserék minimális számát,
+amellyel elérhető, hogy az igények mindegyikét kielégítsék! Ha nincs megoldás, akkor az állo-
+mányba az egyetlen -1 számot kell írni!
+Példa
+Bemenet                                        Kimenet
+8   3                                          5
+1   2
+1   3
+7   8
+1   3 5 7 2 4 6 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

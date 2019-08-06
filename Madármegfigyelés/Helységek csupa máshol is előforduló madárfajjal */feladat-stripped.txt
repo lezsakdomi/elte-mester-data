@@ -1,0 +1,32 @@
+
+
+            Helységek csupa máshol is előforduló madárfajjal
+Az ország néhány helységében madármegfigyelést végeztünk. Mindegyikben megadtuk, hogy
+milyen fajú madárból hányat láttunk.
+Készíts programot, amely megadja azokat a helységeket, ahol csak olyan madarat láttunk, amelyik
+valahol máshol is előfordult!
+Bemenet
+A standard bemenet első sorában a helységek száma (1≤M≤50) és a madárfajok száma
+(1≤N≤200) van. A következő M sor mindegyikében N darabszám szerepel, közülük az i-edik
+sorban a j-edik szám az i-edik helységben a j-edik sorszámú fajból megfigyelt madarak száma
+(0≤Ei,j≤1000).
+Kimenet
+A standard kimenet első sorába azon helységek számát kell írni, amelyekben csak máshol
+is előforduló madárfajjal találkoztunk! A második sor ezen helységek sorszámait tartalmazza nö-
+vekvő sorrendben, egy-egy szóközzel elválasztva, ha volt ilyen helység!
+Példa
+Bemenet                                        Kimenet
+4   3                                          3
+1   0   4                                      1 2 4
+2   0   1
+0   2   0
+1   0   0
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,42 @@
+
+
+                               Oda-vissza független út
+Adott egy G=(V,E) irányítatlan gráf és egy RV pontja.
+Számítsd ki az összes olyan PV pontok halmazát, amelyekre teljesül, hogy van olyan út R-ből P-
+be és P-ből R-be, hogy a két útnak csak a két végpontja közös pontja!
+Bemenet
+A standard bemenet első sorában gráf pontjainak száma (1N10 000), a gráf éleinek
+száma (1M300 000) és a kiindulási pont (1RN) van. A további M sor mindegyike gráf egy
+u−v élét tartalmazza (1uvN). Bármely két pont között legfeljebb egy él van.
+Kimenet
+A standard kimenet első sorába a G gráf azon P pontjainak K számát kell írni, amelyekre
+teljesül, hogy van olyan út R-ből P-be és P-ből R-be, hogy a két útnak csak a két végpontja közös
+pontja! A második sor pontosan K számot tartalmazzon, a feladat megoldását adó halmaz elemeit
+(tetszőleges sorrendben)!
+Példa
+Bemenet                                         Kimenet
+10 15 1                                         9
+1 2                                             1 2 10 6 4 3 5 8 9
+1 3
+1 4
+1 9
+2 10
+3 2
+3 5
+4 3
+4 6
+4 7
+4 9
+5 4
+6 8
+8 5
+10 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,33 @@
+
+
+                                           Rendőr
+Egy autópálya mentén N város helyezkedik el. Bizonyos városokban autópálya rendőrök tartóz-
+kodnak, némelyikben több is, némelyikben egy sem. Összesen legfeljebb N rendőr van. Azt sze-
+retnénk elérni, hogy a lehető legtöbb városban legyen rendőr, ezért át kell csoportosítani. Az át-
+csoportosítást a lehető legkisebb összköltséggel kell végrehajtani. Egy rendőr i. városból a j.-be
+történő átmozgatásának költsége a várossorszámok különbségének abszolút értéke: |i-j|.
+Készíts programot, amely kiszámítja az átcsoportosítás lehető legkisebb összköltségét és megadja
+azt, hogy az átcsoportosítás után mely városokban lesz rendőr!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤500) van. A második sorban
+pontosan N szám van. Az i-edik szám azt adja meg, hogy az i-edik városban kezdetben hány
+rendőr tartózkodik. Összesen legfeljebb N rendőr van a városokban.
+Kimenet
+A standard kimenet első sorába azt a legkisebb összköltséget kell írni, amellyel elérhető,
+hogy a legtöbb városban legyen rendőr! A második sorba pontosan N számot kell írni, az i-edik
+szám 1-es legyen, ha az i-edik városban lesz rendőr az átmozgatás után, egyébként 0! Ha több
+megoldás is van, akkor egy tetszőlegeset ki lehet írni.
+Példa
+Bemenet                                         Kimenet
+7                                               5
+0 1 0 3 2 0 0                                   1 1 1 1 1 1 0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                             1. oldal
+

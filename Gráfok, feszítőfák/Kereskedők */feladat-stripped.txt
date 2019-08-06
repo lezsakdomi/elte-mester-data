@@ -1,0 +1,44 @@
+
+
+                                        Kereskedők
+Bergengócia M járásában bármely város kereskedője árulhat a járás bármely másik városában. Az
+uralkodó szeretné elérni, hogy az ország bármely városban elkészített áru bármely városban meg-
+vásárolható legyen. Jelentkezett K kereskedő, akik megadták, hogy mely várospárok között mek-
+kora összegért vinnék el az árut.
+Írj programot, amely megadja, hogy a király az ajánlatok közül mely kereskedők ajánlatát fogadja
+el, hogy az a királynak a lehető legkevesebbe kerüljön! A kereskedők egy járáson belül bármely vá-
+rosból bármely városba szállíthatnak árut, aminek nincs további költsége.
+Bemenet
+A standard bemenet első sorában a járások száma (1<M500), a települések száma
+(MN100 000), valamint az ajánlatok száma (1K1 000 000) van. A következő M sor egy-
+egy járás településeinek sorszámát tartalmazza. A további K sor mindegyike egy U V W egész
+számhármast tartalmaz; ami azt jelenti, hogy az U és a V város között W összegért szállítana a ke-
+reskedő árut (1UVN, 0<W1000).
+Kimenet
+A standard kimenet első sorába a feladat megoldásához szükséges legkisebb költséget kell
+írni! A második sorba azon ajánlatok sorszáma kerüljön, amelyeket a legkisebb költség eléréséhez
+elfogadhatunk! Ha a feladat nem oldható meg, akkor az egyetlen sorba a 0 értéket kell írni!
+Példa
+Bemenet                                         Kimenet                      4           6
+
+3   8   4                                       150                        100          200
+1   2   8                                       1 3
+4   6
+                                                                                    1
+3   5   7
+1   4   100
+1   6   200
+3   8   50                                                                   2            8
+5   2   150
+Korlátok                                                                  150                 50
+
+Időlimit: 0.4 mp.
+                                                                                5         3
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100                                                7
+
+
+
+
+                                             1. oldal
+

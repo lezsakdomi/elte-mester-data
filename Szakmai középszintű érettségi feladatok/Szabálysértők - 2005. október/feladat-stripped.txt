@@ -1,0 +1,26 @@
+
+
+                                      Szabálysértők
+Egy sebességmérő műszer regisztrálja minden mellette elhaladó jármű sebességét km/h-ban. Az
+egyik irányba haladó járművek sebességét pozitív, a másik irányba (szembe) haladókét negatív ér-
+tékként tárolja a műszer. Szabálysértésen azt értjük, hogy valaki legalább 100 km/h sebességgel
+haladt.
+Készíts programot, amely meghatározza, hogy ki volt az első szabálysértő!
+Bemenet
+A standard bemenet első néhány sora a mért sebességeket tartalmazza (-150≤Si≤150,
+Si≠0). A mért sebességeket 0 zárja.
+Kimenet
+A standard kimenetre az első autó sorszámát kell a kiírni, aki szabályt sértett! Ha nem
+volt ilyen, akkor -1 szerepeljen a kimeneten!
+Példa
+Bemenet                                            Kimenet
+1 2 -10 105 40 0                                   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

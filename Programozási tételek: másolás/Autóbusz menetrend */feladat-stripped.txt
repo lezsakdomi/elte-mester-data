@@ -1,0 +1,39 @@
+
+
+                                 Autóbusz menetrend
+A Budapesti Közlekedési Központ (BKK) pontos menetrendet szeretne elhelyezni a 33-as autó-
+busz megállóiban, s ehhez kéri a Te segítségedet. Az autóbuszok 5 és 23 óra között közlekednek.
+Egy buszvezető átlagos forgalom mellett feljegyezte az útvonal állomásain az egyes állomások kö-
+zötti út megtételéhez szükséges időt, valamint (a végállomásokon kívül) az állomásokon a leszál-
+lással és felszállással eltöltött várakozási időt – mindegyiket egész számként.
+Írj programot, amely egy autóbusz végállomásról történő indulási idejének ismeretében megadja
+minden megállóra (a végállomásokra is), hogy ez a busz mikor érkezik az egyes megállókba!
+Bemenet
+A standard bemenet első sora a busz megállóinak számát tartalmazza (2≤N≤100). A má-
+sodik sorban N-1 egész szám található: az i. szám az i. megállóból az i+1. megálló eléréséhez
+szükséges menetidőt adja meg (1≤Mi≤30). A harmadik sorban N-2 egész szám az egyes megál-
+lókban töltött várakozási időt adja meg a végállomásoktól eltekintve: az i. szám az i+1. megálló
+várakozási idejét adja meg (1≤Vi≤30). A negyedik sorban a busz indulási ideje van két, szóköz-
+zel elválasztott egész szám formájában: az első az órát (5≤ÓRA≤23), a második a percet adja meg
+(0≤PERC≤59). Feltételezhető, hogy a busz éjfél előtt a végállomásra ér.
+Kimenet
+A standard kimenetre N darab sort kell írni! Az 1. sor a busz indulási idejét tartalmazza, a
+2. sortól kezdve az i. sor azt adja meg, hogy a busz mikor érkezik az i. megállóba! Egy sorba há-
+rom egész számot kell megadni szóközökkel elválasztva: a megálló sorszámát, az érkezési idő óra,
+illetve perc értékét! Egy sor formája a következő: „SORSZÁM. ÓRA PERC”.
+Példa
+Bemenet                                         Kimenet
+5                                               1.     8   50
+5 8 3 8                                         2.     8   55
+1 3 2                                           3.     9   4
+8 50                                            4.     9   10
+                                                5.     9   20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

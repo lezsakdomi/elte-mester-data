@@ -1,0 +1,39 @@
+
+
+                                        Tárcsás játék
+Tekintsük azt a játékot, amelyet egy téglalap alakú rácsszerkezetű táblán játszanak. A játék célja az,
+hogy a bal felső sarokból a jobb alsó sarokba kell eljutni a legkevesebb lépéssel. Egy lépésben a
+szomszédos négy mező valamelyikére lehet lépni. Hogy a játék érdekesebb
+legyen, minden mezőre elhelyeznek egy tárcsát, amely azt mutatja, hogy
+melyik szomszédos mezőre lehet lépni. Továbbá, minden lépés után vala-
+mennyi mezőn lévő tárcsa elfordul 90 fokkal órajárás szerint. Minden tár-
+csán annyi nyíl van, ahány szomszédos mezőre lehet lépni, és a nyilak a
+megfelelő szomszéd irányába mutatnak. Tehát egy tárcsa adott állása leír-
+ható egy négyjegyű bináris számmal, ahol az egyes helyi értékek: Felfelé: 0,
+Jobbra: 1, Lefelé: 2, Balra: 3. Az ábrán látható korong azonosítója 0111,
+decimálisan 7.
+Készíts programot, amely meghatározza azt a minimális lépésszámot, amellyel el lehet jutni a bal
+felső sarokból a jobb alsóba! Ha nem lehet eljutni, akkor a -1 számot kell kiírni.
+Bemenet
+A standard bemenet első sorában két egész szám van, a tábla sorainak M (1≤M≤100) és
+oszlopainak N száma (1≤N≤100) száma. Az i+1-edik sorban a j-edik szám az (i,j) koordi-
+nátájú mezőn lévő tárcsa decimális kódja. A jobb alsó sarokban a 0 szám áll, a többi helyen 1 és
+15 közötti szám.
+Kimenet
+A standard kimenet első és egyetlen sora egy egész számot tartalmazzon, azt a minimális
+lépésszámot, amellyel ellehet jutni a bal felső sarokból a jobb alsóba. Ha nem lehet eljutni, akkor a
+-1 számot kell kiírni.
+Példa
+Bemenet                                            Kimenet
+2 2                                                4
+7 4
+12 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

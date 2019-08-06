@@ -1,0 +1,94 @@
+
+
+                  Telefonos ügyfélszolgálat
+Egy kis cég ügyfélszolgálata 8 és 12 óra között várja az érdeklődőket.
+Egyszerre egy hívást tudnak fogadni. A hívások végén azonnal
+bekapcsolják a következő hívást.
+A hívások irányítását egy automata végzi. Nyitáskor és később is – amint
+a munkatárs szabaddá válik – a legrégebben várakozót kapcsolja be. A
+munkaidőben érkező hívások esetén – ha a hívónak várnia kell – közli vele
+a várakozók számát. Munkaidőn kívül érkező hívás esetén az automata a
+legközelebbi időpontot jelzi az ügyfélnek, aki akár vonalban is maradhat
+addig. A munkatársnak az összes, a munkaidő vége előtt beérkezett
+hívást fogadnia kell – tehát a 12:00:00-kor érkezőt már nem –, még akkor
+is, ha a bekapcsolásukra már a munkaidő befejezése után kerül sor.
+Egy hívó akkor tudott az ügyfélszolgálatossal beszélni, ha a hívását 12 óra
+előtt kezdte, valamint 8 óra után, és az összes korábbi hívás végénél
+később fejezte be.
+Írj programot, amely
+  1. megadja, hogy mely órákban hány hívás futott be,
+  2. megadja a leghosszabb hívás sorszámát és hosszát,
+  3. megadja, hogy egy adott időpontban hányadik hívóval beszélt az
+     ügyfélszolgálatos és hányan várakoztak,
+  4. megadja annal a hívónak a sorszámát és várakozásának idejét,
+     akivel a munkatárs utoljára beszélt,
+  5. megadja a sikeres hívások adatait (sorszám, hívásfogadás ideje,
+     hívás vége).
+Bemenet
+A standard bemenet első sorában a beérkezett hívások száma (1≤N≤5000)
+található. A következő sorban egy időpont (óra, perc, másodperc) adatai
+találhatók. Az adott időpont minden esetben a munkaidőn belülre esik. A
+következő N sor mindegyikében 6 szám található, az i-edik sorban az i-
+edik hívás kezdetének időpontja (óra, perc, másodperc) és az i-edik hívás
+végének időpontja (óra, perc, másodperc). Minden hívás ugyanazon a
+napon történt, minden időpontra teljesül, hogy (0≤Óra<24, 0≤Perc<60,
+0≤Mp<60), továbbá minden hívásra teljesül, hogy a kezdeti időpont
+korábban volt, mint a hívás végének időpontja.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy,
+egyetlen # karaktert tartalmazó sort kell kiírni, amelyet a részfeladat
+eredményét tartalmazó egy vagy több sor követ! Ha egy részfeladatot
+nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több #
+karaktert ír ki) akkor „Output formátum hiba” üzenetet ad az értékelő
+(akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Annyi sort kell írni, ahány órában volt bejövő hívás!
+Mindegyik sorba két számot kell írni: egy órát, és az abban az órában
+
+
+                                 1. oldal
+Emelt szintű informatika érettségi                       2016. október 21.
+
+bejövő hívások számát! Csak azokat az órákat kell kiírni, amikor volt
+bejövő hívás! Az adatokat az órák szerint növekvő sorrendben kell kiírni!
+2. részfeladat: A leghosszabb hívás (akár sikeres, akár sikertelen)
+sorszámát és hosszát kell kiírni, másodpercben! Ha több ilyen is volt, a
+legkorábbit kell kiírni!
+3. részfeladat: Annak a hívónak a sorszámát, akivel az adott időpontban
+beszélt az alkalmazott, és az éppen várakozók számát kell kiírni, ha nem
+volt hívó az adott pillanatban, akkor a „Nem” szót kell kiírni!
+4. részfeladat: A legutolsó fogadott hívás sorszámát és a várakozási időt
+kell kiírni, másodpercben. Ha nem volt fogadott hívás, akkor a „Nem” szót
+kell kiírni!
+5. részfeladat: Annyi sort kell kiírni, ahány sikeres hívás volt! Mindegyik
+sorba összesen 7 számot kell írni: egy sikeres hívás sorszámát, azt az
+időpontot, amikor az ügyfélszolgálatos fogadta a hívást (óra, perc, mp), és
+a hívás végének az időpontját (óra, perc, mp) kell írni! Az adatokat a hívás
+sorszáma szerint növekvő sorrendben kell kiírni!
+Példa
+Bemenet                               Kimenet
+7                                     #
+8 1 24                                7 2
+7 57 12 7 58 24                       8 2
+7 58 10 8 2 57                        11 2
+8 0 2 8 2 40                          12 1
+8 1 16 8 4 34                         #
+11 12 13 12 13 14                     7 8054
+11 59 59 12 13 59                     #
+12 0 0 14 14 14                       2 2
+                                      #
+                                      6 795
+                                      #
+                                      2 8 0 0 8 2 57
+                                      4 8 2 57 8 4 34
+                                      5 11 12 13 12 13 14
+                                      6 12 13 14 12 13 59
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                  2. oldal
+

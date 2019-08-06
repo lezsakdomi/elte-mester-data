@@ -1,0 +1,36 @@
+
+
+                                        Megye
+Egy országban N megye van, és tudjuk, hogy mely megye mely más megyékkel szomszédos. Az
+ország térképét úgy szeretnénk beszínezni, hogy szomszédos megyék ne kapjanak azonos színt.
+Készíts programot, amely kiszámítja, hogy melyik megye milyen színű legyen, ha maximum K
+színt használhatunk!
+Bemenet
+A standard bemenet első sorában a megyék száma (2≤N≤20) és a használható színek
+száma (2≤K≤4) van. A következő N sorban az egyes megyék szomszédjai sorszáma szerepel, kö-
+zülük az i. sor az i. megye szomszéd megyéi sorszámait tartalmazza, egy-egy szóközzel elvá-
+lasztva. A felsorolást a 0 szám zárja.
+Kimenet
+A standard kimenet első sorába N számot kell írni, egy-egy szóközzel elválasztva: az i.
+szám az i. megye kiszínezéséhez használt szín sorszáma legyen (1≤sorszám≤K)! Több megol-
+dás esetén bármelyik megadható. Ha nincs megoldás, a sorba egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                      Kimenet
+7   4                                        1 2 3 4 2 3 4
+2   3   4   5   6 7 0
+6   3   1   0
+1   5   4   2   0
+1   3   5   0
+3   4   1   7   6 0
+2   1   7   5   0
+1   5   6   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a megyék száma N≤10
+
+
+
+
+                                          1. oldal
+

@@ -1,0 +1,42 @@
+
+
+                                          Kereskedő
+Két kirakodóvásárt rendeznek egyszerre. Egy kereskedőnek N asztal áll rendelkezésére (N eladó-
+val), ahol árulhat. Szabadon dönthet, hogy a két vásárra külön-külön hány asztalt visz. Előfordul-
+hat az is, hogy a két vásárra összesen kevesebb, mint N asztalt visz (de összesen N-nél többet
+nem vihet). Csak akkor visz egy vásárra újabb asztalt, ha annak haszna nagyobb nullánál. Korábbi
+tapasztalatai alapján mindkét helyszínről tudja, hogy mekkora bevétele lehet 1,2, ... árusító asztal
+esetén. Asztalonként azonban fix összegű kiadása is van (pl. az eladó bére). Tudjuk, hogy egy új
+asztal esetén a bevétel biztosan nem csökken, de nem nőhet jobban, mint az előző asztalnál nőtt.
+Készíts programot, amely megadja, hogy mennyi lehet a maximális haszna és ehhez melyik vásár-
+ba hány asztalnak foglaljon helyet!
+Bemenet
+A standard bemenet első sorában az asztalok száma (1≤N≤10 000) és egy asztal kiadása
+összege (1≤K≤3000) van. A második sor N száma az elérhető bevétel az első kirakodóvásáron 1,
+2, …,N asztal esetén (1≤Ai≤15 000 000). A harmadik sor N száma pedig az elérhető bevétel a
+második kirakodóvásáron 1, 2, …,N asztal esetén (1≤Bi≤15 000 000).
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb hasznot kell írni! A második sorba
+az ehhez a haszonhoz az első, illetve a második vásárba telepítendő asztalok számát kell írni!
+Több megoldás esetén azt kell kiírni, amelyben az asztalok száma a lehető legkisebb, ezen belül az
+első szám a lehető legnagyobb!
+Példa
+Bemenet                                           Kimenet
+5 20                                              160
+75 125 135 145 145                                2 3
+72 106 135 135 135                                Magyarázat: 125+135 a bevétel, 100 a kiadás.
+
+Magyarázat: az első vásáron egy asztal esetén
+75 a bevétel, két asztal esetén összesen 125,…
+az ötödik asztal már nem növeli az összbevé-
+telt.
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

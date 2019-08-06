@@ -1,0 +1,29 @@
+
+
+                            Összes esőzés mennyisége
+N napon át minden nap megmértük, hogy hány milliméter eső esett.
+Készíts programot, amely megadja, hogy mennyi eső esett összesen az N nap alatt!
+Bemenet
+A standard bemenet első sorában a vizsgált napok száma (0≤N≤100), alatta soronként a
+napi mérések eredményei.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az összes csapadék meny-
+nyiségét!
+Példa
+Bemenet                                        Kimenet
+5                                              45
+0
+15
+20
+0
+10
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemeneti adatok száma≤20
+
+
+
+
+                                           1. oldal
+

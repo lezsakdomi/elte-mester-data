@@ -1,0 +1,41 @@
+
+
+               Elsőfokú készültségű árvizek együttes hossza
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja az 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza az olyan árvízvédelmi készültségű folyószakaszok együt-
+tes hosszát, amelyeken csak elsőfokú készültség van!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10000), a kö-
+vetkező N sor mindegyike egy-egy mérési eredményt tartalmaz (0Ai3000).
+Kimenet
+A standard kimenet első sorába az olyan árvízvédelmi készültségű folyószakaszok K da-
+rabszámát kell írni, amelyeken csak elsőfokú készültség van (0, ha nincs ilyen folyószakasz, ebben
+az esetben nincsenek további sorok)! A második sorba ezen K folyószakasz kezdetének és végé-
+nek a sorszáma kerüljön, növekvő sorrendben! Végül a 3. sor tartalmazza a K darab folyószakasz
+együttes hosszát!
+Példa
+Bemenet              Kimenet
+                                   1200
+7                    1
+810                  5 6           1000
+820                  2
+1000                                800
+750                                 600
+820
+900                                 400
+220                                 200
+Korlátok                              0
+Időlimit: 0,1 mp.                         1        2       3        4        5        6         7
+
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

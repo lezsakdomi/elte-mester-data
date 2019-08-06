@@ -1,0 +1,36 @@
+
+
+                                       Kódok súlya
+Adott egy 3N bites bináris kód. A kód súlyán a különböző, egymást követő bitpárok száma plusz
+1 értéket értjük. Például a “000” kód súlya 1, a “011010100” kód súlya 7. Kódon olyan módosító mű-
+veletet végezhetünk, amely két szomszédos bit mindegyikét ellentétesre változtatja.
+Írj programot, amely megad egy legfeljebb N módosító műveletet tartalmazó műveletsort, amely
+úgy alakítja át a kiindulási kódot, hogy a súlya legalább 2N legyen!
+Bemenet
+A standard bemenet első sorában a kódok M (1≤M≤300) száma van. További M sor
+mindegyike egy 3Ni karaktert tartalmazó kiindulási kód van (1≤Ni≤100 000), amelynek minden
+karaktere ’0’ vagy ’1’.
+Kimenet
+A standard kimenet első sorába pontosan 2M sort kell írni, minden bemeneti kódhoz 2
+sort. Az első sor az átalakításhoz megadott műveletek (0≤K≤N) számát kell írni, a második sor
+pontosan K egész számot tartalmazzon! Az i-edik szám az i-edik módosító műveletet adja meg,
+ami a felcserélt két bit első elemének pozíciója legyen! Ha K=0, akkor a második sort nem kell ki-
+írni! Több megoldás esetén bármelyik megadható.
+Példa
+bemenet                                         kimenet
+3                                               2
+111001000111                                    3 9
+010101                                          0
+000000000                                       3
+                                                2 5 6
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100.
+
+
+
+
+                                             1. oldal
+

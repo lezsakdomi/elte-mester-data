@@ -1,0 +1,47 @@
+
+
+                                            Kerítés
+Egy gazda kerítéssel körbevett legelőn tartja a jószágait. A gazda ismeri a kerítés oszlopok koor-
+dinátáit. A kerítést úgy építették, hogy minden oldala párhuzamos vagy az x- vagy az y-tengellyel,
+és az egymást követő kerítés oldalak egymásra merőlegesek. A gazdát értesítették, hogy egyenes
+vonalú utat fognak építeni, amely teljesen keresztül megy a legelőjén és legalább két részre bontja.
+Az építendő út párhuzamos lesz az x-tengellyel, és megadták az y-koordináta értékét.
+Készíts programot, amely kiszámítja, hogy az építendő út hány felső és alsó részre bontja a gazda
+legelőjét!
+Bemenet
+A standard bemenet első sorában a kerítés oszlopok száma (1≤N≤100 000) és az építen-
+dő út y-koordinátája (-109≤H≤109) van. A következő N sor a kerítés oszlopainak x- és y-
+koordinátáit (-109≤X,Y≤109) tartalmazza olyan sorrendben, hogy szomszédos sorokban a kerí-
+tés mentén is szomszédos oszlopok találhatóak. Természetesen az első oszlop is szomszédos az
+utolsóval. Egyik oszlop sem esik az építendő út nyomvonalára.
+Kimenet
+A standard kimenet első sorába két egész számot kell írni, az első az építendő út felső, a
+második pedig az alsó részén keletkező összefüggő legelő részek száma legyen!
+Példa
+Bemenet                                          Kimenet
+16 8                                             3 2
+7 13
+10 13
+10 5
+14 5
+14 16
+19 16
+19 4
+23 4
+23 19
+4 19
+4 3
+1 3
+1 21
+27 21
+27 1
+7 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

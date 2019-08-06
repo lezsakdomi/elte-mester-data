@@ -1,0 +1,29 @@
+
+
+                                 Azonos évben születtek
+Készíts programot, amely N ember születési éve alapján megad két azonos évben születettet!
+Bemenet
+A standard bemenet első sorában található az emberek száma (0≤N≤100). Az ezt követő
+N sorban pedig egy-egy születési éve van (egész szám).
+Kimenet
+A standard kimenet első sorába két azonos évben született ember sorszámát kell kiírni, a
+sorszámok növekvő sorrendjében! Ha nincs ilyen, akkor „0 0”-t kell írni! Több megoldás esetén a
+legkisebb első sorszámút kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               3 5
+1960
+1970
+1980
+1990
+1980
+2000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

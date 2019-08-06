@@ -1,0 +1,30 @@
+
+
+                                     Permutációk
+A permutációk a mai napig intenzív kutatások tárgya. Most olyan permutációkat vizsgálunk, ame-
+lyekben nem fordul elő bizonyos minta. Azt mondjuk, hogy az 1,…,N természetes számok
+p1,p2,…,pN permutációja 3-1-2 minta-mentes, ha nincs olyan három index 1≤i<j<k≤N,
+amelyekre teljesülne a pi>pj, pi>pk és pj<pk egyenlőtlenség.
+Készíts programot, amely meghatározza egy 3-1-2 minta-mentes permutáció lexikografikus rákö-
+vetkezőjét!
+Bemenet
+A standard bemenet első sora az N számot (3≤N≤10 000) tartalmazza. A második sor az
+1,…,N számok egy 3-1-2 mentes permutációját tartalmazza. A bemenet nem az N,N-1,…,2,1
+csökkenő sorozat.
+Kimenet
+A standard kimenet első sorába azt a 3-1-2 minta-mentes permutációt kell írni, amely a
+bemenet lexikografikus rákövetkezője!
+Példa
+bemenet                                       kimenet
+5                                             2 4 3 1 5
+2 3 5 4 1
+Korlátok
+Időlimit: 0.01 mp.
+Memórialimit: 32 MB
+A pontok 15%-a szerezhető olyan tesztekre, ahol N≤100.
+
+
+
+
+                                           1. oldal
+

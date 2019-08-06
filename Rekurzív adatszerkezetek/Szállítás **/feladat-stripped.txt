@@ -1,0 +1,44 @@
+
+
+                                           Szállítás
+Egy nagyvállalat N városban üzemeltet egy-egy gyárat. Minden gyárban van raktára, ahol terméke-
+ket tárol. Minden gyárból, ahol több terméket gyártottak, mint az ottani raktár kapacitása, a több-
+letet el kell szállítani egy másik raktárba. A szállítást közúton végzik kamionokkal, minden kamion
+legfeljebb K darab terméket tud szállítani. A közlekedési hatóság korlátozása miatt minden város-
+ból csak egy megadott másik városba mehet közvetlenül kamion. Van egy központi város, ame-
+lyikbe bármely másik városból el lehet jutni, itt van a központi raktár. Ha egy kamion az útja so-
+rán áthalad egy városon, akkor az ottani raktárba lerakhat terméket, ha ott van még hely, illetve
+felvehet elszállítandó terméket, ha van hely rajta.
+Készíts programot, amely kiszámítja, hogy minimum hány kamion kell az összes termék elszállítá-
+sához és mekkora raktárt kell építeni a központi városba, hogy minden termék raktárba kerüljön!
+Bemenet
+A standard bemenet első sorában a városok száma (1N1000), és a szállító kamionok
+kapacitása (1K1000) van. A második sorban pontosan N egész szám van egy-egy szóközzel
+elválasztva, az egyes városokban termelt termékek száma, ami legfeljebb 2000. A harmadik sor-
+ban is pontosan N egész szám van egy-egy szóközzel elválasztva, az egyes városokban tárolható
+termékek száma, ami legfeljebb 3000. A negyedik sor is pontosan N egész számot tartalmaz egy-
+egy szóközzel elválasztva. A sorban az i-edik szám annak a városnak a sorszáma, ahova az i-
+edik városból közvetlenül mehet kamion. A sorban egy helyen szerepel 0, ha ez az i-edik szám a
+sorban, akkor ez azt jelenti, hogy az i-edik városban van a központi raktár.
+Kimenet
+A standard kimenet első sorába a minimálisan szükséges kamionok számát kell írni, a má-
+sodik sorba pedig az építendő központi raktár méretét!
+Példa
+Bemenet                                          Kimenet
+9   10                                           5                   5,3
+8   3 2 20 11 7 4 9 5                            21
+5   7 4 10 6 4 4 5 3
+                                                        8,5         7,4      4,4         9,5
+2   3 0 3 3 2 4 4 6
+Korlátok
+                                                              3,7          20,10               11,6
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB                                                        2,4
+
+Pontozás: A tesztek 40%-ában a városok száma N≤400
+
+
+
+
+                                             1. oldal
+

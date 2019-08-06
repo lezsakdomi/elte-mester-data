@@ -1,0 +1,38 @@
+
+
+                                      Rúd darabolás
+Adott egy fémrúd, amelyet megadott számú és hosszúságú darabokra kell felvágni. A darabok
+hosszát milliméterben kifejezett értékek adják meg. Olyan vágógéppel kell a feladatot megoldani,
+amely egyszerre csak egy vágást tud végezni. A vágások tetszőleges sorrendben elvégezhetőek.
+Egy vágás költsége megegyezik annak a darabnak a hosszával, amit éppen (két darabra) vágunk. A
+célunk optimalizálni a műveletsor teljes költséget.
+Készíts programot, amely
+       kiszámítja a vágási műveletsor optimális összköltségét;
+       megad egy olyan vágási sorrendet, amely optimális költséget eredményez!
+Bemenet
+A standard bemenet első sorában a darabok száma van (0<N1000). A második sor N
+egész számot tartalmaz egy-egy szóközzel elválasztva, a darabok hosszát (0<Hi1000).
+Kimenet
+A standard kimenet első sorába egyetlen számot, a vágási műveletsor optimális összkölt-
+ségét kell írni! A további N-1 sor mindegyikébe két egész számot kell írni, egy szóközzel elvá-
+lasztva! Az első szám legyen az adott lépésben kettévágott léc hossza, a második szám pedig az
+egyik keletkező darab hossza! Minden sor csak olyan hosszúságú darab kettévágását tartalmazhat-
+ja, amelyből a korábbi lépések során több keletkezett, mint az azóta elvégzett lépések által fel-
+használtak száma! Ha több vágássorozattal is el lehet érni az optimális költséget, akkor ezek közül
+bármelyiket meg lehet adni.
+Példa
+Bemenet                                          Kimenet
+5                                                55
+2 5 2 7 10                                       26 10
+                                                 16 7
+                                                 9 4
+                                                 4 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

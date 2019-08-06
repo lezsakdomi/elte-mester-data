@@ -1,0 +1,35 @@
+
+
+                                        Ütemezés
+Adott N munka határidő, végrehajtási idő és haszon adatokkal.
+Írjunk olyan programot, amely megad egy legnagyobb hasznot adó ütemezést!
+Bemenet
+A standard bemenet első sorában a munkák N száma (1≤N≤50) van. A második sorban a
+munkák határideje, a harmadikban a végrehajtási idő, a negyedikben pedig a hasznok vannak.
+Minden szám értéke legfeljebb 2*109 egész szám. A munkák határidő szerint növekvő sorrendben
+vannak
+Kimenet
+A standard kimenet első sorába a maximális haszon értékét kell kiírni! A második sorba a
+beválasztott munkák M számát kell írni,.A harmadok sorba pedig ezen munkák sorszámait az
+ütemezés sorrendjében. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+8                                              55
+                                               4
+3 7 12 32 33 46 77 88
+                                               3 5 7 8
+7 8 12 23 21 77 12 1
+10 2 12 3 8 9 13 22
+
+
+
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 64 MB
+
+
+
+
+                                           1. oldal
+

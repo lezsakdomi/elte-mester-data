@@ -1,0 +1,36 @@
+
+
+                       Rendezvény – ülőhelyek kiosztása
+Egy rendezvényt olyan teremben tartanak, ahol N darab ülőhely van. A rendezvény szervezője
+megrendeléseket fogad. Minden megrendelés egy D H F számhármast tartalmaz, ami azt jelenti,
+hogy a megrendelő az első H ülőhely közül D darab egymás melletti ülőhelyet szeretne kapni, és
+ezért F Eurót fizetne!
+Készíts programot, amely kiszámítja, hogy mekkora az elérhető legnagyobb bevétel és meg is ad
+egy olyan jegykiosztást, amely kielégíti a megrendeléseket és a lehető legnagyobb bevételt ered-
+ményezi!
+Bemenet
+A standard bemenet első sorában az ülőhelyek száma (1N1000) és a megrendelések
+száma (1M3000) van. A következő M sorban az egyes megrendelések D H F leírása szerepel
+(1DHN, 1F200), határ szerint nemcsökkenő sorrendben.
+Kimenet
+A standard kimenet első sorába a legnagyobb elérhető bevétel összegét kell írni! A máso-
+dik sorba a legnagyobb bevételt eredményező megrendelés részhalmaz K elemszámát kell írni! A
+következő K sor tartalmazza a jegykiosztást a kiválasztott K megrendelés számára! Minden sorban
+egy megrendelés sorszáma és annak a legkisebb sorszámú ülőhelynek a sorszáma legyen, amelyet
+a megrendelő kap! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+6   3                                          120                                 X X
+2   3 60                                       2
+3   4 100                                      1 1
+                                                                                          X X
+2   4 60                                       3 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

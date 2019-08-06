@@ -1,0 +1,52 @@
+
+
+                                        Akadálypálya
+Egy versenyre a szervezők olyan akadálypályát terveztek, amely N ellenőrző pontot tartalmaz. Bi-
+zonyos ellenőrző pontpárokat egyirányú útszakaszok kötnek össze. A pálya olyan, hogy a start és
+a cél pontot kivéve minden ellenőrző ponton keresztül megy legalább egy olyan útvonal, amely a
+start ponttól indul, és a cél pontban végződik. Az is teljesül, hogy egyetlen ellenőrző pontba sem
+lehet visszajutni. A szervezők azt tervezik, hogy kijelölnek két olyan ellenőrző pontot, hogy bár-
+mely starttól célig vezető útvonal keresztül megy legalább az egyik kijelölt ellenőrző ponton.
+Írj programot, amely megad két olyan ellenőrző pontot, hogy bármely starttól célig vezető útvo-
+nal keresztül megy legalább az egyik kijelölt ellenőrző ponton!
+Bemenet
+A standard bemenet első sorában az ellenőrző pontok száma (2≤N≤35 000), az ellenőr-
+ző pontok közötti útszakaszok száma (2≤M≤200 000). A következő M sor mindegyike egy
+számpárt (2≤U≠V≤N ) tartalmaz, ami azt jelenti, hogy az U ellenőrzési pontból a V pontba vezet
+útszakasz.
+Kimenet
+A standard kimenet első sorába két olyan (nem felétlenül különböző) ellenőrző pontot
+kell írni, amelyekre teljesül, hogy bármely starttól célig vezető útvonal keresztül megy legalább az
+egyik kijelölt ellenőrző ponton (a start és a cél ponton kívül)! Ha nincs ilyen két pont, akkor a 0 0
+számpárt kell kiírni! Több megoldás esetén bármelyik megadható.
+Példa
+bemenet                                     kimenet
+11 16                                       7 8
+4 6
+4 2
+4 5
+4 8
+6 8
+2 3
+2 9
+5 9
+2 7
+8 10
+8 1
+3 7
+9 7
+10 11
+1 11
+7 11
+
+
+Korlátok
+    Időlimit: 0.1 mp.
+    Memórialimit: 32 MB
+    A tesztek 75%-ában a bemenet olyan, hogy bármely starttól célig vetető útvonal
+    ugyanannyi ellenőrző ponton megy keresztül.
+
+
+
+                                              1. oldal
+

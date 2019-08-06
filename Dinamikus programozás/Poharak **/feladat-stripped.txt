@@ -1,0 +1,30 @@
+
+
+                                            Pohár
+Egy boros gazdának N pohara van, ezekkel méri ki a vendégek által igényelt bort. A tisztítás miatt
+arra törekszik, hogy egy poharat se használjon a kimérés során kettőnél többször, illetve a lehető
+legkevesebbet használjon kétszer.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány poharat kell kétszer használni adott
+L mennyiség kiméréséhez!
+Bemenet
+A standard bemenet első sorában a poharak száma (1≤N≤1000) és a kimérendő mennyi-
+ség (1≤L≤20 000) van. A második sor pontosan N egész számot tartalmaz, a poharak méretét
+(1≤Mi≤1000).
+Kimenet
+A standard kimenet első sorába azon poharak minimális számát kell írni, ahányat kétszer
+kell használni az L mennyiség kiméréséhez! Ha az L mennyiséget nem lehet kimérni, akkor a -1
+számot kell kiírni!
+Példa
+Bemenet                                          Kimenet
+3 7                                              1
+1 3 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és M≤500
+
+
+
+
+                                             1. oldal
+

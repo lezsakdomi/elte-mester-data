@@ -1,0 +1,29 @@
+
+
+                                           Átváltás
+Készíts programot, amely képes inch-et centiméterre és centimétert inch-re váltani. (1 inch = 2,54
+cm).
+Bemenet
+A standard bemenet első sora tartalmazza az átváltások számát (1≤N≤104). Ezután N
+sorban egy-egy átváltás adatai következnek, az átváltás iránya (1 = inch → cm vagy 0 = cm →
+inch) és az átváltandó összeg (0≤összeg≤104).
+Kimenet
+A standard kimenetre N sort kell kiírni, az i-edik sorba az átváltott összeget írjuk (az
+átváltott értékeket kerekítsük két tizedesjegyre)!
+Példa
+Bemenet                                            Kimenet
+5                                                  96.46
+0   245                                            38.1
+1   15                                             556.69
+0   1414                                           4.72
+0   12                                             2542.54
+1   1001
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,37 @@
+
+
+                      Új őrség küldése a Kínai Nagy Falra
+A Kínai Nagy Falon N őrhelyet létesítettek. Közülük azonban csak M helyen van őrség. Két
+szomszédos őrhely közötti fal őrzött, ha legalább az egyik végén van őrség.
+Készíts programot, amely megadja, hogy minimum hány helyre kell még őrséget küldeni, hogy
+minden fal őrzött legyen!
+Bemenet
+A standard bemenet első sorában az őrhelyek száma (1N100) és az őrségek száma
+(1M100) van, egy szóközzel elválasztva. A következő M sor az őrségek leírását tartalmazza,
+közülük az i-edik annak az őrhelynek a sorszáma, ahol az i-edik őrség van. Tudjuk, hogy minden
+helyen legfeljebb 1 őrség van.
+Kimenet
+A standard kimenet első sorába az új őrségek minimális számát kell írni, amivel elérhető,
+hogy minden fal őrzött legyen!
+Példa
+Bemenet                                        Kimenet
+15 9                                           2
+6
+3
+12
+11
+4
+5
+8
+15
+14
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

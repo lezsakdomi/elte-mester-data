@@ -1,0 +1,37 @@
+
+
+                                  Lefedő egyenesek
+Adott a síkon egy ponthalmaz. Azt mondjuk, hogy egyenesek egy halmaza lefedi a ponthalmazt,
+ha a ponthalmaz bármely pontja rajta van valamelyik egyenesen.
+Írj olyan programot, amely eldönti, hogy adott ponthalmaz lefedhető-e legfeljebb három egyenes-
+sel! A program adjon is meg három ilyen egyenest, ha van lefedés!
+Bemenet
+A standard bemenet első sorában a pontok száma (1N100 000) van. A következő N
+sor mindegyikében egy pont x-koordinátája és y-koordinátája (-1 000 000x,y1 000 000)
+van.
+Kimenet
+A standard kimenet első sorába négy 0 számot kell írni, ha a ponthalmaz nem fedhető le
+három egyenessel! Egyébként az állományba három sort kell írni, mindhárom sorba egy-egy lefe-
+dő egyenest megadó négy egész számot kell írni: x1; y1; x2; y2, ami az (x1,y1) és (x2,y2) pon-
+tokon átmenő egyenest jelenti! Ha a ponthalmaz lefedhető háromnál kevesebb egyenessel, akkor
+is három sort (egyenest) kell kiírni; a felesleges egyenesek tetszőlegesek!
+Példa
+Bemenet                                        Kimenet
+8                                              2 3 2 8
+2   3                                          2 8 8 5
+4   2                                          4 2 6 4
+6   4
+2   5
+8   5
+6   6
+4   7
+2   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

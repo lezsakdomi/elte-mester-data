@@ -1,0 +1,51 @@
+
+
+                                      Világranglista
+Ismerjük egy sportverseny világranglistáját, ahol az eredmények pontszám szerint csökkenő sor-
+rendben vannak. Néhány versenyt bonyolítanak le, melyeken a ranglistán szereplő versenyzők va-
+lamely része indult. Minden verseny után minden induló versenyzőről ismerjük, hogy hány pontot
+ért el. A verseny után megállapított ranglistán minden versenyzőnek az eddigi legjobb pontszáma
+számít. Az azonos pontszámmal rendelkezők közül az van előbb, aki előbb ért el ilyen eredményt.
+Ha a világranglistán levőnél nagyobb pontszámot szereztek, akkor a ranglistán előbbre kerülhet-
+nek.
+Készíts programot, amely megadja minden verseny után, hogy a résztvevők a világranglista há-
+nyadik helyére kerültek!
+Bemenet
+A standard bemenet első sorában a versenyzők száma (1≤N≤100 000), valamint a verse-
+nyek száma (1≤M≤100) van. A következő N sorban a világranglista található, miden sor első
+száma a versenyző azonosítója (1≤Vi≤N), a második pedig a pontszáma (1≤Pi≤100 000),
+pontszám szerint csökkenő sorrendben. A következő M blokkban egy-egy verseny leírása szere-
+pel. A blokk első száma a versenyen indulók száma (1≤Indi≤100), amit Indi sorban követnek
+az indulók azonosítói és pontszámai, pontszám szerint csökkenő sorrendben – feltehető, hogy
+nincs két egyforma pontszámú.
+Kimenet
+A standard kimenet M blokkjába az egyes versenyek után a versenyen indulók új világ-
+ranglista helyezését kell kiírni! Minden blokk első száma a versenyen indulók Indi száma legyen!
+A következő Indi sorba a versenyen indulók azonosítói és új helyezései kerüljenek, azonosító-
+szerinti sorrendben!
+Példa
+bemenet                                         kimenet
+6   2                                           3
+3   500                                         1   4
+2   400                                         4   5
+4   300                                         5   1
+1   200
+6   100                                         3
+5   0                                           1   4
+3                                               3   2
+5   600                                         6   5
+1   400
+4   350
+3
+3   550
+6   400
+1   200
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

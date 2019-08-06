@@ -1,0 +1,29 @@
+
+
+                                         Péntek 13
+Egyesek nagyon szerencsétlen napnak tartják, ha a pénteki nap valamelyik hónap 13. napjára esik.
+Írj programot, amely egy adott évben megmondja, hogy mely hónapok 13. napja esik péntekre!
+Figyelj a szökőévekre!
+Bemenet
+A standard bemenet első sora egyetlen egész számot tartalmaz, azt az EV évet, amelyben a
+13. napra eső péntekek hónapjait keressük (1≤EV≤20000). A második sorban a hét azon napjá-
+nak neve található (ELSEJE), amelyre az adott EV év első napja esett. Az ELSEJE nap ékezetek
+nélkül, csupa kis betűvel adja meg a napnevet (hetfo, kedd, szerda, csutortok,
+pentek, szombat vagy vasarnap).
+Kimenet
+A standard kimenetre azon hónapok nevét kell kiírni egy-egy szóközzel elválasztva, ame-
+lyek 13. napja pénteken van! A hónapok nevét ékezetek nélkül, csupa kis betűvel kell megadni
+(januar, februar, stb)!
+Példa
+Bemenet                                         Kimenet
+2015                                            februar marcius november
+csutortok
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

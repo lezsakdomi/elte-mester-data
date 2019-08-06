@@ -1,0 +1,42 @@
+
+
+                               Rendezvény 2 teremben
+Egy kultúrháznak két nagy előadóterme van, A és B. Egy napon sok előadást szeretnének tartani a
+két teremben. Az igazgató begyűjtötte az igényeket, azt, hogy ki mettől-meddig akar előadást tar-
+tani. Természetesen egy teremben egyszerre csak egy előadás tartható. Ha egy előadás az T idő-
+pontban ér véget, akkor a következő előadás legkorábban a T+1 időpontban kezdődhet.
+Készíts programot, amely kiszámítja a legtöbb előadás számát, amelyek megtarthatók a két te-
+remben! A programod adjon is meg egy beosztást a két teremre, amellyel elérhető, hogy a lehető
+legtöbb előadás legyen megtartva!
+Bemenet
+A standard bemenet első sorában az igényelt előadások száma van (1≤N≤1000). A to-
+vábbi N sor mindegyike két egész számot tartalmaz, egy igényelt előadás E kezdő időpontját és T
+befejezési időpontját (1≤E<T≤720).
+Kimenet
+A standard kimenet első sorába az az A terembe beosztott előadások U számát, és a B te-
+rembe beosztott előadások V számát kell írni! A második sor azon előadások sorszámát tartal-
+mazza, amelyeket ebben a sorrendben az A teremben tartanak! A harmadik sor azon előadások
+sorszámát tartalmazza, amelyeket ebben a sorrendben az B teremben tartanak! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+10                                              3 4
+3 8                                             5 8 6
+9 20                                            4 9 10 7
+13 25
+2 5
+2 4
+13 22
+22 30
+6 10
+7 9
+10 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

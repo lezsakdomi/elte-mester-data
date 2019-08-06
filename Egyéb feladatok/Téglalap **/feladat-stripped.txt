@@ -1,0 +1,43 @@
+
+
+                                            Téglalap
+Adott a síkon N db pont és egy ezektől különböző Q pont. Meg kell határozni egy olyan egyenes
+állású téglalapot (oldalai párhuzamosak a tengelyekkel), amelyre teljesül az alábbi három feltétel:
+       A Q pont a téglalap belsejében van (nem lehet a határán sem).
+       A téglalap mind a négy oldalán pontosan egy-egy pontja van a ponthalmaznak (a négy
+        pont nem feltétlenül különböző).
+       A ponthalmaz egyetlen pontja sem esik a téglalap belsejébe.
+Készíts programot, amely kiszámít egy olyan téglalapot, amely teljesíti a három feltétel mindegyi-
+két, ha van ilyen téglalap!
+Bemenet
+A standard bemenet első sorában a Q pont koordinátái vannak (0<A,B1 000 000). A
+második sor egy egész számot tartalmaz, a ponthalmaz pontjainak számát (2N100 000). A
+következő N sor mindegyike a ponthalmaz egy pontjának x- és y-koordinátáját tartalmazza (0<X,
+Y1 000 000).
+Kimenet
+A standard kimenet első és egyetlen sorába négy egész számot kell írni egy-egy szóközzel
+elválasztva! Az első két szám a feltételt kielégítő téglalap bal-alsó sarkának x- és y-koordinátája le-
+gyen, a második két szám pedig a téglalap jobb-felső sarkának x- és y-koordinátája! Ha nincs
+olyan téglalap, amely kielégíti a feltételt, akkor a 0 0 0 0 számnégyest kell kiírni! (Több megoldás
+esetén bármelyik megadható.)
+Példa
+Bemenet                                            Kimenet
+4   5                                              3 3 6 7
+8
+1   2
+2   5
+4   8
+5   8
+6   7
+7   6
+5   3
+3   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

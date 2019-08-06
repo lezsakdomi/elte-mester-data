@@ -1,0 +1,33 @@
+
+
+                                    Konténer rendezés
+Egy konténer raktárban N db konténer van egy sorban tárolva. A konténereket el akarják
+szállítani, ezért mindegyikre rá van írva, hogy melyik városba kell szállítani. A városokat 1-től 4-ig
+sorszámozzák. A konténereket át kell rendezni úgy, hogy balról jobbra először az 1-essel, majd a
+2-essel, aztán a 3-assal, végül a 4-essel jelölt konténerek álljanak. A raktár majdnem tele van, csak
+az utolsó konténer után van egy konténer számára szabad hely. A rendezést a konténerek fölött
+mozgatható daruval végezhetjük, amely egy lépésben kiemel a helyéről egy konténert és átteszi azt
+a szabad helyre, ezzel az átmozgatott konténer helye lesz szabad.
+Írj programot, amelykiszámítja, hogy legkevesebb hány lépésben lehet rendezni a konténersort! A
+rendezés végén a szabad helynek a sor végén kell lennie!
+Bemenet
+A standard bemenetelsősorában a konténerek N száma van (1N100000). A második sor
+N egész számot tartalmaz egy-egy szóközzel elválasztva. Az i-edik szám annak a városnak a
+sorszáma (1 és 4 közötti érték), ahova az i-edik konténert szállítani kell.
+Kimenet
+A standard kimenetelső és egyetlen sorába a rendezés végrehajtásához minimálisan
+szükséges lépések számát kell írni!
+Példa
+Bemenet                                           Kimenet
+12                                                7
+1 2 1 3 3 2 2 4 3 4 1 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤1000
+
+
+
+
+                                               1. oldal
+

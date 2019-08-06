@@ -1,0 +1,40 @@
+
+
+                                          Kölcsön
+Mekk Elek vállalkozásának van egy nagy értékű munkagépe, amit más vállalkozók kölcsönözhet-
+nek tőle. Egy vagy több, de összefüggő napokra lehet igényelni, minden napra azonos a bérleti
+díj. A következő M napra sok megrendelés érkezett. Minden megrendelés két számot tartalmaz, a
+napok számát, és a határidőt, ameddig a megrendelőnek el kell végeznie a munkát a géppel.
+Készíts programot, amely a megrendelések alapján kiszámítja, hogy Mekk Elek legjobb esetben
+hány napra tudja bérbe adni a gépet! Továbbá meg is ad egy megfelelő beosztást.
+Bemenet
+A standard bemenet első sorában a munkanapok száma (1≤M≤1000) és a megrendelések
+száma (1≤N≤1000) van. A következő N sor mindegyike az igényelt napok számát, valamint a ha-
+táridőt tartalmazza (1≤D≤H≤M). A bemenet az igények határideje szerint nem csökkenően rende-
+zett.
+Kimenet
+A standard kimenet első sorába azt a legnagyobb K számot kell írni, amelyre teljesül, hogy
+összesen K napra bérbe lehet adni a gépet! A második sorban a kielégített igények L száma le-
+gyen! A következő L sor egy-egy megrendelés teljesítését tartalmazza, két egész számot, az első a
+megrendelés sorszáma, a második pedig az első nap sorszáma legyen, amelytől a megrendelő
+használhatja a gépet! A teljesített igények tetszőleges sorrendben megadhatók. Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+10 6                                            9
+2 2                                             4
+1 3                                             6   8
+2 3                                             5   5
+3 6                                             4   2
+3 7                                             2   1
+2 9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                            1. oldal
+

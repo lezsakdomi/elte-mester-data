@@ -1,0 +1,29 @@
+
+
+                          Horgászverseny – horgász halai
+Egy horgászverseny adatait egy mátrixban tároljuk: M(i, j) jelenti, hogy az i. horgász a j. halfajtá-
+ból mennyit fogott.
+Írj programot, amely kiszámítja, hogy melyik horgász hány halat fogott!
+Bemenet
+A standard bemenet első sorában a horgászok száma (1≤N≤100) és a halfajták száma
+(1≤K≤100) van. Az azt követő N sor mindegyikében szerepel, hogy az egyes horgászok mennyi
+halat fogtak az egyes halfajtából, vagyis K darab szóközzel elválasztott érték (1 és 1000 közötti
+egész számok).
+Kimenet
+A standard kimenet első sorába N darab egész számot kell írni szóközzel elválasztva, az
+egyes horgászok mennyi halat fogtak összesen!
+Példa
+Bemenet                                           Kimenet
+3   4                                             7 10 5
+2   1 0 4
+3   2 4 1
+4   0 0 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

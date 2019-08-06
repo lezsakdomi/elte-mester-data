@@ -1,0 +1,47 @@
+
+
+                                             Körút
+Bergengócia nevezetességeit egy kör alakú autópálya köti össze, amely mentén benzinkutak sora-
+koznak. Berg Egon elhatározta, hogy körbeautózik az úton. Az autóját üres tankkal tudja csak
+szállítani az egyik benzinkúthoz. Tudjuk, hogy melyik benzinkútnál mennyi benzin van és ismer-
+jük a benzinkutak egymástól való távolságát.
+Készíts programot, amely megadja, hogy melyik kúttól kell indulnia Egonnak az ott található tel-
+jes benzinkészlettel (biztosan magával tudja vinni), hogy úgy tudjon körbeautózni, hogy autójából
+ne fogyjon ki a benzin! Az autópálya egyirányú, az I. benzinkúttól csak az I+1. felé lehet indulni,
+valamint az N.-től az 1. felé.
+Bemenet
+A standard bemenet első sorában van a kutak száma (1N100 000) és a távolság, amit
+az autó egy liter benzinnel meg tud tenni (1M100). A következő N sor mindegyike két egész
+számot tartalmaz egy szóközzel elválasztva; az első a következő kút távolságát adja meg (legfel-
+jebb 1000), a második pedig az itt fellelhető benzin mennyiségét (legfeljebb 200 liter).
+Kimenet
+A standard kimenet első sorába az IGEN szót kell írni, ha valamelyik kúttól kezdve az au-
+tópálya körbeutazható, egyébként pedig a NEM szót! A második sorba azon kutak sorszámát kell
+írni, melyek bármelyikéből indulva körbe lehet autózni! Ha sehonnan sem lehet körbejutni, akkor
+ide annak a kútnak a sorszámát kell írni, ahonnan a legmesszebbre el lehet jutni, azaz a legtöbb
+kutat lehet érinteni! (Ha több megoldás is van, közülük egyet kell megadni!)
+Példa
+                                                                            200          200
+Bemenet                                          Kimenet                          25
+                                                                           20              15
+8 10                                             IGEN                200                            200
+200 25                                           4 6 5
+200 15                                                                20                            5
+100 5                                                                                                     100
+200 20                                                                                              20
+300 30                                                         400
+400 45
+                                                                                                    200
+200 20
+200 20                                                                                         30
+                                                                            45
+Korlátok                                                                           300
+
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

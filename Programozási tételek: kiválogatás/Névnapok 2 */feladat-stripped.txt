@@ -1,0 +1,31 @@
+
+
+                                       Névnapok 2
+Van egy listánk az év első napjától kezdve a névnapokról. Egy nap több név is lehet a listában
+(maximum 5 név egy nap) és előfordul, hogy ugyanaz a név többször is szerepel.
+Készíts programot, ami kigyűjti, hogy egy adott nevet az év hányadik napjain ünnepelünk!
+Bemenet
+A standard bemenet első sorában található a napok száma (1≤N≤365) és a keresett név.
+Az ezt követő N sor mindegyikében egy név található vagy vesszővel elválasztva több név, hogy
+az adott napon mely névnap van.
+Kimenet
+A standard kimenet első sorába ki kell írni a névnapok számát, majd ezt követően szóköz-
+zel elválasztva a napok sorszámát növekvő sorrendben, amikor azt a nevet ünnepeljük!
+Példa
+Bemenet                                         Kimenet
+365 Anna                                        1 207
+Fruzsina
+Ábel
+Benjámin,Genovéva
+Leóna,Titusz
+Simon
+...
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

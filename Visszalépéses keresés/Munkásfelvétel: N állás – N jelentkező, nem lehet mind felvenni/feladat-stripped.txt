@@ -1,0 +1,36 @@
+
+
+    Munkásfelvétel: N állás – N jelentkező, nem lehet mind felvenni
+Egy vállalkozás N különböző állásra keres munkásokat. Pontosan N jelentkező érkezett, ahol
+minden jelentkező megmondta, hogy mely munkákhoz ért, illetve amihez ért, arra mennyi fizetést
+kérne.
+A vállalkozás vezetője azt szeretné, ha az összes állást betöltenék, de úgy, hogy számára ez a lehe-
+tő legkisebb költséggel járna. Nem biztos azonban, hogy ez lehetséges. Akkor is érdekes lehet
+azonban egy olyan megoldás, amiben a lehető legtöbb munkát adhatjuk ki.
+Készíts programot, amely segít a vállalkozás vezetőjének a felvehető munkások maximális számát
+és az értük fizetett legkisebb költséget meghatározni!
+Bemenet
+A standard bemenet első sorában az állások N száma van (1≤N≤35). Az ezt követő N sor
+mindegyike egy-egy jelentkező ajánlatait tartalmazza: hány munkához ért (1≤DBi≤N), majd
+mindegyik munkánál melyik munkát (1≤Mi,j≤N) mennyiért vállalná (1≤Fi,j≤1000).
+Kimenet
+A standard kimenet első sorába a felvehető munkások maximális számát, a második sorá-
+ba pedig a felvett munkások legkisebb költségét kell kiírni!
+Példa
+Bemenet                                           Kimenet
+5                                                 4
+2   1   100   4 100                               700
+1   2   200
+2   1   200   2 100
+2   3   200   5 400
+3   1   500   2 400
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

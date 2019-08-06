@@ -1,0 +1,31 @@
+
+
+                                           Titkosítás
+Egy titkosírás elkészítéséhez a következő táblázatot használjuk (a táblázat c. sorának i. mezőjé-
+ben a szóköz karakter van):
+                          a      b     c      d        e      f   g   h    i
+                    a     i      o     q      h        b      f   y   l    w
+                    b     n      r     a      g        s      k   t   e    z
+                    c     d      u     p      x        c      j   v   m
+
+Egy szót ezzel a táblázattal úgy titkosítunk, hogy a betűit egyesével megkeressük a táblázat belse-
+jében és a titkosított szövegbe a helyére a betű sorában, illetve oszlopában levő betűpárt tesszük.
+Feltehetjük, hogy csak az angol ábécé kisbetűit használjuk.
+Írj programot, amely beolvas egy szót és kiírja titkosítva!
+Bemenet
+A standard bemenet első sora a titkosítandó szót tartalmazza. Ez csak az angol ábécé kis-
+betűiből állhat, benne szóköz is szerepelhet.
+Kimenet
+A standard kimenet első és egyetlen sorába a beolvasott szó titkosított változatát kell írni!
+Példa
+Bemenet                                              Kimenet
+balaton                                              aebcahbcbgabba
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                  1. oldal
+

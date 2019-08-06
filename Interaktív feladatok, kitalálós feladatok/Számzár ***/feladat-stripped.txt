@@ -1,0 +1,60 @@
+
+
+                                             Számzár
+Egy cég számjegyzárakat gyárt, ami olyan eszköz, amelynek tíz gombja van az egyes számjegyek
+beütésére, van egy gombja (reset), amelyet megnyomva a zár alapállapotba kerül, továbbá van egy
+gomb (a nyitó gomb), amelyet megnyomva a zár kinyit, feltéve, hogy az egyetlen helyes jelszót bil-
+lentyűztük be. Adott jelszóra egy adott chipet gyártanak, amely véges automataként működik, és
+ezt építik be a zárba. Ez azt jelenti, hogy ha a jelszó N számjegyből áll, akkor az automatának
+pontosan N+2 állapota van. Ha az automata egy a állapotban van és egy x jelet kap (az x szám-
+jegy gombját megnyomjuk), akkor a és x által egyértelműen maghatározott b állapotba kerül.
+Például, ha a jelszó az 1981, akkor a hibátlanul működő automatának az ábrán látható módon kell
+állapotot váltania a jelek hatására, továbbá csak az a4 állapotba kerülve szabad nyitnia. Az ábrán
+xi az összes olyan számjegyet jelöli, amely nem i, x pedig az összes számjegyet.
+
+
+
+
+Írj programot, amely teszteli a kész chipet, hogy jól működik-e! Csak azt tudjuk ellenőrizni, hogy
+jelek hatására nyitó állapotba kerül-e. Tudjuk, hogy a jelszóra a zár biztosan nyit.
+Könyvtár
+A teszteléshez öt művelet áll rendelkezésre, amelyeket a zar modul valósít meg
+    ResetA: Az automatát a kezdő állapotba állítja.
+    Jelszo: A jelszót adja, ami egy legfeljebb 100 decimális jelet ('0'..'9') tartalmazó karak-
+     tersorozat.
+    Be(x): Az adott állapotból az automata az x ('0'≤x≤'9') jel által meghatározott álla-
+     potba megy át.
+    Nyito: Ha az aktuális állapot nyitó, akkor a visszaadott érték igaz, egyébként hamis.
+    Nyit(k): Ha a számjegyzár csak a bemenetben megadott jelszóra nyit, akkor a jelszó le-
+     gyen a paraméter! Ha a bemenetben megadott jelszón kívül még más kulcsra is nyit, akkor
+     olyan jelsorozatot legyen a paraméter, amelyre szintén nyit a számjegyzár.
+A műveletek Pascal deklarációja:
+   uses zar;
+   procedure ResetA;
+   function Jelszo: string;
+   procedure Be(x: char);
+   function Nyito: boolean;
+   procedure Nyit(k: string);
+A műveletek C/C++ deklarációja:
+   #include ”zar.h”
+   void resetA();
+
+                                              1. oldal
+
+   string jelszo();
+   void be(char x);
+   bool nyito();
+   void nyit(string k);
+Használat
+Letölthető egy minta zar modul C++ és Pascal programja. Használatakor a standard in-
+put egyetlen sorába a jelszót kell írni!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             2. oldal
+

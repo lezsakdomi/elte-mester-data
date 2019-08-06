@@ -1,0 +1,61 @@
+
+
+                                        Háromszögek
+Ebben a feladatban színes szakaszhármasokkal és a belőlük szerkeszthető háromszögekkel kapcso-
+latban kell számításokat végezned. Három szakaszból akkor szerkeszthető háromszög, ha bármely
+kettő hosszának az összege nagyobb a harmadiknál. Egy háromszög területének négyzetét megkap-
+hatjuk a Hérón-képlet segítségével: 𝑇 2 = 𝑠 ∗ (𝑠 − 𝑎) ∗ (𝑠 − 𝑏) ∗ (𝑠 − 𝑐), ahol 𝑎,𝑏 és 𝑐 a három-
+                    𝑎+𝑏+𝑐
+szög oldalai és 𝑠 = 2 .
+Írj programot, amely
+     1.   megkeresi azokat a szakaszhármasokat, amelyekből háromszög szerkeszthető,
+     2.   megadja a legnagyobb területnégyzetű szerkeszthető háromszöget,
+     3.   kiszámítja a szerkeszthető piros háromszögek területeinek négyzetösszegét,
+     4.   megkeresi azokat a szakaszhármasokat, amelyekből derékszögű háromszög szerkeszthető!
+Bemenet
+A standard bemenet első sorában a szakaszhármasok száma (1≤N≤200) található, a kö-
+vetkező N sorban pedig maguk a szakaszhármasok. Egy-egy sor tartalmazza a három szakasz hosz-
+szát (1≤hossz≤200) és a szakszok színét, ami egy legfeljebb 20 angol kisbetűből álló karakter-
+lánc.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Azon szakaszhármasok számát kell kiírni, amelyekből háromszög szerkeszthető,
+majd a sorszámaikat növekvő sorrendben!
+2. részfeladat: Annak a szakaszhármasnak a sorszámát kell kiírni, amelyikből a legnagyobb terü-
+letnégyzetű háromszög szerkeszthető, valamint a háromszög területének négyzetét! Ha több legna-
+gyobb van, akkor a legkisebb sorszámút, ha pedig nincs ilyen, akkor egyetlen -1-et kell kiírni! A
+terület négyzetét p/q alakban kell megadni, ahol p és q relatív prím nemnegatív egészek!
+3. részfeladat: A "piros" színű szakaszhármasokból szerkeszthető háromszögek területeinek
+négyzetösszegét kell kiírni p/q alakban, ahol p és q relatív prím nemnegatív egészek (p 0 is lehet).
+4. részfeladat: Azon szakaszhármasok számát kell kiírni, amelyekből derékszögű háromszög szer-
+keszthető, majd a sorszámaikat növekvő sorrendben!
+Példa
+ Bemenet                                           Kimenet
+ 4                                                 #
+ 1    3    4   piros                               3 2 3 4
+ 1    1    1   piros                               #
+ 1    2    2   kek                                 4 36/1
+ 3    4    5   piros                               #
+                                                   579/16
+                                                   #
+                                                   1 4
+
+
+
+                                              1. oldal
+Informatikai alapismeretek – emelt szint              2012. október 15.
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+

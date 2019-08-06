@@ -1,0 +1,41 @@
+
+
+                    Legtöbb rendszeridőt használó felhasználó
+Egy számítógép-hálózaton a szerver nyomon követi a felhasználók be- és kijelentkezését, mely-
+nek alapján naponta többféle jellemzőt kiszámíthatunk. Minden felhasználó a munkája végén kö-
+teles kijelentkezni, valamint egyszerre csak egyetlen gépen jelentkezhet be. Ha az első adata egy
+kijelentkezés, akkor azt úgy kell érteni, hogy még az előző napon jelentkezett be, s ha nem jelent-
+kezett ki, az azt jelenti, hogy még a következő napon is folytatja a munkáját.
+Készíts programot, amely megadja a legtöbb összesített rendszeridőt használó felhasználó azono-
+sítóját!
+Bemenet
+A standard bemenet első sorában az adatok száma van (1≤N≤3200). A következő sorok-
+ban egy-egy be- vagy kijelentkezés adatai vannak. A sor első két karaktere a BE vagy a KI szó,
+majd ezt követi egy-egy szóközzel elválasztva a felhasználó azonosítója (legfeljebb 6 karakter), a
+művelet óra (0≤Ó≤23) és perc (0≤P≤59) adata. Legfeljebb 1500 felhasználói azonosítót adtak
+ki.
+Kimenet
+A standard kimenet első sorába a legtöbb összesített rendszeridőt használó felhasználó
+azonosítóját kell írni! Ha több ilyen van, akkor mindet meg kell adni, egy-egy szóközzel elválaszt-
+va!
+Példa
+Bemenet                                          Kimenet
+8                                                ALFA
+BE   ALFA 3 15
+KI   BETA 4 50
+KI   ALFA 5 30
+BE   GAMMA 6 30
+BE   ALFA 6 35
+KI   GAMMA 6 55
+KI   GAMMA 7 55
+KI   ALFA 11 45
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

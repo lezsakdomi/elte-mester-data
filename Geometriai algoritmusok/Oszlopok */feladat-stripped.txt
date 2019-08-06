@@ -1,0 +1,29 @@
+
+
+                                        Oszlopok
+Egy mezőn N oszlopot helyeztünk el. A (0,0) koordinátájú pontból nézve egyes oszlopok takar-
+nak más oszlopokat. Azt mondjuk, hogy az A pont takarja a B pontot, ha az A pont a (0,0)-B
+szakaszon található.
+Készíts programot, amely megadja, hogy a (0,0) koordinátájú pontból hány oszlopot látunk!
+Bemenet
+A standard bemenet első sorában az oszlopok száma van (1≤N≤100 000). A további N
+sorban pedig az egyes oszlopok koordinátái (0<xi,yi≤1000) vannak.
+Kimenet
+A standard kimenet egyetlen sorába azon oszlopok számát kell írni, ahányat látunk!
+Példa
+Bemenet                                        Kimenet
+4                                              3
+33
+24
+63
+42
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 70%-ában az oszlopok száma≤2000.
+
+
+
+
+                                            1. oldal
+

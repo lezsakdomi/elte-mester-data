@@ -1,0 +1,36 @@
+
+
+                                          Kastély
+Kastélyokban különböző számú, különböző méretű téglalap alakú terem van. A kastélyok felújítá-
+sakor egy kastélyon belül minden terembe egyforma négyzet alakú járólapokat szeretnének lerak-
+ni.
+Készíts programot, amely minden kastélyra kiszámítja a legnagyobb lehetséges járólap méretet!
+Bemenet
+A standard bemenet első sorában a kastélyok száma (1≤K≤10) van. A következő K blokk
+mindegyikének első sorában egy kastély termei száma (1≤Ti≤10) található, amit Ti sorban követ
+az egyes termek szélessége és hosszúsága (1≤Si,j,Hi,j≤1 000 000 000).
+Kimenet
+A standard kimenet K sorába egy-egy kastélyban használandó maximális méretű, négyzet
+alakú járólap méretét kell kiírni!
+Példa
+Bemenet                                         Kimenet
+3                                               5
+3                                               14
+10 15                                           1
+40 40
+75 25
+2
+42 140
+70 56
+1
+154 15
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,60 @@
+
+
+                                       Robotverseny
+Robotokat versenyeztetnek egy olyan pályán, amely kijelölt pontokból és bizonyos pontpárokat
+összekötő egyenes pályaszakaszokból áll. Ha a p és q pontot összeköti közvetlenül pályaszakasz,
+akkor azt mondjuk, hogy p és q szomszédok. Minden robot egy lépésben egy időegység alatt
+szomszédos pontba léphet, betartva a következő szabályokat. A p pontból csak akkor léphet a q
+szomszédos pontba, ha
+   1. a q pontban még nem járt egyetlen robot sem,
+   2. ugyanazon pontba nem léphet egyszerre több robot, azaz csak akkor léphet q-ba, ha q-
+      nak nincs olyan r szomszédja, ahol éppen robot tartózkodik,
+   3. ha egy robot valamikor nem tud lépni, akkor utána már sohasem léphet.
+A verseny során egyik robot sem tudja, hogy a többi éppen hol tartózkodik és milyen útvonalon
+érkezett oda. Ezért a robotokat úgy programozták, hogy biztonságos útvonalon haladjanak, tehát
+bárhogy is haladt a többi robot az adott időpontig, az aktuális lépése biztosan szabályos lesz.
+Minden robot arra törekszik, hogy a kijelölt célpontba érjen a lehető legrövidebb idő alatt.
+Készíts programot, amely kiszámítja, hogy melyik robot ér először a célba, és mennyi idő alatt!
+Bemenet
+A standard bemenet első sorában a pályapontok száma (1N10 000), a robotok száma
+(1K1000), valamint a célpont C azonosítója van. A második sorban pontosan K különböző
+egész szám van (egy-egy szóközzel elválasztva), a K darab robot kezdeti pályapontja. A következő
+N sor írja le a pályát. Közülük az i-edik sorban azok a csomópontok vannak felsorolva egy-egy
+szóközzel elválasztva és 0-val zárva, amelyek az i pályapont közvetlen szomszédjai. A közvetlen
+pályaszakaszok száma legfeljebb 100 000.
+Kimenet
+A standard kimenet első sorába azt a D legkisebb időt kell írni, amennyi idő alatt va-
+lamelyik robot célba ér! A második sorba egy legrövidebb idő alatt célba érkező robot kezdeti pá-
+lyapontja kerüljön! Ha egyik robot sem tud célba jutni a szabályok betartásával, akkor mindkét
+sorba a -1 számot kell kiírni!
+Példa
+Bemenet                                          Kimenet
+10 3 10                                          4
+1 2 3                                            1
+4 5 0
+5 6 7 3 0
+7 2 0
+5 1 10 0
+8 1 2 9 0
+2 9 10 0
+2 3 10 0
+5 10 0
+5 6 0
+8 4 6 0
+
+
+
+
+                                             1. oldal
+Gráfok – Szélességi bejárás              ***
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                              2. oldal
+

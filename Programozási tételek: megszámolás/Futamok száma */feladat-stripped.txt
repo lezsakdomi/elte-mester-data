@@ -1,0 +1,29 @@
+
+
+                                     Futamok száma
+Futamnak nevezzük egy számsorozat azon leghosszabb folytonos részét, amelyben a számok ér-
+téke vagy folyamatosan nő, vagy folyamatosan csökken.
+Add meg egy számsorozat futamainak számát!
+Bemenet
+A standard bemenet első sorában található a számsorozat hossza (1≤N≤100). Az ezt követő N sor-
+ban pedig a számsorozat elemei vannak (maximum 1000).
+Kimenet
+A standard kimenet első sorába ki kell írni a futamok számát!
+Példa
+Bemenet                                       Kimenet
+6                                             3
+1
+2
+3
+2
+5
+6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

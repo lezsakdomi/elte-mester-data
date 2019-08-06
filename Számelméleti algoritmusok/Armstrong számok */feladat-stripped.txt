@@ -1,0 +1,23 @@
+
+
+                                Armstrong számok
+Az N-jegyű Armstrong-számok olyan számok, amelyek számjegyei N-edik hatvány összege éppen
+maga a szám.
+Készíts programot, amely megadja az N-jegyű Armstrong-számokat!
+Bemenet
+A standard bemenet egyetlen sorában N értéke (1≤N≤8) van.
+Kimenet
+A standard kimenet első sorába az N-jegyű Armstrong számokat kell írni, növekvő sor-
+rendben!
+Példa
+Bemenet                                      Kimenet
+3                                            153 370 371 407
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                         1. oldal
+

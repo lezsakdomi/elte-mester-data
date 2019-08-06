@@ -1,0 +1,30 @@
+
+
+                                   Legidősebb ember
+N embernek ismerjük a születési adatait: év, hónap, nap.
+Készíts programot, amely megadja a legidősebb ember sorszámát!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤1000). A következő so-
+rok mindegyike három egész számot tartalmaz egy-egy szóközzel elválasztva: az adott ember szü-
+letése évének (1900≤É≤2014), hónapjának (1≤H≤12) és napjának (1≤Nap≤30) sorszámát.
+Kimenet
+A standard kimenet első sorába a legidősebb ember sorszámát kell kiírni! Ha több megol-
+dás is van, akkor a legkisebb sorszámút kell kiírni!
+Példa
+Bemenet                                          Kimenet
+5                                                3
+1957   1   20
+2000   1   22
+1917   1   8
+2001   2   22
+1950   5   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

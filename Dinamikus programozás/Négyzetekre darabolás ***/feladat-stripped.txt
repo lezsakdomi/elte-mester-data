@@ -1,0 +1,38 @@
+
+
+                                   Négyzetekre vágás
+Adott egy téglalap alakú fémlap, amit a lehető legkevesebb négyzetre kell darabolni. A darabolásra
+olyan vágógépet használhatunk, amely csak ketté tudja vágni a lapot valamelyik oldalával párhu-
+zamosan. A keletkezett darabokat külön-külön darabolhatjuk tovább. A téglalap oldalainak hossza
+egész szám centiméter mértékegységben mérve, és a darabolás eredményeként is olyan négyzete-
+ket kell kapni, amelyek oldalhosszai egész számok. Egy darabolás akkor optimális, ha a lehető
+legkevesebb négyzet keletkezik.
+
+
+
+
+                             1. ábra. 5x6-os téglalap optimális darabolása
+Írj programot, amely megad egy optimális darabolást!
+Bemenet
+A standard bemenet egyetlen sora a darabolandó téglalap oldalainak hosszát tartalmazza
+(1A,B200).
+Kimenet
+A standard kimenet első sorába a bemeneti téglalap optimális darabolásakor keletkező
+négyzetek számát kell írni! A további sorokba kell kiírni az optimális darabolás során keletkező
+négyzetek méretét és darabszámát, méret szerint növekvően! Minden sor két egész számot tar-
+talmazzon, az első egy négyzet oldalhossza legyen, a második pedig az ilyen méretű négyzetek
+száma az optimális darabolásban!
+Példa
+Bemenet                                            Kimenet
+5 6                                                5
+                                                   2 3
+                                                   3 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

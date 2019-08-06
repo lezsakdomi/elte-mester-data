@@ -1,0 +1,72 @@
+
+
+                                           Favágás
+Egy gyümölcsös bináris birsalmafáinak leveleit betegség támadta meg. Szerencsére a fertőzés las-
+san terjed, és a gyümölcsös gazdája időben észlelte a dolgot. A betegség még nem jutott el más
+ágakra, ezért a beteg ágak levágásával a fák még megmenthetők.
+Egy fára ismerjük a lehetséges vágások számát, azaz azt, hogy a gyümölcsös gazdájának hány ág
+elmetszésével kell az összes beteg ágat eltávolítania. Tudjuk még, hogy a fa legalább egy ággal
+rendelkezik, s a gyökérelemből csak egy (bal oldali) ág indul ki (ez a fa törzse).
+Készíts programot, amely megadja egy fához, hogy mely ágakat kell elmetszeni ahhoz, hogy az
+összes beteg levelet levágjuk, de a megmaradt fának a lehető legtöbb ága legyen!
+Bemenet
+A standard bemenet első sorában a fa csomópontjainak száma (2N10 000) és a lehet-
+séges vágások száma (1K500) van. K biztosan nem nagyobb a beteg ágak számánál. A követ-
+kező N sor egy-egy csomópont leírását tartalmazza, négy egész számot, egy-egy szóközzel elvá-
+lasztva:
+       a csomópont sorszámát (0SN-1);
+       egy 0-t vagy 1-est, mely jelzi, hogy a csomópontba vezető ág fertőzött-e (1, ha beteg, 0
+        ha egészséges);
+       a bal oldali ág végpontjának sorszámát (-1, ha nincs bal oldali ág);
+       a jobb oldali ág végpontjának sorszámát (-1, ha nincs jobb oldali ág).
+A 0. csomópont (a gyökérelem) biztosan egészséges, bal oldali leszármazottja van, jobb oldali vi-
+szont nincs.
+Kimenet
+A standard kimenet első sorába az optimális metszés után megmaradó ágak számát kell
+írni! A második sorba K egész számot kell írni, egy-egy szóközzel elválasztva: az egyes vágásokat!
+Egy vágást a csomópont (ez alatti ágat kell elmetszeni) azonosítójával kell megadni! Több megol-
+dás esetén bármelyik megadható. A számok sorrendje közömbös.
+Példa
+Bemenet                                         Kimenet
+25 5                                            16
+0 0 1 -1                                        9 19 11 13 24
+1 0 2 3
+2 0 4 5                                                      16   17      18       19    20       21    22          23   24
+3 0 6 7                                                                                 11             13
+
+4 0 8 9                                                      8        9       10             12                     14
+                                                                                   5              6             7        15
+5 0 10 11                                                         4
+6 0 12 13                                                                                                   3
+7 0 14 15                                                                 2              1
+                                                                                        0
+8 0 16 -1
+9 0 17 18
+10 0 -1 19
+11 1 -1 -1
+12 0 20 21
+13 0 22 23
+14 0 -1 -1
+
+                                             1. oldal
+
+15   0   -1   24
+16   0   -1   -1
+17   1   -1   -1
+18   1   -1   -1
+19   1   -1   -1
+20   0   -1   -1
+21   0   -1   -1
+22   1   -1   -1
+23   1   -1   -1
+24   1   -1   -1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 64 MiB
+Pontozás: A tesztek 40%-ában a csomópontok száma N≤500
+
+
+
+
+                                       2. oldal
+

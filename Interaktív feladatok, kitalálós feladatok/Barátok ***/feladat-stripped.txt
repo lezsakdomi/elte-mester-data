@@ -1,0 +1,44 @@
+
+
+                                             Barátok
+Egy osztály tanulói három baráti csoportba tartoznak, mindegyik csoportban legalább egy tanuló
+van.
+Írj programot, amely megadja a három baráti csoport egy-egy tagját!
+Könyvtár
+Az alábbi műveleteket lehet használni, amelyeket a valasz modul valósít meg.
+    TanulokSzama: Pontosan egyszer kell hívni a program elején és a visszaadott érték egy
+     egész szám, az osztály tanulóinak N száma (5N10 000).
+    Barat(x,y): A feltehető kérdést valósítja meg; ha x és y (1x,yN) ugyanazon baráti
+     csoportba tartozik, akkor 1 értéket ad vissza, egyébként 0-át.
+    Megoldas(a,b,c): Ezzel a művelettel kell közölni a három baráti csoport egy-egy tag-
+     ját! Blöffölni nem lehet! Csak akkor fogadható el a megoldás, ha a feltett kérdések alapján
+     három baráti csoport van, és a megadott három tanuló különböző baráti csoport tagja. A
+     művelet végrehajtása a program befejezését eredményezi.
+A valasz modul használata
+   Pascal program esetén
+      uses valasz;
+   Műveletek Pascal deklarációja
+      function TanulokSzama: integer;
+      function Barat(x,y: integer): integer;
+      procedure Megoldas(a,b,c: integer);
+   A műveletek C/C++ deklarációja
+      #include ”valasz.h”
+      int TanulokSzama();
+      int Barat(int x, int y);
+      void Megoldas(int a, int b, int c);
+Gyakorlás
+A minta.zip fájlban letölthető egy egyszerű válaszadó modul. A standard bemenet első sora a
+tartanulók számát tartalmazza.
+Korlátozások
+Időlimit: 1 mp.
+Memórialimit: 32MB
+A tesztek 30%-ában N<1000.
+A programod nem írhat és nem olvashat semmilyen állományt, a standard outputra sem írhat!
+Pontozás
+A megoldást akkor elfogadható, ha a program legfeljebb 2N-2 Barat műveletet hajtott végre,
+és egyik tanuló sem szerepelt 4-nél több Barat műveletben, továbbá a feltett kérdések alapján
+három baráti csoport van, és a megadott három tanuló különböző baráti csoport tagja.
+
+
+                                              1. oldal
+

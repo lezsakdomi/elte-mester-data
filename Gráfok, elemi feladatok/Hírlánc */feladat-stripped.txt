@@ -1,0 +1,44 @@
+
+
+                                           Hírlánc
+Hírek úgy keletkeznek, hogy egy vagy több ember elmondja néhány másik embernek, azok azt
+tartják igaznak, amit több embertől hallottak, majd azt a hírt adják tovább, … és így tovább. Min-
+denki azt az egy hírt fogadja el igaznak, amelyet több embertől hallott, mint bármely más hírt.
+Írj programot, amely az emberek kikérdezése alapján megadja, hogy melyik milyen hírt tart igaz-
+nak! Feltehető, hogy hír nem jár körbe!
+Bemenet
+A standard bemenet első sorában az emberek száma (1N200), a hírtovábbadások szá-
+ma (1M10 000), valamint a hírt kitalálók száma (1KN) van. A következő M sor mindegyi-
+kében két ember sorszáma van (1ABN), amelynek jelentése: A azt a hírt, amit igaznak tart, B-
+nek továbbítja. Ha A nem tart igaznak egy hírt sem, akkor nem továbbít semmit B-nek. A további
+K sor mindegyikében a hírt kitaláló ember sorszáma (1sorszámN) és a hír tartalma (egyetlen,
+legfeljebb 10 karakteres, az angol ábécé betűit tartalmazó szó) van, egy szóközzel elválasztva.
+Mind a K hír különböző. Hír kitalálója nem kaphat hírt másoktól. Minden ember akkor dönt ar-
+ról, hogy melyik hírt fogadja el igaznak, amikor mindenkitől, aki neki hírt továbbíthat, megkapta a
+hírt.
+Kimenet
+A standard kimenetre pontosan N sort kell írni. Az i-edik sorban az a hír (legfeljebb 10
+karakteres szó) legyen, amit az i-edik ember igaznak tart. Ha valamelyik ember nem tudja, mi az
+igaz hír, akkor a megfelelő sorba a NINCS szót kell kiírni!
+Példa
+Bemenet                                          Kimenet
+7   6 2                                          fagy                      1          3         4
+2   3                                            zivatar
+1   3                                            NINCS
+3   4                                            NINCS
+                                                                           2          7         5
+2   7                                            NINCS
+4   5                                            NINCS
+4   7                                            zivatar
+1   fagy                                                                              6
+2   zivatar
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤20
+
+
+
+
+                                             1. oldal
+

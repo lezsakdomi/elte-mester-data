@@ -1,0 +1,30 @@
+
+
+                    Kitalálós játék nem-válasz szám korláttal
+Ádám és Éva kitalálós játékot játszik. Éva gondol egy 1 és N közötti egész számot, amelyet
+Ádámnak ki kell találnia. Ádám olyan kérdést tehet fel, hogy "A gondolt szám kisebb-e, mint x?".
+Éva válasza "igen" vagy "nem" lehet. Hogy a játék érdekesebb legyen, megállapodtak abban, hogy
+Ádám legfeljebb H-szor tehet fel olyan kérdést, amelyre a válasz "nem", tehát ha már H kérdésére
+"nem" választ kapott, akkor tovább nem kérdezhet.
+Írj programot, amely N és H ismeretében kiszámítja azt a legkisebb K értéket, amelyre teljesül,
+hogy Ádám bármely 1 és N közötti gondolt számot ki tud találni legfeljebb K kérdéssel úgy, hogy
+legfeljebb H-szor kap "nem" választ!
+Bemenet
+A standard bemenet egyetlen sorában az N értéke (1N2 000 000 000) és a H értéke
+(2H100) van.
+Kimenet
+A standard kimenet egyetlen sorába azt a minimális K értéket kell írni, amelyre teljesül,
+hogy Ádám bármely 1 és N közötti gondolt számot ki tud találni legfeljebb K kérdéssel úgy, hogy
+legfeljebb H-szor kap "nem" választ!
+Példa
+Bemenet                                        Kimenet
+9 2                                            4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

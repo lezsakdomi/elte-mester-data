@@ -1,0 +1,31 @@
+
+
+                         Szomszédainál melegebb napok
+N napon át mérték a déli hőmérsékeltet.
+Szomszédainál melegebb egy nap, ha a mért érték nagyobb az előző és a következő mérésnél is.
+Egymáshoz legközelebbi K szomszédainál melegebb napnak nevezzük azon K darab nap
+sorozatát, amelyek közül a két legtávolabbi távolsága a lehető legkisebb.
+Készíts programot, amely meghatározza az egymáshoz legközelebb levő K szomszédainál mele-
+gebb napot!
+Bemenet
+A standard bemenet első sorában a mérések száma (1≤N≤10 000) és a K (2≤K≤N/2)
+érték szerepel. A következő sorban az N mérés értéke van (0≤Mi≤10 000).
+Kimenet
+A standard kimenet első sorába az egymáshoz legközelebb levő K szomszédainál mele-
+gebb nap legkisebb távolságát kell írni! A második sorba egy ilyen K napból álló sorozat tagjainak
+mérési sorszáma kerüljön, növekvő sorrendben! Több megoldás esetén bármelyik megadható. Ha
+nincs K szomszédainál melegebb nap, akkor az egyetlen sorba -1-et kell kiírni!
+Példa
+Bemenet                                                            Kimenet
+20 3                                                               4
+1 1 5 4 3 5 3 5 1 1 1 1 2 1 2 1 2 1 1 1                            13 15 17
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

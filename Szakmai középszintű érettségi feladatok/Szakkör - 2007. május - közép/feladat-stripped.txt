@@ -1,0 +1,35 @@
+
+
+                                          Szakkör
+Egy osztályba csupa különböző nevű ember jár. Ismerjük, hogy melyik tanulók jelentkeztek a ma-
+tematika, és melyik tanulók jelentkeztek a magyar szakkörre.
+Írj programot, amely meghatározza azokat a tanulókat, akik mindkét szakkörre jelentkeztek!
+Bemenet
+A standard bemenet első sora tartalmazza a matematika és a magyar szakkörre jelentke-
+zők számát (1≤N,M≤10000). A következő N sor egy-egy matematika szakkörre jelentkező tanu-
+ló nevét tartalmazza. A következő M sor egy-egy magyar szakkörre jelentkező tanuló nevét tartal-
+mazza. A tanulók nevei csak az angol ábécé kisbetűit tartalmazzák és minden név legfeljebb 20
+karakterből áll.
+Kimenet
+A standard kimenet első sorába azon tanulók K számát kell írni, akik mindkét szakkörre
+jelentkeztek! A következő K sorba ezen tanulók nevét kell írni, ábécé sorrendben!
+Példa
+Bemenet                                            Kimenet
+3 5                                                2
+gergo                                              anna
+anna                                               gergo
+kristof
+anna
+david
+gergo
+istvan
+peter
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

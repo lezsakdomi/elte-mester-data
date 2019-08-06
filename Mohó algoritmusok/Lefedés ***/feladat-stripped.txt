@@ -1,0 +1,32 @@
+
+
+                                          Lefedés
+Adott N pozitív egész szám. Keresünk legfeljebb K olyan zárt intervallumot, hogy minden meg-
+adott szám benne van valamelyik intervallumban és az intervallumok összhossza a lehető legki-
+sebb. Minden lefedő [a,b] intervallumra teljesülni kell, hogy a<b. Az intervallum hossza a b-
+a érték.
+Készíts programot, amely megadja a legkisebb összhosszú lefedő intervallumokat!
+Bemenet
+A standard bemenet első sorában a lefedendő számok száma (1≤N≤100 000) és a lefe-
+désre használható intervallumok számának maximuma (1≤K≤N) van. A második sor pontosan
+N pozitív egész számot tartalmaz (egy-egy szóközzel elválasztva), a lefedendő számokat. A szá-
+mok nem nagyobbak, mint 2 000 000.
+Kimenet
+A standard kimenet első sorába a lefedő intervallumok összhosszát kell írni! A további
+legfeljebb K sorba kell kiírni a lefedő intervallumokat kezdőpontjuk szerint növekvő sorrendben,
+egy sorba egy intervallum kezdő és végpontját! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+7 3                                             8
+3 1 4 11 7 9 15                                 1 4
+                                                7 11
+                                                15 16
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

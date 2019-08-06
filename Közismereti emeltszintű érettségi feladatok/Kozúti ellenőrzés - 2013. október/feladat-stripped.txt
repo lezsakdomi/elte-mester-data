@@ -1,0 +1,95 @@
+
+
+                                     Közúti ellenőrzés
+Bizonyára mindenki látott már rendőrjárőrt, aki szolgálata során egy út menti ellenőrző pontról a
+forgalmat figyelte. A járőr feladata lehet a szabálytalankodók kiszűrése mellett az elhaladó jármű-
+vek szúrópróbaszerű vagy módszeres ellenőrzése. Bizonyos esetekben egy műszaki ellenőrző ál-
+lomás is kitelepül, amely alkalmas a kiválasztott járművek műszaki állapotának felmérésére.
+Egy olyan nap adatait kell feldolgoznia, amelyen a rendőri mellett párhuzamosan, műszaki ellen-
+őrzés is zajlott egy egyirányú út mentén. Az úton haladó járművek adatait eltárolta egy a rendőr-
+autó forgalomrögzítő kamerájához csatlakoztatott gép. Ugyanaz a jármű többször is elhaladhat az
+úton, ekkor ezek külön áthaladásnak minősülnek.
+Az így feljegyzett adatok közül a rendszám első karaktere külön jelentéssel bír. Az egyes betűk
+közül a „B” autóbuszt, a „K” kamiont, az „M” motort jelöl, a többi rendszámhoz személygépko-
+csi tartozik.
+A rendőrök egyszerre csak egy járművet tudnak ellenőrizni. Amíg egy ellenőrzés zajlik, addig nem
+állítanak meg több autót, de ez idő alatt a kamera folyamatosan feljegyzi az elhaladt autók rend-
+számait is, amik így ellenőrzés nélkül tovább haladhatnak. Műszaki ellenőrzésre minden órában
+egy járművet választanak ki: azt, amelyik abban az órában először halad arra (függetlenül attól,
+hogy megállítottak-e már mást).
+A rendőrök épp egy baleset közelében látott járművet is keresnek rendszáma alapján. A szemta-
+núk csak a rendszám bizonyos karaktereire emlékeztek, így a rendszám ismeretlen karaktereit a *
+karakterrel helyettesítve tudják keresni.
+Írj programot, amely
+   1. meghatározza, hogy az ellenőrzést végzők aznap legalább hány órát dolgoztak,
+   2. megadja, hogy az egyes órákban mely járművek voltak műszakilag is ellenőrizve,
+   3. megadja, hogy hány busz, kamion, motor és személygépkocsi áthaladás volt aznap az el-
+      lenőrzőpont előtt,
+   4. megadja, hogy mettől meddig tartott a leghosszabb forgalommentes időszak,
+   5. egy adott keresőkifejezésre megadja, hogy az ellenőrzésnél áthaladó járművek közül, me-
+      lyek rendszáma illeszkedik a keresendő rendszámra,
+   6. megadja, mely járművek estek át rendőri ellenőrzésen, ha egy ellenőrzés 5 percig tartott és
+      az első arra járó járművet már meg is állították!
+Bemenet
+A standard bemenet első sorában adott az aznap arra elhaladó járművek száma van
+(2≤N≤80 000) – egy jármű többször is elhaladhat. A második sorban a keresendő rendszám ke-
+resőkifejezése áll. A következő N sorban az áthaladó járművek adatai találhatók az áthaladás sor-
+rendjében. Minden sorban szerepel az áthaladás ideje – óra (0≤ÓRA≤23), perc (0≤PERC≤59),
+másodperc (1≤MP≤59) alakban és a jármű rendszáma, egymástól szóközökkel elválasztva.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ.
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni. Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az aznap ledolgozott minimális órák számát kell kiírni! A rendőrök munkaideje
+pontosan egész órakor kezdődik és pontosan egész órakor végződik (Minden óra 0 perc 0 má-
+sodperckor kezdődik, és 59 perc 59 másodperckor végződik.)
+
+                                             1. oldal
+Emelt szintű informatika érettségi                                              2013. október 18.
+
+2. részfeladat: A műszaki ellenőrzés során vizsgált járművek rendszámát és a vizsgálat óráját kell
+megadni! Először meg kell adni, hogy melyik órában történt a vizsgálat, utána pedig, hogy milyen
+rendszámú járművet vizsgáltak – óránként külön-külön sorba! Ha egy órában nem történt vizsgá-
+lat, akkor azt nem kell kiírni!
+3. részfeladat: A különböző járműtípusokból áthaladt darabszámot kell kiírni (busz, kamion, mo-
+tor, személygépjármű sorrendben)!
+4. részfeladat: A leghosszabb forgalommentes időszak kezdő- és végpontját kell kiírni külön
+sorba – ez időszakot megelőző utolsó jármű áthaladása és a forgalommentes időszak utáni első
+jármű áthaladása (több megoldás esetén bármelyik megadható)! A két időpontot külön sorban kell
+megadni, óra, perc, másodperc alakban!
+5. részfeladat: A keresőkifejezésre illeszkedő rendszámok listáját kell kiírni külön-külön sorba!
+(Ha nincs ilyen rendszám, akkor a „nincs” szót kell kiírni!)
+6. részfeladat: A rendőri ellenőrzésen átesett járművek rendszámait kell kiírni külön-külön sorba!
+(Ha egy jármű többször jár arra, akkor azt mindig megállítják, de a listában csak egyszer kell fel-
+tüntetni!)
+Példa
+Bemenet                                          Kimenet
+5                                                #
+*N-2**7                                          7
+08 57 51      BN-2717                            #
+09 01 11      GP-4085                            08 BN-2717
+13 10 52      TA-3894                            09 GP-4085
+13 12 34      MN-2078                            13 TA-3894
+14 06 58      BN-2717                            14 BN-2717
+                                                 #
+                                                 2 0 1 2
+                                                 #
+                                                 09 01 11
+                                                 13 10 52
+                                                 #
+                                                 BN-2717
+                                                 #
+                                                 BN-2717
+                                                 TA-3894
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             2. oldal
+

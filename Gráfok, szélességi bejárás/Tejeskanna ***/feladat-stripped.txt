@@ -1,0 +1,37 @@
+
+
+                                        Tejeskanna
+Egy gazda három tejeskannában gyűjti össze a napi tejet, amit három boltba szállít. Mindegyik
+boltba ugyanannyi liter tejet szállít, ezért átöntögetésekkel el kell érnie, hogy mindhárom kanná-
+ban ugyanannyi tej legyen. Az áttöltögetések elvégzéséhez van két mérőpohara, az egyik A literes,
+a másik B literes. Tehát egy lépésben a gazda egyik kannából egy másik kannába tud áttölteni vagy
+A, vagy B liter tejet.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány áttöltést kell elvégezni, hogy mind-
+három kannában ugyanannyi tej legyen! A program azt is adja meg, hogy áttöltések milyen soro-
+zatával lehet ezt elérni.
+Bemenet
+A standard bemenet első sora három egész számot tartalmaz, a három kannában lévő tej
+mennyiségét (0≤T1,T2,T3≤200), T1+T2+T3 osztható hárommal. A második sor két egész
+számot tartalmaz, a két mérőpohár űrtartalmát (1≤A,B≤200).
+Kimenet
+A standard kimenet első sorába a legkevesebb áttöltések M számát kell írni, amellyel elér-
+hető, hogy mindhárom kannában ugyanannyi tej legyen! A további M sor mindegyike egy-egy át-
+töltést adjon meg három egész számmal: X Y Z, ami azt jelenti, hogy az X sorszámú (1≤X≤3)
+kannából az Y sorszámú (1≤Y≤3) kannába Z (Z=A vagy Z=B) liter tejet töltünk át! Ha nincs
+megoldás, akkor az első és egyetlen sor a -1 számot tartalmazza! Több megoldás esetén bárme-
+lyik megadható.
+Példa
+Bemenet                                          Kimenet
+7 3 8                                            3
+2 5                                              3 1 2
+                                                 1 2 5
+                                                 2 1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

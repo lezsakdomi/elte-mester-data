@@ -1,0 +1,42 @@
+
+
+                                        Ismerősök
+Embereket ismeretségeik alapján csoportokba rendezhetjük. Egy csoportba azok tartoznak, akik
+közvetlenül vagy közvetve (másokon keresztül) ismerik egymást. Az ismeretség többszörös is
+lehet! Egy ismeretség törlése csak egy kapcsolatot töröl két ember között.
+Készíts programot, amely minden kapcsolatfelvétel vagy törlés után megmondja, hogy a
+nyilvántartott emberek hány csoportba sorolhatók!
+Könyvtár
+A program megvalósításához az ismer könyvtár műveleteit kell használni.
+      kezdet: a programod elején egyszer kell meghívni, megadja az emberek számát
+       (1≤N≤1000).
+      muvelet(a,b,c): megadja a következő kapcsolatfelvételt vagy törlést. a értéke az f
+       (felvétel) vagy a t (törlés) betű lehet, b és c pedig két ember sorszáma (1 és N közötti
+       számok), akik között a kapcsolat felvétel vagy törlés történt. Automatikusan befejezi a
+       programot, ha nincs több művelet.
+      csoport(db): ezzel kell minden muvelet után megadni, hogy a nyilvántartott
+       emberek hány csoportba sorolhatók.
+A műveletek Pascal deklarációja:
+    uses ismer;
+    function kezdet: integer;
+    procedure muvelet(var a: char; var b,c: integer);
+    procedure csoport(db: integer);
+A műveletek C/C++ deklarációja:
+    #include ”ismer.h”
+    int kezdet();
+    void muvelet(char &a, int &b, int &c);
+    void csoport(int db);
+Használat
+Letölthető egy minta ismer modul C++ és Pascal programja. A kezdet a standard
+bemenetről egy egész számot olvas be, az emberek számát. A muvelet egy a, b, c hármast olvas
+be és ad vissza a paramétereiben. Leáll, ha a=v.
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

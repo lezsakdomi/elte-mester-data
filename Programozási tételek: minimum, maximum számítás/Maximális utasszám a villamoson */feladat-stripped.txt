@@ -1,0 +1,31 @@
+
+
+                       Maximális utasszám a villamoson
+A Villamos-közlekedési Vállalat (VKV) felmérést végzett a villamosok kihasználásáról, melyet
+számítógéppel kell feldolgozni. A villamos-vonalon N állomás van, beleértve az induló- és a vég-
+állomást is. Egy út során a villamosvezetőnek meg kellett számolnia minden állomáson a fel- és a
+leszállókat, s neked ezekből az adatokból kell adott jellemzőket kiszámolnod.
+Készíts programot, amely megadja, hogy mennyi volt a villamoson a maximális utasszám!
+Bemenet
+A standard bemenet első sorában az állomások száma van (2N100), alatta pedig soron-
+ként a felszállók (0≤F≤50) és leszállók száma (0≤L≤50) van.
+Kimenet
+A standard kimenet első sorába a maximális utasszámot kell írni!
+Példa
+Bemenet                                         Kimenet
+5                                               5
+5   0
+3   4
+0   4
+2   0
+0   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

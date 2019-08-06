@@ -1,0 +1,37 @@
+
+
+                                      Képtömörítés futammal
+Geometrikus elemekből álló képeket (pl. a mellékelt dán zászlót) úgy tömöríthe-
+tünk, hogy minden egyes sorát a lehető leghosszabb azonos színű pontokból álló
+szakaszokra bontjuk (a példában az első sorban az 1. és a 3. pozíció között P, a 4. és
+a 4 pozíció között F, az 5. és a 10. pozíció között pedig P színű pontok vannak).
+Írj programot, amely egy képet a fenti „futamhossz” eljárással tömörít!
+Bemenet
+A standard bemenet első sorában a kép sorainak és oszlopainak száma (1N,M500)
+van, egyetlen szóközzel elválasztva. A következő N sor mindegyike M betűt tartalmaz (az angol
+ábécé betűi közül), egy-egy szóközzel elválasztva. Az i-edik sor j-edik oszlopában a kép i-edik
+sora j-edik oszlopában levő képpont színét leíró betű található.
+Kimenet
+A standard kimenet első sorába a kép sorainak és oszlopainak számát kell írni, egyetlen
+szóközzel elválasztva! A következő sorok a kódolt képet tartalmazzák, soronként, növekvő sor-
+rendben! Minden sort A B párokkal írunk le, ami azt jelenti, hogy a kép adott sorában A darab B
+betű volt (pl. a minta első sorában 3 P betű, 1 F betű, majd 6 P betű szerepel).
+Példa
+Bemenet                                           Kimenet
+7   10                                            7 10
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+F   F F   F   F   F   F   F   F   F               10 F
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+P   P P   F   P   P   P   P   P   P               3 P 1    F 6 P
+Korlátok
+Időlimit: 0.25 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

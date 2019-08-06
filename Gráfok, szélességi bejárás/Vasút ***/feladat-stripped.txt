@@ -1,0 +1,52 @@
+
+
+                                               Vasút
+Egy országban N vasútvonal van, vonalanként Mi állomással. Az állomásokat sorszámukkal azo-
+nosítjuk. Ha ugyanaz a sorszámú állomás több vasútvonalon is szerepel, akkor ott át lehet szállni
+az egyikről a másikra.
+Készíts programot, amely két adott állomásra megadja, hogy minimum hány átszállással lehet el-
+jutni az egyikről a másikra és mely állomásokon kell átszállni!
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤K≤10000), a vasútvonalak
+száma (1≤N≤200), valamint az induló és a célállomás sorszáma (1≤A≠B≤K) van. A következő N
+sor egy-egy vasútvonal leírását tartalmazza. Minden sor első száma a vasútvonal állomásai száma
+(2≤Mi≤200), amit Mi darab állomás sorszáma követ (1≤sorszám≤K). Az A állomásról a B ál-
+lomásra biztosan el lehet jutni.
+Kimenet
+A standard kimenet első sorába az átszállások minimális C számát kell írni, amivel eljutha-
+tunk A-ból B-be! A második sorban pedig az átszállások helye legyen átszállási sorrendben, C da-
+rab állomás sorszám egy-egy szóközzel elválasztva! Ha több megoldás van, bármelyik kiírható.
+Példa
+Bemenet                                             Kimenet
+15 4 10 13                                          1
+6 11 10 9 3 4 5                                     4
+5 5 4 6 12 13
+6 1 2 3 6 7 8
+3 14 4 15
+Magyarázat a példához
+                              5
+
+
+
+                 14           4           15
+
+
+
+  1         2             3         6           7         8
+
+
+
+
+                      9                    12             13
+
+
+
+   11       10
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+                                               1. oldal
+

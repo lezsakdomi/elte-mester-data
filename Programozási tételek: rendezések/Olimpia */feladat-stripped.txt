@@ -1,0 +1,33 @@
+
+
+                                           Olimpia
+Az Olimpiai Játékokon M ország vesz részt, N versenyszámban versenyeznek a résztvevők. Min-
+den versenyszámban 1 arany-, 1 ezüst-, valamint 1 vagy 2 bronzérmet adnak ki (kieséses verse-
+nyek esetén a döntőbe jutásért küzdők közül mindkét vesztes bronzérmet kap).
+Készíts programot, amely előállítja az olimpia éremtáblázatát!
+Bemenet
+A standard bemenet első sorában található az országok száma (1≤M≤200) és a verseny-
+számok száma (1≤N≤1000). Az ezt követő N sor mindegyikében egy-egy verseny három vagy
+négy érmesének sorszáma van (1≤Ei,j≤M), az első sorszám az aranyérmes, a második az ezüst-
+érmes, a harmadik (és ha van, akkor a negyedik) pedig a bronzérmes ország sorszáma.
+Kimenet
+A standard kimenet első K sorába ki kell írni az éremtáblázatot! Az éremtáblázat aranyér-
+mek száma szerint csökkenő sorrendű legyen, mindegyik egy ország sorszámával kezdődjön, amit
+az ország arany-, ezüst- és bronzérmei száma kövessen! Azonos aranyérem szám esetén a több
+ezüst-, azonos ezüstérem szám esetén a több bronzérem döntsön! Ha mindhárom éremből
+ugyanannyi van, akkor a kisebb sorszámú ország legyen előbb!
+Példa
+Bemenet                                          Kimenet
+5   3                                            2   1   2   2
+2   3 2                                          1   1   0   0
+1   2 3                                          5   1   0   0
+5   2 2 3                                        3   0   1   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

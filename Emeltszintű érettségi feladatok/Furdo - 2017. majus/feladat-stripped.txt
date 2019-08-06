@@ -1,0 +1,117 @@
+
+
+                                  Fürdő
+A fürdőkben egyre gyakoribb a különböző beléptető és fürdőn belüli moz-
+gást rögzítő rendszerek alkalmazása. Egy fürdő a szolgáltatások fejleszté-
+se miatt szeretné a vendégek fürdőzési szokásait felmérni. Ezért egy napi
+forgalomból véletlenszerűen választották ki a vendégek adatait.
+A fürdő négy elkülönített részleggel rendelkezik. A vendégek a fürdő rész-
+legeit az öltözőből kilépve az átjárón keresztül érhetik el, és a fürdőből tá-
+vozni is az öltözőn keresztül tudnak. Minden vendég a belépéskor egy
+karszalagot kap. A karszalagon lévő érzékelő minden részlegbe való belé-
+pést és kilépést rögzít. Minden vendég az öltözőt egyszer hagyja el – ek-
+kor lép a fürdő belső területére –, és egyszer megy be az öltözőbe – ekkor
+
+                                                   Részleg          Azono-
+                                                                    sító
+                                              Öltöző                    0
+                                              Uszoda                    1
+                                              Szaunák                   2
+                                              Gyógyvizes me-            3
+                                              dencék
+                                              Strand                     4
+hagyja el a fürdőt. A nap folyamán már
+nem jön vissza ismét a fürdőbe. A fürdő 6 órától 20 óráig tart nyitva.
+Készíts programot, amely
+  1. megadja az időpontját a listában az első és utolsó vendég kilépésé-
+     nek az öltözőből,
+  2. összeszámolja, hogy hány olyan fürdővendég volt, aki az öltözőn kívül
+     csak egy részlegen járt és azt a részleget csak egyszer használta,
+  3. meghatározza az első olyan vendéget a listában, aki a legtöbb időt
+     töltötte a fürdőben,
+  4. megállapítja, hogy 06:00:00-08:59:59 óra között, 09:00:00-15:59:59
+     óra között és 16:00:00-19:59:59 óra között hány vendég érkezett a
+     fürdőbe!,
+  5. meghatározza a szauna részlegen járt vendégeket és az általuk a nap
+     folyamán összesen ott töltött időt,
+  6. megállapítja, hogy egyes részlegeket, az öltözőn kívül, hányan hasz-
+     náltak!
+Bemenet
+Az standard bemenet első sora a lista méretét (1≤N≤800), és a további N
+sor a vendégek három számjegyű kódját, fürdőrészleg azonosítóját, be-/ki-
+lépését a részlegről (0, ha belépett, 1, ha kilépett a részlegről), és a
+be-/kilépésének az adott részlegről az óráját (0≤H≤23), percét (0≤P≤59) és
+másodpercét (0≤MP≤59) tartalmazza, ilyen sorrendben, szóközökkel elvá-
+lasztva. A lista vendégenként csoportosított, azon belül idő szerint rende-
+zett. A vendégek sorrendjét az öltözőből való kilépés ideje szabja meg.
+
+
+                                   1. oldal
+Emelt szintű informatika érettségi                        2017. május 15.
+
+
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy,
+egyetlen # karaktert tartalmazó sort kell kiírni, amelyet a részfeladat
+eredményét tartalmazó egy vagy több sor követ! Ha egy részfeladatot
+nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több #
+karaktert ír ki) akkor „Output formátum hiba” üzenetet ad az értékelő
+(akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Írd ki, hogy a listában az első és utolsó vendég mikor lé-
+pett ki az öltözőből!
+2. részfeladat: Határozd meg, hogy hány olyan vendég volt, aki az öltö-
+zőn kívül csak egy részlegen járt és azt a részleget csak egyszer használ-
+ta!
+3. részfeladat: Határozd meg az első olyan vendéget a listában, aki a
+legtöbb időt töltötte a fürdőben! Írd ki a vendég azonosítóját és a fürdő-
+ben tartózkodás idejét.
+4. részfeladat Készíts statisztikát, hogy 06:00:00-08:59:59 óra között,
+09:00:00-15:59:59 óra között és 16:00:00-19:59:59 óra között hány ven-
+dég érkezett a fürdőbe! Az eredményt írasd ki a mintán látható formában!
+5. részfeladat: Készíts egy listát a szauna részlegen járt vendégekről és
+az általuk a nap folyamán összesen ott töltött időről! Egy sorban a ven-
+dég azonosítója és szóközzel elválasztva a részlegen eltöltött idő szere-
+peljen óra:perc:másodperc formában! Figyelj arra, hogy egy vendég több-
+ször is járhatott a szauna részlegen.
+6. részfeladat: Készíts egy listát arról, hogy az egyes részlegeket, az öl-
+tözőn kívül, hányan használták! Az eredményt a minta szerint írd ki a kép-
+ernyőre! Ha egy vendég egy részlegen többször is járt a nap folyamán, azt
+a statisztikában csak egynek számold!
+
+
+
+
+                                 2. oldal
+Emelt szintű informatika érettségi            2017. május 15.
+
+
+Példa
+Bemenet                         Kimenet
+16                              #
+453   0   1   6 15 27           6 15 27
+453   1   0   6 17 19           9 12 30
+453   1   1   6 52 56           #
+453   0   0   6 56 32           1
+112   0   1   6 14 56           #
+112   0   0   6 16 44           435 6:30:0
+435   0   1   9 12 30           #
+435   2   0   10 10 30          2 1 0
+435   2   1   10 23 10          #
+435   3   0   10 24 50          435 4:25:20
+435   3   1   10 41 38          #
+435   2   0   11 10 30          1 2
+435   2   1   15 23 10          2 1
+435   1   0   15 24 30          3 1
+435   1   1   15 40 10          4 0
+435   0   0   15 42 30
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                 3. oldal
+

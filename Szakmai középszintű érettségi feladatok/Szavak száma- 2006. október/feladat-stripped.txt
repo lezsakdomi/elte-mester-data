@@ -1,0 +1,25 @@
+
+
+                                       Szavak száma
+Adott egy szöveg, mely az angol ábécé kis és nagybetűit, valamint szóközöket tartalmaz. Feltéte-
+lezzük, hogy a szöveg elején, ill. végén található betűsorokat leszámítva minden szóközzel határolt
+karaktersorozat egy-egy szó! A kezdő szó előtt és a befejező szó mögött értelemszerűen nem fel-
+tétlenül van szóköz.
+Írj programot, amely eldönti, hány szóból áll a szöveg!
+Bemenet
+A standard bemenet első sora tartalmazza a szöveget. A szöveg közben nincs sortörés, csak
+szóköz fordulhat elő, legfeljebb 200 000 karakterből áll..
+Kimenet
+A standard kimenetre a szavak száma kerüljön!
+Példa
+Bemenet                                              Kimenet
+A szoveg negy szo                                    4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

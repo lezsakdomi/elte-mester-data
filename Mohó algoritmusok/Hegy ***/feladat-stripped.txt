@@ -1,0 +1,37 @@
+
+
+                                           Hegy
+Egy hegyre a hegymászók segítésére élelmiszert tartalmazó táborokat építenek. N hegymászó visz
+csomagokat. Minden hegymászó megadja, hogy hányadik táborig hajlandó felmenni a csomagjai-
+val. Csomagjaiból eddig a táborig bárhol bármennyit lerakhat. A cél, hogy a csomagokat egyenle-
+tesen osszák el a táborok között. Tehát az a cél, hogy a táborokba telepített csomagok minimális
+száma a lehető legnagyobb legyen!
+Készíts programot, amely megadja, hogy minimum mennyi csomag lesz a táborhelyeken egyenle-
+tes elosztás esetén!
+Bemenet
+A standard bemenet első sorában a táborok száma (1M100 000) és a hegymászók
+száma (1N200 000) van. A következő N sorban egy-egy hegymászó által vitt csomagok szá-
+ma (1Di1 000 000) és a tábor sorszáma van (1HiM), ameddig a hegymászó vihet csoma-
+gokat.
+Kimenet
+A standard kimenetre egyetlen számot kell írni, azt a csomagszámot, amennyi minimáli-
+san juthat minden táborhelyre!
+Példa
+Bemenet                       Kimenet
+10 6                          3
+3 5
+3 5
+14 7
+6 8
+3 10
+10 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤1000 és Di≤2000
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,124 @@
+
+
+                                           Bináris fa rekonstrukció
+Adott egy n pontú bináris fa, amelynek pontjait az 1, . . . , n számokkal azonosı́tjuk. Ismerjük a fa preorder és
+inorder bejárási sorrendjét. Rekonstruálni kell a fát.
+A preorder sorrendet a következő algoritmus állı́tja elő.
+Preorder(Fa, p)
+     kiIr(Fa[p].adat)
+     ha Fa[p].bal <> 0 akkor Preorder(Fa, Fa[p].bal)
+     ha Fa[p].jobb <> 0 akkor Preorder(Fa, Fa[p].jobb)
+eljárás vége
+Az inorder sorrendet pedig az alábbi algoritmus adja.
+Inorder(Fa, p)
+     ha Fa[p].bal <> 0 akkor Inorder(Fa, Fa[p].bal)
+     kiIr(Fa[p].adat)
+     ha Fa[p].jobb <> 0 akkor Inorder(Fa, Fa[p].jobb)
+eljárás vége
+
+ Feladat
+Irjunk olyan programot, amely rekonstruálja a fát, tehát minden pontjára megadja, hogy annak ki a bal, és
+jobb fia!
+
+ Bemenet
+A standard bemenet első sora egy egész számot tartalmaz, a fa pontjainak n (1 ≤ n ≤ 100000) számát. A
+második sor pontosan n pozitı́v egész számot tartalmat egy-egy szóközzel elválasztva, a fa preorder bejárási
+sorrendjét. A harmadik sor is sor pontosan n pozitı́v egész számot tartalmat egy-egy szóközzel elválasztva, a
+fa inorder bejárási sorrendjét.
+
+ Kimenet
+A standard kimenet pontosan n sort tartalmazzon, soronkét két egész számot. Az i-edik sor a fa i azonosı́tójú
+pontjának bal és jobb fiát. Hiányzó fiú esetén a 0 számot kell kiı́rni.
+
+ Példa
+ Bemenet                                                     Kimenet
+ 11                                                          2 8
+ 1 2 3 4 5 6 7 8 9 10 11                                     3 4
+ 3 2 6 5 7 4 1 8 10 9 11                                     0 0
+              1                                              5 0
+                                                             6 7
+                                                             0 0
+        2            8
+                                                             0 0
+                                                             0 9
+  3            4           9
+                                                             10 11
+                                                             0 0
+        5           10           11                          0 0
+
+  6            7
+
+
+
+
+                                                      1 . oldal
+
+
+      Korlátok
+     Időlimit: 0.1 mp.
+     Memórilimit: 32 MiB
+     Pontozás: a tesztesetek 40%-ában n < 100
+
+                                                           Megoldás
+        Legyen
+                                                      P reord[] = p1 , . . . , pn
+     a preorder,
+                                                       Inord[] = i1 , . . . , in
+     pedig az inorder sorrend. Jelölje Hol[x] az x elen indexét az inorder sorrendben, azaz Inord[Hol[x]] = x.
+     Ekkor a fa gyökere a p1 pont. Legyen k = Hol[p1 ]. Az Inord[1..k − 1] sorozat a bal részfa inorder bejárása, az
+     Inord[k+1..n] sorozat pedig a jobb részfa inorder bejárása. A P reord[2..k] sorozat a bal részfa, a P reord[k+1..n]
+     pedig a jobb részfa preorder bejárása. Tehát ezek alapján a kiindulási problémát két részprobléma megoldására
+     tudjuk bontani, mindkét részprobléma bibáris fa előállı́tását jelenti, tehát rekurzı́v megoldást kapunk.
+ 1   # include <iostream >
+ 2   # define maxN 100001
+ 3
+ 4   using namespace std;
+ 5   typedef struct {
+ 6       int bal ,jobb;
+ 7   } Par;
+ 8   int Inord [maxN], Preord [maxN], Hol[maxN ];
+ 9   Par Fa[maxN ];
+10   int FaEpit (int tol1 , int ig1 , int tol2 , int ig2 ){
+11   // Globális : Preord [], Inord [], Hol
+12       int x= Preord [tol1 ];
+13       if(tol1 == ig1 ){
+14           Fa[x]. bal =0; Fa[x]. jobb =0;
+15           return x;
+16       }
+17       int k=Hol[x];
+18       int b=k-tol2;//a bal részfa elemeinek száma
+19       if(b >0)
+20           Fa[x]. bal= FaEpit (tol1 +1, tol1+b, tol2 ,k -1);
+21       else
+22           Fa[x]. bal =0;
+23       if(k+1 <= ig2)
+24           Fa[x]. jobb= FaEpit (tol1+b+1,ig1 ,k+1, ig2 );
+25       else
+26           Fa[x]. jobb;
+27       return x;
+28   }
+29   int main (){
+30       int n;
+31       cin >>n;
+32       for(int i=1;i <=n;i++) cin >> Preord [i];
+33       for(int i=1;i <=n;i++){
+34           cin >> Inord [i];
+35           Hol[ Inord [i]]=i;
+36       }
+37       FaEpit (1,n,1,n);
+38       for(int i=1;i <=n;i++)
+
+
+                                                              2 . oldal
+     Rekurzı́v adatszerkezetek                            *
+
+
+39          cout <<Fa[i].bal <<" "<<Fa[i]. jobb <<endl;
+40       return 0;
+41   }
+
+
+
+
+                                              3 . oldal
+

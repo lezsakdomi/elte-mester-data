@@ -1,0 +1,39 @@
+
+
+                                            Falak
+Egy négyzet alakú területre falakat helyezünk, amelyek 1 egység széles téglalapok. A téglalapok
+oldalai párhuzamosak a négyzet oldalaival. Arra vagyunk kíváncsiak, hogy bizonyos pontokból ki-
+indulva eljuthatunk-e a négyzet szélére úgy, hogy falon nem megyünk át.
+Készíts programot, amely kiszámítja, hogy az adott pontokból ki lehet-e jutni a négyzet valame-
+lyik szélére!
+Bemenet
+A standard bemenet első sorában a négyzet oldalhossza (1≤H≤1000), a falak száma
+(0≤L≤10000) és a kiindulási pontok száma (1≤K≤5) van, egy-egy szóközzel elválasztva. A
+következő L sor mindegyike 4 számot tartalmaz egy-egy szóközzel elválasztva, a fal bal alsó sar-
+kának x és y koordinátáit (1≤x,y≤H) és a fal dx és dy oldalhosszait (1≤x+dx,y+dy≤H; dx
+és dy közül az egyik biztosan 1). Az utolsó K sorban a K kezdőpont kx és ky koordinátái van-
+nak (1≤kx,ky≤H).
+Kimenet
+A standard kimenet összesen K sort tartalmazzon! Ha az I-edik pontból ki lehet jutni, ak-
+kor az I-edik sorba az IGEN szó kerüljön, egyébként pedig a NEM! Ha a kezdőpont fal bel-
+sejében van, akkor is a NEM szót kell kiírni.
+Példa
+Bemenet                                         Kimenet
+10 5 3                                          IGEN
+2 2 1 4                                         NEM
+4 2 5 1                                         NEM
+3 5 6 1
+5 3 1 2
+8 3 1 2
+4 4
+6 3
+2 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

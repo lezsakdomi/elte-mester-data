@@ -1,0 +1,37 @@
+
+
+                                         Munka
+Egy munkaadó M munkát ajánl, amelyre N ember jelentkezett. Az elvégzendő munkákat, valamint
+a munkásokat is sorszámukkal azonosítjuk. Minden jelentkező megadja, hogy mely munkát meny-
+nyiért tudná elvégezni. Egy munkát csak egy embernek adhatunk, s a célunk, hogy minden mun-
+kát elvégeztessünk valakivel.
+Készíts programot, amely megadja, hogy a munkaadónak minimum mennyibe kerül az M munka
+elvégzése!
+Bemenet
+A standard bemenet első sorában a munkások (1≤N≤20) és a munkák (1≤M≤N) száma
+van, egy szóközzel elválasztva. A következő N sor egy-egy munkás ajánlatát tartalmazza. Minden
+sor első száma az általa vállalt munkák száma (1≤DBi≤5), amit DBi darab pozitív egész számpár
+követ, egy-egy szóközzel elválasztva. A számpárok első tagja egy munka sorszáma, a második pe-
+dig az ár, amennyiért a jelentkező elvégezné. Az ár értéke legfeljebb 1000.
+Kimenet
+A standard kimenet egyetlen sorába a minimális összeget kell írni, amiért az összes mun-
+kát el lehet végeztetni! Ha nincs megoldás, akkor -1-et kell kiírni!
+Példa
+Bemenet                                       Kimenet
+4   3                                         700
+1   1   100
+2   1   100 3 1000
+2   3   300 2 200
+3   1   50 2 300 3 400
+A megoldás például úgy jön ki, hogy az első munkás kapja az 1. munkát, a harmadik munkás a 2.
+munkát és a negyedik munkás a 3. munkát.
+Korlátok
+Időlimit: 0.6 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a munkások száma N≤10
+
+
+
+
+                                           1. oldal
+

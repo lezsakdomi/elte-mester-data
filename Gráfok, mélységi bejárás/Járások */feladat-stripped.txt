@@ -1,0 +1,42 @@
+
+
+                                          Járások
+Bergengócia N települését járásokba szeretnék szervezni. A városok lesznek a járásközpontok és
+minden falut ahhoz a járáshoz sorolnak, amelynek a központjához a legközelebb van. Két telepü-
+lés távolsága a közöttük levő legrövidebb útsorozat elemszáma. Biztosan teljesül, hogy bármely
+két település távolsága kiszámolható.
+Készíts programot, amely megadja minden járás települései számát!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000), a városok száma
+(1≤M≤N) és a közöttük levő utak száma (1≤K≤10 000) van. A második sorban az M város sor-
+száma található (1≤Vi≤N), növekvő sorrendben. A következő K sorban az egyes utak leírása ta-
+lálható: mely településről mely településre vezet út (1≤Honnani≠Hovai≤N).
+Kimenet
+A standard kimenet M sorába az M járás települései számát kell írni! A sorok a járásköz-
+pontok szerint növekvő sorrendben legyenek! Ha egy falu több járásközponttól azonos távolságra
+van, akkor a legkisebb sorszámúhoz kell sorolni!
+Példa
+Bemenet                                        Kimenet
+8   3 10                                       5
+2   3 7                                        1           5               1
+1   2                                          2
+1   5
+5   4
+4   2
+2   3
+2   6                                                      4               2              3
+3   6
+3   7
+6   7
+7   8
+                                                           6               7              8
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 32 MiB
+Pontozás: a tesztek 40%-ában N<100
+
+
+
+
+                                           1. oldal
+

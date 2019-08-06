@@ -1,0 +1,39 @@
+
+
+                                        Játéktábla 2.
+Egy játéktábla 101 sorból áll, minden sorában pontosan kétszer annyi elem van, mint a fölötte le-
+vő sorban. A tábla a következő szerkezetű:
+
+
+
+
+A tábla felső pontjából indulunk. Az egyes lépéseket a következők írják le:
+       0      balra lefelé lépünk egyet,
+       1      jobbra lefelé lépünk egyet,
+       2      felfelé lépünk egyet,
+       3      balra lépünk egyet,
+       4      jobbra lépünk egyet.
+Írj programot, amely beolvas egy olyan lépéssorozatot, amely elvezet a tábla valamely eleméhez,
+majd megad egy olyan lépéssorozatot, amely a legrövidebb úton vezet ugyanide!
+Bemenet
+A standard bemenet első sorában a lépések K száma van (1≤K≤100), a következő sor-
+ban pedig az egyes lépéseket leíró K darab szám, egy-egy szóközzel elválasztva. A lépéssorozat
+biztosan helyes, azaz nem hagyjuk el vele a játéktáblát.
+Kimenet
+A standard kimenet első sorába a legrövidebb lépéssorozat L hosszát kell írni, amely a
+bemenetben kapott lépéssorozattal azonos helyre vezet! A második sorba pedig egy ilyen legrövi-
+debb lépéssorozat kerüljön, azaz L szám, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                          Kimenet
+6                                                3
+0 1 4 2 1 0                                      1 1 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 50%-ában N ≤20
+
+
+
+
+                                              1. oldal
+

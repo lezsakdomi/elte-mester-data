@@ -1,0 +1,37 @@
+
+
+                                       Városnézés
+Egy hosszú vasútvonal mentén N város helyezkedik el, minden városnak pontosan egy vasútállo-
+mása van a vonalon. Ismerjük a vonalon közlekedő vonatokat. Minden vonat adott i-edik város-
+ból indul és adott j-edik városba közlekedik (i<j) és közben nem áll meg egyetlen közbülső állo-
+máson sem. Az első városból indulva, vonattal közlekedve a lehető legtöbb várost szeretnénk
+meglátogatni.
+Írj programot, amely kiszámít egy olyan útvonalat, amelyen közlekedve a lehető legtöbb városba
+eljutunk!
+Bemenet
+A standard bemenet első sorában az állomások száma (1N1000) és a járatok száma
+(1M1000) van. A további M sor mindegyikében egy járat i indulási és j érkezési állomása van
+(1i<jN).
+Kimenet
+A standard kimenet első sorába az útvonal járatainak K számát kell írni! A második sor
+pontosan K számot tartalmazzon, a járatok bemenetbeli sorszámát az utazás sorrendjében! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+5   7                                          4
+1   2                                          1 5 6 7
+1   3
+2   4                                                         1       2       3       4      5
+3   5
+2   3
+3   4
+4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                            1. oldal
+

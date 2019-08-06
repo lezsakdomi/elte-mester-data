@@ -1,0 +1,47 @@
+
+
+                                   Központ kialakítás
+Egy számítógépes hálózat csomópontokat és bizonyos csomópont-párokat közvetlenül összekötő
+egyirányú adatátvitelt biztosító adatátviteli vonalakat tartalmaz. A hálózatot úgy alakították ki,
+hogy minden csomópontból pontosan két másik csomópontba van közvetlen vonal kiépítve. A
+hálózat üzemeltetője kijelölte az egyik csomópontot, amelyet központi csomópontként kívánnak
+használni. Ez azt jelenti, hogy ebből a csomópontból minden más csomópontba lehessen adatot
+továbbítani.
+Írj programot, amely kiszámítja, hogy legkevesebb hány új egyirányú közvetlen vonalat kell kiépí-
+teni ahhoz, hogy a kijelölt csomópontból minden más csomópontba lehessen adatot továbbítani!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1<N10 000) és a kijelölt köz-
+pont sorszáma (1KN) van. A további N sor mindegyike egy (1u≠vN) számpárt tartalmaz.
+Az állomány i+1-edik sorában lévő u v számpár azt jelenti, hogy az i-edik csomópontot, vala-
+mint az u és v csomópontot közvetlen vonal köti össze, amin i-ből u-ba, illetve i-ből v-be lehet
+adatot továbbítani.
+Kimenet
+A standard kimenet első sorába a létesítendő új közvetlen vonalak M számát kell írni! A
+következő M sor mindegyikébe egy olyan új kiépítendő vonal x és y végpontjait kel írni! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                       Kimenet
+11 7                          2
+3 4                           7 1
+5 9                           7 8
+4 7                                                                            1
+6 7
+7 2
+1 10                                                                    3          4          6
+9 10
+                                                          5
+5 9
+10 11
+9 11                                               2               7
+                                    8
+9 10
+Korlátok                                                      9           10
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+                                                                  11
+
+
+
+
+                                             1. oldal
+

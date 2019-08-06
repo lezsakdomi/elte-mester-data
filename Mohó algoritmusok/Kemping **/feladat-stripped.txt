@@ -1,0 +1,36 @@
+
+
+                                        Kemping
+A Napsugár Kemping K faházat üzemeltet az év 365 napján. Minden vendég ugyanannyi időre,
+pontosan M napra foglalhat le egy-egy faházat. A kemping a teljes évre előre összegyűjtötte az
+igényeket. Minden vendég igényként annak a napnak a sorszámát adta meg, amelytől kezdve (M
+napra) le akar foglalni egy faházat.
+Készíts programot, amely kiszámítja, hogy a kemping maximálisan hány vendéget fogadhat!
+Bemenet
+A standard bemenet első sora a faházak (1K100) számát tartalmazza, második sora
+pedig az M számot (1M14). A harmadik sorban az igények száma (1N1000), a további
+N sor mindegyikében pedig egy-egy igény van.
+Kimenet
+A standard kimenetre a kempingben maximálisan fogadható vendégek számát kell írni!
+Példa
+Bemenet                                        Kimenet
+2                                              5
+7
+8
+1
+10
+2
+11
+1
+3
+4
+18
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

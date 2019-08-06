@@ -1,0 +1,35 @@
+
+
+                                   Sikertelen napok
+Egy üzletben minden nap feljegyezték a napi forgalmat. Különösen sikeres napnak tekintik azokat
+a napokat, amelyeken a napi forgalom nagyobb volt, mint bármely korábbi napon.
+Készíts programot, amely megadja napok leghosszabb egymásutáni sorozatát, ahol nem volt kü-
+lönösen sikeres nap!
+Bemenet
+A standard bemenet első sorában a napok száma van (1≤N≤100 000). A következő N
+sor mindegyikében egy-egy nap bevétele van (0≤Bi≤100 000).
+Kimenet
+A standard kimenet első sorába az egymásutáni nem különösen sikeres napok maximális
+számát kell írni! A második sorba egy ilyen napsorozat első napja sorszáma kerüljön (több megol-
+dás esetén bármelyik)! Ha nem volt ilyen napsorozat, akkor a második sorba -1-et írjunk!
+Példa
+Bemenet                                         Kimenet
+8                                               2
+100                                             5
+120
+110
+130
+120
+125
+150
+100
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

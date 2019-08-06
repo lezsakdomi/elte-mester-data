@@ -1,0 +1,22 @@
+
+
+                                   Közös prímosztók
+Készíts programot, amely kiírja két természetes szám közös prímosztóit!
+Bemenet
+A standard bemenet egyetlen sorában a két természetes szám értéke van (2≤N,M≤
+100 000 000).
+Kimenet
+A standard kimenet első sorába a két természetes szám közös prímosztóit kell írni növek-
+vő sorrendben! Ha nincs közös prímosztójuk, akkor egyetlen -1-et kell kiírni!
+Példa
+Bemenet                                         Kimenet
+120 105                                         3 5
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

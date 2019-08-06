@@ -1,0 +1,42 @@
+
+
+                             Rózsafüzér permutáció
+A rózsafüzér permutációk N szám olyan ciklikus elrendezései, ahol egy permutáció kezdete
+bárhol lehet (azaz pl. az 1-2-3, a 2-3-1 és a 3-1-2 ugyanazt a rózsafüzért jelenti), továbbá az
+irányuk is tetszőleges lehet (azaz pl. az 1-2-3 és a 3-2-1 is ugyanazt a rózsafüzért jelenti).
+Másképp megfogalmazva: Két rózsafüzér ugyanaz, ha a rajtuk levő számsorozatok nem
+különböztethetőek meg (rózsafüzér bárhol kezdődhet, és rózsafüzér nem különböztethető
+meg a tükörképétől).
+Így a rózsafüzér permutációkat felírhatjuk a következő alakban: i 1 j x x x, ahol i<j.
+Írj programot, amely előállítja egy adott rózsafüzér permutációt lexikografikusan követő
+permutációt! A következő ciklikusan értendő, azaz az utolsó permutációt az első követi (ami
+mindig az 2 1 3-…-n).
+Bemenet
+A standard bemenet első sorában egy rózsafüzér permutáció elemszáma van
+(3≤N≤1000 ). A második sor a permutáció N elemét tartalmazza.
+Kimenet
+A standard kimenet első sorába a következő rózsafüzér permutáció N elemét kell írni!
+Példák
+ bemenet                                       kimenet
+ 4                                             2 1 4 3
+ 2 1 3 4
+ bemenet                                       kimenet
+ 4                                             3 1 4 2
+ 2 1 4 3
+ bemenet                                       kimenet
+ 4                                             2 1 3 4
+ 3 1 4 2
+ bemenet                                       kimenet
+ 5                                             2 1 5 3 4
+ 2 1 4 5 3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 40%-ában N≤10.
+
+
+
+
+                                              1. oldal
+

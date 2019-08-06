@@ -1,0 +1,49 @@
+
+
+                                             Séta
+Ádám városában nagyszabású fesztivált rendeztek. A város minden kereszteződésében volt vala-
+milyen látványosság. Egy nap Ádám elhatározta, hogy az A kereszteződésből indulva (ugyanis ott
+lakik) a B kereszteződésig sétálva a lehető legtöbb látványosságot szeretné megnézni. A városban
+minden utca egyirányú, és a fesztivál miatt a gyalogosok is csak egy irányban közlekedhetnek az
+utcákon. Ádám a sétája során bármely kereszteződést akárhányszor érinthet és minden utcában
+többször is áthaladhat.
+Írj programot, amely kiszámítja, hogy legjobb esetben Ádám hány kereszteződést érintett a sétája
+soron!
+Bemenet
+A standard bemenet első sorában a kereszteződések száma (2≤N≤100 000), az utcák
+száma (2≤M≤500 000) és az A és B kereszteződés sorszáma (1≤A,B≤N ) van. A következő M
+sor mindegyike egy számpárt (1≤U≠V≤N ) tartalmaz, ami azt jelenti, hogy az U kereszteződésből a
+V kereszteződésbe van utca, ami U-ból V-be egyirányú. Bármely két kereszteződés között legfel-
+jebb egy utca van egy irányban. Biztosan van legalább egy út A-ból B-be. A=B is lehet.
+Kimenet
+A standard kimenet első sorába azon kereszteződések számát kell írni, amelyeket legjobb
+esetben érintett Ádám a sétája során (beleértve az A és B kereszteződést is)!
+Példa
+bemenet                                         kimenet
+10 15 2 6                                       8
+1 2
+2 3
+3 1
+2 4
+1 10
+3 8
+9 5
+3 5
+5 6
+6 7
+7 5
+3 9
+10 7
+8 9
+9 8
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤100
+
+
+
+
+                                            1. oldal
+

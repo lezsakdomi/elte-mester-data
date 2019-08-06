@@ -1,0 +1,31 @@
+
+
+                                        Hét napja
+Kíváncsiak vagyunk arra, hogy egy tetszőleges év adott napja a hét mely napjára esik, ha tudjuk,
+hogy az év első napja a hét melyik napjára esik.
+Írj programot, amely egy beolvasott dátum, valamint annak ismeretében, hogy az adott év első
+napja a hét mely napjára esett, meghatározza, hogy a beolvasott dátum a hét mely napjára esett!
+Bemenet
+A standard bemenet első sora a beolvasandó dátumot tartalmazza „EV HONAPNEV
+NAP” formában, ahol EV a dátum évének sorszáma, HONAPNEV a dátum hónapjának nevét, a
+NAP pedig a dátum napjának sorszámát jelenti. A második sorban a hét azon napjának neve talál-
+ható (ELSEJE), amelyre az adott EV év első napja esett. A HONAPNEV és ELSEJE is ékezetek
+nélkül adja meg a hónap-, illetve napnevet.
+Kimenet
+A standard kimenetre annak a hét azon napjának a nevét kell írni, amelyre a beolvasott
+dátum esett, ismervén az év első napjának nevét. A nap nevét ugyancsak ékezetek nélkül kell
+megadni!
+Példa
+Bemenet                                         Kimenet
+2015 januar 9                                   pentek
+csutortok
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                            1. oldal
+

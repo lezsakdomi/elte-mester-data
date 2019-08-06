@@ -1,0 +1,38 @@
+
+
+                        Több szempont szerint is győztes kutya
+Egy N résztvevőjű kutyaszépségversenyen M különböző szempont szerint pontoznak minden
+kutyát. Minden szemponthoz adott egy maximális pontszám. Az összetett versenyből automati-
+kusan kiesik az a kutya, amely valamelyik szempont szerint nem éri el a szempontonként meg-
+adott alsó ponthatárt – az adott szempontból sem értékelhető, más szempontokból viszont igen.
+Készíts programot, amely eldönti, hogy van-e olyan kutya, amely több szempont szerint is győ-
+zött!
+Bemenet
+A standard bemenet első sorában a résztvevő kutyák száma (1≤N≤100) és a szempontok
+száma (1≤M≤100) van. A második sorban M szám van, az egyes szempontok szerint elérhető
+maximális pontok (1≤Maxi≤100). A harmadik sorban M szám van, az egyes szempontok alsó
+ponthatárai (1≤Mini≤Maxi). Az ezeket követő N sor mindegyikében az adott résztvevő kutya M
+pontszáma található (0≤Pi,j≤Maxj).
+Kimenet
+A standard kimenet első sorában a „VAN” szöveg szerepeljen, ha van olyan kutya, amely
+több szempont szerint is győzött, különben a „NINCS” szöveg!
+Példa
+Bemenet                                        Kimenet
+6   8                                          VAN
+9   9   9   9   9   9   9   9
+5   5   5   5   5   5   5   5
+8   4   6   6   6   6   6   6
+8   6   6   6   6   6   6   6
+8   6   6   6   6   6   6   6
+8   6   8   7   7   7   7   6
+8   6   6   6   6   6   6   6
+8   6   6   6   6   6   6   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

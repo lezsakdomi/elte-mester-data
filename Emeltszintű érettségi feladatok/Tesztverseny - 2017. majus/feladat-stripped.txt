@@ -1,0 +1,98 @@
+
+
+                            Tesztverseny
+Egy közismereti versenyen a versenyzőknek tesztfeladatokat tűznek ki. A
+versenyzőknek minden feladat esetén négy megadott lehetőség
+(A, B, C, D) közül kell a helyes választ megjelölniük. Minden kérdéshez
+pontosan egy helyes válasz tartozik. A versenyzőket az angol abc betűiből
+és számokból álló legfeljebb 5 jegyű kóddal azonosítják. A válaszok a fel-
+adatokkal egyező sorrendben, elválasztójel nélkül, nagybetűvel szerepel-
+nek. Ha a versenyző egy kérdésre nem válaszolt, akkor annak helyén X
+betű szerepel.
+Készíts programot, amely
+   1. megadja az adott azonosítójú versenyző (biztosan létezik) válaszait,
+  2. kiíratja a helyes megoldást és megállapítja, hogy hány tesztfeladatot
+     talált el az adott versenyző,
+  3. meghatározza, hogy hányan teljesítették az adott tesztfeladatot és ez
+     a versenyzők hány százaléka,
+  4. meghatározza minden versenyző pontszámát,
+  5. megállapítja a dobogós helyezéseket elérő versenyzőket.
+Bemenet
+Az standard bemenet első sora a versenyzők számát (1≤N≤500) és a teszt-
+feladatok számát (10≤K≤20), a második sora a helyes válaszokat, a harma-
+dik sora egy versenyző azonosítóját (1≤hossz(kód)≤5) és egy adott teszt-
+feladat sorszámát tartalmazza (1≤J≤K). A negyedik sor tartalmazza ponto-
+zási határok számát (3≤L≤K) és L darab ponthatárt (1≤ponthatari≤K) szi-
+gorúan növekvő sorrendben, szóközzel elválasztva. A további N sor a ver-
+senyzők kódjával kezdődik (1≤hossz(kód)≤5), ezt egy szóköz, majd az
+adott versenyző által adott válaszok sorozata követi. Ha a versenyző egy
+kérdésre nem válaszolt, akkor annak helyén X betű szerepel.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy,
+egyetlen # karaktert tartalmazó sort kell kiírni, amelyet a részfeladat
+eredményét tartalmazó egy vagy több sor követ! Ha egy részfeladatot
+nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több #
+karaktert ír ki) akkor „Output formátum hiba” üzenetet ad az értékelő
+(akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A bemenetben adott azonosítójú versenyző megoldásait
+kell kiírni az első sorba! (biztosan létezik ilyen versenyző)
+2. részfeladat: Írd ki a helyes megoldásokat. A helyes megoldás alatti
+sorba „+” jelet tegyél, ha az adott feladatot az adott versenyző eltalálta,
+egyébként egy szóközt! A kiírást a mintának megfelelő módon alakítsad!
+3. részfeladat: Írd ki, hogy hány versenyző adott a J-edik feladatra he-
+lyes megoldást, és ez a versenyzők hány százaléka! A százalékos ered-
+ményt a mintának megfelelően, két tizedesjegy pontosságig kerekítve
+írasd ki!
+
+
+                                 1. oldal
+Emelt szintű informatika érettségi                       2017. május 15.
+
+4. részfeladat: A verseny feladatai nem egyenlő nehézségűek, mivel
+minden feladatra kapunk 3 pontot, ezen felül minden ponthatáronként 1-
+gyel nő az adott feladatért kapott pontok száma. Pl. 14 feladat és 6,11,14
+ponthatárok esetén az 1-5. feladat 3 pontot, a 6-10. feladat 4 pontot, a
+11-13. feladat 5 pontot, míg a 14. feladat 6 pontot ér. A következő N sor
+tartalmazza a versenyző kódját, majd szóközzel elválasztva az általa elért
+pontszámot!
+5. részfeladat: A versenyen a három legmagasabb pontszámot elérő ösz-
+szes versenyzőt díjazzák. Például 5 indulónál előfordulhat, hogy 3 első és
+2 második díjat adnak ki. Így megtörténhet az is, hogy nem kerül sor
+mindegyik díj kiadására. Írasd ki a mintának megfelelően a képernyőre a
+díjazottak kódját és pontszámát, pontszám szerint csökkenő sorrendben!
+
+
+Példa
+Bemenet                         Kimenet
+6 14                            #
+ABDACDBBCCAADD                  ABDCDXCDBBCAAX
+QR69A 3                         #
+3 6 11 14                       ABDACDBBCCAADD
+ACD61 ABADBBCAAXDCDX            +++        +
+QR69A ABDCDXCDBBCAAX            #
+U1331 CDCADXBCAABCXD            4
+L33T4 ABDDBBCAAXXCDB            66.67%
+OP234 ABDDXCAAXAAAXD            #
+XXXXX ABDDXCAAXAAAXD            ACD61 11
+                                QR69A 14
+                                U1331 13
+                                L33T4 14
+                                OP234 25
+                                XXXXX 25
+                                #
+                                1 25 OP234
+                                1 25 XXXXX
+                                2 14 QR69A
+                                2 14 L33T4
+                                3 13 U1331
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                 2. oldal
+

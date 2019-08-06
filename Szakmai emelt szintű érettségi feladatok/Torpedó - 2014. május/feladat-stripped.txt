@@ -1,0 +1,75 @@
+
+
+                                               Torpedó
+A torpedó játéknak több játékszabálya ismert. A feladatban a játéktér egy 10x10-es mátrix, ahol a
+sorokat A–J-ig, az oszlopokat 1–10-ig azonosítjuk. A játékban lehetnek 1-, 2-, 3- és 4- cellás (hosz-
+szú) hajók. A többcellás hajók csak egy egyenes mentén függőlegesen vagy vízszintesen helyezked-
+hetnek el. Minden hajót legalább 1 cellányi víz választ el a másiktól (még átlósan is).
+Írj programot, amely
+   1. megjeleníti a játékállást egy 10x10-es táblázatban,
+   2. megadja a találatok számát,
+   3. kódolja a játékállást!
+Bemenet
+A standard bemenet első 10 sora a játéktáblát reprezentálja, minden sorban 10 karakter
+található. Egy karakter ’0’, ha a megfelelő pozícióban nincs hajó, ’1’ pedig, ha a megfelelő pozíci-
+óban található hajó. A játékállás minden esetben szabályos. A következő sorokban egy-egy lövés
+található az ellenfél részéről a sor- és oszlopazonosítókkal megadva pl.: ’C4’. Legfeljebb 100 lövést
+tartalmaz a bemenet.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A példa kimenetnek megfelelő szerkezetű táblázatot kell kiírni! Az első sor az osz-
+lopok sorszámát tartalmazza úgy, hogy a fejlécek és a táblázatban található adatok mindig ugyan-
+azon karakterpozícióban kezdődjenek. Az üres helyeket szóközökkel kell kitölteni! A következő 10
+sor a tábla sorait írja le. A sor betűjelét az egyes pozíciók leírása követi, minden pozíciót két karakter
+ír le 0/1 jelöli, hogy található-e ott hajó, majd ’x’ jelöli, ha lövés érte az adott pozíciót, ellenkező
+esetben szóközt kell kiírni! A kimenetnek karakterre pontosan meg kell egyezni a mintában meg-
+adott formátummal.
+2. részfeladat: A megsebesített azonban korábban még sérülés nélküli hajórészek számát kell kiírni!
+3. részfeladat: A pálya kódját kell kiírni a következő kódolás alapján! Minden hajó leírása a bal
+felső sarokhoz legközelebbi pozíciójának megadásával kezdődik. Ha a hajó nem 1 elemből áll, ak-
+kor ezt a tájolása követi. ’v’ illetve ’f’ karakter jelöli rendre a vízszintes és a függőleges állást, ezután
+a hajó hossza szerepeljen. A pálya leírásához a hajókat sorfolytonosan egyesével kódolni kell, majd
+ezeket kötőjellel összefűzni a mintának megfelelően.
+
+
+
+
+                                                  1. oldal
+Informatikai alapismeretek – emeltszint                          2014. május 20.
+
+
+Példa
+ Bemenet                                  Kimenet
+ 1110000010                               #
+ 0000000010                                 1 2 3 4 5 6 7 8 9 10
+ 0011110000                               A 1 1x 1x 0 0 0 0 0 1 0
+ 1000000100                               B 0 0 0 0 0 0 0 0 1 0
+ 0001000101                               C 0 0 1x 1 1 1 0x 0 0 0
+ 1001000101                               D 1 0 0 0 0 0 0 1 0 0
+ 1000010000                               E 0 0 0 1 0 0 0 1 0 1
+ 1000000001                               F 1 0 0 1 0 0 0 1 0 1
+ 0000001000                               G 1 0 0 0 0 1 0 0 0 0
+ 0111000001                               H 1x 0x 0x 0 0 0 0 0 0 1
+ C3                                       I 0 0x 0 0 0 0 1 0 0 0
+ C7                                       J 0 1 1 1 0x 0 0 0 0 1
+ I2                                       #
+ J5                                       4
+ A2                                       #
+ A3                                       A1v3-A9f2-C3v4-D1-D8f3-E4f2-↵
+ H1                                       E10f2-F1f3-G6-H10-I7-J2v3-J10
+ H2
+ H3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              2. oldal
+

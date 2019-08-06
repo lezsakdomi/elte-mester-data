@@ -1,0 +1,29 @@
+
+
+                                     Állatértékesítés
+Egy állatkereskedő N napon keresztül forgalmaz állatokat. Minden napra ismerjük, hogy addig
+mekkora bevétele volt.
+Készíts programot, amely megadja, hogy a kereskedő hány napon adott el állatot!
+Bemenet
+A standard bemenet első sorában található a napok száma (1≤N≤100) van. Az ezt követő
+N sorban pedig az addigi bevétel értékei vannak (0≤Bi≤1 000 000).
+Kimenet
+A standard kimenet első sorába ki kell írni az eladások számát!
+Példa
+Bemenet                                         Kimenet
+6                                               3
+10000
+10000
+10000
+15000
+15000
+17000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,58 @@
+
+
+                                         Hegymászó
+Egy hegymászó a csúcsra feljutáshoz N-1 táborban állhat meg. Minden táborban vehet fel élelmi-
+szert, de legfeljebb annyit, amennyi a hátizsákjába belefér. A táborok között a hátizsákban levő
+élelmiszert fogyaszthatja. A hegycsúcsra (N. tábor) felérés után vissza is kell jutnia az első tábor-
+ba. A hegymászás közben gondolni kell arra is, hogy a táborokban a következő hegymászóknak is
+maradjon élelmiszer, ezért a következő szabályt vezették be:
+     Felfelé a lehető legtöbb élelmiszert kell vinni, amennyi fér a hátizsákba, de minimum an--
+      nyi élelmiszert kell hagyni, ami majd visszaúton a lejutáshoz szükséges.
+     Ha valahol nem tudna a visszaúthoz elég élelmiszert hagyni, akkor az előző táborból vis--
+      sza kell fordulnia.
+Készíts programot, amely megadja, hogy az első táborból indulva az egyes táborokban mennyi
+élelmiszert kell felvennie, hogy a csúcs után még visszaérjen az első táborba!
+Bemenet
+A standard bemenet első sorában a táborok száma (3≤N≤100 000) és a hátizsák kapaci-
+tása (1≤H≤1000) van. A következő N-1 sorban egy-egy táborban levő élelmiszer mennyisége
+(1≤Vani≤1000) és a következő táborig (az utolsó sorban a csúcsig oda-vissza) szükséges élelmi-
+szer mennyisége (1≤Kelli≤H) van.
+Kimenet
+A standard kimenet első sorába N értékét kell kiírni, ha fel lehet jutni a csúcsra és onnan
+vissza is az első táborba. A második sor N-1 száma ilyenkor az egyes táborokban felveendő élel-
+miszer mennyisége legyen! Ha a csúcsra nem lehet felérni, akkor az első sorba azt a K számot kell
+kiírni, amelyik táborig lehet feljutni úgy, hogy még vissza lehessen érni az első táborba! Ekkor a
+második sor K-1 száma az egyes táborokban felveendő élelmiszer mennyisége legyen!
+Példa
+Bemenet                                           Kimenet
+7 20                                              7
+10 5                                              10 15 8 10 0 10
+26 8
+                                                  Magyarázat: A 2. táborba az elsőből vitt élelmi-
+19 10                                             szerből 5 marad, az ott levő 26-ból 5-öt tartalé-
+20 10                                             kolni kell a visszaútra, a maradék 21-ből azon-
+6 5                                               ban csak 15 fér bele a 20 kapacitású hátizsákba.
+15 5
+Bemenet                                           Kimenet
+7 15                                              5
+10 5                                              10 10 8 10
+26 8                                              Az 5. táborba a 4.-ből vitt 15 élelmiszerből 5
+19 10                                             marad, az ott levő 6-tal kiegészítve még elég
+20 10                                             visszafelé, de felfelé már nem.
+6 5
+3 5
+
+Korlátok
+Időlimit: 0.1 mp.
+
+
+                                              1. oldal
+Szimuláció                       ***
+
+Memórialimit: 32 MB
+
+
+
+
+                      2. oldal
+

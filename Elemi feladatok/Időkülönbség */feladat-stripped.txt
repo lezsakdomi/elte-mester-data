@@ -1,0 +1,26 @@
+
+
+                                     Időkülönbség
+Egy hónapon belül két programozási versenyt is rendeznek, melyek kezdő időpontját ismerjük.
+Írj programot, amely kiszámítja, hogy a kezdetük között mennyi az időkülönbség!
+Bemenet
+A standard bemenet első sorában az első verseny időpontja van (1≤Nap1≤31,
+0≤Óra1≤23, 0≤Perc1≤59, 0≤Másodperc1≤59). A második sorban a második verseny
+időpontja található (1≤Nap1≤31, 0≤Óra1≤23, 0≤Perc1≤59, 0≤Másodperc1≤59).
+Az első biztosan nem kezdődött később, mint a második.
+Kimenet
+A standard kimenet egyetlen sorába a két verseny kezdete között eltelt időt kell írni, a be-
+menetnek megfelelő formátumban!
+Példa
+Bemenet                                        Kimenet
+2 1 30 20                                              1 0 35 10
+3 2 5 30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

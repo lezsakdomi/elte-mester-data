@@ -1,0 +1,25 @@
+
+
+                                    Eszperantó számok
+Eszperantó nyelven a számokat így írják: 1 – unu, 2 – du, 3 – tri, 4 – kvar, 5 – kvin, 6 – ses, 7 – sep,
+8 – ok, 9 – nau, 10 – dek, 100 – cent, 1000 – mil.
+A többjegyű számokat a magyarhoz hasonlóan képezik: 11 – dek unu, 12 – dek du, 20 – dudek, 25 –
+dudek kvin, 40 – kvardek, 167 – cent sesdek sep, 378 – tricent sepdek ok, 2002 – dumil du.
+Írj programot, amely egy beolvasott számot kiír a képernyőre eszperantó nyelven!
+Bemenet
+A standard bemenet első sora a kiírandó N egész számot tartalmazza (1≤N≤9999).
+Kimenet
+A standard kimenetre a beolvasott N számot kell eszperantó nyelven kiírni!
+Példa
+Bemenet                                            Kimenet
+378                                                tricent sepdek ok
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                                1. oldal
+

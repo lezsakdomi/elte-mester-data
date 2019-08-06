@@ -1,0 +1,34 @@
+
+
+                                 Átfedő intervallumok
+Adott zárt intervallumoknak egy halmaza és egy K szám. Azt mondjuk, hogy az [a1,b1] és az
+[a2,b2] zárt intervallumoknak van közös része, ha a1≤a2≤b1, vagy a2≤a1≤b2.
+Készíts programot, amely kiszámítja azt a legszűkebb [A,B] zárt intervallumot, amelynek leg-
+alább K bemeneti intervallummal van közös része!
+Bemenet
+A standard bemenet első sorában az intervallumok száma (1≤N≤500 000) és a K szám
+(1≤K≤N) van. A következő N sor mindegyikében egy intervallum bal és jobb végpontja van,
+mindegyik 1 és 5*106 közötti. A bal végpont mindig kisebb, mint a jobb végpont.
+Kimenet
+A standard kimenet első és egyetlen sorába azt az A és B (1≤A<B) számot kell írni,
+amelyre teljesül, hogy az [A,B] zárt intervallummal legalább K bemeneti intervallumnak van kö-
+zös része, és B-A a lehető legkisebb! Ha több ilyen (A,B) számpár létezne, akkor azt kell kiírni,
+amelyikre az A a legkisebb!
+Példa
+Bemenet                                Kimenet
+6   4                                  2 4
+1   2
+4   7
+8   10
+2   5
+6   9
+1   3
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

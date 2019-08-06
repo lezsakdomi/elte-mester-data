@@ -1,0 +1,34 @@
+
+
+                                Osztály részhalmazai
+Egy N létszámú osztályból K tagú csoportot szeretnénk kiválasztani. Az osztály tanulóit 0 és N-1
+közötti számokkal azonosítjuk. Egy csoportot megadhatunk egy N bites számmal, ahol az i-edik
+helyiértéken 1 szerepel, ha az i-edik tanuló tagja a csoportnak, illetve 0, ha nem tagja.
+Az A csoportot kisebbnek mondjuk a B csoportnál, ha az A-nak megfelelő N-bites szám kisebb a
+B-nek megfelelő N-bites számnál.
+Készíts programot, amely megadja egy N létszámú osztály I-edik K tagú csoportját!
+Bemenet
+A standard bemenet első sorában az osztály létszáma (1N40) és a csoport létszáma
+(1KN), valamint az igényelt csoportok száma (1M1000) van, egy-egy szóközzel elvá-
+lasztva. A következő M sor mindegyike egyetlen I számot tartalmaz (1I), ahányadik K tagú
+csoportot meg kell adni az osztályból.
+Kimenet
+A standard kimenetre pontosan M sort kell írni, a bemenetben szereplő I számoknak
+megfelelő csoportokat! Mindegyik sorban pontosan K szám legyen növekvő sorrendben, a cso-
+portban szereplő tanulók sorszámai egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                         Kimenet
+5 3 4                                           0   1   2
+1                                               0   1   3
+2                                               2   3   4
+10                                              0   1   4
+5
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

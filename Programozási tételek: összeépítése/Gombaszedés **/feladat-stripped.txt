@@ -1,0 +1,47 @@
+
+
+                                      Gombaszedés
+Józsi bácsi hétvégénként nagy szeretettel jár a közeli erdőbe gombászni. Valamelyik hátizsákjával
+szokott elindulni, és ebbe a zsákba próbál meg minél több gombát szedni. Az erdőben háromféle
+gomba terem meg: Csiperke, Rókagomba és Lila pereszke. Józsi bácsi az évek során a következő
+módszert alakította ki a gombák leszedésére:
+    Mindaddig nem szed Lila pereszkét, amíg még van az erdőben Csiperke gomba.
+    Először mindig a legnagyobb (legnehezebb) gombát szedi le (persze, ha ez nem ütközik az
+     A. ponttal).
+    Azonos súlyú gombák esetén először Csiperké(ke)t, majd a Rókagombá(ka)t, és legvégül a
+     Lila pereszkéket szedi le.
+Ha adott az erdő gombaállománya (minden gomba súlya dekagrammban és fajtája), és Józsi bácsi
+hátizsákjának kapacitása (azaz hány dekagramm gombát képes a zsákban tárolni) határozzuk meg,
+hogy hány dekagramm gombát tud (és ezekből fajtánként mennyit) leszedni. Tudjuk azt is, hogy
+Józsi bácsi nem vág ketté gombát, azért, hogy a zsákja még jobban tele legyen (tehát csak egész
+gombák vannak a zsákban). Ha egy nagyobb gomba már nem fér bele a zsákba, azt kihagyja.
+Készíts programot a gombák zsákba pakolására!
+Bemenet
+A standard bemenet első sorában a gombák száma van (1≤N≤1000), a másodikban pedig
+a zsák kapacitása (1≤M≤100 000), a többi sor mindegyikében egy gomba jellemzői vannak: a
+fajta (a következő karakterek valamelyike: C, R vagy L) és a súly dekagrammban (1≤S≤100) egy
+szóközzel elválasztva.
+Kimenet
+A standard kimenet a leszedett gombák darabszámát és súlyát kell írni (egy szóközzel elvá-
+lasztva)! Az első sorba az összes leszedett gomba, a másodikban csak a csiperke, a harmadikban a
+rókagomba, a negyedikben pedig a lila pereszke darabszámát és a súlyát!
+Példa
+Bemenet                                         Kimenet
+6                                               4   24
+25                                              2   14
+C 4                                             2   10
+R 8                                             0   0
+L 12
+C 10
+L 2
+R 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+
+
+
+                                            1. oldal
+

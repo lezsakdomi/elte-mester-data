@@ -1,0 +1,39 @@
+
+
+                    Kemence darabszám és határidő korláttal
+Cserép korsók kiégetésére szakosodott vállalkozó egy kemencét üzemeltet. Az égetésre érkező
+korsókat az érkezés sorrendjében kell a kemencében kiégetni. Egy menetben legfeljebb K korsó
+rakható a kemencébe. Minden korsóra adott a minimális és maximális égetési idő percben kifejez-
+ve. Továbbá, minden korsóra adott egy H határidő, ami azt jelenti, hogy a munka megkezdésétől
+számítva, a H időpontig el kell készülnie a kiégetésének. Figyelembe kell venni, hogy egy menet
+előkészítése 1 percet vesz igénybe!
+Készíts programot, amely kiszámítja, hogy a követelmények betartásával legkevesebb mennyi idő
+alatt lehet kiégetni az összes korsót és meg is ad egy helyes beosztást!
+Bemenet
+A standard bemenet első sorában két egész szám van, a korsók száma (1≤N≤40 000) és a
+kemence kapacitása (1≤K≤1000). A következő N sor mindegyike a minimális és a maximális
+égetési időt tartalmazza (1≤min≤max≤2000), valamint a határidő értékét.
+Kimenet
+A standard kimenet első sorába az összes korsó kiégetéséhez szükséges legkisebb időt kell
+írni! A második sorba az égetési körök M száma kerüljön! A következő M sor mindegyike két
+egész számot tartalmazzon egy szóközzel elválasztva, u v, ami azt jelenti, hogy ebben a menet-
+ben az u,u+1,…,v sorszámú korsók kerülnek a kemencébe (1≤u≤v≤N,v≤u+K-1)! Több
+megoldás esetén bármelyik megadható. A feladat minden tesztesetre megoldható.
+Példa
+Bemenet                                        Kimenet
+4   3                                          9
+1   2   4                                      3
+2   3   3                                      1 2
+3   4   8                                      3 3
+1   2   9                                      4 4
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤1000 és K≤100. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,30 @@
+
+
+                Leghűvösebb települések legmelegebb napjai
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely azokat a napokat, amelyeken a leghűvösebb településen a lehető legna-
+gyobb az előre jelzett hőmérséklet!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába azon napok K számát kell kiírni, amelyeken a leghűvö-
+sebb településen a lehető legnagyobb az előre jelzett hőmérséklet! Ezt ezen napok sorszámai kö-
+vessék, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+3 5                                              2 2 3
+10 15 12 10 10
+11 11 11 11 20
+12 16 16 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,67 @@
+
+
+                                           Gazdaság
+Ebben a feladatban egy lótenyésztéssel foglalkozó gazdaság területén található legelőkkel
+kapcsolatosan kell számításokat végezned.
+Írj programot, amely
+   1. meghatározza a gazdaság területét hektárban (1 ha = 10000 m2),
+   2. kiszámítja, hogy a legelők hány százalékot foglalnak el a gazdaság területéből,
+   3. meghatározza, hogy az északról első legelő milyen messzire van a gazdasági terület északi
+      oldalának szélétől,
+   4. kiszámítja, hogy kelet-nyugati irányban (balról jobbra) hány méter széles a legszélesebb le-
+      gelő,
+   5. meghatározza, a gazdaság területén található legelők darabszámát,
+   6. megadja, a legnagyobb területű legelő területét hektárban!
+Bemenet
+A standard bemenet első sorában a gazdaság térképének méretei találhatók
+(3≤N,M≤100). A következő N sor észak-dél irányban „lefelé” kódolja a gazdaság területét, tehát
+a legelső sor az északi határszéltől indul. A sorok M karakterből állnak, melyek mindegyike "M"
+vagy "L", és mezőt, illetve legelőt jelölnek. Egy karakternyi terület a valóságban 100m × 100m. A
+gazdasági terület szélein legalább 100m-es mezősáv található. A legelők minden esetben téglalap
+alakúak, valamint oldalaiknál és sarkaiknál nem érhetnek össze. A gazdaságban biztosan van leg-
+alább egy legelő.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Egyetlen számot kell kiírni, a gazdaság területét hektárban.
+2. részfeladat: A legelők gazdaságban kitett százalékos arányát kell kiírni két tizedesjegyre kere-
+kítve, tizedesponttal elválasztva. Mindenképp pontosan két tizedesjegyet kell kiírni.
+3. részfeladat: Az északi oldalhoz legközelebbi legelő távolságát kell kiírni méterben.
+4. részfeladat: A kelet-nyugati irányban legszéleseb legelő szélességét kell kiírni méterben.
+5. részfeladat: A legelők darabszámát kell kiírni.
+6. részfeladat: A legnagyobb területű legelő területét kell megadni hektárban.
+
+
+
+
+                                              1. oldal
+Informatikai alapismeretek – emelt szint                  2015. május 19.
+
+
+Példa
+ Bemenet                                        Kimenet
+ 5 16                                           #
+ MMMMMMMMMMMMMMMM                               80
+ MMMMLLLLMMMMMMMM                               #
+ MMMMLLLLMLLLLLLM                               30.00
+ MMMMLLLLMLLLLLLM                               #
+ MMMMMMMMMMMMMMMM                               100
+                                                #
+                                                600
+                                                #
+                                                2
+                                                #
+                                                12
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+

@@ -1,0 +1,42 @@
+
+
+                                           Dolgozat
+Egy dolgozaton elérhető maximális pontszám 50 pont. A 2-es érdemjegyhez legalább 40%-os, a
+3-ashoz legalább 55%-os, a 4-eshez legalább 70%-os, az 5-öshöz legalább 85%-os eredmény
+szükséges.
+Írj programot, amely
+     1. megadja a tanulók által elért százalékos eredményt és érdemjegyet;
+     2. meghatározza a pontszámok átlagát!
+Bemenet
+A standard bemenet első sorában a diákok darabszáma (1≤N≤50 000) található. Az ezt
+követő N sor mindegyike egy-egy diák által elért pontszámot (0≤Pont≤50) tartalmaz.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Összesen N sort kell írni, az i-edik sor az i-edik diák által elért százalékos ered-
+ményt és az érdemjegyet tartalmazza!
+2. részfeladat: Az összes diák pontszámának az átlagát kell kiírni, egészre kerekítve!
+Példa
+Bemenet                                           Kimenet
+7                                                 #
+35                                                70 4
+50                                                100 5
+45                                                90 5
+32                                                64 3
+19                                                38 1
+21                                                42 2
+30                                                60 3
+                                                  #
+                                                  33
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,33 @@
+
+
+                               Erősen páratlan számok
+„Erősen páratlan” számoknak nevezzük azokat a páratlan számokat, amelyek vagy egyjegyűek,
+vagy pedig a számjegyeik összege erősen páratlan szám.
+Írj programot, amely beolvas egy természetes számot, majd kiírja, hogy az erősen páratlan-e vagy
+sem! Ha nem erősen páratlan, akkor írja ki a fenti kiszámítás sorrendjében előjött első páros szá-
+mot is!
+Bemenet
+A standard bemenet első és egyetlen sora egy természetes számot tartalmaz. A természetes
+szám számjegyeinek száma nem haladja meg a 10000-et.
+Kimenet
+A standard kimenet első sorába „EROSEN PARATLAN” szöveget kell írni, ha a beolva-
+sott szám erősen páratlan, és „NEM EROSEN PARATLAN” szöveget ellenkező esetben! Ha a
+beolvasott szám nem erősen páratlan, akkor a kimenet második sorába a számítási sorrendben
+előjött első páros számot kell írni!
+Példa1
+Bemenet                                         Kimenet
+1999                                            NEM EROSEN PARATLAN
+                                                28
+Példa2
+Bemenet                                         Kimenet
+1989                                            EROSEN PARATLAN
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 60%-ában N ≤100
+
+
+
+
+                                             1. oldal
+

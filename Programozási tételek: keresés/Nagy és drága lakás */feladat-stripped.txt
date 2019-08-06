@@ -1,0 +1,30 @@
+
+
+                                    Nagy és drága lakás
+Egy ingatlanforgalmazó vállalat tárolja az eladott lakásai árát és területét.
+Írj programot, amely megadja a felsorolás sorrendjében az első A négyzetméternél nagyobb, B fo-
+rintnál drágább lakást!
+Bemenet
+A standard bemenet első sorában a lakások száma (1≤N≤100); az méret korlát
+(10≤A≤199) és az ár korlát (1≤B≤100) van. A következő N sorban soronként az egyes lakások
+ára (1≤Ári≤100) és területe (10≤Méreti≤199) van. (Megjegyzés az árakat – természetesen –
+millió forintban értjük, de ezzel a megoldásnál nem kell foglalkozni!)
+Kimenet
+A standard kimenet első sorába felsorolás sorrendjében az első A négyzetméternél na-
+gyobb, B forintnál drágább lakás sorszámát kell kiírni! Ha ilyen nincs, akkor 0-t kell kiírni!
+Példa
+Bemenet                                Kimenet
+4 30 10                                2
+10 45
+20 80
+10 30
+100 145
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

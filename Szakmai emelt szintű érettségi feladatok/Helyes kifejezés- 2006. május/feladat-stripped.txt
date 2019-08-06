@@ -1,0 +1,45 @@
+
+
+                                       Helyes kifejezés
+Írj programot, mely eldönti, hogy a megadott matematikai kifejezés helyes-e!
+A beolvasott kifejezésre a program a következő ellenőrzéseket végezze el:
+       a zárójelpárok megvannak-e (ugyanannyi nyitó, mint záró zárójel)!
+       a zárójelpárok megfelelően helyezkednek-e el! (Előbb nyit, azután zár, egymásba ágyazha-
+        tók.)
+       a műveleti jelek (+, -, *, /) megfelelően helyezkednek-e el, azaz
+            o nem állnak a kifejezés két végén
+            o előttük csak a 0..9, ) karakterek valamelyike állhat.
+            o mögöttük csak a 0..9, ( karakterek valamelyike állhat
+Bemenet
+A standard bemenet egyetlen sora tartalmazza a kifejezést. A kifejezés nem tartalmaz szó-
+közöket, csak a következő karakterek szerepelhetnek: 0..9, +, -, *, /, (, ). legfeljebb 200 karakterből
+áll.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Ki kell írni, hogy a zárójelpárok megvannak-e! Ha igen, a sorba kerüljön, hogy „He-
+lyes”, ha nem, kerüljön, hogy „Hiba”!
+2. részfeladat: Ki kell írni, hogy a zárójelpárok megfelelően helyezkednek-e el! Ha igen, a sorba
+kerüljön, hogy „Helyes”, ha nem, kerüljön, hogy „Hiba”!
+3. részfeladat: Ki kell írni, hogy a műveleti jelek megfelelően helyezkednek-e el! Ha igen, a sorba
+kerüljön, hogy „Helyes”, ha nem, kerüljön, hogy „Hiba”!
+Példa
+Bemenet                                                Kimenet
+(1+5)*((2-3)/(3))                                      #
+                                                       Helyes
+                                                       #
+                                                       Helyes
+                                                       #
+                                                       Helyes
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,25 @@
+
+
+                                           Dátum
+Tudjuk, hogy 1901. január 1. keddi nap volt.
+Írj programot, amely ez alapján meghatározza, hogy egy tetszőleges év (1901 után) január 1. mi-
+lyen napra esik!
+Bemenet
+A standard bemenet egyetlen sora egy egész számot tartalmaz, azt az E évszámot, amelynél
+kíváncsiak vagyunk, hogy január 1. milyen napra esik (1902≤E≤10 000).
+Kimenet
+A standard kimenetre annak a napnak a megnevezését kell írni, amelyre a bemenetben
+megadott E év január 1. esett! A kiírandó napot csupa kis betűvel, ékezetek nélkül kell megadni!
+Példa
+Bemenet                                           Kimenet
+1903                                              csutortok
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                               1. oldal
+

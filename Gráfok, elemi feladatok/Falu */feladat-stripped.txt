@@ -1,0 +1,42 @@
+
+
+                                             Falu
+Ismerjük egy megye települései (falvak, városok) közötti utak hosszát. Zsákfalunak nevezzük azt a
+falut, ahova csak egyetlen út vezet (és onnan tovább már nem lehet menni, csak visszafelé). A
+településeket sorszámmal azonosítjuk.
+    Készíts programot (falu.pas, …), amely megadja:
+A. a zsákfalvak számát;
+B. azt a települést, ahova a legtöbb út vezet szomszédos településről;
+C. az egymáshoz legközelebbi 2, nem szomszédos települést (ha több ilyen van, akkor a legkisebb
+sorszámút)!
+Bemenet
+A standard bemenetelső sorában a települések (2N1000) és az utak száma van
+(1M10000), egy szóközzel elválasztva. A következő M sor mindegyikében három egész szám
+van, egy-egy szóközzel elválasztva: egy-egy út két végpontjának sorszáma és a köztük levő út
+hossza.
+Kimenet
+A standard kimenetelsőhárom sorába az A, B és C kérdésre adott választ kell írni!
+Példa
+Bemenet                                         Kimenet
+6   7                                           2
+1   2   10                                      2
+2   3   15                                      3 6
+2   4   10
+2   5   5
+3   5   5
+                                                    1                          3
+                                                                      15
+4   5   15                                              10                          5
+5   6   5                                                    2             5        5   5   6
+Korlátok
+                                                                 10
+                                                                               15
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB                                                    4
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

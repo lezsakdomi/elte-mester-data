@@ -1,0 +1,38 @@
+
+
+                                  Facsemeték bekerítése
+Egy városi parkban öreg fák állnak. Közéjük új facsemetéket szeretnének ültetni. Minden facse-
+metét körbe kell venni három öreg fával úgy, hogy a facsemete a három öreg fa által meghatáro-
+zott háromszögön belül legyen egyedüli új facsemeteként. Továbbá bármely két körbekerítő há-
+romszög esetén, ha van közös pontjuk, akkor a közös pont vagy az egyik csúcsuk vagy a közös
+oldalukon van!
+Készíts programot, amely megadja, hogy maximum mennyi új facsemete ültethető és megadja
+minden új facsemetére a körbekerítő három öreg fát!
+Bemenet
+A standard bemenet első sorában egyetlen egész szám van (3N30 000), az öreg fák
+száma. A következő N sorban egy-egy öreg fa koordinátái vannak (0Ox, Oy1 000 000). Az
+öreg fák nem esnek egy egyenesre.
+Kimenet
+A standard kimenet első sora a feltétel szerint ültethető új facsemeték M maximális szá-
+mát tartalmazza! A következő M sor mindegyike egy körbekerítést megadó három öreg fa sorszá-
+mát tartalmazza órajárással ellentétes felsorolásban! Több megoldás esetén bármelyik megadható
+Példa
+Bemenet                       Kimenet
+7                             7
+3 7                           1   2   3
+1 2                           3   2   6
+6 7                           6   2   4
+9 2                           4   2   5
+10 0                          4   5   6
+17 7                          3   6   7
+11 12                         1   3   7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤1000
+
+
+
+
+                                            1. oldal
+

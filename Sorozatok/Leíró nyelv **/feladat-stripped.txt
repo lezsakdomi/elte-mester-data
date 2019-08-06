@@ -1,0 +1,38 @@
+
+
+                                        Leíró nyelv
+Egy leíró nyelvben egyes elemek kezdetét és végét nyitó, illetve záró tag-gel jelöljük. Az egyes
+elemek egymásba ágyazhatók. A kezdet <X>, a vég </X> alakú, ahol X egy legalább 1, legfel-
+jebb 6 karakteres, az angol ábécé nagybetűiből álló szöveg. Egy program tetszőleges számú sor,
+amelyet egy egyetlen * karaktert tartalmazó sor zár le. A négy jelet (<,>,/,*) semmilyen más célra
+nem használják.
+Készíts programot, amely megadja K ilyen nyelven megírt programról, hogy a tag-ek egymásba
+ágyazása helyes-e! (A programok minden más szempontból szabályosak.)
+Bemenet
+A standard bemenet első sorában a programok száma van (1≤K≤10). A további K blokk-
+ban pedig blokkonként egy-egy program szerepel. Minden programban maximum 1000 kezdő,
+illetve vég elem szerepelhet.
+Kimenet
+A standard kimenet K sorába a HELYES vagy a ROSSZ szót kell kiírni, attól függően,
+hogy az i-edik program a szabályoknak megfelelő volt-e!
+Példa
+Bemenet                                          Kimenet
+2                                                HELYES
+<ALMA>                                           ROSSZ
+<BARACK> CSERESZNYE
+</BARACK>
+</ALMA>
+*
+<ALMA>
+</BARACK> MEGGY <BARACK>
+</ALMA>
+*
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

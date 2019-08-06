@@ -1,0 +1,38 @@
+
+
+                                  Szóösszeadó fejtörő
+A szóösszeadó fejtörő egy jól ismert fejtörő, amelyben egy aritmetikai művelet kapcsol egybe sza-
+vakat. A feladat az, hogy a szavak egyes betűinek feleltessünk meg egy számjegyet úgy, hogy a
+művelet helyes eredményt szolgáltasson a szavakon.
+Pl. SEND + MORE = MONEY, vagy hagyományosan leírva:
+                                      SEND
+                                    + MORE
+                                     MONEY
+Készíts programot, amely a szavakban előforduló jelekhez (SENDMORY) egyértelműen hozzáren-
+deli a 0..9 számjegyeket!
+Bemenet
+Nincs.
+Kimenet
+A standard kimenetre a szavakban előforduló jeleket kell S, E, N, D, M, O, R, Y sorrend-
+ben külön sorba kiírni, mindegyik mellett egy szóközzel elválasztva az egyértelműen hozzárendel-
+het 0..9 számjeggyel.
+Példa
+Bemenet                                         Kimenet
+                                                S   9
+                                                E   5
+                                                N   6
+                                                D   7
+                                                M   1
+                                                O   0
+                                                R   8
+                                                Y   2
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

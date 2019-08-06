@@ -1,0 +1,33 @@
+
+
+                                            Épület
+Egy lakótelepen téglalap alakú épületeket építettek, oldalaik párhuzamosak a koordinátatengelyek-
+kel. Egyes épületek falai érintkezhetnek egymással. Az épületek alkotta részek nem feltétlenül ösz-
+szefüggőek.
+Készíts programot, amely kiszámítja az épületek külső oldalai összhosszát (azaz azt, amely más
+épületekkel nem érintkezik)!
+Bemenet
+A standard bemenet első sorában az épületek száma van (1≤N≤100 000). A következő N
+sorban egy-egy épület bal alsó és jobb felső sarkának BAX BAY JFX JFY koordinátái vannak
+(-100 000 000≤BAX<JFX≤100 000 000, -100 000 000≤BAY<JFY≤100 000 000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az épületek külső oldalai
+összhosszát!
+
+Példa
+Bemenet                                          Kimenet
+3                                                480
+10 0 90 100
+90 0 100 100
+50 100 100 150
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32MB
+Pontozás: A tesztek 60%-ában N≤10 000 és a koordináta értékek abszolút
+értéke <1 000 000
+
+
+
+
+                                             1. oldal
+

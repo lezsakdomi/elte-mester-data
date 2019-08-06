@@ -1,0 +1,22 @@
+
+
+                               Relatív prímek száma
+Készíts programot, amely egy N természetes számhoz megadja a nála kisebb relatív prím termé-
+szetes számok számát!
+Bemenet
+A standard bemenet első sorában N értéke van (2≤N≤100 000 000).
+Kimenet
+A standard kimenet első sorába az N-hez relatív prím, nála kisebb természetes számok
+számát kell írni!
+Példa
+Bemenet                                       Kimenet
+2016                                          576
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                          1. oldal
+

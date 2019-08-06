@@ -1,0 +1,30 @@
+
+
+                              Faktoriális számrendszer
+Faktoriális számrendszerben minden helyi értéken az előző helyi értéknél eggyel nagyobb alap-
+számú számrendszert alkalmazunk. Azaz egy ilyen szám utolsó számjegye 2-es számrendszerbeli
+(0 vagy 1 lehet), az azt megelőző 3-as számrendszerbeli (0, 1 vagy 2), a még előtte lévő már 4-es
+számrendszerbeli (0, 1, 2 vagy 3), és így tovább.
+Ennek megfelelően például az 1 rákövetkezője a 10, a 321-é pedig az 1000.
+Készíts programot, amely egy A számot átvált tízes számrendszerből faktoriális számrendszerbe,
+egy B számot pedig faktoriális számrendszerből tízes számrendszerbe!
+Bemenet
+A standard bemenet első sorában az A szám (1 A 2 000 000), második sorában a B
+szám (1 B 824 000 000) található.
+Kimenet
+A standard kimenet első sorába kerüljön az A értéke átváltva faktoriális számrendszerbe,
+második sorába pedig B értéke átváltva tízes számrendszerbe !
+Példa
+Bemenet                                         Kimenet
+67                                              2301
+4001                                            97
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az A, B ≤ 100 000.
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,39 @@
+
+
+                                           Délkert
+A DélKert szövetkezetben N termelő termel gyümölcsöt, amit a szövetkezet két hűtőházban gyűjt
+össze. Az i-edik termelő a leszedett gyümölcsöt az A hűtőházba ai, a B hűtőházba bi idő alatt
+tudja beszállítani. A hűtőházak kapacitása korlátozott, az A hűtőház N1, a B pedig N2 termelőtől
+tud gyümölcsöt fogadni. Az a cél, hogy minden termelőtől a lehető leghamarabb hűtőházba kerül-
+jön a leszedett gyümölcs.
+Készíts programot, amely kiszámítja, hogy az egyes termelőknek melyik hűtőházba kell szállítnia a
+leszedett gyümölcsöt, hogy az összes termelőtől a gyümölcs a lehető legkorábban hűtőházba ke-
+rüljön!
+Bemenet
+A standard bemenet első sorában a termelők száma (1≤N≤106), az A hűtőház N1 és a B
+hűtőház N2 kapacitása van (N1+N2≥N). A második és a harmadok sor pontosan N pozitív egész
+számot tartalmaz (egy-egy szóközzel elválasztva). A második sorban az i-edik szám azt adja meg,
+hogy az i-edik termelő mennyi idő alatt tudja a gyümölcsöt az A hűtőházba szállítani. A harmadik
+sorban az i-edik szám azt adja meg, hogy az i-edik termelő mennyi idő alatt tudja a gyümölcsöt a
+B hűtőházba szállítani. A második és a harmadik sorban minden érték legfeljebb 10 000 lehet.
+Kimenet
+A standard kimenet első sorába azt a legkisebb K számot kell írni, amelyre teljesül, hogy
+minden termelő legfeljebb K idő alatt el tudja juttatni a gyümölcsét valamelyik hűtőházba, ha al-
+kalmas beosztás szerint szállítanak! A második sorba azoknak a termelőknek a sorszámát kell ki-
+írni, akik az A, a harmadik sorba pedig azokét, akik a B hűtőházba szállítják a gyümölcsöt! A so-
+rokba a számokat tetszőleges sorrendben ki lehet írni. Ha több megoldás is van, bármelyik meg-
+adható.
+Példa
+Bemenet                                         Kimenet
+10 4 7                                          6
+2 8 9 2 3 2 4 3 6 5                             4 5 6 8
+6 3 2 7 6 9 3 8 5 2                             1 2 3 7 9 10
+Korlátok
+Időlimit: 0.4 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

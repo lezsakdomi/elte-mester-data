@@ -1,0 +1,39 @@
+
+
+                                    Magasugró verseny
+Egy magasugró versenyen a versenyzők különböző magasságokat próbálnak átugorni, legalább
+egyet minden versenyző ugrik. Nem kell mindenkinek minden magasságot megpróbálni, de egy
+magasságon maximum háromszor próbálkozhat. Ha egyik sem sikerült, akkor kiesik a további
+versenyből. A verseny végeredményeként az A versenyző előrébb végez a B versenyzőnél, ha
+     ha U az a legnagyobb magasság, amelyiken nem azonos eredményt értek el, akkor A keve-
+       sebb kísérlettel teljesítette ezt a magasságot, mint B.
+     ha a versenyzők minden magasságon azonos eredményt értek el, akkor holtverseny van
+       közöttük.
+Megjegyzés: a fenti szabály különbözik a jelenlegi hivatalos atlétikai szabályzattól.
+Készíts programot, amely a verseny ugrásai alapján megadja a versenyzők végső sorrendjét!
+Bemenet
+A standard bemenet első sorában a versenyzők száma (2≤N≤1000) és az ugrott magassá-
+gok száma (1≤M≤100) van, a további M sorban pedig soronként egy-egy magasságon a verseny-
+zők eredményei. Minden sor elején az ugrott magasság (sorok szerint növekvő sorrendben), majd
+a sor végéig az egyes versenyzők kísérletei: egy szóköz, a versenyző sorszáma, a J vagy az R betű
+(a jó vagy a rossz ugrások azonosítására, nem feltétlenül időrendi sorrendben).
+Kimenet
+A standard kimenet legfeljebb N sort tartalmazzon, az i. sorba az i. helyen végzett ver-
+senyző sorszámát! Ha az i. helyen holtverseny van, akkor az i. sorban a holtversenyben végzett
+versenyzők sorszámai szerepeljenek növekvő sorrendben!
+Példa
+Bemenet                                                               Kimenet
+5 4                                                                   1
+215   1J   3J 4J 5J                                                   3
+220   1R   2R 4R 5R 1R 2R 4R 5R 1J 2R 4R 5R                           4 5
+225   1J   3J                                                         2
+230   1R   3R 1R 3R 1R 3R
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

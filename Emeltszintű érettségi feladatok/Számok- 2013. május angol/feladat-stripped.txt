@@ -1,0 +1,63 @@
+
+
+                                            Számok
+A Szereti Ön a számokat? internetes vetélkedőben a versenyzők olyan kérdéseket kapnak, amelyekre
+egy egész számmal kell válaszolniuk. A kérdések különböző témakörökből származnak, és nehéz-
+ségüktől függően különböző pontszámot érnek. Tudjuk, hogy a kérdésekre adható válaszok értéke
+0 és 1 milliárd közé esik. A feladatokat a verseny szervezői tesztelni szeretnék.
+Írj programot, amely
+    1.   meghatározza, hogy hány feladat van egy adott témakörből,
+    2.   meghatározza, hogy az adott témakörből a különböző pontértékhez hány feladat tartozik,
+    3.   meghatározza, hogy mettől meddig terjed a válaszok számértéke,
+    4.   meghatározza, hány témakör szerepel a kérdések között, és melyek ezek.
+Bemenet
+A standard bemenet első sora tartalmazza a tesztelendő feladatok számát (1≤N≤10000),
+és az egy feladatra kapható maximális pontszámot (1≤M≤100). A következő 2*N sorban a fel-
+adatok vannak. Minden feladat két sorban helyezkedik el. Az első sor tartalmazza a kérdést, a má-
+sodik pedig a helyes választ, a helyes válaszért adható pontszámot (1≤K≤M) és a témakör megne-
+vezését. A következő sor egy A témakört tartalmaz, melyből az első részfeladat darabszámát kell
+meghatározni. Az utolsó sor egy B témakört tartalmaz, melyből a második részfeladat darabszámát
+kell meghatározni. A bemenet ékezetes betűt nem tartalmaz.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Ki kell írni, hogy hány feladat van az A témakörből!
+2. részfeladat: Ki kell írni, hogy a B témakörből a különböző pontértékekhez hány feladat tartozik!
+Az 1,2,3..M pontértékű feladatok darabszáma kerüljön kiírásra!
+3. részfeladat: Ki kell írni, hogy mettől meddig terjed a válaszok számértéke! Az eredmény kerüljön
+egy sorba!
+4. részfeladat: Ki kell írni, hogy hány darab témakör szerepel a kérdések között, és melyek ezek!
+A témakörök darabszáma kerüljön az első sorba, a másodikba pedig a témakörök neve! (A sorrend
+nem számít.)
+Példa
+Bemenet                                                  Kimenet
+5 3                                                      #
+Mikor volt a mohacsi vesz?                               2
+1526 1 tortenelem                                        #
+Mennyi az uran rendszama?                                1 0 1
+92 2 kemia                                               #
+Mikor szuletett Jokai Mor?                               92 703800000
+1825 2 irodalom                                          #
+Mikor volt a kormendi csata?                             3
+1664 3 tortenelem                                        kemia tortenelem irodalom
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi              2013. május 14.
+
+Hany ev az uran felezesi ideje?
+703800000 3 kemia
+kemia
+tortenelem
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

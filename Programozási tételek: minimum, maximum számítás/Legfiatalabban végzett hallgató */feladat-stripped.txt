@@ -1,0 +1,35 @@
+
+
+                         Legfiatalabban végzett hallgató
+Egy egyetem 5 éves szakjának végzettjeiről nyilvántartják a születés dátumát (év, hó, nap), és a
+szak kezdésének valamint a diplomázásának évét.
+Írj programot, amely megadja, hogy mikor született az a végzett hallgató, aki legfiatalabban sze-
+rezte meg a diplomáját
+Bemenet
+A standard bemenet első sorában az végzések száma (1≤N≤100), alatta soronként egy-egy
+végzett adatai vannak, öt pozitív egész szám formájában egy-egy szóközzel elválasztva. Az első,
+második és harmadik szám a végzett születési idejének év (1950≤É≤2000), hó (1≤H≤12) és
+nap része (1≤Nap≤31), a negyedik a kezdés éve (2000≤K≤2020), az ötödik pedig a végzés éve
+(K≤V≤2020).
+Kimenet
+A standard kimenet első sorába a legfiatalabb végzett hallgató születési dátumát kell kiírni
+(év hó nap)! Több megoldás esetén a bemenetbeli elsőt kell kiírni.
+Példa
+Bemenet                                         Kimenet
+6                                               1999 12 1
+1980   1 1 2007 2012
+1970   6 2 2007 2012
+1999   12 1 2007 2012
+1982   10 1 2000 2005
+1982   9 9 2000 2012
+1982   1 1 2000 2005
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

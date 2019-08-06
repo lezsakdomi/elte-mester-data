@@ -1,0 +1,47 @@
+
+
+                           Vállalat – üzenet az igazgatónak
+Egy nagyvállalatnál az alkalmazottak olyan szervezeti felépítésben dolgoznak, hogy mindenkinek
+pontosan egy követlen főnöke van; kivéve a vállalat igazgatóját, akinek nincs főnöke. Ha valaki je-
+lentést akar továbbítani az igazgatónak, akkor azt csak úgy teheti, hogy továbbítja a közvetlen fő-
+nökének, aki azt az ő közvetlen főnökének küldi, és így tovább, amíg a jelentés el nem jut az igaz-
+gatóhoz. Minden jelentés továbbítása a közvetlen főnöknek egy órát vesz igénybe.
+Készíts programot, amely kiszámítja, hogy kik azok az alkalmazottak, akiknek a jelentése ponto-
+san a megadott óra alatt jut el az igazgatóhoz!
+Bemenet
+A standard bemenet első sorában a vállalat alkalmazottainak száma (1≤N≤20 000) és a
+kérdésben szereplő időtartam (1≤K≤N) van. A következő N-1 sor egy-egy egész számot tartal-
+maz, az i-edik sor az i-edik alkalmazott közvetlen főnökének a sorszámát. Az igazgatót az 1
+sorszám azonosítja, ezért neki nincs leírása.
+Kimenet
+A standard kimenet első sorába azoknak az alkalmazottaknak az M számát kell írni, akik-
+nek a jelentése pontosan K óra alatt jut el az igazgatóhoz! A második sor tartalmazza ezeknek az
+alkalmazottaknak a sorszámát egy-egy szóközzel elválasztva, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+13 2                                             4
+5                                                7 8 10 12
+5
+                                                                                     1
+7
+7
+8
+                                                                             13      9         11
+13
+13
+1                                                                    7       10       8        12
+13
+1
+11                                                           4           5            6
+1
+Korlátok
+                                                                 2           3
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a tagok száma N≤500
+
+
+
+
+                                             1. oldal
+

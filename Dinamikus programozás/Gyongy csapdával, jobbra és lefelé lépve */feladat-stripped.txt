@@ -1,0 +1,43 @@
+
+
+                    Gyöngy csapdával, jobbra és lefelé lépve
+Tekintsük azt az egyszemélyes játékot, amelyet N sorból és M oszlopból álló négyzetrácsos táblán
+játszanak! A táblán minden mező vagy csapda, vagy valahány gyöngyöt tartalmaz. Egy bábut kell
+mozgatni a táblán. A bábu kezdetben a tábla bal felső sarkában van, és a jobb alsó sarokba kell el-
+juttatni az alábbi lépés-szabályt betartva:
+      Csapda mezőre nem lehet lépni.
+      Csak a négy szomszédos mező valamelyikére lehet lépni.
+      Egy lépésben csak jobbra, vagy lefelé lehet lépni.
+      Minden olyan mezőn lévő gyöngy a játékosé lesz, amely mezőre lép.
+Készíts programot, amely kiszámítja a játékkal elérhető legnagyobb pontszámot, és meg is ad lé-
+péssort, amely a legnagyobb pontszámot eredményezi!
+Bemenet
+A standard bemenet első sorában a tábla mérete van (1≤M,N≤1000). A következő M sor
+mindegyikében N nemnegatív egész szám van. Közülük az i-edik sor j-edik száma a tábla (i,j)
+koordinátájú mezőjén lévő gyöngyök száma, ami nem nagyobb, mint 10 000. Ha a szám -1,
+akkor az a mező csapda. A bal felső és a jobb alsó mező biztosan nem csapda, és a kiindulási bal
+felső mezőn lévő gyöngyök száma beleszámít az összpontszámba.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb pontszámot kell írni! A második
+sorba a kiválasztott két mező koordinátáit kell írni, a haladás sorrendjében! A harmadik sorba
+pontosan M+N-2 karaktert kell írni, ami egy nyerő útvonalat ír le, amivel elérhető a maximális
+pontszám! A felfelé lépés jele az F, a lefele lépésé L, a jobbra lépés jele pedig a J karakter. Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+5 6                                              17
+1 2     3   4 0     1                            JJLLLLJJJ
+2 -1    2   1 -1    3
+-1 0    6   0 0     0
+4 1     0   -1 1    -1
+0 0     1   2 0     0
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤100. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                              1. oldal
+

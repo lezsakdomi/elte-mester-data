@@ -1,0 +1,36 @@
+
+
+                                          Vásárlás
+Két üzletben részben egyforma árukat is árulnak. Ismerjük mindkét üzlet raktárkészletét.
+Készíts programot, amely megadja az egyes termékekből maximálisan vásárolható mennyiséget,
+ha
+   A. ugyanabból a termékből mindkét üzletben ugyanannyit kell venni;
+   B. csak olyan termékből lehet venni, amelyik a másik üzletben nem kapható!
+Bemenet
+A standard bemenet első sorában az első üzlet áruféléi száma (1≤N≤10 000) és a máso-
+dik üzlet áruféléi száma (1≤M≤10 000) van. A következő N sorban az első, az azt követő M
+sorban a második üzlet árui raktárkészlete található, árukód szerint növekvő sorrendben. Az egyes
+sorok első száma az áru számkódja (legfeljebb 12 jegyű egész szám), a második pedig az árukész-
+lete (1≤A≤1000).
+Kimenet
+A standard kimenet első sorába az A, a második sorába pedig a B feltétel szerinti maximá-
+lisan vásárolható árumennyiségeket kell írni, az áruk kódja szerint növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+3 4                                              200 100
+2 100                                            100 100 200
+3 200
+42 1000
+3 300
+5 100
+7 200
+42 100
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

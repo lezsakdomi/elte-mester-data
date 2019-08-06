@@ -1,0 +1,37 @@
+
+
+                                         Minibusz
+Egy taxi vállalkozó N megálló között szállít utasokat minibusszal. A korlátozások előírták neki,
+hogy egy menetben mindig az 1. megállótól kell indulnia és az i-edik megállótól (i<N) az
+i+1-edik megállóba kell mennie. Ismeri az utasok igényeit, tehát minden utasról tudja, hogy me-
+lyik megállótól melyik megállóig akar utazni.
+Készíts programot, amely kiszámítja, hogy legjobb esetben összesen hány utast tud egy menetben
+az utas igényének megfelelő helyre elszállítani!
+Bemenet
+A standard bemenet első sorában a minibusz kapacitása (1<K100), a megállók száma
+(1<N1000) és az igények száma (0<M40 000) van. A további M sor mindegyike két egész
+számot tartalmaz, ami azt jelenti, hogy egy utas az U megállótól a V megállóig kíván utazni
+(1U<VN).
+Kimenet
+A standard kimenet első sorába azon utasok maximális számát kell írni, akiket a taxis egy
+menetben el tud szállítani!
+Példa
+Bemenet                                         Kimenet
+3   10 8                                        7
+2   3
+1   7
+2   3
+4   7
+2   3
+3   5
+3   5
+6   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,33 @@
+
+
+                                  Ládák balról jobbra
+Adott ládáknak egy sorozata. Minden láda kocka alakú és egyik oldala nyitott. A ládákat egy ro-
+botnak kell összepakolni úgy, hogy egy ládát belerakhat egy másik ládába, ha az utóbbinak a mé-
+rete kisebb. Azonban a robot csak sorban balról-jobbra haladva tudja a pakolást elvégezni, tehát a
+soron következő ládát vagy belerakja egy másik, már összepakolt ládába, vagy külön hagyja. Az a
+cél, hogy a lehető legkevesebb összerakott láda keletkezzen.
+Készíts programot, amely megmondja, hogy minimálisan hány ládába lehet a ládasorozatot ösz-
+szepakolni, továbbá megadja, hogy mely ládák lesznek egybe pakolva.
+Bemenet
+A standard bemenet első sorában a ládák száma (0N10000) van. A második sorban
+N db pozitív egész szám van, a ládák mérete. Minden szám értéke 1 és 30000 közötti.
+Kimenet
+A standard kimenet első sorába az összepakoláshoz minimálisan szükséges ládák M számát
+kell írni! A következő M sor mindegyike egy összepakolást ad meg, azaz azon ládák sorszámai sze-
+repelnek egy sorban, amelyeket egybe kell pakolnia a robotnak a kiírás sorrendjében.
+Példa
+Bemenet                                          Kimenet
+10                                               4
+4 1 5 10 7 9 2 8 3 2                             1   2
+                                                 3   7
+                                                 4   5 9 10
+                                                 6   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

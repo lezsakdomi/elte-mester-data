@@ -1,0 +1,47 @@
+
+
+                               Kiesettek és továbbjutók
+Egy kieséses versenyben ismerjük a csapatok mérkőzéseit: ki kit győzött le.
+Írj programot, amely szétválogatja a még versenyben levő és a már kiesett csapatokat!
+Bemenet
+A standard bemenet első sorában a csapatok száma (1≤N≤1000) és mérkőzések száma
+(1≤M≤10 000) van. A következő M sorban egy-egy mérkőzés győztese (1≤A≤N) és vesztese
+(1≤B≠A≤N) sorszáma található.
+Kimenet
+A standard kimenet első sorába a még versenyben levő csapatok V számát kell írni! A má-
+sodik sorban a V versenyben maradt csapat sorszámát kell kiírni, növekvő sorrendben! A harma-
+dik sorban a már kiesett N-V csapat sorszáma legyen, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+8   5                                            3
+1   2                                            4 6 8
+6   7                                            1 2 3 5 7
+3   1
+4   5
+4   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                         Megoldás
+Első lépésként minden csapatra kiszámoljuk, hogy van-e veresége.
+Ezután következik a szétválogatás: az van még versenyben, akinek nem volt veresége.
+Szétválogatás(N,M,V,Vers,Kies):
+  V:=[0,…,0]
+  Ciklus i=1-től M-ig
+    Be: A,B                     {A legyőzte B-t}
+    V[B]:=igaz
+  Ciklus vége
+  V:=0; W:=N+1
+  Ciklus i=1-től N-ig
+    Ha V[i] akkor V:=V+1; Vers[V]:=i
+            különben W:=W+1; Kies[W]:=i
+  Ciklus vége
+Eljárás vége.
+
+
+
+
+                                             1. oldal
+

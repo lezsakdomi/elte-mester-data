@@ -1,0 +1,24 @@
+
+
+                               Erősen összetett számok
+Erősen összetett számnak nevezzük azokat a természetes számokat, amelyek osztóinak száma na-
+gyobb, mint bármely más nála kisebb természetes szám osztóinak száma.
+Készíts programot, amely előállítja N-ig az erősen összetett számokat!
+Bemenet
+A standard bemenet első és egyetlen sorában N található (1  N  1 200 000).
+Kimenet
+A standard kimenet első sorába kerüljenek az erősen összetett számok növekvő sorrend-
+ben, szóközzel elválasztva!
+Példa
+Bemenet                                          Kimenet
+20                                               1 2 4 6 12
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤10 000.
+
+
+
+
+                                             1. oldal
+

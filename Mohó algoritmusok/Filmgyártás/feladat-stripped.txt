@@ -1,0 +1,38 @@
+
+
+                                       Filmgyártás
+A siófoki strandon N nap alatt K rendezvényt tartanak, naponta legfeljebb egyet. A parton F fil-
+mes dolgozik. A filmesek megbízási költsége: A+(B*a napok száma), amikor filmet készítenek –
+azaz az alkalmazásukkor a napok számától függetlenül A forintot kérnek, minden munkanapjukra
+pedig további B forintot.
+Írj programot, amely megadja, hogy maximum hány rendezvényről készülhet film és ehhez mini-
+mum mekkora összeget kell kifizetnünk a filmeseknek!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100 000), a rendezvények száma
+(1≤K≤1000), a filmesek száma (1≤F≤10 000), valamint az A és a B érték van (1≤A≤10 000,
+1≤B≤10 000). A második sorban a K rendezvény sorszáma van (1≤Ri≤N), növekvő sorrend-
+ben. A következő F sorban az egyes filmesek első és utolsó lehetséges munkanapjának sorszáma
+található (1≤Elsői≤Utolsói≤N).
+Kimenet
+A standard kimenet első sorába azt kell írni, hogy maximum hány rendezvényről készíthe-
+tő film! A második sorba az kerüljön, hogy ez minimálisan mennyibe kerülhet!
+Példa
+Bemenet                                        Kimenet
+20 7 6 1000 500                                7
+3 4 6 8 9 12 15                                6500
+1 3                                            Magyarázat: A 3., 4. és 6. filmes minden ren-
+12 13                                          dezvényen ott van.
+3 7
+4 12
+6 9
+14 15
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

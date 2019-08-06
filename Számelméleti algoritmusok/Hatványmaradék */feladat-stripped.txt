@@ -1,0 +1,25 @@
+
+
+                                  Hatványmaradék
+Készíts programot, amely kiszámítja, hogy egy A természetes szám hatványait egy B természetes
+számmal osztva milyen maradékokat kaphatunk!
+Bemenet
+A standard bemenet első sorában az A (2  A  2000), második sorában pedig a B
+(2  B  2000) értéke található.
+Kimenet
+A standard kimenet első sorába kerüljenek a kapható maradékok növekvő sorrendben,
+szóközzel elválasztva!
+Példa
+Bemenet                                       Kimenet
+2                                             1 2 4
+7
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában az A,B≤100.
+
+
+
+
+                                           1. oldal
+

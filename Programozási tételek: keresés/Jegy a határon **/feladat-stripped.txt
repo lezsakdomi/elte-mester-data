@@ -1,0 +1,37 @@
+
+
+                                       Jegy a határon
+Egy kurzusra N hallgató járt. A hallgatók gyakorlati jegyét a következő számonkérések határozzák
+meg: röpzárthelyik, csoport zárthelyik és évfolyam zárthelyi.
+A röpzárthelyikért kapott összpontszám (Ri), az 1. és a 2. csoport zárthelyikért kapott jegy
+(Cs1i,Cs2i), az évfolyam zárthelyi jegye (Efi). A 0 jegy azt jelenti, hogy az illető azt nem írta azt
+meg. A gyakorlati jegy kiszámítása: ha Ri<10 vagy valamelyik zárthelyit nem írta meg, akkor a
+többitől függetlenül 1-es, különben Max(1,(Cs1i+Cs2i+2*Efi)/4+0,5) (x:=x egész része).
+Írj programot, amely megadja az első olyan hallgató sorszámát, akinek a gyakorlati jegye jobb len-
+ne, ha vagy a röpzárthelyikre eggyel több pontot vagy a megírt zárthelyik közül egyre eggyel na-
+gyobb jegyet kapott volna!
+Bemenet
+A standard bemenet első sorában a hallgatók száma (0≤N≤99) található. A következő N
+sorban a röpzárthelyi pontok (0≤Ri≤20), valamint a (0≤Cs1i,Cs2i,Efi≤5) jegyek vannak.
+Kimenet
+A standard kimenet egyetlen sorába az első olyan hallgató sorszámát kell kiírni, akinek a
+gyakorlati jegye jobb lenne, ha valamelyik számonkérésre eggyel több pontot vagy jegyet kapott
+volna! Ha ilyen nincs, akkor írj 0-t!
+Példa
+Bemenet                                           Kimenet
+5                                                 1
+15 2 4 1
+10 0 4 1
+9 2 4 0
+8 2 4 1
+20 2 0 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤20.
+
+
+
+
+                                              1. oldal
+

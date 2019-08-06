@@ -1,0 +1,41 @@
+
+
+                                            Vám
+A középkorban egyes városok vámot szedtek azon kereskedőktől, akik áthaladtak rajtuk. A vá-
+rosokat persze nem lehetett elkerülni, mert az utak városokon keresztül vezettek.
+Írj programot, amely megadja, hogy a kereskedő az A városból a B városba milyen útvonalon
+menjen, ha útközben a lehető legkevesebb vámot akarja fizetni!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤100 000), a közöttük levő utak
+száma (1≤M≤1 000 000), valamint a kezdő és a cél város sorszáma (1≤A≠B≤N) van. A második
+sorban N szám, az egyes városokban fizetendő adó van, egy-egy szóközzel elválasztva. A követ-
+kező M sor mindegyikében két-két város sorszáma van (1≤Ui≠Vi≤N), amelyek között van köz-
+vetlen, mindkét irányban járható út.
+Kimenet
+Az standard kimenet első sorába a legolcsóbb úton fizetendő adó összegét kell írni, a má-
+sodik sorba pedig azon városok sorszámát, amelyeken keresztül vezet az A-ból B-be tartó legol-
+csóbb út (a haladás sorrendjében, azaz az első szám mindenképpen A, az utolsó pedig B)! Ha
+nincs út A-ból B-be, akkor egyetlen sort kell kiírni, amelyben a -1-es érték szerepeljen!
+Példa
+Bemenet                                    Kimenet
+6 7 1 6                                    20
+10 10 20 10 30 10                          1 2 4 6
+1 2
+                                                       10               30
+1 3
+2 4                                   10               2                 5
+3 4
+2 5                                   1                                              10
+4 6                                               20             10
+5 6                                                                                   6
+                                                  3              4
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 64 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

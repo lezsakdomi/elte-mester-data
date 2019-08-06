@@ -1,0 +1,25 @@
+
+
+                                     Lokális csúcsok
+Egy sorozat egy elemét lokális csúcsnak nevezzük, ha nagyobb a közvetlenül előtte és közvetlenül
+mögötte álló elemnél. Az első és utolsó elem nem lehet lokális csúcs, mivel nincs őket megelőző
+illetve követő elem.
+Írj programot, amely megadja egy sorozatban szereplő lokális csúcsok számát!
+Bemenet
+A standard bemenet első sorában a sorozat hossza (1≤N≤100 000) található. A követ-
+kező sor N darab számot tartalmaz, a sorozat elemeit (-106≤Ei≤106).
+Kimenet
+A standard kimenetre a sorozatban szereplő lokális csúcsok számát kell írni!
+Példa
+Bemenet                                         Kimenet
+7                                               2
+-3 5 4 2 3 -1 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,41 @@
+
+
+                                     Kerékpárverseny
+Egy pénzdíjas kerékpárversenyen a rajtszámok 1-től a versenyzők számáig vannak kiosztva. A
+verseny szakaszokból áll. Minden szakasz végén rögzítjük, hogy melyik versenyző hányadikként
+zárta az adott szakaszt. Feltesszük, hogy kiesés és holtverseny semelyik szakaszon sem fordul elő.
+A verseny díjazására fordított összeg a bemenetben található. A díjat az a versenyző nyeri, aki a
+legtöbb első helyezést érte el. Amennyiben több versenyzőnek sikerült ez, a díjat közöttük egyen-
+lő mértékben, egészre lefelé kerekítve, osztják fel.
+Írj programot, amely
+    1. meghatározza a pénzdíjat nyert versenyzőket
+    2. megadja, hogy egyenként mennyi pénzt nyertek.
+Bemenet
+A standard bemenet első sora tartalmazza a versenyzők számát (2≤N≤104), a szakaszok
+számát (5≤K≤20) és a fődíj összegét (N≤összeg≤106). Ezután K sorban a szakaszon elért
+helyezések találhatóak.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A pénzdíjat nyert versenyzők sorszámait kell kiírni!
+2. részfeladat: Az egy versenyzőre eső pénzösszeg mértékét (egészre lefelé kerekítve) kell kiírni!
+Példa
+Bemenet                                            Kimenet
+4   5   33333                                      #
+3   2   1 4                                        2 3
+4   1   2 3                                        #
+3   2   1 4                                        16666
+4   1   3 2
+1   3   2 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

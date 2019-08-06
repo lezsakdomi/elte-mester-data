@@ -1,0 +1,34 @@
+
+
+                                    Intervallumok
+Egy munkahelyen N ember dolgozik. Ismerjük mindegyikről, hogy mettől meddig. Azt mondjuk,
+hogy egy A ember lehet főnöke egy B embernek, ha B munkaideje része A munkaidejének.
+Írj programot, amely megad közülük egy olyan embert, aki a legtöbb másik embernek lehet főnö-
+ke!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1N500 000). A további N
+sor mindegyike egy ember munkaideje kezdő- és végpontját (1A<B200 000 000) tartalmaz-
+za, kezdőpont szerinti sorrendben. Azonos kezdőpont esetén a nagyobb végpontú van előbb.
+Kimenet
+A standard kimenet első és egyetlen sorába az egy ember alá rendelhető beosztottak ma-
+ximális számát kell írni (nem számítva önmagát), valamint egy olyan ember sorszámát, akinek
+ennyi beosztottja lehet!
+Példa
+Bemenet                   Kimenet
+7                         4 3
+1   4
+1   3
+2   6
+2   4
+3   5
+4   6
+4   5
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

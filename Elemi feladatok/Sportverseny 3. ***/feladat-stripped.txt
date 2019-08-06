@@ -1,0 +1,32 @@
+
+
+                                     Sportverseny 3.
+Egy kosárlabdacsapat 5, egy kézilabdacsapat 7, egy labdarúgócsapat pedig 11 tagú. Egy osztály N
+tanulóját úgy szeretnénk csapatokra osztani, hogy senki se szerepeljen egynél több csapatban, s a
+lehető legkevesebben maradjanak ki (például egy 18 fős osztályból 1 labdarúgó- és 1 kézilabda-
+csapatot szervezünk, mert így senki nem marad ki, 19 fős osztály esetén azonban már 2 kézi- és
+1 kosárlabdacsapatot kell szervezni).
+Készíts programot, amely az osztály létszáma alapján meghatározza, hogy belőlük hány kosárlab-
+da-, hány kézilabda- és hány labdarúgócsapatot szervezzünk, s hányan maradnak ki a csapatokból!
+Ha több megoldás lenne, akkor azt kell megadni, amelyikben a csapatok száma maximális (ezek
+szerint 35 tanulóból 7 kosárlabdacsapatot kell szervezni, nem pedig 5 kézilabdacsapatot).
+Bemenet
+A standard bemenet első sora az osztály N létszámát tartalmazza (5≤N≤1 000 000 000).
+Kimenet
+A standard kimenet első és egyetlen sorába négy egész számot kell írni: a kosárlabda-, a
+kézilabda-, a labdarúgócsapatok, valamint a kimaradók számát. A kosárlabda-, kézilabda- és lab-
+darúgócsapatok számát úgy kell meghatározni, hogy a lehető legkevesebben maradjanak ki az osz-
+tályból, és a csapatok száma maximális legyen!
+Példa
+Bemenet                                         Kimenet
+22                                              3 1 0 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 85%-ában N≤1000
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,38 @@
+
+
+                         Legyőzött és legyőző versenyző
+Egy síugró versenyen minden versenyző akkor indulhat, ha az összes korábban indult versenyző
+befejezte már a versenyzését. Egy versenyző akkor győz le egy másikat, ha ugrásával magasabb
+pontszámot ér el.
+Készíts programot, amely megadja minden indulóra, hogy az előtte indulók közül ki volt a hozzá
+legközelebb indult, általa legyőzött versenyző, valamint az utána indulók közül a hozzá legköze-
+lebb indult olyan, aki legyőzte őt!
+Bemenet
+A standard bemenet első sorában a versenyzők száma van (1≤N≤100 000). A következő
+N sor mindegyike egy-egy versenyző pontszámát tartalmazza (1≤Pi≤100 000), az indulás sor-
+rendjében.
+Kimenet
+A standard kimenet i. sorába az i. induló versenyző előttiek közül az utolsónak induló, ál-
+tala legyőzött versenyző sorszáma, valamint az utána indultak közül a leghamarabb induló őt le-
+győző versenyző sorszáma kerüljön! Ha valaki senki őt megelőzőt nem győzött le, akkor a sor el-
+ső száma -1 legyen! Ha valakit senki őt követőt nem győzött le, akkor a második szám legyen -1!
+Példa
+Bemenet                                         Kimenet
+7                                               -1 3
+3                                               -1 3
+2                                               2 4
+5                                               3 -1
+6                                               -1 6
+1                                               5 -1
+4                                               5 -1
+3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

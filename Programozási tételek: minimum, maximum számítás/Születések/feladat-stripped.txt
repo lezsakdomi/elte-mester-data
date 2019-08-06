@@ -1,0 +1,35 @@
+
+
+                                          Születések
+Ismerjük N ember születési évét.
+Írj programot, amely megad egy olyan legrövidebb időintervallumot, amikor az emberek legalább
+fele született, valamint egy leghosszabb időintervallumot az első és az utolsó születés között, ami-
+kor nem született senki!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤100 000). A további N
+sorban egy-egy ember születési éve van (1900≤Évi≤2017).
+Kimenet
+A standard kimenet első sorába a legrövidebb időintervallum első és utolsó évének év-
+számát kell írni, ami alatt az emberek legalább fele született – több megoldás esetén a legkorábbit!
+A második sorba az első és utolsó születés közötti leghosszabb időintervallum első és utolsó évé-
+nek évszáma kerüljön, amikor nem született senki – több megoldás esetén a legkorábbit! Ha nincs
+ilyen év, akkor két 0-t kell kiírni!
+Példa
+Bemenet                                           Kimenet
+6                                                 1975 1989
+1978                                              1994 2016
+1993
+1989
+2017
+1960
+1975
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

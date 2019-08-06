@@ -1,0 +1,31 @@
+
+
+                                            Feleltetés
+Szigor Vidor tanár úr gyakran feleltet. Az N fős osztály minden tagjának van már öt osztályzata.
+Legközelebb azt akarja feleltetni, akinek a névsorban elsőként van legalább két elégtelenje. Ha
+ilyen nincs, akkor azt, aki 'fél jegyre' áll (átlagának tizedesjegye ≥4, de ≤6). Ha ilyen sincs, akkor a
+névsor elsőt felelteti.
+Írj programot, amely Szigor Vidor tanár úr helyett felelőt választ!
+Bemenet
+A standard bemenet első sorában található Szigor Vidor tanár úr naplójában található be-
+jegyzések száma (1≤N≤100). A következő N sor mindegyikében öt osztályzat van szóközzel el-
+választva.
+Kimenet
+A standard kimenet első sorába ki kell írni a felelő sorszámát!
+Példa
+Bemenet                                            Kimenet
+5                                                  2
+5   5   5   4   5
+3   4   1   2   1
+4   4   4   4   2
+2   3   4   5   2
+5   4   5   4   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                1. oldal
+

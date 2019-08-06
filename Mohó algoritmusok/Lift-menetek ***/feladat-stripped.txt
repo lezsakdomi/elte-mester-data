@@ -1,0 +1,37 @@
+
+
+                                       Lift menetek
+Egy sokemeletes házban szokatlan módon üzemeltetik a liftet. A lift az első szintről indult és
+mindig felmegy a legfelső szintre, majd visszatér az első szintre. Menet közben megáll minden
+olyan szinten, amelyik uticélja valamelyik liftben tartózkodó utasnak. Hasonlóan, olyan szinten is
+megáll, ahonnan utazni szándékozik valaki az aktuális irányban, feltéve, hogy még befér a liftbe
+(figyelembe véve az adott szinten kiszállókat).
+Készíts programot, amely kiszámítja, hogy legkevesebb hány menet (1 menet = egyszer felmegy,
+majd lejön) szükséges ahhoz, hogy minden várakozó embert elszállítson a lift!
+Bemenet
+A standard bemenet első sorában az épület szintjeinek száma (2≤N≤1000) és a lift ka-
+pacitása (1≤K≤10) van. A további N sor tartalmazza az egyes szinteken várakozó emberek
+adatait. Az állomány i-edik sorában azoknak a szinteknek a sorszáma van felsorolva, ahová az
+i-1–edik szintről utazni akarnak. A felsorolást minden sorban egy 0 szám zárja. Minden sorban
+legfeljebb 200 szám lehet, tetszőleges sorrendben.
+Kimenet
+A standard kimenet egyetlen sorába a legkevesebb menetek számát kell írni, amely az em-
+berek elszállításához szükséges!
+Példa
+Bemenet                                          Kimenet
+6   2                                            3
+2   3   2 0
+1   3   0
+1   2   0
+2   5   0
+3   6   2 0
+1   2   3 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,29 @@
+
+
+                                  Könyvtári pakolás
+Egy könyvtár polcán egy sorban N darab könyv van, de nem a kívánt sorrendben. A könyvtáros
+minden könyvre ráragasztott egy cetlit, amire ráírta, hogy a helyes sorrendben hányadik helyen
+kell majd lennie. A kívánt sorrend kialakítását párok cseréjével akarja megvalósítani.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány cserével lehet kialakítani a kívánt
+sorrendet!
+Bemenet
+A standard bemenet első sorában a könyvek száma van (2  N  30 000). A második sor
+az 1, 2, …, N számok egy permutációját tartalmazza, azaz minden könyv sorszáma pontosan egy-
+szer szerepel.
+Kimenet
+A standard kimenet első sorába kerüljön az a legkisebb M szám, amelyre a bemenetben
+megadott könyvsorozat M számú cserével jó sorrendbe rakható!
+Példa
+Bemenet                                        Kimenet
+10                                             7
+7 10 1 3 2 8 4 9 6 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤150.
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,69 @@
+
+
+                                             Titanic
+Ebben a feladatban a híres, szerencsétlenül járt Titanic osztályadatait kell elemezni.
+Írj programot, amely
+   1. megadja hány kategóriát különböztet meg a bemenet,
+   2. összesíti hányan utaztak a hajón,
+   3. egy kulcsszó vagy kulcsszó részlet alapján listázza azokat a kategóriákat és a hozzá tartozó
+      utasok számát, amelyek nevében megtalálható a kulcsszó,
+   4. meghatározza azokat a kategóriákat, ahol az eltűntek aránya meghaladott egy bizonyos K
+      százalékot,
+   5. megadja azt a kategóriát, holtverseny esetén azokat a kategóriákat, ahol a legtöbb túlélő volt!
+Bemenet
+A standard bemenet első sorában a 3. részfeladatban használt kulcsszó található (legfeljebb
+50 angol kisbetű). A második sorban a 4. részfeladatban felhasznált K egész szám van. A következő
+legfeljebb 100 sorban egy-egy kategória leírása következik. Szóközzel elválasztva a következő érté-
+kek: kategória neve (legfeljebb 50 angol kisbetű), a túlélők száma és az eltűntek száma. Kategóriák-
+ként legfeljebb 1000 utas.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A kategóriák számát kell kiírni!
+2. részfeladat: Az utasok összlétszámát kell kiírni!
+3. részfeladat: Minden a kulcsszónak megfelelő kategóriához egy sort szükséges kiírni, a bemenet-
+tel megegyező sorrendben! A sorokban az adott kategória nevét szóközzel elválasztva a kategórián
+utazott utasok száma követi.
+4. részfeladat: A K százalékot meghaladó eltűnttel rendelkező kategóriák nevét kell külön sorok-
+ban megadni a bemenettel megegyező sorrendben!
+5. részfeladat: A legtöbb túlélővel rendelkező kategóriák neveit kell külön sorokban felsorolni, a
+bemenettel megegyező sorrendben!
+
+
+
+
+                                               1. oldal
+Informatikai alapismeretek – középszint                            2016. május 18.
+
+
+Példa
+ Bemenet                                       Kimenet
+ masod                                         #
+ 60                                            11
+ gyerekekmasodosztaly 24 0                     #
+ nokelsoosztaly 140 4                          2224
+ nokhajondolgozok 20 3                         #
+ nokmasodosztaly 80 13                         gyerekekmasodosztaly 24
+ gyerekekelsoosztaly 5 1                       nokmasodosztaly 93
+ nokharmadosztaly 76 89                        ferfiakmasodosztaly 168
+ gyerekekharmadosztaly 27 52                   #
+ ferfiakelsoosztaly 57 118                     gyerekekharmadosztaly
+ ferfiaklegenyseg 192 693                      ferfiakelsoosztaly
+ ferfiakharmadosztaly 75 387                   ferfiaklegenyseg
+ ferfiakmasodosztaly 14 154                    ferfiakharmadosztaly
+                                               ferfiakmasodosztaly
+                                               #
+                                               ferfiaklegenyseg
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

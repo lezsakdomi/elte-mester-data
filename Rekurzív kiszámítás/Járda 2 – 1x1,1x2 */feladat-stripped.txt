@@ -1,0 +1,28 @@
+
+
+                                    Járda 2 – 1x1,1x2
+Készíts programot, amely kiszámítja, hogy hányféleképpen lehet kikövezni egy 2*N egység mére-
+tű járdát 1*1 és 1*2 méretű lapokkal!
+Bemenet
+A standard bemenet egyetlen sorában a járda méretét megadó egész szám van (1N36).
+Kimenet
+A standard kimenet első és egyetlen sorába azt a számot kell írni, ahányféleképpen kikö-
+vezhető a 2*N méretű járda!
+Példa
+Bemenet                                         Kimenet
+2                                               7
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 70%-ában a járda mérete N≤20
+A legnagyobb teszteseteknél 64 bites egész változó használata szükséges.
+
+
+
+
+                                             1. oldal
+

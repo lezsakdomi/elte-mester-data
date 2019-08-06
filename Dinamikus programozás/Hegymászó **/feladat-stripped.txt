@@ -1,0 +1,37 @@
+
+
+                                       Hegymászó
+Egy hegycsúcs megmászásához N helyen létesítettek táborokat, ahol élelmiszert helyeztek el. Is-
+merjük a táborok távolságát a kezdőponttól és hogy az ott levő élelem mennyi, azaz hány kilomé-
+terre elég. Egy hegymászó H kapacitású (H kilométerre elég élelmiszer fér bele) hátizsákkal ren-
+delkezik.
+Add meg, hogy minimum hány helyen kell megállnia feltölteni a hátizsákot, hogy az élelmiszer
+elég legyen a csúcsig!
+Bemenet
+A standard bemenet első sorában a táborok száma (1N1000), a csúcs távolsága a kez-
+dőponttól (1T100 000) és a hátizsák kapacitása (1H5000) van. A következő N sorban tá-
+volság szerinti sorrendben egy-egy tábor távolsága a kezdőponttól (0Távi<T) és az ott levő éle-
+lem mennyisége (1Mj5000) van. Az első tábor a kezdőpont, ezért a távolság értéke 0. A be-
+menetre teljesül, hogy el lehet jutni a csúcsra.
+Kimenet
+A standard kimenet első sorába azon helyek minimális számát kell írni, ahol a hegymászó-
+nak élelmiszert kell felvennie! A második sor azoknak a helyeknek a sorszámait tartalmazza nö-
+vekvő sorrendben, ahol megáll a hegymászó élelmiszert vételezni! Több megoldás esetén bárme-
+lyik megadható.
+Példa
+Bemenet                                  Kimenet
+4 600 300                                3
+0 200                                    1 2 4
+100 300
+300 300
+400 200
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100, a tesztek 50%-ában H≤1000
+
+
+
+
+                                            1. oldal
+

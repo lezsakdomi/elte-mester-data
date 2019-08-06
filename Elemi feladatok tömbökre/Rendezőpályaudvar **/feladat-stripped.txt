@@ -1,0 +1,38 @@
+
+
+                                  Rendezőpályaudvar
+Egy kisvárosi rendező-pályaudvaron mindössze két vágányt használhatnak a továbbinduló szerel-
+vények összeállításához. Egy-egy vágányon gyűjtik az azonos célállomásra küldendő vagonokat.
+Egy vágányon maximum M vagon fér el. Ha egy vágány megtelt, vagy ha már mindkét vágányon
+állnak vagonok, s olyan vagon érkezik, amelyet egy harmadik helyre kell küldeni, akkor a két vára-
+kozó szerelvény közül a hosszabbat útnak indítják, s a helyére tolják az újonnan érkező vagont.
+Az utolsónak érkező vagon után a még várakozó szerelvényeket is elindítják, először (ha van) a
+hosszabbat.
+Írj programot, amely az érkező vagonok célállomásainak ismeretében meghatározza a szerelvé-
+nyek indulási sorrendjében, hogy melyik állomásra hány kocsiból álló szerelvényt kell indítani!
+Bemenet
+A standard bemenet első sorában a vagonok száma (1≤N≤1000) és a vágányokon elhe-
+lyezhető kocsik száma (1≤M≤50) van. A következő N sor a pályaudvarra érkező vagonok célál-
+lomásainak a nevét tartalmazza érkezésük sorrendjében, az i+1. sor az i. vagon célállomását.
+Kimenet
+A standard kimenetre a pályaudvart elhagyó szerelvényeket kell külön sorba kiírni indulá-
+si sorrendben! Minden szerelvénynek megfelelő sorban a szerelvény célállomását és a szerelvény
+hosszát (kocsijainak számát) kell szóközzel elválasztva kiírni!
+Példa
+Bemenet                                         Kimenet
+5 10                                            BUDAPEST 2
+DEBRECEN                                        CSORNA 2
+BUDAPEST                                        DEBRECEN 1
+BUDAPEST
+CSORNA
+CSORNA
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 80%-ában N≤10
+
+
+
+
+                                             1. oldal
+

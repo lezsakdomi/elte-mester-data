@@ -1,0 +1,37 @@
+
+
+                                            Gépek
+Egy vállalkozó alkatrészek gyártásával foglalkozik. K különböző fajta alkatrészt tud gyártani két
+gépén. Mindkét gépe képes legyártani mind a K fajtát, de az egyes fajták legyártása a két gépen
+különböző ideig tart. Egy időpontban csak az egyik gép dolgozhat a nyersanyag-ellátás miatt. A
+beérkezett igényeket az érkezés sorrendjében kell kielégítenie. Menet közben átválthat a másik
+gépre, de az időt igényel.
+Készíts programot, amely kiszámítja, hogy a legkevesebb mennyi idő alatt lehet legyártani az ösz-
+szes igényelt alkatrészt!
+Bemenet
+A standard bemenet első sorában az alkatrész fajták száma (1≤K≤1000), a legyártandó
+alkatrészek száma (1≤N≤100 000), az átállás ideje az A gépről a B gépre, illetve az átállás ideje a
+B gépről az A gépre szerepel. A második és harmadik sor pontosan K pozitív egész számot tar-
+talmaz egy-egy szóközzel elválasztva. A második sorban az i-edik szám értéke az i-fajta alkat-
+rész legyártásának ideje az A gépen, a harmadik sorban pedig hasonlóan a B gépen való legyártás
+ideje található. A negyedik sor tartalmazza a legyártandó alkatrész-fajtákat (1≤FiK). Az legyártási
+és átállási idők értéke legfeljebb 5000.
+Kimenet
+A standard kimenet egyetlen sorába azt a legkisebb időt kell írni, ami alatt a megadott sor-
+rendben legyártható mind az N alkatrész!
+Példa
+Bemenet                                          Kimenet
+3   7   4 3                                      17
+1   3   9
+7   1   1
+1   2   3 2 1 2 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában K≤100 és N≤1000
+
+
+
+
+                                             1. oldal
+

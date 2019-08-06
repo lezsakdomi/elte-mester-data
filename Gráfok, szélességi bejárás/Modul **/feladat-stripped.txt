@@ -1,0 +1,46 @@
+
+
+                                           Modul
+Egy programrendszer N darab, önállóan lefordítható modult tartalmaz. Minden modulról tudjuk,
+hogy ki a szerzője, valamint, hogy mely más modulokat használ közvetlenül (ezekre mindenkép-
+pen szükség van a lefordításukhoz). A modulokat és a szerzőket is sorszámukkal azonosítjuk.
+Készíts programot, amely megadja:
+   A. egy M modul lefordításához mely további modulok lefordítására van szükség (nem csak a
+        közvetlenül használtak kellenek),
+   B. egy M modul valamely eljárása paraméterei megváltozása miatt mely szerzőket kell felszó-
+        lítani valamely saját moduljuk megvizsgálására, hogy a modult továbbra is jól használják,
+   C. egy olyan szerzőt, aki nem használ mások által írt modult!
+Bemenet
+A standard bemenet első sorában a modulok száma (1≤N≤2000), a szerzők száma
+(1≤S≤100), az M modulsorszám (1≤M≤N)és a feltételek száma (1≤F≤20 000) van. A má-
+sodik sorban N szám van: az i-edik szám az i-edik modul szerzőjének sorszáma. A további F
+sor mindegyikében két modulsorszám szerepel (1≤i≠j≤N), ami azt jelenti, hogy az i-edik mo-
+dul fordításához szükség van a j-edik modulra.
+Kimenet
+A standard kimenet első sor első száma a lefordítandó modulok száma, a többi szám pe-
+dig a lefordítandó modulok sorszáma legyen! A második sor első száma az értesítendő szerzők
+száma, a továbbiak pedig az értesítendő szerzők sorszámai legyenek! A harmadik sorba egy mások
+által írt modulokat nem használó szerző sorszámát kell írni, ha van megoldás, -1-et, ha nincs
+megoldás! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                         Kimenet
+7   3 4 7                                       1 6
+3   2 1 3 1 2 1                                 1 2
+1   3                                           1
+1   4                                                  3   1              2   2
+2   4
+2   5
+                                                                              2
+2   6                                                  1   3      3   4           6    1   5
+4   6
+5   7
+                                                                                       1 7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

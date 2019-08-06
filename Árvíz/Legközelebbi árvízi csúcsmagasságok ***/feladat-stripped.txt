@@ -1,0 +1,45 @@
+
+
+                    Legközelebbi árvízi csúcsmagasságok
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza azt a két szomszédos árvízi csúcsmagasságot, amelyek a
+legközelebb vannak egymáshoz!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába az árvizek K darabszámát kell írni (0, ha nincs ilyen hely,
+ebben az esetben nincsenek további sorok)! A második sorba ennek a K árvíznek a kezdete és vé-
+ge , a 3. sorba pedig ezen K árvíz csúcsmagasságának a helye kerüljön! Végül a 4. sor tartalmazza
+annak a két szomszédos árvízi csúcsmagasságnak a helyét, amelyek a legközelebb vannak egy-
+máshoz! Nincs 4. sor, ha nincs legalább 2 árvíz! Több megoldás esetén a legkisebb sorszámút kell
+kiírni!
+Példa
+Bemenet              Kimenet
+7                    3
+1100                 1 2 4 5 7 7
+950                  1 5 7
+700                  5 7
+850                           1300
+1200
+600                           1100
+1200
+                               900
+Korlátok
+                               700
+Időlimit: 0,1 mp.
+Memórialimit: 32 MB            500
+
+                               300
+                                     1       2         3       4        5        6        7
+
+
+
+
+                                            1. oldal
+

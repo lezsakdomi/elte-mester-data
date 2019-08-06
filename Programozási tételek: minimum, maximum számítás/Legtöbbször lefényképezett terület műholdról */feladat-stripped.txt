@@ -1,0 +1,28 @@
+
+
+                  Legtöbbször lefényképezett terület műholdról
+Műholdról N fényképet készítünk a földfelszín egyes darabjairól. Minden kép egy téglalap alakú
+terület, melyet a bal felső és a jobb alsó sarkának koordinátáival adunk meg.
+Készíts programot, amely kiszámítja, maximum hány kép készült ugyanarról a területről!
+Bemenet
+A standard bemenet első sorában a műholdas fényképek száma van (1≤N≤1000), alatta
+pedig soronként a képek bal felső (bfx,bfy) és jobb alsó (jax,jay) sarkának koordinátái
+(0≤bfx,bfy,jax,jay≤1000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az ugyanarról a területről
+készült képek maximális számát!
+Példa
+Bemenet                                         Kimenet
+2                                               2
+10 10 29 29
+15 0 24 39
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

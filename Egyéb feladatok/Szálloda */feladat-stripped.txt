@@ -1,0 +1,44 @@
+
+
+                                           Szálloda
+Egy szállodalánc nyilvántartást vezet a szakácsairól és a cukrászairól. Ebben a szakképzettségi
+szint és az életkor szerint lehet keresni.
+Készíts programot, amely a nyilvántartás alapján meg tud válaszolni kérdéseket!
+Bemenet
+A standard bemenet első sorában a szakácsok, a cukrászok és a kérdések száma (1≤N,M,
+K≤500) van. A következő N+M sorban találhatók először a szakácsok, majd a cukrászok adatai.
+Ez soronként egy-egy személyről a szakképzettségi szint (1 a legjobb, 10 a legrosszabb), az életkor
+(15 és 100 közötti egész) és a név (legfeljebb 40 karakter: az angol ábécé betűi, számjegyek és
+szóközök) szerepel. Nincs két azonos nevű ember a nyilvántartásban.
+Az ezt követő K sorban soronként egy-egy megválaszolandó kérdés van xxxx:yyyy:zzzz
+alakban, ahol a mezőket : (kettőspont) választja el, és xxxx a szakképzettséget, yyyy a szak-
+képzettségi szintre-, zzzz pedig a korra vonatkozó követelményt adja meg.
+xxxx = SZAKACS vagy CUKRASZ vagy BARMILYEN
+  BARMILYEN azt jelenti, hogy az illető akár szakács, akár cukrász lehet.
+yyyy = <N vagy >N vagy =N vagy <=N vagy >=N
+  Az yyyy a szakképzettségi szint és az N egész közötti relációt írja elő.
+zzzz = MIN vagy MAX
+    A zzzz azt adja meg, hogy az előző két feltételt kielégítő személyek közül a legfiatalabb
+    vagy a legidősebb adatait kérjük-e.
+Kimenet
+Az egyes kérdésekre válaszul kapott személyek nevét a standard kimenetre kell írni (so-
+ronként egy nevet)! Ha egy kérdésre nincs megfelelő személy, az adott sorba a NINCS szöveget
+kell írni! Ha egynél több van, az ábécé szerinti első nevet kell megadni!
+Példa
+Bemenet                                          Kimenet
+2 1 3                                            Kiss Pal
+1 35 Nagy Lajos                                  Jo Istvan
+4 49 Kiss Pal                                    NINCS
+1 37 Jo Istvan
+SZAKACS:=4:MAX
+BARMILYEN:<2:MAX
+CUKRASZ:>=3:MIN
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

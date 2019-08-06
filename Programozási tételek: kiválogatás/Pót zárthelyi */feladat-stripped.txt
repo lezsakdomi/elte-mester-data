@@ -1,0 +1,35 @@
+
+
+                                        Pót zárthelyi
+Egy kurzusra N hallgató járt. A hallgatók gyakorlati jegyét a következő számonkérések határozzák
+meg: röpzárthelyik, csoport zárthelyik és évfolyam zárthelyi.
+A röpzárthelyikért kapott összpontszám (Ri), az 1. és a 2. csoport zárthelyikért kapott jegy
+(Cs1i,Cs2i), az évfolyam zárthelyi jegye (Efi). A 0 jegy azt jelenti, hogy az illető azt nem írta azt
+meg. Ha Ri<10, akkor a hallgatónak nincs joga pót zárthelyit írni.
+Írj programot, amely megadja azon hallgatók sorszámát (növekvően), akiknek van joga pót zárt-
+helyit írni, és valamelyik pót zárthelyit meg is kell írniuk (mert az adott zárthelyi jegye 0)!
+Bemenet
+A standard bemenet első sorában a hallgatók száma (0≤N≤99) található. A következő N
+sorban a röpzárthelyi pontok (0≤Ri≤20), valamint a (0≤Cs1i,Cs2i,Efi≤5) jegyek vannak.
+Kimenet
+A standard kimenet első sorába a pót zárthelyit író hallgatók számát kell kiírni! Ha van pót
+zárthelyit író, akkor a második sorba a pót zárthelyit író hallgatók sorszáma kerüljön, növekvő
+sorrendben!
+Példa
+Bemenet                                           Kimenet
+5                                                 2
+15 2 4 1                                          2 5
+10 0 4 1
+9 2 4 0
+8 2 4 1
+20 2 0 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤20.
+
+
+
+
+                                              1. oldal
+

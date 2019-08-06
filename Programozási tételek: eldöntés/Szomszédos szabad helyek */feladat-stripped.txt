@@ -1,0 +1,33 @@
+
+
+                             Szomszédos szabad helyek
+Egy színház pénztárának nyilvántartása tartalmazza, hogy egy adott előadásra mely helyekre keltek
+már el a jegyek. A helyeket kívülről befelé számozzák. Két hely szomszédos, ha valamelyik olda-
+lon ugyanabban a sorban egymás mellett vannak, vagy ha ugyanabban a sorban az egyik a bal ol-
+dal utolsó, a másik pedig a jobb oldal utolsó helye.
+Írj programot, amely eldönti, hogy van-e még két szomszédos szabad hely az adott előadásra!
+Bemenet
+A standard bemenet első sorában a színházban található sorok száma (1≤N≤100), a sor-
+ban lévő bal, illetve jobb oldali helyek száma (1≤M≤100) van. A következő N sorban M szám van
+szóközzel elválasztva, amik a bal oldal helyeit jelentik és „1” van ott, amelyik hely már elkelt. Az
+ezt következő újabb N sorban M szám van szóközzel elválasztva, amik a jobb oldal helyeit jelentik
+és „1” van ott, amelyik hely már elkelt.
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! Az „IGEN” szöveg szerepeljen,
+amennyiben van egymás melletti két szomszédos hely, különben a „NEM” szöveg!
+Példa
+Bemenet                                             Kimenet
+2   3                                               IGEN
+1   1   1
+1   1   0                                       X    X     X     X    X   X
+1   1   1                                       X    X                X   X
+1   1   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,39 @@
+
+
+                               Leghosszabb emelkedő
+Egy hegymászó a tervezett útvonala mentén méterenként megmérte a felszín tengerszint feletti
+magasságát. Emelkedőnek nevezzük azt a számsorozatot, amelynek minden eleme nagyobb, mint
+az előtte levő. Az emelkedő helye az ilyen számsorozat első és utolsó tagjának sorszáma, a hossza
+pedig a számsorozatban levő számok darabszáma. (Emelkedő lehet balról jobbra, illetve jobbról
+balra haladva is, mert a hegymászó a csúcsról visszamegy a kiinduló pontjára!)
+Készíts programot, amely megadja, hogy az út során hol volt a leghosszabb emelkedő!
+Bemenet
+A standard bemenet első sorában a mérések száma szerepel (1N100), majd pedig a mé-
+rések eredményei (1≤M≤500).
+Kimenet
+A standard kimenet első sorába a leghosszabb emelkedő kezdő és végpontját kell kiírni
+(ha több egyforma van, közülük az elsőt kell megadni)! Ha nincs emelkedő, akkor a „-1”-et kell
+kiírni!
+Példa
+Bemenet                                         Kimenet
+10                                              5 8
+100
+110
+115
+110
+105
+115
+125
+130
+125
+125
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

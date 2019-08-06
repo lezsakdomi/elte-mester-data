@@ -1,0 +1,39 @@
+
+
+                                 Pontok poligonban
+Adott a síkon N pont. Az N pontból kiválasztunk K darabot úgy, hogy azok nem metsző zárt po-
+ligont alkotnak. Azt kell megmondani, hogy a kimaradt pontok közül hány van a poligonon belül?
+Készíts programot, amely minden kérdésre válaszol!
+Bemenet
+A standard bemenet első sorában a pontok száma (3N1000) és a kérdések száma van
+(1M100 000). A következő N sor mindegyike egy pont x és y koordinátáját tartalmazza (-109
+x,y109 ). A további M sor mindegyike egy poligont ad meg. Az első szám a poligon pontjai-
+nak száma (3KN), ezt követi a poligon pontjainak sorszámai órajárással egyező felsorolásban.
+Minden sorban a számok összege legfeljebb 100 000. A bemenetre teljesül, hogy bármely három
+pont nem esik egy egyenesre.
+Kimenet
+A standard kimenet pontosan M sort tartalmazzon, az i-edik sorban az i-edik kérdésre
+adott válasz, a poligonba eső pontok száma legyen!
+Példa
+Bemenet                                        Kimenet
+6 4                                            2
+0 0                                            1
+0 5                                            1
+5 0                                            0
+11 10
+5 5
+2 1
+4 1 2    4 3
+4 1 2    5 3
+3 6 2    4
+3 1 2    6
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 128 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

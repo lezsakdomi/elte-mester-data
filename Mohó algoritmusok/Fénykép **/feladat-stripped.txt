@@ -1,0 +1,35 @@
+
+
+                                         Fénykép
+Egy rendezvényre N vendéget hívtak meg. Minden vendég előre jelezte, hogy mettől meddig lesz
+jelen. A szervezők fényképeken akarják megörökíteni a rendezvényen résztvevőket. Az a céljuk,
+hogy a lehető legkevesebb képet kelljen készíteni, de mindenki rajta legyen legalább egy képen.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány fényképet kell készíteni, és megadja
+azokat az időpontokat is, amikor csoportképet kell készíteni!
+Bemenet
+A standard bemenet első sorában a vendégek száma van (1≤N≤3000). A következő N
+sor mindegyike két egész számot tartalmaz egy szóközzel elválasztva, egy vendég érkezési és tá-
+vozási időpontját (1≤E<T≤1000). Ha egy fényképet az x időpontban készítik és E≤x<T, akkor
+azon a fényképen rajta lesz az E időben érkező és T időben távozó vendég.
+Kimenet
+A standard kimenet első sorába a készítendő fényképek K számát kell írni! A második sor
+pontosan K egész számot tartalmazzon egy-egy szóközzel elválasztva, azon időpontokat (tetsző-
+leges sorrendben), amikor a csoportképeket készíteni kell!
+Példa
+Bemenet                                        Kimenet
+6                                              2
+2   4                                          3 9
+1   4
+2   7
+7   13
+5   10
+3   9
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

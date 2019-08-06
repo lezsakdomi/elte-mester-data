@@ -1,0 +1,31 @@
+
+
+                             Volt maximális helység?
+Az ország néhány helységében madármegfigyelést végeztünk. Mindegyikben megadtuk, hogy
+milyen fajú madárból hányat láttunk.
+Készíts programot, amely eldönti, hogy ugyanabban a helységben láttuk-e minden madárfajból a
+legtöbb egyedet!
+Bemenet
+A standard bemenet első sorában a helységek száma (1≤M≤50) és a madárfajok száma
+(1≤N≤200) van. A következő M sor mindegyikében N darabszám szerepel, közülük az i-edik
+sorban a j-edik szám az i-edik helységben a j-edik sorszámú fajból megfigyelt madarak száma
+(0≤Ei,j≤1000).
+Kimenet
+A standard kimenet első sorába egy 1-es vagy egy 0-s kerüljön aszerint, hogy ugyanabban
+a helységben láttuk-e minden madárfajból a legtöbb egyedet, vagy nem!
+Példa
+Bemenet                                       Kimenet
+4   3                                         1
+1   0   4
+2   2   4
+2   2   4
+1   0   0
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                          1. oldal
+

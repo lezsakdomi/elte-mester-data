@@ -1,0 +1,41 @@
+
+
+                                        Játéktábla 3.
+Egy játéktábla 101 sorból áll, minden sorában pontosan háromszor annyi elem van, mint a fölötte
+levő sorban. A tábla a következő szerkezetű:
+
+
+
+
+A tábla felső pontjából indulunk. Az egyes lépéseket a következők írják le:
+       0      balra lefelé lépünk egyet,
+       1      középen lefelé lépünk egyet,
+       2      jobbra lefelé lépünk egyet,
+       3      felfelé lépünk egyet,
+       4      balra lépünk egyet,
+       5      jobbra lépünk egyet.
+
+Írj programot, amely beolvas egy lépéssorozatot, amely elvezet a tábla valamely eleméhez, majd
+megad egy olyan lépéssorozatot, amely a legrövidebb úton vezet ugyanide!
+Bemenet
+A standard bemenet első sorában a lépések K száma van (1≤K≤100), a következő sorban
+pedig az egyes lépéseket leíró K darab szám, egy-egy szóközzel elválasztva. A lépéssorozat bizto-
+san helyes, azaz nem hagyjuk el vele a játéktáblát.
+Kimenet
+A standard kimenet első sorába a legrövidebb lépéssorozat L hosszát kell írni, amely a
+bemenetben kapott lépéssorozattal azonos helyre vezet! A második sorba pedig egy ilyen legrövi-
+debb lépéssorozat kerüljön, azaz L szám, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                          Kimenet
+6                                                2
+0 2 5 3 1 5                                      1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N ≤30
+
+
+
+
+                                              1. oldal
+

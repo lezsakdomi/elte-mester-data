@@ -1,0 +1,32 @@
+
+
+                                           Fenyőfa
+Egy erdő négyzetrácsos területén N sorban, M oszlopban fenyőfák nőnek. Tudjuk minden rács-
+pontról, hogy ott van-e fenyőfa. Az erdő tulajdonosa pontosan K fát szeretne kivágni, de úgy,
+hogy egy téglalap alakú területen az összes fát kivágja.
+Készíts programot, amely megadja egy olyan legkisebb téglalap alakú terület bal felső és jobb alsó
+sarkát, amelyen pontosan K darab fenyőfa van!
+Bemenet
+A standard bemenet első sorában a terület sorainak és oszlopainak száma (1N,M100),
+valamint a kivágandó fenyők száma (1K1000) van. A következő N sor mindegyikében M szám
+található: az i-edik sor j-edik eleme 1, ha van fenyőfa az (i,j) pozíción, 0 egyébként.
+Kimenet
+A standard kimenet egyetlen sorába egy legkisebb olyan terület bal felső és jobb alsó sar-
+kának sor- és oszlopindexét kell írni, amelyben pontosan K darab fenyőfa van! Ha nincs ilyen te-
+rület, akkor négy darab -1-est kell kiírni!
+Példa
+Bemenet                                         Kimenet
+4   6   3                                       3 2 3 5
+1   1   0   0   0   0
+0   0   0   0   0   0
+0   1   1   0   1   1
+1   0   0   1   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

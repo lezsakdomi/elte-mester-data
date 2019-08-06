@@ -1,0 +1,39 @@
+
+
+                                       Vércsoport
+Egy ember vércsoportját (A, B, AB vagy 0) egy gén-pár határozza meg. Mindkét gén lehet a, b
+vagy 0 típusú.
+A vércsoport meghatározása: A={aa,a0,0a}; B={bb,b0,0b}; AB={ab,ba}; 0={00}.
+Írj programot, amely megadja egy ember vércsoportját a génpárja ismeretében!
+Bemenet
+A standard bemenet első sorában a vércsoportot leíró két betű van (csak a, b vagy 0 le-
+het) van.
+Kimenet
+A standard kimenet egyetlen sorába az adott ember vércsoportját kell írni!
+Példa
+Bemenet                                        Kimenet
+0a                                             A
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                        Megoldás
+Első lépésként számoljuk ki, hogy az adott embernek van-e a, illetve b típusú génje! Ezután egy
+négyirányú elágazás következik.
+Vércsoport(x,y,Vcs):
+  vana:=(x=”a” vagy y=”a”)
+  vanb:=(x=”b” vagy y=”b”)
+  Ha vana akkor
+     Ha vanb akkor Vcs:=”AB”
+          különben Vcs:=”A”
+  különben
+     Ha vanb akkor Vcs:=”B”
+          különben Vcs:=”0”
+Eljárás vége.
+
+
+
+
+                                           1. oldal
+

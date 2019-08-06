@@ -1,0 +1,42 @@
+
+
+                                        Zsákfalvak
+Ismerjük egy megye településeit összekötő úthálózatot. Zsákfalunak nevezzük azokat a falvakat,
+amelyekbe csak egyetlen út vezet. Ha egy zsákfaluból elindulunk, akkor elképzelhető, hogy né-
+hány falun úgy megyünk át, hogy nincs lehetőségünk dönteni arról, hogy merre folytatjuk az
+utunkat. Egy ilyen út hosszán a közvetlen útszakaszok számát értjük, ahol nem volt lehetőségünk
+más útszakaszt választani.
+Készíts programot, amely megadja azokat a zsákfalvakat, amelyekből elindulva a legtöbb olyan
+falut érintjük, amelybe érkezve csak egyetlen újabb úton mehetünk tovább!
+Bemenet
+A standard bemenet első sorában a falvak száma (1≤N≤100 000) és a falvakat összekötő
+utak száma (N-1≤M≤120 000) szerepel. A következő M sorban egy-egy falupár sorszáma talál-
+ható, amelyeket közvetlen út köt össze (1≤Ai≠Bi≤N).
+Kimenet
+A standard kimenet első sorába a leghosszabb olyan út hosszát kell írni, ami zsákfaluból
+indul, és nem lehet letérni róla! A második sorba az összes ilyen zsákfalu sorszámát kell kiírni,
+sorszám szerint növekvő sorrendben! Egyetlen sorba -1-et kell írni, ha nincs zsákfalu!
+Példa
+Bemenet                                         Kimenet
+10 10                                           3
+1 2                                             10
+2 3
+3 4
+                                                                            4
+4 5
+5 6                                                    1      2       3           5       6
+5 7                                                                         7
+3 7                                                    10     9       8
+7 8
+8 9
+10 9
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 4 MB
+
+
+
+
+                                            1. oldal
+

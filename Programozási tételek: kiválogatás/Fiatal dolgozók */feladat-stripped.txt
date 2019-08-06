@@ -1,0 +1,30 @@
+
+
+                                        Fiatal dolgozók
+Egy vállalat tárolja dolgozói életkorát és fizetését.
+Írj programot, amely megadja a K évnél fiatalabbak számát és sorszámait!
+Bemenet
+A standard bemenet első sorában az emberek száma (0≤N≤100) és egy kor (1≤K≤100),
+utána N sorban egy-egy ember kora (1≤M≤100) és a fizetése van (1≤F≤2 000 000).
+Kimenet
+A standard kimenet első sorába a K évnél fiatalabbak számát és sorszámait (a sorszámokat
+növekvő sorrendben) egy-egy szóközzel elválasztva kell írni!
+Példa
+Bemenet                                             Kimenet
+6 30                                                2 3 5
+42 150000
+33 100000
+25 600000
+66 80000
+25 200000
+42 800000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                                1. oldal
+

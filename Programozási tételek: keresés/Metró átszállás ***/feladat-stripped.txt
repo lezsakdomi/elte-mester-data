@@ -1,0 +1,49 @@
+
+
+                                       Metró átszállás
+Egy nagyvárosban 3 (földalatti) metróvonal található, s mindegyiken sok-sok állomás. A három
+vonalnak vagy egyetlen közös állomása, vagy pedig az 1.-2.-nak és a 2.-3.-nak külön átszállási he-
+lye van. Egy külföldi turista áll az egyik metróállomáson, s egy másik metróállomásra akar eljutni.
+Írj programot, amely e két állomás nevének ismeretében megmondja, hogy a turistának melyik
+metróvonalon az induló állomásról milyen irányba (melyik végállomás felé) hány megállót kell
+utaznia, s ha át kell szállnia, akkor ezt az információt az átszállás utáni metróvonalakra is megadja!
+Bemenet
+A standard bemenet első sora az induló, a második sora a célállomás nevét tartalmazza. A
+következő sorokban az egyes vonalak metróállomásainak neve található, méghozzá először az 1.
+vonal állomásainak száma, majd utána külön sorokban egyesével az állomások neve, utána a 2.
+vonal állomásainak száma, majd a 2. vonal állomásainak neve, végül a 3. vonal állomásainak szá-
+ma és külön sorokban az állomások neve. Egy vonal legfeljebb 20 megállót tartalmaz. Az állomá-
+sok nevében az ékezetes karaktereket azok ékezet nélküli párja helyettesíti, a szóközöket pedig
+aláhúzás (pl. Vorosmarty_ter vagy Bajcsy-Zsilinszky_ut).
+Kimenet
+A standard kimenetre annyi sort kell írni, ahány metróvonalon a turistának utaznia kell!
+Minden sorban ki kell írni, hogy melyik metróvonalon melyik végállomás irányába hány megállót
+kell utaznia! Egy sor formátumát ennek megfelelően kötelezően a következőképpen kell megadni:
+A. metrovonal B fele C allomas!
+Példa
+Bemenet                                           Kimenet
+A                                                 1. metrovonal C fele 1 allomas
+X                                                 2. metrovonal R fele 1 allomas
+3                                                 3. metrovonal X fele 2 allomas
+A
+B
+C
+4
+P
+B
+Q
+R
+4
+X
+Y
+Q
+Z
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

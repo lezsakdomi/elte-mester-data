@@ -1,0 +1,40 @@
+
+
+                            Fazekas darabszám korláttal
+Korondi József fazekas mester műhelyében sorban várakoznak a kiégetésre váró tárgyak. Minden
+tárgyról tudjuk, hogy mennyi az a legkevesebb idő, ami a kiégetéséhez kell. Az égetésre váró tár-
+gyakat az érkezésük sorrendjében kell kiégetni. Egyszerre több tárgyat is rakhatunk a kemencébe,
+azonban legfeljebb annyit, amennyi a kemence adott kapacitása. Az égetési idő egy menetben
+mindig a kemencébe rakott tárgyak minimális égetési idejének a maximuma kell legyen.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő kell az összes tárgy kiégetésé-
+hez, továbbá megadja azt is, hogy ezen idő eléréséhez mely tárgyakat kell egy-egy menetben a
+kemencében együtt égetni!
+Bemenet
+A standard bemenet első sora a tárgyak számát (1≤N≤1000) és a kemence kapacitását
+(1≤K≤100) tartalmazza. A következő N sor mindegyike egy pozitív egész számot tartalmaz; a
+tárgy minimális égetési idejét, ami nem nagyobb, mint 200.
+Kimenet
+A standard kimenet első sorába az összes tárgy kiégetéséhez minimálisan szükséges időt
+kell írni! A következő sorok mindegyikébe két egész számot, I-t és J-t kell írni egy szóközzel el-
+választva, I az első, J pedig az utolsó tárgy sorszáma, amelyek egyszerre kerülnek a kemencébe!
+Példa
+Bemenet                                         Kimenet
+7 3                                             75
+10                                              1 2
+8                                               3 4
+20                                              5 7
+25
+30
+12
+40
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 és K≤20. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                             1. oldal
+

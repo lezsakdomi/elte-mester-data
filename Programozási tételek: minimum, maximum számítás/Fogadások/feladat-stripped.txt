@@ -1,0 +1,35 @@
+
+
+                                       Fogadások
+N személy fogadásokat köt egymással. Ha A nyer, akkor A 1 eurót kap B-től, ha B nyer, akkor ő
+kap 1 eurót A-tól. Kezdetben mindenkinek ugyanannyi pénze van és senki nem tud annyit veszí-
+teni, hogy a pénze elfogyjon.
+Készíts programot, amely minden fogadás után megadja az összes maximális pénzösszeggel ren-
+delkező személyt, sorszám szerinti sorrendben!
+Bemenet
+A standard bemenet első sorában az emberek száma (1≤N≤10 000) és a fogadások szá-
+ma (1≤M≤100 000) van. A következő M sor mindegyike egy fogadás eredményét tartalmazza
+(1≤Ai≠Bi≤N), ami azt jelenti, hogy Ai nyerte Bi-vel szemben a fogadást.
+Kimenet
+A standard kimenet M sorába az egyes fogadások utáni legtöbb pénzzel rendelkezők szá-
+mát és egy legtöbb pénzzel rendelkező sorszámát kell írni! Több megoldás esetén bármelyik kiír-
+ható.
+Példa
+Bemenet                                        Kimenet
+4   6                                          1   1
+1   2                                          2   1
+3   4                                          1   3
+3   1                                          1   3
+2   3                                          2   3
+2   4                                          2   3
+4   1
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

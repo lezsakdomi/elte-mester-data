@@ -1,0 +1,41 @@
+
+
+                                       Akadálypálya
+Egy jármű négyzetrácsos elrendezésű pályaelemekből álló, M sorból, N oszlopból álló pályán mo-
+zoghat. Minden pályaelem vagy üres, vagy a közepén áthaladó sínt tartalmaz, amelyen a jármű ha-
+ladhat. Egy pályaelem négy szomszédja a négyzetrácsos elrendezésben a tőle balra, jobbra, lefelé
+vagy fölfelé lévő pályaelem. A jármű egy lépésben a következő három lehetséges mozgást végez-
+heti:
+    1. 90 fokkal elfordítja azt a pályaelemet, amelyen éppen áll.
+    2. Átmegy egy szomszédos pályaelemre, feltéve, hogy azon a sín olyan irányban áll, hogy az
+       csatlakozik az aktuális pályaelemen lévő sínhez.
+    3. 90 fokkal elfordít egy szomszédos pályaelemet.
+Készíts programot, amely kiszámítja azt a legkevesebb lépésszámot, amely megtételével a jármű a
+pálya bal felső (1,1) pontjából eljuthat a jobb alsó (M,N) pontjába!
+Bemenet
+A standard bemenet első sorában a pálya méretét megadó számpár van egy szóközzel elvá-
+lasztva (1M,N1000). A következő M sor mindegyike N számot tartalmaz egy-egy szóközzel
+elválasztva: 0: az adott pályaelem nem tartalmaz sínt (üres), 1: a pályaelemen a sín vízszintes
+irányban áll, 2: a pályaelemen a sín függőleges irányban áll.
+Kimenet
+A standard kimenet első és egyetlen sorába azt a legkisebb lépésszámot kell írni, amely
+megtételével a jármű a pálya bal felső pontjából eljuthat a jobb alsó pontjába! Ha a jármű nem tud
+eljutni, akkor a -1 értéket kell kiírni!
+Példa
+Bemenet                                           Kimenet
+6   7                                             17
+1   1   1   1   2   2   1
+0   1   2   2   0   1   1
+1   0   0   2   0   1   1
+1   1   1   2   0   1   1
+1   1   2   0   1   1   1
+1   1   2   1   1   1   1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

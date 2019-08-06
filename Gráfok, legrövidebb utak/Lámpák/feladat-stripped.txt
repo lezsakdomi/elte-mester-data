@@ -1,0 +1,48 @@
+
+
+                                      Hálózati átvitel
+Egy számítógépes hálózatban bizonyos csomópont párokat kétirányú átvitelt biztosító közvetlen
+kommunikációs vonal köt össze. Minden közvetlen vonal adott sebességű átvitelt biztosít. Min-
+den közvetlen vonal használatának megadott költsége van. Két csomópont között több közvetlen
+vonalat tartalmazó átvitel esetén az átvitel sebessége az útvonal közvetlen vonalai átviteli sebessé-
+gének minimuma, költsége pedig a közvetlen vonalak költségének összege.
+Készíts programot, amely minden csomópontra megadja, hogy a központi csomópontból az
+adott csomópontba mekkora a legnagyobb átviteli sebesség legfeljebb K összköltségű vonalat
+használva!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1≤N≤4000), a közvetlen vona-
+lak száma (1≤M≤50 000), a központi csomópont azonosítója (1≤C≤N) és a K értéke (1≤K≤
+20 000) van. A következő M sor mindegyike egy-egy közvetlen vonalat ad meg: két csomópont
+sorszámát (1≤U≠V≤N), közöttük mindkét irányban a vonal átviteli költségét (100≤A≤1000) és
+átviteli sebességét (1≤B≤3000).
+Kimenet
+A standard kimenet i. sorába azt a legnagyobb átviteli sebességet kell írni, amely a közpon-
+ti csomópontból az i. csomópontba a legnagyobb átviteli sebesség, ha az útvonal költsége legfel-
+jebb K! A központi csomópontra ez 0 legyen! Ha nem lehet átvitelt megvalósítani a központi
+csomópont és az i. csomópont között legfeljebb K költséggel, akkor az i. sorba a -1 értéket kell
+írni!
+Példa
+Bemenet                                           Kimenet                                 110,2
+                                                                              1                     2
+5   6   1 120                                     0
+1   2   110 2                                     2                       110,4                         110,2
+1   5   110 4                                     4                                       110,4
+2   3   110 2                                     1                          5                      3
+3   4   115 3                                     4                                               115,3
+5   4   105 1                                                                     105,1
+5   3   110 4                                                                               4
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 15%-a szerezhető olyan tesztekre, ahol a csomópontok száma legfeljebb 300 és az át-
+viteli sebesség legfeljebb 300.
+A pontok további 15%-a szerezhető olyan tesztekre, ahol a csomópontok száma legfeljebb 800
+és a K korlát legfeljebb 1500.
+
+
+
+
+                                              1. oldal
+

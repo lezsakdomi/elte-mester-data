@@ -1,0 +1,33 @@
+
+
+                                 Hangya barangolás
+Engedjünk szabadon egy hangyát egy „koordinátarendszerben” az origónál! Rögzítsük N alka-
+lommal, K másodpercenként a hangya helyzetét (méterben megadott koordinátáit)!
+Írj programot, amely megadja (milliméter/s-ban) a mérhető legnagyobb „K másodperces” átlag-
+sebességet az adott időszakban!
+
+         𝐴𝑧 𝐴(𝑎𝑥 , 𝑎𝑦 ), 𝐵(𝑏𝑥 , 𝑏𝑦 ) 𝑝𝑜𝑛𝑡𝑜𝑘 𝑡á𝑣𝑜𝑙𝑠á𝑔𝑎 = √(𝑏𝑥 − 𝑎𝑥 )2 + (𝑏𝑦 − 𝑎𝑦 )2
+
+Bemenet
+A standard bemenet első sora tartalmazza a mérések (1≤N≤100 000) számát és az idő-
+közt (1≤K≤1000). A következő N sor a hangya egy-egy helyzetének koordinátáit (méterben) tar-
+talmazza (-1000≤xi,yi≤1000).
+Kimenet
+A standard kimenet egyetlen sorába a mért legnagyobb átlagsebességet kell adni millimé-
+ter/s-ban megadva, egészre kerekítve!
+Példa
+Bemenet                                          Kimenet
+4 3                                              2867
+-4 2
+3 7
+0 1
+-5 -4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          1. oldal
+

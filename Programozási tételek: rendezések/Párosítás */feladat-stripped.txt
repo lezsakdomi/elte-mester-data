@@ -1,0 +1,32 @@
+
+
+                                         Párosítás
+Két azonos létszámú csapat egyéni küzdelmet vív egymással, a te csapatod minden tagja az ellen-
+fél egy másik tagjával mérkőzik párosításban. Két játékos közül mindig a nagyobb tudású győz.
+Ismerjük mindkét csapat tagjainak tudását.
+Készíts programot, amely megad egy olyan párosítást, amely esetén a csapatod a lehető legtöbb-
+ször győz!
+Bemenet
+A standard bemenet első sora a csapat tagok számát (1≤N≤10 000) tartalmazza. A má-
+sodik sorban az N csapat tagod erőssége van (1≤Ai≤100 000). A harmadik sorban ellenfél csa-
+pat tagjainak erőssége van (1≤Bi≤100 000).
+Kimenet
+A standard kimenet első sorába az elérhető győzelmek maximális számát kell írni! A má-
+sodik sor egy olyan párosítást adjon meg, amely maximális számú győzelmet eredményez csapa-
+todnak! A sor pontosan N különböző egész számot tartalmazzon, az i-edik szám az ellenfél csa-
+patából annak a versenyzőnek a sorszáma legyen, aki a csapatod i-edik tagjával mérkőzik! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+6                                              5
+1 9 2 3 6 4                                    6 5 1 2 4 3
+1 2 3 4 5 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

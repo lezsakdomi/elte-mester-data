@@ -1,0 +1,37 @@
+
+
+                             Kissé szeles napok száma
+A vitorlás versenyek rendezői megmérték N napon át Balatonfüreden a szélsebességet. Vitorlás
+versenyt szélcsendben nem lehet rendezni, de nagyobb viharban sem célszerű. Egy versenyen na-
+ponta egy fordulót rendeznek, s legalább K fordulóra van szükség.
+Írj programot, kiszámolja, hogy hány napon volt kis szél (kisebb a szélsebesség, mint M km/óra)!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000), egy szélsebesség
+(1≤M≤100) és a versenynapok száma (1≤K≤10) szerepel. A következő N sorban az egyes napo-
+kon mért szélsebességek (0≤S≤200) szerepelnek.
+Kimenet
+A standard kimenet első sorába azon napok számát kell kiírni, amikor kis szél volt (kisebb
+a szélsebesség, mint M km/óra)!
+Példa
+Bemenet                                         Kimenet
+10 10 3                                         1
+50
+40
+0
+5
+0
+80
+70
+90
+100
+120
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,36 @@
+
+
+                               Közeli legmelegebb nap
+Ismerjük egy N napos időszakban mért hőmérséklet értékeket.
+Készíts programot, amely megadja minden napra a vele záruló K napos időszak legmelegebb
+hőmérsékletét!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100 000), valamint a K érték
+(1≤K≤10 000) van. A következő N sorban az egyes napokon mért maximális hőmérséklet talál-
+ható ezred fokban (-50 000≤Hi≤50 000).
+Kimenet
+A standard kimenet i. sorába az i. nappal záruló K napos időszak legmelegebb napjának
+hőmérsékletét kell írni! Ha nem volt vele együtt K nap, akkor az elsőtől az i. napig levő legmele-
+gebbet kell kiírni!
+Példa
+bemenet                                          kimenet
+10 3                                             20
+20                                               21
+21                                               22
+22                                               22
+19                                               22
+18                                               19
+19                                               19
+14                                               19
+15                                               15
+12                                               16
+16
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

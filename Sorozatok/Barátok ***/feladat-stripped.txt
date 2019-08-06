@@ -1,0 +1,43 @@
+
+
+                                            Barátok
+Egy pszichológiai vizsgálatban azt jegyezték fel, hogy egy N tanulóból álló csoportban ki kit tart a
+legszimpatikusabbnak. A vizsgálat során az alábbiakat jegyezték fel:
+    1.) Kik azok, akik senkinek sem szimpatikusak?
+    2.) Kik azok a párok, akik egymásnak a legszimpatikusabbak, és senki másnak nem szimpatikus
+        egyikük sem?
+    3.) Ki az, akit legtöbben választottak legszimpatikusabbnak? Ha többen is voltak ilyenek, akkor
+        mindannyiukat feljegyezték.
+    4.) Legfeljebb hány csoportra lehet osztani a tanulókat, hogy mindenki egy csoportban legyen a
+        neki legszimpatikusabbal?
+Készíts programot, amely elkészíti a vizsgálat jegyzőkönyvét!
+Bemenet
+A standard bemenet első sorában a tanulók száma (2  N  1000), a következő N sorban
+pedig a tanulók neve és a nekik legszimpatikusabb tanuló neve található, egyetlen szóközzel elvá-
+lasztva. A nevek szóközt nem tartalmaznak, és hosszuk legfeljebb 20 karakter.
+Kimenet
+A standard kimenet első sorába a senkinek sem szimpatikus tanulók neve kerüljön, egy-
+egy szóközzel elválasztva! Ha nincs ilyen tanuló, akkor a sorban egyetlen kötőjel („-”) legyen! A
+második sorban az egymásnak legszimpatikusabb, másoknak nem szimpatikus tanulópárok legye-
+nek, a pár tagjai közé kötőjel, a párok közé egy-egy szóköz kerüljön! Ha nincs ilyen pár, akkor a
+sorban egyetlen kötőjel szerepeljen! A harmadik sorba kerüljenek a legkedveltebb tanulók, egy-
+egy szóközzel elválasztva! Végül a negyedik sorba az a szám kerüljön, ahány szimpátiacsoportra
+legfeljebb oszthatjuk a tanulókat!
+Példa
+Bemenet                                           Kimenet
+5                                                 B
+A   C                                             D-E
+B   A                                             A
+C   A                                             2
+D   E
+E   D
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤20.
+
+
+
+
+                                              1. oldal
+

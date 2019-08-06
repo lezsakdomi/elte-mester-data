@@ -1,0 +1,21 @@
+
+
+                                  Összes prímosztó
+Készíts programot, amely megadja egy természetes szám összes prímosztóját!
+Bemenet
+A standard bemenet egyetlen sorában a természetes szám van (1≤N≤100 000 000)
+van.
+Kimenet
+A standard kimenet első sorába az N prímosztóit kell kiírni, növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+1320                                           2 3 5 11
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

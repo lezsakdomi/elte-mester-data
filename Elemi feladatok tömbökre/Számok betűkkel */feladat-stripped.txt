@@ -1,0 +1,27 @@
+
+
+                                    Számok betűkkel
+Írj programot, amellyel megtaníthatod a számítógépet a számok „kimondására”! A program ol-
+vasson be egy 1 és 100 közötti egész számot, majd a számot írja ki szövegesen a képernyőre!
+Bemenet
+A standard bemenet első és egyetlen sorában a betűkkel kiírandó N egész szám található
+(1≤N≤100).
+Kimenet
+A standard kimenet első sorába a beolvasott egész számot kell szövegesen kiírni! A kiírt
+szöveg ne tartalmazzon ékezetes karaktereket, azokat a megfelelő ékezet nélküli párjukkal kell he-
+lyettesíteni!
+Példa1
+Bemenet                                         Kimenet
+15                                              tizenot
+Példa2
+Bemenet                                         Kimenet
+7                                               het
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,39 @@
+
+
+                                     Kieséses verseny
+Egy kieséses versenyben ismerjük a csapatok mérkőzéseit: ki kit győzött le.
+Készíts programot, amely megadja
+    1.) azt a csapatot, amely a kiesettek közül a legtöbbször győzött;
+    2.) a legtöbb csapatot közvetlenül vagy közvetve legyőző csapatot;
+    3.) a következő mérkőzést játszó két csapatot, amely két olyan versenyben levő csapat legyen,
+        amely eddig közvetve vagy közvetlenül a lehető legkevesebb csapatot győzte le!
+Bemenet
+A standard bemenet első sorában a csapatok száma (2≤N≤5000) és a mérkőzések száma
+van (1≤M<N), egy szóközzel elválasztva. A következő M sor mindegyikében két csapat I és J sor-
+száma van (1≤I≠J≤N), ami azt jelenti, hogy az I-edik csapat legyőzte a J-edik csapatot.
+Kimenet
+A standard kimenet állomány első sorába a kiesettek közül legtöbb győzelmet szerző csa-
+pat sorszámát kell írni (-1-et, ha nincs ilyen csapat)! A második sorba azt a csapatot, amely a leg-
+több más csapatot győzte le közvetve vagy közvetlenül, a harmadik sorba a szabály szerint a kö-
+vetkező mérkőzést játszó két csapat sorszámát, egy szóközzel elválasztva, növekvő sorrendben
+(tehát a kisebb sorszám szerepeljen előbb)! Ha több megoldás van, a legkisebb sorszámút kell ki-
+írni! A harmadik sorban az egyetlen -1 szám álljon, ha nincs megoldás!
+Példa
+Bemenet                                          Kimenet
+8   5                                            1
+1   2                                            4
+4   3                                            5 7
+4   1
+7   8                                                            4
+5   6
+                                                         1               4           5           7
+Korlátok
+Időlimit: 0.1 mp.                                   1        2       3       4   5       6   7       8
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a csapatok száma N≤100
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,34 @@
+
+
+                           Legnagyobb hasznú téglalap
+Egy földműves egy T területű, téglalap alakú birtokot szeretne vásárolni egy NxN-es négyzet alakú
+földterületen. Tudja minden megvásárolható földdarabról, hogy azt megművelve mennyi lenne a
+haszna.
+Készíts programot, amely megadja azt a T területű téglalapot, amelyen a legnagyobb haszon érhe-
+tő el!
+Bemenet
+A standard bemenet első sorában a négyzet alakú terület mérete (1≤N≤1000) és a megvá-
+sárolandó föld területe (1≤T≤50 000,T≤N2) van. A következő N sor mindegyike N számot tar-
+talmaz, a terület egyes földdarabjaiból nyerhető haszon értékét (-1000≤haszon≤1000).
+Kimenet
+A standard kimenet első sorába a legnagyobb elérhető hasznot, a második sorába pedig
+annak a T területű téglalapnak a bal felső és jobb alsó sarka indexét kell írni (1≤bfsor≤jasor≤N,
+1≤bfoszlop≤jaoszlop≤N), amelyen a legnagyobb haszon érhető el! Több megoldás esetén bár-
+melyik megadható.
+Példa
+Bemenet                                         Kimenet
+5   6                                           17
+1   1   1   1   1                               2 2 3 4
+1   1   2   2   1
+1   4   4   4   1
+1   1   2   2   1
+1   1   1   1   1
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

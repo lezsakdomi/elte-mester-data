@@ -1,0 +1,33 @@
+
+
+                      Függvény minimális periódushossza
+Egy F függvény az 1 és N közötti számokhoz rendel 1 és N közötti számokat. Minden ilyen
+függvényre igaz, hogy az x,F(x),F(F(x)),F(F(F(x))),… sorozat előbb-utóbb periodikus lesz, azaz az
+elemei ismétlődni fognak. Periódushossznak az ismétlődő értékek távolságát nevezzük.
+Készíts programot, amely megadja egy F függvény minimális peridódushosszát és az első ismét-
+lődő szakasz elemeit!
+Bemenet
+A standard bemenet első sorában az N értéke van (1≤N≤100 000). A második sorban az
+i. szám az F(i) függvényérték (1≤F(i)≤100 000, i≠F(i)).
+Kimenet
+A standard kimenet első sorába a minimális periódushosszt kell kiírni, a másodikba pedig
+a periódusban szereplő elemeket, az ismétlődő rész tetszőleges tagjától kiírva!
+Példa                                                                5     3        6         9
+Bemenet                                          Kimenet
+                                                                               1         2             8
+10                                               2
+6 9 1 10 3 3 4 9 6 4                             4 10
+                                                                 7             4        10
+
+Magyarázat: A 2-ből indulva a 2,9,6,3,1,6,… sorozatot kapjuk, aminél a periódushossz 3. A 7-ből
+indulva a 7,4,10,4,... sorozatot kapjuk, ahol a periódushossz 2, tehát a minimális periódushossz=2.
+Ha a 6,3,1 lenne a minimális, akkor a 6,3,1 mellett a 3,1,6 és az 1,6,3 is helyes megoldás lenne.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

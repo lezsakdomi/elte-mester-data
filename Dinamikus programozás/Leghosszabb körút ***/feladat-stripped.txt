@@ -1,0 +1,50 @@
+
+
+                                    Leghosszabb körút
+Ádám és Éva hajókirándulást terveznek folyón, ahol a folyó mentén N hajóállomás van. Ismerik a
+menetrendet, tehát tudják, hogy mely két állomás között közlekedik közvetlen járat. A hajótársa-
+ságtól speciális bérlet vásárolható olcsón. A bérlet két jegyet tartalmaz, az egyikkel csak lefelé ha-
+ladva mehetnek, de tetszőleges számú járattal, a másik jeggyel pedig csak felfelé, hasonlóan.
+Azonban ha lefelé haladva érintenek egy állomást, akkor visszafelé nem érinthetik azt, kivéve az
+indulás helyét és az utolsó állomást lefelé haladva! Az utazás az 1. sorszámú kikötőből indul, és
+bármelyik állomáson visszafordulhat.
+Készíts programot, amely kiszámít egy legtöbb várost tartalmazó körutat!
+Bemenet
+A standard bemenet első sorában a kikötők (városok) száma (1≤N≤1000) és a hajójárat-
+ok száma (1≤M≤100 000) van egy szóközzel elválasztva. A további M sor mindegyike egy-egy
+hajójáratot ad meg, azt a két kikötő sorszámot, amely között van közvetlen járat mindkét irányban
+(1≤A≠B≤N). A kikötőket a folyásirány szerint növekvő sorrendben sorszámozzuk. Az első állo-
+másról van legalább egy járat.
+Kimenet
+A standard kimenet első sorába a legtöbb várost érintő körutazásban érintett városok K
+számát kell írni, beleértve az indulás és az érkezés helyét! A második sor az oda-utat adja meg a
+városoknak az utazás sorrendjében való felsorolásával, a harmadik sor pedig a vissza-utat fordí-
+tott sorrendben! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                           Kimenet
+8   10                                            7                                   1
+1   2                                             1 2 4 6 8
+                                                                                      2
+1   3                                             1 3 5 8
+2   3                                                                                             3
+
+2   4                                                                                 4
+3   4                                                                                             5
+3   6                                                                                 6
+3   5                                                                                             7
+
+4   6                                                                                             8
+
+5   8
+6   8
+Korlátok
+Időlimit: 0.9 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤100 M≤1 000. Helyes első sorral a pontok 40%-a szerezhető
+meg.
+
+
+
+
+                                               1. oldal
+

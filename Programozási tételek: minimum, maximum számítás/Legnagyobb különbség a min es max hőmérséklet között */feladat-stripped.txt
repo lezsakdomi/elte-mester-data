@@ -1,0 +1,33 @@
+
+
+        Legnagyobb különbség a min es max hőmérséklet között
+Egy időjárás előrejelzésben megkaptuk a következő N nap várható minimális és maximális hő-
+mérsékletét.
+Írj programot, amely megadja azt a napot, ahol a legnagyobb a különbség a várható minimális és
+maximális hőmérséklet között (ha több ilyen van, akkor a legkisebb sorszámút)!
+Bemenet
+A standard bemenet első sorában a napok száma van (1≤N≤100), alatta soronként egy-
+egy nap várható legkisebb és legnagyobb hőmérséklete (-20≤Min<Max≤30).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, annak a napnak a sorszá-
+mát, ahol a legnagyobb a különbség a várható minimális és maximális hőmérséklet között (ha
+több ilyen van, akkor a legkisebb sorszámút)!
+Példa
+Bemenet                                         Kimenet
+6                                               1
+-5 5
+0 10
+-5 -3
+-5 0
+2 10
+10 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

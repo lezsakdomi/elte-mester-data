@@ -1,0 +1,37 @@
+
+
+                                            Kastély
+Egy kastélyban nyolcszög alakú termek vannak. A termeket a bal felső saroktól kezdődően sor-
+számozzuk. A látogatóknak minden terembe belépéskor adott összeget kell fizetniük (a kiinduló
+helyen nem kell fizetni). A termek között az ábrának megfelelően négyzet alakú rejtekajtók nyíl-
+nak, amelyek használatáért egységesen R forintot kell fizetni.
+Készíts programot, amely kiszámítja a legkisebb költséget, amelybe egy kiinduló teremből egy
+adott másik terembe eljuthatunk!
+Bemenet
+A standard bemenet első sorában a sorok és oszlopok száma (1≤N,M≤500), és a rejtekaj-
+tók költsége (1≤R≤100 000) van. A második sor az indulási hely sor- és oszlopindexét, vala-
+mint a célhely sor- és oszlopindexét tartalmazza. A következő N sor mindegyike M egész számot
+tartalmaz, ahol az i-edik sor j-edik száma az (i,j) indexű terembe belépés költsége (1 és 10 000 kö-
+zötti egész számok).
+Kimenet
+A standard kimenet első és egyetlen sorába a legkisebb költséget kell írni, amennyiért el-
+juthatunk a kezdő teremből a célhelyre!
+Példa
+Bemenet                                    Kimenet
+5 6   40                                   780
+1 1   3 6
+100   100   100     100   100   100
+100   100   100     100   900   900
+100   900   900     900   900   100
+100   100   100     100   100   100
+900   900   900     900   900   900
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N,M≤50
+
+
+
+
+                                              1. oldal
+

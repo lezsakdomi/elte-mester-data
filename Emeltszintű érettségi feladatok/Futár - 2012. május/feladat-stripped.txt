@@ -1,0 +1,70 @@
+
+
+                                                  Futár
+A nagyvárosokon belül, ha csomagot gyorsan kell eljuttatni egyik helyről a másikra, akkor sokszor
+a legjobb választás egy kerékpáros futárszolgálat igénybevétele. A futárszolgálat a futárjainak a
+megtett utak alapján ad fizetést öt távolság kategóriában. Az egyik futár egy héten át feljegyezte
+fuvarjai legfontosabb adatait, de nem feltétlenül időrendben. Azokra a napokra, amikor nem dol-
+gozott, nincsenek adatok bejegyezve.
+Készíts programot, amely megadja, hogy
+   1. mekkora volt a hét legelső útja kilométerben;
+   2. mekkora volt a hét utolsó útja kilométerben;
+   3. a hét hányadik napjain nem dolgozott a futár (tudjuk, hogy a futár minden héten tart leg-
+      alább egy szabadnapot);
+   4. a hét melyik napján volt a legtöbb fuvar;
+   5. az egyes napokon hány kilométert kellett tekernie a futárnak;
+   6. adott távolságú útért mekkora díjazás jár;
+   7. a futár mekkora összeget kap a heti munkájáért!
+Bemenet
+A standard bemenet első sora a fuvarok számát (1≤N≤240) és egy távolságot tartalmaz
+(1≤Táv≤30). A másodiktól a hatodik sorig az út hosszának megfelelő ellenértékek szerepelnek.
+Soronként az első két szám azt jelöli, hogy hány kilométertől hány kilométerig tart az adott kate-
+gória (1≤Tóli≤Igi≤30, Tóli=Igi-1+1), a harmadik szám pedig az útért járó összeget jelöli
+(1≤Összi≤10 000). A további sorok egy-egy út adatait tartalmazzák: a nap sorszámát
+(1≤Ni≤7), a napon belüli fuvarszámot (1≤Fi≤40, minden nap 1-től kezdődik és az aznapi utol-
+só fuvarig egyesével növekszik) és az adott fuvar során megtett utat kilométerben (1≤Ti≤30).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A hét legelső útjának hosszát kell kiírni!
+2. részfeladat: A hét utolsó útjának hosszát kell kiírni!
+3. részfeladat: Azon napok sorszámát kell kiírni, ahányadik napokon nem dolgozott a futár, nö-
+vekvő sorrendben!
+4. részfeladat: Azt kell kiírni, hogy a hét melyik napján volt a legtöbb fuvar (több megoldás ese-
+tén bármelyiket)!
+5. részfeladat: Napok szerinti sorrendben kell kiírni, hogy az egyes napokon hány kilométert kel-
+lett tekernie a futárnak!
+6. részfeladat: A Táv hosszú út díját kell kiírni!
+7. részfeladat: A futár heti bérét kell kiírni!
+Példa
+Bemenet                                              Kimenet
+19                                                   #
+1 2 500                                              3
+
+                                                  1. oldal
+Emelt szintű informatika érettségi                          2012. május 14.
+
+3 5 700                                 #
+6 10 900                                15
+11 20 1400                              #
+21 30 2000                              2 5 6
+1 2 5                                   #
+4 1 9                                   1
+3 1 12                                  #
+1 1 3                                   18 0 12 16 0 0 15
+4 2 7                                   #
+7 1 15                                  1400
+1 3 10                                  #
+                                        6900
+Korlátok
+Időlimit: 0,1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

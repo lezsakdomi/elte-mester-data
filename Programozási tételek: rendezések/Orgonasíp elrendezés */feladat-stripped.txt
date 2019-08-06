@@ -1,0 +1,30 @@
+
+
+                                  Orgonasíp elrendezés
+Orgonasíp elrendezésnek hívjuk a következő rendezettséget: a középső helyre kerüljön a legna-
+gyobb elem, tőle balra a következő, tőlük jobbra a következő, tőlük balra a következő, …
+Készíts programot, amely N számot a fenti módszerrel rendez!
+Bemenet
+A standard bemenet első sorában található az elemek száma (1≤N≤100). Az ezt követő N
+sor mindegyikében egy-egy egész szám (1≤Xi≤10 000) van, amiket rendezni szeretnénk.
+Kimenet
+A standard kimenet első sorába ki kell írni szóközzel elválasztva az értékeket az orgonasíp
+elrendezésnek megfelelően!
+Példa
+Bemenet                                        Kimenet
+6                                              3 32 35 40 33 4
+33
+32
+3
+40
+4
+35
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

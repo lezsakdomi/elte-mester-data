@@ -1,0 +1,25 @@
+
+
+                                      Gyémántok
+Egy gyémánt bánya tulajdonosa szét akar osztani a legjobb munkásai között N darab gyémántot.
+Meg szeretné különböztetni a munkásait, ezért úgy döntött, hogy azok a munkások, akik kapnak
+gyémántot, mind különböző számút kapjanak!
+Készíts programot, amely megadja, hogy ezt hányféleképpen teheti meg!
+Bemenet
+A standard bemenet első sorában a gyémántok száma van (1≤N≤200).
+Kimenet
+A standard kimenet egyetlen sorába a lehetséges szétosztások számát kell kiírni!
+Példa
+bemenet                         kimenet
+6                               4
+Magyarázat: 6=6 vagy 5+1 vagy 4+2 vagy 3+2+1.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤20.
+
+
+
+
+                                           1. oldal
+

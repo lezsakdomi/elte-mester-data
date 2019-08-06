@@ -1,0 +1,79 @@
+
+
+                                                  Amőba
+Ebben a feladatban félbehagyott amőba1 játékállásokat kell elemezni.
+Írj programot, amely
+      1. megjeleníti a játékállást egy 16x16-os pályán,
+      2. kiírja, hogy ki kezdte a játékot és ki következik,
+      3. kimutatást készít a soron következő játékos leghosszabb összefüggő szakaszairól soronként!
+Bemenet
+A standard bemenet első sora kétféle betűt tartalmazhat: O-t (nem nulla!), vagy X-et. O esetén
+a kör jelű játékos, X esetén pedig a kereszt jelű játékos kezdte a játékot. Ha az első sor O-t tartalmaz,
+akkor később valamelyik sorban X is szerepel, és viszont. A játékosok jelét kódoló betűk után az
+adott játékos lépéseit tartalmazó sorok következnek. Minden ilyen sor két egész számot tartalmaz,
+egy szóközzel elválasztva, az első a sor, a második pedig az oszlop sorszámát jelenti. Feltételezzük,
+hogy a bemenet biztosan ilyen szerkezetű, és a tárolt számok mindegyike 1 és 16 közé esik. Felté-
+telezzük azt is, hogy a játékosok lépésszáma reális, például nincs olyan, hogy az egyik játékos ötöt
+lép, amíg a másik hetet. Legfeljebb 258 sorból áll a bemenet.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: 16 sor mindegyikébe 16 karaktert kell kiírni! A karakter ’.’, ha a megfelelő mező
+üres, ellenkező esetben a megfelelő játékost jelöli ’X’, illetve ’O’ karakterrel.
+2. részfeladat: Két karaktert kell kiírni szóközzel elválasztva. Az első a kezdőjátékost, a második a
+soron következő játékost jelöli a korábbiakban megadott kódolással!
+3. részfeladat: A pálya minden olyan sorára, amelyben van a soron következő játékosnak elfoglalt
+mezője egy-egy sort kell kiírni, mindegyikben négy-négy számmal! A számok rendre a sor sorszá-
+mát, a leghosszabb összefüggő szakasz kezdő- illetve végpozícióját és a szakasz hosszát jelölik!
+
+
+
+
+1   https://hu.wikipedia.org/wiki/Amőba_(játék)
+
+                                                  1. oldal
+Informatikai alapismeretek – emeltszint                           2013. október 14.
+
+
+Példa
+ Bemenet                                       Kimenet
+ O                                             #
+ 2   4                                         ................
+ 3   5                                         ...O............
+ 3   6                                         ....OOX.........
+ 4   4                                         ...OXXX.........
+ 5   3                                         ..O.X...X.......
+ 7   7                                         ...X....X.......
+ 7   8                                         .....XOOX.......
+ 8   7                                         ......O.X.......
+ 9   3                                         ..OOO...........
+ 9   4                                         ................
+ 9   5                                         ................
+ X                                             ................
+ 3   7                                         ................
+ 4   5                                         ................
+ 4   6                                         ................
+ 4   7                                         ................
+ 5   5                                         #
+ 5   9                                         O O
+ 6   4                                         #
+ 6   9                                         2 4 4 1
+ 7   6                                         3 5 6 2
+ 7   9                                         4 4 4 1
+ 8   9                                         5 3 3 1
+                                               7 7 8 2
+                                               8 7 7 1
+                                               9 3 5 3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

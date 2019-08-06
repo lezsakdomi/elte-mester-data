@@ -1,0 +1,36 @@
+
+
+                                 Szigetek benépesítése
+Régen a polinéz szigetvilágot az őslakók szigetről szigetre hajózva népesítették be. Egyes hajókkal
+csak a közelebbi szigetekre tudtak eljutni, másokkal távolabbra is. A feladatban a szigetek egy vo-
+nalban, egymás mellett helyezkednek el (1-esek jelzik a szárazföldet, 0-k pedig a tengert). Bal, il-
+letve jobb oldalról indulhatnak hajók, amely a szigetek között legfeljebb T darab 0-val leírt távol-
+ságot tudnak megtenni.
+
+
+  1   1    0   0    0   1   1    0   0    1   1    0     0   0   0   0   1   0   1
+
+
+Készíts programot, amely megadja, hogy az őslakók hány szigetet tudnak benépesíteni (balról, il-
+letve jobbról indulva)!
+Bemenet
+A standard bemenet első sorában az adatok száma (1≤N≤1000) és a távolság
+(1≤T≤100) szerepel. A második sor az N adatot tartalmazza, egy-egy szóközzel elválasztva (1 –
+ha szárazföld, 0 – ha víz).
+Kimenet
+A standard kimenet első sorába ki kel írni, hogy őslakók hány szigetet tudnak benépesíteni
+balról, illetve jobbról indulva (beleszámítva a kiinduló szigetet is)!
+Példa
+Bemenet                                                      Kimenet
+19 3                                                         3 2
+1 1 0 0 0 1 1 0 0 1 1 0 0 0 0 0 1 0 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

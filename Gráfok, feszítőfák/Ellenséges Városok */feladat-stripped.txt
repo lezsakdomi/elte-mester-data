@@ -1,0 +1,49 @@
+
+
+                                  Ellenséges városok
+Bergengóciában a városok lakosai nem szimpatizálnak a szomszédos városokkal, szinte ellenség-
+nek tekintik egymást. A király a meglévő földutakat gyorsforgalmi utakká szeretné alakítani úgy,
+hogy bármely városból bármely városba el lehessen jutni gyorsforgalmi utakon is (földutakon ke-
+resztül biztosan elérhető bármelyik városból bármelyik másik város). Az ellenségeskedés miatt
+azonban nem szeretné, ha a lakosok túl gyorsan eljutnának egy gyorsforgalmi úton valamelyik
+szomszédjukba. Emiatt az a terve, hogy az úthálózat úgy épüljön fel, hogy a gyorsforgalmi utakkal
+összekötött szomszédos városok a lehető legtávolabb legyenek egymástól.
+Írj programot, amely kiszámítja, hogy a gyorsforgalmi úthálózaton mi lesz két tetszőleges szom-
+szédos város távolságának a minimuma (az a cél, hogy ez a lehető legnagyobb legyen), és meg is
+adja, hogy melyik utakat kell gyorsforgalmi utakká alakítani!
+Bemenet
+A standard bemenet első sorában a városok száma (1N20 000), valamint a meglévő
+földutak száma (1M500 000) van. A következő M sor mindegyikében 3 szám van, egy-egy
+földút kezdő- és végpontja (1Ki≠ViN), valamint az út hossza (1hosszi1000).
+Kimenet
+A standard kimenet első sorába a gyorsforgalmi úthálózat legrövidebb útjának hosszát kell
+írni! A második sor pontosan N-1 egész számot tartalmazzon, a megépítendő gyorsforgalmi utak
+sorszámát (a bemeneti sorrend szerinti sorszámokat)! Több megoldás esetén bármelyik megadha-
+tó.
+Példa
+Bemenet                                         Kimenet
+7   9                                           3
+2   1   2                                       6 2 9 4 5 3
+2   5   6
+1   3   3
+5   3   4
+3   4   4                                                                            2
+                                                              4              1               2
+3   6   8                                                            4
+3   7   2                                                                        3
+
+6   5   1                                                            2                           6
+                                                              7              3
+6   7   5                                                                5           4
+                                                                                 8
+Korlátok                                                                             1
+                                                                             6               5
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

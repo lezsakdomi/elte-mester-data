@@ -1,0 +1,25 @@
+
+
+                                Permutáció kódolása
+Az 1,…N számok minden A=(a1,…,aN) permutációja kódolható azzal a B=(b1,…,bN) soro-
+zattal, ahol bi= azon aj elemek számával, amelyekre j<i és aj>ai.
+Készíts programot, amely adott A permutációra kiszámítja a B kódsorozatot!
+Bemenet
+A standard bemenet első sorában az N szám (1≤N≤100 000) van. A második sor ponto-
+san N számot tartalmaz, az A permutációt.
+Kimenet
+A standard kimenet első sorába kell kiírni az A permutáció B kódját (N egész számot)!
+Példa
+Bemenet                                        Kimenet
+7                                              0 0 1 0 2 0 4
+1 5 2 6 4 7 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤1000
+
+
+
+
+                                           1. oldal
+

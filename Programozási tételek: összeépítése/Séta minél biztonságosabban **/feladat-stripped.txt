@@ -1,0 +1,38 @@
+
+
+                           Séta minél biztonságosabban
+Egy NxM-es téglalap alakú téren K lámpát helyeztek el. Mindegyiknek ismerjük a helyét. Mind-
+egyik lámpa azt a HxH-s (H páratlan) négyzet alakú területet világítja be, amely átlóinak metszés-
+pontjában áll a lámpa. A világos területek éjszaka is biztonságosak, a sötéteken azonban tanácso-
+sabb nem járni.
+Írj programot, amely megadja, hogy hogyan menjünk át a tér bal felső sarkából a jobb alsó sarká-
+ba a legbiztonságosabban úgy, hogy minden pozícióról a 4 oldalszomszédjára léphetünk, átlósan
+pedig nem léphetünk!
+Bemenet
+A standard bemenet első sorában a tér sorai (1N100) és oszlopai száma (1M100),
+valamint a lámpák száma (0K1000) és az általuk bevilágított négyzet oldalhossza (1H100,
+H páratlan) van. A következő K sor mindegyike egy lámpa helyét tartalmazza, egy számpárt egy
+szóközzel elválasztva: közülük az első egy lámpát tartalmazó mező sorindexe (1SN), a második
+pedig az oszlopindexe (1OM). A sorokat felülről-lefelé, az oszlopokat balról-jobbra sorszámoz-
+zuk.
+Kimenet
+A standard kimenet első sorába azon sötét mezők száma kerüljön, ahányon minimálisan
+át kell menni, ha a tér bal felső sarkából a jobb alsó sarkába szeretnénk eljutni!
+Példa
+Bemenet                                          Kimenet
+8   10 3 5                                       4
+3   3
+7   3                                                                     L                  L
+3   9
+
+                                                                          L
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

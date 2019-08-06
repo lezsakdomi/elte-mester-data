@@ -1,0 +1,81 @@
+
+
+                                         Latin táncok
+A Latin Tánciskola tanulói latin táncokat tanulnak, ezek a következők: cha-cha, salsa, rumba,
+samba, jive, tango, bachata. A tanulók a tanév végén bemutatót tartottak. A bemutatón minden
+táncot csupán egyszer mutattak be, azonban az egyes táncok bemutatóján több pár is szerepelt. A
+táncok a bemutató tényleges sorrendjében szerepelnek.
+Írj programot, amely
+    1.   megadja az elsőnek és utolsónak bemutatott tánc nevét,
+    2.   megadja, hogy hány pár mutatott be egy adott táncot,
+    3.   megadja, hogy egy adott ember mely táncokban szerepelt,
+    4.   megadja, hogy egy adott ember egy adott táncot kivel mutatott be,
+    5.   kilistázza a bemutatón részt vevő fiúk és lányok neveit,
+    6.   megadja, hogy melyik fiú, illetve melyik lány szerepelt a legtöbbször!
+Bemenet
+A standard bemenet első sorában a párok száma szerepel (1≤N≤1000). A következő sor
+egy tánc T2 nevét tartalmazza. A következő sorban egy ember E3 neve szerepel. A következő sor
+egy tánc T4 és egy ember E4 nevét tartalmazza. A további N sorban egy tánc neve, egy lány neve
+és egy fiú neve található. Feltehető hogy a táncok és az emberek nevei nem tartalmaznak szókö-
+zöket és ékezetes karaktereket. Egy személy a különböző táncokat eltérő partnerekkel is bemutat-
+hatja, és feltételezhető, hogy a táncosok között nincs két azonos nevű.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az elsőnek és utolsónak előadott tánc nevét kell írni, külön sorba!
+2. részfeladat: Azt kell írni, hogy hányszor fordult elő a T2 tánc!
+3. részfeladat: Az első sorba az E3 ember által előadott táncok K számát kell írni, majd a követ-
+kező K sorba az általa táncolt táncok neveit, előfordulási sorrendben!
+4. részfeladat: Azt kell írni, hogy kivel mutatta be az T4 táncot az E4 ember, ha nem mutatta be
+azt a táncot, akkor a kimenetre a NEM szót kell írni!
+5. részfeladat: Az első sorba a bemutatón részt vevő fiúk F számát kell írni, majd a következő F
+sorba a fiúk neveit, tetszőleges sorrendben! A következő sorba a bemutatón részt vevő lányok L
+számát kell írni, majd a következő L sorba a lányok neveit, tetszőleges sorrendben!
+6. részfeladat: Az első sorba a legtöbbet táncoló fiúk MF számát, majd a következő MF sorba a
+neveiket kell írni (ha többen is ugyanannyit táncoltak, mindet ki kell írni, tetszőleges sorrendben)!
+A következő sorba a legtöbbet táncoló lányok ML számát, majd a következő ML sorba a neveiket
+kell írni (ha többen is ugyanannyit táncoltak, mindet ki kell írni, tetszőleges sorrendben)!
+Példa
+Bemenet                                            Kimenet
+5                                                  #
+rumba                                              salsa
+Peter                                              rumba
+
+                                               1. oldal
+Emelt szintű informatika érettségi                  2015. május 15.
+
+cha-cha Zsuzsanna                       #
+salsa Katalin Peter                     2
+salsa Zsofia Gergely                    #
+cha-cha Zsuzsanna Jozsef                1
+rumba Katalin Bela                      salsa
+rumba Zsofia Jozsef                     #
+                                        Jozsef
+                                        #
+                                        4
+                                        Bela
+                                        Gergely
+                                        Jozsef
+                                        Peter
+                                        3
+                                        Katalin
+                                        Zsofia
+                                        Zsuzsanna
+                                        #
+                                        1
+                                        Jozsef
+                                        2
+                                        Katalin
+                                        Zsofia
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

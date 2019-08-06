@@ -1,0 +1,32 @@
+
+
+                                      Utasszámlálás
+Egy utazásszervező cég utasszámlálást végzett. Zsúfolt az a busz, ahol a férőhelyek legalább 80%-
+a foglalt. Üres, ha 20%-nál kisebb a kihasználtság.
+Készíts programot a zsúfolt és az üres buszok kiválogatására!
+Bemenet
+A standard bemenet első sorában található a buszok száma (1≤N≤100) és a maximális
+férőhely (1≤M≤100). Az ezt követő N sor mindegyikében egy-egy busz kihasználtsága, vagyis a
+rajta utazók száma található (0≤Ui≤M).
+Kimenet
+A standard kimenet első sorába ki kell írni a zsúfolt buszok számát, majd ezt követően
+növekvő sorrendben a buszok sorszámait! A második sorba pedig az üres buszok számát, majd
+ezt követően növekvő sorrendben a buszok sorszámait kell írni!
+Példa
+Bemenet                                          Kimenet
+6 42                                             2 4 6
+33                                               2 3 5
+32
+3
+40
+4
+35
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

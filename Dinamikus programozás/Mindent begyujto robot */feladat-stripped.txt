@@ -1,0 +1,39 @@
+
+
+                                Mindent begyűjtő robot
+Egy automatizált üzemben a gyártó berendezések egy nagy gépcsarnokban négyzetrácsos elren-
+dezésben vannak. A műszak végeztével egy robot gyűjti össze a legyártott alkatrészeket, amely a
+berendezések felett a rácsszerkezet által meghatározott pályán mozoghat, csak jobbra, lefelé vagy
+felfelé tud mozogni. Egy lépés megtételéhez 1 másodpercre van szüksége, egyszerre tetszőleges
+számú alkatrész tud szállítani. A robot induláskor a rácsszerkezet bal felső sarkában van, és a jobb
+alsó sarokba kell eljuttatnia a legyártott alkatrészeket.
+Készíts programot, amely megadja, hogy minimálisan hány másodperc alatt tudja egy robot be-
+gyűjteni az összes legyártott alkatrészt!
+Bemenet
+A standard bemenet első sorában a gépcsarnok mérete van (1≤M,N≤1000). Az ezt köve-
+tő sorokban a legyártott alkatrészek sor- és oszlopkoordinátái vannak: minden sorban egy szám-
+pár (1≤a≤M,1≤b≤N), egyetlen szóközzel elválasztva. A bemenetet a 0 0 számpárt tartalmazó
+sor zárja. A bal felső sarok koordinátái (1,1), a jobb alsóé pedig (M,N).
+Kimenet
+A standard kimenet egyetlen sorába a másodpercek minimális számát kell kiírni, amely
+elegendő az alkatrészek begyűjtésére!
+Példa
+Bemenet                                           Kimenet
+6   3                                             13
+1   2
+2   1
+4   1
+3   2
+5   2
+6   3
+0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a N,M≤50
+
+
+
+
+                                              1. oldal
+

@@ -1,0 +1,46 @@
+
+
+                                     Állatkereskedők
+Egy állatokat exportáló cég állatokat szeretne vásárolni egy állattenyésztőtől. A megrendelőik
+megadták, hogy melyik állatból hány darabra van szükségük. A közelben két állattenyésztő van,
+akitől vehetnek állatokat. Mindkettőről tudjuk, hogy milyen állatból hány eladó van a gazdaságuk-
+ban. A két tenyésztő közül az egyiket kell választanunk!
+Készíts programot, amely megadja, hogy melyik tenyésztőtől vegyék az állatokat, hogy a megren-
+deltekhez képest a lehető legkevesebb állat hiányozzon!
+Bemenet
+A standard bemenet első sorában a megvenni szándékozott állatfajták száma van
+(1≤N≤10 000). A következő N sor mindegyikében egy-egy állat neve (az angol ábécé betűivel
+írva) és a belőle vásárolni kívánt állatok száma van (név szerinti ábécésorrendben). Ezután követ-
+kező sorban az első tenyésztő állatfajtái száma (1≤A1≤10 000) van, amit A1 sorban az állatai
+neve és darabszáma követ (név szerinti ábécésorrendben). Az utolsó csoport első száma a máso-
+dik tenyésztő állatfajtái száma (1≤A2≤10 000), amit A2 sorban az állatai neve és darabszáma
+követ (szintén név szerinti ábécésorrendben).
+Kimenet
+A standard kimenet első sorába a tenyésztő sorszámát kell írni, akitől a cég az állatokat
+vásárolja! A második sorba azon állatok minimális száma kerüljön, amiket így nem tud megvenni!
+Példa
+Bemenet                                          Kimenet
+3                                                1
+birka 5                                          3
+galamb 2
+                                                 Így 1 birka, 1 galamb, 1 kacsa hiány lesz.
+kacsa 3
+4                                                Ha a 2. árust választanánk, akkor 5 virág (mind
+birka 4                                          birka) hiányozna.
+galamb 1
+liba 20
+kacsa 2
+3
+kecske 3
+galamb 2
+kacsa 3
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

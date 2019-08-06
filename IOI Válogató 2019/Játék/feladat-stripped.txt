@@ -1,0 +1,37 @@
+
+
+                                             Játék
+Egy videójátékot játszunk, amiben csak csak az 'A', 'B' és 'C' gombokat lehet használni. Bármilyen
+sorrendben, bármennyiszer megnyomhatjuk őket, de csak N különböző kombináció van, amire
+pontot kaphatunk. Egy kombinációt egy maximum 15 karakter hosszú szöveg ad meg, ami csak
+'A', 'B' és 'C' karaktereket tartalmaz. Ha egymás után megnyomjuk egy kombináció karaktereihez
+tartozó gombokat, akkor egy pontot kapunk. A gombnyomás sorozatunk karaktersorozatában a
+kombinációk részben vagy akár teljesen is fedhetik egymást, mindegyikért pont jár.
+Készíts programot, amely megadja, hogy pontosan K darab gombnyomással maximum mennyi
+pontot szerezhetünk!
+Bemenet
+A standard bemenet első sorában a kombinációk száma (1≤N≤20) és a gombnyomások
+száma (1≤K≤100 000) van. A következő N sorban soronként egy-egy kombinációhoz tartozó
+karaktersorozat szerepel, mindegyik legfeljebb 15 karakterből áll.
+Kimenet
+A standard kimenet egyetlen sorába a megszerezhető maximális pontszám kerüljön!
+Példa
+bemenet                                          kimenet
+3 7                                              4
+ABA
+CB
+ABACB
+A példában az "ABACBCB" karaktersorozatot lenyomva 4 pontot kapunk, egyet az "ABA", ket-
+tőt a "CB" és egyet az "ABACB" kombináció miatt.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 50%-a kapható olyan tesztekre, ahol K≤1000.
+A pontok további 25\%-a szerezhető olyan tesztekre, ahol K≤10 000.
+
+
+
+
+                                             1. oldal
+

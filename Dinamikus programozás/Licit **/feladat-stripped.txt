@@ -1,0 +1,38 @@
+
+
+                                              Licit
+Egy város elhatározta, hogy értékesíti a város mellett levő téglalap alakú földterületet. A földet
+egyforma méretű parcellákra osztották. A város úgy döntött, hogy a parcellákat nyilvános pályázat
+keretében értékesíti. Azaz egy adott határidőig minden érdeklődő lezárt borítékban leadhatja aján-
+latát. Egy pályázó csak egy ajánlatot adhat be, amelyben meg kell adnia, hogy melyik parcellától
+melyik parcelláig terjedő részt kívánja megvenni, és hogy mennyiért. A határidő lejártáig N pályá-
+zat érkezett. Ezek közül ki kell választani azokat az ajánlatokat, amelyek a legtöbb bevételt ered-
+ményezik, s persze úgy, hogy egyetlen parcellát sem ítélhetünk oda egynél több pályázónak.
+Írj programot, amely elvégzi a pályázatok olyan kiértékelését, amely a legnagyobb bevételt ered-
+ményezi!
+Bemenet
+A standard bemenet első sorában a pályázatok száma (1N1000) és a parcellák száma
+(1M1000) található. A következő N sor az egyes pályázatok adatait tartalmazza. Mindegyik sor
+az A B F számokat tartalmazza, ami azt jelenti, hogy a pályázó az A sorszámú parcellától
+(1AM) a B sorszámú parcelláig (ABM) terjedő részért F forintot fizetne (1F1000), a B
+érték szerint nemcsökkenő sorrendben.
+Kimenet
+A standard kimenet első sorába az elérhető legnagyobb bevételt kell írni! A második sor-
+ban azon pályázók sorszámai legyenek, akik nyerése esetén a legnagyobb lesz a bevétel! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+4   5                                            1100
+2   3   500                                      1 2
+4   4   600
+4   5   500
+1   5   1000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                             1. oldal
+

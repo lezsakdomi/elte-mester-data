@@ -1,0 +1,45 @@
+
+
+                                      Csapatépítés
+Egy vállalkozás M darab, több napos alkalommal szeretné csapatépítő tréningre vinni a dolgozóit.
+Pályázatot írt ki szállásadóknak, aminek hatására N vállalkozás jelentkezett, mindegyik megadta,
+hogy mely időintervallumban van szabad szállás lehetősége.
+Írj programot, amely minimális számút kiválaszt közülük úgy, hogy maximális számú tréningnapra
+legyen szállás!
+Bemenet
+A standard bemenet első sorában a tréningek száma (1≤M≤1000) és az ajánlatok száma
+van (1≤N≤1000 000). A következő M sorban az egyes csapatépítő tréning időszakok vannak
+(1≤Kezdi≤Végi≤100 000) növekvő sorrendben. Az ezt követő N sorban pedig az egyes vál-
+lalkozások időszak ajánlásai szerepelnek (1≤Ki≤Vi≤100 000)
+Kimenet
+A standard kimenet első sorába a tréningnapok maximális számát kell írni, amire lehetsé-
+ges szállás! A második sorba a vállalkozások minimális S számát kell kiírni, amivel a maximális
+számú tréningnapra lehet szállás! A harmadik sorba ezen S vállalkozás sorszáma kerüljön!
+Példa
+bemenet                                         kimenet
+4 3                                             21
+10 15                                           2
+20 25                                           2 3
+30 35
+40 45
+18 28
+10 22
+19 42
+Időpontok:
+
+
+Ajánlatok:
+
+
+
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                            1. oldal
+

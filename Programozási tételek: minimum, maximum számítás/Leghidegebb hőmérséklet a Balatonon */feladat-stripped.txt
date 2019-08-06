@@ -1,0 +1,30 @@
+
+
+                    Leghidegebb hőmérséklet a Balatonon
+N nap során minden délben megmértük a Balaton hőmérsékletét Siófoknál.
+Írj programot, amely megadja a leghidegebb nap hőmérsékletét!
+Bemenet
+A standard bemenet első sorában a napok száma van (1N100). A következő N sor
+mindegyike egy-egy egész számot tartalmaz, az egyes napok hőmérsékletét (0≤H≤50).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a leghidegebb nap hőmér-
+sékletét!
+Példa
+Bemenet                                         Kimenet
+6                                               18
+18
+21
+21
+22
+20
+23
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

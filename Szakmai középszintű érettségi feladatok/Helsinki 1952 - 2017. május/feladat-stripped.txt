@@ -1,0 +1,77 @@
+
+
+                                        Helsinki 1952
+Az 1952-ben Helsinkiben rendezett nyári olimpián nagyon szépen szerepeltek a magyar színekben
+induló olimpikonok. Ebben a feladatban az általuk elért helyezésekkel kapcsolatos számításokat
+kell elvégezned. Az olimpián az országokat az elért eredményeik alapján rangsorolják. Az 1−6. he-
+lyezéseket olimpiai pontokra váltják az alábbi táblázat alapján, és ezt összegzik. Az első három
+helyezés egyben azt is jelentette, hogy arany-, ezüst- vagy bronzérmet szerzett a sportoló vagy a
+csapat. A helyezések között nincsenek holtversenyek.
+                                     Helyezés Olimpiai pont
+                                        1.             7
+                                        2.             5
+                                        3.             4
+                                        4.             3
+                                        5.             2
+                                        6.             1
+Írj programot, amely
+   1. meghatározza, hogy hány pontszerző helyezést értek el a magyar olimpikonok,
+   2. statisztikát készít a megszerzett érmek számáról,
+   3. megadja az elért olimpiai pontok összegét,
+   4. meghatározza, hogy az úszás vagy a torna sportágban szereztek több érmet a magyar spor-
+      tolók,
+   5. megadja, hogy melyik helyezést érte el a legnagyobb létszámú csapat!
+Bemenet
+A standard bemenet első sorában a magyar olimpikonok által az 1952-es nyári olimpián elért
+helyezések száma (1≤N≤200) található, a következő N sorban pedig maguk a helyezések. Egy-
+egy sor szóközökkel elválasztva tartalmazza az elért helyezést (1≤helyezés≤20), a helyezést elérő
+csapat létszámát (1≤létszám≤20), a sportág nevét és a versenyszám nevét. A helyezés és létszám
+egész számok, a sportág és versenyszám nevek pedig legfeljebb 100 hosszú, csak alfanumerikus
+karaktereket és _-t tartalmazó karakterláncok.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Egyetlen számot kell kiírni, a pontszerző helyezések számát.
+2. részfeladat: Három számot kell írni egy sorba, rendre az arany, ezüst és bronzérmek számát.
+3. részfeladat: Egyetlen számot kell kiírni, az elért olimpiai pontok összegét.
+4. részfeladat: Az "uszas" vagy a "torna" sportág nevet kell kiírni, ha valamelyikben több
+érem született, egyenlőség esetén pedig "egyenlo"-t.
+5. részfeladat: A legnagyobb csapat által elért helyezést, a csapat létszámát, a sportág és a verseny-
+szám nevét kell kiírni egy sorba, szóközökkel elválasztva. Ha több legnagyobb csapat is volt, akkor
+mindegyiket ki kell írni külön sorokba a fenti formában, abban a sorrendben, ahogy a bemenetben
+szerepeltek.
+
+
+
+                                               1. oldal
+Informatikai alapismeretek – középszint                            2017. május 17.
+
+
+Példa
+ Bemenet                                       Kimenet
+ 4                                             #
+ 1   1   atletika kalapacsvetes                3
+ 1   1   uszas 400m_gyorsuszas                 #
+ 3   4   atletika 4x100m_valto                 2 0 1
+ 8   1   okolvivas pehelysuly                  #
+                                               18
+                                               #
+                                               uszas
+                                               #
+                                               3 4 atletika 4x100m_valto
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

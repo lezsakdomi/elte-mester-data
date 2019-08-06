@@ -1,0 +1,34 @@
+
+
+                                     Sűrű részsorozat
+Adott egy N pozitív egész számot tartalmazó S sorozat és egy M egész szám.
+Kiválasztandó az S sorozat pozícióknak egy olyan 1≤i1<i2<…<ik≤N sorozata, amelyre teljesül
+az alábbi két feltétel:
+   1. Bármely [a,a+M-1] zárt intervallumban van legalább egy kiválasztott pozíció.
+   2. Bármely olyan 1≤j1<j2<…<ju≤N sorozatra, amelyre teljesül az 1. feltétel, akkor vagy-
+      Max{S[i1],…,S[ik]} < Max{S[j1],…,S[ju]}, vagy Max{S[i1],…,S[ik]} =
+      Max{S[j1],…,S[ju]} és k≤u.
+Készíts programot, amely kiszámít egy olyan index-sorozatot, amelyre teljesül a három feltétel!
+Bemenet
+A standard bemenet első sorában az S számsorozat elemeinek száma (1≤N≤100 000) és
+az M érték (1≤M≤N) van. A második sor N pozitív egész számot tartalmaz, az S sorozat elemeit,
+mindegyik szám értéke legfeljebb 2 000 000 000.
+Kimenet
+A standard kimenet első sorába a kiválasztott pozíciók K számát kell írni! A második sor-
+ba kell kiírni a kiválasztott pozíciókat, növekvő sorrendben! Több megoldás esetén bármelyik
+megadható.
+Példa
+bemenet                                          kimenet
+8 3                                              3
+1 3 5 2 1 5 2 8                                  1 4 7
+
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában M≤100.
+
+
+
+
+                                             1. oldal                     2017.02.25. 10:00-16:00
+

@@ -1,0 +1,43 @@
+
+
+                                              Ábra
+A képernyőre egy x- és y-tengelyre is szimmetrikus fekete-fehér ábrát rajzoltunk, és a képernyő
+tartalmát egy állományba mentettünk. Az állomány azonban sajnos megsérült, és az ábrán bizo-
+nyos pontok fehérből feketére, mások feketéből fehérre váltottak.
+Írj programot, amely a sérült állományban szereplő ábrát kijavítva adja meg! A megoldás során
+vedd figyelembe, hogy nem biztos, hogy az ábra a teljes képet kitölti, azaz első lépésként meg kell
+keresni a legkisebb és a legnagyobb x-, illetve y-koordinátájú fehér pontot!
+Bemenet
+A standard bemenet első sorában a kép sorainak, illetve oszlopainak száma van (1≤N,
+M≤100). A következő N sor mindegyikében M számjegy van közvetlenül egymás mellett, 1-es a
+fehér, 0-s a fekete pontok esetén.
+Kimenet
+A standard kimenetre a javított képet kell megadni a bemenethez hasonló módon, azaz N
+sort kell kiírni, és mindegyik sorba M karaktert közvetlenül egymás mellé! Ha egy pont változatlan
+a sérült és javított képen, akkor az annak a pontnak megfelelő 1-es vagy 0-s értéket kell kiírni! Ha
+egy pont fekete, de nagy valószínűséggel fehérnek kellene lennie, akkor írjunk p betűt! Ha fehér,
+de feketének kellene lennie, akkor írjunk z betűt! Ha pedig nem lehet eldönteni, hogy fehér vagy
+fekete színű legyen-e, akkor k betű szerepeljen a pont helyén!
+Példa1
+Bemenet                                          Kimenet
+8 6
+100001                                           100001
+010010                                           010010
+001000                                           00kk00
+001010                                           00kkz0
+000010                                           0p0010
+100001                                           100001
+000000                                           000000
+000000                                           000000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában N,M≤40
+
+
+
+
+1   Egy X lett volna a 6*6-os ábrán
+
+                                              1. oldal
+

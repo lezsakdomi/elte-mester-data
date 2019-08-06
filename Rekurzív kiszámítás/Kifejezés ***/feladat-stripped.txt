@@ -1,0 +1,38 @@
+
+
+                                           Kifejezés
+Egy aritmetikai kifejezés összeadás, kivonás jeleket, zárójeleket és legfeljebb 26-féle változót tar-
+talmazhat, amelyeket az angol ábécé kisbetűivel jelölünk. Mindegyik változó ugyanabból az egész
+számokat tartalmazó [A,B] intervallumból veheti fel az értékeit. A kifejezésekre az alábbi szabá-
+lyok vonatkoznak:
+          Az angol ábécé minden kisbetűje szabályos kifejezés.
+          Ha K szabályos kifejezés, akkor (K), (-K) és (+K) is szabályos kifejezés.
+          Ha A és B szabályos kifejezés, akkor A+B és A-B is szabályos kifejezés.
+vagy másképp fogalmazva, nem lehet műveleti jel vagy csukó zárójel előtt másik műveleti jel, va-
+lamint nem lehet egymás után két betű.
+Készíts programot, amely megadja, hogy mi a kifejezés maximális értéke, illetve ehhez az egyes
+változók milyen értéke tartozik!
+Bemenet
+A standard bemenet első sorában egy legalább 1, legfeljebb 1000 karakterből álló helyes ki-
+fejezés szerepel. A második sorban az egyes változók lehetséges legkisebb és legnagyobb értéke
+van (1≤A≤B≤100).
+Kimenet
+A standard kimenet első sorába a kifejezés lehető legnagyobb értékét kell kiírni! A követ-
+kező sorokba a kifejezésben található egy-egy változó neve és a maximális értékű kifejezéshez tar-
+tozó értéke kerüljön tetszőleges sorrendben! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                            Kimenet
+a-b-(b-(a-d))                                      1
+1 2                                                a 2
+                                                   b 1
+                                                   d 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 10%-ában a kifejezésben nincs zárójel.
+
+
+
+
+                                              1. oldal
+

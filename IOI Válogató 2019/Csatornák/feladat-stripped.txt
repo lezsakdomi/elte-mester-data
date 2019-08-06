@@ -1,0 +1,38 @@
+
+
+                                         Csatornák
+Egy város csomópontjait összefüggő csatornahálózat köti össze. Ismerjük az egyes csatornák szé-
+lességét. Egy vállalkozás A csomópontból B csomópontba szeretne hajóval árut szállítani, egyet-
+len csatorna tetszőleges szélességűre kiszélesítésére van pénzük.
+Készíts programot, amely megadja legszélesebb hajó szélességét, amely alkalmas a feladatra!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (4≤N≤10 000), a csatornák
+száma (2≤M≤500 000), valamint az A és B csomópont sorszáma van (1≤A≠B≤N). Tudjuk, hogy
+A és B között nincs közvetlen csatorna. A további M sorban egy-egy csatorna két végpontjának
+sorszáma (1≤Xi≠Yi≤N) és szélessége (1≤Szi≤10 000) van.
+Kimenet
+A standard kimenet első sorába a legszélesebb hajó szélességét kell írni, amellyel a szállítás
+A-ból B-be megoldható egyetlen csatorna tetszőleges kiszélesítésével!
+Példa
+bemenet                                          kimenet
+5   7   1 5                                      6
+1   3   2
+1   2   5                                        Megjegyzés:
+3   2   7                                        Az (1,2) vagy az (1,3)
+2   4   4                                        csatorna kiszélesítése
+3   4   9                                        eredményezi a megoldást.
+5   4   6
+5   3   5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás
+A tesztek 30%-ában N≤100.
+A tesztek további 20%-ában N≤1000 és M≤5000.
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,31 @@
+
+
+                                          Kannák
+Egy gazdának három különböző űrtartalmú tejeskannája van, amelyekbe teli állapotban A, B és C
+liter tej fér. Van továbbá egy negyedik kannája, ennek az űrtartalmát nem ismeri, csak azt tudja,
+hogy ez a legnagyobb kannája. A gazda észrevette, hogy a kannák közötti öntögetésekkel bizo-
+nyos mennyiségű tejet ki tud mérni. Az öntögetések során csak azt kell betartania, hogy tudja,
+hogy mennyi tej marad abban a kannában, amelyikből tölt és mennyi lesz abban, amelyikbe tölt.
+Szeretné megtudni, hogy melyek azok a mennyiségek, amelyeket nem tud így kimérni.
+Írj programot, amely kiszámítja, hogy öntögetéssel milyen mennyiségű tejet nem tud a gazda elkü-
+löníteni a negyedik kannában! Kezdetben a legnagyobb, ismert űrtartalmú kanna tele van, a többi
+pedig üres.
+Bemenet
+A standard bemenet egyetlen sorában három pozitív egész szám van, a három kanna űrtar-
+talma (1≤A,B,C≤39).
+Kimenet
+A standard kimenet egyetlen sorába azokat az értékeket kell kiírni, amelyek a kezdetben
+meglévő tej mennyiségnél kisebbek, de nem állíthatók elő kannák közötti öntögetéssel! Ha min-
+den lehetséges érték előállítható, akkor az egyetlen 0 számot kell kiírni!
+Példa
+Bemenet                       Kimenet
+13 11 5                       4 9
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

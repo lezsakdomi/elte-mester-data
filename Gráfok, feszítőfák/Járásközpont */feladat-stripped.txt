@@ -1,0 +1,55 @@
+
+
+                                         Járásközpont
+Egy járásban járásközpontot szeretnének kialakítani. Ismerjük a járás minden települése lakosai
+számát, valamint azt, hogy egyes településekről a szomszédos településekre hány perc alatt lehet
+eljutni. Azt a települést szeretnénk kijelölni járásközpontnak, ahova a lakosonkénti átlagos eljutási
+idő a lehető legkisebb.
+Írj programot, amely megadja a járás leendő központját!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤500) és az utak száma
+(1≤M≤25 000) van. A következő N sor az egyes települések lakosai számát tartalmazza (legfel-
+jebb 1 000 000). A következő M sor mindegyike 3 egész számot (1≤A≠B≤N,1≤C≤2000) tar-
+talmaz, amelynek jelentése: az A településről a B településre C perc alatt lehet eljutni, és fordítva, a
+B településről az A településre C perc alatt lehet eljutni. Két város között több közvetlen út is le-
+het, továbbá bármely városból el lehet jutni bármely másik városba.
+Kimenet
+A standard kimenet egyetlen sorába a járásközpont sorszámát kell kiírni! Ha több megol-
+dás van, bármelyik kiírható.
+Példa
+Bemenet                                               Kimenet
+10 11                                                 6
+100
+100
+50                                                                 100
+50
+                                                                       1
+50
+100                                                                                             3        50
+200                                                                             200
+100                                                                                                 10
+50                                                               100
+50                                                         100             10             100
+                                                  7               6                   2         4        50
+1 2 200
+3 4 10                                          200                150            100               10
+4 5 10
+4 2 100                                                   160
+                                                                  8                             5        50
+2 6 10
+                                                                 100        60            60
+6 7 100                                                    30
+6 8 150
+8 9 30                                                9                           10
+10 8 60                                           50
+9 6 160
+                                                                                  50
+10 5 60
+Korlátok
+Időlimit: 0.8 mp.
+Memórialimit: 32 MiB
+
+
+
+                                                1. oldal
+

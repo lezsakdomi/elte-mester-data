@@ -1,0 +1,37 @@
+
+
+                                  Körben levő pontok
+Adott egy G=(V, E) irányított gráf.
+Készíts programot, amely kiszámítja a gráf azon pontjainak halmazát, amelyek benne vannak leg-
+alább egy körben!
+Bemenet
+A standard bemenet első sora a gráf pontjainak számát (1N10 000) és a gráf éleinek
+számát (1M200 000) tartalmazza. A további M sor mindegyike egy u v számpárt tartalmaz, a
+gráf egy uv élét (1u,vN).
+Kimenet
+A standard kimenet első sora a feladat megoldását adó C halmaz elemeinek K számát tar-
+talmazza! A második sor pontosan K számot tartalmazzon, a feladat megoldását adó C halmaz
+elemeit egy-egy szóközzel elválasztva (tetszőleges sorrendben)!
+Példa
+Bemenet                                        Kimenet
+7   10                                         5                         1        2        3
+1   2                                          1 2 7 6 4
+2   3
+2   1
+                                                                                  4        5
+3   4
+3   5
+4   6                                                                             6        7
+6   4
+5   7
+7   6
+4   7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

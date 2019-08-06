@@ -1,0 +1,35 @@
+
+
+                           Ütemezés azonos futási idővel
+Egy 1 processzoros számítógép memóriájában programok vannak, mindegyik K időegységig
+használná a processzort. Az egyes programok a processzor idejéből 1-1 időegységet kapnak a
+memóriába kerülésük sorrendjében, az utolsónak bekerült után újra az első jön. Ha a program
+futási ideje lejárt, akkor kikerül a memóriából. Közben újabb programok kerülhetnek be a me-
+móriába, az i. időpontban memóriába került program a futásra várók közül az utolsó helyre kerül!
+Készíts programot, amely megadja, hogy a processzor időegységeit milyen sorrendben használják
+az egyes programok!
+Bemenet
+A standard bemenet első sorában a programok száma (1≤N≤50 000) és az egyes progra-
+mok futási ideje (1≤F≤100) van. A következő sorban az egyes programok kezdési ideje szerepel
+(1≤Kezdi≤1 000 000), növekvő sorrendben.
+Kimenet
+A standard kimenet első sor i. száma az i. program befejeződési ideje legyen!
+Példa
+Bemenet                                         Kimenet
+4 3                                             6 10 11 13
+2 3 3 7
+
+Magyarázat
+A processzor idejét a programok a következőképpen használják:
+  1      2      3      4     5      6      7       8     9      10     11     12     13     14
+        1      1      2     3      1      2       3     4      2      3      4      4      
+
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,25 @@
+
+
+                                       Ritka szám
+Ritka számoknak nevezzük azokat a természetes számokat, amelyek kettes számrendszerbeli alak-
+jában sehol sincs egymás mellett két szomszédos 1-es számjegy.
+Készíts programot, amely megadja az N. ritka számot!
+Bemenet
+A standard bemenet első sorában N értéke van (1≤N≤100 000).
+Kimenet
+A standard kimenet egyetlen sorába az N. ritka számot kell kiírni!
+Példa
+bemenet                                        kimenet
+3                                              2
+bemenet                                        kimenet
+20                                             41
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                           1. oldal
+

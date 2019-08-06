@@ -1,0 +1,72 @@
+
+
+                                             Helyjegy
+Egy autóbuszokat üzemeltető társaság távolsági járataira az utasok jobb kiszolgálása érdekében csak
+akkor ad el jegyet, ha ülőhelyet is tud biztosítani. Minden jegyre rányomtatja, hogy az adott vonalon
+mettől meddig érvényes és melyik ülést lehet elfoglalni birtokában.
+
+Készíts programot, amely megadja
+   1.   a legutolsó jegyvásárló ülésének sorszámát és az általa beutazott távolságot;
+   2.   kik utazták végig a teljes utat;
+   3.   a jegyekből mennyi bevétele származott a társaságnak;
+   4.   a busz végállomást megelőző utolsó megállásnál hányan szálltak fel és le;
+   5.   hány helyen állt meg a busz a kiinduló állomás és a célállomás között;
+   6.   az út egy pontján (a kiindulási állomástól mért távolság) melyik ülést melyik utas foglalja el!
+Bemenet
+Az standard bemenet pontosan egy út jegyvásárlásait tartalmazza. Az első sorban az eladott
+jegyek száma (1≤N≤500), a vonal hossza (1≤Hossz≤5000), és minden megkezdett 10 km
+után fizetendő összeg (1≤Összeg≤100), található. A második sorban az út egy pontja, vagyis a
+kiindulástól mért távolság található (1≤Táv≤5000). A további sorok – a vásárlás sorrendjében –
+egy-egy jegy három adatát írják le: az utas melyik ülést foglalhatja el (1≤Ülés≤48), hol száll fel
+és hol száll le (0≤Fel<Le≤5000). (A fel- és a leszállás helyét a járat kezdő állomásától mért
+távolsággal adják meg.) A jegy árának meghatározásakor az értéket öttel osztható számra kell kere-
+kíteni. (1, 2, 6 és 7 esetén lefelé, 3, 4, 8 és 9 esetén pedig felfelé kell kerekíteni.)
+
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A legutolsó jegyvásárló ülésének sorszámát és az általa beutazott távolságot kell írni!
+2. részfeladat: A teljes utat végig utazó utasok számát, majd a sorszámukat kell írni növekvő sor-
+rendben!
+3. részfeladat: A társaság bevételét kell írni!
+4. részfeladat: Azt kell kiírni, hogy a végállomást megelőző utolsó megállónál hányan szálltak fel
+és le!
+5. részfeladat: A kiinduló állomás és a célállomás közötti megállások számát kell írni!
+6. részfeladat: 48 számot kell kiírni, az i-edik szám a TÁV távolságban az i-edik ülést elfoglaló utas
+sorszáma legyen, ha nem ül senki azon az ülésen, akkor 0-t kell írni! Ha az adott helyen éppen
+megálló lett volna, akkor a felszálló utasokat vedd figyelembe, a leszállókat pedig hagyd figyelmen
+kívül!
+
+Példa
+Bemenet                                              Kimenet
+4 140 52                                             #
+3                                                    5 15
+
+
+                                                  1. oldal
+Emelt szintű informatika érettségi                            2010. május 11.
+
+5   56 88                               #
+6   0 20                                1 3
+7   0 140                               #
+5   18 33                               1150
+                                        #
+                                        0 1
+                                        #
+                                        5
+                                        #
+                                        0 0 0 0 0 2 3 0 0 …
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

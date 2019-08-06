@@ -1,0 +1,36 @@
+
+
+                                         Ferde hajítás
+A ferde hajítás távolságát az alábbi képlettel számoljuk ki:
+                                            𝑣02 ⋅ 𝑠𝑖𝑛(2𝛼)
+                                         𝑠=
+                                                   𝑔
+, ahol s a hajítás távolsága méterben, 𝑣0 az elhajított test kezdősebességének nagysága m/s-ban, α
+a kezdősebesség irányvektorának a vízszintessel bezárt szöge, g pedig a gravitációs gyorsulás
+(melynek közeltő értéke g = 9,81 m/s2 a Földön).
+Készíts programot, amely a képlet alapján meghatározza, hogy egy adott kezdősebességgel és az
+adott szögben elhajított test milyen messzire repül!
+Bemenet
+A standard bemenet első sora tartalmazza a hajítások számát (1≤N≤104). Ezután N sor-
+ban egy-egy hajítás adatai következnek, a kezdősebesség nagysága (0≤v0≤1000) és a kezdőse-
+besség irányvektorának a vízszintessel bezárt szöge (0≤α≤90).
+Kimenet
+A standard kimenet i-edik sorába az i-edik hajítás távolságát írjuk (a távolságokat kerekít-
+sük két tizedesjegyre)!
+Példa
+Bemenet                                            Kimenet
+5                                                  995.76
+169 80                                             26.96
+23 15                                              0
+0 90                                               0
+50 0                                               35.58
+100 89
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

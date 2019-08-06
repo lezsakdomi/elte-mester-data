@@ -1,0 +1,29 @@
+
+
+                       Települések átlag szerinti sorrendje
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely megadja a településeket átlaghőmérséklet szerint csökkenő sorrendben!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába az N település sorszámát kell kiírni, átlaghőmérséklet sze-
+rint csökkenő sorrendben! Az azonos átlaghőmérsékletűek sorszám szerint növekvő sorrendben
+legyenek!
+Példa
+Bemenet                                          Kimenet
+3 5                                              3 2 1
+10 15 12 10 10
+11 11 11 11 20
+12 16 16 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,33 @@
+
+
+                    Sikertelen napokon fogott halak száma
+Egy ember N napon horgászott, tudjuk, hogy melyik nap hány halat fogott.
+Készíts programot, amely megadja, hogy hány halat fogott összesen a sikertelen napokon
+(sikertelen nap, mikor K halnál kevesebbet fogott)!
+Bemenet
+A standard bemenet első sorában a napok száma (1N100), a másodikban egy szám
+(1K10) van. A következő sorok mindegyike egy-egy egész számot tartalmaz, az egyes napokon
+fogott halak számát (0≤H≤20).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a sikertelen napokon
+kifogott halak számát!
+Példa
+Bemenet                                        Kimenet
+6                                              4
+5
+20
+1
+0
+3
+10
+6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,37 @@
+
+
+                                   Őrzött falak száma
+A Kínai Nagy Falon N őrhelyet létesítettek. Közülük azonban nincs mindenhol őrség. Őrzöttnek
+nevezzük azt a két szomszédos őrhely közötti falat, amelynek legalább az egyik végén van őrség.
+Készíts programot, amely megadja az őrzött falak számát!
+Bemenet
+A standard bemenet első sorában az őrhelyek száma (1N100) van. A következő N sor
+az őrségek leírását tartalmazza, közülük az i-edik 0, ha az i-edik őrhelyen nincs őrség; 1 pedig ak-
+kor, ha van.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az őrzött falak számát!
+Példa
+Bemenet                                           Kimenet
+12                                                9
+0
+0
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

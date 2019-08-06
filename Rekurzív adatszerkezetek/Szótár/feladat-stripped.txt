@@ -1,0 +1,42 @@
+
+
+                                            Szótár
+Adott egy N szót tartalmazó szótár. A szótárban a szavak nem rendezett sorrendben vannak, ezért
+csak naiv módszerrel lehet benne keresni. Ez azt jelenti, hogy a keresett szót sorrendben minden
+szótári szóval össze kell hasonlítani, amíg vagy megtaláljuk a keresett szót, vagy végig értünk a
+szótáron. Egy szótári szóval történő összehasonlítás karakterenként balról jobbra halad, amíg egye-
+zést talál. Ha a szótári szó és a keresett szó leghosszabb közös kezdőszeletének hossza h, akkor
+h+1 összehasonlítást tesz. (Ha a két szó egyenlő, akkor is h+1, mert ellenőrzi, hogy vége van.)
+Készíts programot, amely kiszámítja minden keresendő szóra, hogy a keresése hány összehasonlí-
+tást tesz!
+Bemenet
+A standard bemenet első sorában a szótári szavak száma (1≤N≤30 000) van. A következő
+N sor mindegyike egy-egy szótári szót tartalmaz. A következő sor a keresendő szavak számát
+(1≤K≤30 000) tartalmazza. A következő K sor mindegyike egy-egy keresendő szót tartalmaz. Mi-
+den szó legfeljebb 30 karaktert tartalmaz. A karakterek az angol ábécé kisbetűi lehetnek. A szótári
+szavak különbözőek.
+Kimenet
+A standard kimenet pontosan K sort tartalmazzon! Az i-edik sorba az i-edik keresendő szó
+keresése során végrehajtott összehasonlítások számát kell írni!
+Példa
+bemenet                                          kimenet
+5                                                5
+robot                                            11
+hobo                                             7
+hobbit
+robi
+botor
+3
+semmi
+robi
+bori
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 128 MiB
+
+
+
+
+                                             1. oldal
+

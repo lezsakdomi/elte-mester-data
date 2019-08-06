@@ -1,0 +1,40 @@
+
+
+                                     Kerékpárverseny
+Egy útvonal Budapestről indul és N további várost érint. Ismerjük minden szomszédos várospár
+távolságát. Egy kerékpárversenyt szeretnénk szervezni, amelyet két tetszőleges város között ren-
+dezünk, de pontosan K kilométeres verseny legyen! A kerékpárosok biztonsága érdekében azokat
+az útszakaszokat le kell zárni, ahol a verseny folyik – a cél, hogy a lezárt útszakaszok száma mini-
+mális legyen.
+Készíts programot, amely megadja, hogy mely városból induljon a verseny és hány útszakaszt kell
+lezárni!
+Bemenet
+A standard bemenet első sorában a további városok száma (1≤N≤100 000) és a kerék-
+párverseny hossza (1≤K≤100 000) van. A további N sor mindegyikében egy-egy város előző
+várostól vett távolsága van (1≤Ti≤1000).
+Kimenet
+A standard kimenet első sorába a lezárandó útszakaszok U minimális számát kell írni,
+amelyek összhossza K. A második sorba pedig az első város sorszámát kell írni (1≤A≤N), ahon-
+nan a verseny kezdődik! Több megoldás esetén bármelyik kiírható. Ha nincs megoldás, akkor
+mindkét sorban 0 szerepeljen!
+Példa
+Bemenet                                           Kimenet
+8 50                                              3
+40                                                2
+12
+28
+10
+10
+10
+10
+10
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

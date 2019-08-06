@@ -1,0 +1,44 @@
+
+
+                                                DNS
+A biológiai szekvenciák, különösen a DNS szekvenciák vizsgálata nagyon fontos kutatási terület.
+Minden DNS szekvencia leírható olyan karaktersorozattal, amely csak az A, C, G és T karaktereket
+tartalmazhatja. Két DNS szekvencia hasonlóságára különböző mértékeket használnak. Az egyik
+leggyakrabban alkalmazott mérték a következőt jelenti. Adott S1 és S2 szekvenciához keresnek
+olyan S szekvenciát, hogy mind S1, mind S2 előállítható S-ből karakterek beszúrásával, illetve
+átírásával. Mivel biológiailag nagyobb hasonlóságot jelent egy karakter átírása, mint egy beszúrás,
+ezért az átírást 1, a beszúrást 2 súllyal számítják. Tehát a hasonlóság vizsgálatánál olyan S szek-
+venciát keresnek, amelyből a lehető legkisebb összsúllyal előállítható S1 és S2. Ezt az értéket a
+két szekvencia hasonlósági értékének nevezik.
+Például az S1=ATGCGTTT és az S2=ATCCGCGTC esetén az S=ATCCGGTC szekvenciából S1
+3 átírással, az S2 pedig egy beszúrással kapható, tehát a hasonlósági érték 5, mert nincs ennél
+jobb előállítás.
+Készíts programot, amely kiszámítja két DNS szekvencia hasonlósági értékét, és meg is ad egy
+optimális előállítást!
+Bemenet
+A standard bemenet első sorában az S1, a második sorában az S2 DNS szekvencia talál-
+ható. Mindkettő legfeljebb 3 000 karaktert tartalmaz.
+Kimenet
+A standard kimenet első sorába azt a K egész számot kell írni, ami az S1 és S2 hasonló-
+sági értéke! A második sor tartalmazza azt az S DNS szekvenciát, amelyből S1 és S2 előállítható
+pontosan K összsúlyú módosítással! A harmadik sorba egy olyan karaktersorozatot kell írni, amely
+azt adja meg, hogy az S1 hogyan állítható elő S-ből, a negyedikbe pedig olyat, amely az S2 előál-
+lítását adja! Az előállítások leírásában a _ aláhúzás jel jelölje a beszúrást, az X karakter pedig az át-
+írást. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                             Kimenet
+ATGCGTTT                                            5
+ATCCGCGTC                                           ATCCGGTC
+                                                    ATXCGXTX
+                                                    ATCCG_GTC
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 128 MiB
+Pontozás: A tesztek 40%-ában a DNS láncok hossza kisebb mint 300. Helyes első sorral a
+pontok 40%-a szerezhető meg.
+
+
+
+
+                                                1. oldal
+

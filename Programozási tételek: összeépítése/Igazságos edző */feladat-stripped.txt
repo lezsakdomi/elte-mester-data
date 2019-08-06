@@ -1,0 +1,38 @@
+
+
+                                        Igazságos edző
+A négyes bobban minden sportolónak más a feladata: van kormányos, második, harmadik, indító.
+A csapathoz tartozik még egy tartalék is. Egy igazságos edző úgy osztja be a csapatot, hogy min-
+denki nagyjából ugyanannyiszor szerepeljen minden poszton, azaz a versenyzők azonos poszton
+való indulásainak száma legfeljebb eggyel térjen el.
+Írj programot, ami a versenyzők szezonbeli beosztása alapján eldönti, hogy igazságos volt-e eddig
+az edző, majd megadja posztonként azokat, akik a következő versenyen azt adott poszton indít-
+hatók, s emiatt az igazságosság elve nem sérül!
+Bemenet
+A standard bemenet első sorában a fordulók száma van (1F10), majd az egyes fordu-
+lók beosztása: kormányos, második, harmadik, indító, tartalék sorrendben (ez F*5 név).
+Kimenet
+A standard kimenet első sorába írja ki, hogy eddig igazságos volt-e az edző
+(IGAZSAGOS/NEM IGAZSAGOS)! Ha az edző igazságos volt, akkor ezután írja ki (az első
+fordulóban lévő sorrendjük szerint), hogy az igazságosság miatt ki lehet a következő versenyen
+kormányos, második, harmadik, illetve indító!
+Példa
+Bemenet                                         Kimenet
+7
+1.   forduló:       A   B   C   D   E           IGAZSÁGOS
+2.   forduló:       B   C   D   E   A           B C D
+3.   forduló:       C   D   E   A   B           B C D
+4.   forduló:       D   E   A   B   C           A C E
+5.   forduló:       E   A   B   C   D           A D E
+6.   forduló:       A   E   B   C   D
+7.   forduló:       E   A   D   B   C
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤5
+
+
+
+
+                                            1. oldal
+

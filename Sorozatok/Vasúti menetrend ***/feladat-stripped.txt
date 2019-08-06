@@ -1,0 +1,36 @@
+
+
+                                    Vasúti menetrend
+Egy vasútvonalon N állomás található. Ismerjük minden állomások közötti szakaszon a vonatok
+menetidejét, valamint a két végállomásról (első és utolsó állomás) induló vonatok indulási idejét.
+Készíts programot, amely megadja azon szomszédos állomáspárokat, amelyek között nem for-
+dulhat elő, hogy két szembe jövő vonat találkozik, azaz ott elég lenne egy vágányt használni!
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤N≤100 000), az első állomás-
+ról induló vonatok száma (1≤E≤100) és az utolsó állomásról induló vonatok száma (1≤U≤100)
+van. A következő N-1 sorban a szomszédos állomások közötti menetidők szerepelnek az első
+állomástól kezdődően (1≤Mi≤1000). Az utolsó előtti sorban az első állomásról induló vonatok
+indulási ideje szerepel (1≤Elsői≤100 000, Elsői<Elsői+1), az utolsóban pedig az utolsó
+állomásról induló vonatok indulási ideje (1≤Utolsói≤100 000, Utolsói<Utolsói+1).
+Kimenet
+A standard kimenet első sorába azon szomszédos állomáspárok S számát kell kiírni, ame-
+lyek között nem találkozhat két szembe jövő vonat! A következő S sorba az ilyen (i,i+1) állomás
+sorszám párok kerüljenek, sorszám szerint növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+5 2 3                                            2
+5                                                2 3
+10                                               4 5
+10
+5
+10 70
+15 30 45
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

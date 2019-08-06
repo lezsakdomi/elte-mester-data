@@ -1,0 +1,48 @@
+
+
+                      Adott generációban kiadott konzolok
+Játékkonzolok léteznek már az 1970-es évek óta, és napjainkban is sok gyártó versenyzik azért,
+hogy minél több otthonban legyen elérhető az általa gyártott konzol. Jelenleg a 8. generációs kon-
+zolok megjelenésének korát éljük. Készítettünk egy rövid feljegyzést az általunk fontosnak vélt
+gyártókról. A feljegyzésben minden gyártó esetén szerepel a neve (nem üres szöveg), valamint a
+gyártó által az egyes generációkban kiadott konzolok száma.
+Írj programot, amely megadja egy játékkonzolról, amelyről csak annyit tudunk, hogy a 7. generá-
+cióban jelent meg, hogy
+    Kik lehetnek a gyártói?
+    Add meg a lehetséges gyártók számát, majd sorold föl őket!
+Bemenet
+A standard bemenet 3 részből áll. Az első néhány sor a gyártók felsorolását tartalmazza: el-
+ső sora a gyártók száma (1≤N≤100), majd soronként a gyártók neve. A második rész első sorá-
+ban a feljegyzések száma (1≤M≤50); alatta az egyes feljegyzések következnek. A feljegyzést egy
+sor írja le, amelyben 3 szám található (egy-egy szóközzel elválasztva): a konzolgyártó nevének első
+bemeneti részbeli sorszáma (1≤Gy≤N), majd a generáció (1≤G≤8) és végül a konzolok száma
+(1≤K≤100). Ugyanahhoz a gyártóhoz és ugyanazon generációhoz csak egy feljegyzés tartozik. A
+bemenet 3. része egyetlen sort tartalmaz: két gyártóindexet (1≤Gy1,Gy2≤N).
+Kimenet
+A standard kimenet első sorába azon gyártók darabszámát és nevét kell kiírni, amelyek a 7.
+generációban jelentettek meg játékkonzolt! Ha nem találsz erre a generációra vonatkozó feljegy-
+zést, akkor ezt írd ki: „0 NINCS”
+Példa
+Bemenet                                          Kimenet
+5                                                1 Microsoft
+Nintendo
+Sega
+Sony
+Microsoft
+Nvidia
+6
+1 1 5
+1 3 4
+2 3 4
+4 5 4
+1 4 5
+4 7 1
+1 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+                                             1. oldal
+

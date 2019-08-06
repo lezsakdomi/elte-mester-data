@@ -1,0 +1,44 @@
+
+
+                                   Terek közötti utak
+Egy városban különböző terek vannak. Egyesek között már vannak utak, mások között pedig
+még nincsenek utak, építeni kellene közéjük. Vannak a terek között bizonyos területek, amelyeket
+az önkormányzat útnak jelölt ki. Amikor elkezdődött az útépítés, rájöttek, hogy nem lesz elég
+pénz az összes út felépítésére, a meglevők „visszaalakítása” pedig szintén borzasztóan költséges.
+Írj programot, amely meghatározza, hogy melyik utakat építse fel az önkormányzat, hogy a lehető
+legkevesebbe kerüljön, és úgy, hogy minden térről el lehessen jutni minden térre.
+Bemenet
+A standard bemenet első sorában a terek száma (0<N20 000), az összes lehetséges út
+száma (0<M500 000), valamint a már felépített utak száma (0KM) van. A következő M sor
+mindegyikében három szám található (1I≠JM,0<S1000), ahol az út az I. térről a J. tér-
+re vezet és S forintba kerül a megépítése. Az utolsó sorban K db egész szám van, amelyek megad-
+ják, hogy a megadás sorrendjében hányadik út van már felépítve.
+Kimenet
+A standard kimenet első sorába a művelet összköltségét (a már megépített utak költsége
+nélkül), a második sorába pedig a megépítendő utak U számát kell írni.! A harmadik sorba a meg-
+építendő U darab út sorszámát kell írni!
+Példa
+Bemenet                                         Kimenet
+6   9   2                                       5
+1   2   3                                       3
+5   6   3                                       4 3 5
+1   4   2
+1   6   1                                                                                   2
+2   3   2
+2   5   8                                                               3
+                                                                                2       8
+2   6   6
+3   4   7                                          1           3            5
+4   5   5                                                2          5
+1   2                                                         7                     6
+Korlátok                                                       4     3
+                                                         1
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100                           6
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,42 @@
+
+
+                              Elég résztvevő a kihívás napján
+A „Kihívás napja” 1991 óta hazánk legnépszerűbb lakossági sporteseménye. Magyarországon eddig összesen
+1591 település vett részt a vetélkedésben. Tavaly a versenyben induló falvak és városok lakói egyetlen nap alatt 48
+millió percnyi testmozgást végeztek.
+Az eseményre nevezni kell a helységnévvel, a helységről tudjuk a lakosok számát, és hogy hányan
+vesznek részt az eseményen. N nevezés történt, amelyet időrendben jegyeztek föl.
+Készíts programot, amely megadja, hogy hányadik nevezésnél érte el (vagy haladta meg) a részt-
+vevők össz-száma a kívánatos 10 000 főt!
+Bemenet
+A standard bemenet első sorában a nevezők száma (1≤N≤1000), alatta az egyes nevező
+helységek adatai, három sor nevezőnként. A nevezők adatai: elsőként a helységnév, másodikként a
+helység lélekszáma (1≤H≤200 000), végül a részvevők száma (1≤R≤10 000).
+Kimenet
+A standard kimenet első sorába az első nevezésnek sorszámát kell kiírni, ahol a nevezések
+össz-száma eléri a 10 000 főt (Ha nem volt összesen ennyi nevező, akkor a válasz legyen -1)!
+Példa
+Bemenet                                                  Kimenet
+4                                                        -1
+Miskolc
+166823
+1234
+Aszód
+5772
+234
+Zirc
+7454
+333
+Bóly
+3939
+282
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                                     1. oldal
+

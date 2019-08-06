@@ -1,0 +1,40 @@
+
+
+                                   Legnépszerűbb tagok
+Egy társaságba N ember tartozik. Mindegyikük megadta, hogy kit tart a többiek közül a legismer-
+tebbnek. A leghosszabb népszerűségi körnek azt a legnagyobb létszámú tagú csoportot hívjuk,
+amely tagjaira igaz, hogy a kör i. tagja szerint az i+1. a legismertebb, illetve az utolsó tagja szerint
+az 1. a legismertebb!
+Készíts programot, amely megadja a leghosszabb népszerűségi kört!
+Bemenet
+A standard bemenet első sorában a tagok száma van (2≤N≤10 000). A további N sorban
+egy-egy tag által legismertebbnek tartott tag sorszáma szerepel (1≤Ismi≠i≤N).
+Kimenet
+A standard kimenet első sorába a leghosszabb népszerűségi kör tagjai K számát kell kiírni!
+A második sorban a tagok K sorszáma legyen (T1,…,TK) úgy, hogy minden i-re Ti szerint a legis-
+mertebb Ti+1 legyen, TK szerint pedig T1! Több megoldás esetén bármelyik kiírható
+Példa
+bemenet                                             kimenet
+11                                                  4
+6                                                   3 6 7 10
+8
+6
+8
+4
+7
+10
+9
+2
+3
+4
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤100.
+
+
+
+
+                                                1. oldal                      2017.02.25. 10:00-16:00
+

@@ -1,0 +1,30 @@
+
+
+                Legmelegebb települések leghidegebb napjai
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely megadja azokat a napokat, ahol a legmelegebb településeken a lehető
+legkisebb az előre jelzett hőmérséklet!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába azon napok K számát kell kiírni, amelyeken a lehető legki-
+sebb az előre jelzett hőmérséklet azokon a településeken, amelyeken valamely napon az országban
+maximális hőmérsékletet jósolták! Ezt kövesse ezen napok sorszáma, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+3 5                                              4 1 2 3 4
+10 15 12 10 10
+11 11 11 11 20
+12 16 16 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

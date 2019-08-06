@@ -1,0 +1,32 @@
+
+
+                               Sötétben maradt helyek
+Egy NxM-es téglalap alakú téren K lámpát helyeztek el. Mindegyiknek ismerjük a helyét. Mind-
+egyik lámpa azt a HxH-s (H páratlan) négyzet alakú területet világítja be, amely átlóinak metszés-
+pontjában áll a lámpa. A világos területek éjszaka is biztonságosak, a sötéteken azonban tanácso-
+sabb nem járni.
+Írj programot, amely megadja, hogy mekkora a téren sötétben maradt terület (a mezők száma)!
+Bemenet
+A standard bemenet első sorában a tér sorai (1N100) és oszlopai száma (1M100),
+valamint a lámpák száma (0K1000) és az általuk bevilágított négyzet oldalhossza (1H<100,
+H páratlan) van. A következő K sor mindegyike egy lámpa helyét tartalmazza, egy számpárt egy
+szóközzel elválasztva: közülük az első egy lámpát tartalmazó mező sorindexe (1≤S≤N), a máso-
+dik pedig az oszlopindexe (1≤O≤M).
+Kimenet
+A standard kimenet első sorába a sötétben maradt mezők számát kell írni!
+Példa
+Bemenet                                          Kimenet
+8   10 3 5                                       20
+3   3                                                                     L                  L
+7   3
+3   9
+Korlátok                                                                  L
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

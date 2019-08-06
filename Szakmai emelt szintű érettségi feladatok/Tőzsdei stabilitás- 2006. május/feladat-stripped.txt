@@ -1,0 +1,39 @@
+
+
+                                     Tőzsdei stabilitás
+Ismertek különböző cégek napi tőzsdei záró árfolyamai. Stabilitásösszegnek hívjuk a szomszédos
+napok záróárfolyam-különbözet abszolút értékeinek összegét. Azt a céget tekintjük stabilnak,
+amelynek a stabilitásösszege a lehető legkisebb.
+Írj programot, mely
+    1. megadja a legkisebb ’stabilitásösszeget’;
+    2. megadja azokat a cégeket, amelyik a hét folyamán a legnagyobb stabilitást mutattak!
+Bemenet
+A standard bemenet első sora tartalmazza a cégek számát (2≤N≤150) és a napok számát
+(2≤M≤750). A következő sorokban a záró árfolyamok következnek. Először a cég neve, majd
+sorban az egyes napon elért záró árfolyamok.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Ki kell írni, hogy mekkora volt az adott időszakban a legkisebb ’stabilitásösszeg’!
+2. részfeladat: Ki kell írni, hogy ezt mely cégek érték el! Az eredmény kerüljön két sorba: a cégek
+száma kerüljön az első sorba, a másodikba pedig a cégek neve, szóközzel elválasztva. (A sorrend
+nem számít.)
+Példa
+Bemenet                                              Kimenet
+4 3                                                  #
+Alfa 1500 1709 1839                                  263
+Beta 3000 2940 3255                                  #
+Gamma 1000 1279 1285                                 1
+Delta 14000 14208 14263                              Delta
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

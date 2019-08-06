@@ -1,0 +1,49 @@
+
+
+                                   Legtöbb gyerekes
+Ismerjük N emberről, hogy ki szülője kinek.
+Készíts programot, amely megadja, hogy kinek van a legtöbb gyereke!
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤1000). A következő N-1
+sorban egy-egy szülő (1≤Ai≤N) és gyereke (1≤Bi≠Ai≤N) sorszáma található.
+Kimenet
+A standard kimenet első sorába annak az embernek a sorszámát kell írni, akinek a legtöbb
+gyereke van!
+Példa
+Bemenet                                           Kimenet
+12                                                4
+1 2
+1 3
+2 4
+2 8
+2 9
+4 5
+4 6
+4 7
+4 10
+3 11
+3 12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                        Megoldás
+A praktikus ábrázolás nem két tömb, hanem csak egy. Legyen Szülő[B]=A, ha A szülője B-
+nek! Akinek nem ismerjük a szülőjét, arra Szülő[i]=0.
+Aki szülőként szerepel, annak a gyerekszámát növeljük eggyel – ha mindenkinek ismert a gyerek-
+száma, akkor azokra kell egy maximum.
+Legtöbb gyerekes(N,Szülő,Mgy):
+  gy:=(0,…,0)
+  Ciklus i=1-től N-ig
+    gy[Szülő[i]]:=gy[Szülő[i]]+1
+  Ciklus vége
+  Mgy:=1
+  Ciklus i=2-től N-ig
+    Ha gy[i]>gy[Mgy] akkor Mgy:=i
+  Ciklus vége
+Eljárás vége.
+
+
+                                              1. oldal
+

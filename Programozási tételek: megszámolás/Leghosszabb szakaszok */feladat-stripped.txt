@@ -1,0 +1,29 @@
+
+
+                              Leghosszabb szakaszok
+Egy számsorozat elejétől indulva válasszuk le azt a leghosszabb szakaszt, amelyben a számjegyek
+rendre növekszenek; ettől a ponttól kezdve egy ugyanilyet, és így tovább!
+Határozd meg az így leválasztható szakaszok számát!
+Bemenet
+A standard bemenet első sorában található az elemek száma (1≤N≤100). Az ezt követő N
+sorban pedig a számsorozat elemei vannak (egész számok, maximum 1000).
+Kimenet
+A standard kimenet első sorába ki kell írni a leválasztható szakaszok számát!
+Példa
+Bemenet                                        Kimenet
+6                                              2
+1
+2
+3
+2
+5
+6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

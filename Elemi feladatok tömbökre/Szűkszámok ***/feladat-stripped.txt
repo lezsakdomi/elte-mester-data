@@ -1,0 +1,47 @@
+
+
+                                        Szűkszámok
+A 'Hét szűk esztendő' albizottság hétpecsétes titokként őrzi tervezetét, amelyet a bennfentesek
+'Hetet egy csapásra' törvénynek becéznek. A tervezet egyik sarkalatos pontja szerint gazdasági gond-
+jainkat az ősmagyar hetes számrendszer bevezetésével meg lehet oldani, ugyanis a hetes számnak
+köztudottan mágikus hatása van. A javaslat szerint az új számrendszer számjegyeit, az ún. szűk-
+számjegyeket a hét honfoglaló törzsfőről nevezik el, és jelölésükre e nevek egyik jellemző betűjét
+használják. (Zárójelben megadjuk a számjegyeket jelölő betűket, és az elavult tízes számrendszer-
+beli megfelelőiket.)
+Álmos (A = 1)            Előd (E = 7)           Ond (O = 72)
+Kond (K = 73)            Tas (T = 74)           Huba (H = 75)          Töhötöm (M = 76)
+Az első ötven szűkszámot az alábbi táblázat mutatja:
+      +1            +2        +3           +4               +5            +6           +7
+0     A             AA        AAA          AAAE             AAE           AE           E
+7     EA            EAA       EAAA         EAAAE            EAAE          EAE          EE
+14    EEA           EEAA      EEAAA        EEAAAE           EEAAE         EEAE         EEE
+21    EEEA          EEEAA     EEEAAA       EEEAAAE          EEEAAE        EEEAE        EEEO
+28    EEEOA         EEEOAA    EEEOAAA      EEEOAAAE         EEEOAAE       EEEOAE       EEO
+35    EEOA          EEOAA     EEOAAA       EEOAAAE          EEOAAE        EEOAE        EO
+42    EOA           EOAA      EOAAA        AAAO             AAO           AO           O
+49    OA
+A szűkszámok képzésének szabályai:
+Szűkszámjegyet legfeljebb három nála kisebb, de egyforma szűkszámjegy előzhet meg. A kisebb
+számjegyeknek közvetlenül a nagyobb számjegy előtt kell állniuk, és ilyenkor a kisebb jegyek érté-
+két le kell vonni a nagyobb számjegy értékéből. Ettől eltekintve a szűkszámok számjegyeit balról
+jobbra csökkenő sorrendben kell felírni, de úgy, hogy bármely szűkszámjegy után közvetlenül leg-
+feljebb két vele azonos szűkszámjegy állhat. Ilyenkor a számjegyek értékét össze kell adni. (Ha e
+szabályok alkalmazásával többféle alak is lehetséges, akkor az a helyes, amely a lehető legkevesebb
+számjegyből áll. Pl. EOAE helyett AO a helyes alak.)
+Írj programot, amely tetszőleges szűkszámot átalakít tízes számrendszerbeli számmá!
+Bemenet
+A standard bemenet első és egyetlen sora egy szűkszámot tartalmaz szövegesen a fent de-
+finiált formában. A megadott szűkszám tízes számrendszeri megfelelője kisebb 1 000 000-nál.
+Kimenet
+A standard kimenet első sorába a beolvasott szűkszámnak megfelelő tízes számrendszer-
+beli egész számot kell kiírni!
+Példa
+Bemenet                                           Kimenet
+EEOAAAE                                           39
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+                                              1. oldal
+

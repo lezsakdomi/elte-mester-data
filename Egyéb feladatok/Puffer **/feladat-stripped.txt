@@ -1,0 +1,35 @@
+
+
+                                            Puffer
+Számítógépes hálózatokban az üzeneteket csomagokra darabolva továbbítják. A csomagok nem
+feltétlenül az elküldés sorrendjében érkeznek a címzetthez. Hogy össze lehessen állítani az eredeti
+csomagsorrendet, a beérkező csomagokat ideiglenes tárolóban, pufferben kell tárolni. Tegyük fel,
+hogy olyan csomag érkezik, amely az üzenetnek az a sorszámú byte-jától a b sorszámú byte-jáig
+terjedő részét tartalmazza. Ekkor két lehetőség van. Ha már megérkezett és továbbításra került az
+üzenetnek az a-1-sorszámú byte-ja, akkor a csomagot nem kell pufferbe rakni, hanem közvetle-
+nül outputra tehetjük, és a pufferből kivesszük a csatlakozó csomagokat. Ha még nem érkezett
+meg az üzenet a-1-sorszámú byte-ja, akkor a csomagot pufferbe kell rakni.
+Készíts programot, amely kiszámítja, hogy minimálisan mekkora méretű puffer kell!
+Bemenet
+A standard bemenet első sorában a csomagok száma van (1N500 000). A következő N
+sor mindegyikében egy-egy csomag első és utolsó byte-jának sorszáma (1ab100 000 000).
+Kimenet
+A standard kimenet első sorába azt a legkisebb K számot kell írni, amelyre teljesül, hogy a
+csomagokat össze lehet rakni K-méretű pufferrel!
+Példa
+Bemenet                                          Kimenet
+5                                                15
+5 8
+1 2
+10 20
+3 4
+9 9
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

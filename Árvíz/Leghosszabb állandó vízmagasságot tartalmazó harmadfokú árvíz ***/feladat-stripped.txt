@@ -1,0 +1,50 @@
+
+
+   A leghosszabb állandó vízmagasságot tartalmazó harmadfokú
+                              árvíz
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja az 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza azt a harmadfokú árvízvédelmi készültségű folyósza-
+kaszt, amelyik a leghosszabb állandó vízmagasságú részt tartalmazza!
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába a harmadfokú árvízvédelmi készültségű folyószakaszok K
+darabszámát kell írni (0, ha nincs ilyen folyószakasz, ebben az esetben nincsenek további sorok)!
+A második sorba ezen K folyószakasz kezdetének és végének a sorszáma kerüljön! A 3. sor tar-
+talmazza ezek közül azon szakaszok darabszámát (Db), amiken van állandó vízmagasságú rész (0,
+ha nincs ilyen folyószakasz, ebben az esetben nincsenek további sorok)! A 4. sorba a Db folyó-
+szakasz kezdő- és végsorszámát írja, végül az 5. sorba kerüljön a leghosszabb állandó vízmagassá-
+got tartalmazó szakasz kezdete, vége és az állandó vízmagasságú rész hossza (ha több ilyen is van,
+akkor az elsőé)!
+Példa
+Bemenet              Kimenet
+10                   3
+1200                 1 2 4 6 8 10
+1200                 2
+400                  1 2 4 6
+1100                 1 2 2
+                                 1600
+1500
+1500                             1400
+600                              1200
+1010                             1000
+1300
+                                  800
+1100
+                                  600
+Korlátok                          400
+Időlimit: 0,1 mp.                 200
+Memórialimit: 32 MB                 0
+                                        1   2     3     4    5     6     7    8     9    10
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,45 @@
+
+
+                                     Villamos statisztika
+A Villamos-közlekedési Vállalat (VKV) felmérést végzett a villamosok kihasználásáról, melyet szá-
+mítógéppel kell feldolgozni. A villamos-vonalon N állomás van, beleértve az induló- és a végállo-
+mást is. Egy út során a villamosvezetőnek meg kellett számolnia minden állomáson a fel- és a le-
+szállókat, s neked ezekből az adatokból kell adott jellemzőket kiszámolnod.
+Készíts programot, amely beolvassa N értékét, a vezető által adott számokat (N*2 adat, mindegyik
+0 vagy pozitív), majd belőlük a következőket határozza meg, és írja ki a képernyőre:
+     A. Tartalmilag helyesek-e a vezető által adott számok? (Formailag helyesek – azaz mindegyik
+        0 vagy pozitív – de például az induló állomáson a leszállók száma csak 0 lehet, minden más
+        tartalmilag hibás.) Ha hibásak, akkor a program írja ki négyszer egymás alá, hogy HIBA;
+Ha helyesek az adatok, akkor a programod adja meg az alábbiakat:
+     B.   Hány ember utazott összesen a villamoson?
+     C.   Mely állomás(ok)on szállt le a villamosról az összes utas?
+     D.   Mi volt a villamoson a maximális utasszám?
+     E.   Hány állomásközi szakaszt tett meg a villamos úgy, hogy egyetlen utas sem volt rajta?
+Bemenet
+A standard bemenet első sorában található a megállók száma (2≤N≤100) Az ezt követő N
+sorban pedig egy-egy számpár, a felszálló utasok (0≤fel), illetve a leszálló utasok száma (0≤le).
+Kimenet
+A standard kimenet négy sorból álljon: Tartalmilag hibás bemenet esetén minden sornak
+a HIBA szöveget kell tartalmaznia. Tartalmilag helyes bemenet esetén az első sor a villamoson
+utazott összes ember számát tartalmazza; a második sor azoknak az állomásoknak a sorszámát, ahol
+minden utas leszállt a villamosról; a harmadik sor a villamoson egy időben utazó utasok maximális
+számát tartalmazza; a negyedik sor azon állomásközi szakaszok darabszámát tartalmazza, ahol
+egyetlen utas sem utazott a villamoson.
+Példa
+ Bemenet                                            Kimenet
+ 5                                                  10
+ 5   0                                              3 5
+ 3   4                                              5
+ 0   4                                              1
+ 2   0
+ 0   2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

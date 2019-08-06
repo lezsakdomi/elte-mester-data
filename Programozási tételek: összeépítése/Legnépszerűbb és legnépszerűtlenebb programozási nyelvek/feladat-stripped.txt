@@ -1,0 +1,36 @@
+
+
+       Legnépszerűbb és legnépszerűtlenebb programozási nyelvek
+Két különböző évben vizsgálták, hogy középiskolások milyen programozási nyelvet tanulnak.
+Add meg azt a nyelvet, amit a mindkét évben tanultak közül a legkevesebben, illetve legtöbben
+tanultak!
+Bemenet
+A standard bemenet első sorában található a nyelvek száma az első és a második évben
+(1≤N,M≤100). Az ezt követő N sorban soronként az első évben egy adott nyelvet tanulók szá-
+ma (1≤tanulók száma≤100 000) majd az adott nyelv megnevezése (lehet több szó is) áll.
+A következő M sorban a második évben tanult nyelvek következnek ugyanígy, soronként a tanu-
+lók száma és az adott programozási nyelv. Az évenként felsorolásokban egy adott nyelv csak egy-
+szer szerepel!
+Kimenet
+A standard kimenet két sorból álljon: az első sorban az a nyelv, amelyet a legkevesebben,
+a második sorban pedig az a nyelv, amelyet a legtöbben tanultak! Ha nincs olyan nyelv, amit
+mindkét évben tanultak volna, akkor mindkét sorba a NINCS szót írd! Ha több ilyen nyelv is van,
+akkor bármelyik megadható!
+Kimenet
+Bemenet                                        Kimenet
+2 3                                            BASIC
+12000 Pascal                                   Pascal
+110 BASIC
+11000 Pascal
+50 BASIC
+50000 C++
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

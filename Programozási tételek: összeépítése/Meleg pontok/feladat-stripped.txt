@@ -1,0 +1,33 @@
+
+
+                               Az óceán meleg pontjai
+A Csendes óceán egy téglalap alakú N*M-es rácshálóján ismerjük a víz hőmérsékletét. Meleg
+pontnak nevezzük azokat a pontokat, amelyek nagyobbak négy szomszédjuknál.
+Készíts programot, amely megad egy pontosan K pontot tartalmazó téglalap alakú területet, ame-
+lyen a lehető legtöbb meleg pont van!
+Bemenet
+A standard bemenet első sorában a terület sorai és oszlopai száma (1≤N,M≤1000), vala-
+mint a K érték (1≤K≤1000) van. A következő N sor mindegyikében egy-egy pont hőmérséklete
+található (1≤Hői,j≤9000).
+Kimenet
+A standard kimenet első sorába egy pontosan K pontot tartalmazó téglalap alakú terület
+bal felső és jobb alsó sarkának sor- és oszlopindexeit kell írni, amelyen a lehető legtöbb meleg
+pont van! Több megoldás esetén bármelyik kiírható.
+Példa
+Bemenet                                        Kimenet
+5   6   8                                      1 2 4 3
+1   1   1   1   1   1
+1   1   2   1   1   1
+1   2   1   1   2   1
+1   1   2   1   1   1
+1   1   1   1   1   1
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

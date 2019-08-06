@@ -1,0 +1,41 @@
+
+
+                                         Ütemezés
+Adott N darab program, amelyeket egy processzoron kellene végrehajtani. Ismerjük mindegyik
+program végrehajtásához szükséges időt és a határidejét, ameddig a program végrehajtását be kell
+fejezni. Kiválasztandó a programoknak egy olyan legnagyobb elemszámú részhalmaza, amelyek
+végrehajtását lehet úgy ütemezni, hogy minden kiválasztott program végrehajtása befejeződjék a
+határidejéig.
+Készíts programot, amely meghatározza a programok egy lehető legnagyobb elemszámú részhal-
+mazát úgy, hogy az összes kiválasztott program végrehajtását lehet úgy ütemezni, hogy minden
+kiválasztott program végrehajtása befejeződjék a határidejéig! A program adjon is meg egy al-
+kalmas ütemezést!
+Bemenet
+A standard bemenet első sora a programok számát (1N10 000) tartalmazza. A kö-
+vetkező N sor mindegyike két pozitív egész számot tartalmaz, egy program V végrehajtási idejét,
+illetve H határidejét (1VH10 000).
+Kimenet
+A standard kimenet első sorában a kiválasztott programok M száma legyen! A második
+sorba M számot, a kiválasztott programok sorszámát kell írni egy-egy szóközzel elválasztva, olyan
+sorrendben, amely megfelel egy határidőket betartó ütemezésnek! Programok egy p1, …, pM
+felsorolása határidőt betartó ütemezés, ha minden i-re (1iM) az első i program végrehajtási
+idejének összege nem nagyobb a pi program határidejénél. Ha több megoldás is van, közülük egy
+tetszőlegeset ki lehet írni.
+Példa
+Bemenet                                         Kimenet
+6                                               3
+4   4                                           2 5 3
+3   8
+3   10
+4   9
+2   9
+4   11
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

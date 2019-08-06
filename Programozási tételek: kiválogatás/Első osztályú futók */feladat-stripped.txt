@@ -1,0 +1,30 @@
+
+
+                                     Első osztályú futók
+Adottak egy futóverseny eredményei, valamint az első osztályú szinthatár.
+Készíts programot, amely megadja azokat, akik első osztályú eredményt értek el!
+Bemenet
+A standard bemenet első sorában található a futók száma (1≤N≤100) és egy szinthatár
+(1≤H≤1000) szóközzel elválasztva. Az ezt követő N sor mindegyikében egy-egy futó eredménye
+található (1≤Eri≤1000).
+Kimenet
+A standard kimenet első sorába ki kell írni az első osztályú futók számát, majd ezt követő-
+en szóközzel elválasztva ezeknek a futóknak a sorszámát, növekvő sorrendben!
+Példa
+Bemenet                                         Kimenet
+6 100                                           3 1 2 4
+100
+120
+90
+105
+95
+98
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

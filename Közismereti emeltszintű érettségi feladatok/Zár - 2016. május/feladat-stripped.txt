@@ -1,0 +1,75 @@
+
+
+                                                Zár
+Egy ajtót elektronikus zárral láttak el. A zárat egy ismétlődő pon-
+tokat nem tartalmazó, megfelelő irányban rajzolt, törött vonalból
+álló mintával lehet nyitni. A minta megadását egy szabályos tíz-
+szög segíti, amelynek csúcsait 0-tól 9-ig sorszámozták, így a leg-
+hosszabb használható minta 10 számjegyet tartalmazhat. Az ajtót
+nyitó kódszám megadásánál csupán az alakzat és annak iránya ér-
+dekes, ezért a 135 mintával nyitható zárat a 802 is nyitja (vagy akár
+a 024 kódszám is), de a 208 nem. Tehát ebben a mintában a zár
+csak az óramutató járásával megegyező irányban nyílik. A nyitás az
+egyes számok egymást követő megérintésével történik. Azokat a
+kódszámokat amelyek ugyanazt a zárat nyitják ekvivalensnek
+nevezzük.
+Írj programot, amely
+    1.   megadja, hogy mely próbálkozásoknál használták pontosan a helyes kódszámot,
+    2.   megadja, hogy melyik az első olyan próbálkozás, ahol ismétlődő számjegy volt,
+    3.   megadja a helyes kódszámmal ekvivalens, 0-val kezdődő kódszámot,
+    4.   megadja minden próbálkozásról, hogy sikeres volt-e!
+Bemenet
+A standard bemenet első sora a helyes kódszámot tartalmazza. A következő sorban a pró-
+bálkozások száma (1≤N≤5000) található. A következő N sor mindegyike egy-egy próbálkozásnál
+megadott kódszámot tartalmaz. A kódszámok hossza 3 és 10 közötti. Feltételezhető, hogy a he-
+lyes kódszám ismétlődő jegyeket nem tartalmaz.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az első és egyetlen sorba azoknak a próbálkozásoknak a sorszámait kell írni, ame-
+lyek pontosan megegyeztek a helyes kódszámmal, növekvő sorrendben! Ha nem volt ilyen, akkor
+a nem szót kell írni!
+2. részfeladat: Azt kell írni, hogy melyik volt az első olyan próbálkozás, amely tartalmazott ismét-
+lődő számjegyet! Ha nem volt ilyen, akkor a nem szót kell írni!
+3. részfeladat: Azt a helyes kódszámmal ekvivalens kódszámot kell írni, mely 0-val kezdődik!
+4. részfeladat: N sort kell írni, az i-edik sorba az i-edik próbálkozás eredményét az alábbiak sze-
+rint:
+                   siker – Ha a próbálkozás ekvivalens a helyes kódszámmal.
+                   hibas hossz – Ha a próbálkozás hossza nem egyezik meg a helyes kód-
+                    szám hosszával.
+                   hibas kodszam – Ha a két kódszám hossza azonos, de nem ekvivalensek.
+
+
+
+
+                                               1. oldal
+Emelt szintű informatika érettségi                      2016. május 10.
+
+
+Példa
+Bemenet                                 Kimenet
+135                                     #
+6                                       3 6
+802                                     #
+5424                                    2
+135                                     #
+246                                     024
+136                                     #
+135                                     siker
+                                        hibas hossz
+                                        siker
+                                        siker
+                                        hibas kodszam
+                                        siker
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

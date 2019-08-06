@@ -1,0 +1,43 @@
+
+
+                                           Facsemete
+Egy új facsemetét ültettek a város egyik parkjában, amelyet a kertész meg akar védeni. Azt tervezi,
+hogy kiválaszt három öreg fát, amelyeket körülkeríti vastag szalaggal úgy, hogy a facsemete szigo-
+rúan a szalagok képezte háromszögön belül legyen, más fa pedig ne legyen bekerítve, és a három-
+szög oldalára sem eshet. A három öreg fa közül egyet már meghatározott.
+Készíts programot, amely meghatároz két olyan öreg fát, amelyek a már kiválasztott fával együtt
+teljesítik a feltételt!
+Bemenet
+A standard bemenet első sora a parkban lévő fák számát (3≤N≤100 000) és a már kivá-
+lasztott fa sorszámát (1≤A≤N) tartalmazza. A második sorban az új facsemete koordinátái vannak
+(-1 000 000≤újx,újy≤1 000 000). A további N sor mindegyike a park egy fájának x- és y-
+koordinátáját (-1 000 000≤xi,yi≤1 000 000) tartalmazza.
+Kimenet
+A standard kimenet első sorába két olyan fa B és C sorszámát kell írni, amelyek a már ki-
+választott A fával együtt teljesítik a kívánt feltételt! A három pont órajárással ellentétes felsorolás-
+sal alkot háromszöget. Több megoldás esetén bármelyik megadható. Ha nincs megoldás, akkor a
+0 0 számpárt kell kiírni!
+Példa
+bemenet                                                    kimenet
+7 1                                                        6 4
+9 3
+3 1
+8 7
+9 5
+11 5
+12 4
+9 1
+13 6
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A pontok 30%-a szerezhető olyan tesztekre, ahol N≤100.
+
+
+
+                                                1. oldal
+

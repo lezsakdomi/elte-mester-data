@@ -1,0 +1,30 @@
+
+
+                    Vitorlás verseny minden futamán indultak
+Egy vitorlásversenyen F futamot tartottak. Mindegyiknek megkaptuk az indulólistáját!
+Készíts programot, amely megadja azokat a versenyzőket, akik mindegyik futamban indultak!
+Bemenet
+A standard bemenet első sorában a futamok száma van (1≤F≤10). A következő F sor
+mindegyikében egy futam indulólistája található. Az egyes sorok első száma a futamban indulók
+száma (0≤Indi≤100), a következő Indi szám pedig az adott futam indulói azonosítója (legfel-
+jebb 4 jegyű pozitív egész számok).
+Kimenet
+A standard kimenet első sorába a mindegyik futamban indult versenyzők számát kell írni!
+Ha van ilyen versenyző, akkor a második sorban ezen versenyzők azonosítója legyen, növekvő
+sorrendben!
+Példa
+Bemenet                                         Kimenet
+3                                               2
+5 1 3 4 7 9                                     3 4
+2 4 3
+5 8 3 4 1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 33%-ában F=2.
+
+
+
+
+                                            1. oldal
+

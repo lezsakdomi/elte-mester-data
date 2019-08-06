@@ -1,0 +1,38 @@
+
+
+                                  Elválasztó egyenes
+Adott a síkon két ponthalmaz, a fehér pontok és a fekete pontok halmaza.
+Készíts programot, amely megadja a síknak két olyan különböző A és B pontját, amely elválasztja
+a két ponthalmazt, tehát a rajtuk átmenő egyenes egyik oldalán nincs fehér, a másik oldalán nincs
+fekete pont!
+Bemenet
+A standard bemenet első sorában a fehér pontok M, és a fekete pontok N száma van
+(2M,N<50 000). A következő M sor soronként egy-egy fehér pont x- és y koordinátáját, az ezt
+követő N sor pedig soronként egy-egy fekete pont x- és y koordinátáját tartalmazza. A koordináta
+értékek egész számok, amelyek abszolút értéke legfeljebb 200 000 000.
+Kimenet
+A standard kimenet első sorába négy egész számot kell írni, az A pont x és y koordinátá-
+ját és a B pont x és y koordinátáját! Ha nincs megoldás, akkor az első sorba négy 0 számot kell
+kiírni! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+5 4                                             3 4 12 10
+4 10
+4 7
+6 6
+6 9
+9 10
+8 4
+8 6
+10 7
+11 6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a M,N≤1000
+
+
+
+
+                                            1. oldal
+

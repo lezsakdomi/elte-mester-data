@@ -1,0 +1,29 @@
+
+
+                                         Fák száma
+Kíváncsiak lettünk, hogy vajon hány olyan bináris fa van, amelynek N levele van, ha eltekintünk
+attól, hogy milyen adat van a fa pontjaiban. Tehát csak a fa szerkezete érdekes. Ezekre a fákra tel-
+jesül, hogy minden pontnak vagy két fia van, vagy egy sem.
+Készíts programot, amely kiszámítja, hogy hány különböző bináris fa (szerkezet) van, amelynek N
+levele van!
+Bemenet
+A standard bemenet első sorában a fák leveleinek N száma (1≤N≤32) van.
+Kimenet
+A standard kimenet első sorába egy egész számot kell írni, a feladat megoldását!
+Példa
+Bemenet                                           Kimenet
+4                                                 5
+Magyarázat a példához
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

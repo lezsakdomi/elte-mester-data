@@ -1,0 +1,263 @@
+
+
+                                        Többségi képviselő kiválasztása
+    Iskolád tanulói két csoportba tartoznak. Tudjuk, hogy az egyik csoportban többen vannak, mint a másikban,
+ezt nevezzük többségi csoportnak. Ki kell választani egy tanulót, aki a többségi csoporthoz tartozik. Ehhez
+egyetlen műveletet használhatunk, nevezetesen két tanulótól megkérdezhetjük, hogy ugyanabba a csoportba
+tartoznak-e.
+
+ Feladat
+Olyan programot kell ı́rni, amelyik a lehető legkevesebb kérdéssel meghatároz egy többségi csoporthoz tartozó
+tanulót. A tanulókat sorszámukkal azonosı́tjuk.
+A megoldáshoz a query modul három művelete használható.
+
+ Könyvtári műveletek
+Size A tanulók n számát adja. Ezt kell először hı́vni.
+Member Két tanuló sorszámát kell argumentumként megadni, és a függvény 1 értéket ad, ha a két tanuló
+   ugyanazon csoport eleme, egyébként 0-át.
+
+Answer Ezzel a művelettel kell közölni a kiválasztott, többségi csoportba tartozó tanuló sorszámát. Végrehajtásával
+    a program végrehajtása befejeződik.
+
+ A query modul műveletei Pascal nyelv esetén
+   • function Size:integer;
+   • function Member(x, y: integer): integer;
+   • procedure Answer(x: integer);
+
+ A query modul műveletei C/C++ nyelv esetén
+   • int Size();
+   • int Member(int x, int y);
+
+   • void Answer(int x);
+
+ Feltételek és korlátozások
+   • A tanulók n számára 5 ≤ n ≤ 30000 teljesül és n páratlan szám.
+
+   • Programod nem ı́rhat és nem olvashat egyetlen fájlt sem, beleértve a standard bemenetet és kimenetet!
+   • A megoldást csak akkor fogadják el, ha a tanulók bármely olyan diszjunkt A és B részhalmazára, amely
+     kompatibilis az általad feltett kérdésekkel, a közölt megoldás a nagyobb elemszámú részhalmazban van.
+     A válaszadó arra kényszerı́t, hogy szükséges számú kérdést tegyél fel.
+
+ Gyakorlás
+A könyvtári modul úgy használható, hogy a standard bemenet első és egyetlen sorába a tanulók n számát kell
+ı́rni, ami páratlan szám kell legyen! A program a standard kimenetre kiı́rja a végrehajtott kérdéseket a válasszal,
+továbbá a választ és annak helyes vagy hibás voltát. Hibás válasz esetén azt is kiı́rja, hogy miért hibás a válasz.
+
+
+
+
+                                                          1 . oldal
+
+
+ Példa
+Ha a bemenet 7, akkor a kimenet az alábbi lesz:
+
+Size=7
+Member(1,2)=1
+Member(3,4)=1
+Member(2,4)=0
+Member(5,6)=1
+Valaszod=6, Helyes
+Többségi csoport:
+3..6
+Kissebségi csoport:
+1 2 7
+A végrehajtott kérdések száma: 4
+A lehetséges maximális pontszám: 3
+Pontszámod: 3
+Azonban az 1 válasz nem elfogadható, mert minden feltett kérdésre a többségi csoport a {2, 5, 6, 7}, a kisebbségi
+pedig a {1, 3, 4} halmaz, akkor a Member függvény ugyanazt eredményezné, de 1 nem eleme a {2, 5, 6, 7} többségi
+csoportnak.
+
+ Pontozás
+Helyes válasz esetén a kapott pontszám: max(0, n − k), ha a programod k Member műveletet hajtott végre.
+                                                            Megoldás
+
+Jelölje H = {1, . . . , n} a tanulók halmazát. Azt mondjuk, hogy egy A ⊆ H részhalmaz homogén részhalmaz,
+
+ha A minden eleme ugyanabba a csoportba tartozik, azaz ha (∀x, y ∈ A)(M ember(x, y) = 1). Azt mondjuk,
+hogy U, V ⊆ H ellentétes részhalmazok, ha egyrészt U és V homogén, továbbá U minden eleme az egyik, V
+minden eleme a másik csoportba tartozik, azaz ha (∀x ∈ U )(∀y ∈ V )(M ember(x, y) = 0).
+
+
+Kérdésekből származó ismeret ábrázolása
+1. Észrevétel
+Megmutatjuk, hogy a feltett kérdésekből származó ismeret ábrázolható diszjunk ellentétes részhalmaz-párok
+halmazaként. Tehát
+                                          I = {(U1 , V1 ), . . . , (Uk , Vk )}
+alakban, ahol Ui , Vi ellentétes, továbbá
+                                               k
+                                               [            k
+                                                            [
+                                                     Ui ∪         Vi = {1, . . . , n}
+                                               i=1          i=1
+
+Bizonyı́tás. Kezdetben nincs semmi ismeretünk, tehát ({i}, ∅) párok (i = 1, . . . n) alkotják az ismeretet.
+Tegyük fel, hogy az eddig végrehajtott Member műveletek által szerzett ismeret megadható az
+
+                                               I = {(U1 , V1 ), . . . (Uk , Vk )}
+
+halmazzal és Member(x,y) kérdést tettük fel. x is és y is pontosan az egyik halmazba esik az Ui és Vi halmazok
+közül. Tehát az alábbi négy eset lehetséges:
+
+                                                      x ∈ Ui , és y ∈ Uj
+
+                                                      x ∈ Ui , és y ∈ Vj
+
+
+                                                            2 . oldal
+
+
+                                                        x ∈ Vi , és y ∈ Uj
+                                                        x ∈ Vi , és y ∈ Vj
+Az általánosság megszorı́tása néélkül feltehetjük, hogy az 1. esetről van szó. Ha Member(x,y)=1 akkor vegyük
+az
+                                                  U = Ui ∪ Uj és V = Vi ∪ Vj
+halmazokat, ha pedig Member(x,y)=0, akkor a
+
+                                                U = Ui ∪ Vj és V = Vi ∪ Uj
+
+halmazokat. Ekkor az új ismeretet úgy ábrázolhatjuk, hogy az I halmazból törüljük az (Ui , Vi ) és (Uj , Vj )
+párokat és bevesszük az (U, V ) párt.
+
+2. Észrevétel
+Ha U, V ⊆ H homogén ellentétes részhalmazok, továbbá U és V elemszáma megegyezik (|U | = |V |), akkor
+H-ból törölve az U és V elemeit (H := H − U − V ), a megmaradt halmaz továbbra is tartalmaz egy többségi
+csoporthoz tartozó elemet.
+
+3. Észrevétel
+Ha mindig olyan x,y párra hajtjuk végre at Member(x,y) műveletet, amelyek teljesül, hogy az őket tartalmazó
+homogén részhalmazok elemszáma megegyezik, akkor az ismeret árázolásában minden Vi halmaz üres halmaz
+lesz:
+                                           I = {(U1 , ∅), . . . , (Uk , ∅)}
+Kezdetben Ui = {i} és Vi = ∅. Ha Member(x,y) műveletet előtt teljesült a feltétel, akkor utána is teljesül.
+Valóban, ha Member(x,y)=1, akkor U = Ui ∪ Uj lesz, ha pedig Member(x,y)=0, akkor az 1. éstrevétel alapján
+töröljük I-ből (Ui , ∅) és (Uj , ∅) párt, és töröljük ki a H alaphalmazból is Ui és Uj elemeit.
+Tehát ekkor minden Ui homogén halmaz elemszáma 2-hatvány, továbbá, ha bármely két Ui és Uj halmaz
+elemszáma megegyezik, akkor mindkettő egyelemű.
+
+Mikor van elegendő ismeretünk a válasz megadására?
+Ha az
+                                                I = {(U1 , V1 ), . . . , (Uk , Vk )}
+ismerettel rendelkezünk, és teljesül, hogy
+                                                  k
+                                                  X
+                                        |Uj | +         min(|Ui |, |Vi |) − |Vj | > n/2
+                                                  i=1
+
+ahol Uj a legnagyobb elemszámú részhalmaz, akkor elegendő ismerettel rendelkezünk, meg tudunk adni egy
+többségi elemet.
+Ha mindig azonos elemszámú homogén részhalmazokban lévő elemkre kérdezünk rá, akkor az
+
+                                                   I = (U1 , ∅), . . . , (Uk , ∅)
+
+ismeret elegendő, ha
+                                                                   k
+                                                                   X
+                                                         |U1 | ≥         |Ui |
+                                                                   i=2
+
+feltéve, hogy
+                                                |Ui | ≥ |Ui+1 |i = 1, . . . k − 1
+Ekkor U1 bármelyik eleme többségi elem lesz. Ekkor, mivel a minden Vi részhalmaz üres, ezért az I ismeretben
+elég csak az Ui részhalmazokat megadni.
+
+
+                                                            3 . oldal
+
+
+ Elvi algoritmus
+
+
+   I := ∅
+   x:=0
+   ciklus amı́g I nem biztos ismeret
+      x:=x+1
+      y:=x+1
+      ha M ember(x, y) = 1 akkor
+         U := { x, y };
+         ciklus amı́g van olyan Ui ∈ I, hogy |U | = |Ui |
+           y := Ui tetsőleges eleme;
+           I := I − { Ui }
+           ha Member(x,y) akkor
+              U := U ∪ Ui
+           egyébként
+              kilépés a ciklusból
+           elágazás vége
+         ciklus vége
+      elágazás vége
+   ciklus vége
+
+
+    Belátható, hogy az algoritmus legfeljebb n − b(n) kérdéssel megtalál egy többségi elemet, ahol b(n) az n
+szám kettes számrendszerbeli leı́rásában az 1-es jegyek száma. A válaszadó tudja kényszerı́teni ennyi kérdésre
+a kérdezőt. Így működik a mintamegoldáshoz adott query modul, tehát a legtöbb kérdésre kényszerı́t.
+A megvalósı́tás során elég minden részhalmazt egy elemmel reprezentálni. Mivel adott k-ra legfeljebb egy
+2k elemszámú részhalmaz van az I ismerethalmazban, ı́gy B[] bitvektorral megadható, és ezért egyszerűen
+eldonthető, hogy adott k-ra van-e 2k elemszámú részhalmaz I-ben.
+
+
+
+
+                                                       4 . oldal
+
+
+                                         Megvalósı́tás C++ nyelven
+
+ 1   # include " query .h"
+ 2   # define MaxN           30000     // max. méret
+ 3   # define MaxK           20        // MaxN <=2ˆ MaxK
+ 4   int main (){
+ 5      int N;                //a tanulók száma
+ 6      int M;                // az aktuális elemszám
+ 7      int Fel;              // az aktuális elemszám fele
+ 8      bool B[MaxK ];        //B[k]= true , akkor és csak akkor , ha van 2ˆk elemszámú részhalmaz
+ 9      int Rep[MaxK ];       // Rep[k] a 2ˆk elemszámú részhalmaz egy eleme
+10      int Pow2[MaxK ];      // Pow2[k]=2ˆk 2- hatványok
+11      int L;                //a legnagyobb elemszámú részhalmaz elemszáma 2ˆL
+12      int i, k;
+13      Pow2 [0] = 1;
+14      for (k = 1; k <= MaxK; k++){
+15        Pow2[k] = Pow2[k -1] << 1;
+16        B[k]= false ;
+17      }
+18      N = Size ();
+19      M = N - 1;
+20      Fel = M/2 + 1;
+21      L = 0;
+22      i = 0;
+23      while (i < N){
+24        k = 0;
+25        B[0] = true;
+26        Rep [0] = ++i;
+27        i++;     //
+28        if (i > N) break ;
+29        while (B[k]){                     // van két 2ˆk elemszámú részhalmaz
+30           if ( Member (Rep[k],i )==1){ // egyesı́tsük a két 2ˆk elemszámú részhalmazt
+31              B[k] = false ;
+32              k++;
+33              if (k>L) L=k;               // új legnagyobb elemszámú részhalmaz
+34              continue ;
+35           }
+36           M -= Pow2[k+1];                //M:=M -2ˆ(k+1)
+37           Fel -= Pow2[k];                // Fel :=Fel -2ˆk
+38           B[k] = false ;                 // töröljük a részhalmazt
+39           if (k==L)                      //L aktualizálása
+40              while (L >0 && !B[L]) L--;
+41           k = -1;
+42           break ;
+43        }// while
+44        if (k >=0) {
+45           B[k] = true;                   // form a new subgroup having 2ˆk elements
+46           Rep[k] = i;                    //i az új részhalmaz reprezentálása
+47        }
+48        if (L >0 && Pow2[L]>= Fel)        // van elég ismeretünk
+49           break ;
+50      }
+51      Answer (Rep[L]);                    //a legnagyobb részhalmaz egy eleme a megoldás
+52   }// main
+
+
+
+                                                    5 . oldal
+

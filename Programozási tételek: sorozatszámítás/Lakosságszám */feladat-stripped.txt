@@ -1,0 +1,32 @@
+
+
+                                     Lakosságszám
+Egy ország településeiről három adatot tárolunk (megye neve, település neve, lakosság szám), me-
+gyék szerint csoportosítva.
+Írj programot, amely megadja minden megye lakosságszámát, valamint az ország lakosságszámát!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) áll. Majd az azt köve-
+tő N sorban szerepelnek szóközzel elválasztva a megye neve, a település neve és a lakosságszám.
+Feltehetjük, hogy egy névben soha nincs szóköz.
+Kimenet
+A standard kimenet első sorába kell írni a megyék K darabszámát, majd az azt követő K
+sorba a megye nevét (a bemenetben lévő megjelenési sorrend szerint) és a megye lakosságának
+számát! A legutolsó sor pedig az ország összlakosságának számát tárolja!
+Példa
+Bemenet                                         Kimenet
+6                                               4
+megye1     telepules1      4                    megye1    4
+megye2     telepules2      3                    megye2    5
+megye2     telepules3      2                    megye3    1
+megye3     telepules4      1                    megye4    7
+megye4     telepules5      3                    17
+megye4     telepules6      4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

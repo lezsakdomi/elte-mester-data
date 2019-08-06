@@ -1,0 +1,42 @@
+
+
+                                  A legkevesebb testvér
+Adott K szülő-gyerek kapcsolat.
+Készíts programot, amely megadja azt az embert, akinek a legkevesebb testvére van (a féltestvé-
+reket is beleértve), de van legalább egy testvére!
+Bemenet
+A standard bemenet első sorában az emberek száma (0<N≤1000), majd a kapcsolatok
+száma (0<K≤2000) van. Az ezt követő K sor mindegyikében egy szülő sorszáma, majd egy gye-
+rek sorszáma van (0<Sz≠Gy≤N).
+Kimenet
+A standard kimenet első sorába annak az embernek a sorszámát kell írni, akinek a legke-
+vesebb testvére van, de van legalább egy testvére! Több megoldás esetén a legkisebb sorszámút
+kell kiírni!
+Példa
+Bemenet                      Kimenet
+12 14                        7
+7 2
+7 4
+8 2
+8 3                                                                         11       12
+9 3
+9 4
+9 5
+9 6
+10 5                                                  7       8              9       10
+10 6
+11 7
+11 10
+12 7                                       1          2       3         4        5         6
+12 10
+
+Korlátok
+Időlimit: 0,3 mp.
+Memórialimit: 33 MB
+Pontozás: A tesztek 40%-ában a                  ;                 .
+
+
+
+
+                                           1. oldal
+

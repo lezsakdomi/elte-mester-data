@@ -1,0 +1,40 @@
+
+
+                             Nemzetközi vonat állomásai
+Egy nemzetközi vonat több napon keresztül megy az egyik végállomásáról a másik végállomására.
+Ismerjük minden állomásra az érkezési időt. A vonat a végállomás kivételével minden állomáson
+pontosan 10 percet várakozik, majd tovább indul.
+Készíts programot, amely beolvassa az állomások számát, a kezdő állomásról az indulási időt, majd
+pedig a további N-1 állomásra az érkezési időt. A program ezekből számítsa ki, hogy
+   A. hány perc volt a leghosszabb időszak, amikor a vonat sehol sem állt meg;
+   B. a vonat mely állomások között haladt (vagy mely állomásokon állt) éjfélkor!
+Bemenet
+A standard bemenet első sorában található az állomások száma (2≤N≤100) Az ezt követő
+sorban pedig a kezdő állomás indulási ideje (0≤óra≤23, 0≤perc≤59), a további N-1 sorban
+pedig a vonat adott állomásra való érkezési ideje (0≤óra≤23, 0≤perc≤59).
+Kimenet
+A standard kimenet két sorból álljon: az első sor tartalmazza a leghosszabb megállás nélküli
+időszakot, percben; a második sor az olyan állomások sorszámait tartalmazza növekvő sorrendben,
+amelyeken megállt vagy tovább haladt a vonat éjfélkor. Tovább haladás esetén a kimenetben kötő-
+jelet kell tenni az állomások sorszámai közé! Amennyiben nem volt ilyen állomás, akkor a kimenet
+második sora a 0 számot tartalmazza!
+Példa
+ Bemenet                                         Kimenet
+ 7                                               740
+ 9 20                                            3-4 6
+ 13 30
+ 19 45
+ 4 0
+ 16 30
+ 23 55
+ 6 30
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

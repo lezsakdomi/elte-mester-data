@@ -1,0 +1,36 @@
+
+
+                                                Fal
+Egy középkori várat fallal szerettek volna körbe keríteni. N
+centiméter hosszú falat kell építeni, a fal tetejének vízszintes-
+nek kell lenni! Mivel a talaj egyenetlen, a fal magassága centi-
+méterenként változhat, de legfeljebb M centiméter lehet. A fal
+vastagsága állandó, azaz a felépítéshez használt tégláknak csak
+a magasságát és a szélességét kell megadni.
+Magyarázat: az ábrán a zöld vonal a talajszint, erre épül a fal.
+A fal teteje vízszintes. Piros színű a legnagyobb használható
+tégla, ami most 4 cm magas, 3 cm széles.
+Készíts programot, amely kiszámítja, hogy hány négyzetcentiméteres felület látszik kifelé a legna-
+gyobb használható téglából!
+Bemenet
+A standard bemenet első sorában a fal hossza (1≤N≤20 000) és a fal maximális magassá-
+ga (1≤M≤2 000 000) van. A második sor i-edik száma (1≤Di≤M) értéke a fal várt magassága az
+i-edik centiméteren.
+Kimenet
+A standard kimenet első és egyetlen sorába a felhasználható legnagyobb tégla magasságá-
+nak és szélességének szorzatát kell írni!
+Példa
+Bemenet                                            Kimenet
+7 6                                                12
+6 2 5 4 5 1 6
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+A pontok 30% szerezhető olyan bemenetekre, ahol N≤500.
+
+
+
+
+                                               1. oldal
+

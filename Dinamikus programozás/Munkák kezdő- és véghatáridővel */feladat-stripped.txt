@@ -1,0 +1,32 @@
+
+
+                       Munkák kezdő- és véghatáridővel
+Egy vállalkozó N munka ajánlatot kapott egy időszakra, de egyszerre csak egy munkát tud végez-
+ni. Minden ajánlatban szerepel, hogy a munkát mikor kellene elkezdeni, meddig tartana és a mun-
+ka elvégzéséért mennyi fizetést kapna.
+Készíts programot, amely kiszámítja, hogy a vállalkozó maximum mennyit kereshet!
+Bemenet
+A standard bemenet első sorában a megrendelések (1≤N≤100 000) száma és az időszak
+hossza (1≤M≤100 000) van. A következő N sor mindegyike három egész számot tartalmaz: az
+ajánlatok idejét (1≤A≤B≤M), és az érte járó fizetést (1≤C≤1000), ami egy-egy megrendelést ír le.
+Kimenet
+A standard kimenet egyetlen sora egy egész számot tartalmazzon, azt az összeget, ameny-
+nyit a vállalkozó maximum kereshet az időszakban!
+Példa
+Bemenet                                        Kimenet
+4 100                                          170
+30 40 40
+1 20 50
+5 10 100                                                            40
+15 60 70                                               50
+Korlátok
+Időlimit: 0.1 mp.                                 100
+                                                                     70
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤1 000
+
+
+
+
+                                            1. oldal
+

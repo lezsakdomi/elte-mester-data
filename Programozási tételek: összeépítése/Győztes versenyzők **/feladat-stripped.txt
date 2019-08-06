@@ -1,0 +1,36 @@
+
+
+                                    Győztes versenyzők
+Egy olimpiai versenyszámban N versenyző szeretne az olimpián indulni. Számukra 5 kvalifikációs
+versenyt szerveztek, melynek eredményeit ismerjük. Minden versenyen az első K helyezett kap
+pontot, a K. helyezett 1, az előző 3, az őt megelőző 5 pontot és így tovább, tehát 2 ponttal növek-
+szik a pontszám helyezésenként. Az olimpiára a pontszám szerint legjobb K versenyző kap indu-
+lási jogot, de holtverseny esetén ez lehet K-nál több is (a K. helyen álló versenyzővel holtverseny-
+ben levők mindegyike kijut az olimpiára).
+Írj programot, amely megadja azokat a versenyzőket, akik legalább egy versenyen győztek!
+Bemenet
+A standard bemenet első sora a versenyzők számát és a K számot (2≤K≤N≤100) tartal-
+mazza. A következő N sorban egy-egy versenyző 5 versenyen elért helyezése található (0, ha nem
+indult, vagy 1≤Hi,j≤N). A helyezésekre teljesül, hogy ha H a legnagyobb helyezés, akkor minden
+1 és H közötti érték egyszer fordul elő.
+Kimenet
+A standard kimenet első sorába a legalább egy versenyen győztes versenyzők L számát
+kell írni! A második sorba az L győztes versenyző sorszáma kerüljön, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+6   4                                            3
+1   4   1   3   2                                1 3 5
+5   5   0   0   5
+2   1   2   2   1
+3   2   3   4   3
+0   3   0   1   0
+4   0   0   0   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

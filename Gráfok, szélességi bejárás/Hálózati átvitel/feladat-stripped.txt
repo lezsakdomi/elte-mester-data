@@ -1,0 +1,44 @@
+
+
+                               Robotok összegyűjtése
+Kukutyinban egy félresiklott kísérlet következtében elszabadultak a robotok. Jelenleg minden vá-
+rosban pontosan egy robot van, össze kell gyűjteni az összeset egyetlen városba. A kukutyini tu-
+dósok a következő módszert dolgozták ki:
+ Minden városban elhelyeztek egy zöld és egy piros útjelző táblát, melyek egy-egy (nem feltétlen
+   különböző) másik városba mutatnak.
+ Készítettek egy távirányítót egy zöld és egy piros gombbal, melyek megnyomására az összes
+   robot átmegy az aktuális városából a megfelelő színű tábla által jelzett városba.
+Segíts nekik eldönteni, hogy kivitelezhető-e a tervük, azaz létezik-e olyan gombnyomás sorozat,
+amely után az összes robot ugyanabba a városa kerül!
+Bemenet
+A standard bemenet első sorában a tesztesetek száma (1≤T≤50) van, melyet a tesztesetek
+leírása követ. Minden teszt első sora tartalmazza a városok számát (1≤N≤500). A következő két
+sorban az i. városban lévő zöld, illetve piros jelzőtábla által mutatott városok sorszámai vannak
+(1≤zi≤N, zi≠i) és (1≤pi≤N, pi≠i).
+Kimenet
+A standard kimenet soraiba tesztesetenként egy-egy külön sorba az IGEN vagy a NEM
+szót kell írnod, annak megfelelően, hogy elérhető-e a robotok összegyűjtése!
+Példa
+Bemenet                                         Kimenet
+2                                               NEM
+4                                               IGEN
+2   3 4 1
+4   1 2 1                                              1        2                  1         2
+4
+2   3 4 1                                              4        3                  4         3
+3   3 2 3
+Megjegyzés: A 2. esetben a piros, zöld, zöld, piros gombnyomás sorozat után minden robot a 3-as
+városban lesz.
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 15%-a szerezhető olyan tesztekre, ahol N≤15.
+A pontok további 15%-a szerezhető olyan tesztekre, ahol zN=N-1, pN = N-2 és minden i<N-re:
+zi,pi>i.
+
+
+
+
+                                            1. oldal
+

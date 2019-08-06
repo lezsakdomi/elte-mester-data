@@ -1,0 +1,30 @@
+
+
+                                    Összetett szavak
+Készíts programot, amely szavakból előállítja az egymás mellé írással képezhető, egymástól kü-
+lönböző „összetett” szavakat! Sem a bemeneti, sem a kimeneti szavaknak, illetve szavaknak nem
+kell feltétlenül értelmesnek lenniük. A feladat során az azonos hangot jelölő kis és nagybetűket
+különböző betűnek vesszük. A program az összes szót használja fel minden esetben!
+Bemenet
+A standard bemenet első a szavak számát tartalmazza (1≤N≤7). A következő N sorban
+egy-egy szó található.
+Kimenet
+A standard kimenet első sorába a különböző összetett szavak K számát kell kiírni! A kö-
+vetkező K sorban a talált összetett szavakat kell felsorolni, abc-rendbe rendezve!
+Példa
+Bemenet                                             Kimenet
+3                                                   5
+A                                                   AABB
+B                                                   ABAB
+AB                                                  ABBA
+                                                    BAAB
+                                                    BABA
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

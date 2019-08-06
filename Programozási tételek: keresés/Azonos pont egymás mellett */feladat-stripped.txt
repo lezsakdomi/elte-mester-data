@@ -1,0 +1,28 @@
+
+
+                            Azonos pont egymás mellett
+Nyelvvizsgán a nyelvtani tesztek pontszámait ülési sorrendben jegyezték fel.
+Keress olyan vizsgázót, aki ugyanannyi pontot kapott, mint a szomszédja!
+Bemenet
+A standard bemenet első sorában a nyelvvizsgázók számát kapjuk (1≤N≤100). Az ezt kö-
+vető N sorban pedig a pontszámok (0≤Pi≤1000) vannak.
+Kimenet
+A standard kimenet első sorába ki kell írni az első olyan sorszámot, ahol az és az azt köve-
+tő érték megegyezik! Ha nincs ilyen, akkor „0”-t kell írni!
+Példa
+Bemenet                                          Kimenet
+5                                                3
+98
+95
+92
+92
+100
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

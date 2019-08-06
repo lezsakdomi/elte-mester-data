@@ -1,0 +1,44 @@
+
+
+                               Négyszög alakú terület
+Nagyszabású építkezés számára egy konvex négyszög alakú területet kell kijelölni. A terület lehet-
+séges sarokpontjai adottak. Olyan négy pontot kell kiválasztani, hogy a négy pont konvex négy-
+szöget alkosson, és a többi pont egyike sem eshet sem a négyszögbe, sem annak oldalára.
+Készíts programot, amely megad egy megfelelő négyszöget!
+Bemenet
+A standard bemenet első sorában, a lehetséges sarokpontok száma (1≤N≤100 000) van.
+A további N sor mindegyikében egy-egy pont x- és y-koordinátája (-30 000≤x,y≤30 000)
+van.
+Kimenet
+A standard kimenet első és egyetlen sora négy egész számot tartalmazzon: egy megfelelő
+négyszög csúcsainak órajárással ellentétes irányú felsorolását! Ha nincs megoldás, akkor a 0 0 0 0
+számsort kell kiírni! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+6                                               5 1 4 2
+9 -10
+0 -2                                                                        3
+3 9
+7 -7
+-9 4                                    6
+-9 6
+Korlátok
+                                        5
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+                                                                   2
+
+
+
+
+                                                                                        4
+
+
+                                                                                            1
+
+
+
+
+                                             1. oldal
+

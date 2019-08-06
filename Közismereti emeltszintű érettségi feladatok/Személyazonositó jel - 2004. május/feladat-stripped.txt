@@ -1,0 +1,72 @@
+
+
+                                   Személyazonosító jel
+Az ország állampolgárainak van egyedi azonosítójuk. Ez a személyazonosító jel. Az 1997. január
+1-je után születetteknél ez a következőképpen néz ki:
+A személyazonosító jel 11 jegyű. Az első jegy a személy nemét jelöli, az alábbi táblázat alapján:
+  1997. január 1. és 1999. december 31.        1999. december 31. után született
+              között született
+        férfi                  nő                    férfi                 nő
+          1                     2                      3                    4
+A 2–7 számjegyek a születési év utolsó két jegyét, a születési hónapot és napot tartalmazza.
+A 8–10. számjegyek az azonos napon születettek sorszáma.
+A 11. jegy az első tíz jegyből képzett ellenőrző szám: Az első tíz számjegy mindegyikét szorozzuk
+meg egy számmal: a 10. helyen állót eggyel a 9. helyen állót kettővel … az első helyen állót tízzel.
+A kapott összeget osszuk el tizeneggyel és az osztás maradéka lesz a 11. jegy. Ha a maradék 10,
+akkor azt a születési sorszámot, ami az azonosítóban szerepel, nem kapja senki, az ilyen azonosító
+hibás.
+Írj programot, amely adott személyazonosító szám(ok) alapján
+     1. megadja a hozzá tartozó személy nemét,
+     2. megadja a hozzá tartozó személy születési sorszámát,
+     3. adott évszám alapján megadja, hogy a hozzá tartozó személynek hányadik születésnapja
+        van az adott az évben,
+     4. megadja, hogy mennyi a különbség a megadott két személy születési évei között,
+     5. eldönti, hogy melyik személy idősebb (ha két ember ugyanakkor született, akkor a 8–10.
+        jegy alapján döntse el, melyik az idősebb),
+     6. meghatározza a 11. jegyet és megadja a teljes azonosítót (hibás azonosító esetén hibát ad)!
+Bemenet
+A standard bemenetben adott két személyi szám első 10 jegye és egy évszám. Az első
+sorban két személyazonosító első 10 jegye szerepel egy szóközzel elválasztva – az első és második
+ember azonosítói. A második sorban egyetlen évszám található (1997≤Y≤2096).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ.
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni. Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az első személy nemét kell kiírni, ékezetek nélkül ("ferfi" vagy "no")!
+2. részfeladat: Az első személy születési sorszámát kell kiírni!
+3. részfeladat: Az első személy adott évben lévő születésnapját kell kiírni!
+4. részfeladat: Az adott két személy születési éveinek különbségét kell kiírni!
+5. részfeladat: Azt a személyazonosítót (első 10 jegy) kell kiírni, amelyik idősebb személyhez tar-
+tozik.
+6. részfeladat: A második személy teljes személyazonosítóját kell kiírni! Ha hibás a szám, akkor a
+"hiba" szöveget kell kiírni!
+
+                                              1. oldal
+Emelt szintű informatika érettségi                    2004. május 17.
+
+
+Példa
+Bemenet                                 Kimenet
+2990730042 3000321036                   #
+2015                                    no
+                                        #
+                                        42
+                                        #
+                                        16
+                                        #
+                                        1
+                                        #
+                                        2990730042
+                                        #
+                                        30003210368
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

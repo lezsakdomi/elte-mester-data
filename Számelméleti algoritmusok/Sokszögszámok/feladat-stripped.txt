@@ -1,0 +1,54 @@
+
+
+                                  Sokszögszámok
+A matematikában sokszögszámnak nevezzük az olyan természetes számokat, melyek
+(kavicsok, pontok stb. segítségével kirakva) szabályos sokszög alakba rendezhetők.
+ Háromszögszámok:
+
+
+
+
+ Négyzetszámok:
+
+
+
+
+ Ötszögszámok:
+
+
+
+
+ Hatszögszámok:
+
+
+
+
+Írj programot, amely előállítja az i. N-szögszámot! Mivel ez a szám igen nagy is lehet, ezért
+az N-szögszám utolsó 6 számjegyét kell előállítani!
+Bemenet
+A standard        bemenet első sorában az i és az N szám van (1≤i≤1 000 000,
+3≤N≤1000).
+Kimenet
+A standard kimenet első sorába az i. N-szögszám 1 millióval vett osztási maradékát
+kell írni!
+Példák
+ bemenet                                            kimenet
+ 6 6                                                81
+ bemenet                                            kimenet
+ 10 10                                              325
+
+                                             1. oldal
+Számelméleti algoritmusok                    *
+ bemenet                           kimenet
+ 10 30                             1270
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában i≤1000.
+
+
+
+
+                             2. oldal
+

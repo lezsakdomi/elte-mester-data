@@ -1,0 +1,50 @@
+
+
+                                         Autópálya
+A közlekedési vállalat két úthálózatot üzemeltet. Mindkét úthálózat nem metsző, zárt törtvonalat
+alkot. A piros úthálózat N, a kék úthálózat M csomópontot tartalmaz. Minden egymást követő
+sorszámú két csomópont van összekötve egyenes úttal, és az utolsó az elsővel. A két hálózat útsza-
+kaszainak nincs közös pontja. A két hálózatot olyan egyenes vonalú autópályával akarják össze-
+kötni, amelyre igaz, hogy a két hálózat az autópályának ugyanazon az oldalán van és átmegy mindkét
+hálózat legalább egy-egy csomópontján.
+Készíts programot, amely megad egy összekötő autópályát, ha lehetséges!
+Bemenet
+A standard bemenet első sorában a piros hálózat csomópontjainak száma található
+(1≤N≤400 000). A következő N sor mindegyike egy csomópont X és Y koordinátáit tartalmazza
+(-1 000 000≤X,Y≤1 000 000). A következő sor tartalmazza a kék hálózat csomópontjainak
+számát (1≤M≤400 000). Az utolsó M sor mindegyike egy csomópont X és Y koordinátáit tartal-
+mazza (-1 000 000≤X,Y≤1 000 000).
+Kimenet
+A standard kimenet első sorába egy piros és egy kék hálózati csomópont sorszámát kell írni!
+Ez a két csomópont határozza meg az autópálya egyenest, amelyre tejesül, hogy mindkét hálózat
+minden csomópontja, ami nem esik az autópálya egyenesre, az autópálya egyenes egyik oldalán van.
+Ha nem lehet megadni ilyen autópálya egyenest, akkor a 0 0 számpárt kell kiírni! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+9                                               6 3
+8 11
+12 7
+6 8
+6 5
+3 5
+7 2
+3 1
+1 3
+2 8
+5
+8 5
+6 4
+10 4
+9 7
+7 6
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 64MiB
+Pontozás: A tesztek 66%-ában 100 000≤N,M
+
+
+
+
+                                             1. oldal
+

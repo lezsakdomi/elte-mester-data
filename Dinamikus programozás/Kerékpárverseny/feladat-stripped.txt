@@ -1,0 +1,36 @@
+
+
+                                  Téli kerékpárverseny
+Egy városrészben az utcák négyzetrácsos elrendezésűek, minden utca egyirányú, csak balról jobb-
+ra, illetve felülről lefelé lehet haladni rajtuk. Télen szeretnénk a városban kerékpárversenyt ren-
+dezni, de jeges útszakaszok esetén a túl meredek utakon veszélyes a közlekedés. Emiatt egy ke-
+reszteződésből az egyirányú utak mentén csak olyan kereszteződésbe mehetünk, amelyek szintkü-
+lönbsége legfeljebb K méter.
+Készíts programot, amely megadja a maximális téli kerékpárversenyt!
+Bemenet
+A standard bemenet első sorában a négyzetrács sorai és oszlopai száma (1≤N,M≤200) és
+a K érték (1≤K≤10) van. A következő N sorban soronként M kereszteződés tengerszint feletti
+magassága szerepel (0≤Magi,j≤1000).
+Kimenet
+A standard kimenet első sorába a maximálisan lehetséges kerékpárverseny hosszt kell írni
+(ahány szomszédos kereszteződés-pár közötti útszakaszt tartalmaz)! A második sorba egy lehetsé-
+ges induló hely sor- és oszlopindexei kerüljenek! A harmadik sorba egy J és L betűkből álló szö-
+veg kerüljön, ami az útvonalat írja le: J a jobbra lépést, L a lefelé lépést jelöli.
+Példa
+Bemenet                                          Kimenet
+5   4   1                                        4
+7   7   9   7                                    2 1
+4   5   3   4                                    JLLJ
+6   6   5   2
+4   7   8   2
+1   2   3   4
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

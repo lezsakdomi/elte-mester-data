@@ -1,0 +1,31 @@
+
+
+     Mindenhol legalább annyi van az egyikből, mint a másikból?
+Az ország néhány helységében madármegfigyelést végeztünk. Mindegyikben megadtuk, hogy
+milyen fajú madárból hányat láttunk.
+Készíts programot, amely minden madárfaj párra eldönti, hogy az egyikből minden helységben
+legalább annyi egyed fordult-e elő, mint a másikból!
+Bemenet
+A standard bemenet első sorában a helységek száma (1≤M≤50) és a madárfajok száma
+(1≤N≤200) van. A következő M sor mindegyikében N darabszám szerepel, közülük az i-edik
+sorban a j-edik szám az i-edik helységben a j-edik sorszámú fajból megfigyelt madarak száma
+(0≤Ei,j≤1000).
+Kimenet
+A standard kimenet N sorból álljon, és minden sor N karaktert tartalmazzon! A j-edik sor
+k-adik karaktere 1-es vagy 0-s legyen aszerint, hogy a j-edik madárfajból minden helységben
+legalább annyi egyed fordult elő, mint a k-adikból, vagy nem!
+Példa
+Bemenet                                      Kimenet
+3   4                                        0001
+1   2 2 1                                    1011
+0   2 2 0                                    1101
+4   4 4 0                                    0000
+Korlátok
+Időlimit: 0,5 mp
+Memórialimit: 1 MB
+
+
+
+
+                                          1. oldal
+

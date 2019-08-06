@@ -1,0 +1,46 @@
+
+
+                                           Futár
+Egy országban N város van. Az egyik városban futárok várakoznak. Ismerjük azt is, hogy az
+egyes városokból mennyi idő alatt lehet elérni valamilyen járművel adott másik városokat.
+Készíts programot, amely megadja, hogy minimum mennyi idő alatt jutnak el a futárok az összes
+városba, ahova el tudnak jutni!
+Bemenet
+A standard bemenet első sorában a városok száma (1N100 000), a járművek száma
+(1M1 000 000) és a futárok kezdő helye (1HN) van. A következő M sorban egy-egy jármű-
+vet leíró 3 szám szerepel: az indulás helye (1AiN), az érkezés helye (1BiN), valamint az út
+megtételéhez szükséges idő (1Ti1000).
+Kimenet
+A standard kimenetre a minimális időt kell írni, ami alatt a futárok az összes városba el-
+érhetnek!
+Példa
+Bemenet                      Kimenet
+6   12 1                     35                                                   2
+1   6 20                                                                                       10
+                                                                       10
+1   5 10                                                                     15
+5   6 5                                                                               20
+                                                        10
+6   2 10                                         4             3                  1                     6
+                                                                                        25
+1   2 15                                                                               20
+                                                                        10   10
+2   3 10
+                                                                                           5
+3   4 10                                                           5                                5
+3   5 10
+                                                                                  5
+1   6 25
+3   5 5
+6   1 20
+6   5 5
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

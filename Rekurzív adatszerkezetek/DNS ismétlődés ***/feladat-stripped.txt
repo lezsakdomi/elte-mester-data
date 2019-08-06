@@ -1,0 +1,31 @@
+
+
+                                    DNS ismétlődés
+A biológiai szekvenciák, különösen a DNS szekvenciák vizsgálata nagyon fontos kutatási terület.
+Minden DNS szekvencia leírható olyan karaktersorozattal, amely csak az A, C, G és T karaktere-
+ket tartalmazhatja.
+Készíts programot, amely kiszámítja a vizsgált DNS szekvenciának egy pontosan K betűből álló
+részsorozatát, amely a legtöbbször fordul elő a vizsgált szekvenciában!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz, a vizsgált DNS szekvencia hosz-
+szát (1N10 000) és a K értékét (1K20). A második sor tartalmazza a vizsgált DNS szek-
+venciát.
+Kimenet
+A standard kimenet első és egyetlen sorába két egész számot kell írni, egy szóközzel elvá-
+lasztva, az első szám a legtöbbször előforduló K hosszú rész előfordulási száma legyen, a második
+pedig a vizsgált DNS szekvencia azon pozíciója, ahol előfordul a rész! Több megoldás esetén
+bármelyik megadható!
+Példa
+Bemenet                                         Kimenet
+11 3                                            3 2
+TACACAGTACA
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a szekvencia hossza N≤1000
+
+
+
+
+                                            1. oldal
+

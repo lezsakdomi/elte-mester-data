@@ -1,0 +1,37 @@
+
+
+                           Építkezés kevés munkással
+Egy építkezésen N munkafolyamatot kell elvégezni, mindegyik pontosan 1 napot vesz igénybe.
+Ismerjük, hogy az egyes folyamatok előtt melyek elvégzésére van szükség. A tervet elemezve ki-
+derült, hogy minden munka legfeljebb egy másik munkának lehet közvetlen előfeltétele.
+Készíts programot, amely megadja, hogy a munkafolyamat minimális idejű elvégzéséhez mini-
+mum hány munkásra van szükség!
+Bemenet
+A standard bemenet első sorában a munkafolyamatok száma (2N100 000) és megelő-
+zési feltételek száma szerepel (1M100 000). A következő M sorban egy-egy megelőzési feltétel
+van (1Ai≠BiN), ami azt jelenti, hogy az Ai munka befejezése szükséges a Bi munka elkezdé-
+séhez.
+Kimenet
+A standard kimenet egyetlen sorába a minimális elvégzéshez szükséges nap, valamint az
+ehhez minimálisan szükséges munkások számát kell kiírni!
+Példa
+Bemenet                                        Kimenet
+9   8                                          4 4
+1   2
+2   3
+3   4
+5   2
+8   3
+6   9
+7   9
+9   3
+Korlátok
+Időlimit: 0.33 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤1000
+
+
+
+
+                                           1. oldal
+

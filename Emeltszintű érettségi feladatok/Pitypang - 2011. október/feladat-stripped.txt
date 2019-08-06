@@ -1,0 +1,111 @@
+
+
+                                            Pitypang
+A kerekdombi Pitypang wellness hotel nem régen nyitotta meg kapuit. A szállodában összesen K
+szoba van. A szobák egységesen kétágyasak, de minden szobában egy pótágy elhelyezésére is van
+lehetőség. Árképzés szempontjából három különböző időszakot határol el a szálloda vezetősége:
+tavaszi, nyári és őszi szakaszt. Ennek megfelelően az árakat az alábbi táblázat tartalmazza.
+            Tavasz                       Nyár                        Ősz
+        01.01. – 04.30.              05.01. – 08.31.            09.01. – 12.31.
+           9 000 Ft                    10 000 Ft                   8 000 Ft
+A feltűntetett értékek egy szoba árát mutatják egy éjszakára. Ha csak egy fő száll meg, akkor is ki
+kell fizetni a teljes szobaárat. Egy adott foglalás besorolása az érkezés napjától függ.
+A pótágy díja 2 000 Ft éjszakánként. Amennyiben a vendég igényel reggelit, azért a fenti áron fe-
+lül személyenként és naponként 1 100 Ft-ot kell fizetni.
+Egy vendégéjszakának egy fő a hotelben eltöltött egy éjszakája felel meg.
+Írj programot, amely
+   1.   meghatározza a leghosszabb ideig tartó szállodai tartózkodást,
+   2.   megadja minden egyes foglalás után, hogy mennyit kellett fizetnie az egyes vendégeknek,
+   3.   összegzi a szálloda teljes évi bevételét,
+   4.   megadja, hogy hány vendégéjszaka volt a szállodában az egyes hónapokban,
+   5.   új foglalási adatok alapján megadja, hogy hány szoba szabad a megadott időszak teljes idő-
+        tartamában!
+Bemenet
+A standard bemenetben adottak a hónapok adatai és a szálloda egész évi foglalásai. Az el-
+ső 12 sorban a hónapok adatai találhatóak, soronként a hónap nevével, a hónapban lévő napok
+számával és a hónap első napjának sorszáma, január 1-jétől 1-től sorszámozva. A 13. sorban a
+szálloda szobáinak K száma (1≤K≤100) és a foglalások N száma (1≤N≤35000) szerepel. A kö-
+vetkező N sorban szóközzel elválasztva az alábbi adatok szerepelnek soronként, a foglalás sor-
+száma és az érkezés napja szerint növekvő sorrendben:
+     • a foglalás sorszáma (1≤sorszám≤10000),
+     • a szoba száma (1≤szoba≤K),
+     • az érkezés napjának sorszáma (1≤érkezés≤364),
+     • a távozás napjának sorszáma (1≤távozás≤365, érkezés<távozás),
+     • a vendégek száma (1≤vendegek≤3),
+     • kérnek-e reggelit (1=igen vagy 0=nem),
+     • a foglalást végző vendég nevéből képzett azonosítója (maximum 25 karakter).
+Az ezt követő sorban egy új foglalás található két számmal megadva: az első az érkezés napjának
+sorszáma (1≤újérkezés≤364), a második a szállodában eltölteni kívánt napok száma
+(1≤eltölt≤365-újérkezés).
+A szállodából délelőtt kell kiköltözni és csak délután lehet beköltözni. Ezért, ha adott napon ki-
+költözik valaki, akkor aznap már más be is költözhet a helyére.
+A napok sorszámozása január 1-jétől (1-es sorszám) kezdődik. A fenti táblázatnak megfelelő nyári
+időszak a 121. napon, míg az őszi a 244. napon kezdődik.
+
+
+
+
+                                               1. oldal
+Emelt szintű informatika érettségi                                                2011. október 21.
+
+
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ.
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni. Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A szállodában eltöltött leghosszabb tartózkodáshoz (időtartamhoz) tartozó ven-
+dég azonosítót, a kezdő nap sorszámát és a szállodában eltöltött napok számát kell kiírni egy-egy
+szóközzel elválasztva! (több megoldás esetén bármelyik megadható)
+2. részfeladat: A foglalások sorszámát és az utánuk fizetett összegeket kell kiírni egymástól szó-
+közzel elválasztva, foglalásonként külön sorba (N sor).
+3. részfeladat: A szálloda teljes évi bevételét kell kiírni.
+4. részfeladat: A szállodában eltöltött vendégéjszakák számát kell megadni havi lebontásban.
+Minden egyes hónapokhoz tartozó értéket külön sorban, hónapok sorszáma szerint növekvő sor-
+rendben (január – december).
+5. részfeladat: A megadott új foglalás teljes időtartama alatt végig üres szobák számát kell kiírni.
+
+
+
+
+                                                 2. oldal
+Emelt szintű informatika érettségi                              2011. október 21.
+
+
+Példa
+Bemenet                                 Kimenet
+januar 31 1                                     #
+februar 28 32                                   Gal_Anna 30 3
+marcius 31 60                                   #
+aprilis 30 91                                   1 28600
+majus 31 121                                    2 27000
+junius 30 152                                   3 22400
+julius 31 182                                   #
+augusztus 31 213                                78000
+szeptember 30 244                               #
+oktober 31 274                                  8
+november 30 305                                 5
+december 31 335                                 0
+3 3                                             0
+1 1 28 30 3 1 Kerner_Imre                       0
+2 2 30 33 1 0 Gal_Anna                          0
+3 1 33 35 2 1 Agoston_Gyula                     0
+29 5                                            0
+                                                0
+                                                0
+                                                0
+                                                0
+                                                #
+                                                1
+
+
+Korlátok
+Időlimit: 0.15 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     3. oldal
+

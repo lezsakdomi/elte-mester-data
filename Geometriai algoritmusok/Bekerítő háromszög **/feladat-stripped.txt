@@ -1,0 +1,41 @@
+
+
+                                  Bekerítő háromszög
+Adott a síkon egy P ponthalmaz és két kitüntetett pontja; a és b. Adott továbbá egy q pont. Ki-
+számítandó a P ponthalmaz egy olyan c pontja, hogy a q pont az (a,b,c) háromszög belse-
+jében van (nem eshet az oldalára sem), és a P ponthalmaz egyetlen más pontja sem esik a három-
+szögbe (oldalára sem eshet).
+Írj programot, amely kiszámítja a kívánt háromszög harmadik c csúcsát, ha létezik ilyen!
+Bemenet
+A standard bemenet első sora öt egész számot tartalmaz, sorrendben a pontok számát
+(3N50 000), a q pont x- és y-koordinátáját, és a kitüntetett a és b pont sorszámát
+(1a≠bN). A további N sor mindegyike két egész számot tartalmaz, az i+1-edik sor az i-edik
+pont x és y (-50 000x,y50 000) koordinátáit.
+Kimenet
+A standard kimenet első és egyetlen sorába egy egész számot kell írni, a kívánt háromszög
+harmadik csúcsának sorszámát! Ha nincs megoldás, akkor az első sorba egyetlen 0 számot kell ír-
+ni! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet               7
+                                                                                   5
+7   4 5 1 3                                     5
+2   2                                                                                      4
+4   1
+6   3
+7   8                                                           6
+5   9
+2   6
+                                                                               q
+3   10
+Korlátok
+Időlimit: 0.1 mp.                                                                      3
+
+                                                                 1
+Memórialimit: 32 MiB
+                                                                           2
+
+
+
+
+                                             1. oldal
+

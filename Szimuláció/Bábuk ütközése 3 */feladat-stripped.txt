@@ -1,0 +1,32 @@
+
+
+                                   Bábuk ütközése 3
+Egy játéktáblán a 0. időegységben L bábu van. Mindegyiket elindítjuk valamerre. Egy időegység
+alatt mindegyik a neki megfelelő irányba mozdul el, a tábla szélén mozgás irányukat az
+ellenkezőre változtatják. Lehetséges, hogy előbb-utóbb két bábu összeütközik: ugyanarra a helyre
+lépnének vagy átlépnének egymáson.
+Készíts programot, amely megadja, hogy K időegységen belül mikor ütközik legelőször két bábu!
+Bemenet
+A standard bemenet első sorában a játéktábla sorai és oszlopai száma (1N,M100), a
+bábuk száma (1L10) és az időtartam (1K100 000) van. A következő L sor egy-egy bábu
+leírását tartalmazza: a kezdő helyét (1SiN,1OiM) és a mozgás irányát (Xi{F,L,J,B} –
+fel, le, jobbra, balra).
+Kimenet
+A standard kimenet egyetlen sorból álljon, mely megadja az első ütközés időpontját! Ha K
+időegységen belül nincs ütközés, akkor -1-et kell kiírni!
+Példa
+Bemenet                                         Kimenet
+7   10 3 100                                    3
+4   3 J
+2   6 F
+4   8 B                                                                   
+Korlátok
+Időlimit: 0.5 mp.
+                                                                                  
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

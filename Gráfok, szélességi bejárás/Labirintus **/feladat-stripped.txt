@@ -1,0 +1,42 @@
+
+
+                                            Labirintus
+Tekintsük azt a labirintust, amely egy MxN-es négyzetrács, amelynek minden mezője lehet:
+                 Üres (0)
+                 Fal (1)
+                 Kapcsoló (2)
+                 Ajtó, amely vagy nyitva van (3), vagy zárva van (4)
+Ha kapcsoló mezőre lépünk, akkor minden nyitott ajtó bezáródik, és minden zárt ajtó kinyílik. A
+labirintus (1,1) koordinátájú bal felső sarkából a lehető legkevesebb lépéssel el kell jutni a jobb
+alsó (M,N) koordinátájú mezőjére. Minden lépésben a szomszédos mezőre léphetünk balra,
+jobbra, lefelé vagy felfelé, feltéve, hogy az nem fal és nem zárt ajtó.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány lépésben lehet kijutni a labirintusból,
+és meg is ad egy kivezető utat!
+Bemenet
+A standard bemenet első sora két egész számot tartalmaz egy-egy szóközzel elválasztva, az
+első a labirintus sorainak (2M100), a második pedig a labirintus oszlopainak száma
+(2N100). A további M sor mindegyike N egész számot tartalmaz egy-egy szóközzel elválaszt-
+va. Az állomány i+1-edik sorában a j-edik szám a labirintus (i,j) koordinátájú mezőjét adja
+meg, a fenti kódolás szerint.
+Kimenet
+A standard kimenet első sor az egyetlen 0 számot tartalmazza, ha nem lehet kijutni a labi-
+rintusból, egyébként a kijutáshoz minimálisan szükséges lépések K számát! A következő sor pon-
+tosan K karaktert tartalmazzon (szóközök nélkül), amely a kijutást eredményező egy legrövidebb
+lépéssorozat! A balra lépés jele a ’B’, a jobbra lépésé a ’J’, a felfelé lépésé az ’F’, a lefelé lé-
+pésé az ’L’. Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                             Kimenet
+4   5                                               9
+0   4   2   1   0                                   LJLFJJLLJ
+2   2   2   3   0
+1   0   4   3   1
+0   0   1   0   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                1. oldal
+

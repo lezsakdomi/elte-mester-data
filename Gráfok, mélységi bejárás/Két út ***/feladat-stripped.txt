@@ -1,0 +1,46 @@
+
+
+                                             Két út
+Egy vállalatnak N városban van telephelye. A központi telephely az 1. városban van. Alkatrésze-
+ket kell kiszállítani a központi telephelyről két különböző, U és V városba két kamionnal, az
+egyiknek az U, a másiknak a V városba kell mennie. Ismerjük, hogy mely városok között van
+közvetlen út. A korlátozások miatt a két kamion olyan útvonalon közlekedhet, amely különböző
+városokon keresztül halad.
+Készíts programot, amely kiszámít egy olyan U-ba és egy olyan V-be vezető útvonalat, hogy a két
+útvonalban csak a kiindulási pont (a központi telephely) közös!
+Bemenet
+A standard bemenet első sorában a városok száma (3N100), a két város sorszáma
+(2UVN) és a közvetlen utak száma (2M3000) van. A következő M sor mindegyikében két
+város sorszáma van (1X≠YN) ami azt jelenti, hogy X városból van Y városba út, amin X-ből Y-
+ba lehet menni, de fordítva nem. Minden közvetlen útra teljesül, hogy X<Y.
+Kimenet
+A standard kimenet első sorába az U-ba vezető útvonalon lévő városok R számát, és a V-
+be vezető útvonalon lévő városok S számát (beleértve a kiindulási központi telephely 1 sorszá-
+mát)! A második sor az U-ba vezető, a harmadik pedig a V-be vezető útvonalat tartalmazza! Ha
+nincs megoldás, akkor a 0 0 számpárt kell kiírni az első sorba! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                      Kimenet
+10 9 5 12                    4 4
+1 2                          1 3 6 9
+1 3                          1 2 4 5
+2 4
+3 6
+4 5
+5 7
+6 8                                      2              4     5          7
+7 9
+                             1                                                   9          10
+3 5
+4 7                                      3              6
+6 9                                                           8
+9 10
+Korlátok
+Időlimit: 3.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

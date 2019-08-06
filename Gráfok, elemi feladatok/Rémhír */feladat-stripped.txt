@@ -1,0 +1,38 @@
+
+
+                                          Rémhír
+Rémhírek úgy keletkeznek, hogy egy vagy több ember elmondja néhány másik embernek, azok a
+rémhírt továbbadják, … és így tovább.
+   Készíts programot, amely az emberek kikérdezése alapján megadja azokat,
+       A. akiktől a rémhír elindult (akik nem kapnak hírt másoktól);
+       B. akik nem adnak tovább a rémhírt;
+        C. valamint azokat, akik a legtöbb embernek adják tovább a rémhírt!
+Bemenet
+A standard bemenetelsősorában az emberek N száma (1N10000) és a hírtovábbadások M
+száma (1M100000) van, egyetlen szóközzel elválasztva. A következő M sor mindegyikében két
+ember sorszáma van (1ABN) egyetlen szóközzel elválasztva, amelynek jelentése: B a rémhírt
+A-tól hallotta.
+Kimenet
+A standard kimenetrehárom sort kell írni, az elsőbe az A, a másodikba a B, a harmadikba pedig a
+C részfeladat megoldását. Mindegyik sor az összes megfelelő ember sorszámát tartalmazza, egy-
+egy szóközzel elválasztva, a soron belül növekvő sorrendben. Ha valamelyik részfeladatra nincs
+megoldás, az üres sort akkor is ki kell írni!
+Példa
+Bemenet                                        Kimenet
+10 6                                           1
+1 2                                            2 4 5
+1 3                                            1 3
+3 4
+3 2                                                                1          2
+3 5                                                                                      4
+1 5
+Korlátok                                                           5          3
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

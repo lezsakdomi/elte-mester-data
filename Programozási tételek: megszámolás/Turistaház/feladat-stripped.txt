@@ -1,0 +1,29 @@
+
+
+                                        Turistaház
+Ismerjük egy turistaház foglalt napjait. Egy utazási iroda pontosan K napos utazásokat szervez,
+amire ezt a turistaházat szeretné lefoglalni (folyamatosan K napra).
+Készíts programot, amely megadja, hogy az utazási iroda legfeljebb hány K napos utazásra foglal-
+hatja le a turistaházat és közülük hányat hosszabbíthat meg egy nappal!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000) és az utazások hossza van
+(1≤K≤N). A második sorban pontosan N karakter van, az i. karakter az S betű, ha az i. napon
+szabad a turistaház, egyébként pedig az F betű.
+Kimenet
+A standard kimenet első sorába azon K napos utazások számát kell írni, amelyekre a turis-
+taház lefoglalható! A második sorba ezek közül azon utazások száma kerüljön, amelyek egy nap-
+pal meghosszabbíthatók!
+Példa
+Bemenet                                         Kimenet
+15 3                                            3
+SSSFSSFSSSSSSSS                                 2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

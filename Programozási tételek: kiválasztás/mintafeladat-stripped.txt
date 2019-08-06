@@ -1,0 +1,35 @@
+
+
+                                     Hónap sorszáma
+Készíts programot, amely megadja egy hónap nevéhez a sorszámát!
+Bemenet
+A standard bemenet egyetlen sorában a hónap neve van – biztosan helyes név.
+Kimenet
+A standard kimenet egyetlen sorába a hónap sorszámát kell írni!
+Példa
+Bemenet                                        Kimenet
+március                                        3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+                                        Megoldás
+Vegyünk fel egy konstans tömböt a hónapok nevével! Ennek január legyen az első eleme, …,
+december pedig a 12. eleme!
+Ezután meg kell határozni azt az indexet, amely indexű elem épp a keresett hónapnévvel egyezik
+meg!
+Változó H:Tömb(1..12: Szöveg)=(’január’,’február’,…)
+Kiválasztás(Név,H,Index):
+  i:=1
+  Ciklus amíg Név≠H[i]
+    i:=i+1
+  Ciklus vége
+  Index:=i
+Eljárás vége.
+
+
+
+
+                                           1. oldal
+

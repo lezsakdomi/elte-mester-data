@@ -1,0 +1,41 @@
+
+
+                                      Szoborpark
+Egy szoborparkban N szobor található. A szobrokat mindkét irányban járható utak kötik össze.
+Készíts programot, amely kiszámítja, hogy a bejárattól Árpád vezér szobráig hány különböző
+úton juthatunk el (minden csomópontot legfeljebb egyszer érintve)!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1<N25), az utak száma
+(0M60), a bejárat csomópont és az Árpád vezér szobra csomópont sorszáma (1BAN) van.
+A további M sor mindegyike egy U V egész számpárt tartalmaz; ami azt jelenti, hogy az U cso-
+mópont és a V csomópont között vezet útszakasz (1UVN).
+Kimenet
+A standard kimenet egyetlen sorába a kezdőpontból az Árpád vezér szobrához vezető
+utak számát kell írni!
+Példa
+Bemenet                                       Kimenet
+8   11 2 7                                    13
+2   3
+2   1                                                                       4
+1   5
+1   4                                                         1                          7
+3   5
+3   6
+4   7                                                                       5
+                                                      2
+4   8
+5   8
+6   8                                                                                    8
+8   7                                                         3
+
+Korlátok
+Időlimit: 0.3 mp.                                                           6
+
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a csomópontok száma N≤10; az utak száma M≤20
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,46 @@
+
+
+                                           Konténer
+Egy konténer raktárban N db konténer van egy sorban tárolva. A konténereket el akarják szállíta-
+ni, ezért mindegyikre rá van írva, hogy melyik városba kell szállítani. A városokat 1-től 3-ig sor-
+számozzák. A konténereket át kell rendezni úgy, hogy balról jobbra először az 1-essel, majd a 2-
+essel, végül a 3-assal jelölt konténerek álljanak.
+A raktár majdnem tele van, csak az utolsó konténer után van egy konténer számára szabad hely.
+A rendezést a konténerek fölött mozgatható robottal végezhetjük, amely egy lépésben kiemel a
+helyéről egy konténert és átteszi azt a szabad helyre, ezzel az átmozgatott konténer helye lesz sza-
+bad.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány lépésben lehet rendezni a konténer-
+sort, majd megad egy ennyi lépésből álló rendezést! A rendezés végén a szabad helynek a sor vé-
+gén kell lennie!
+Bemenet
+A standard bemenet első sorában a konténerek száma található (1  N  10 000). A má-
+sodik sor N darab számot tartalmaz egy-egy szóközzel elválasztva, mindegyik 1, 2 vagy 3, annak
+megfelelően, hogy melyik városba kell majd szállítani az adott konténert.
+Kimenet
+A standard kimenet első sorába a rendezéshez minimálisan szükséges lépések M számát
+kell írni! A következő M sor tartalmazza a sorrendben végrehajtandó mozgatásokat, soronként
+egy-egy mozgatást megadva, azaz hogy az adott lépésben hányadik helyen álló konténert hányadik
+helyre mozgatjuk! Kezdetben az üres hely sorszáma N+1.
+Példa
+Bemenet                                           Kimenet
+12                                                10
+2 1 2 3 1 3 2 3 2 3 1 2                           9 13
+                                                  4 9
+                                                  1 4
+                                                  5 1
+                                                  3 5
+                                                  11 3
+                                                  6 11
+                                                  12 6
+                                                  8 12
+                                                  13 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤1000
+
+
+
+
+                                              1. oldal
+

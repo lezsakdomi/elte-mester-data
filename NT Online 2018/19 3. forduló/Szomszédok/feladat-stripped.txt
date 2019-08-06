@@ -1,0 +1,36 @@
+
+
+                                       Szomszédok
+Egy út mentén N település található, ismerjük mindegyik távolságát az út kezdőpontjától.
+Készíts programot, amely megadja minden településre a K hozzá legközelebbi települést!
+Bemenet
+A standard bemenet első sorában a települések száma (2≤N≤100 000) és a K érték
+(1≤K≤100, K<N) van. A következő N sorban az egyes települések kezdőponttól mért távolsága
+van (1≤Ti≤1 000 000), növekvő sorrendben.
+Kimenet
+A standard kimenet N sorába az egyes településekhez legközelebbi K település közül az
+első és az utolsó sorszámát kell írni! Több megoldás esetén azt kell kiírni, amelynél a baloldali
+szomszéd a legkisebb sorszámú!
+Példa
+Bemenet                                         Kimenet
+10 3                                            2   4
+10                                              1   4
+30                                              1   4
+40                                              3   6
+70                                              3   6
+80                                              4   7
+100                                             5   8
+120                                             7   10
+160                                             7   10
+170                                             7   9
+180
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

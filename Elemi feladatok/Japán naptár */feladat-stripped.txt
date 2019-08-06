@@ -1,0 +1,32 @@
+
+
+                                        Japán naptár
+A japán naptár 60 éves ciklusokat tartalmaz, az egyes éveket párosítják, s mindegyik párhoz vala-
+milyen színt rendelnek (zöld, piros, sárga, fehér, fekete).
+      1,2,11,12, …,51,52: zöld évek
+      3,4,13,14,…,53,54:   piros évek
+      5,6,15,16,…55,56:    sárga évek
+      7,8,17,18,…57,58:    fehér évek
+      9,10,19,20,…,59,60: fekete évek
+Tudjuk, hogy 1984-ben indult az utolsó ciklus, amely 2043-ban fog véget érni (azaz 1984 és 1985
+zöld év volt, 2043 pedig fekete év lesz).
+Írj programot, amely megadja egy évről, hogy milyen színű!
+Bemenet
+A standard bemenet egyetlen sorában az év szerepel, amelyről el kell dönteni, milyen színű
+a japán naptár szerint (1800≤M≤2200).
+Kimenet
+A standard kimenet egyetlen sorába a beolvasott évnek megfelelő színt kell írni szöveges
+formában! A színek megnevezésében kerüljük az ékezetes betűket, így a lehetséges értékek:
+zold, piros, sarga, feher, fekete!
+Példa
+Bemenet                                         Kimenet
+2015                                            zold
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

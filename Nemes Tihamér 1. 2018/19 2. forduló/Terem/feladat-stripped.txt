@@ -1,0 +1,37 @@
+
+
+                                           Terem
+Egy téglalap alakú terem padlózatát szeretnénk lefedni négyzet alakú járólapokkal. Mohó lefedés
+esetén a teremhez először a lehető legnagyobb négyzet alakú járólapot választjuk, majd a maradék
+téglalap alakú területre ugyanezt a módszert alkalmazzuk.
+Készíts programot, amely megadja, hogy
+   • mohó lefedéssel (először a legnagyobb négyzetet választva) hány járólapra van szüksé-
+        günk, ha tetszőleges méretű négyzet alakú járólapokat használhatunk;
+   • hány járólapra van szükségünk, ha csak egyforma méretű négyzet alakú járólapokat hasz-
+        nálhatunk!
+Bemenet
+A standard bemenet egyetlen sorában a terem méretei szerepelnek (1≤Sor, Osz-
+lop≤1 000 000).
+Kimenet
+A standard kimenet első sorába a minimális járólapszámot kell írni, ha tetszőleges méretű
+négyzet alakú járólapokat használhatunk! A második sorba az egyforma méretű négyzet alakú já-
+rólapok számát kell írni, amivel lefedhető a terem!
+Példa
+Bemenet                                         Kimenet
+70 462                                          10
+                                                165
+Megjegyzések:
+Az első részfeladathoz 6 darab 70x70-es, 1 darab 42*42-es, 1 darab 28*28-as, valamint 2 darab
+14*14-es járólap kell.
+A második részfeladathoz 14x14-es járólapok használhatók fel, a 70*462=32340-es terület befe-
+déséhez ezekből 165 kell.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,32 @@
+
+
+                                  Snowboard verseny
+Egy akrobatikus snowboard versenyen részt vevő versenyzők kétféle pontszámot kapnak: az
+egyiket a bemutatott gyakorlat nehézségére, a másikat pedig a kivitelezés minőségére. Mindkét
+pontszám értéke legalább 1 és legfeljebb 10 lehet. Törtpontszám is adható, de csak olyan, amely-
+nek a törtrésze 0,5 (pl. 3,5 vagy 8,5).
+Írj programot, amely meghatározza, hogy mely versenyzőknek volt a két pontszám különbsége 2-
+nél nagyobb!
+Bemenet
+A standard bemenet első sora tartalmazza a versenyzők számát (1≤N≤105). Ezután N
+sorban egy-egy versenyző két pontszáma következik (1≤pontszám≤10).
+Kimenet
+A standard kimenetre azon versenyzők sorszámát kell kiírni, amelyeknél a két pontszám
+különbsége 2-nél nagyobb! Ha nincs egy ilyen sem, akkor írj ki -1-et!
+Példa
+Bemenet                                            Kimenet
+5                                                  2 5
+8.5 10
+2 8
+10 9
+8 6
+9.5 6.5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

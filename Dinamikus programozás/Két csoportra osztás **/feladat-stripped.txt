@@ -1,0 +1,43 @@
+
+
+                                Két csoportra osztás
+N gyerek között M párt ismerünk, akik barátai egymásnak. Osszuk őket két csoportba úgy, hogy a
+barátok egy csoportban legyenek, és a két csoport létszámának különbsége minimális legyen! A
+gyerekeket sorszámmal azonosítjuk.
+Készíts programot, amely kiszámítja, hogy mennyi a minimális különbség és ehhez hogyan kell a
+gyerekeket beosztanunk a két csoportba!
+Bemenet
+A standard bemenet első sorában a gyerekek száma (1≤N≤5000) és a baráti párok száma
+(1≤M≤80 000) van. A további M sor mindegyike egy-egy barátságot ír le. Két szám van bennük,
+az egymással barátságban levő gyerekek sorszáma (1≤A≠B≤N).
+Kimenet
+A standard kimenet első sorába az elérhető legkisebb létszámkülönbség abszolút értékét
+kell írni! A második sorba a nagyobbik (azonos elemszám esetén tetszőleges) csoportba tartozó
+gyerekek sorszámát kell írni, tetszőleges sorrendben, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                        Kimenet
+14 12                                          0
+1 2                                            1 2 3 6 12 13 14
+2 3
+3 6
+4 5                                                    8     7
+7 8
+8 9
+8 10                                             9    10      11                12        13
+8 11
+12 13                                                                                14
+13 14
+14 12                                            1     2     3     6     5
+10 11
+                                                                         4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤1000 és M≤5000. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,41 @@
+
+
+                               Senki nem ismer senkit
+N emberről tudjuk, hogy ki kit ismer. Legfeljebb 5 ember lehet, akinek kettőnél több ismerőse is
+van.
+Írj programot, amely kiszámítja, hogy mekkora az a maximális elemszámú részhalmazuk, amely-
+ben senki nem ismer senkit!
+Bemenet
+A standard bemenet első sorában az emberek száma (2≤N≤10 000) és az ismeretségek
+száma (0≤M≤100 000) van. A kettőnél több ismerőssel rendelkező emberek száma legfeljebb 5.
+A következő M sorban egy-egy ismerős pár sorszámai vannak (1≤A≠B≤N). Minden pár legfeljebb
+egyszer szerepel a bemenetben.
+Kimenet
+A standard kimenet első sorába a maximális elemszámú részhalmaz elemszámát kell írni,
+amelyben senki nem ismer senkit!
+Példa
+Bemenet                                         Kimenet
+16 13                                           9
+1 2
+9 10
+3 2
+3 4                               9       10           11                      12         13
+5 4
+7 8                                                                            15         14
+5 6
+6 7
+12 13                             1        2           3    4        5         16
+13 14
+14 15                                                  8    7        6
+15 12
+15 16
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤4000
+
+
+
+
+                                            1. oldal
+

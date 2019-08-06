@@ -1,0 +1,72 @@
+
+
+                                        Összeadás
+Két sokjegyű természetes számot számjegyenként balról jobbra is össze lehet adni. Ez azt jelenti,
+hogy az eredmény számjegyei is balról jobbra állnak elő, mindig abban a pillanatban, amikor már
+tudjuk, hogy a tőle jobbra levők miatt nem változhatnak meg.
+Készíts programot, amely balról jobbra haladva ad össze két természetes számot!
+Könyvtár
+A program megvalósításához az osszead könyvtár műveleteit kell használni.
+    getaN: a programod elején egyszer kell meghívni, megadja az első szám számjegyei szá-
+     mát (1≤getaN≤100 000).
+    getbN: a programod elején egyszer kell meghívni, megadja a második szám számjegyei
+     számát (1≤getbN≤100 000).
+    geta: megadja az első szám következő számjegyének értékét – balról jobbra haladva
+     (0≤geta≤9).
+    getb: megadja a második szám következő számjegyének értékét – balról jobbra haladva
+     (0≤getb≤9).
+    kiir(c): itt kell megadnod az eredmény következő számjegyét – balról jobbra haladva
+     (0≤c≤9). Ha úgy gondolod, hogy az összes jegyet kiírtad, azt kiir(-1)-gyel jelezd!
+A műveletek Pascal deklarációja:
+   uses osszead;
+   function getaN: longint;
+   function getbN: longint;
+   function geta: integer;
+   function getb: integer;
+   procedure kiir(c: integer);
+műveletek C/C++ deklarációja:
+   #include ”osszead.h”
+   int getaN();
+   int getbN();
+   int geta();
+   int getb();
+   void kiir(int c);
+Használat
+Letölthető egy minta osszead modul C++ és Pascal programja. Kipróbáláshoz a standard
+bemenet két sorába a két számot kell megadni.
+Példa
+   A=1354506, B=54493                           A+B=1408999
+   getaN  7
+   getbN  5
+   geta  1
+   geta  3                                     kiir(1)
+   geta  5
+   getb  5                                     kiir(4)
+
+                                             1. oldal
+
+
+   geta       4
+   getb       4                                kiir(0)
+   geta       5
+   getb       4
+   geta       0
+   getb       9
+   geta       6
+   getb       3                                kiir(8)
+                                                kiir(9)
+                                                kiir(9)
+                                                kiir(9)
+                                                kiir(-1)
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: Csak akkor kapsz pontot, ha helyes eredményt írsz ki és a kiir eljárást pontosan ak-
+kor hívod meg, amikor az eredmény adott számjegyének értéke biztosan tudható.
+
+
+
+
+                                             2. oldal
+

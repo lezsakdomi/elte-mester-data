@@ -1,0 +1,30 @@
+
+
+                    Az összes lehetséges speciális sorrend
+Készíts programot, amely az 1,…,N sorozat összes olyan permutációját előállítja, ahol minden
+elem maximum 1 hellyel mozdul el a helyéről, azaz i-1≤x[i]≤i+1!
+Bemenet
+A standard bemenet első sorában az 1,…,N sorozat N száma van (1≤N≤30).
+Kimenet
+A standard kimenet első sorába a lehetséges permutációk DB száma kerüljön! A követke-
+ző DB sor mindegyike az 1,…,N sorozat egy-egy lehetséges permutációját tartalmazza, ahol min-
+den elem maximum 1 hellyel mozdul el a helyéről. Minden permutációt N darab, szóközzel elvá-
+lasztott számként kell kiírni.
+Példa
+Bemenet                                       Kimenet
+4                                             5
+                                              1   2   3   4
+                                              1   2   4   3
+                                              1   3   2   4
+                                              2   1   3   4
+                                              2   1   4   3
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

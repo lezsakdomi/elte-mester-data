@@ -1,0 +1,32 @@
+
+
+                      Első útszakasz többszöri felújítással
+Egy N kilométer hosszú utat rossz állapota miatt szakaszonként újra aszfaltoznak. Az aszfaltozást
+M alkalommal végzik. Minden alkalomról tudjuk, hogy melyik kilométertől (Ki) melyik kilométe-
+rig (Vi) terjedő szakaszt aszfaltoznak.
+Írj programot, amely megadja az első 10 kilométer hosszú szakasz kezdetét, amelyen legalább há-
+romszor volt felújítás!
+Bemenet
+A standard bemenet első sorában az út hossza (1≤N≤10 000) és a felújítások M száma
+(1≤M≤100) van, alatta soronként egy-egy felújítás adatai (0≤Ki<Vi≤N).
+Kimenet
+A standard kimenet első sorába azon legelső útszakasz kezdetét kell írni, ahonnan az első
+10 kilométer hosszú szakaszon legalább háromszor volt felújítás!
+Példa
+Bemenet                                         Kimenet
+100 5                                           15
+0 10
+0 5
+15 95
+12 37
+13 24
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

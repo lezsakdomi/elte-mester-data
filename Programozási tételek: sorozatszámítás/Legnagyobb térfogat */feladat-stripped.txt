@@ -1,0 +1,26 @@
+
+
+                                   Legnagyobb térfogat
+Egy építőjátékban N kockánk van.
+Add meg a belőlük építhető legnagyobb épület térfogatát!
+Bemenet
+A standard bemenet első sorában a kockák száma (1≤N≤100) áll. A következő N sorban
+az egyes kockák oldalának hossza van (1≤H≤100).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a legnagyobb épület térfo-
+gatát!
+Példa
+Bemenet                                         Kimenet
+3                                               99
+2
+3
+4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

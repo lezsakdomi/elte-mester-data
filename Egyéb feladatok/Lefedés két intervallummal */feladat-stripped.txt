@@ -1,0 +1,34 @@
+
+
+                            Lefedés két intervallummal
+Adott a számegyenesen N darab intervallum a bal és jobb végpontjaik [ai,bi] értékeivel, ame-
+lyek egész számok. Ki kell számítani a közülük legfeljebb két intervallummal együttesen lefedhető
+leghosszabb szakaszt.
+Írj programot, amely megad két (nem feltétlenül különböző) [ai,bi] és [aj,bj] intervallu-
+mot, amelyeknek van közös pontjuk és a lehető legnagyobb szakaszt fedik le! Azaz aiajbibj
+és bj-ai maximális!
+Bemenet
+A standard bemenet első sorában az intervallumok száma van (2N500 000). A követ-
+kező N sor mindegyikében egy intervallum bal, illetve jobb végpontja (1a<b5*106) van. A
+bemenő adatok olyanok, hogy mindig van a feladatban megkövetelt megoldás.
+Kimenet
+A standard kimenetre két sort kell írni, egy-egy sorba a feladat megoldását adó két inter-
+vallumot (bal és jobb végpontjukat egy szóközzel elválasztva)! Ha egy intervallummal lehet lefed-
+ni, akkor a két sorba ugyanazt kell írni!
+Példa
+Bemenet                                         Kimenet
+5                                               1 3
+1   3                                           3 6
+2   4
+3   6
+2   5
+7   9
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

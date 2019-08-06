@@ -1,0 +1,35 @@
+
+
+                                         Bábuk
+Egy N*M-es táblán véletlenszerűen bábukat helyeztünk el, egy mezőn legfeljebb egyet. Minden
+bábu időegységenként egyet léphet balra, jobbra, lefelé vagy felfelé.
+Készíts programot, amely megadja, hogy maximum hány bábu juthat el K időegység alatt ugyan-
+arra a helyre!
+Bemenet
+A standard bemenet első sorában a tábla mérete (1≤N,M≤1000), az időtartam
+(1≤K≤1000) és a bábuk száma (1≤B≤100 000) van, egy-egy szóközzel elválasztva. A követke-
+ző B sor mindegyike egy-egy bábu sor- és oszlopindexét tartalmazza, egy szóközzel elválasztva
+(1≤sor≤N,1≤oszlop≤M).
+Kimenet
+A standard kimenet egyetlen sorába a maximális bábuszámot kell írni, ahányan egyetlen
+közös helyre eljuthatnak!
+Példa
+Bemenet                                       Kimenet
+6   5 2 6                                     4
+1   5                                                                                      B
+2   3                                                                               B
+3   2                                                                           B
+5   3
+5   4                                                                       B       B B
+6   2
+                                                                                B
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a N,M≤100
+
+
+
+
+                                           1. oldal
+

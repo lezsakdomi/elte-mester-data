@@ -1,0 +1,51 @@
+
+
+                                 Képen kép keresése
+Adott egy nagy színes raszteres kép futamhossz-kódolással, adott továbbá egy kis raszteres kép
+kódolatlanul. Futamhossz-kódoláskor a képet sorokra bontjuk, s mindent sort számpárok soroza-
+tával írunk le. A számpár első tagja egy darabszám, a második tagja pedig egy színkód (0 és 255
+közötti egész szám), a jelentése pedig: ennyi darab ilyen színű pontot kell egymás mellé tenni.
+(Például az 1 1 1 1 1 2 2 2 1 1 színkódokat tartalmazó sor futamhossz-kódja: 5 1 3 2 2 1.)
+Készíts programot, amely a nagy képben megkeresi a kis kép első előfordulását (fentről lefelé,
+balról jobbra haladva)!
+Bemenet
+A standard bemenet első sorában a kis kép sorainak és oszlopainak a száma van megadva
+(1K100), a következő K sor mindegyike az egyes képpontok K színkódját tartalmazza. A K+2.
+sorban a nagy kép sorainak és oszlopainak száma van (1N1000), a következő N sorban pedig
+a kép egyes sorait leíró futamhossz-kódok (soronként legfeljebb 100 számpár).
+Kimenet
+A standard kimenet egyetlen sorába a kis kép első előfordulási pozíciójának koordinátáit
+kell írni a nagy képen belül (1SORN-K+1,1OSZLOPN-K+1), egy szóközzel elválasztva!
+Ha a nagy kép nem tartalmazza a kis képet, akkor SOR és OSZLOP legyen 0!
+Példa
+Bemenet                                                               Kimenet
+20                                         5                          2 11
+20 1                                       1   1   1   1   1
+5 1 5 2 5 1 5 2                            1   2   3   4   5
+11 1 1 2 1 3 1 4 1 5 5 2                   1   1   2   2   2
+5 1 5 2 2 1 8 2                            1   1   1   2   2
+5 2 8 1 7 2                                1   2   2   2   2
+11 1 9 2
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+20 1
+(A bemenet csak az átláthatóság kedvéért van két hasábra bontva, a tesztekben ezek közvetlenül
+követik egymást.)
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MiB
+
+
+                                            1. oldal
+

@@ -1,0 +1,31 @@
+
+
+                                                Morze
+Morze-jelekkel a magyar ábécé betűi egyértelműen kódolhatók a következő táblázat alapján (- je-
+löli a hosszú, . a rövid jelet):
+            a : .-      f : ..-.     k : -.-       p : .--.   u : ..-     z : --..
+            b : -...    g : --.      l : .-..      q : --.-   v : ...-
+            c : -.-.    h : ....     m : --        r : .-.    w : .--
+            d : -..     i : ..       n : -.        s : ...    x : -..-
+            e: .        j : .---     o : ---       t: -       y : -.--
+Az egyes betűk jelei után egy szóköz, a szavak között két szóköz van.
+Írj programot, amely egy karakterekkel felírt szöveget Morze-jelekké alakít!
+Bemenet
+A standard bemenet első sora egy karaktersorozatot tartalmaz. A karaktersorozatban csak
+a fenti karakterek és szóköz szerepelhet. A karaktersorozat legfeljebb 10000 karakterből áll, vala-
+mint nagy betűt és ékezetes karaktereket nem tartalmaz.
+Kimenet
+A standard kimenet egyetlen sort tartalmazzon, a bemeneti karaktersorozattal megadott
+szöveget Morze-jelekké alakítva!
+Példa
+Bemenet                                    Kimenet
+auto virag                                 .- ..- - ---           ...- .. .-. .- --.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,40 @@
+
+
+                                     Járműkölcsönzés
+Egy közlekedési vállalat járműveket ad bérbe. Egyik különleges szállítójárművére nagy az igény,
+ezért a megrendeléseket a következő időszakra előre összegyűjtik. A megrendelést az A B szám-
+párral adják meg, ami azt jelenti, hogy a megrendelő a járművet az időszak A-adik napjától a B-
+edik napjáig akarja bérbe venni. A vállalat a járművet a lehető legjobban akarja hasznosítani, ezért
+olyan megrendeléseket fogad el, amelyeket teljes egészükben úgy tud teljesíteni, hogy a jármű a
+lehető legtöbb napra ki legyen adva.
+Készíts programot, amely kiszámítja, hogy a megrendelések alapján a jármű a legjobb esetben
+hány napra lesz bérbe adva!
+Bemenet
+A standard bemenet első sorában a megrendelések (1≤N≤100 000) száma és az időszak
+hossza (1≤M≤100 000) van. A következő N sor mindegyike két egész számot (1≤A≤B≤M) tar-
+talmaz, ami egy-egy megrendelést ír le.
+Kimenet
+A standard kimenet egyetlen sora egy egész számot tartalmazzon, a lehető legtöbb nap
+számát, amelyre a közlekedési vállalat bérbe tudja adni a járművet!
+Példa
+Bemenet                                          Kimenet
+5 25                                             19
+2 7
+3 10
+13 15
+8 11
+20 25
+
+
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N,M≤1000.
+
+
+
+
+                                              1. oldal
+

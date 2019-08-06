@@ -1,0 +1,41 @@
+
+
+                            Beruházás alvállalkozókkal
+Egy nagyszabású beruházás terve N különböző munka elvégzését írja elő. Minden munkát ponto-
+san egy nap alatt lehet elvégezni, azonban minden munkára elő van írva az a határidő, ameddig el
+kell végezni. A beruházó a munkák elvégzésére alvállalkozókat szerződtet. Minden alvállalkozó
+bármely munkát el tudja végezni, de egy nap csak egy munkát tud végezni.
+Készíts programot, amely megadja, hogy legkevesebb hány alvállalkozót kell szerződtetni, hogy
+minden munkát határidőre elvégezzék! A munkák egy ütemezését is meg kell adni!
+Bemenet
+A standard bemenet első sorában az elvégzendő munkák száma van (2≤N≤10 000). A
+további N sor mindegyike egy munka határidejét tartalmazza (1≤Hi≤300).
+Kimenet
+A standard kimenet első sorába a legkevesebb alvállalkozók K számát kell írni, amennyi-
+vel minden munka elvégezhető határidőre! A következő N sor a munkák egy lehetséges beosztá-
+sát tartalmazza! Az első szám a sorban egy munka sorszáma, a második a munkát elvégző vállal-
+kozó sorszáma, a harmadik pedig annak a napnak a sorszáma legyen, amikor a munkát elvégzi a
+vállalkozó! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                        Kimenet
+7                                              3
+1                                              1   1   1
+2                                              2   1   2
+1                                              3   2   1
+3                                              4   3   2
+2                                              5   2   2
+2                                              6   3   1
+3                                              7   1   3
+
+Korlátok                                                   Vállakozó\nap        1.    2.    3.
+Időlimit: 0.1 mp.                                                 1.             1     2     7
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤100.                                         2.             3     5
+
+                                                                  3.             6     4
+
+
+
+
+                                            1. oldal
+

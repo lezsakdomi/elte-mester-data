@@ -1,0 +1,27 @@
+
+
+                                    Mássalhangzók
+Angol szavakban időnként több mássalhangzót is írnak egymás mellé.
+Írj programot, amely megadja az egymás melletti mássalhangzók számát!
+Bemenet
+A standard bemenet egyetlen sorában egy legalább 1 és legfeljebb 255 karakterrel leírt an-
+gol szó van. Csak az angol ábécé betűi szerepelnek benne.
+Kimenet
+A standard kimenetre annyi számot kell írni, amennyi a bemeneti szóban levő mással-
+hangzó sorozatok száma. Az i-edik szám a szó i-edik csupa mássalhangzóból álló része mással-
+hangzószáma legyen!
+Példa1
+Bemenet                                       Kimenet
+computers                                     1 2 1 2
+Példa2
+Bemenet                                       Kimenet
+toast                                         1 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,30 @@
+
+
+                                    Bővelkedő számok
+A matematikában bővelkedő számnak nevezünk minden olyan n egész számot, amelyre a valódi
+osztók összege nagyobb, mint n. Például a 24 valódi osztói 1, 2, 3, 4, 6, 8 és 12, ezek összege 36.
+Mivel 36 nagyobb, mint 24, ezért a 24 bővelkedő szám.
+Írj programot, amely eldönteni előre adott N számból, hogy azok közül melyek bővelkedőek!
+Bemenet
+A standard bemenet első sora tartalmazza a megvizsgálandó számok (1≤N≤500) szá-
+mát. A következő N sorban egy-egy Ki (1≤Ki≤10 000,1≤i≤N) szám szerepel, amelyről el kell
+dönteni, hogy bővelkedő-e.
+Kimenet
+A standard kimenet első sorába az inputból való bővelkedő számok M számát kell írni!
+Azt ezt követő M sorba a bővelkedő számokat kell írni, növekvő sorrendben!
+Példa
+Bemenet                                              Kimenet
+4                                                    2
+3                                                    24
+24                                                   36
+17
+36
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

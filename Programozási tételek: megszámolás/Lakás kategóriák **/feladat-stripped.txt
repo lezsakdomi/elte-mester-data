@@ -1,0 +1,30 @@
+
+
+                                      Lakás kategóriák
+Egy ingatlanforgalmazó vállalat tárolja az eladó lakásai árát és területét.
+Írj programot, amely megadja a lakásokat 0-9, 10-19,...,190-200 négyzetméteres kategóri-
+ákba osztva, az egyes kategóriákba eső lakások számát!
+Bemenet
+A standard bemenet első sorában a lakások száma van (1≤N≤100). A következő N sorban
+soronként az egyes lakások ára (1≤Ári≤100) és területe (10≤Méreti≤200) van. (Megjegyzés az
+árakat – természetesen – millió forintban értjük, de ezzel a megoldásnál nem kell foglalkozni! A
+fent megadott intervallumok úgy értendők!)
+Kimenet
+A standard kimenet egyetlen sorába a 20 kategóriába eső lakások száma kerüljön, kategó-
+ria szerinti sorrendben!
+Példa
+Bemenet                                Kimenet
+4                                      0 0 0 1 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0
+10 45
+20 80
+10 30
+100 145
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                                1. oldal
+

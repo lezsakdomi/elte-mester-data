@@ -1,0 +1,88 @@
+
+
+                                           Expedíció
+A távközlés hőskorában egy ritka farkasfaj tudományos megfigyelésére expedíciót szerveztek a
+sarkkörön túlra. A magukkal vitt rádió csak napi egy adásra volt alkalmas, arra is csak 90 időegy-
+ségig, időegységenként egy karaktert továbbítva. Az adásokat több rádióamatőr is igyekezett leje-
+gyezni.
+Készíts programot, ami megadja az alábbiakat
+   1.   Az első és az utolsó feljegyző számát;
+   2.   A „farkas” karakterláncot tartalmazó feljegyzések számát;
+   3.   A „farkas” karakterláncot tartalmazó feljegyzések napját és feljegyzőjének számát;
+   4.   Az adott napokon feljegyzett adások számát;
+   5.   Az adott üzenetek helyreállított változatát;
+   6.   Egy adott napon megfigyelt farkasok létszámát!
+Bemenet
+A standard bemenet első sora az üzenetek számát (1≤DB≤100), a napok számát
+(1≤NK≤100), egy konkrét napot (1≤NAP≤NK) és azon a napon feljegyzést készítő amatőr rádiós
+számát (1≤A≤20) tartalmazza. Az üzeneteket a napok sorrendjében kapjuk. A következő DB sor-
+pár első sorában a nap sorszáma (1≤N≤NK) és a rádióamatőré (1≤R≤A). A sorpár második so-
+rában a feljegyzéshez tartozó pontosan 90 karakter áll. A vett karakter az angol ábécé kisbetűje,
+számjegy, / jel vagy szóköz lehet. Ha az adott időegységben nem volt egyértelműen azonosítható
+a vett jel, akkor @ karakter szerepel. Ha a tényleges üzenet befejeződött, az adó a fennmaradó
+időegységekben $ jelet küld. Ha a megfigyelés során láttak farkasokat, akkor az üzenet két, / jellel
+elválasztott egész számmal, a látott kifejlett és kölyök egyedek számával kezdődik, amelyet szóköz
+követ. Más esetben nem szám az első karakter. A feljegyzések között nincs ellentmondás.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Írd ki, hogy melyik rádióamatőr rögzítette az első (ha több is van, akkor a beme-
+net szerinti legelsőt) és melyik az utolsó (ha több is van, akkor a bemenet szerinti legutolsót) üze-
+netet!
+2. részfeladat: Írd ki az olyan feljegyzések F számát, amelynek szövegében a „farkas” karakterso-
+rozat szerepel!
+3. részfeladat: F számpárt kell írni, azon feljegyzések napját és a rádióamatőr sorszámát, amely-
+nek szövegében a „farkas” karaktersorozat szerepel, bemenet szerinti sorrendben!
+4. részfeladat: A napok sorrendjében írd ki, hogy melyik napon hány rádióamatőr készített fel-
+jegyzést!
+5. részfeladat: Az NK sorban írd ki naponként a nap sorszámát és a helyreállított üzenetet
+(egyetlen #-jelet írj, ha az adott napon nem volt üzenet)!
+6. részfeladat: Írd ki a NAP napon az A megfigyelő által megfigyelt egyedek számát (a kifejlett és
+kölyök egyedek számának összegét)! Ha nem volt ilyen feljegyzés, akkor -1-t jeleníts meg! Ha nem
+volt megfigyelt egyed vagy számuk nem állapítható meg, a -2 jelenjen meg! Amennyiben egy szá-
+mot közvetlenül @ jel követ, akkor a számot tekintsd nem megállapíthatónak!
+
+
+                                               1. oldal
+Emelt szintű informatika érettségi                                            2015. május 12.
+
+
+Példa
+Bemenet
+4 3 2 15
+1 13
+@abor@ @e@tun@@@agy@szel@2@ @o@@h@d@g @@rkasn@o@oka@ @a@tunk e@@@@a@akn@@$@$@$@@$$$$$$@@@@
+1 19
+ta@@@t@@ertunk @@gy @zel@@@@@ok hide@@f@r@@sn@omo@at @@ttu@@ e@y patak@al$@$$$$$@@@$$$$$$$
+1 9
+ta@o@t@v@@tu@k nag@ @zel@20 fok@hi@@g fa@k@snyo@okat la@tun@ e@y@pat@@na@$$@@@$$@$@$$$$$$$
+2 15
+1/0 @gy@domb@@l fig@@@tu@ f@i@s ho@a@@dalyoz@@@@@farkas$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Kimenet
+#
+13 15
+#
+1
+#
+2 15
+#
+3 1 0
+#
+1 tabort vertunk nagy szel@20 fok hideg farkasnyomokat lattunk e@y pataknal$$$$$$$$$$$$$$$$$
+2 1/0 @gy@domb@@l fig@@@tu@ f@i@s ho@a@@dalyoz@@@@@farkas$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+3 @
+#
+1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+

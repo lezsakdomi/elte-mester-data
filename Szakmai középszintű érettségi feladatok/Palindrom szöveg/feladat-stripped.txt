@@ -1,0 +1,24 @@
+
+
+                                   Palindrom szöveg
+Palindrom az a szöveg, mely eltekintve a szóközöktől és a kis és nagybetű különbségektől vissza-
+felé olvasva is megegyezik az eredeti tartalommal. Példa: Indul a görög aludni.
+Készíts programot, mely egy beolvasott szövegről megállapítja, hogy palindrom-e!
+Bemenet
+A standard bemenet egyetlen sora egy legfeljebb 300 000 karakterből álló szöveg (karak-
+tersorozat), amely az angol abc kis és nagybetűiből, illetve szóközökből áll.
+Kimenet
+A standard kimenet M egyetlen sorába azt kell írni, hogy a kapott bemenet palindrom-e
+(igen/nem)!
+Példa
+Bemenet                                             Kimenet
+Indul a gorog aludni                                igen
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

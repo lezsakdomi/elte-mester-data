@@ -1,0 +1,38 @@
+
+
+                                Szóátalakítás lépéseivel
+Egy szövegre három műveletet definiáltunk:
+       betű beszúrás tetszőleges helyre;
+       betű törlése tetszőleges helyről;
+       egy betű helyére egy másik írása.
+Készíts programot, amely megadja, hogy egy adott szót minimum hány betű beszúrás, betű törlés,
+illetve betű cserélés művelettel lehet egy másik szóvá alakítani, majd meg is adja az átalakítás mű-
+veleteit!
+Bemenet
+A standard bemenet első sorában az átalakítandó szó van (legfeljebb 100 karakteres), a
+második sorban pedig, amivé alakítani kell (legfeljebb 100 karakteres). Mindkettőben az angol
+ábécé kisbetűi lehetnek.
+Kimenet
+A standard kimenet első sorába az átalakításhoz szükséges műveletek minimális A számát
+kell írni! A következő A sorba ezen műveletek leírása kerüljön! Az első karakter B=beszúrás,
+T=törlés C=csere legyen! Az ezt követő szám annak a karakternek a sorszáma (az eredeti szöveg-
+ben), ami mögé be kell szúrni (az első karakter előtti beszúrásnál ez 0), illetve amit törölni vagy
+lecserélni kell! B és C esetén az utolsó karakter a beszúrandó vagy cserélt betű legyen! T esetén
+nincsen utolsó karakter. Ha egy karakter mögé több betűt is be kell szúrni, akkor őket a leírás
+sorrendjében kell megadni!
+Példa
+Bemenet                                           Kimenet
+eper                                              3
+szeder                                            B 0 s
+                                                  B 0 z
+                                                  C 2 d
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. page
+

@@ -1,0 +1,44 @@
+
+
+                                Globális felmelegedés
+A globális felmelegedés hatására az egyes évek átlaghőmérséklete is növekszik, valamint azon na-
+pok száma is, amikor melegebb volt minden más évnél. Ismerjük az elmúlt N évben az első M
+napra a délben mért hőmérsékleteket. Február 29-én nem mértünk, azaz a szökőévekkel nem kell
+törődni.
+Készíts programot, amely megadja
+A. a legnagyobb átlaghőmérsékletű évet;
+B. a legnagyobb átlaghőmérsékletű évvel záruló leghosszabb időszakaszt, amikor évről évre fo-
+lyamatosan nőtt az éves átlaghőmérséklet;
+C. az utolsó év azon napjai számát, amelyek melegebbek voltak bármelyik más év ugyanezen nap-
+jánál;
+D. a legrégebbi évet, amelynek volt olyan napja, ami a többi év azonos napjánál melegebb volt!
+Bemenet
+A standard bemenet első sorában az évek száma (1N1000) és az éven belül megfigyelt
+napok száma (1M365) van. A következő N sorban az egyes napokon délben mért M hőmér-
+séklet érték található (-40Hi,j50). A legelső sor a legrégebbi, az utolsó sor az idei év.
+Kimenet
+A standard kimenet első sorába annak az évnek az E sorszámát kell kiírni, amely átlaghő-
+mérséklete a legnagyobb volt (több megoldás esetén a legelsőt)! A második sorba az E év előtti
+legrégebbi év sorszámát kell írni, amelytől kezdve az E évig folyamatosan nőtt az átlaghőmérsék-
+let! A harmadik sorba azon napok száma kerüljön, amelyeken az idei évben mért hőmérsékletnél
+egyik másik évben sem volt melegebb ugyanez a nap! A negyedik sorba a legrégebbi év sorszámát
+kell írni, amelyikben volt olyan nap, aminél melegebb ezen a napon más évben nem volt! Ha va-
+lamelyik részfeladatra nincs megoldás, azt a sort üresen kell hagyni!
+Példa
+bemenet                                          kimenet
+5   3                                            5
+1   2   1                                        1
+4   4   6                                        2
+5   5   5                                        4
+8   7   1
+7   9   7
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤10.
+
+
+
+
+                                              1. oldal                    2017.01.07. 830-1130 óra
+

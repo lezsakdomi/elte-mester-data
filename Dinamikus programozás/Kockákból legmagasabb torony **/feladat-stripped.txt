@@ -1,0 +1,32 @@
+
+
+                          Kockákból legmagasabb torony
+Építőkockákból úgy lehet stabil tornyot építeni, hogy kisebb kockára nem lehet nagyobbat, illetve
+könnyebb kockára nem lehet nehezebbet tenni.
+Készíts programot, amely N kocka alapján megadja a belőlük építhető legmagasabb tornyot!
+Bemenet
+A standard bemenet első sorában a kockák (1≤N≤4000) száma van, a további N sorban
+pedig az egyes kockák oldalhossza és súlya (mindkettő legfeljebb 20 000), egyetlen szóközzel el-
+választva.
+Kimenet
+A standard kimenet első sorába az építhető legmagasabb torony M magasságát kell írni, a
+következő M sorba pedig a felhasznált kockák oldalhosszát és súlyát az építés szerint alulról felfe-
+lé!
+Példa
+Bemenet                                          Kimenet
+5                                                3
+10   3                                           20 5
+20   5                                           10 3
+15   6                                           10 2
+15   1
+10   2
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤500. Helyes első sorral a pontok 40%-a szerezhető meg.
+
+
+
+
+                                              1. oldal
+

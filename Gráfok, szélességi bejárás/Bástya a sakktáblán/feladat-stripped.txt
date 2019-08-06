@@ -1,0 +1,38 @@
+
+
+                                  Bástya a sakktáblán
+Egy bástya az NxN-es sakktáblán vízszintes és függőleges irányban léphet, egyszerre akármennyit,
+de nem léphet át másik bábut, sőt nem is léphet másik bábu helyére. A sorokat felülről lefelé, az
+oszlopokat balról jobbra 1-től sorszámozzuk.
+Készíts programot, amely megadja, hogy adott pozícióról egy másik pozícióra a bástya hány lépés
+alatt juthat el!
+Bemenet
+A standard bemenet első sorában a sakktábla mérete van (1≤N≤1000). A következő N
+sorban a sakktábla egy-egy sora leírása van, N darab + vagy – jel, + jelzi a bábukkal fogalt helye-
+ket, – pedig a szabadokat. Az utolsó sorban a bástya kezdeti sor-és oszlopindexe (1≤KS,KO≤N),
+valamint a célhely sor-és oszlopindexe (1≤CS,CO≤N) van
+Kimenet
+A standard kimenet egyetlen sorába a minimális lépésszámot kell írni, ahány lépésben a
+bástya a kezdeti helyéről a célhelyre érhet! Ha a célhely nem elérhető, akkor -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6                                                5
+------
+                                                 Magyarázat: a bástya a piros – jeleken megy
+-+-+-+
+                                                 végig.
+--+---
++---+-
++---+-
++++--+
+6 4 2 3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

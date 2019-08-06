@@ -1,0 +1,26 @@
+
+
+                                   Kiszámolós játék
+Egy kiszámolós játékban N gyerek körbe áll. A kiszámolás az elsőnél kezdődik, majd minden K-
+adikat kell kihagyni úgy, hogy végül csak egyetlen egy gyerek maradjon. Először tehát a K. marad
+ki, majd a 2*K., ... Ha az utolsóhoz értünk, a kör tovább folytatódik.
+Készíts programot, amely megadja a kiszámolós játékban kiesőket, majd pedig a végén megma-
+radt gyerek sorszámát!
+Bemenet
+A standard bemenet egyetlen sorában K és N értéke van (1≤K≤N≤10 000).
+Kimenet
+A standard kimenet első sorába a kieső gyerekek sorszámát kell írni kiesési sorrendben! A
+második sorban a végén megmaradt gyerek sorszáma legyen!
+Példa
+Bemenet                                         Kimenet
+3 5                                             3 1 5 2
+                                                4
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

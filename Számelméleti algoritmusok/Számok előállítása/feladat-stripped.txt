@@ -1,0 +1,40 @@
+
+
+                                 Számok előállítása
+Adott n pozitív egész szám A1<A2 < … <An és m előállítandó B1, B2,…, Bm szám.
+Írj programot, amely minden Bi számhoz megadja legkisebb olyan Ci egész számot, amely előál-
+lítható az A1,…,An számok összegeként és Bi≤Ci! Az összegben bármelyik Ai akárhányszor sze-
+repelhet.
+Írj programot, amely minden Bi számhoz megadja azt a Ci egész számot, amely a legkisebb olyan
+szám, amely előállítható az A1,…,An számok összegeként és Bi≤Ci! Az összegben bármelyik Ai
+akárhányszor szerepelhet.
+Bemenet
+A standard bemenet első sorában az n szám van (2≤n≤5000). A következő n sor mind-
+egyike egy Ai (0<Ai≤50 000) számot tartalmaz növekvő sorrendben. A következő sor az m
+számot tartalmazza (1≤m≤1000). Az ezt követő m sor soronként tartalmazza a Bi számokat
+(1≤Bi≤1 000 000 000).
+Kimenet
+A standard kimenet első sorába kell írni a Ci számokat, i szerint növekvően!
+Példa
+bemenet                                       kimenet
+3                                             244 62 31 74 105
+31
+43
+77
+5
+243
+51
+25
+67
+100
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában n≤10.
+
+
+
+
+                                           1. oldal
+

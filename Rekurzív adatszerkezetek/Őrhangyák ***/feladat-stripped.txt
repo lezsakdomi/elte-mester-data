@@ -1,0 +1,39 @@
+
+
+                                          Őrhangyák
+Egy fán hangyák élnek. A fa bizonyos elágazásaihoz őrhangyákat állítanak, amelyek az adott pont-
+tól felfele (a levelek felé) levő részen, legfeljebb K ág távolságnyira képesek őrizni az összes ágat.
+A hangya az őrhelyétől lefelé nem mászik.
+Készíts programot, amely egy adott fára megadja, hogy minimálisan hány őrhangyára van szükség!
+Bemenet
+A standard bemenet első sorában a fa csomópontjainak (elágazások, illetve ágvégek) száma
+(1N10 000), valamint az egy hangya által bejárható legnagyobb távolság (1K100) van. A
+következő N-1 sorban az egyes ágak leírása van (1A≠BN), melynek jelentése: az ág az A sor-
+számú csomópontnál kezdődik és a B sorszámúba vezet felfelé a levek irányában.
+Kimenet
+A standard kimenet egyetlen sorába a fa őrzéséhez minimálisan szükséges hangyák számát
+kell írni!
+Példa
+Bemenet                                           Kimenet
+12 2                                              3
+1 2                                                                    8              6           12
+2 3
+2 4                                                         11
+4 5                                                                        7                  5
+4 7
+7 6                                                               10               4                   3
+7 8
+1 9
+9 10                                                                   9                    2
+10 11
+7 12                                                                              1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a fa csomópontjainak száma N≤100
+
+
+
+
+                                               1. oldal
+

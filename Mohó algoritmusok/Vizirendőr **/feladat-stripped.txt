@@ -1,0 +1,35 @@
+
+
+                                        Vízirendőr
+Egy folyó mentén N település helyezkedik el, melyek közül néhányon vízirendőrséget szeretnének
+alapítani. Egy rendőrcsónak a folyó folyásirányában A, folyásiránnyal szemben pedig B kilométert
+tud megtenni óránként.
+Készíts programot, amely megadja azt a minimális számú települést, ahol vízirendőrséget kell lét-
+rehozni úgy, hogy a rendőrségekről bármely település K órán belül elérhető legyen!
+Bemenet
+A standard bemenet első sorában a települések száma (1N1000), a felfelé és a lefelé 1
+óra alatt megtehető távolság (1A,B100), valamint az időtartam (1K10) van. A következő
+N-1 sorban folyásirányban haladva az adott települések távolsága szerepel az első településtől
+mérve.
+Kimenet
+A standard kimenet első sorába az alapítandó vízirendőrségek M számát kell írni, a máso-
+dik sorba pedig az M vízirendőrség helyének sorszámát, egy-egy szóközzel elválasztva! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+7 20 10 1                                       3
+10                                              2 5 7
+20
+30
+60
+90
+100
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

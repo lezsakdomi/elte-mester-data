@@ -1,0 +1,38 @@
+
+
+                            Mindenhonnan vezessen út
+Adott egy G=(V,E) irányított gráf.
+Számítsd ki, hogy minimálisan hány új élet kell felvenni a gráfba, hogy legyen olyan R pont, hogy
+a gráf bármely q pontjából legyen út R-be!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1N100 000) és a gráf élei-
+nek száma (1M200 000) van. A további M sor mindegyike a gráf egy u v élét tartalmazza
+(1uvN).
+Kimenet
+A standard kimenet első sorába azt a legkisebb K számot kell írni, ahány új élet fel kell
+venni, hogy legyen olyan R pont, ahová minden pontból vezet út! Az állomány második sora tar-
+talmazza ezt az R pontot! A további K sor mindegyikében egy felveendő új uv él két végpont-
+ja legyen! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+9   11                                          1                            6          7
+1   2                                           7
+2   3                                           3 7
+2   1                                                          1        2         3           4
+3   4
+4   5
+5   3                                                               9        8          5
+6   7
+7   6
+8   3
+8   9
+9   8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

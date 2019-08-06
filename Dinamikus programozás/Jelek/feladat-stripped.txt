@@ -1,0 +1,31 @@
+
+
+                                             Jelek
+A világűrből sokféle rádiójel sorozatot foghatunk, a sorozatokat egész számok sorozatával ábrá-
+zoljuk. A földönkívüliek üzeneteit kutatók ezekben a jelsorozatokban ismétlődő részeket keres-
+nek, mert ez utalhat a mesterséges eredetre. Az ismétlődő részek átfedhetik egymást.
+Készíts programot, amely megadja egy jelsorozat leghosszabb ismétlődő folytonos részét!
+Bemenet
+A standard bemenet első sorában a jelsorozat hossza (1≤N≤4000) van. A következő sor
+N száma egy-egy jel értékét tartalmazza (1≤Pi≤1000).
+Kimenet
+A standard kimenet első sorába a jelsorozat leghosszabb ismétlődő folytonos részét kell
+írni! Több megoldás esetén a legkorábbi ilyet kell kiírni! Ha nincs ismétlődő folytonos rész, akkor
+-1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+10                                               8 3 1 7
+2 8 3 1 7 6 8 3 1 7
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 40%-a szerezhető olyan tesztekre, ahol N≤700.
+A pontok további 40%-a szerezhető olyan tesztekre, ahol N≤1500.
+
+
+
+
+                                             1. oldal
+

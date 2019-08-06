@@ -1,0 +1,56 @@
+
+
+                                             Pontok
+Ebben a feladatban egy szöveges állományban x, y koordinátákkal megadott pontokat kell
+vizsgálnod.
+Írj programot, amely
+     1. meghatározza, hogy hány pont található az x, és hány az y tengelyen,
+     2. megkeresi és felsorolja az azonos koordinátájú (egy helyen lévő) pontokat,
+     3. megadja az egymástól legmesszebbi pontpár távolságának négyzetét, és hogy hány pontpár
+        távolságnégyzete ekkora!
+Bemenet
+A standard bemenet első sorában a pontok száma (2≤N≤200) található, a következő N
+sorban pedig maguk a pontok. Egy-egy sor két egész számot tartalmaz egy szóközzel elválasztva, a
+pont x és y koordinátáját (-100≤X,Y≤100).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Két egész számot kell kiírni szóközzel elválasztva, az x és az y tengelyen található
+pontok számát.
+2. részfeladat: Az azonos koordinátájú pontokat koordinátánként csoportosítva kell felsorolni egy-
+egy x y: p1 … pk alakú sorban, ahol (x,y) egy olyan koordináta, ahol legalább két pont található,
+pi-k pedig az itt lévő pontok bemenetbeli sorszámai növekvő sorrendben. A sorokat x szerint,
+azon belül y szerint növekvő sorrendben kell kiírni. Ha nincs két egybeeső pont a bemenetben,
+akkor egyetlen -1-et kell kiírni.
+3. részfeladat: Két egész számot kell kiírni, a két pont közötti maximális távolságnégyzetet, és hogy
+hány különböző pontpár távolságnégyzete ekkora. Egy pontpár és a megfordítása nem számít kü-
+lönbözőnek.
+Példa
+ Bemenet                                           Kimenet
+ 5                                                 #
+ 1    1                                            0     2
+ 0    2                                            #
+ 2    2                                            0     2: 2 4
+ 0    2                                            1     1: 1 5
+ 1    1                                            #
+                                                   4     2
+
+
+
+
+                                              1. oldal
+Informatikai alapismeretek – emelt szint              2015. október 12.
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           2. oldal
+

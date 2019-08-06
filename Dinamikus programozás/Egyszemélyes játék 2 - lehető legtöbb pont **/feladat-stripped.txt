@@ -1,0 +1,33 @@
+
+
+                    Egyszemélyes játék 2 – lehető legtöbb pont
+Tekintsük a következő egyszemélyes játékot: A játék kezdetén egy sorban leraknak N darab pozi-
+tív egész számot. A játékos legfeljebb L lépést tehet. Egy lépésben a még a táblán lévő számsor-
+ból H darab egymás melletti számot levehet, a levett számok a pontszámához adódnak. A levett
+számok helye üresen marad, és lépés során a szomszédos számok között nem lehet üres hely. A
+játékosnak az a célja, hogy a lehető legtöbb pontot szerezze.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány pontot szerezhet a játékos!
+Bemenet
+A standard bemenet első sorában három egész szám van, a kezdeti számsorozat számainak
+száma, a lépések maximális száma és az egyszerre levehető számon darabszáma (1≤N≤3000,
+1≤L≤1000, 2≤H≤N). A második sor tartalmazza a kezdeti játékállást, azaz N pozitív egész szá-
+mot egy-egy szóközzel elválasztva. Minden szám értéke legfeljebb 5000.
+Kimenet
+A standard kimenet első sora egy egész számot tartalmazzon, a játékban elérhető lehető
+legtöbb pont értékét! A második sor egy olyan lépéssort tartalmazzon, amellyel a maximális pont-
+szám elérhető! Egy lépést a lépésben levett számsor első elemének sorszáma legyen!
+Példa
+Bemenet                                         Kimenet
+8 2 3                                           32
+1 6 8 7 6 2 1 8                                 2 6
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤1000 és L≤100. Helyes első sorral a pontok 40%-a
+szerezhető meg.
+
+
+
+
+                                            1. oldal
+

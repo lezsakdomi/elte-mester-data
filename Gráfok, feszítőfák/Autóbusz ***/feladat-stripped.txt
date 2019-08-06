@@ -1,0 +1,45 @@
+
+
+                                        Autóbusz
+Egy megye településeit kétirányú útszakaszok kötik össze. El szeretnék érni, hogy a megye köz-
+pontjából bármely település elérhető legyen autóbusszal, de ehhez az utakat meg kell erősíteni.
+Ehhez azonban a lehető legkevesebbet szeretnének költeni úterősítésre.
+Készíts programot, amely megadja, hogy mely útszakaszok azok, amelyeket biztosan nem fognak
+megerősíteni!
+Bemenet
+A standard bemenet első sorában a települések száma (2N10 000) és az útszakaszok
+száma szerepel (1M500 000). A következő M sorban egy-egy útszakasz két végpontján levő
+település sorszáma (1Ai≠BiN) és a szakaszon a kiépítés költsége (1Ki1000) van.
+Kimenet
+A standard kimenet első sorába azon útszakaszok U száma kerüljön, amelyeket biztosan
+nem fognak megerősíteni! A második sor U egész számot tartalmazzon növekvő sorrendben,
+azon útszakaszok sorszámait a bemenet sorrendjében, amelyeket biztosan nem fognak megerősí-
+teni!
+Példa
+Bemenet                                        Kimenet                                1
+                                                                                  1               2
+7   9                                          2
+1   2   1                                      6 9                            2                       2
+1   3   2
+2   5   2                                                                 3
+                                                                                  2
+                                                                                          4
+                                                                                                  2
+                                                                                                              5
+3   4   2
+5   4   2
+                                                                              4               3           4
+5   7   4
+7   4   3                                                                         2
+6   7   2                                                                 6               7
+3   6   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                           1. oldal
+

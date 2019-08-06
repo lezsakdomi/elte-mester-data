@@ -1,0 +1,43 @@
+
+
+                                Vonatok 1-2 vágánnyal
+A Kukutyin-Piripócs vasútvonalon N állomás van (a két végállomást is beleértve). Kukutyin az 1,
+Piripócs az N sorszámú. Minden két szomszédos állomás között legalább egy vágány van, de van,
+ahol kettő, ott párhuzamosan mehetnek a vonatok, mindkét vágányon, mindkét irányban. Két
+szomszédos állomás közötti szakaszon egyszerre egyetlen vonat tartózkodhat, annak van elsőbb-
+sége, amely hamarabb indulna (egyszerre indulás esetén a Kukutyin felől érkezőnek). Ismerjük
+vonatok indulási idejét valamelyik végállomásról, az egyes állomásszakaszok megtételéhez szüksé-
+ges időt, valamint az állomásokon az érkezés és indulás között eltöltendő minimális időt.
+Készíts programot, amely meghatározza, hogy a vonatok mikor érkeznek meg a végállomásukra!
+Bemenet
+A standard bemenet első sorában az állomások száma (2≤N≤100), a vonatok száma Ku-
+kutyinból, illetve Piripócsról (1≤M1,M2≤600) és az egyes állomásokon töltendő minimális vára-
+kozási idő (1≤Perc≤1000) van. A második sorban az N-1 állomásszakasz megtételéhez szük-
+séges percek száma van (1≤Idői≤1000), az i. szám az i. és i+1. állomás közötti menetidő. A
+harmadik sor az egyes állomás szakaszok vágányszámát tartalmazza (1≤Vi≤2). A következő M1
+sor egy-egy vonat indulási időpontját tartalmazza percben, indulási idő szerinti sorrendben Kuku-
+tyinból (0≤Indi≤100 000). Az utolsó M2 sor pedig ugyanezt Piripócsról.
+Kimenet
+A standard kimenet M1+M2 sorába egy-egy vonat érkezési információját kell kiírni, végál-
+lomásra érkezési idő szerinti sorrendben (egyszerre érkezés esetén előbb a Piripócsra érkezőt)! Az
+egyes sorok első száma 1, ha a vonat Kukutyinba érkezik, illetve 2, ha Piripócsra. A második szám
+az érkezési időpont, percben.
+Példa
+Bemenet                                         Kimenet
+4 2 2 5                                         1   70
+20 10 30                                        2   100
+1 2 1                                           1   110
+5                                               2   140
+52
+0
+40
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

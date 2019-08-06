@@ -1,0 +1,31 @@
+
+
+                                Másnál melegebb nap
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely megad egy napot, amely melegebb egy másik napnál, azaz az összes te-
+lepülésre igaz, hogy melegebbet jósolnak rá, mint a másik napra!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába egy nap sorszámát kell kiírni, amely melegebb egy másik
+napnál, azaz az összes településre igaz, hogy melegebbet jósolnak rá, mint a másik napra! Ha
+nincs megoldás, -1-et kell kiírni! Ha több megoldás van, akkor a legkisebb sorszámú ilyen nap
+sorszámát kell kiírni!
+Példa
+Bemenet                                          Kimenet
+3 5                                              2
+10 15 12 10 10
+11 13 11 11 20
+12 16 16 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

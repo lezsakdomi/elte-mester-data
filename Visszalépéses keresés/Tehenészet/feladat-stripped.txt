@@ -1,0 +1,38 @@
+
+
+                                       Tehenészetek
+Egy vállalkozó N tehenészetben termel tejet. A tejet M tejüzemben dolgozza fel. Ismerjük a tehe-
+nészetekben naponta keletkező tej mennyiségét és a tejüzemek napi kapacitását. Ismerjük továb-
+bá, hogy melyik tehenészetből melyik tejüzembe mennyibe kerül 1 liter tej elszállítása. Egy tehe-
+nészet sem szállíthat két különböző tejüzembe.
+Készíts programot, amely megadja, hogy melyik tehenészet hova szállítsa a tejet, hogy a szállítási
+költség a lehető legkisebb legyen!
+Bemenet
+A standard bemenet első sorában a tehenészetek száma (2≤N≤10), és a tejüzemek száma
+(1≤M≤7) van. A második sor N száma az egyes tehenészetben naponta keletkező tej mennyisége
+(1≤Ti≤1000). A harmadik sor M száma az egyes tejüzemek napi feldolgozó kapacitása
+(1≤Ui≤5000). A következő N sor, soronként M száma az i. tehenészetből a j. tejüzembe szállítás
+literenkénti költsége. A bemenetre teljesül, hogy a feladat megoldható.
+Kimenet
+A standard kimenet első sorába az elérhető minimális szállítási költséget kell kiírni! A má-
+sodik sorba N tejüzem sorszáma kerüljön, az i. annak a tejüzemnek a sorszáma, ahova az i. tehe-
+nészetből kell szállítani a tejet! Több megoldás esetén bármelyik kiírható.
+Példa
+bemenet                                          kimenet
+3 2                                              2250
+100 100 50                                       1 2 1
+200 100
+10 5
+10 5
+15 8
+
+Korlátok
+Időlimit: 1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában N≤6.
+
+
+
+
+                                             1. oldal
+

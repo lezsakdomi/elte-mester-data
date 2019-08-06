@@ -1,0 +1,48 @@
+
+
+                                   Fantasztikus feladat
+Egy távoli ország programozási versenyén a szervezők a következő fantasztikus feladatot szeret-
+nék feladni, hogy mindenkinek legyen sikerélménye: "Adott egy N tagú számsorozat, amelynek
+minden K hosszú intervallumára teljesül, hogy bármely két eleme relatív prím (nincs 1-nél na-
+gyobb közös osztójuk). Számítsd ki a sorozat elemeinek összegét!"
+Sajnos egy teszteset hibás.
+Írj programot, amely megszámolja a hibás sorozatban az olyan pontosan K hosszú intervallumo-
+kat, amelyek tartalmaznak nem relatív prím számpárt! Ha ez nem lenne elég, mindeközben a ver-
+senybizottság M kísérletet tett a hiba javítására: i. próbálkozásként az ai pozíción lévő számot át-
+írják a bi értékre, neked pedig minden próbálkozás után újra meg kell számolnod a hibás interval-
+lumokat! Az M. javítás után oldd meg az eredeti feladatot is, azaz add meg a számsorozat össze-
+gét!
+Bemenet
+A standard bemenet első sorában a tesztesetek száma (1≤T≤10) van, melyet T teszteset
+leírása követ. Minden teszt első sora tartalmazza az (1≤N≤10 000), (1≤K≤min(N,1000)) és
+(0≤M≤1000) számokat. A következő sorban N darab egész szám írja le a kezdeti számsorozatot
+(1≤vi≤100 000), az ezt követő M sorban pedig egy-egy számpár jelzi javításokat (1≤ai≤N,
+1≤bi≤100 000).
+Kimenet
+A standard kimenet tesztesetenként egy sorban M+2 egész számot tartalmazzon! Ezek
+közül az első legyen az eredeti sorozat hibás intervallumainak száma, ezt kövesse az egyes javítá-
+sok utáni hibaszám, végül pedig a javítások utáni sorozat elemeinek összege!
+Példa
+bemenet                                           kimenet
+2                                                 2 3 3 3 2 42
+6   3 4                                           0 0 1
+7   2 3 4 5 6
+4   3
+5   9
+4   10
+6   11
+1   1 1
+1
+1   1
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 50%-a szerezhető olyan tesztekre, ahol M=0.
+
+
+
+
+                                              1. oldal
+

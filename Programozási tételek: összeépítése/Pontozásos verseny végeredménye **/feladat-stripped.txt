@@ -1,0 +1,34 @@
+
+
+                       Pontozásos verseny végeredménye
+Egy pontozásos versenyen N résztvevő indul. A versenyzőket M pontozó pontozza. A pontozók
+azonban befolyásolhatnák a verseny végeredményét (a saját országbeli versenyzőknek nagyobb, a
+más országbeli versenyzőknek pedig kisebb pontot adva, ezért a verseny szervezői úgy döntöttek,
+hogy az M pontszám közül a legkisebbet és a legnagyobbat egy versenyzőnél sem veszik figye-
+lembe, azaz mindenkit M-2 pontszám összegével értékelnek.
+Készíts programot, amely kiírja a verseny végeredményét!
+Bemenet
+A standard bemenet első sorában a résztvevők száma (1≤N≤100) és a pontozóbírók
+száma (3≤M≤10) van. Ezután soronként a pontozók által adott pontok vannak, versenyzőnként
+(1≤Pi,j≤10).
+Kimenet
+A standard kimenetre a verseny végeredményét kell kiírni (a versenyzőket pontszám sze-
+rint csökkenő sorrendben, holtverseny esetén azonos helyezési számmal, de sorszám szerinti sor-
+rendben)!
+Példa
+Bemenet                                         Kimenet
+4   4                                           1   1   12
+8   2   6   6                                   2   3   11
+5   5   5   5                                   3   2   10
+4   5   6   7                                   3   4   10
+5   4   6   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

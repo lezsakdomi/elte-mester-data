@@ -1,0 +1,46 @@
+
+
+                                         Kártyakeverés
+Ádám és Éva olyan kártyával játszik, amelynek N lapja van és minden kártya az 1..N számok va-
+lamelyikét tartalmazza címkeként, nincs két kártya azonosan címkézve. Feltételezzük, hogy N pá-
+ratlan szám.
+Van egy kártyakeverő gépük, amely átrendezi a sorban egymás után lerakott kártyák sorrendjét. A
+keverőgép úgynevezett duplakeverést végez, ami a következőt jelenti: minden i (1iN) pozíci-
+óra ha ott a j címkéjű kártya van, akkor megnézi, hogy a j pozícióban milyen kártya van, legyen ez
+k. Ekkor az átrendezést úgy végzi el, hogy az i pozícióba a k címkéjű kártya kerül.
+Ádám és Éva a következőképpen játszik. Először Éva véletlenszerűen lerakja a kártyákat, legyen
+ekkor a kártyák címkéjének sorrendje a1, a2, ..., aN. Ezután átrendezi a kártyák sorrendjét úgy, hogy
+az ai pozícióba az ai+1 címkéjű kártya kerül minden i-re (1iN-1), és az aN pozícióba az a1 kerül.
+Az így kapott címkesorrendet jelölje x1, x2, ..., xN, ami azt jelenti, hogy az i-edik pozícióban az xi
+címkéjű kártya van.
+Ezután Éva végrehajt S számú duplakeverés műveletet a keverőgéppel. Az így kapott kártyasoro-
+zat címkéinek sorrendjét jelölje p1, p2, ..., pN! Ezt a kártyaállást kapja Ádám, és megkapja az S
+számot is. Ádám feladata, hogy kiderítse azt az x1, x2, ..., xN kártyaállást, amelyet Éva előállított a
+keverés megkezdése előtt.
+Készíts programot, amely kiszámítja a keverés előtti állást!
+Bemenet
+A standard bemenet első sora a kártyák számát (1N1000) és a duplakeverések számát
+(1S1000) tartalmazza. A következő N sor az összes duplakeverés végrehajtása után kapott
+kártyaállást írja le, közülük az i–edik sorban álló pi szám azt jelenti, hogy a kártyaállásban az i -edik
+pozícióban a pi címkéjű kártya áll.
+Kimenet
+A standard kimenet N sort tartalmazzon, ami azt az x1, x2, ..., xN kártyaállást írja le, amely
+a keverések elvégzése előtt volt!
+Példa
+Bemenet                                             Kimenet
+5 2                                                 2
+4                                                   5
+1                                                   4
+5                                                   1
+3                                                   3
+2
+Korlátok
+Időlimit: 0.02 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                                1. oldal
+

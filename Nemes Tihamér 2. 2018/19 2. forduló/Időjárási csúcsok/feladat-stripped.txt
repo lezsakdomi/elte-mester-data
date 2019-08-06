@@ -1,0 +1,30 @@
+
+
+                                  Időjárási csúcsok
+Ismerjük N napra a déli hőmérséklet értékét. Lokálisan melegnek nevezünk egy napot, ha az az-
+nap mért érték nagyobb volt a két szomszédjánál, lokálisan hidegnek pedig azt, amelyiken mért
+érték kisebb volt a két szomszédjánál.
+Írj programot, amely megadja, hogy hány olyan folytonos időszak van az N nap alatt, amely idő-
+szakon belül pontosan K lokális meleg és L lokális hideg nap volt!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100 000), valamint a K és az L
+érték van (1≤K,L≤1000). A második sorban az N napon mért hőmérséklet (-100≤Hi≤100)
+található.
+Kimenet
+A standard kimenet első sorába azon időszakok számát kell írni, amely időszakon belül
+pontosan K lokális meleg és L lokális hideg nap volt!
+Példa
+Bemenet                                       Kimenet
+13 2 1                                        14
+1 1 2 1 0 0 2 0 1 2 1 0 1
+                                              Magyarázat: [1,8],[1,9],[2,8],[2,9],…[7,11]
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

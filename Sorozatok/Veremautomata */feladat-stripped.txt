@@ -1,0 +1,37 @@
+
+
+                                     Veremautomata
+A veremautomata olyan gép, amely a bemenetként kapott számsorozaton az alábbi módon mű-
+ködik. Sorban balról-jobbra egyesével olvassa a számsorozatot és vagy a sorozat aktuális elemével,
+vagy a verem tetején lévő elemmel végezhet műveletet. Egy lépésben az alábbi három művelet va-
+lamelyikét hajthatja végre:
+     1. A bemenet aktuális elemét kiírja a kimenetre.
+     2. A bemenet aktuális elemét beteszi a verembe az ott lévő sorozat elé.
+     3. A verem tetején lévő (a sorozatban első) elemet kiveszi a veremből és kiírja a kimenetre.
+Kezdetben a verem üres. Feladatunkban a veremautomatát arra akarjuk használni, hogy bemenet-
+ként kap egy számsorozatot, amely az 1, 2, …, N számokat tartalmazza tetszőleges sorrendben,
+és a kimenetre írja ki az 1, 2, …, M számsorozatot, a lehető legnagyobb M-ig. (A kimenetben
+minden számnak szerepelnie kell M-ig és sorrendben kell lenniük!)
+Készíts programot, amely kiszámítja, hogy melyik az a legnagyobb M érték, amelyre a veremauto-
+mata kimenete az 1, 2, …, M lehet!
+Bemenet
+A standard bemenet első sorában a bemeneti sorozat elemszáma van (1  N  10 000), a
+második sor pedig az 1, 2, …, N számok valamely permutációját tartalmazza, a számokat egy-egy
+szóközzel elválasztva.
+Kimenet
+A standard kimenet első és egyetlen sorába azt a legnagyobb M számot kell írni, amelyre a
+veremautomata kimenete az 1, 2, …, M sorozat lehet!
+Példa
+Bemenet                                         Kimenet
+10                                              8
+3 2 1 5 4 6 9 7 10 8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤20.
+
+
+
+
+                                             1. oldal
+

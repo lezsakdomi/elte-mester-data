@@ -1,0 +1,61 @@
+
+*
+
+Legtöbb megfigyelt jármű egy helyen
+Egy városban forgalomszámlálást végeztek M helyen. Minden áthaladó járműről feljegyezték, a
+megfigyelés helyét és az időpont óra és perc értékét. A megfigyelési adatokat összegyűjtötték és az
+időpont szerint nem csökkenő sorrendbe rendezték.
+Írj programot, amely megadja, hogy melyik megfigyelési helyen haladt át a legtöbb jármű és hány!
+
+Bemenet
+A standard bemenet első sorában a megfigyelési helyek száma (2≤M≤100) és az adatok
+száma (2≤N≤1000) van. A következő sorok mindegyike egy megfigyelési adatot tartalmaz, három nem negatív egész számot egy-egy szóközzel elválasztva, az első szám a megfigyelési hely
+sorszáma (1≤S≤M) a második a megfigyelési időpont óra (0≤Ó≤23), a harmadik pedig a perc része (0≤P≤59).
+
+Kimenet
+A standard kimenet első sorába annak a megfigyelési helynek a sorszámát és a megfigyelési ponton megfigyelt járművek számát kell kiírni, ahol a legtöbb jármű haladt át (ha több ilyen
+van, akkor a legkisebb sorszámút kell megadni)!
+
+Példa
+Bemenet
+
+Kimenet
+
+5
+2
+1
+2
+3
+5
+2
+2
+2
+2
+1
+3
+5
+
+2 6
+
+12
+0 12
+1 12
+2 22
+3 11
+7 52
+10 12
+15 12
+15 13
+16 10
+16 10
+17 12
+20 32
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+1. oldal
+
+

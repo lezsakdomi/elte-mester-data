@@ -1,0 +1,43 @@
+
+
+                                            Farajz
+Bináris fákat szeretnénk kirajzolni karakteres formában. A fa minden pontjában egy karakterrel
+azonosított adat lehet, a fa szöveges leírására az alábbi szabály érvényes:
+   1.) Minden karakter, ami az angol ábécé eleme, faleírás.
+   2.) Ha x karakter valamint f1 és f2 faleírás, akkor az x(f1,f2) szöveg is faleírás.
+   3.) Csak az 1. és 2. szabályok véges sokszori alkalmazásával kapható faleírás.
+A kinyomtatást a lehető legkisebb szélességben szeretnénk megoldani, de úgy, hogy szemléltesse a
+fa szerkezetét. Jelölje Poz(f) az f fa gyökerének pozícióját! A rajzolási pozícióknak teljesíteni
+kell az alábbi feltételeket:
+    A fa minden p pontjára 0≤Poz(p)
+    Ha f=x(f1,f2), akkor Poz(f1)<Poz(f)<Poz(f2) és
+     Poz(f)=(Poz(f1)+Poz(f2))/2
+    Ha p és q azonos szinten lévő szomszédos pontja a fának és p balra van q-tól, akkor
+     Poz(p)+1<Poz(q).
+Készíts programot, amely kiszámítja, hogy minimálisan mekkora lehet a legnagyobb pozíció érté-
+ke!
+Bemenet
+A standard bemenet első sorában egy szabályos faleírás szerepel, ami legfeljebb 5000 ka-
+raktert tartalmaz.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a legnagyobb pozíció le-
+hetséges legkisebb értékét!
+Példa
+Bemenet                                         Kimenet
+x(b(z,u(v,w)),c(e,x(a(x,y),d)))                 7
+                                 x
+                               b▬┴▬c
+                              z┴u e┴x
+                               v┴w a┴d
+                                  x┴y
+                              01234567
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500
+
+
+
+
+                                             1. oldal
+

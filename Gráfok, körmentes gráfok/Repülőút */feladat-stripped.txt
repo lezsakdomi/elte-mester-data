@@ -1,0 +1,47 @@
+
+
+                                         Repülőút
+Egy repülőtársaság N város között üzemeltet járatokat. A városokat a természetes számokkal
+azonosítják 1-től N-ig. A társaság jelentős kedvezményt ad, ha az utas olyan útvonalat választ,
+hogy az utazás során mindig nagyobb sorszámú városba megy. Az 1. városból szeretnénk eljutni
+az N. városba kedvezményes útvonalon.
+Készíts programot, amely megadja azokat a városokat, amelyeken mindenképpen át kell
+haladnunk, valamint azokat a város-párokat, amelyek közötti járatot mindenképpen igénybe kell
+venni bármely kedvezményes útvonalon akarunk az 1. városból az N. városba jutni!
+Bemenet
+A standard bemenetelső sorában a városok száma (1N10000) és a járatok száma
+(1M100000) van. A következő M sor mindegyikében egy-egy P Q számpár (1P<QN) van,
+egy szóközzel elválasztva: azt jelenti, hogy van járat a P és a Q város között. Az 1. városból
+bármely másik városba el lehet jutni és bármely városból el lehet jutni az N. városba alkalmas
+járatokkal.
+Kimenet
+A standard kimenetelső sorába a kikerülhetetlen városok K számát kell írni, majd ettől
+egy-egy szóközzel elválasztva a kikerülhetetlen városok sorszámát növekvő sorrendben! A
+második sorba a kikerülhetetlen járatok M számát kell írni! A következő M sor mindegyikébe egy-
+egy elkerülhetetlen járatot kell írni, a két város sorszámát egy szóközzel elválasztva növekvő
+sorrendben!
+Példa
+Bemenet                               Kimenet
+10 12                                 3 4 5 8
+1 2                                   1
+1 3                                   4 5
+2 4
+3 4
+4 5
+5 6                                       2                       6                 9
+5 7
+6 8
+7 8                               1                 4     5                8               10
+8 9
+9 10                                      3                       7
+8 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                              1. oldal
+

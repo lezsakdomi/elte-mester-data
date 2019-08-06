@@ -1,0 +1,39 @@
+
+
+                                      Fényképezés
+Egy rendezvényen N ember vesz részt, tudjuk mindegyikről, hogy mettől meddig lesz ott. Egy
+fényképészt szerződtetnék pontosan P perces időtartamra úgy, hogy ez alatt a lehető legtöbb em-
+bert tudja lefényképezni. Ha a fényképész pontosan akkor érkezik, amikor egy másik ember távo-
+zik, vagy akkor távozik, amikor egy másik ember érkezik, akkor még készülhet fénykép. Aki 1
+percet tölt rendezvényen, az ugyanabban a percben érkezik és távozik is. A fényképész nem ér-
+kezhet a legelső érkezés előtt és nem távozhat a legutolsó távozás után.
+Készíts programot, amely megadja, hogy a fényképész mikor jöjjön, és amíg ott van, az alatt hány
+embert tud lefényképezni!
+Bemenet
+A standard bemenet első sorában a résztvevők száma (1≤N≤100 000) és a P értéke
+(1≤P≤100) van. A következő N sorban egy-egy ember érkezési és távozási időpontjai követeznek
+(1≤Érki≤Távi≤10 000).
+Kimenet
+A standard kimenet egyetlen sorába a fényképész érkezési időpontját kell kiírni, amitől
+kezdődően P perc alatt a lehető legtöbb embert tudja lefényképezni (több megoldás esetén a lehe-
+tő legkésőbbit), a második sorba pedig ezen emberek számát!
+Példa
+Bemenet                                         Kimenet
+5   5                                           5
+1   5                                           4
+1   4
+                                                Magyarázat: az 5-9. percben összesen 4 ember-
+6   20
+                                                rel találkozhat.
+3   6
+9   18
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

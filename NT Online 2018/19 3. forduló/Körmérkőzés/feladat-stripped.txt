@@ -1,0 +1,33 @@
+
+
+                                     Körmérkőzés
+Egy N csapatos körmérkőzéses versenyen már lejátszottak néhány fordulót.
+Készíts programot, amely megad egy olyan párosítást (melyik csapat melyikkel játsszon), amely-
+ben még senki nem találkozott senkivel!
+Bemenet
+A standard bemenet első sorában a csapatok száma (2≤N≤16, N páros) és a lejátszott
+fordulók száma (1≤M<N) van. A következő N sorban az egyes csapatok M mérkőzésen kapott
+ellenfelei vannak (1≤Ei,j≤N).
+Kimenet
+A standard kimenet N/2 sorába egy következő forduló lehetséges párosítását kell írni!
+Minden sorban két csapat sorszáma szerepeljen, amelyek egymás ellen fognak játszani! A kiírás
+sorendje (mind soron belül, mind sorok között) tetszőleges.
+Példa
+Bemenet                                        Kimenet
+6   3                                          1 6
+2   3   4                                      2 3
+1   4   5                                      4 5
+1   5   6
+1   2   6
+2   3   6
+3   4   5
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

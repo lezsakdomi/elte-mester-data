@@ -1,0 +1,47 @@
+
+
+                                         Országok
+Adott N ország, ismerjük mindenkinek a szomszédjait. Van közöttük R agresszív ország, ami el
+akar foglalni másokat. Egy évben minden ország elfoglalhatja az összes olyan szomszédját, akinek
+nincs más agresszív szomszédja, majd az elfoglaltakat magához csatolja. A következő években
+ugyanígy járnak el. K év után melyik agresszív ország hány országot foglalt el?
+Készíts programot, amely megadja, hogy K év után melyik agresszív ország hány országot foglalt
+el!
+Bemenet
+A standard bemenet első sorában az országok száma (1≤N≤30 000), az agresszív orszá-
+gok száma (1≤R≤N) és a K év (1≤K≤1000) van. Az országokat az 1,…,N számokkal azonosít-
+juk, az első R sorszámú ország az agresszív ország. A következő N sorban a szomszédságok leírá-
+sa van. Közülük az i-edik sorban az i-edik ország szomszédjai sorszáma szerepel (1≤Si,j≤N), so-
+ronként legfeljebb 100. Minden sorban a felsorolást a 0 szám zárja.
+Kimenet
+A standard kimenetre R számú sort kell írni. Az i-edik sorba azon országok számát, aki-
+ket az adott sorszámú agresszív ország a K. évig elfoglalt, majd ezen országok következzenek a
+sorban (tetszőleges sorrendben)!
+Példa
+Bemenet                                         Kimenet
+11 3 2                                          2 7 11
+4 7 0                                           3 5 8 9
+4 5 8 9 0                                       1 10                               6
+
+10 0                                                                           5
+1 2 5 7 8 0                                                                            10
+2 4 6 9 10 0                                                       4       2       9         3
+5 10 0                                                    1
+1 4 8 11 0
+                                                                       8
+2 4 7 0                                                            7
+2 5 10 0
+3 5 6 9 0                                                     11
+7 0
+
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+Pontozás
+A pontok 50% kapható olyan tesztesetek megoldására, ahol N≤1000.
+
+
+
+
+                                            1. oldal
+

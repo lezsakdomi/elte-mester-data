@@ -1,0 +1,31 @@
+
+
+                               Alternáló részsorozat
+Statisztikusok pozitív egész számokat tartalmazó számsorozatokat vizsgálnak. Az olyan számso-
+rozatot, amelyben bármely három egymást követő a,b,c elemre teljesül, hogy a<b és b>c vagy
+a>b és b<c alternáló sorozatnak neveznek. Adott sorozatból elemek elhagyásával alternáló
+részsorozatot kaphatunk.
+Készíts programot, amely kiszámítja, hogy adott sorozatnak mekkora a leghosszabb alternáló
+részsorozata, és meg is ad egy leghosszabb alternáló részsorozatot!
+Bemenet
+A standard bemenet első sorában a számsorozat elemeinek száma (1N10 000) van. A
+második sor pontosan N pozitív egész számot tartalmaz (0≤Si≤1 000 000), a vizsgált számso-
+rozatot.
+Kimenet
+A standard kimenet első sorába a leghosszabb alternáló részsorozat H hosszát kell írni! A
+második sor tartalmazza egy leghosszabb alternáló részsorozat H darab elemének indexét! Több
+megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                 Kimenet
+10                                      6
+3 2 1 9 2 1 3 6 8 2                     1 2 4 5 7 10
+Korlátok
+Időlimit: 0.7 mp
+Memórialimit: 32 MiB
+Pontozás: a tesztek 50%-ában N≤30, további 30%-ában N≤100.
+
+
+
+
+                                             1. oldal
+

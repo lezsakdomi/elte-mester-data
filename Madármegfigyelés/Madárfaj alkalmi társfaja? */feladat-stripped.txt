@@ -1,0 +1,31 @@
+
+
+                             Madárfaj alkalmi társfaja?
+Az ország néhány helységében madármegfigyelést végeztünk. Mindegyikben megadtuk, hogy
+milyen fajú madárból hányat láttunk.
+Készíts programot, amely minden madárfajra eldönti, hogy egy másik madárfaj alkalmi társfaja-e,
+azaz olyan, amellyel az valahol együtt fordult elő!
+Bemenet
+A standard bemenet első sorában a helységek száma (1≤M≤50) és a madárfajok száma
+(1≤N≤200) van. A következő M sor mindegyikében N darabszám szerepel, közülük az i-edik
+sorban a j-edik szám az i-edik helységben a j-edik sorszámú fajból megfigyelt madarak száma
+(0≤Ei,j≤1000).
+Kimenet
+A standard kimenet N sorból álljon, és minden sor N karaktert tartalmazzon! A j-edik sor
+k-adik karaktere 1-es vagy 0-s legyen aszerint, hogy a j-edik madárfajnak a k-adik madárfaj al-
+kalmi társfaja, vagy nem!
+Példa
+Bemenet                                        Kimenet
+3   4                                          0101
+1   2 0 1                                      1001
+0   0 2 0                                      0000
+4   1 0 0                                      1100
+Korlátok
+Időlimit: 0,1 mp
+Memórialimit: 1 MB
+
+
+
+
+                                            1. oldal
+

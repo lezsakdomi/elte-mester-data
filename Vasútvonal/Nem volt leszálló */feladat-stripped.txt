@@ -1,0 +1,32 @@
+
+
+                                     Nem volt leszálló
+A Budapest-Székesfehérvár vasútvonalon egy vonat kalauza minden állomáson feljegyezte, hogy
+hányan szálltak fel a vonatra, illetve hányan szálltak le. (Budapesten biztos nincs leszálló, Székes-
+fehérváron biztos nincs felszálló, aki leszállt, az nem száll vissza.)
+Készíts programot, amely megadja az utolsó állomást, ahol nem volt leszálló!
+Bemenet
+A standard bemenet első sorában az állomások száma (1≤N≤1000) szerepel, majd ezt követi so-
+ronként az egyes állomásokon leszállók (0≤le≤9000) és felszállók (0≤fel≤9000) száma.
+Kimenet
+A standard kimenet első sorába az utolsó állomás sorszámát kell írni, ahol nem volt leszál-
+ló!
+Példa
+Bemenet                                           Kimenet
+6                                                 3
+0 15
+10 30
+0 32
+48 0
+19 26
+26 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤500, a leszállók és felszállók száma≤400
+
+
+
+
+                                              1. oldal
+

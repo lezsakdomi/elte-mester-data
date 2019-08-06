@@ -1,0 +1,45 @@
+
+
+                              Teljesítőképesség vizsgálat
+Egy őrző-védő cég N alkalmazottját vizsgálták abból a szempontból, hogy fizikai teljesítőképes-
+ségük mennyire ingadozó. A tesztelést egy hónapon keresztül végezték. Naponta egyszer meg-
+mérték, hogy egy speciális fizikai igénybevételt jelentő feladatot mennyi idő alatt hajtanak végre. A
+mért értékek közül csak a legrosszabb és a legjobb eredményt írták be a hivatalos jegyzőkönyvbe.
+Írj programot, amely a jegyzőkönyvben leírt adatok alapján
+     1. megadja minden alkalmazottra, hogy mennyi a legrosszabb és a legjobb mért ideje közti
+        különbség,
+     2. megadja, hogy melyik alkalmazott fizikai teljesítménye a legingadozóbb!
+Bemenet
+A standard bemenet első sorában a vizsgált alkalmazottak száma (1≤N≤10 000), az ezt
+követő N sorban pedig az egyes alkalmazott legjobb és legrosszabb eredménye található (tetsző-
+leges sorrendeben). Az eredmények másodpercben vannak megadva (0.0≤S≤1000.0), leg-
+alább egy- és legfeljebb három tizedesjegy pontossággal. Ha több mint egy tizedesjegy van meg-
+adva, akkor ezt egy tizedesjegyre kell kerekíteni és a kerekített értékkel kell számolni!
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ.
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni. Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az egyes alkalmazottak legrosszabb és legjobb idejének különbségét kell kiírni, egy
+tizedesjegy pontossággal, a bemenettel megegyező sorrendben!
+2. részfeladat: A legingadozóbb teljesítményű alkalmazott sorszámát kell kiírni (több megoldás
+esetén bármelyik megadható)!
+Példa
+Bemenet                                           Kimenet
+4                                                 #
+3.4 5.6                                           2.2
+5.0 2.0                                           3.0
+2.75 3.149                                        0.3
+6.7 4.2                                           2.5
+                                                  #
+                                                  2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

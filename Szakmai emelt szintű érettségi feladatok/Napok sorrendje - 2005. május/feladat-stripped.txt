@@ -1,0 +1,32 @@
+
+
+                                    Napok sorrendje
+Néhány héten keresztül minden nap délben megmértük a hőmérsékletet az udvaron.
+Készíts programot, ami az átlaghőmérsékletek alapján sorba rendezi a hét napjait, növekvő sor-
+rendben!
+Bemenet
+A standard bemenet első sora a hetek számát tartalmazza (1≤N≤104), , amíg a mérés tar-
+tott. A következő N sor egyenként 7 egész számot tartalmaz, az i-edik sor j-edik száma az i-edik
+héten a j-edik napon mért hőmérséklet.
+Kimenet
+A standard kimenetre hét sort kell kiírni, az átlaghőmérsékletek alapján felállított sor-
+rendben a hét napjainak nevét, magyarul, nagy kezdőbetűvel, ékezet nélkül! Ha két nap átlaghő-
+mérséklete azonos, az abc-ben előbb lévő nap nevét írja ki a program először!
+Példa
+Bemenet                                             Kimenet
+2                                                   Vasarnap
+0 1 10 15 6 0 -4                                    Hetfo
+1 2 4 3 4 5 1                                       Kedd
+                                                    Szombat
+                                                    Pentek
+                                                    Szerda
+                                                    Csutortok
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

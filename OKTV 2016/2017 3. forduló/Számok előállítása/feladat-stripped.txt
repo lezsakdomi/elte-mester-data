@@ -1,0 +1,31 @@
+
+
+                                Számok előállítása
+Adott három pozitív egész szám; A1<A2<A3 és M előállítandó B1, B2,…, BM szám.
+Írj programot, amely minden Bi számhoz megadja azt a Ci egész számot, amely a legkisebb
+olyan szám, amely előállítható az A1,A2,A3 számok összegeként és Bi≤Ci. Az összegben bárme-
+lyik Ai akárhányszor szerepelhet.
+Bemenet
+A standard bemenet első sorában az A1,A2,A3 szám van (2≤A1<A2<A3≤1000) egy-egy
+szóközzel elválasztva. A második sorban van az M előállítandó szám (1≤M≤100). A harmadik
+sor tartalmazza az előállítandó B1, B2,…, BM számokat (1≤Bi≤1 000 000 000)egy-egy szó-
+közzel elválasztva.
+Kimenet
+A standard kimenet első sorába kell írni a Ci számokat egy-egy szóközzel elválasztva, i-
+szerint növekvően!
+Példa
+bemenet                                      kimenet
+31 43 77                                     244 62 31 74 105
+5
+243 51 25 67 100
+
+Korlátok
+Időlimit: 0.015 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában M≤5.
+
+
+
+
+                                          1. oldal                  2017.02.25. 10:00-16:00
+

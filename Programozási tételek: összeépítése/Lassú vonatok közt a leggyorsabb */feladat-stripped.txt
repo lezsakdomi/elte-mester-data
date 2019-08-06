@@ -1,0 +1,31 @@
+
+
+                       Lassú vonatok között a leggyorsabb
+Ismerjük N vonat menetidejét Budapestről Siófokra.
+Írj programot, amely megadja a 120 percnél hosszabb menetidejű vonatok közül a leggyorsabbat!
+Bemenet
+A standard bemenet első sorában a vonatok száma van (1N100). A következő sorok
+mindegyike egy-egy egész számot tartalmaz, az egyes vonatok menetidejét percben (1≤M≤300).
+Kimenet
+A standard kimenet első sorába a 120 percnél lassúbb vonatok közül a leggyorsabb sor-
+számát és menetidejét kell írni, egy szóközzel elválasztva! Ha nincs ilyen vonat, egyetlen -1-et kell
+írni; ha több van, akkor a legkisebb sorszámút!
+Példa
+Bemenet                                           Kimenet
+6                                                 6 122
+118
+200
+199
+116
+200
+122
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

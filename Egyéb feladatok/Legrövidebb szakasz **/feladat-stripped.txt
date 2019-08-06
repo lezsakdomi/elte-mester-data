@@ -1,0 +1,29 @@
+
+
+                                  Legrövidebb szakasz
+A piacon egymás mellett N helyen árulnak árusok. Közülük egyesekben helyi kistermelők, akik
+kecskesajtot árulnak. K különböző árustól szeretnénk kecskesajtot venni. Úgy akarjuk kiválasztani
+az árusokat, hogy sorban az utolsó és az első hely sorszámának különbsége a lehető legkisebb le-
+gyen, ahol vásárolunk.
+Készíts programot, amely megadja legrövidebb, K sajtárust tartalmazó szakaszt!
+Bemenet
+A standard bemenet első sorában az árusok száma (1N1000) és a vásárolni kívánt saj-
+tok száma van (1K100) van. A második sorban N egész szám van: Si=1, ha az i-edik árus árul
+kecskesajtot, 0 egyébként.
+Kimenet
+A standard kimenet a legrövidebb szakasz kezdetét és végét (azaz azon árusok sorszámát,
+ahol először, illetve K.-nak veszünk sajtot) kell írni! Ha nincs ilyen szakasz, akkor két darab -1-et
+kell kiírni!
+Példa
+Bemenet                              Kimenet
+10 3                                 6 9
+0 1 1 0 0 1 1 0 1 0
+Korlátok
+Időlimit: 0.1 mp
+Memórialimit: 16 MiB
+
+
+
+
+                                              1. oldal
+

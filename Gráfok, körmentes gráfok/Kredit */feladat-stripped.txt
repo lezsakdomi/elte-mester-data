@@ -1,0 +1,44 @@
+
+
+                                             Kredit
+Az egyetemeken kreditrendszerű oktatás folyik, amiből az következik, hogy az egyes tantárgyakat
+a képzés bármely félévében lehet tanulni, ha az előfeltételüket (más tantárgyak elvégzése) a hallga-
+tók teljesítették.
+Készíts programot, amely a tantárgyak előfeltételei ismeretében megadja, hogy az egyetem mini-
+málisan hány félév alatt végezhető el, s ebben az esetben melyek azok a tantárgyak, amelyek el-
+végzését nem lehet későbbre tolni (mert ettől nőne az egyetem elvégzési ideje!
+Bemenet
+A standard bemenet első sorában a tantárgyak (1≤N≤1000) és az előfeltételek száma
+(0≤M≤10 000) van. A következő N sor mindegyikében egy-egy tantárgy pontosan 6 karakteres
+azonosítója, az azt követő M sorban pedig az előfeltételek vannak. Minden előfeltétel két, ponto-
+san 6 karakteres azonosítóból áll, közöttük egy szóközzel, amelynek jelentése: a sorban levő első
+tárgynak előfeltétele a sorban levő második tárgy elvégzése.
+Kimenet
+A standard kimenet első sorába azt a félévszámot kell írni, amennyi az előfeltételek betar-
+tásával minimálisan szükséges az egyetem elvégzéséhez)! A második sorba azon tantárgyak K
+száma kerüljön, amelyeket a minimális elvégzési idő miatt csak egy adott félévben lehet elvégezni,
+a következő K sorban pedig ezen tantárgyak azonosítói legyenek (soronként 1) abc rendben!
+Példa
+Bemenet                              Kimenet
+6 5                                  3
+AAAAAA                               4
+BBBBBB                               AAAAAA
+CCCCCC                               BBBBBB
+DDDDDD                               CCCCCC
+EEEEEE                               FFFFFF
+FFFFFF
+BBBBBB     AAAAAA
+CCCCCC     AAAAAA
+EEEEEE     DDDDDD
+FFFFFF     CCCCCC
+FFFFFF     BBBBBB
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                              1. oldal
+

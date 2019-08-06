@@ -1,0 +1,42 @@
+
+
+                                 Kincsek a hegyoldalon
+Egy jobbra-lefelé lejtő hegyoldalon kincseket helyeztünk el, amelyekből a lehető legtöbbet egyet-
+len szánkóval szeretnénk összegyűjteni. A szánkóval a bal felső sarokból indulhatunk, és lejtő
+irányba (azaz vagy jobbra, vagy lefelé) haladhatunk. Amelyik mezőn átmegyünk, az ott levő kin-
+cset felvesszük. A hegyoldalon kijelöltek néhány gyűjtőpontot, a szánkóval valamelyikhez el kell
+jutnunk (és onnan tovább nem mehetünk).
+Készíts programot, amely megadja azt a gyűjtőpontot, ahova a legtöbb kincset vihetjük, valamint
+az oda vihető kincsek maximális számát!
+Bemenet
+A standard bemenet első sorában a hegyoldal sorai és oszlopai száma (1≤N,M≤1000), a
+kincsek száma (1≤K≤100 000), valamint a gyűjtőhelyek száma (1≤G≤1000) van. A következő
+K sor mindegyikében egy-egy kincs sor- és oszlopindexe van (1≤Si≤N,1≤Oi≤M), ahol kincs talál-
+ható. Az utolsó G sorban a gyűjtőhelyek sor- és oszlopindexei vannak (1≤GSi≤N,1≤GOi≤M). A
+gyűjtőhelyeken biztosan nincs kincs.
+Kimenet
+A standard kimenet első sorába a valamely gyűjtőhelyre szállítható kincsek maximális
+számát kell írni! A második sorba annak a gyűjtőhelynek a sor- és oszlopindexét kell írni, ahova a
+legtöbb kincset lehet vinni (több megoldás esetén bármelyiket)!
+Példa
+Bemenet                                           Kimenet
+3   4 3 2                                         2
+1   2                                             3 2
+2   1
+3   1
+3   2
+2   3
+Az alábbi mintán látható, hogy a két gyűjtőhelyre hány kincset lehet vinni:
+      
+            1
+       2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

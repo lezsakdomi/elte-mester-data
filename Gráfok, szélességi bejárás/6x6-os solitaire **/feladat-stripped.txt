@@ -1,0 +1,45 @@
+
+
+                                           6x6-os solitaire
+Tekintsük a Solitaire játéknak azt a változatát, amelyet 6x6-os négyzetrácsos táblán lehet játszani.
+A táblára két fekete korongot helyeznek két különböző mezőre, ez a kezdeti játékállás. A játék so-
+rán minden lépésben egy korongot lehet mozgatni az alábbi szabály szerint.
+   1.) Csak üres mezőre lehet lépni.
+   2.) A négy szomszédos mező valamelyikére lehet lépni, balra, jobbra, felfelé vagy lefelé.
+   3.) Átlós irányba szomszédos mezőre akkor lehet lépni, ha annak a mezőnek valamelyik szom-
+       szédos (balra, jobbra, felfelé, vagy lefelé) mezőjén van a másik korong.
+
+
+
+
+          1. ábra. A (3; 2) mezőn álló korong öt lehetséges lépése: (2,2), (2,3), (4,3), (4,2) és (3,1).
+Írj programot, amely kiszámítja, hogy adott kezdeti játékállásból legkevesebb hány lépés végrehaj-
+tásával lehet eljutni adott végállásba!
+Bemenet
+A standard bemenet két sort tartalmaz, mindkét sor-
+ban négy egész szám van: x1; y1; x2; y2. Az első sor a kez-
+deti játékállást, a második pedig a végállást írja le. Az első
+sorban annak a két mezőnek a koordinátái vannak, ahol a két
+korong kezdetben van. A második sor pedig annak a két me-
+zőnek a koordinátáit tartalmazza, ahová a korongokat el kell
+juttatni. A sorokat fentről lefelé, az oszlopokat balról jobbra
+sorszámozzuk 1-től 6-ig.                                                      2. ábra. Az egyes lépések jelei.
+
+Kimenet
+A standard kimenet első sorába azon legkevesebb lépések M számát kell írni, amennyi lé-
+péssel el lehet jutni a kezdeti játékállásból a végállásba! A következő M sor a lépéseket adja meg!
+Mindegyik sorban egy x y l hármas legyen, ahol (x,y) annak a mezőnek a koordinátái, amely-
+ről a korongot léptetjük, az l pedig a lépés jele! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                                  Kimenet
+3 2 3 3                                                  3
+1 1 2 1                                                  3 3 U
+                                                         3 2 U
+                                                         2 2 U
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+                                                    1. oldal
+

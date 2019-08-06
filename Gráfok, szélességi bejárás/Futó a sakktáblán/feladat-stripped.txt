@@ -1,0 +1,35 @@
+
+
+                                    Futó a sakktáblán
+Egy futó az NxN-es sakktáblán átlós irányokban léphet, egyszerre akármennyit, de nem léphet át
+másik bábut, sőt nem is léphet másik bábu helyére.
+Készíts programot, amely megadja, hogy adott pozícióról egy másik pozícióra a futó hány lépés
+alatt juthat el!
+Bemenet
+A standard bemenet első sorában a sakktábla mérete van (1≤N≤1000). A következő N
+sorban a sakktábla egy-egy sora leírása van – N darab + vagy – jel, + jelzi a bábukkal fogalt helye-
+ket, – pedig a szabadokat. Az utolsó sorban a futó kezdeti sor-és oszlopindexe (1≤KS,KO≤N),
+valamint a célhely sor-és oszlopindexe (1≤CS,CO≤N) van
+Kimenet
+A standard kimenet egyetlen sorába a minimális lépésszámot kell írni, ahány lépésben a
+futó a kezdeti helyéről a célhelyre érhet! Ha a célhely nem elérhető, akkor -1-et kell kiírni!
+Példa
+Bemenet                                           Kimenet
+6                                                 3
+------
+-++--+
+--+---
++---+-
++---+-
++++--+
+6 4 1 3
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 64 MB
+
+
+
+
+                                              1. oldal
+

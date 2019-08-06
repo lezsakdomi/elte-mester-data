@@ -1,0 +1,35 @@
+
+
+                                    Maximális nyereség
+Egy tengerparton N szomszédos telken építettek üdülőket. Ismerjük mindegyik havi bérleti díját,
+valamint a havi megszerezhető bevételt. Tetszőleges számú, de szomszédos üdülőt vehetünk bér-
+be.
+Írj programot, amely megadja, hogy mely üdülőket béreljük ki, hogy maximális hasznunk legyen!
+Bemenet
+A standard bemenet első sorában az üdülők száma (1≤N≤100 000) van. A következő N
+sorban az egyes üdülők bérleti díja (1≤Bi≤1000), valamint a kiadásukból származó bevétel
+(1≤Ki≤1000) szerepel.
+Kimenet
+A standard kimenet első sorába az elérhető maximális hasznot kell kiírni! Ha csak veszte-
+ség lehet, akkor -1-et kell kiírni! Ha lehetséges haszon, akkor a második sorba az első és utolsó
+üdülő sorszámát kell kiírni, amelyek közötti összes üdülő bérlésével ez a haszon elérhető! Ha több
+ilyen is lenne, akkor a legkisebb sorszámúakat kell írni!
+Példa
+bemenet                                         kimenet
+7                                               8
+4   9                                           4 6
+4   1
+4   0
+6   8
+5   4
+1   8
+8   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

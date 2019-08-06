@@ -1,0 +1,42 @@
+
+
+                                       Ádám és Éva
+Ádám és Éva két különböző városban élnek. A városok között egyirányú utakon lehet közlekedni.
+Ádám és Éva találkozni szeretnének valahol. Mivel Ádám udvarias, úgy döntött, hogy olyan város-
+ban kellene találkozniuk, ahova Évának a lehető legkevesebbet kell utaznia. Ha több ilyen város is
+lenne, akkor Ádám már magára is gondolhat, azaz ezek közül azt kell választani, ahova Ádám a
+lehető legkevesebb utazással eljuthat.
+Írj programot, amely megadja, hogy Ádám és Éva melyik városban találkozzon!
+Bemenet
+A standard bemenet első sorában négy egész szám van, a városok száma (1<N20000), az
+utak száma (0M200000), valamint Ádám és Éva városának sorszáma (1A≠EN) van. A to-
+vábbi M sor mindegyike egy U V egész számpárt tartalmaz; ami azt jelenti, hogy az U városból a V
+városba vezet közvetlen út. Teljesül, hogy 1U≠VN.
+Kimenet
+A standard kimenet első sorába három egész számot kell írni. Az első szám annak a T
+városnak a sorszámát, ahol Ádám és Éva találkozni fog. A második szám Ádám útvonalának hosz-
+sza, a harmadik pedig Éva útvonalának hossza legyen. A második sor Ádám útvonalát, a harmadik
+pedig Éva útvonalát tartalmazza. Több megoldás esetén bármelyik megadható. Ha Ádám és Éva
+nem találkozhatnak, akkor az állomány egyetlen sorába egy 0-t kell kiírni!
+Példa
+Bemenet                                         Kimenet
+7   9 1 2                                       5 1 1
+1   3                                           1 5
+1   5                                           2 5
+2   5
+2   7
+5   3                                                                      1
+3   4
+3   6
+5   6
+5   7                                                   3                  5                 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB                                    4                  6                 7
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

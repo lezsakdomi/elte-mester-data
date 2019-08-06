@@ -1,0 +1,31 @@
+
+
+                               Negatív számrendszer
+Egész számokat a 10-es mellett -10-es számrendszerben is felírhatunk a következőképpen:
+                                                           , ahol             .
+Ebben a számrendszerben minden egész szám felírható előjel nélküli számként.
+Például:
+        a -6 felírható            összegként, tehát -610 = 14-10 ,
+        a 34 felírható                          összegként, tehát 3410 = 174-10 .
+Készíts programot, amely egy 10-es számrendszerbeli számot -10-es számrendszerbelivé vált, il-
+letve egy másik, -10-es számrendszerbeli számot 10-esbe!
+Bemenet
+A standard bemenet első sorában egy 10-es számrendszerben felírt szám található
+(-1020 X  1020), második sorában egy -10-es számrendszerben felírt szám van (0 Y  1020).
+Kimenet
+A standard kimenet első sorába az X -10-es számrendszerbeli megfelelője, a második so-
+rába az Y 10-es számrendszerbeli megfelelője kerüljön!
+Példa
+Bemenet                                        Kimenet
+-6                                             14
+174                                            34
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az |X,Y|≤10 000.
+
+
+
+
+                                           1. oldal
+

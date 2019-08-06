@@ -1,0 +1,42 @@
+
+
+                                           Kiállítás
+Egy kiállítás három napon keresztül folyamatosan nyitva tart éjjel-nappal. A látogatóknak előre
+meg kellett venniük a jegyet, mégpedig úgy, hogy meg kellett mondaniuk, hogy mikor érkeznek és
+mikor távoznak a kiállításról. A kiállítás szervezői így pontosan tudják, hogy mikor nem lesz senki
+a kiállításon. Azt tervezik, hogy csak azokra az időszakokra biztosítanak személyzetet, amikor lesz
+látogató.
+Készíts programot, amely kiszámítja azokat az időintervallumokat, amikor személyzetet kell biz-
+tosítani!
+Bemenet
+A standard bemenet első sorában a jegyet váltott látogatók száma van (1  N  20 000). A
+következő N sorban az i. látogató érkezési és távozási ideje van (1  E i < T i  4320).
+Kimenet
+A standard kimenet első sorába azoknak az időintervallumoknak az M számát kell írni,
+amelyekre a szervezőknek személyzetet kell biztosítani! Az ezt követő M sorban add meg ezeket
+az időintervallumokat a kezdetükkel és végükkel, kezdőpontjuk szerint növekvő sorrendben! Ha
+egy látogató az X időpontban érkezik és Y időpontban távozik, a személyzetnek jelen kell lennie X
+és Y időpontban is! Az intervallumoknak nem lehet közös pontjuk, és összhosszuk legyen mini-
+mális!
+Példa
+Bemenet                                          Kimenet
+9                                                3
+8 10                                             1 10
+3 8                                              12 20
+1 7                                              25 35
+14 20
+13 16
+12 14
+25 35
+27 28
+28 30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N≤100.
+
+
+
+
+                                             1. oldal
+

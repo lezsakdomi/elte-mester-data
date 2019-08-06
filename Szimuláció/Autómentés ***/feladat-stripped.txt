@@ -1,0 +1,124 @@
+
+
+                                         Autómentés
+Az autómentő szolgálat számítógépes kapcsolatban van az autópálya üzemeltetőjével, aki minden,
+a pályára belépő autó adatát rögzíti egy adatbázisban. Ezeket az adatokat felhasználva tervezi meg
+egy autómentő útját a baleset helyszínéig.
+Az autópálya egy 2-5 sávos, egyenes és egyirányú forgalmat lebonyolító, elágazás nélküli útsza-
+kasz. A 0 sáv a leállósáv, ebben azonban nem közlekedhet semmilyen autó. Az autópályán egy
+autó helyzetét az autópálya kezdetétől számolva méterekben, illetve a külső sávtól számítva egy
+sávszámmal tudjuk megadni. Például a következő autó helyzetét a (4,2) koordináta adja meg:
+Minden autó az alábbi szabályok betartásával közlekedik:
+        Minden időpontban, minden pozícióban legfeljebb egy autó tartózkodhat.
+        A leállósávban (0-s sáv) nem közlekedhet autó.
+        Minden autó a számára adott (belépéskor rögzített) sebességgel akar közlekedni. Ez azt je-
+         lenti, hogy ha az A autó előtt közvetlenül nincs autó, akkor a sávjában előre halad. Tehát
+         ha a sebessége v és a t időpontban a pálya (x, y) pontjában tartózkodik, akkor a t+1 idő-
+         pontban az (x1, y) pontba jut, ahol x1=x+v ha a t+1 időpontban nincs előtte az y sávban
+         autó az x+1, …, x+v pozíciókban, egyébként pedig x1=Minimum(x+v, u-1,) ha u a legki-
+         sebb, x-nél nagyobb olyan pozíció, ahol van autó a t+1 időpontban.
+        Ha A utolérte B-t, azaz A pozíciója (x, y) és B pozíciója (x+1, y), akkor A előzni próbálja
+         B-t ha sebessége nagyobb, mint B sebessége. Először balra, ha nem megy akkor jobbra
+         próbál előzni. Autó csak akkor válthat sávot, ha nincs mellette autó abban a sávban, ami-
+         be lépni akar. Balra előzés azt jelenti, hogy átlép az y+1 sávba az x+1 pozícióba, jobbra
+         előzésnél pedig az y-1 sávra az x+1 pozícióba. Szomszédos sávba csak akkor léphet át az
+         autó, ha nem zavarja az ott közlekedő autók forgalmát, tehát ha abban a sávban az x+1
+         pozíción nem halad át autó a t-t+1 időben. (Egy autó áthalad a t-t+1 időben az x pozíci-
+         ón, ha a t időpontban az x1, a t+1 időpontban pedig az x2 pozíción van és x1<x≤x2.) Elő-
+         zés esetén a balra előzőnek van elsőbbsége, tehát ha két autó ugyanazon pozícióba kerül-
+         ne előzés következtében, akkor az előzést csak a balra előző hajthatja végre, a másik nem.
+         Ha az autó nem tud előzni, akkor természetesen követi az előtte haladót.
+Ha baleset következik be a t időpontban, akkor az autómentő azonnal indul az autópálya bejáratá-
+tól valamelyik (általa választott) sávban. (Tehát a t+1 időpontban lép be a pálya 1-es pozíciójába.)
+A baleset helyszíne a 0-s sáv egy pozíciója. A baleset időpontjában lezárják az autópályát, tehát ezt
+követően nem léphet autó a pályára.
+Az autómentő hasonló szabályok szerint közlekedik, mint a többi autó, de rá az alábbiak vonat-
+koznak:
+        Semmilyen formában nem befolyásolhatja a többi autó haladását.
+        Minden időpontban eldöntheti, hogy
+          Vagy előre halad a sávjában tetszőleges, de a számára rögzítettnél nem nagyobb sebes-
+            séggel, figyelembe véve az előtte haladó autót.
+          Vagy sávot változtat akár balra akár jobbra.
+         Sávváltáskor természetesen nem zavarhatja a többi autó haladását.
+Ha az 1-es sávon lépésével áthaladna vagy elérné a baleset helyét jelentő x pozíción, akkor e he-
+lyett leléphet a 0-s sáv x pozíciójába (a baleset helyére).
+Készíts programot, amely soronként kiírja az alábbiakat:
+A.
+Kérdések:
+
+
+                                              1. oldal
+
+   Hány autó tartózkodik a baleset időpontjában az autópályának a bejáratától a baleset helyszí-
+    néig terjedő szakaszán?
+   Hol tartózkodnak az autók a baleset időpontjában?
+B. A baleset időpontjában riadó jelzést adunk le, ezzel az autóvezetőket arra kötelezve, hogy
+azonnal álljanak meg. Ekkor indulunk autómentőnkkel a baleset helyszínére. A baleset helye min-
+dig a 0-s sáv egy pozíciója, amire a 1-es sávból lép a mentő, és ez a lépés is egy időegységet igé-
+nyel.
+Kérdések:
+    Minimálisan mennyi idő alatt juthat el az autómentő a baleset színhelyére?
+    Hogyan juthat-e az autómentő a baleset helyszínére?
+C. A baleset időpontjában valamennyi autó jelzést kap, hogy ezt követően tilos sávot változtatni-
+uk, továbbá állandó sebességgel kell haladniuk, ami eggyel kisebb, mint az autómentő sebessége.
+Kérdés:
+         Minimálisan mennyi idő alatt juthat el az autómentő a baleset színhelyére?
+D. Nem korlátozzuk az autók forgalmát, a továbbhaladó forgalomban próbálunk meg eljutni a
+baleset helyszínéhez.
+Kérdés:
+         Minimálisan mennyi idő alatt juthat el az autómentő a baleset színhelyére?
+Bemenet
+A standard bemenet első sorában a sávok száma van (1<K5). A második sorban az au-
+tómentő maximális sebessége áll. A harmadikban a baleset időpontja és pozíciója van egy szóköz-
+zel elválasztva. A baleset időpontja kisebb, mint 1000. A további sorok mindegyike egy autó ada-
+tait, három pozitív egész számot tartalmaz: a pályára lépés időpontját, a sáv sorszámát, amelyiken
+belépett az autó és a megengedett legnagyobb sebességet (0<S<100). Az utolsó sor 3 db 0-t tar-
+talmaz. Az adatok a belépési idő szerint nemcsökkenő sorrendben vannak. A bemenet maximum
+4000 soros lehet, az autópálya pedig 4000 m hosszú lehet.
+Kimenet
+A standard kimenet hat sorból álljon! Az A és B részfeladathoz 2, a többihez 1 sor tarto-
+zik. Ha a program valamelyik részfeladat kérdésére nem tudsz válaszolni, akkor a részfeladathoz
+üresen sort kell írni!
+Az első sorba a baleset időpontjában az autópályának a bejáratától a baleset helyszínéig terjedő
+szakaszán tartózkodó autók számát kell írni! A második sorba ezen autók koordinátáit kell kiírni!
+Ha nincs autó a pálya ezen szakaszán, akkor üres sort kell írni!
+A harmadik sorba azt a legkisebb időt (baleset helyszínére érés időpontja - a baleset időpontja)
+kell írni, amely ahhoz szükséges, hogy az autómentő eljusson a baleset helyére, feltéve, hogy min-
+den autó áll a baleset bekövetkezése után! Ha nem lehet eljutni, akkor a –1 értéket kell kiírni! A
+negyedik sorba azt a koordinátasorozatot kell kiírni, amelyeken keresztül az autómentő eljut a
+baleset helyére! Az utolsó koordináta-pár a baleset helyszínének a koordinátái, tehát Bx 0, ha a
+baleset a Bx helyen történt. Ha nem lehet eljutni, akkor üres sort kell írni!
+Az ötödik sorba azt a legkisebb időt kell írni, amely ahhoz szükséges, hogy az autómentő eljusson
+a baleset helyére, feltéve, hogy az autók a baleset bekövetkezése után nem válthatnak sávot és ál-
+landó (a mentő sebessége-1) sebességgel közlekednek! Ha nem lehet eljutni, akkor a –1 értéket
+kell kiírni!
+
+
+                                               2. oldal
+
+A hatodik sorba azt a legkisebb időt kell írni, amely ahhoz szükséges, hogy az autómentő eljusson
+a baleset helyére, ha együtt kell haladnia a forgalommal! Ha nem lehet eljutni, akkor a –1 értéket
+kell kiírni!
+Példa
+Bemenet                                          Kimenet
+4                                                8
+4                                                2 1 3 1 5 1 4 2 2 3 4 3 5 3 5 4
+5   13                                           7
+1   3 1                                          1 2 3 2 4 1 5 2 6 1 9 1 13 0
+1   1 1                                          5
+2   3 1                                          6
+3   1 1
+3   4 2
+4   2 3
+4   3 1
+4   1 3
+0   0 0
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             3. oldal
+

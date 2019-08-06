@@ -1,0 +1,35 @@
+
+
+                                      Alkatrészgyártás
+Alkatrészeket gyártó üzem N megrendelést kapott. Minden megrendelésre tudja, hogy mennyi idő
+szükséges az alkatrész legyártásához. Az üzemnek van legalább N munkagépe, így minden alkat-
+részt külön gépen tud legyártani. A gyártás előtt minden alkatrészt elő kell készíteni, de ezt az elő-
+készítést csak egy gép tudja végezni. Az is ismert, hogy az egyes alkatrészek előkészítése mennyi
+időt igényel. Minden alkatrész előkészítése után azonnal elkezdődik a gyártása.
+Készíts programot, amely megadja, hogy milyen sorrendben kell előkészíteni az alkatrészeket,
+hogy az összes legyártása a leghamarabb befejeződjön!
+Bemenet
+A standard bemenet első sora az alkatrészek számát tartalmazza (1≤N≤30 000). A má-
+sodik és a harmadik sor pontosan N egész számot tartalmaz egy-egy szóközzel elválasztva. A má-
+sodik sor i-edik eleme az i-edik alkatrész előkészítési ideje, a harmadik sor i-edik eleme pedig az
+alkatrész legyártásához szükséges idő. A második és harmadik sorban minden szám értéke legfel-
+jebb 1000.
+Kimenet
+A standard kimenet első sorába az összes alkatrész legyártásához szükséges minimális időt
+kell írni! A második sor az alkatrészek sorszámainak egy olyan felsorolását tartalmazza (egy-egy
+szóközzel elválasztva) amely a legkorábbi befejezést biztosítja! Több megoldás esetén bármelyik
+megadható.
+Példa
+Bemenet                                            Kimenet
+3                                                  8
+1 3 3                                              3 1 2
+4 1 5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

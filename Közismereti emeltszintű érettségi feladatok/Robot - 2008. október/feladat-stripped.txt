@@ -1,0 +1,73 @@
+
+
+                                            Robot
+Egy robot sík terepen kellő pontossággal vezérelhető. A robot a memóriájába előre betáplált
+programok egyikét hajtja végre. A robot jelenleg csak az E, K, D, N utasításokat érti, amelyek a
+négy égtáj (sorrendben: észak, kelet, dél, nyugat) irányában tett 1 centiméteres elmozdulást ered-
+ményezik. Egy utasítássor akkor egyszerűsíthető, ha van benne két szomszédos, ellentétes irányt
+kifejező utasításpár. (ED, DE, KN, NK) A robot az induláshoz és a forduláshoz 2 egység, az 1 cen-
+timéteres mozgáshoz 1 egység energiát használ. Egy adott utasítássorozat rövidíthető úgy, hogy
+változatlan irányban tett elmozdulást helyettesítjük az adott irányban tett elmozdulások számával
+és az irány betűjével. Tehát például a DDDKDD utasítássor leírható rövidített 3DK2D formában is.
+Írj programot, amely megadja, hogy
+    1. egyszerűsíthető-e az adott sorszámú utasítássorozat;
+    2. az adott sorszámú utasítássor végrehajtását követően legkevesebb hány lépésre van szükség
+       az ED, illetve a KN tengelyen a kiindulási pontba visszajutáshoz
+    3. az adott sorszámú program végrehajtása során mikor került a robot legtávolabb a kiindulási
+       ponttól és mennyi ez a távolság;
+    4. mely programok hajthatóak végre legfeljebb adott mennyiségű energiával;
+    5. az adott rövidített formátumú program visszaalakított, hosszabb alakját;
+    6. az egyes programok rövidített alakját!
+Bemenet
+A standard bemenet első sora a programok számát (1≤N≤600) tartalmazza, a második egy
+sorszámot (1≤X≤N), a harmadik a maximális energiamennyiséget (1≤E≤100) a negyedik egy új
+formátumú utasítássort (1≤hossz(U)≤200). A következő N db sorban egy-egy utasítássor ta-
+lálható (1≤hossz(Pi)≤200).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Egyetlen 1-kell kiírmi, ha az X sorszámú program egyszerűsíthető, 0-t, ha nem!
+2. részfeladat: Az X. programban a kezdőpontba való visszajutáshoz szükséges lépések száma
+kerüljön az ED, illetve a KN tengelyen!
+3. részfeladat: Írd ki, hogy az X. programban a kezdőponttól való legnagyobb távolság hányadik
+lépésben található!
+4. részfeladat: Az első sorban szerepeljen azon programok K száma, melyek legfeljebb E egység
+energiával végrehajthatóak, majd ezen programok sorszáma, növekvő sorrendben!
+5. részfeladat: Írd ki a megadott új formátumú program (U) visszaalakított, hosszú alakját!
+6. részfeladat: Az N db sor tartalmazza az eredeti programok rövidített alakját a bemenet szerinti
+sorrendben!
+Példa
+Bemenet                                           Kimenet
+3                                                 #
+3                                                 1
+
+
+                                             1. oldal
+Emelt szintű informatika érettségi                                           2008. október 31.
+
+90                                              #
+2D3N                                            0 2
+DDEKKENNE                                       #
+NDKENDKENDKENDKENDKENDKENDKENDKENDK             5
+EDEKKNKD                                        #
+                                                2 1 3
+                                                #
+                                                DDNNN
+                                                #
+                                                2DE2KE2NE
+                                                NDKENDKENDKENDKENDKENDKENDKENDKENDK
+                                                EDE2KNKD
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Ha a részfeladatok valamelyikét nem tudod megoldani, akkor az eredménye helyett egy üres sort
+írj ki!
+
+
+
+
+                                           2. oldal
+

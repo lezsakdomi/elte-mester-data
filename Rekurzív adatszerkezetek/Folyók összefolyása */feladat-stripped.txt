@@ -1,0 +1,38 @@
+
+
+                                  Folyók összefolyása
+Magyarország folyóiról feljegyeztük, hogy milyen másik folyóba folynak bele. Minden folyó legfel-
+jebb egy másikba folyhat bele, de lehet, hogy egybe sem (mert nem folyóba folyik bele).
+Készíts programot, amely két konkrét folyóról megadja, hogy összefolynak-e valahol Ma-
+gyarország területén, s ha igen, akkor melyiknek hány folyón kell átjutnia az összefolyásig!
+Bemenet
+A standard bemenet első sorában a folyók száma (1N10 000), a másik folyóba torkol-
+ló folyók száma (0M<N) és a két megvizsgálandó folyó sorszáma (1X≠YN) van. A következő
+M sor két egész számot (1A≠BN) tartalmaz egy szóközzel elválasztva, ennek jelentése: az A fo-
+lyóba belefolyik a B folyó.
+Kimenet
+A standard kimenet első sorába az IGEN szót kell írni, ha a két folyó összefolyik valahol,
+illetve a NEM szót, ha nem folynak össze! Ha az első sor tartalma IGEN, akkor a második sorba
+két szám kerüljön egy szóközzel elválasztva: azon folyók darabszáma, amelyeken keresztül a két
+adott folyó összefolyik! Ha nem folynak össze, akkor a második sor legyen üres!
+Példa
+Bemenet                                         Kimenet
+6   4 6 5                                       IGEN
+1   2                                           1 2
+3   4
+                                                            1          6       3
+4   5
+3   6                                                                                          4
+                                                   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+                                                                                               5
+Pontozás: A tesztek 40%-ában a folyók száma
+N≤500.
+
+
+
+
+                                            1. oldal
+

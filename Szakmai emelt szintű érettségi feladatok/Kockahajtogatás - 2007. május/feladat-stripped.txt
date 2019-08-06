@@ -1,0 +1,32 @@
+
+
+                                    Kockahajtogatás
+Egy téglalap alakú papírlapból kockát akarunk hajtogatni. Ez akkor lehetséges, ha a lap hosszabb
+éle legalább négyszerese, rövidebb éle legalább háromszorosa a hajtogatni kívánt kocka élhosszá-
+nak.
+Írj programot, amely eldönti, hogy egy lapból hajtogatható-e adott élű kocka!
+Bemenet
+A standard bemenet első sorában a tesztesetek száma (1≤N≤1000) található, az ezt köve-
+tő N sor mindegyikében egy hajtogatni kívánt kocka élhossza (1≤E≤106) és a papírlap oldalainak
+hosszát tartalmazza (1≤A,B≤106).
+Kimenet
+A standard kimenetre N sort kell írni, minden sorban az i-edik kockához kell az
+‘IGEN’ szót kiírni, ha a megadott adatok mellett meghajtogatható, különben a ’NEM’ szót kell
+kiírni!
+Példa
+Bemenet                                          Kimenet
+5                                                IGEN
+4   12 17                                        NEM
+3   5 4                                          IGEN
+2   8 8                                          NEM
+5   10 25                                        IGEN
+6   24 18
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

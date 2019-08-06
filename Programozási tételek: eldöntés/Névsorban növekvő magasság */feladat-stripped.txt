@@ -1,0 +1,30 @@
+
+
+                          Névsorban növekvő magasság
+Adott a tanulók neve és magassága névsor szerint rendezve.
+Írj programot, amely eldönti, hogy a névsor és a magasság szerinti sorrend azonos-e!
+Bemenet
+A standard bemenet első sorában található a tanulók száma (1≤N≤100). A következő N
+sorban egy-egy szóból álló név és egy centiméterben megadott magasságértéket tartalmazó szám
+van szóközzel elválasztva.
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! Az „IGEN” szöveg szerepeljen
+amennyiben a magasság is monoton növekszik, különben a „NEM” szöveg!
+Példa
+Bemenet                                          Kimenet
+6                                                IGEN
+Anna 168
+Bea 170
+Csaba 172
+Dominik 172
+Erik 176
+Ferenc 180
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

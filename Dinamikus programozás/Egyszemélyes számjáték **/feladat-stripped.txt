@@ -1,0 +1,34 @@
+
+
+                               Egyszemélyes számjáték
+Tekintsük a következő egyszemélyes játékot. A játék kezdetén N (páros szám) darab véletlensze-
+rűen választott pozitív egész számot leraknak az asztalra sorban egymás mellé. A játékos minden
+lépésben választhat egy számot a még az asztalon lévő sorozatból, vagy a bal-szélsőt, vagy a jobb-
+szélsőt, és leveszi a választott számot. A játékos minden lépése után a játékvezető leveszi a táblá-
+ról a bal-szélső és a jobb-szélső szám közül a nagyobbikat, ha egyenlők, akkor a bal-szélsőt. A já-
+ték akkor ér véget, ha elfogyott minden szám. A játékos nyereménye az általa választott számok
+összege.
+Írj programot, amely kiszámítja a játékos által elérhető maximális nyeremény értékét és meg is ad-
+ja, hogy ezt milyen lépésekkel érheti el!
+Bemenet
+A standard bemenet első sorában a kezdeti játékállásban szereplő számsorozat elemszáma
+van (2N1000). A második sor pontosan N pozitív egész számot tartalmaz, a kezdeti játékál-
+lást. Minden szám értéke nem nagyobb, mint 2000.
+Kimenet
+A standard kimenet első sora a játékos által elérhető legnagyobb nyeremény értékét tar-
+talmazza! A második sorba pontosan N/2 karakter kerüljön (szóközök nélkül)! A sorban az i-edik
+karakter a 'B' betű legyen, ha a játékos az i-edik lépésben a bal-szélső, illetve a 'J' betű, ha a
+jobb-szélső számot választja! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+8                                                52
+5 12 3 21 33 14 6 2                              JBJB
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                              1. oldal
+

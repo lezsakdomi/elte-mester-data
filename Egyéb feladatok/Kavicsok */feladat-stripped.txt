@@ -1,0 +1,33 @@
+
+
+                                           Kavicsok
+A kavics solitaire olyan egyszemélyes játék, amelyet üregek sorozatába helyezett kavicsokkal játsz-
+szanak. A játék kezdetén véletlenszerűen kiválasztott üregekbe kavicsot helyeznek, egy üregbe
+legfeljebb egyet. Egy lépésben a játékos a következő szabály szerint léphet.
+Ha három, a sorban egymást követő A, B és C üregre teljesül, hogy az A üreg üres, a B és C üreg-
+ben van kavics, akkor a C üregben lévő kavicsot átteszi az A üregbe és a B üregből kiveszi a kavi-
+csot. Hasonlóan, ha a C üreg üres, az A és B üregben van kavics, akkor az A üregbeli kavicsot át-
+teszi a C üregbe és kiveszi a B üregbeli kavicsot.
+A játék akkor ér véget, ha már nem lehet lépni. A játék célja, hogy olyan végső játékállás keletkez-
+zen, amelyben a kavicsok száma a lehető legkevesebb.
+Készíts programot, amely kiszámítja, hogy a legjobb esetben hány kavics marad az üregekben!
+Bemenet
+A standard bemenet első sorában az üregek száma van (3≤N≤20). A második sor tartal-
+mazza a kezdeti játékállást, pontosan N karakterrel leírva (szóközök nélkül). Az i-edik karakter
+’1’, ha az i-edik üregben van kavics, egyébként a ’0’ karakter.
+Kimenet
+A standard kimenet egyetlen sorába azt a legkisebb M számot kell írni, amelyre teljesül,
+hogy a legjobb esetben a játék úgy ér véget, hogy M üregben van kavics!
+Példa
+Bemenet                                    Kimenet
+9                                          2
+011001101
+Korlátok
+Időlimit: 0.05 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                               1. oldal
+

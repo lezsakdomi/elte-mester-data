@@ -1,0 +1,34 @@
+
+
+                                            Raktár
+Egy raktár alapterületét négyzetrácsokra osztották be. Minden mező vagy polcokat tartalmaz,
+vagy üres. Közlekedni természetesen csak az üres mezőkön lehet, átlósan lépni nem lehet. A
+beosztást úgy alakították ki, hogy bármely két üres mező között pontosan egy út van.
+Írj programot, amely kiszámítja a raktárban a lehetséges leghosszabb útvonal hosszát.
+Bemenet
+A standard bemenetelső sorában két szám van(2≤M, N≤1000), ahol M a négyzetrácsban
+az oszlopok száma, N pedig a sorok száma. A további N sor mindegyike pontosan M karaktert
+tartalmaz (a karakterek között nincs szóköz). A #karakter foglalt, a . (pont) karakter pedig szabad
+mezőt jelöl.
+Kimenet
+A standard kimenetegyetlen sort tartalmazzon, a lehetséges leghosszabb útvonal
+hosszát!Egy útvonal hossza az útvonalban lévő mezők száma (a két végpontot is beleértve)
+mínusz 1.
+Példa
+Bemenet                                          Kimenet
+6 5                                              12
+..#.#.
+#.....
+..##.#
+.#....
+.#.#.#
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

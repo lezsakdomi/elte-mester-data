@@ -1,0 +1,31 @@
+
+
+                         Összes utas száma a villamoson
+A Villamos-közlekedési Vállalat (VKV) felmérést végzett a villamosok kihasználásáról, melyet
+számítógéppel kell feldolgozni. A villamos-vonalon N állomás van, beleértve az induló- és a vég-
+állomást is. Egy út során a villamosvezetőnek meg kellett számolnia minden állomáson a fel- és a
+leszállókat, s neked ezekből az adatokból kell adott jellemzőket kiszámolnod.
+Készíts programot, amely megadja, hogy hány ember utazott összesen a villamoson!
+Bemenet
+A standard bemenet első sorában az állomások (2N100) száma, alatta soronként a fel-
+szállók (0≤F≤35) és leszállók száma (0≤L≤35).
+Kimenet
+A standard kimenet első sorába azon emberek számát kell írni, akik utaztak a villamoson!
+Példa
+Bemenet                                         Kimenet
+5                                               10
+5   0
+3   4
+0   4
+2   0
+0   2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

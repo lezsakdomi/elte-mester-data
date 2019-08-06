@@ -1,0 +1,39 @@
+
+
+                                            Utazó
+Két utazó nyaralása során különböző városokat látogat meg. Mindegyikben eltöltenek néhány na-
+pot, és minden olyan városban, ahol épp egyszerre tartózkodnak, találkozót akarnak szervezni.
+Készíts programot, amely megadja, hogy mely városokban találkozhattak utazásuk során!
+Bemenet
+A standard bemenet első sorában az első utazó által meglátogatott városok száma van
+(1  N  100). A következő N sor mindegyike 2 számot és egy városnevet tartalmaz, ahol a két
+szám azt jelöli, hogy mettől meddig tartózkodott az adott városban (0  A i < B i  10 000). Az
+ezt követő sorban található a második utazó által meglátogatott városok száma (1  M  100),
+amit M sorban követ az általa meglátogatott városok felsorolása az első utazóéval megegyező
+formátumban. Mindkét utazó adatai időben növekvő sorrendben vannak, egy várost csak egyszer
+látogatnak meg.
+Kimenet
+A standard kimenet első sorába azon városok K száma kerüljön, amelyekben a két utazó-
+nak lehetősége nyílt a találkozásra! Ezt a következő K sorban a találkozóra alkalmas városok neve
+kövesse, a lehetséges találkozási sorrendben!
+Példa
+Bemenet                                         Kimenet
+3                                               2
+1 6 Eger                                        Eger
+8 10 Miskolc                                    Sarospatak
+15 25 Sarospatak
+4
+1 4 Miskolc
+5 8 Eger
+12 22 Tokaj
+25 30 Sarospatak
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában az N,M≤20.
+
+
+
+
+                                            1. oldal
+

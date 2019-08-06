@@ -1,0 +1,30 @@
+
+
+                       Hamarabb kezdődik a felmelegedés
+A meteorológiai intézet az ország N településére adott M napos időjárás előrejelzést, az adott te-
+lepülésen az adott napra várt legmagasabb hőmérsékletet.
+Készíts programot, amely megad egy települést, ahol az első lehűlés utáni felmelegedés legalább
+egy nappal korábban kezdődik, mint az összes többi településen!
+Bemenet
+A standard bemenet első sorában a települések száma (1≤N≤1000) és a napok száma
+(1≤M≤1000) van. Az ezt követő N sorban az egyes napokra jósolt M hőmérséklet értéke találha-
+tó (-50≤Hi,j≤50).
+Kimenet
+A standard kimenet első sorába egy olyan település sorszámát kell kiírni, ahol az első lehű-
+lés utáni felmelegedés (csökkenés után növekedés) legalább egy nappal korábban kezdődik, mint
+az összes többi településen! Ha nincs ilyen település, akkor -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+3 5                                              1
+15 10 12 12 10
+11 12 13 14 15
+12 16 15 16 20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

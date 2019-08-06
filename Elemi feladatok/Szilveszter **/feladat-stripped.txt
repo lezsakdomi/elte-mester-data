@@ -1,0 +1,34 @@
+
+
+                                         Szilveszter
+Írj programot, amely megadja, hogy mennyi idő van még szilveszter éjfélig! A program olvassa be
+a pontos időpontot az év, hónap, nap, valamint az óra, perc, másodperc megadásával, majd
+ugyanilyen pontossággal írja ki a szilveszter éjfélig hátralévő időt!
+Bemenet
+A standard bemenet első és egyetlen sorában az az időpont van megadva, amikortól a szil-
+veszter éjfélig hátralévő időre kíváncsiak vagyunk. Az időpont hat, szóközökkel elválasztott egész
+számmal van megadva a következő sorrendben: a pontos időpont év (1900≤év≤2100), hónap
+(1≤hónap≤12), nap (1≤nap≤a hónap napszáma), óra (0≤óra≤23), perc (0≤perc≤59), másodperc
+(0≤másodperc≤59) része!
+Kimenet
+A standard kimenet első és egyetlen sorába a beolvasott időponttól szilveszter éjfélig hát-
+ralévő időt kell kiírni év, hónap, nap, óra, perc, másodperc sorrendben. Mindegyik számérték után
+fel kell tüntetni a mértékegységét is (pl. „3 honap 2 nap”). A mértékegységeket ékezetek
+nélkül szükséges megadni (ev, honap, nap, ora, perc, masodperc). Ha az idő valamelyik
+része 0 értékű, akkor azt nem szabad kiírni (lásd az első példát)!
+Példa1
+Bemenet                                   Kimenet
+2015 3 1 0 0 0                            10 honap
+Példa2
+Bemenet                                   Kimenet
+2015 1 13 9 59 50                         11 honap 18 nap 14 ora 10 masodperc
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+
+                                             1. oldal
+

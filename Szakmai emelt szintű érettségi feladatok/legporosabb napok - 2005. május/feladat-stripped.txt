@@ -1,0 +1,30 @@
+
+
+                                  Legporosabb napok
+Egy légszennyezettség-mérő állomás 4 óránként meghatározza az érzékelőjébe érkező porszemek
+számát. Legporosabb napokon az olyan napokat értjük, amelyeken a mért összes pormennyiség a
+teljes mérési időszakban észlelt napi összes pormennyiségek maximumától nem tér el.
+Írj egy programot, ami meghatározza az időszak „legporosabb” napjainak sorszámait, és az adott
+napon észlelt összes por mennyiségét!
+Bemenet
+A standard bemenet első sora a mérés napjainak számát tartalmazza (1≤N≤105). A kö-
+vetkező N sorban 6-6 mérési eredmény található (nemnegatív egész számok), az i-edik sorban az
+i-edik napon készült mérések.
+Kimenet
+A standard kimenetre első sorába a legporosabb napok K számát kell kiírni! A második
+sorba K pozitív egész számot kell kiírni, növekvő sorrendben, a legporosabb napok sorszámát!
+Példa
+Bemenet                                             Kimenet
+3                                                   2
+1 2 2 3 2 1                                         1 3
+1 1 1 0 0 1
+1 8 1 0 1 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,32 @@
+
+
+                               Felhasználó azonosítás
+Egy számítógépes rendszerben a felhasználókat különböző hosszúságú karaktersorozattal azono-
+sítják. Egyik azonosító sem kezdőszelete egy másiknak.
+Készíts programot, amely megadja a felhasználó azonosítók minimális kezdőszeletének hosszát,
+amelyek a felhasználókat egyértelműen azonosítják!
+Bemenet
+A standard bemenet első sorában a felhasználók száma van (1≤F<200 000). A követke-
+ző F sorban egy-egy felhasználó azonosítója hossza (1≤Hi≤10), amit tőle egy szóközzel elvá-
+lasztva a pontosan Hi karakteres azonosítója szerepel, amely az angol ábécé kisbetűit tartalmaz-
+hatja.
+Kimenet
+A standard kimenet F sorába az egyes azonosítók minimális kezdőszeletének hosszát kell
+kiírni, amely az azonosítót egyértelműen meghatározza! Az F sor az azonosítók bemenet szerinti
+sorrendjében legyen!
+Példa
+bemenet                             kimenet                         magyarázat
+4                                   3                               aab
+5   aabcd                           1                               b
+3   bac                             2                               ac
+5   acadv                           3                               aac
+5   aacdv
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

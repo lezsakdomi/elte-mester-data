@@ -1,0 +1,50 @@
+
+
+                            Összefüggő egyirányú hálózat
+Egy számítógépes hálózat csomópontokat és bizonyos csomópont-párokat közvetlenül összekötő
+egyirányú adatátvitelt biztosító adatátviteli vonalakat tartalmaz. A hálózatot úgy tervezték, hogy
+bármely a csomópontból (esetleg más csomópontokon keresztül) lehessen adatot átvinni bármely
+b csomópontba. A hálózat ezen tulajdonságát összefüggőségnek nevezzük. A működés során két
+csomópontot közvetlenül összekötő vonal meghibásodott. A hiba következtében a hálózat már
+nem összefüggő, azaz van olyan a és b csomópont, hogy nem lehet a-ból b-be adatot továbbítani.
+Kiderült, hogy a hibás vonal nem javítható, ezért a hálózat üzemeltetője úgy döntött, hogy kiépít
+egy új vonalat két csomópont között, amivel helyreállítja a hálózat összefüggőségét.
+Írj programot, amely kiszámít két olyan csomópontot, amelyek között kiépített új vonal helyreál-
+lítja a hálózat összefüggőségét!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1<N4000) és a működő vona-
+lak száma (1<M12 000) van. A további M sor mindegyike két csomópont sorszámát tartalmaz-
+za (1u≠vN), amelyeket közvetlen vonal köt össze, amin u-ból v-be lehet adatot átvinni. A há-
+lózat ebben az állapotában biztosan nem összefüggő, de összefüggő volt, mielőtt egy vonal meg-
+hibásodott.
+Kimenet
+A standard kimenet első sorába olyan csomópont sorszámpárt kell írni, amelyek között
+kiépítendő (irányított) új vonal helyreállítja a hálózat összefüggőségét! Több megoldás esetén
+bármelyik kiírható.
+Példa
+Bemenet                       Kimenet
+9   12                        8 5
+5   6
+6   5                                                         6
+2   1                                                                                        4
+1   3
+3   2                                                                             2
+1   4
+                                                                                              1
+4   2
+3   7                                                          5
+7   8
+                                                                             8
+8   9                                                                                         3
+9   7                                                              9
+6   2
+                                                                            7
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

@@ -1,0 +1,38 @@
+
+
+                                Legkevesebb találkozás
+Egy eseményen N ember vesz részt, tudjuk mindegyikről, hogy mettől meddig lesz ott. Bejelent-
+kezett egy új résztvevő, aki pontosan P percet szeretne ott tölteni, de ez alatt a lehető legkevesebb
+emberrel szeretne találkozni. Ha valaki pontosan akkor érkezik, amikor egy másik ember távozik,
+akkor ők még találkoznak. Így, aki 1 percet tölt az eseményen, az ugyanabban a percben érkezik
+és távozik is. Az új érkező nem érkezhet a legelső érkezés előtt és nem távozhat a legutolsó távo-
+zás után.
+Készíts programot, amely megadja, hogy mikor jöjjön, és amíg ott van, az alatt hány emberrel ta-
+lálkozhat!
+Bemenet
+A standard bemenet első sorában a résztvevők száma (1≤N≤100 000) és a P értéke
+(1≤K≤100) van. A következő N sorban egy-egy ember érkezési és távozási időpontjai követez-
+nek (1≤Érki≤Távi≤10 000).
+Kimenet
+A standard kimenet egyetlen sorába az új résztvevő érkezési időpontját kell kiírni, amitől
+kezdődően P perc alatt a lehető legkevesebb emberrel találkozhat (több megoldás esetén a lehető
+legkorábbit), a második sorba pedig ezen emberek számát!
+Példa
+Bemenet                                           Kimenet
+5   5                                             7
+1   5                                             2
+1   4
+                                                  Magyarázat: a 7-11. percben összesen 2 ember-
+3   6                                             rel találkozhat.
+1   20
+8   18
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

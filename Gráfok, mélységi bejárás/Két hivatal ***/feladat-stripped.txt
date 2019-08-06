@@ -1,0 +1,38 @@
+
+
+                                          Két hivatal
+Seholsincs járás településeiben hivatalokat kell telepíteni. Kétféle hivatal van, A és B a jelük. Min-
+den településbe legfeljebb egy hivatal telepíthető. Úgy kell a hivatalokat telepíteni, hogy bármely
+településre teljesüljön, hogy vagy van oda telepítve A típusú hivatal, vagy valamelyik szomszédjá-
+ban van A típusú hivatal, és ugyanez igaz a B típusú hivatalra is.
+Készíts programot, amely megad egy megfelelő telepítést, ha létezik!
+Bemenet
+A standard bemenet első sorában a települések száma (1N200 000) és a közvetlen
+utak száma (1M500 000) van. A következő M sor mindegyike két (1U≠VN) számot tar-
+talmaz, ami azt jelenti, hogy az U és V településeket közvetlen kétirányban járható út köti össze.
+Kimenet
+A standard kimenet első sora a NEM szót tartalmazza, ha nincs a feltételeknek megfelelő
+telepítés, egyébként az IGEN szót! Ha van megoldás, akkor a további N sort tartalmazza telepí-
+tést, az N betűt, ha abba a településbe nem telepítenek hivatalt, egyébként az A, vagy B betűt, a
+megfelelő hivatal jelét!
+Példa
+Bemenet                                            Kimenet
+7   8                                              IGEN
+1   2                                              A
+3   4                                              B
+5   4                                              A
+6   4                                              B
+7   4                                              A
+5   6                                              A
+5   7                                              N
+6   7
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤10
+
+
+
+
+                                               1. oldal
+

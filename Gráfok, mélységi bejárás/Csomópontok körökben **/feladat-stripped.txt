@@ -1,0 +1,45 @@
+
+
+                               Csomópontok körökben
+Minden számítógépes hálózat többnyire úgy épül fel, hogy csomópont-párokat kétirányú adatátvi-
+telt biztosító közvetlen vonal kapcsol össze. A hálózat hibatűrő képessége függ a hálózat topoló-
+giájától. Egy jellemző tulajdonsága lehet a hálózatnak, hogy bármely csomópont benne van egy
+legalább három csomópontot tartalmazó körben.
+Írj programot, amely kiszámítja az alábbi két kérdésre adandó választ! Melyek azok a csomópon-
+tok, amelyek nincsenek benne egyetlen körben sem? Minimálisan hány új közvetlen vonallal kell
+bővíteni a hálózatot, hogy bármely csomópont benne legyen egy legalább három csomópontot
+tartalmazó körben? Meg is kell adni egy ilyen bővítést!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (3N1000) és a csomóponto-
+kat összekötő közvetlen vonalak száma (N-1M10000) van. A további M sorban két közvetlen
+vonallal összekötött csomópont sorszáma van (1XYN). Minden csomópont-párt legfeljebb
+egy közvetlen vonal köt össze. A hálózatra teljesül, hogy bármely két csomópontja között létezik
+útvonal.
+Kimenet
+A standard kimenet első sorába azon csomópontok K egész számát kell írni, amelyek nin-
+csenek benne egyetlen körben sem! A második sorba kell kiírni ezt a K darab csomópontot egy-
+egy szóközzel elválasztva, tetszőleges sorrendben! Ha K értéke 0, akkor a második sor üres sor le-
+gyen! A harmadik sorba a legkevesebb új közvetlen kapcsolatok L számát kell írni, amelyekkel
+bővítve a hálózatot, minden pont benne lesz legalább egy körben! A következő L sor mindegyi-
+kébe egy-egy egy bővítendő közvetlen kapcsolat két végpontja sorszámát kell írni!
+Példa
+Bemenet                       Kimenet
+7   8                         3
+1   2                         6 5 7
+2   3                         1
+3   1                         5 7
+2   4                                                        2                                6
+4   6
+6   5
+7   1                                           1                             4
+3   4
+Korlátok                                                     3
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+                                                7                                           5
+
+
+
+
+                                             1. oldal
+

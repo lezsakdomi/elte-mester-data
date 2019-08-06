@@ -1,0 +1,34 @@
+
+
+                           Malacpersely legkisebb értéke
+Mohó Marci malacperselyben gyűjti pénzét. Csak fémpénzeket rakott a perselybe, de nem jegyez-
+te fel, hogy milyeneket. Felírta azonban az üres persely súlyát, így meg tudja állapítani a persely-
+ben lévő pénzek összsúlyát. Ismeri továbbá az egyes pénzérmék egyedi súlyát és értékét. Szeretné
+kiszámítani, hogy mennyi az a legkisebb érték, amelyet a perselye biztosan tartalmaz. Egy adott
+típusú pénzérméből (címletből) több is lehet a perselyben.
+Készíts programot, amely kiszámítja, hogy legkevesebb mekkora értéket tartalmaz a malacpersely!
+Bemenet
+A standard bemenet első sorában a pénzérme fajták (címletek) száma (1≤N≤500) és a
+perselyben lévő pénzek összsúlya (1≤S≤10 000) van. A további N sor mindegyike két pozitív
+egész számot tartalmaz. Az első szám egy pénzérme értéke, a második szám pedig a pénzérme
+súlya, mindkettő legfeljebb 1000.
+Kimenet
+A standard kimenet egyetlen sorába azt a legkisebb értéket kell írni, amelyet a malacper-
+sely biztosan tartalmaz!
+Példa
+Bemenet                                           Kimenet
+4 15                                              8
+1 2
+2 3
+5 6
+10 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤200 és S≤500
+
+
+
+
+                                              1. oldal
+

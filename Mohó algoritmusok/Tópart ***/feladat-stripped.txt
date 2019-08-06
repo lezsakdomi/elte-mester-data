@@ -1,0 +1,36 @@
+
+
+                                           Tópart
+Egy tó partján tavaszköszöntő ünnepségsorozatot szeretnének tartani. A partot M parcellára osz-
+tották. A lebonyolításra jelentkezett N vállalkozó, mindegyik megmondta, hogy melyik parcellától
+melyik parcelláig terjedő partszakaszon rendezne valamilyen látványosságot.
+Készíts programot, amely megadja a maximális számú vállalkozót, akiknek egymás akadályozása
+nélkül kiadható az ünnepségre a kért partszakasz!
+Bemenet
+A standard bemenet első sorában az vállalkozók száma (1≤N≤1 000 000), a parcellák
+száma (1≤M≤100 000) és az egy vállalkozó által maximálisan igényelhető partszakasz parcellái
+száma (0<K≤1000) van. A parcellákat óramutató járása szerinti sorrendben sorszámozzuk. A
+következő N mindegyike egy A B számpárt tartalmaz, egyes vállalkozók által igényel partszakasz
+első és utolsó parcellájának sorszámát (1≤A,B≤M). Tehát, ha B<A, akkor az igénylő A-tól M-ig,
+és 1-től B-ig terjedő parcellákat igényli.
+Kimenet
+A standard kimenet első sorába a maximálisan kiválasztható vállalkozók számát kell írni, a
+második sorba pedig ezen vállalkozók sorszámát, tetszőleges sorrendben, egy-egy szóközzel elvá-
+lasztva!
+Példa
+Bemenet                                         Kimenet
+4   10 4                                        2
+1   3                                           2 3
+3   4
+9   1
+2   5
+Korlátok
+Időlimit: 1.0 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 60%-ában N≤20 000.
+
+
+
+
+                                            1. oldal
+

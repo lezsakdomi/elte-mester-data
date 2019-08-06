@@ -1,0 +1,35 @@
+
+
+                                          Ütemezés
+Egy vállalkozó alkatrészek gyártásával foglalkozik. Minden alkatrészen kétféle műveletet kell elvé-
+geznie, A és B műveletet. Mindkét művelet elvégzésére egy-egy munkagépe van, amelyek egymás-
+tól függetlenül tudnak dolgozni, de egy alkatrészen egyszerre csak egyik művelet végezhető. Min-
+den alkatrészen először az A műveletet kell elvégezni, majd ezután lehet elvégezni a B műveletet
+(bármikor, nem feltétlenül folyamatosan). Minden legyártandó alkatrészre ismert, hogy mennyi
+időt igényel az A,valamint a B művelet elvégzése.
+Készíts programot, amely kiszámítja, hogy legkevesebb mennyi idő alatt lehet legyártani az összes
+alkatrészt!
+Bemenet
+A standard bemenet első sorában az alkatrészek száma van (2≤N≤2000). A második és a
+harmadik sor pontosan N egész számot tartalmaz, a legyártandó alkatrészeken elvégzendő A
+(1≤Ai≤5000), illetve B (1≤Bi≤5000) műveletek idejét.
+Kimenet
+A standard kimenet első sora azt a legkisebb időt tartalmazza, amely alatt a két gép le tud-
+ja gyártani az összes alkatrészt! A második sor az alkatrészek sorszámát tartalmazza abban a sor-
+rendben, ahogy azokon az A műveletet kell elvégezni! A harmadik sor az alkatrészek sorszámát
+tartalmazza abban a sorrendben, ahogy azokon az B műveletet kell elvégezni! Több megoldás
+esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+3                                                16
+8 1 6                                            2 3 1
+1 6 3                                            2 3 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

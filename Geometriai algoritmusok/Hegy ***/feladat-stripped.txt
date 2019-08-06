@@ -1,0 +1,49 @@
+
+
+                                           Hegy
+Sorban egymás mellett N hegycsúcs helyezkedik el. Az első hegycsúcsról szeretnénk fényjeleket
+adni a K. hegycsúcson álló embernek. Ha szerencsénk van, akkor látjuk a K. csúcsot és közvetle-
+nül jelezhetünk. Ha közbülső csúcsok takarják a K. csúcsot, akkor közvetítőket kell találnunk,
+akik más csúcsokról továbbítják a jelet. Minden csúcsból a szomszédos csúcsok biztos láthatóak.
+Készíts programot, amely megadja, hogy minimálisan hány közvetítőt kell alkalmazni, hogy az
+üzenet eljusson a K. csúcsra!
+Bemenet
+A standard bemenet első sorában csúcsok száma (1≤N≤500 000) és a célcsúcs K sor-
+száma (1<K≤N) van. A következő N sor a csúcsok kezdőponttól vett távolságát és magasságát
+tartalmazza (0≤távolság,magasság≤109).
+Kimenet
+A standard kimenet első sorába a közvetítők minimális számát kell írni!
+Példa
+Bemenet                                        Kimenet
+22 12                                          4
+0 0
+1 5
+2 5
+3 4
+4 8
+5 6
+6 7
+7 5
+8 5
+9 0
+10 3
+11 0
+12 2
+13 2
+14 4                   Megjegyzés: Ha az első sorban K=22 lenne, akkor a kimenet 3.
+15 4
+16 5
+17 6
+18 4
+19 3
+20 2
+21 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

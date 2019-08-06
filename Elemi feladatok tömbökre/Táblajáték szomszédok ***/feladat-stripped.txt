@@ -1,0 +1,75 @@
+
+
+                               Táblajáték szomszédok
+Táblajátékokban gyakori, hogy bábuk egyes helyzetekben attól függően léphetnek, hogy a szom-
+szédságukban milyen bábuk vannak. Ehhez meg kell határozni az egyes mezők szomszédjainak a
+koordinátáit. A szomszédos mezők érintkezhetnek az oldalukkal, illetve a sarkukkal. A tábla szé-
+lén levő mezőknek lehet, hogy csak egyik irányban van szomszédjuk, de vehetjük úgy is, hogy a
+szomszédos mezők a tábla túlsó szélén vannak. A szomszédságot lehet csak a közvetlen szom-
+szédokra értelmezni (1 távolságú szomszédok), s lehet nagyobb távolságra is.
+Írj programot, amely beolvassa egy 100x100-as tábla egy mezőjének koordinátáit, majd az alábbi
+négy módszerrel kiírja a T távolságra levő szomszédjainak a koordinátáit! A bal felső mező koor-
+dinátája (1,1).
+A négy módszer a következő:
+A. Egy hely közvetlen szomszédjai azok a mezők, amelyek oldalukkal vagy sarkukkal érintkeznek
+   az adott hellyel.
+      2   2   2   2   2   Szomszédok                    Szomszédok     X 1
+      2   1   1   1   2   max. 2 egység                     1 egység   1 1
+      2   1   X   1   2   távolságra                      távolságra
+      2   1   1   1   2
+      2   2   2   2   2
+
+B. Egy hely közvetlen szomszédjai azok a mezők, amelyek oldalukkal érintkeznek az adott hely-
+   lyel.
+           2            Szomszédok                   Szomszédok
+         2 1 2          max. 2 egység                     1 egység
+      2 1 X 1 2         távolságra                      távolságra 1
+         2 1 2                                                      X 1
+           2                                                        1
+
+C. Egy hely közvetlen szomszédjai azok a mezők, amelyek oldalukkal vagy sarkukkal érintkeznek
+   az adott hellyel. A szélen levő mezők egyes szomszédjai a túloldalon vannak.
+                                2 2 2 2      2 Szomszédok
+                                1 1 1 2      2 max. 2 egység
+                                1 X 1 2      2 távolságra
+                                1 1 1 2      2
+                                2 2 2 2      2
+
+D. Egy hely közvetlen szomszédjai azok a mezők, amelyek oldalukkal érintkeznek az adott hely-
+   lyel. A szélen levő mezők egyes szomszédjai a túloldalon vannak.
+                              2 1 X 1 2          Szomszédok
+                                 2 1 2           max. 2 egység
+                                    2            távolságra
+
+                                   2
+                                 2 1 2
+
+
+
+
+                                            1. oldal
+
+
+Bemenet
+A standard bemenet első sorában három egész szám van egy-egy szóközzel elválasztva, a
+kiindulási mező X és Y koordinátája (1≤X,Y≤100), valamint a vizsgálandó távolság (1≤T<50).
+Kimenet
+A standard kimenet négy sort tartalmazzon, sorrendben az A, B, C, D módszer szerint ki-
+számított, az X,Y koordinátájú mezőtől T távolságra lévő mezők koordinátapárjait! Mindegyik
+sorban egy koordinátapárt „(X,Y)” formában kell megadni, az egyes koordinátapárokat pedig
+pontosvessző válassza el!
+Példa
+Bemenet        Kimenet
+1 2 1          (1,1);(1,3);(2,1);(2,2);(2,3)
+               (1,1);(1,3);(2,2)
+               (100,1);(100,2);(100,3);(1,1);(1,3);(2,1);(2,2);(2,3)
+               (100,2);(1,1);(1,3);(2,2)
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                          2. oldal
+

@@ -1,0 +1,36 @@
+
+
+                                Teaforgalmazók száma
+Egy élelmiszerdiszkontban nyilvántartást vezetnek a teavásárlásról. Minden vásárlásnál feljegyzik,
+hogy milyen cég teájából milyen mennyiséget vettek.
+Készíts programot, amely megadja, hogy a diszkontban hányféle cég teáját lehet venni!
+Bemenet
+A standard bemenet első sorában a vásárlások száma (1≤N≤100), alatta sorpáronként
+egy-egy vásárlás leírása van: teafajta neve, majd a következő sorban a mennyisége (1≤M≤2000).
+Kimenet
+A standard kimenet első sorába a teát eladó cégek számát kell írni!
+Példa
+Bemenet                                          Kimenet
+6                                                4
+Lipton
+200
+Teekanne
+100
+Lipton
+600
+Lipton
+800
+Pickwick
+200
+Greenfield
+800
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

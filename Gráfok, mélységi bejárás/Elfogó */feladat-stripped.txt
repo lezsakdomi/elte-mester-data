@@ -1,0 +1,41 @@
+
+
+                                           Elfogó
+A városi rendőrség egy körözött bűnöző elfogását tervezi, aki autóval folyamatosan közlekedik a
+város utcáin. Minden utca egyirányú, bármely két útkereszteződést egy irányban legfeljebb egy ut-
+ca köt össze, továbbá a városban lehet zsákutca is, azaz olyan útkereszteződés, amelyből nem ve-
+zet kifelé egyirányú utca. Ha van olyan útkereszteződés, amelyben a bűnözőnek előbb-utóbb fel
+kell tűnnie, akkor az elfogásához elegendő a rendőröket egy ilyen helyre összpontosítani.
+Készíts programot, amely meghatározza az összes olyan útkereszteződést, ahol a bűnözőnek
+előbb-utóbb fel kell bukkannia, bárhonnan induljon is, feltéve, hogy folyamatosan közlekedik.
+Bemenet
+A standard bemenet első sora az útkereszteződések számát tartalmazza (2N2000). A
+második sorban az egyirányú utcák száma (1M<N*N) van. Az ezt követő M sor az egyirányú ut-
+cákat adja meg. Az egyes sorokban az A-ból B-be vezető utcát írjuk le (1A,BN).
+Kimenet
+A standard kimenet egyetlen sorába az összes olyan útkereszteződés azonosító számát kell
+írni (egy-egy szóközzel elválasztva), amelyen a bűnözőnek előbb-utóbb fel kell bukkannia! Ha
+nincs ilyen útkereszteződés, akkor a sor tartalma a egyetlen 0 szám legyen!
+Példa
+Bemenet                                         Kimenet
+6                                               5
+8
+1   2
+2   3
+3   4
+4   5
+1   6
+2   5
+6   3
+6   4
+                                                                          6
+Korlátok
+Időlimit: 0.1 mp.                                        1       2        3       4
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤30                                       5
+
+
+
+
+                                            1. oldal
+

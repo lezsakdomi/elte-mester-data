@@ -1,0 +1,32 @@
+
+
+                    Fagyos napok száma az előrejelzésben
+Egy időjárás előrejelzésben megkaptuk a következő N nap várható minimális és maximális hő-
+mérsékletét.
+Írj programot, amely megadja azon napok számát, amikor fagyni fog (fagy, ha a hőmérséklet ki-
+sebb, mint 0)!
+Bemenet
+A standard bemenet első sorában a napok száma (0≤N≤100) van, alatta pedig soronként
+egy-egy nap várható legkisebb és legnagyobb hőmérsékletei vannak (-50≤Min,Max≤50).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, azon napok számát, ami-
+kor fagyni fog!
+Példa
+Bemenet                                        Kimenet
+6                                              3
+-5 5
+0 10
+-5 -3
+-5 0
+2 10
+10 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                           1. oldal
+

@@ -1,0 +1,26 @@
+
+
+                                      Barátságos
+A P és Q pozitív egész számokat barátságos számnak nevezzük, ha P osztóinak (P-t kivéve) ösz-
+szege egyenlő Q-val, és Q osztóinak (Q-t kivéve) összege egyenlő P-vel.
+Készíts programot, amely megadja egy adott N-ig a barátságos számpárokat (P,Q ≤ N)!
+Bemenet
+A standard bemenet első és egyetlen sorában az adott N található (1  N  1 200 000).
+Kimenet
+A standard kimenet egy-egy sorában szóközzel elválasztva a barátságos számpárok legye-
+nek, a kisebb szám legyen minden sorban az első! A sorok az első szám szerint legyenek növek-
+vően rendezettek!
+Példa
+Bemenet                                       Kimenet
+2000                                          220 284
+                                              1184 1210
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában N≤10 000.
+
+
+
+
+                                           1. oldal
+

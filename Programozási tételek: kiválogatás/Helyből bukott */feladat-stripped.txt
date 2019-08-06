@@ -1,0 +1,30 @@
+
+
+                                       Helyből bukott
+Egy kurzusra N hallgató járt. A hallgatók röpzárthelyiket írnak a gyakorlati jegy előfeltételeként.
+Írj programot, amely megadja, hogy hány hallgató kap „helyből” 1-es gyakorlati jegyet (akikre az
+Ri<10 teljesül)!
+Bemenet
+A standard bemenet első sorában a hallgatók száma (0≤N≤99) található. A következő N
+sorban a röpzárthelyi pontok (0≤Ri≤20) vannak.
+Kimenet
+A standard kimenet egyetlen sorába a helyből 1-es gyakorlati jegyet kapott hallgatók szá-
+mát kell kiírni!
+Példa
+Bemenet                                            Kimenet
+5                                                  2
+15
+10
+9
+8
+20
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+A tesztek 50%-ában N≤20.
+
+
+
+
+                                               1. oldal
+

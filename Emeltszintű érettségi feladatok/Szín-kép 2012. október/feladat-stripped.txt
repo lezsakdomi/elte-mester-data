@@ -1,0 +1,60 @@
+
+
+                                           Szín-kép
+Egy digitális kép képpontjainak RGB kódját sorfolytonosan tároljuk, a sorokat fentről lefelé, az
+oszlopokat balról jobbra. A képen van sárga pont és a sárga pontok biztosan egyetlen téglalapban
+helyezkednek el.
+Írj programot, amely megadja, hogy
+   1. egy szín megtalálható-e a képen;
+   2. a kép egy megadott pozíciójú képpontjának színe hányszor szerepel abban a sorban, illetve
+      abban az oszlopban, amiben van.
+   3. a piros (255,0,0), kék (0,0,255), és zöld (0,255,0) színek közül melyik fordul elő legtöbbször
+      a képen.
+   4. a sárga (255,255,0) téglalap bal felső, és jobb alsó sarkának helyét.
+Bemenet
+A standard bemenet első sora egy szín RGB kódja (0≤R,G,B≤255). A második sor egy
+képpont sor és oszlop sorszámát tartalmazza (1≤s≤SZ, 1≤o≤M). A harmadik sorban a kép szé-
+lessége és magassága van (1≤SZ,M≤100). A következő SZ*M sor 3 értéket tartalmaz sorfolyto-
+nosan az RGB kódolásnak megfelelően (0≤RRi,GGi,BBi≤255).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az egyetlen sorban 1 vagy 0 legyen, attól függően, hogy a kép tartalmazza-e az
+(R,G,B) színt!
+2. részfeladat: Az (s,o) pozíciójú képpont színének az s. sorban, illetve az o. oszlopban való
+előfordulási számát kell kiírni!
+3. részfeladat: Vagy a p,k,z, vagy a 0 szövegeket tartalmazza, attól függően, hogy ezek közül
+melyik a leggyakoribb szín a képen, vagy éppen egyik sem szerepel! Ha több maximum van, azt
+írd ki, amelyik a bemenet sorrendjében leghamarabb érte el a maximumot!
+4. részfeladat: A sárga téglalap bal felső és jobb alsó sarkának sorszámát és oszlopszámát kel ki-
+írni!
+Példa
+Bemenet                                          Kimenet
+255   255 255                                    #
+1 2                                              1
+2 2                                              #
+255   0 0                                        2 1
+255   0 0                                        #
+255   255 255                                    p
+255   255 0                                      #
+                                                 2 2 2 2
+
+
+
+
+                                              1. oldal
+Emelt szintű informatika érettségi              2012. október 19.
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB
+
+
+
+
+                                     2. oldal
+

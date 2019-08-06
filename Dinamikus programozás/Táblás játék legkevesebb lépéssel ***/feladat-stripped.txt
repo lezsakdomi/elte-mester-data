@@ -1,0 +1,47 @@
+
+
+                         Táblás játék legkevesebb lépéssel
+Tekintsük azt az egyszemélyes játékot, amelyet egy N sorból és M oszlopból álló négyzetrácsos
+táblán lehet játszani. A tábla véletlenszerűen kiválasztott mezőit megjelölik, amelyek csapda me-
+zők lesznek. A játék célja az, hogy egy bábut a lehető legkevesebb lépéssel el kell juttatni a tábla
+(N,M) koordinátájú jobb alsó sarkába.
+A játékszabály a következő:
+     Kezdetben a bábu a tábla (1,1) koordinátájú bal felső sarkában áll.
+     Csapda mezőre nem lehet lépni.
+     Bármely mezőre legfeljebb egyszer lehet lépni.
+     Egy lépésben a bábut csak szomszédos mezőre lehet mozgatni, vagy jobbra, vagy lefelé,
+      vagy felfelé.
+     A játék akkor ér véget, ha a bábu az (N,M) célmezőre kerül, vagy ha nem lehet lépni.
+Írj programot, amely kiszámítja azt a legkevesebb lépésből álló lépéssorozatot (ha létezik), amely-
+lyel a bábut el lehet juttatni az (N,M) koordinátájú célba!
+Bemenet
+A standard bemenet első sorában a tábla sorainak és oszlopainak száma (1N,M1000),
+valamint a csapdamezők száma (0K<N*M) van. A következő K sor mindegyikében egy csapda
+sor- és oszlopkoordinátája van (1xN, 1yM). Az (1,1) mező biztosan nem csapda.
+Kimenet
+A standard kimenet első sorába azt a lehető legkevesebb K lépésszámot kell írni, amellyel
+a bábut el lehet juttatni az (N,M) célmezőre. Ha a célmező nem érhető el, akkor az első és egyet-
+len sorba a -1 értéket kell írni! Ha el lehet jutni a célmezőre, akkor a második sor a legkevesebb
+olyan lépésből álló lépéssorozatot megadó K darab karaktert tartalmazza, amellyel a bábu a cél-
+mezőbe juttatható! A jobbra lépés jele a 'J', a lefelé lépésé az 'L', a felfelé lépésé pedig az
+'F' karakter. A karakterek között nem lehet szóköz, és az utolsó karakter után nem lehet szó-
+köz! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+5   6 7                                          11
+1   2                                            LLLJJFJJJLL
+2   2
+3   2
+5   1
+4   4
+2   5
+5   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

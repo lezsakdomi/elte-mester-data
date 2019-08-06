@@ -1,0 +1,31 @@
+
+
+                          Születésnap minden hónapban
+Ismerjük egy évfolyam hallgatóinak születési hónapjait (a nevükkel megadva).
+Készíts programot, amely eldönti, hogy lehet-e minden hónapban születésnapot tartani valame-
+lyiküknek!
+Bemenet
+A standard bemenet első sorában található a hallgatók száma (1≤N≤100). A következő N
+sorban a születési hónapjuk neve van (ekezet nelkul csupa kisbetűvel írva).
+Kimenet
+A standard kimenet első sorába ki kell írni a választ! Az „IGEN” szöveg szerepeljen
+amennyiben lehet minden hónapban születésnapot tartani valamelyiküknek, különben a „NEM”
+szöveg!
+Példa
+Bemenet                                         Kimenet
+6                                               NEM
+januar
+januar
+januar
+februar
+marcius
+aprilis
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

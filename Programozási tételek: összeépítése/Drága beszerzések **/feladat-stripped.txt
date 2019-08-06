@@ -1,0 +1,32 @@
+
+
+                                    Drága beszerzések
+A Tesó™ üzletlánc N féle terméket árul. Ismerjük az összes termék árát és egy heti eladásai szá-
+mát.
+Írj programot, amely megadja azt a legnagyobb árat, amelynél az egy héten eladott termékek leg-
+alább felének az ára nagyobb vagy egyenlő!
+Bemenet
+A standard bemenet első sorában a termékek száma (1≤N≤100) található. A következő N
+sorban soronként az egyes termékek ára (0≤Ári≤100) és egy heti eladási száma (0≤Dbi≤1000)
+van. Az adatok ár szerint csökkenően rendezettek
+Kimenet
+A standard kimenet első sorába azt a legnagyobb árat kell írni, amelynél az egy héten el-
+adott termékek legalább felének az ára nagyobb vagy egyenlő!
+Példa
+Bemenet                                        Kimenet
+6                                              6
+9   1
+8   2
+8   0
+7   3
+6   4
+5   5
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

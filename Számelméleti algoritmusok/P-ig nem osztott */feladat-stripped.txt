@@ -1,0 +1,23 @@
+
+
+                                    P-ig nem osztott
+Adott egy P prímszám. Keressük azt a legkisebb N számot, amely P-vel osztható, de minden P-
+nél kisebb 1-től különböző pozitív egész számmal osztva 1 maradékot kapunk.
+Készíts programot, amely kiszámítja egy adott P-re N-t!
+Bemenet
+A standard bemenet első sorában egy P prím található (1< P < 4 5 ).
+Kimenet
+A standard kimenet első és egyetlen sorába a P-hez tartozó N szám kerüljön!
+Példa
+Bemenet                                         Kimenet
+7                                               301
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a P<20.
+
+
+
+
+                                             1. oldal
+

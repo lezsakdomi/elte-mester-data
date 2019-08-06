@@ -1,0 +1,40 @@
+
+
+                                            Vásár
+Egy kereskedő N féle terméket szállíthat egy vásárra. Adott kapacitású teherautója van, amivel az
+árukat viszi. Lehetőleg a teljes választékát szeretné árulni, ezért minden termékére meghatározott
+egy minimális darabszámot, amit mindenképpen el szeretne vinni.
+Írj programot, amely megadja, hogy mely termékekből mennyit vigyen a vásárra, hogy az elérhető
+bevétele a lehető legnagyobb legyen!
+Bemenet
+A standard bemenet első sorában az áruk száma (1≤N≤100) és a teherautó kapacitása van
+(1≤K≤1000). A következő N sorban az egyes árucikkek tömege (1≤Ti≤20), egységára
+(1≤Ai≤1000), mennyisége (1≤Mi≤20) és a minimálisan elviendő darabszáma (0≤MDi≤Mi) talál-
+ható.
+Kimenet
+A standard kimenet első sorába az áruszállítással elérhető legnagyobb hasznot kell írni! Ha
+nincs megoldás, akkor -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+5 100                                            190
+10 10 3 3
+                                                 Magyarázat: az elsőből hármat kell vinni, a
+20 5 10 0
+                                                 harmadikból még kettőt tudunk (egyet kötele-
+5 10 10 1
+                                                 ző) és a negyedikből is kettőt kell (ebből is kö-
+30 70 5 1
+                                                 telező egy). A kötelezők összesen már 65 kg-
+40 100 10 0
+                                                 osak, így a legdrágább ötödikből már nem fér
+                                                 fel semmi a teherautóra.
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

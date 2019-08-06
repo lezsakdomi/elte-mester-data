@@ -1,0 +1,37 @@
+
+
+                      Legnagyobb mennyiségű teavásárlás
+Egy élelmiszerdiszkontban nyilvántartást vezetnek a teavásárlásról. Minden vásárlásnál feljegyzik,
+hogy milyen cég teájából milyen mennyiséget vettek.
+Készíts programot, amely megadja a legnagyobb mennyiségű vásárlás sorszámát!
+Bemenet
+A standard bemenet első sorában az árusító helyek száma (1≤N≤100), alatta sorpáron-
+ként egy-egy árusító hely leírása van: a teafajta neve és a vásárolt mennyiség (1≤M≤2000).
+Kimenet
+A standard kimenet első sorába a legnagyobb mennyiségű vásárlás sorszámát kell kiírni!
+Több megoldás esetén a legkisebb sorszámút kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6                                                4
+Lipton
+200
+Teekanne
+100
+Lipton
+600
+Lipton
+800
+Pickwick
+200
+Greenfield
+800
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

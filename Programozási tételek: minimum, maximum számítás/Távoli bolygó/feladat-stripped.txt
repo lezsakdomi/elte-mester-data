@@ -1,0 +1,30 @@
+
+
+                                       Távoli bolygó
+Egy távoli bolygón nyilvántartják az elmúlt években élt emberek születési és halálozási időpontját,
+az időszámításuk kezdetétől órákban számolva.
+Készíts programot, amely megadja, hogy mennyi volt a legtöbb ember, akik egyszerre éltek a
+bolygón, valamint hogy hány óra hosszan élt pontosan ennyi ember a bolygón! Az emberek a szü-
+letésük és a halálozásuk órájában is élőnek számítanak.
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤10 000 000). A további
+N sorban egy-egy ember születési és halálozási időpontja van (0≤Si<Hi≤1 000 000).
+Kimenet
+A standard kimenet első sorába a legtöbb ember E számát kell írni, akik egyszerre éltek a
+bolygón! A második sorba az kerüljön, hogy hány óra hosszan élt pontosan E ember a bolygón!
+Példa
+Bemenet                                           Kimenet
+3                                                 2
+10 20                                             7
+5 12
+17 25
+Megjegyzés: 10, 11, 12, valamint 17, 18, 19, 20 órakor élt 2 ember.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

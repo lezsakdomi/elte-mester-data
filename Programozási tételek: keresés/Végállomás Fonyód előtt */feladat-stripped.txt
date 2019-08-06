@@ -1,0 +1,34 @@
+
+
+                                 Végállomás Fonyód előtt
+Adott egy Budapest és Fonyód közötti vasúti menetrend, amely tartalmazza a közbülső helységek
+esetében az érkezési és az indulási időt.
+Add meg az utolsó olyan vonatnak az érkezési idejét, amelynek Fonyód előtt van a végállomása!
+Bemenet
+A standard bemenet első sorában található a menetrendben található bejegyzések (N, ma-
+ximum 100) száma. A következő N sor mindegyikében van egy városnév (ekezet nelkul), egy ér-
+kezési idő és egy indulási idő szóközzel elválasztva. Az idők a napon belüli percekben vannak
+megadva, vagyis maximum 24*60=1440 a maximális érték és aznap mindig megérkezik. „-1” van
+ott, ahol nincs értelmezhető érkezési idő és „9999” szerepel a nem értelmezhető indulási időknél.
+Az adatok indulási idő szerint rendezettek.
+Kimenet
+A standard kimenet első sorába ki kell írni az utolsó olyan vonat érkezési idejét, amelynek
+Fonyód előtt van végállomása! Ha nincs ilyen, akkor legyen „-1” a válasz!
+Példa
+Bemenet                                         Kimenet
+6                                               630
+Budapest -1 480
+Szekesfehervar 510 515
+Siofok 545 550
+Szekesfehervar -1 600
+Siofok 630 9999
+Fonyod 635 9999
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

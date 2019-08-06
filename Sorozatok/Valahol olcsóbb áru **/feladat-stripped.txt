@@ -1,0 +1,32 @@
+
+
+                                   Valahol olcsóbb áru
+Két üzlet N, illetve M-féle árut árul. Ismerjük mindkettőben az egyes áruk nevét és árát.
+Készíts programot, amely megadja azon árukat, amelyek valahol X forintnál olcsóbban megvásá-
+rolhatók!
+Bemenet
+A standard bemenet első sorában az első üzlet áruféléi száma (1≤N≤1000), a második üz-
+let áruféléi száma (1≤M≤1000) és az X összeg (1≤X≤100 000) van. A következő N sor mind-
+egyikében az első üzlet árui, a következő M sor pedig a második üzlet árui leírását tartalmazza. Az
+egyes sorok első száma az áru kódja (legfeljebb 4 jegyű egész szám) a második pedig az adott üz-
+letben az ára (1≤Ár≤100 000).
+Kimenet
+A standard kimenet első sorába azon áruk számát kell írni, amelyek valamelyik üzletben X
+forintnál olcsóbban megvásárolhatók, a második sorba pedig ezek kódját, növekvő sorrendben!
+Példa
+Bemenet                                           Kimenet
+3 2 1000                                          2
+1000 500                                          876 1000
+6666 1200
+1234 1000
+1000 1500
+876 300
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

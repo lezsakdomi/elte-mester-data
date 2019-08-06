@@ -1,0 +1,49 @@
+
+
+                                    Konténer pakolás
+Egy raktárban N darab kocka alakú konténer van egy sorban. Konténerek egymásra rakásával
+akarnak helyet felszabadítani. Az átpakolást egy robot végzi, amely csak jobbról balra haladva tud
+konténert szállítani, és olyan konténerre rakhatja, amelynek mérete nem kisebb a mozgatott mére-
+ténél. Továbbá, ha az i-sorszámút már átrakta, akkor i-nél kisebb sorszámút már nem tud moz-
+gatni. Az a cél, hogy a lehető legkevesebb toronyba rakják össze a konténereket.
+Felvetődött, hogy ha a sorban (balról jobbara) az K-adik konténert helyettesítik egy másik, mond-
+juk H méretű konténerrel, akkor hány toronyba lehetne legjobb esetben összepakolni a konténe-
+reket.?
+Pontosabban, M kérdést kell megválaszolni. Minden kérdés a következő formájú: legjobb esetben
+hány toronyba lehetne összepakolni a konténereket, ha az K-adik konténert egy H méretűre cse-
+rélnék ki (miközben a többi N-1 változatlan maradna)? Készíts programot, amely választ ad ezek-
+re a kérdésekre!
+Bemenet
+A standard bemenet első sorában a konténerek száma (1≤N≤200000) és a kérdések
+száma (1≤M≤200000) van. A második sor N darab egész számot tartalmaz, az egyes konténe-
+rek méretét(1≤Si≤109). A következő M sor mindegyikében egy kérdés leírása van, ami két egész
+szám: a kiválasztott konténer K sorszáma (1≤K≤N), valamint a H érték (1≤H≤109), amilyen
+méretűre cserélnék.
+Kimenet
+A standard kimenetre M sorba egy-egy számot kell írni, minden egyes kérdésre meg kell
+adni, hogy legjobb esetben hány toronyba lehetne összepakolni a konténereket az adott feltételek
+mellett.
+Példa
+Bemenet                                           Kimenet
+4   3                                             4
+2   4 3 7                                         3
+3   5                                             3
+2   5
+2   2
+
+
+Magyarázat: ha a harmadik számot 5-re cseréljük, akkor a kapott 2 4 5 7 sorozatban minden szám
+nagyobb a korábbiaknál, tehát 4 a megoldás. Ezzel szemben, ha a második számot akár 5-re, akár
+2-re cseréljük, akkor 3 toronyba lehet összepakolni a konténereket.
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 20%-át lehet szerezni olyan bemenetekre, ahol N,M≤100.
+
+
+
+
+                                             1. oldal
+

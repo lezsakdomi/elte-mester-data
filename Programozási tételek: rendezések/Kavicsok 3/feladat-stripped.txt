@@ -1,0 +1,28 @@
+
+
+                                      Kavicsok 3
+N kupacba helyeztek el kavicsokat. K darab kavicsot kell elvenni közülük, egyesével. Minden
+egyes kavics elvétele annyi forintot ér, ahány elemszámú kupacból vesszük el.
+Készíts programot, amely megadja, hogy a K kavics elvételével maximum mennyi forintot keres-
+hetünk!
+Bemenet
+A standard bemenet első sorában a kupacok száma (1≤N≤1 000 000) és a K érték
+(1≤K≤1000) van. A további N sorban az egyes kupacok kavicsszáma van (1≤Di≤10 00 000).
+Kimenet
+A standard kimenet első sorába a maximális nyereség értékét kell kiírni!
+Példa
+Bemenet                                       Kimenet
+3 4                                           24
+6
+7
+2
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 4 MB
+
+
+
+
+                                          1. oldal
+

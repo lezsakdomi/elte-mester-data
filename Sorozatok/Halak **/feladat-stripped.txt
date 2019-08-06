@@ -1,0 +1,30 @@
+
+
+                                            Halak
+Minden halfajtáról tudjuk, hogy mikor esik tilalom alá a horgászata.
+Készíts programot, amely megadja azokat az időszakokat, amikor bármilyen halat szabad fogni!
+Bemenet
+A standard bemenet első sorában a halfajták száma van (1≤N≤1000). A következő N sor
+mindegyikében egy halfajta horgászati tilalmi ideje van. Az egyes sorok első száma a tilalom első
+(1≤Ei≤365), a második pedig az utolsó napjának éven belüli sorszáma (Ei≤Ui≤365).
+Kimenet
+A standard kimenet első sorába a kirándulásra azon intervallumok K számát kell írni, ami-
+kor bármilyen halat szabad volt fogni! A következő K sorban ezen intervallumok első és utolsó
+napja legyen, növekvő sorrendben!
+Példa
+Bemenet                                          Kimenet
+4                                                3
+30 100                                           1 29
+50 200                                           201 299
+60 90                                            321 365
+300 320
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 20%-ában N=2.
+
+
+
+
+                                             1. oldal
+

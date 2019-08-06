@@ -1,0 +1,27 @@
+
+
+                                     Egyes számok
+Adjuk össze egy legfeljebb 100 jegyű természetes szám számjegyeit! Ha a kapott szám nem egyje-
+gyű, akkor ennek újra adjuk össze a számjegyeit, és az eljárást folytassuk, amíg egyjegyű számot
+nem kapunk! Egyes kiinduló számok esetén a végeredmény 1 lesz. Nevezzük ezeket a kiinduló
+számokat „egyes” számoknak!
+Készíts programot, amely kiszámítja, hogy egy legfeljebb 100 jegyű természetes szám „egyes”
+szám-e!
+Bemenet
+A standard bemenet első sorában egy legfeljebb 100 jegyű természetes szám áll.
+Kimenet
+A standard kimenet első sorába kerüljön az „EGYES” szó, amennyiben a kapott szám
+„egyes”, egyéb esetben pedig az, hogy „NEM EGYES”!
+Példa
+Bemenet                                        Kimenet
+1998                                           NEM EGYES
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a szám ≤100.
+
+
+
+
+                                            1. oldal
+

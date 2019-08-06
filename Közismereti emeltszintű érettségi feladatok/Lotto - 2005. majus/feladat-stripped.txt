@@ -1,0 +1,61 @@
+
+
+                                              Lottó
+Magyarországon 1957 óta lehet ötös lottót játszani. A játék lényege a következő: a lottószelvénye-
+ken 90 szám közül 5 számot kell a fogadónak megjelölnie. Ha ezek közül 2 vagy annál több meg-
+egyezik a kisorsolt számokkal, akkor nyer. Az évek során egyre többen hódoltak ennek a szeren-
+csejátéknak és a nyeremények is egyre nőttek.
+Írj programot, amely
+   1.   az 52. hét nyerőszámait emelkedő számsorrendbe rendezi,
+   2.   megadja az adott sorszámú hét lottószámait,
+   3.   eldönti, hogy volt-e olyan szám, amit egyszer sem húztak ki az 52 hét alatt,
+   4.   megállapítja, hogy hányszor volt páratlan szám a kihúzott lottószámok között,
+   5.   meghatározza, hogy az egyes lottószámokat hányszor húzták ki,
+   6.   megadja, hogy az 1-90 közötti prímszámokból melyiket nem húzták ki egyszer sem!
+Bemenet
+A standard bemenetben adottak egy év 52 hetének ötös lottó számai. Az első sorban egy
+hét sorszáma szerepel (1≤HÉT≤52). A második sorban az első héten húzott számok vannak, a
+harmadik sorban a második hété, … (1≤Li,j≤90). A lottószámok minden sorban emelkedő
+számsorrendben szerepelnek, kivéve az utolsó sorban, vagyis az 52. hét esetén.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Az 52. hét nyerőszámait kell írni egyetlen sorba, növekvő sorrendben!
+2. részfeladat: Az adott sorszámú hét lottószámait kell írni egyetlen sorba, növekvő sorrendben!
+3. részfeladat: A „van” vagy „nincs” szót kell írni aszerint, hogy volt-e olyan szám, amit egyszer
+sem húztak ki!
+4. részfeladat: Azt kell írni, hogy hányszor volt páratlan szám!
+5. részfeladat: Egyetlen sorba azt kell írni, hogy az egyes lottószámokat hányszor húzták ki!
+6. részfeladat: Az első sorba azt kell írni, hogy hány 1-90 közötti prímszámot nem húztak ki egy-
+szer sem, a másodikban ezeket a ki nem húzott számokat kell megadni növekvő sorrendben!
+Példa
+Bemenet                                           Kimenet
+8                                                 #
+37 42 44 61 62                                    11 24 34 64 89
+18 42 54 83 89                                    #
+…                                                 10 21 29 40 87
+89 24 34 11 64                                    #
+                                                  van
+                                                  #
+                                                  128
+                                                  #
+                                                  4 2 2 4 …
+
+                                              1. oldal
+Emelt szintű informatika érettségi              2005. május 19.
+
+                                        #
+                                        1
+                                        19
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                     2. oldal
+

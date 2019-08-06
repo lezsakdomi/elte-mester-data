@@ -1,0 +1,44 @@
+
+
+                                      Csillagvizsgáló
+Egy központi csillagvizsgálóban összegyűjtötték egy adott nap adott órájára vonatkozóan az or-
+szágszerte történt meteorészlelések időpontjait.
+Írj programot, amely
+   1. rendezett listát készít az észlelési időpontokból
+   2. megadja az első olyan észlelési időpontot, amelyet 3 másodpercen belül újabb két észlelés
+      követett!
+Bemenet
+A standard bemenet első sorában az észlelések darabszáma (1≤N≤3600) található. Az
+ezt követő N sor mindegyike egy-egy észlelés adatait tartalmazza (0≤Perc<60,0≤Mp<60).
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Összesen N sort kell írni, az észleléseket idő szerint növekvő sorrendben!
+2. részfeladat: Annak a legkorábbi észlelésnek az időrendbeli sorszámát kell kiírni, amelyre telje-
+sül, hogy 3 másodpercen belül két újabb észlelés követte! Ha nincs ilyen, akkor egy darab 0-t kell
+kiírni!
+Példa
+Bemenet                                          Kimenet
+8                                                #
+7 49                                             7 45
+7 45                                             7 47
+10 10                                            7 49
+7 47                                             7 50
+Ű34 45                                           9 48
+7 50                                             10 10
+23 12                                            23 21
+9 48                                             34 45
+                                                 #
+                                                 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

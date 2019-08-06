@@ -1,0 +1,49 @@
+
+
+                                             Arany
+Az alkimisták hosszas kísérleteiket arról, hogy milyen anyagok milyenekké alakíthatók át, gondo-
+san feljegyezték könyveikbe. Megadták a kiindulási anyag nevét, majd azt az összetevőt (ún. kata-
+lizátort), amit hozzákeverve létrejött valamilyen termék. Megállapították, hogy egyetlen anyag sem
+állítható elő önmagából, egy vagy több lépésben sem, továbbá nincs két különböző bejegyzés,
+amelyekben mind az első, mind a második anyag megegyezne. Az anyagok nevét számokkal, míg
+a katalizátorokat az angol ABC nagy betűivel jelölték A-tól Z-ig. Az alkimisták aranyat szerettek
+volna előállítani vasból. Feljegyzéseikben az aranyat 0-val, míg a vasat 1-el jelölték.
+Egy ilyen bejegyzés sorozatra példa:
+    1A2        (1 anyagból 2 és
+    1A3         3 keletkezik, ha A-t keverünk hozzá)
+    1B4        (ha 1-hez B-t adagolunk, akkor 4 keletkezik)
+    3F0        (ha a létrejött 3-hoz F-et keverünk, akkor létrejön 0)
+Készíts programot, amely megadja, hogy egy adott bejegyzés sorozatban melyek azok a katalizá-
+torok, amelyek feltétlenül szükségesek ahhoz, hogy az alkimista szerint aranyat vasból elő lehes-
+sen állítani!
+Bemenet
+A standard bemenet első sorában megadjuk, hogy hány bejegyzés szerepel a sorozatban
+(1≤N≤10 000), a további N sora pedig a példában szereplő formátumban tartalmazza az egyes
+bejegyzéseket (a kiindulási anyag száma, szóköz, a katalizátor betűjele, szóköz és a végtermék
+száma). A használt anyagok száma maximum 2000, a katalizátoroké pedig 26.
+Kimenet
+A standard kimenetre a nélkülözhetetlen katalizátorok betűjelét kell írni abc rendben, egy
+sorban szóközzel elválasztva! Ha aranyat nem lehet előállítani semmilyen katalizátorral, akkor
+NEM LEHET szerepeljen a kimenetben! Ha egyik katalizátor sem nélkülözhetetlen, akkor
+EGYIK SEM KELL legyen a sor tartalma!
+Példa
+Bemenet                       Kimenet
+9                             A F G
+1   A   2
+1   A   3                                                         B             A
+1   B   4                                                   4               1           2
+3   F   5
+5   G   6                                                               A
+6   A   7                                                                                   D
+6   B   8                                                                   3           8       0
+7   C   0                                                               F           B               C
+8   D   0
+                                                                            5           6       7
+Korlátok                                                                        G           A
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+                                              1. oldal
+

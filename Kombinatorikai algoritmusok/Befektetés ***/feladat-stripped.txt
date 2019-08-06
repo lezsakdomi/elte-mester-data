@@ -1,0 +1,30 @@
+
+
+                                        Befektetés
+Egy vállalkozó egy évben befektetett 1 ezer forintot. Minden befektetése 2 éven keresztül hoz
+hasznot, ugyanannyit, mint a befektetés értéke volt. A hasznot azonnal újra befekteti (csak a
+hasznot). Az adóhivatal pontosan N összegű befektetését szeretné ellenőrizni úgy, hogy két egy-
+mást követő évben nem vizsgálja a vállalkozót.
+Készíts programot, amely megadja, hogy az adóhivatal mely években ellenőrizze az új befekteté-
+seket, hogy összesen pontosan A összegű befektetést ellenőrizzen, valamint azt, hogy ha minden
+ellenőrzést egy évvel későbbre tenne, akkor mekkora befektetési összeget ellenőrizhetne!
+Bemenet
+A standard bemenet első sorában az ellenőrizendő összeg van (2≤A≤100 000 000), ezer
+forintokban megadva.
+Kimenet
+A standard kimenet első sorába azon évek sorszámát kell írni növekvő sorrendben, ame-
+lyekben az adóhivatal az ellenőrzést elvégzi! A második sorba az a befektetési összeg kerüljön,
+amennyit akkor kellene ellenőrizni, ha minden ellenőrzést egy évvel elhalasztana!
+Példa
+Bemenet                                        Kimenet
+100                                            4 6 11
+                                               162
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

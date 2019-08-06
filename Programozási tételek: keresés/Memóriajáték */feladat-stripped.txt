@@ -1,0 +1,33 @@
+
+
+                                      Memóriajáték
+Egy memóriajátékot két játékos játszik. Az egyik mond egy karaktersorozatot, s a másiknak azt
+ugyanabban a sorrendben kell megismételnie. A második játékos karaktereket hagyhat ki az erede-
+ti sorozatból, a sorrendet azonban nem változtathatja meg.
+Írj programot, amely megadja, hogy
+       a második játékos meddig tudta pontosan ismételni az első által mondott karaktersoroza-
+        tot!
+       a második játékos szavának azt a legnagyobb kezdőszeletét, amely a kihagyási szabálynak
+        megfelel!
+Bemenet
+A standard bemenet első sorában az első játékos X karaktersorozata van, a második sorá-
+ban a második játékos Y karaktersorozata. A karaktersorozatok legfeljebb 30 000 karakterből áll-
+nak.
+Kimenet
+A standard kimenet első sorába azt a karaktersorozatot kell írni, ameddig az Y karakterso-
+rozat eleje megegyezik az X karaktersorozat elejével! A második sorba pedig az Y karaktersorozat
+legnagyobb olyan kezdőszelete kerüljön, amely a kihagyási szabályoknak megfelel!
+Példa
+Bemenet                                         Kimenet
+ABCDEFGH                                        AB
+ABDFCX                                          ABDF
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 70%-ában a karaktersorozatok hossza ≤100
+
+
+
+
+                                            1. oldal
+

@@ -1,0 +1,48 @@
+
+
+                                      Pontok gráfon
+Ádám és Éva kétszemélyes játékot játszik egy olyan táblán, amelyen van N pont és bizonyos
+pontpárokat vonal köt össze. Egy pontnak azok a szomszédjai, amelyek vonallal vannak össze-
+kötve vele. Minden pontnak legfeljebb 3 szomszédja van. A pontokat az 1,…,N számokkal azo-
+nosítják, az 1. pont kitüntetett, ennek pontosan 2 szomszédja van. Ádám kék, Éva pedig piros ko-
+rongokat helyezhet a tábla pontjaira. A játék kezdetén Ádám egy kék korongot rak az 1. pontra.
+Ezután a játékosok felváltva lépnek, tehát Éva következik.
+       1. Ádám korongot csak olyan pontra rakhat, amelyen nincs korong és amelynek legalább
+          egy szomszédján saját, azaz kék korong van.
+       2. Éva bármely pontra rakhatja korongját, feltéve, hogy ott nincs korong.
+A játék akkor ér véget, ha az aktuális játékos nem tud lépni. Ádám célja a játékban az, hogy a leg-
+több pontra helyezzen kék korongot, Éva célja pedig, hogy akadályozza Ádámot.
+Készíts programot, amely kiszámítja, hogy hány helyre tud Ádám kék korongot rakni a legjobb
+esetben! Tehát van olyan játékmenet, amelyben ennyi korongot helyez el, de ennél többet nem
+tud (mert Éva okosan játszik).
+Bemenet
+A standard bemenet első sora egy egész számot tartalmaz, N (N≤1000) a táblán lévő
+ponthelyek számát. A következő N sor mindegyike egy pont szomszédjait tartalmazza, a felsoro-
+lást a 0 szám zárja. Az i-edik pont szomszédjait az állomány i+1-edik sora tartalmazza. Termé-
+szetesen, ha U-nak szomszédja V, akkor V-nek szomszédja U. Bármely két pont között legfeljebb
+egy vonal van.
+Kimenet
+A standard kimenet első és egyetlen sora egy egész számot tartalmazzon, azon korongok
+számát, amennyit Ádám legjobb esetben el tud helyezni a táblán!
+Példa
+Bemenet                                          Kimenet
+10                                               3
+2 3   0
+1 9   10 0
+1 4   7 0
+3 5   6 0
+4 6   9 0
+4 5   7 0
+3 8   6 0
+7 9   10 0
+8 5   2 0
+2 8   0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

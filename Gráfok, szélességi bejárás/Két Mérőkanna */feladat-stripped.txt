@@ -1,0 +1,45 @@
+
+
+                                     Két mérőkanna
+Van két kannánk, az első űrtartalma A liter, a másodiké B liter. Ki kell mérnünk N liter vizet a
+második kannába. Kezdetben mindkét kanna üres. A kannákkal a következő műveleteket végez-
+hetjük:
+    TA   az első kannát teletöltjük a csapról,
+    TB   a második kannát teletöltjük a csapról,
+    UA   az első kannát kiürítjük,
+    UB   az második kannát kiürítjük,
+    AB   az első kannából áttöltjük a benne lévő vizet a második kannába úgy, hogy ha mind
+         belefér, akkor mind áttöltjük, egyébként annyit töltünk át, hogy a második kanna tele
+         legyen,
+    BA a második kannából áttöltjük a benne lévő vizet az első kannába úgy, hogy ha mind bele-
+       fér, akkor mind áttöltjük, egyébként annyit töltünk át, hogy az első kanna tele legyen,
+Írj programot, amely a két kanna űrtartalma és az előállítandó mennyiség ismeretében meghatároz
+egy olyan műveletsort, amelyet sorban végrehajtva a második kannában a kért víz lesz!
+Bemenet
+A standard bemenet első sorában az előállítandó vízmennyiség (1N1000), második so-
+rában pedig az első és a második kanna űrtartalma (1A,B1000).
+Kimenet
+A standard kimenet első sorába a megoldás minimális lépésszámát, a többi sorba pedig a
+műveletsorát (soronként egy-egy műveletet) kell írni! Ha nincs megoldás, akkor az állomány első
+és egyetlen sora a NINCS szöveg legyen!
+Példa
+Bemenet                                        Kimenet
+2                                              8
+3 7                                            TA
+                                               AB
+                                               TA
+                                               AB
+                                               TA
+                                               AB
+                                               UB
+                                               AB
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

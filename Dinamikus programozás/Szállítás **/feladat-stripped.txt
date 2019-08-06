@@ -1,0 +1,28 @@
+
+
+                                           Szállítás
+Egy raktárból K kamionnal kell elszállítani tárgyakat. Minden kamion azonos S kapacitású, ami
+azt jelenti, hogy legfeljebb S összsúlyú tárgy rakható rá. A tárgyak a raktárban egyetlen sorban he-
+lyezkednek el, ezért az aktuális kamionra csak a sor két végéről lehet felrakni tárgyat.
+Készíts programot, amely kiszámítja, hogy legjobb esetben hány tárgyat lehet elszállítani a K ka-
+mionnal!
+Bemenet
+A standard bemenet első sora a tárgyak számát (1N10 000), a kamionok számát
+(1K100) és a kamionok közös kapacitását (1S1000) tartalmazza. A második sor pontosan
+N pozitív egész számot tartalmaz egy-egy szóközzel elválasztva, az elszállítandó tárgyak súlyait
+(1TiS).
+Kimenet
+A standard kimenet első és egyetlen sorába a legtöbb elszállítható tárgy számát kell írni!
+Példa
+Bemenet                                          Kimenet
+8 3 100                                          7
+20 70 10 30 80 60 50 30
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

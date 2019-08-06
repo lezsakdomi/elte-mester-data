@@ -1,0 +1,31 @@
+
+
+                                   Nyersanyagköltség
+Írj programot, amely egy elkészítendő étel receptje és az egységárak ismeretében meghatározza az
+étel nyersanyagköltségét!
+Bemenet
+A standard bemenet első sorában az alapanyagok száma (1≤N≤100) áll. A következő N
+sorban az egyes alapanyagok egységára van (1≤Ei≤1000). A következő sorban a recept alap-
+anyagainak száma található (1≤K≤100), a következő K sorban az alapanyagok sorszámai és a fel-
+használandó egységek darabszáma van (1≤Sj≤N, 1≤Dj≤1000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a recept nyersanyagköltsé-
+gét!
+Példa
+Bemenet                                         Kimenet
+3                                               8
+2
+3
+4
+2
+1 2
+3 1
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

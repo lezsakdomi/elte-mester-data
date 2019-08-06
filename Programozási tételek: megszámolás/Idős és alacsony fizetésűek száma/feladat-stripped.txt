@@ -1,0 +1,36 @@
+
+
+                          Idős es alacsony fizetésűek száma
+Egy vállalat tárolja dolgozói életkorát és fizetését.
+Írj programot, amely megadja, hogy az L év felettiek közül hánynak van M forintnál kisebb fizeté-
+se!
+Bemenet
+A standard bemenet első sorában az emberek száma (0≤N≤100), egy kor (1≤L≤100) és
+egy ár (1≤M≤2 000 000) van, alatta pedig soronként egy-egy ember kora (1≤K≤100) és a fize-
+tése (1≤F≤2 000 000).
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, az L év felettiek közül az
+M forintnál kisebb fizetésű dolgozók számát!
+Példa
+Bemenet                                             Kimenet
+10   65 200000                                      4
+69   100000
+68   100000
+67   100000
+66   100000
+65   100000
+64   100000
+63   100000
+62   100000
+61   100000
+60   100000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                                1. oldal
+

@@ -1,0 +1,35 @@
+
+
+       Leghosszabb intervallum estére romló légszennyeződésre
+A város egy forgalmas pontján N napon keresztül minden nap mérték a légszennyeződés mérté-
+két reggel és este.
+Írj programot, amely megadja a leghosszabb összefüggő időintervallum első és utolsó napját,
+amikor az esti érték meghaladta a reggeli értéket!
+Bemenet
+A standard bemenet első sorában a mérési napok száma (1≤N≤1000) van. A további so-
+rok mindegyike két, legfeljebb háromjegyű pozitív egész számot tartalmaz egy szóközzel elvá-
+lasztva, az első szám az adott napon reggel (0≤R≤300), a második pedig az este (0≤E≤300)
+mért szennyeződési érték.
+Kimenet
+A standard kimenet kell kiírni annak a leghosszabb összefüggő időintervallumnak az első
+és az utolsó napját, amikor az esti érték meghaladta a reggeli értéket! Ha több megoldás van, ak-
+kor a legkisebb első napit, ha nincs megoldás, akkor egyetlen 0 számot kell kiírni!
+Példa
+Bemenet                                         Kimenet
+6                                               3 5
+100 120
+200 122
+170 190
+100 222
+150 155
+75 60
+Korlátok
+Időlimit: -
+Memórialimit: -
+Pontozás: A tesztek 40%-ában a bemenetek száma≤20
+
+
+
+
+                                            1. oldal
+

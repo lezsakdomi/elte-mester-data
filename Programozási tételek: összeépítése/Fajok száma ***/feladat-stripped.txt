@@ -1,0 +1,31 @@
+
+
+                              Fajok maximális száma
+A földtörténet során N faj élt bolygónkon. Ismerjük minden fajról, hogy hány évvel ezelőttől
+hány évvel ezelőttig találtak létezésükre utaló nyomokat.
+Készíts programot, amely megadja, hogy hány évben volt maximális fajszám a Földön!
+Bemenet
+A standard bemenet első sorában a fajok száma van (1≤N≤100 000). A következő N
+sorban az egyes fajok legrégebbi (0 ≤LRi≤100 000 000) és legújabb előfordulásának időpontja
+szerepel (0≤LUi≤LRi), a legrégebbi előfordulás szerinti sorrendben.
+Kimenet
+A standard kimenet első sorába azon évek számát kell kiírni, ami alatt a fajok száma ma-
+ximális volt!
+Példa
+Bemenet                                       Kimenet
+6                                             3002
+100000 30000
+90000 60000
+50000 20000
+40000 25000
+32000 0
+26000 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

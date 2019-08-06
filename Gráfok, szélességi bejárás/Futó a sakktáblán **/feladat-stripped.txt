@@ -1,0 +1,38 @@
+
+
+                                    Futó a sakktáblán
+Egy NxN-es sakktáblán bábukat helyeztünk el, amelyek helyükről nem mozdulnak el. Egyetlen fu-
+tót mozgathatunk. Futó a sakktáblán mindig csak valamilyen átló irányában léphet, akárhányat, de
+bábut nem ugorhat át és nem is léphet más bábu helyére. Az átló irányú, akármilyen hosszú moz-
+gatást tekintjük egy lépésnek.
+Készíts programot, amely egy adott sakktáblára és két pozícióra megadja, hogy
+    A. minimálisan hány lépés alatt juthat el a futó a kezdőpozícióról a végpozícióra!
+    B. minimálisan hány lépés alatt juthat el a futó a kezdőpozícióról a végpozícióra akkor, ha
+       engedélyezzük, hogy az útjába eső bábukat leüsse (ekkor az adott lépés mindig a leütött
+       bábu helyén ér véget)!
+Bemenet
+A standard bemenet első sorában a sakktábla mérete (1N200), valamint az elhelyezett
+bábuk száma (1K<10000) van. A második sorban a futó kezdő- és végpozíciója van (1KX,
+KY,VX,VYN). A következő K sorban egy-egy bábu koordinátái vannak (1X,YN). Biztosan
+tudjuk, hogy a futó kezdőpozícióján (KX,KY) nem áll más bábu.)
+Kimenet
+A standard kimenet pontosan 2 sort tartalmazzon, a két részfeladat esetén a minimális lé-
+pésszámot! Ha valamelyik feladat nem oldható meg, akkor az adott sorba -1-et kell kiírni!
+Példa
+Bemenet                                          Kimenet
+8   5                                            3
+6   3 2 7                                        2
+5   2
+3   3
+3   6
+6   7
+8   5
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

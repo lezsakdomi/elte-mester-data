@@ -1,0 +1,50 @@
+
+
+                                           Randi
+Ádám és Éva szeretne találkozni. Éva az E városban, Ádám pedig az A városban van és az R vá-
+rosban akarnak találkozni. Vonattal kívánnak utazni, és ismerik a teljes menetrendet. A menet-
+rend N várost tartalmaz, és azt, hogy mely városok között van vonatjárat. Minden vonat adott i-
+edik városból indul és adott j-edik városba közlekedik és közben nem áll meg egyetlen közbülső
+állomáson sem. Mindketten olyan útvonalon akarnak utazni, hogy a lehető legkevesebbszer kell-
+jen átszállni.
+Írj programot, amely meghatároz Ádám és Éva számára egy-egy legkevesebb átszállásos útvona-
+lat!
+Bemenet
+A standard bemenet első sora tartalmazza a városok számát (1≤N≤20 000), Éva és
+Ádám tartózkodási helyét (1≤EA≤N), a találkahelyet (1≤R≤N,RA,RE) és a járatok számát
+(1≤M≤200 000). A további M sor mindegyike két egész számot tartalmaz (egy szóközzel elvá-
+lasztva), az első szám a járat i indulási, a második szám a járat j érkezési állomása (1≤ij≤N).
+Bármely i és j városra legfeljebb egy járat van i-ből j-be.
+Kimenet
+A standard kimenet első sorába a 0 0 számpárt kell írni, ha akár Ádám, akár Éva nem
+tud eljutni a találkahelyre! Egyébként az első sor olyan K M számpárt tartalmazzon, hogy Éva K
+város, Ádám pedig M város érintésével tud eljutni a találkahelyre! Ekkor a második sor Éva útvo-
+nalát, a harmadik pedig Ádám útvonalát tartalmazza! Az útvonalakba bele számít Éva és Ádám
+kiindulási tartózkodási helye is.
+Példa
+Bemenet                                        Kimenet
+10 2 3 7 12                                    5 3
+2 1                                            2 1 6 8 7
+1 6                                            3 5 7
+7 6
+6 8                                                                                Éva
+8 7
+7 9                                                                                 2
+9 4                                                        Ádám
+5 7
+10 5                                                         3                      1
+3 5
+3 4
+4 5                                             10
+                                                                  4        9        6
+Korlátok
+Időlimit: 0.1 mp.
+                                                       5                       7           8
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

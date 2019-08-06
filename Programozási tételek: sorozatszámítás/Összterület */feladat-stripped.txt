@@ -1,0 +1,26 @@
+
+
+                                     Összterület
+Egy gazdának K darab négyzet alakú földterülete van.
+Add meg a gazda birtokának összterületét!
+Bemenet
+A standard bemenet első sorában egy K (maximum 100) szám áll. Majd az azt követő
+K sorban a négyzet alakú földek szélessége.
+Kimenet
+A standard kimenet első sorába egyetlen egész számot kell írni, a birtok összterületé-
+nek értékét!
+Példa
+Bemenet                                         Kimenet
+3                                               29
+2
+3
+4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal                      2014.09.11.
+

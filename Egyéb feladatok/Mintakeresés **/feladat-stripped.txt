@@ -1,0 +1,34 @@
+
+
+                                        Mintakeresés
+A mintakeresés igen gyakori feladat a szövegfeldolgozásban, számtalan változatban előfordul. Te-
+kintsük a következő változatát! Adott egy szöveg és egy minta. Azt mondjuk, hogy a szöveg tar-
+talmazza a mintát, ha van olyan része a szövegnek, amelyből karaktereket elhagyva pontosan a
+mintát kapjuk.
+Készíts programot, amely adott szöveg és minta bemenetre meghatározza a szövegnek egy olyan
+legrövidebb részét, amely tartalmazza a mintát!
+Bemenet
+A standard bemenet első sora a minta hosszát (0<M1000), a második sora pedig a min-
+tát tartalmazza. A harmadik sorban a szöveg hossza van (0<N100 000). A negyedik sor tartal-
+mazza a szöveget, ami pontosan N karakterből áll.
+Kimenet
+A standard kimenet első és egyetlen sorába egy i j egész számpárt kell írni egy szóközzel
+elválasztva! A szöveg i-től j-ig (i-t és j-t is beleértve) tartó része tartalmazza a bemenetben
+megadott mintát, és a szövegnek nincs olyan j-i+1-nél rövidebb része, amely szintén tartal-
+mazná a mintát. Ha a szövegnek nincs olyan része, ami tartalmazná a mintát, akkor a 0 0 szám-
+párt kell kiírni! Ha több megoldás is van, akkor azt kell kiírni, amelyiknél az i érték a legkisebb!
+Példa
+Bemenet                                          Kimenet
+5                                 3 44
+elemi
+55
+amelyből karaktereket elhagyva pontosan a mintát kapjuk
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

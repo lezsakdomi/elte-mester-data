@@ -1,0 +1,48 @@
+
+
+                                     Munkasorrend
+Egy ház építési terve különböző munkákat tartalmaz. A munkákat úgy tervezték, hogy mindegyi-
+ket pontosan egy nap alatt lehet elvégezni. A terv tartalmaz olyan megelőzési előírásokat, hogy
+adott a és b munka esetén az a munkát előbb kell elvégezni, mint a b munkát. A munkákat há-
+rom különböző vállalkozó fogja elvégezni. A költségek csökkentése miatt a munkákat olyan sor-
+rendben lenne célszerű elvégezni, hogy mindegyik vállalkozó az általa vállalt munkákat egymást
+követő napokon végezze. Persze be kell tartani a megelőzési előírásokat is.
+Írj programot, amely kiszámítja a munkáknak egy olyan sorrendjét – ha létezik –, amely betartja a
+megelőzési előírásokat és mindhárom vállalkozó a munkáit egymást követő napokon végzi!
+Bemenet
+A standard bemenet első sorában a munkák száma (1N10 000) és a megelőzési előírá-
+sok száma (1M200 000) van. A második sor pontosan N számot tartalmaz, ezek értéke 1, 2
+vagy 3 lehet. Az i-edik szám azt adja meg, hogy az i-edik munkát melyik vállalkozó fogja elvégez-
+ni. A további M sor mindegyike egy a b megelőzési előírást tartalmaz (1abN), azt jelenti,
+hogy az a munkát előbb kell elvégezni, mint a b munkát.
+Kimenet
+A standard kimenet egyetlen sora az N munkának egy olyan felsorolását tartalmazza,
+amelyre teljesül az összes megelőzési előírás, és mindhárom vállalkozó egymást követő napokon
+végzi az általa vállalt munkákat! Ha nem lehet a kívánt sorrendben elvégezni a munkákat, akkor az
+egyetlen 0 számot kell kiírni! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+8   12                                          1 3 2 5 4 6 7 8
+3   3 3 1 3 1 2 2
+1   2                                                                   2                     4
+1   3
+2   5
+                                                                1                 5
+2   4
+4   7                                                                                         7
+5   6                                                                   3
+3   5
+3   6                                                                             6           8
+6   7
+6   8
+5   4
+4   6
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

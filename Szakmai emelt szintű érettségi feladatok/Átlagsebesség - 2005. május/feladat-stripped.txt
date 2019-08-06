@@ -1,0 +1,26 @@
+
+
+                                      Átlagsebesség
+Egy sebességmérő műszer regisztrálja minden mellette elhaladó jármű sebességét km/h-ban. Az
+egyik irányba haladó járművek sebességét pozitív, a másik irányba (szembe) haladókét negatív ér-
+tékként tárolja a műszer. Szabálysértésen azt értjük, hogy valaki legalább 100 km/h haladt.
+Készíts programot, amely meghatározza mindkét irányban, az autók átlagsebességet!
+Bemenet
+A standard bemenet első néhány sora a mért sebességeket tartalmazza (-150≤Si150,
+Si≠0). A mért sebességeket 0 zárja.
+Kimenet
+A standard kimenetre az egyik irányba haladó autók átlagsebességét, és a másik irányba
+haladó autók átlagsebességét kell írni (egészre kerekítve)! Ha valamelyik irányba nem haladt autó,
+akkor -1 et írjon ki a program az átlag helyett!
+Példa
+Bemenet                                             Kimenet
+1 2 -10 106 -41 0                                   36 26
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

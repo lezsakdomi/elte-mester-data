@@ -1,0 +1,27 @@
+
+
+                                     Páratlan számok
+Írj programot, amely előállítja az i. olyan természetes számot, amely kettes számrendszerbeli alak-
+jában páratlan számú 1-es bit van!
+Bemenet
+A standard bemenet első sorában az i szám van (1≤i≤1 000 000).
+Kimenet
+A standard kimenet első sorába az i. olyan természetes számot kell írni, amely kettes
+számrendszerbeli alakjában páratlan számú 1-es bit van!
+Példa
+bemenet                                          kimenet
+11                                                   21
+Az első 10 ilyen szám: 1, 2, 4, 7, 8, 11, 13, 14, 16, 19
+Kettes számrendszerben. 1, 10, 100, 111, 1000, 1011, 1101, 1110, 10000, 10011
+(azaz nem ilyen a 3, 5, 6, 9, 10, 12, 15, 17, 18, …)
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+A tesztek 30%-ában M≤1000.
+
+
+
+
+                                             1. oldal                     2017.02.25. 10:00-16:00
+

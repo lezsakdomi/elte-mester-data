@@ -1,0 +1,76 @@
+
+
+                                           Céllövészet
+A Sor Lövészegylet rendszeresen rendez versenyt az alábbi, igen egyszerű szabályokkal:
+
+       A lövések leadására korlátozott idő áll rendelkezésre, ezért a versenyzők eltérő számú lövést
+        adhatnak le.
+       A lövéseket sorszámozott korongokra kell leadni.
+       Találatnak számít, ha a korongot bárhol érinti a lövedék.
+       A lövésekhez pontértéket rendelnek: amíg nem hibázik valaki, minden találata 20 pontot
+        ér; de rontás esetén minden hiba 1 ponttal csökkenti – egészen nulláig – az összes - későbbi
+        lövéssel szerezhető - pontszámot. A lövés pontértéke nem lehet negatív.
+       Az végez előrébb a versenyben, aki több pontot szerez. A holtversenyt nem döntik el,
+        mindegyik versenyző ugyanolyan helyezéssel végez, tehát mindenki helyezése megegyezik
+        a nála több pontot szerzett versenyzők számánál eggyel nagyobb számmal.
+Ír programot, amely:
+       megadja azon versenyzők rajtszámát, akiknek egymás után két (vagy több) lövése is talált,
+       meghatározza, hogy melyik versenyző adta le a legtöbb lövést,
+       megadja, hogy egy adott sorszámú versenyző hányadik lövései találtak, hány korongot talált
+        el összesen, milyen hosszú volt a leghosszabb hibátlan lövéssorozata, illetve, hogy hány
+        pontot ért el,
+       meghatározza a verseny végeredményét!
+Bemenet
+A standard bemenetben adottak a versenyzők lövései. Az első sorban a versenyzők száma
+(2≤N≤1000), és egy adott versenyző rajtszáma (2≤V≤1000) szerepel. A második sorban az egyes
+rajtszámú versenyző lövései, a harmadikban a kettes rajtszámú lövései, … Egy lövést egy karakter
+ír le, a – karakter a sikertelen, a + karakter a sikeres lövést rögzíti. Minden versenyző maximum 30
+lövést adott le.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ!
+Ha egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet
+formailag nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor
+„Output formátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: Azon versenyzők rajtszámát kell kiírni, szóközzel elválasztva, akiknek egymás után
+két vagy több lövése is talált! Ha nem volt ilyen, akkor -1-et kell kiírni!
+2. részfeladat: Annak a versenyzőnek a rajtszámát kell kiírni, aki a legtöbb lövést adta le, ha több
+ilyen is van, akkor csak az egyiket kell kiírni!
+3. részfeladat: Ki kell írni, hogy a V rajtszámú versenyzőnek hányadik lövései találtak, ha egy lövése
+se talált, akkor -1-et kell kiírni, majd új sorba, hogy összesen hány korongot talált el! Ismét új sorba,
+hogy milyen hosszú volt a leghosszabb hibátlan lövéssorozata, végül az utolsó sorba pedig az elért
+pontszámát kell írni!
+
+
+                                                   1
+Emelt szintű informatika érettségi                                             2014. május 13.
+
+4. részfeladat: A verseny végeredményét kell kiírni pontszám szerint csökkenő sorrendben! A
+kiírás során egy sorban legyen a versenyző helyezése, rajtszáma és pontszáma! Holtversenynél a
+bevezetőben leírtak szerint kell számolni a helyezést!
+Példa
+   Bemenet                                          Kimenet
+5 2                                                 #
++--+                                                2 4   5
+-+-+++-                                             #
+-+--+--                                             2
+++---                                               #
+-++--                                               2 4   5 6
+                                                    4
+                                                    3
+                                                    73
+                                                    #
+                                                    1 2   73
+                                                    2 4   40
+                                                    3 1   38
+                                                    3 5   38
+                                                    5 3   36
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              2
+

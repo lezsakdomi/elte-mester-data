@@ -1,0 +1,40 @@
+
+
+                                  Közös ősök száma
+Egy családfában mindenkinek ismerjük az anyját.
+Készíts programot, amely megadja adott számú emberpárról, hogy hány közös ősük van!
+Megjegyzés: saját magának mindenki őse.
+Bemenet
+A standard bemenet első sorában az emberek száma van (1≤N≤100 000). A következő
+N-1 sor mindegyike egy-egy anya-gyerek kapcsolatot tartalmaz (1≤Anyai≠Gyereki≤N), az első
+szám egy anya sorszáma, a második pedig egy gyerekéé. A következő sorban az emberpárok szá-
+ma található (1≤K≤100 000). Az utolsó K sor mindegyike két ember sorszámát tartalmazza
+(1≤Ai≠Bi≤N), akiknek a közös ősi számát keressük.
+Kimenet
+A standard kimenet i-edik sorába az i-edik emberpár közös őseinek számát kell írni!
+Példa
+Bemenet                                           Kimenet
+10                                                3
+1 2                                               4                         1
+1 3                                               1
+2 4                                                                 2               3
+4 5
+4 6
+6 7                                                                 4
+7 8
+7 9                                                         5           6           10
+4 10
+3
+5 9                                                                     7
+6 8
+4 3                                                             9               8
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

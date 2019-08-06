@@ -1,0 +1,32 @@
+
+
+              Szállítás – maximális legkevésbé terhelt kamion
+Egy raktárból konténereket kell elszállítani kamionokkal. A konténerek egy sorban egymás után
+helyezkednek el, ismerjük a súlyukat. Összesen K kamion használható a szállításra. Minden kami-
+onra csak a sorban egymást követő konténerek pakolhatók. Azt szeretnék elérni, hogy a lehető
+legegyenletesebb legyen a kamionok terhelése, ami azt jelenti, hogy a legkevésbé terhelt kamion
+terhelése a lehető legnagyobb legyen. A kamionok súlykapacitása legalább akkora, hogy mindegyik
+biztosan elbírja a rárakandó konténerek súlyát. Kikötés továbbá, hogy minden kamionra legalább
+egy konténert kell rakni.
+Írj programot, amely kiszámít egy legegyenletesebb pakolást!
+Bemenet
+A standard bemenet első sorában a konténerek száma (10N10 000) és a kamionok
+száma (3K100, K<N) van. A második sor az N konténer súlyát tartalmazza (0<si10 000).
+Kimenet
+A standard kimenet első sorába a legegyenletesebb terhelésre vonatkozó minimálisan ter-
+helt kamion terhelését kell írni! A második sor pontosan K számot tartalmazzon! Az i-edik szám
+annak a konténernek a sorszáma legyen, amelyiktől kezdődő konténereket az i-edik kamionra kell
+pakolni! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+12 4                                            10
+4 6 1 5 1 4 4 1 4 2 7 3                         1 4 7 11
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 16 MB
+
+
+
+
+                                             1. oldal
+

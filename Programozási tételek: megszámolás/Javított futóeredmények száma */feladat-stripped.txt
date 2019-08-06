@@ -1,0 +1,35 @@
+
+
+                          Javított futóeredmények száma
+Egy futó N versenyen vett részt, egyetlen versenyszámban. Minden versenyen feljegyezték, hogy
+hányadik helyezést ért el és az ideje hány perc, hány másodperc volt. Az adatokat a versenyek sor-
+rendjében kapjuk.
+Írj programot, amely megadja, hány alkalommal fordult elő, hogy az időeredménye jobb volt,
+mint az előző versenyen!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100), alatta soronként egy-egy
+verseny adatai vannak, három egész szám egy-egy szóközzel elválasztva. Az első szám a verse-
+nyen elért helyezés (1≤H≤100), a második az időeredményének perc része (1≤P≤100), a har-
+madik pedig az időeredményének másodperc része (1≤M≤59).
+Kimenet
+A standard kimenet első sorába azon alkalmak számát kell írni, amikor a futó időeredmé-
+nye jobb volt, mint az előző versenyen!
+Példa
+Bemenet                                          Kimenet
+6                                                4
+4   3   12
+1   2   34
+3   2   0
+2   1   33
+5   2   10
+1   1   40
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

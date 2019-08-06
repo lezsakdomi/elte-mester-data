@@ -1,0 +1,42 @@
+
+
+                                      Futárszolgálat
+Egy országban N város van, bármely városból bármely másik városba egyetlen útvonalon lehet el-
+jutni. Egy futárnak K darab megadott városba kell csomagot kézbesítenie, ezeket a városokat
+mind útba kell ejtenie! Szabadon választhatjuk meg azt a várost, ahonnan indul és felveszi a cso-
+magokat, és bárhol befejezheti útvonalát. A K darab várost tetszőleges sorrendben érinthet az út-
+ja során.
+Készíts programot, amely megadja, hogy a futárnak legalább mekkora távolságot kell megtennie
+és ehhez merre kell mennie!
+Bemenet
+A standard bemenet első sorában a városok száma (1≤N≤100 000) és a kézbesítések
+száma (1≤K≤N) van. A következő N-1 sorban egy-egy útszakasz két végpontjának sorszáma
+(1≤Ai≠Bi≤N) és az útszakasz hossza (0≤Hi≤1000) van. Az utolsó sorban K város sorszáma
+van, ahova a csomagokat vinnie kell (1≤Vi≤N)!
+Kimenet
+A standard kimenet első sorába a legkisebb T távolságot kell kiírni, amit a futárnak meg
+kell tennie! A második sorba a futár legrövidebb útvonala kerüljön, amelyen az összes csomagot
+kézbesíti! Több megoldás esetén bármelyik megadható
+Példa
+bemenet                                         kimenet
+9   4                                           33
+1   3   5                                       1 3 2 3 4 5 6 7
+3   2   4
+3   4   9                                               2            9
+4   9   2
+5   6   3                                               4           2
+6   7   3                                         5           9           5             2
+8   5   2                                   1           3            4              5         8
+5   4   5                                                                       3
+1   2   5 7
+Korlátok                                                                            6
+                                                                                3
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+                                                                                    7
+
+
+
+
+                                            1. oldal
+

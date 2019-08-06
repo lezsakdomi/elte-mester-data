@@ -1,0 +1,34 @@
+
+
+                                    Pontgyűjtő verseny
+Egy pontgyűjtő versenyt egy négyzetrácsos papíron játszanak. Minden mezőn adott pontszámot
+lehet szerezni. A játékos a négyzetrács tetszőleges bal szélső oszlopából indulhat, a jobb szélére
+kell eljutni. Minden lépésben dönthet, hogy az aktuális mezőről (i,j) jobbra (i,j+1), jobbra fel (i-1,
+j+1) vagy jobbra le (i+1,j+1) lép. Összpontszáma az érintett mezőkön levő pontok összege lesz.
+Készíts programot, amely megadja, hogy maximum mennyi pontot szerezhet és ehhez melyik
+sorból kell indulnia!
+Bemenet
+A standard bemenet első sorában a sorok és oszlopok száma (1≤N,M≤100) van. A kö-
+vetkező N sor a négyzetrács egyes soraiban található M darab pontszámot tartalmazza
+(0≤Pi≤1000).
+Kimenet
+A standard kimenet első sorába az elérhető maximális pontszámot kell írni! A második
+sorba a négyzetrács azon sorának sorszámát kell kiírni, ahonnan ehhez a pontszámhoz indulni
+kell! Több megoldás esetén a legkisebb ilyen sorszámot kell kiírni!
+Példa
+Bemenet                                           Kimenet
+4   4                                             26
+6   1   7   1                                     1
+1   6   1   7
+2   2   2   2
+9   1   1   9
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

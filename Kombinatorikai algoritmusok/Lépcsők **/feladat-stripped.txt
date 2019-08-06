@@ -1,0 +1,26 @@
+
+
+                                                Lépcsők
+Az iskola bejáratánál N lépcsőfok van. Egyszerre maximum K fokot tudunk lépni, ugrani fölfele.
+Minden nap egyszer megyünk be az iskolába.
+Készíts programot, amely megadja, hogy hány napig tudunk más és más módon feljutni a lépcső-
+kön!
+Bemenet
+A standard bemenet egyetlen sorában a lépcsőfokok N száma (1N32) és a legnagyobb
+lépés K lépcsőszáma (1K16) van.
+Kimenet
+A standard kimenet egyetlen számot kell írni: hányféle módon lehet felmenni a lépcsőn!
+Példa
+Bemenet                                              Kimenet
+3 2                                                  3
+Magyarázat a példához
+(1,1,1), (1,2) és (2,1) a lehetséges lépések.
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                                 1. oldal
+

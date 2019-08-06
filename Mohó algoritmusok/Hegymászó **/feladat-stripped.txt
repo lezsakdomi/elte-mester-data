@@ -1,0 +1,36 @@
+
+
+                                        Hegymászó
+Egy hegy megmászáshoz N táboron keresztül vezet út. Az egyes táborok közötti szakaszok meg-
+tételéhez különböző időtartamra van szükség, sőt a felfelé és a lefelé haladás ideje is különbözik.
+A hegymászó az első táborból indul, az utolsó tábora hegycsúcson van, ahonnan visszafordul és
+visszamegy az első táborba! Útközben táborokban állhat meg pihenni. Ismerjük azt is, hogy a
+hegymászó hány percig tud pihenés nélkül gyalogolni.
+Készíts programot, amely megadja, hogy a hegymászónak minimálisan hány helyen és hol kell
+megállni!
+Bemenet
+A standard bemenet első sorában a táborok száma (1≤N≤10 000) és a hegymászó pihe-
+nés nélküli gyaloglási ideje maximuma (1≤M≤1000) van. A következő N-1 sor tartalmazza a
+táborok közötti menetidőket (1≤Feli,Lei≤M), közülük az i. sor első száma az i. és az i+1.
+tábor, a második száma pedig az i+1. és az i. közötti útszakasz megtételéhez szükséges idő.
+Kimenet
+A standard kimenet első sorába azon helyek H minimális számát kell írni, ahol a hegymá-
+szónak pihenni kell! A második sorba a pihenésre használt táborok sorszámait kel írni, a pihené-
+sek sorrendjében!
+Példa
+Bemenet                                          Kimenet
+6 100                                            3
+20 20                                            3 6 2
+30 20
+60 30
+10 30
+30 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

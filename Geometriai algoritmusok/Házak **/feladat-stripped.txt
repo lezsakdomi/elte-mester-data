@@ -1,0 +1,35 @@
+
+
+                                           Házak
+Egy koordinátarendszerben az x-tengely mentén téglalap alakú házak helyezkednek el. A Nap bal-
+ról, fentről süt rájuk, a házakhoz párhuzamos fénysugarak érkeznek. A fénysugarak irányát a mel-
+lékelt ábra szerint adjuk meg.
+Készíts programot, amely megadja azokat a házakat, amelyeknek legalább egyetlen pontjára süt a
+nap!
+Bemenet
+A standard bemenet első sorában a házak száma (1≤N≤200 000) valamint a napfény irá-
+nya (0<DX,DY) van, egy-egy szóközzel elválasztva. A következő N sorban az egyes épületek bal
+alsó sarkának x-koordinátája (0<x≤108), szélessége (0<szélesség≤100) és magassága
+(0<magasság≤1000) van, egy-egy szóközzel elválasztva (a bal alsó sarok y-koordinátája bizto-
+san 0). Az épületek x-koordináta szerint növekvő sorrendben vannak.
+Kimenet
+A standard kimenet első sorába a napsütötte házak számát, a második sorába pedig ezen
+házak sorszámát kell írni, növekvő sorrendben, egy-egy szóközzel elválasztva!
+Példa
+Bemenet                                        Kimenet
+6 2 1                                          3
+10 5 10                                        1 2 5
+20 10 20
+35 5 15
+45 5 5
+60 10 25
+75 5 10
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

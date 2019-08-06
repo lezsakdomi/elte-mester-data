@@ -1,0 +1,25 @@
+
+
+                          Leghosszabb ismétlődő szakasz
+A DNS mesterséges előállításáért folytatott kísérletek során sikerült előállítani egy óriásmolekula-
+szálat. Ismétlődésnek nevezünk egy legalább 2 karakterből álló sorozatot, ha a DNS-leírásban leg-
+alább kétszer előfordul (egymást nem átfedően).
+Írj programot, amely megadja egy DNS-leírásban szereplő leghosszabb ismétlődő szakaszt!
+Bemenet
+A standard bemenet első sorában egy DNS-leírás van. Ennek leírása legfeljebb 255 karak-
+terből áll (C, G, A és T betű lehet benne).
+Kimenet
+A standard kimenet első sorába a leghosszabb ismétlődő szakaszt kell kiírni!
+Példa
+Bemenet                                           Kimenet
+CGACCGACCGAT                                      CGAC
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

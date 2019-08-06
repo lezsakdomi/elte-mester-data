@@ -1,0 +1,36 @@
+
+
+                                      Fa magassága
+Minden fát leírhatunk egy karaktersorozattal. Ebben a leírásban F betűk és zárójelek fognak sze-
+repelni. Az F egységnyi hosszúságú ágat jelent, az ágak végi elágazásokat pedig zárójelbe tesszük.
+
+
+
+
+     FFF             FF(F)(F)           FF(F(F)(F))(F)(F) F(F(F)(F(F)(F))(FF)
+
+
+Készíts programot, amely megadja
+   1.) a fa magasságát (a földtől milyen messze van a legmesszebb levő ágvég);
+   2.) a leghosszabb, elágazás nélküli ágszakasz hosszát (a törzs is ágnak számít, az elágazások
+       nem tartoznak az ágszakaszhoz)!
+Bemenet
+A standard bemenet egyetlen sorában a fát leíró szöveg van. A bemenet hossza legfeljebb
+100 000 karakter, és minden esetben egy # zárja.
+Kimenet
+A standard kimenet első sorába a fa magasságát, a második sorába pedig a leghosszabb
+ágszakasz hosszát kell kiírni!
+Példa
+Bemenet                                          Kimenet
+FF(FFF)(F)(F(F)(F))#                             5
+                                                 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤1000
+
+
+
+
+                                             1. oldal
+

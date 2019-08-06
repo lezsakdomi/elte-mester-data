@@ -1,0 +1,32 @@
+
+
+                                   Lehűlés napja
+Egy időjárás előrejelzésben megkaptuk a következő N nap várható minimális és maximális hő-
+mérsékletét.
+Írj programot, amely megad egy napot, amikor a napi maximum kisebb az előző napi minimum-
+nál!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤100), utána N sorban egy-egy
+nap várható legkisebb és legnagyobb hőmérséklete (-20≤M1,M2≤30).
+Kimenet
+A standard kimenet első sorába annak az első napnak a sorszámát kell írni, amikor a napi
+maximum kisebb az előző napi minimumnál (-1-et, ha nincs ilyen nap)!
+Példa
+Bemenet                                      Kimenet
+6                                            3
+-5 5
+0 10
+-5 -3
+-5 0
+2 10
+10 13
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                         1. oldal
+

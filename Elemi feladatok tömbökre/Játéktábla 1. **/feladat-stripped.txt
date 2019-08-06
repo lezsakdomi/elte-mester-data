@@ -1,0 +1,43 @@
+
+
+                                        Játéktábla 1.
+Egy játéktábla 11 sorból áll, minden sorában pontosan kétszer annyi elem van, mint a fölötte levő
+sorban. A tábla a következő szerkezetű:
+
+
+
+
+A tábla felső pontjából, azaz az első sor első pontjából indulunk. Az egyes lépéseket a következők
+írják le:
+        BL    balra lefelé lépünk egyet,
+        JL    jobbra lefelé lépünk egyet,
+        F     felfelé lépünk egyet,
+        B     balra lépünk egyet,
+        J     jobbra lépünk egyet.
+Írj programot, amely beolvas egy lépéssorozatot, majd megadja, hogy a lépéssorozat végén há-
+nyadik sor hányadik elemén áll a bábunk!
+Bemenet
+A standard bemenet első sorában a lépések K száma van (1≤K≤10), a következő K sorban
+pedig az egyes lépéseket leíró betűk vagy betűpárok.
+Kimenet
+A standard kimenet egyetlen sorába a lépéssorozat végén a bábu sorának és soron belül
+helyének sorszámát kell írni, egy szóközzel elválasztva! Ha a bábu kilépne a tábláról, akkor az első
+sorba azt a helyet kell írni, ahol utoljára volt!
+Példa
+Bemenet                                           Kimenet
+6                                                 4 7
+BL
+JL
+J
+F
+JL
+BL
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: -
+
+
+
+                                              1. oldal
+

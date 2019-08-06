@@ -1,0 +1,44 @@
+
+
+                                           Falvak
+Ismerjük egy megye települései (falvak, városok) közötti utak hosszát. Zsákfalunak nevezzük azt a
+falut, ahova csak egyetlen út vezet (és onnan tovább már nem lehet menni, csak visszafelé). A
+településeket sorszámmal azonosítjuk.
+    Készíts programot (falu.pas, …), amely megadja:
+A. a leghosszabb zsákfalvakhoz vezető út hosszát, ahol nem lehet más irányba letérni (csak
+visszafordulni);
+B. azokat a településeket, ahova a legtöbb út vezet (ha több ilyen van, akkor mindegyiket);
+C. azt a települést, amelyiktől a legközelebbi szomszédja a lehető legmesszebb van (ha több ilyen
+van, akkor a legkisebb sorszámút).
+Bemenet
+A standard bemenetelső sorában a települések (2N1000) és az utak száma van
+(1M70000), egy szóközzel elválasztva. A következő M sor mindegyikében három egész szám
+van, egy-egy szóközzel elválasztva: egy-egy út két végpontjának sorszáma és a köztük levő út
+hossza.
+Kimenet
+A standard kimenetelsőhárom sorába az A, B és C kérdésre adott választ kell írni!
+Példa
+Bemenet                                         Kimenet
+7   8                                           15
+1   2   10                                      2 5
+2   3   15                                      1
+2   4   10
+2   5   5
+3   5   5
+4   5   15
+                                                       1                          3
+                                                                         15
+5   6   5                                                  10                          5
+6   7   10                                                      2             5        5   5        6
+Korlátok
+                                                                    10                         10
+                                                                                  15
+Időlimit: 0.1 mp.
+Memórialimit: 32MiB                                                       4                         7
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                            1. oldal
+

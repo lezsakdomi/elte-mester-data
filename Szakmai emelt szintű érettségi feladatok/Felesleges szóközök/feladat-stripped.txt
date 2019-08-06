@@ -1,0 +1,30 @@
+
+
+                                   Felesleges szóközök
+Feleslegesnek nevezzük a sorvégi szóközöket, valamint minden egyéb olyan helyen található szó-
+közt, ahol egymás mellett egynél több szóköz található, kivéve ezek közül az elsőt. A sor eleji, be-
+vezető szóközök nem feleslegesek!
+Írjon programot, amely eltávolítja a „felesleges” szóközöket egy szövegből!
+Bemenet
+A standard bemenet első sora tartalmazza az átalakítandó sorok (1≤N≤1000) számát.
+A következő N sor egy-egy K hosszú (1≤K≤100) átalakítandó szöveget tartalmaz. A szövegek
+az angol abc betűiből, illetve szóközökből állnak.
+Kimenet
+A standard kimenet N sorába az egyes sorok megváltoztatott szövegét kell írni! A csak
+szóközöket tartalmazó sor üres sorral helyettesítendő!
+Példa
+Bemenet                                                       Kimenet
+2
+         Apa     kalapja  kek                                         Apa kalapja kek
+    Te         vagy    az                                           Te vagy az
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

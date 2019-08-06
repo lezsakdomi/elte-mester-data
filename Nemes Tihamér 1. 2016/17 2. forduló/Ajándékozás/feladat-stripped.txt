@@ -1,0 +1,25 @@
+
+
+                                     Ajándékozás
+Karácsonyi ajándékcsomagokat szeretnénk készíteni. Van N darab szaloncukrunk, amelyekből
+egy-egy ajándékcsomagba legfeljebb M darabot szeretnénk tenni.
+Készíts programot, amely megadja, hogy hányféleképpen oszthatjuk szét az N szaloncukrot!
+Bemenet
+A standard bemenet első sorában a szaloncukrok száma (1≤N≤100) és az egy csomagba
+tehető szaloncukrok maximális száma ma (1≤M≤100) van.
+Kimenet
+A standard kimenet egyetlen sorába a lehetséges szaloncukor szétosztások számát kell írni!
+Példa
+bemenet                                       kimenet
+5 3                                           5
+Megjegyzés: 5=3+2 vagy 3+1+1 vagy 2+2+1 vagy 2+1+1+1 vagy 1+1+1+1+1.
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MB
+A tesztek 50%-ában N≤10.
+
+
+
+
+                                           1. oldal                    2017.01.07. 830-1130 óra
+

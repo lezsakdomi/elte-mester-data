@@ -1,0 +1,37 @@
+
+
+           Tervbe nem tartozó falszakaszok száma égtájanként
+Egy ház tervrajzát egységnyi négyzetrácsos lapon készítik. Minden szobának téglalap alakúnak kell
+lenni. Eddig N szobát rajzoltak fel a tervrajzon. Minden szobát a bal felső és jobb alsó sarkával
+adnak meg. A négyzetrács egy mezőjét x-és y-koordinátájával adják meg, a bal felső mező koordi-
+nátái (0,0). Az x-koordináták a vízszintesen, az y-koordináták függőlegesen nőnek.
+Készíts programot, amely a tervben eddig megadott szobák ismeretében megadja, hogy a ház
+négy oldalán hány maximális szakasz van, amelyek nem tartoznak tervben megadott szobák olda-
+lához!
+Bemenet
+A standard bemenet első sorában a szobák száma (1≤N≤10000), valamint az épület bal
+felső (FX,FY) és jobb alsó (AX,AY) sarkának koordinátái vannak (0≤FX<AX≤10000,
+0≤FY<AY≤10 000), egy-egy szóközzel elválasztva. A következő N sor mindegyikében egy-egy
+szoba bal felső (BFXi,BFYi) és jobb alsó (JAXi,JAYi) sarkának koordinátái vannak
+(FX≤BFXi≤JAXi≤AX, FY≤BFYi≤JAYi≤AY).
+Kimenet
+A standard kimenet első sorába 4 szám kerüljön egy-egy szóközzel elválasztva: a bal olda-
+li, az alsó, a jobb oldali és a felső oldalon levő szobákhoz nem tartozó maximális szakaszok szá-
+ma!
+Példa
+Bemenet                                         Kimenet
+4   1   1 10 15                                 2 1 1 0
+1   1   5 5
+6   1   10 2
+6   3   9 10
+1   7   3 12
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

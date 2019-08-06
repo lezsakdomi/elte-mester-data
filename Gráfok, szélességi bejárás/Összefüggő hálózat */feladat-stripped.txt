@@ -1,0 +1,42 @@
+
+
+                                             Túra
+Minden számítógépes hálózat csomópontokból és bizonyos csomópont-párokat összekötő
+kétirányú adatátvitelt biztosító közvetlen vonalakból épül fel. Egy hálózat összefüggő, ha bármely
+két csomópontja között van közvetlen vonalakból álló útvonal.
+Készíts programot, amely megadja, hogy minimálisan hány új közvetlen vonalat kell kiépíteni,
+hogy a hálózat összefüggő legyen!
+Bemenet
+A standard bemenetelső sorában a csomópontok N (1N10000), és a már kiépített
+közvetlen vonalak M (1M100000) száma van egy szóközzel elválasztva. A csomópontokat az
+1,…,N számokkal azonosítjuk. A következő M sor mindegyikében két egész szám van, egy már
+kiépített közvetlen vonal két végpontja.
+Kimenet
+A standard kimenetelső sorába a kiépítendő új vonalak K minimális számát kell írni! A
+további K sor mindegyike egy kiépítendő új vonalat tartalmazzon, annak a két csomópontnak a
+sorszámát, amely között az új vonalat ki kell építeni. Több megoldás esetén bármelyik megadható!
+Példa
+Bemenet                       Kimenet
+9   10                        2
+1   3                         1 5              8            3                 2           7
+2   7                         5 4
+6   8
+8   3
+1   6                                          6            1                 4           9
+4   9
+4   2
+4   7
+7   9                                                                  5
+2   9
+
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                             1. oldal
+

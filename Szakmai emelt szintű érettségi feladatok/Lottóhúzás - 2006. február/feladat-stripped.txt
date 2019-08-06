@@ -1,0 +1,30 @@
+
+
+                                           Lottóhúzás
+Készíts programot lottóhúzás szimulálására!
+A véletlen számok generálásához az alábbi algoritmust használd, de egy számot egy húzás alatt
+csak egyszer lehet kihúzni. Egy új szám kihúzásánál addig generálj random számokat, amíg olyan
+szám nem jön ki, ami eddig még nem szerepelt a húzásban.
+globális seed := 42
+Függvény random(alsó, felső)
+  seed := (1103515245 * seed + 12345) mod 2147483648
+  random := alsó + (seed mod felső)
+Függvény vége
+Bemenet
+A standard bemenet első és egyetlen sorában két szám található: az összes kihúzható szám
+darabszáma (1≤N≤10 000) és a kihúzni kívánt számok darabszáma (1≤K≤N) található.
+Kimenet
+A standard kimenet egyetlen sorába K db számot kell írni, a kihúzott lottószámokat, a hú-
+zás sorrendjében!
+Példa
+Bemenet                                          Kimenet
+90 5                                             28 45 54 17 56
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

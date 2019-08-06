@@ -1,0 +1,37 @@
+
+
+                                        Vendégség
+Egy rendezvényre sok vendéget hívtak meg. A szervezők feljegyezték minden vendég érkezési és
+távozási idejét. A szervezők szeretnék tudni, hogy ki az a vendég, aki a legkevesebb más vendég-
+gel találkozott. Két vendég, akiknek érkezési idejük a1 illetve a2, távozási idejük pedig b1 il-
+letve b2, akkor és csak akkor találkoztak, ha a1≤b2 és a2≤b1.
+Készíts programot, amely kiszámítja, hogy ki az a vendég, aki a legkevesebb másik vendéggel ta-
+lálkozott!
+Bemenet
+A standard bemenet első sorában a vendégek száma (1≤N≤1 000 000). A további N
+sor mindegyike egy vendég érkezési, illetve távozási idejét tartalmazza (1≤E<T≤100 000).
+Kimenet
+A standard kimenet első és egyetlen sora két egész számot tartalmazzon, egy szóközzel el-
+választva, a második annak a vendégnek a sorszáma legyen, aki a legkevesebb másik vendéggel ta-
+lálkozott! Az első szám pedig azon vendégek száma, akivel találkozott! Több megoldás esetén
+bármelyik megadható. Saját maga nem számít be a találkozott vendégek közé.
+Példa
+Bemenet                                         Kimenet
+8                                               3 2
+1   3
+4   8
+9   12
+2   5
+3   9
+7   10
+2   3
+1   3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

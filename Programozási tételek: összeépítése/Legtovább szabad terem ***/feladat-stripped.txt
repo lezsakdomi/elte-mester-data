@@ -1,0 +1,33 @@
+
+
+                              Legtovább szabad terem
+Egy rendezvénysorozatra N termet lehetett lefoglalni, M napra. Ismerjük a rendezvények beosz-
+tását: melyik termet, hányadik naptól, hányadik napig foglalták le.
+Írj programot, amely megadja a leghosszabb ideig szabadon levő terem sorszámát és ennek az
+idejét!
+Bemenet
+A standard bemenet első sora a termek (1≤N≤100), a napok (1≤M≤1000) és a foglalások
+számát tartalmazza (1≤K≤1000). A következő K sorban a foglalások teremsorszáma (1≤Ti≤N),
+első és utolsó napja (1≤Ei≤Ui≤M) található. Nincs ütköző, átfedő teremfoglalás!
+Kimenet
+A standard kimenet első sorába a leghosszabb ideig szabadon levő terem sorszáma kerül-
+jön (több megoldás esetén a legkisebb sorszámú)! A második sorba ezen időtartam első és utolsó
+napja sorszámát kell írni (nem egyértelmű esetben a leghamarabb kezdődőt kell megadni)! Ha
+nincs ilyen terem, akkor az első sorba egyetlen 0 számot kell kiírni!
+Példa
+Bemenet                                       Kimenet
+3   10 5                                      1
+1   4 8                                       1 3
+2   3 5
+3   8 8
+2   6 9
+3   1 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

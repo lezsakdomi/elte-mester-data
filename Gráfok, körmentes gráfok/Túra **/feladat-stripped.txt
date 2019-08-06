@@ -1,0 +1,42 @@
+
+
+                                              Túra
+Egy többnapos kalandtúrán a résztvevők több útvonal közül is választhatnak. Ismerjük a használ-
+ható szálláshelyeket és a közöttük vezető egyirányú utakat. Az utakat úgy tervezték meg, hogy
+azokat követve mindenki célba érjen, körbe járni sem lehet. A túrázók egyetlen kezdőhelyről in-
+dulnak és egyetlen célhelyre fognak megérkezni.
+Készíts programot, amely megadja a leghosszabb olyan útvonalrészlet hosszát, ahol a túrázókról
+biztosan tudható, hogy nem tudnak az útvonalról letérni!
+Bemenet
+A standard bemenet első sora a szálláshelyek számát (1≤N≤10 000) és a közöttük levő
+utak számát (1≤M≤100 000) tartalmazza. A következő M sorban az egyes útszakaszok kezdő- és
+végpontja (1≤Ki≠Vi≤N), valamint a hossza (1≤Hi≤1000) van.
+Kimenet
+A standard kimenet első sorába azon két szálláshely sorszámát kell írni, amelyek között a
+leghosszabb elágazás nélküli útvonalrészlet található! Egy útvonalrészlet akkor elágazás nélküli, ha
+az utolsó pontja kivételével egyik pontjából sem lehet egynél többfelé menni. Több megoldás ese-
+tén azt kell megadni, amelynek a kezdőpontja a legkisebb!
+Példa
+Bemenet                              Kimenet
+9   11                               5 9
+1   2 10
+1   5 5
+2   3 10
+2   4 10
+3   8 20
+5   6 10
+4   8 5
+4   7 5
+6   7 10
+8   9 10
+7   8 5
+Korlátok
+Időlimit: 0.3 mp
+Memórialimit: 32 MiB
+Pontozás: a tesztek 50%-ában N<100
+
+
+
+
+                                                 1. oldal
+

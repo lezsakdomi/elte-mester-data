@@ -1,0 +1,250 @@
+
+
+                                                      Hı́rlánc
+   Egy baráti társaság hı́rláncot alkot. Ez azt jelenti, hogy minden tag megadhat egy másik tagot, akinek
+továbbit minden hı́rt, amit megkap. A hı́rlánc azonaban még nem teljes, van olyan tag, aki még nem mond-
+ta meg, hogy kinek továbbı́tja a hı́rt. Minden alkalommal, amikor egy tag bejelenti, hogy ezek után kinek
+továbbı́tja a hı́rt, meg kell mondani, hogy hány tagnak kell eljutatni egy hı́rt, hogy az mindenkihez eljusson.
+Minden tag legfeljebb egyszer jelentheti be, hogy kinek továbbı́t hı́rt és lehet olyan tag is aki nem ad meg senkit,
+akinek hı́rt továbbı́tana.
+
+   A megoldáshoz a adatok modul három művelete használható.
+
+ Könyvtári műveletek
+kezd : A tagok n számát adja. Ezt kell először hı́vni.
+
+ujadat(a, b) : az a és b változókban ad meg egy új kapcsolatot. Tehát az a tag ezek után a b tagnak továbbı́tja
+     a hı́rt. Kezdetben senki nem továbbı́t hı́rt.
+valasz(db) : Minden ujadat hı́vás után meg kell hı́vni a valasz függényt, aminek az aktuális patramétere
+     azon tagok száma legyen, ahány taghoz el kell juttatni egy új hı́rt, hogy azt mindenki megkapja. Az utolsó
+     kérdésre adott valasz hı́vásra automatikusan befejeződik a program.
+
+ A adatok modul műveletei Pascal nyelv esetén
+   • function kezd:longint;
+
+   • procedure ujadat(var x:longint; var y: longint): longint;
+   • procedure valasz(x: longint);
+
+ A adatok modul műveletei C/C++ nyelv esetén
+   • int kezd();
+   • void ujadat(int &x, int &y);
+   • void valasz(int x);
+
+ Feltételek és korlátozások
+   • A tagok n számára 2 ≤ n ≤ 100000 teljesül.
+   • Minden ujadat(a,b) hı́vásra teljesül, hogy 1 ≤ a 6= b ≤ n. Továbbá minden a-ra legfeljebb egy olyan
+     ujadat hı́vás lesz, amelynek első paramétere a.
+
+   • Programod nem ı́rhat és nem olvashat egyetlen fájlt sem, beleértve a standard bemenetet és kimenetet!
+   • Ha a program nem válaszol egy ujadat hı́vás után a valasz végrejatásával, akkor Protokoll hiba
+     űzenettel befejeződik a program. Ugyancsak befejeződik a program hibás válasz esetén.
+
+ Gyakorlás
+A könyvtári modul úgy használható, hogy a standard bemenet első sorába a tagok n számát kell ı́rni. A további
+sorok mindegyike két egész számot tartalmazzon, a b, ahol a b egy új kapcsolat. A bemeneti adatsort a 0 0
+sor zárja.
+Időlimit: 0.1 mp
+Memórialimit: 32 MiB
+
+
+
+
+                                                      1 . oldal
+
+
+                                                           Megoldás
+     Tekintsük azt az F : {1, . . . , n} → {0, 1, . . . , n} függvényt, amelyre teljesül, hogy minden a-ra F (a) = b, ha
+az a b pár szerepelt már eddig egy ujadat műveletben paraméterként, egyébként F (a) = 0.
+Tekintsük az F függvény GF gráfját, azaz a gráf pontjai 1,...,n és a → b akkor és csak akkor (irányı́tott) él, ha
+F (a) = b > 0.
+A függvény gráfja alapván meg tudjok mondani, hogy milyen választ kell adni:
+A válasz a 0-befokú pontok száma, plusz azon körök száma, amelyekben minden pont befoka 1 (nincs fa-
+rok). Példaul, ha a bementben eddig a (2,4), (3,4), (4,5),(6,7),(7,8),(8,6),(9,11),(10,11),(11,12),(12,13),(13,14)
+és (15,14) párok voltak, akkor a gráfot az alábbi ábra szemlélteti. A válasz 7, az 1,2,3,6,9,10 és 15 pontok.
+Minden p pontra jelölje LancV eg(p) azt a q pontot, amelyet az F függvény ismételt alkalmazásával kapunk,
+
+                                      5
+
+
+                                      4            7          6         13         12   11       10
+
+
+                          1       2   3                8                     14         9
+
+                                                                             15
+
+                                                            1. ábra.
+
+
+amire teljesül, hogy vagy F (q) = 0, vagy q körben van. Látható, hogy LancV eg(p) létezik, és egyértelműen
+meghatározott minden pontra.
+Tegyük fel, hogy az eddig beolvasott és feldolgozott adatok alapján a válasz V , azaz ennyi a 0-befokú pontok
+plusz a farok-nélküli körök száma, és az a b pár az új adat. Legyen bb = LancV eg(b). A következő öt esetet
+kell megkülönböztetni:
+
+
+
+                                                                  bb          bb
+                          a =bb            a =bb
+
+
+
+                                               c                                             b
+                                                               b              b
+
+                         b                 b                      a           a              a
+                         1                 2                   3              4              5
+                                                            2. ábra.
+
+
+   1. 1. eset: Bef ok(b) = 0 , LancV eg(b) = a és nincs a b-ből a-ba vetező F -úton olyan pont, amelynek befoka
+      nagyobb, mint 1. Ekkor a válasz a változatlan V . Jelöjük meg a b-ből a-ba vezető úton lévő p pontokat,
+      hogy Korben[p] = 1;
+   2. 2. eset: Bef ok(b) = 0 , LancV eg(b) = a és van olyan p pont a b-ből a-ba vetező F -úton , amelynek
+      befoka nagyobb, mint 1. Ekkor a válasz V − 1. Jelöljük meg a b-ből a-ba vezető úton lévő p pontokat,
+      hogy Korben[p] = 2, mivel van a keletkező körbe futó lánc.
+   3. 3. eset: Bef ok(b) = 0 , LancV eg(b) 6= a. Ekkor a válasz V − 1.
+
+
+                                                            2 . oldal
+
+
+  4. 4. eset: Bef ok(b) 6= 0 , Korben(b) 6= 1 (b vagy nincs körben, vagy olyan körben van, amelybe vezet
+     farok). Ekkor a válasz V .
+
+  5. 5. eset: Bef ok(b) 6= 0 , Korben(b) = 1. Ekkor a válasz V − 1. Jelöjük meg a b-t tartalmazó körben lévő
+     p pontokat, hogy Korben[p] = 2 (eddig Korben[p] = 1 volt).
+Ha a LancVeg(b) algoritmusát a naiv módon valósı́tjuk meg, tehát az alábbi algoritmussal, akkor a futási idő
+legrosszabb esetben négyzetesen függ n-től.
+    bb=b
+    ciklus amı́g Korben[bb]=0 és F[bb]>0
+         bb=F[bb]
+    ciklus vége
+Példaul, ha a bemenet a (2,1), (3,2), ... , (n, n-1) párokat tartalmazza.
+Az algoritmus lényegesen gyorsı́tható, ha a b-ből bb-be vezető úton minden pontot az Elore kapcsolattal bb-hez
+kapcsolunk. A további keresések soran ezt használjuk. Tehát az ı́gy módosı́tott LancVeg algoritmus:
+    bb=b
+    ciklus amı́g Korben[bb]=0 és F[bb]>0
+         ha Elore[bb]>0 akkor
+              bb=Elore[bb]
+         egyébként
+              bb=F[bb]
+         elágazás vége
+    ciklus vége
+    ha b!=bb akkor
+         x=b
+         ciklus
+              Elore[x]=bb
+              x=F[x]
+         amı́g x!=bb
+    elágazás vége
+
+
+
+
+                                                     3 . oldal
+     Interaktı́v feladatok, online feladatok                         *
+
+
+                                       Megvalósı́tás C++ nyelven
+
+ 1   // hı́rlánc úttömörı́téses algoritmusa
+ 2   # include <iostream >
+ 3   # include <list >
+ 4   # include " adatok .h"
+ 5   # define maxN 100001
+ 6
+ 7   using namespace std;
+ 8
+ 9   int   BeFok [maxN ];
+10   int   F[maxN ];
+11   int   Korben [maxN ];
+12   int   Elore [maxN ];
+13
+14   int N;
+15   int V;
+16   void Init (){
+17      for(int x=1;x <=N;x++){
+18          F[x] = 0;
+19          BeFok [x]=0;
+20          Korben [x]=0;
+21          Elore [x]=0;
+22      }
+23      V=N;
+24   }
+25   int LancVeg (int a){
+26      int aa=a, x;
+27      while ( Korben [aa ]==0 && F[aa ]!=0){
+28          if ( Elore [aa ] >0)
+29              aa= Elore [aa ];
+30          else
+31              aa=F[aa ];
+32      }
+33      if(a!= aa ){
+34          x=a;
+35          do{
+36              Elore [x]= aa;
+37              x=F[x];
+38          }while (x!=0 && x!= aa );
+39      }
+40      return aa;
+41   }
+42   void szamol (int a, int b){
+43      int bb= LancVeg (b);
+44      if( BeFok [b ]==0){
+45          if(bb ==a){ // 1. vagy 2. eset
+46              int x=b;
+47              bool farok = false ;
+48              do{
+49                  Korben [x]=1;
+50                  x=F[x];
+51                  if(! farok || BeFok [x] >1) farok =true;
+52              }while (x !=0);
+53              if( farok ){ // 2. eset
+
+
+                                                   4 . oldal
+     Interaktı́v feladatok, online feladatok               *
+
+
+54                 V--;
+55                 x=b;
+56                 do{
+57                     Korben [x]=2;
+58                     x=F[x];
+59                 } while (x !=0);
+60              }
+61          }else{// 3. eset
+62              V--;
+63          }
+64       }else{// BeFok [b]>0
+65          if( Korben [b ]==1){ // 5. eset
+66              int x=b;
+67              do{
+68                  Korben [x]=2;
+69                  x=F[x];
+70              } while (x!=b);
+71              V--;
+72          }// 4. eset
+73       }
+74       F[a]=b;
+75       BeFok [b]++;
+76   }
+77
+78   int main (){
+79      N=kezd ();
+80      Init ();
+81      int a,b;
+82      for (;;){
+83          ujadat (a,b);
+84          szamol (a,b);
+85          valasz (V);
+86      }
+87      return 0;
+88   }
+
+
+
+
+                                               5 . oldal
+

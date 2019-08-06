@@ -1,0 +1,30 @@
+
+
+                            Különböző árú borok száma
+Egy pincészet egyféle boráról évente tárolja, hogy mennyit készített belőle és hány forintért áru-
+sítja.
+Írj programot, amely megadja, hogy a pincészet hányféle áron árul bort!
+Bemenet
+A standard bemenet első sorában az évek száma (1≤N≤100), alatta soronként egy-egy év
+bor mennyisége és ára van (1≤M,A≤5000).
+Kimenet
+A standard kimenet első sorába a különböző áron árult borok számát kell kiírni!
+Példa
+Bemenet                                          Kimenet
+6                                                5
+500 1500
+1900 2000
+2000 1500
+200 3800
+300 1000
+2100 3000
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                             1. oldal
+

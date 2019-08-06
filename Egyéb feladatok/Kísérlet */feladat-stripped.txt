@@ -1,0 +1,37 @@
+
+
+                                           Kísérlet
+Biológusok különleges sejttenyészetet vizsgálnak. A kísérlet során N sejt keletkezett. Minden sejt-
+re feljegyezték azt az időpontot, amikor keletkezett, és azt, amikor elpusztult.
+Készíts programot, amely kiszámítja azt a legrövidebb időintervallumot, amely alatt legalább K
+sejt megfigyelhető volt a kísérletben!
+Bemenet
+A standard bemenet első sorában a kérdéses élő sejtek száma (1KN), a kísérlet időtar-
+tama (1M5*106) és a sejtek száma (1N500 000) van. A következő N sor mindegyikében
+egy sejt keletkezésének és elpusztulásának ideje van (1EPM) van.
+Kimenet
+A standard kimenet első és egyetlen sorába egy [A,B] intervallum végpontjait kell írni,
+amelyre teljesül, hogy 1≤AB és B-A a legkisebb olyan érték, hogy az [A,B] időintervallumban
+legalább K sejt megfigyelhető volt! Egy sejt megfigyelhető volt az [A,B] intervallumban, ha E
+keletkezési ideje EB és P elpusztulási ideje AP. Ha több ilyen A,B pár létezne, akkor azt kell
+kiírni, amelyiknek az A-értéke a legkisebb!
+Példa
+Bemenet                                          Kimenet
+5 15 8                                           7 8
+3 10
+2 4
+1 12
+5 7
+8 13
+9 11
+13 15
+7 8
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

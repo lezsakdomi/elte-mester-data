@@ -1,0 +1,44 @@
+
+
+                                            Üzenetek
+A Kozmosz Rt. a stratégiai fontosságú üzenetek továbbítására saját rendszert dolgozott ki. Ha va-
+laki, aki részt vesz a rendszerben, üzenetet kap, köteles azt továbbítani a számára előírt emberek-
+nek. A társaságnál ezt a kötelezettséget a következőképpen jelölték:
+János(Géza,István,Mónika)
+Géza(Éva,Lajos)
+Jelentésük: Jánosnak továbbítania kell az üzenetet Gézának, Istvánnak és Mónikának, illetve Gé-
+zának továbbítania kell az üzenetet Évának és Lajosnak.
+A társaság ezen szabályokat egy globális, összevont üzenetközvetítési szabályzattal írja le, ami a
+példa esetében:
+János(Géza(Éva,Lajos),István,Mónika)
+Az első ember (János) fogja az üzenetet megkapni a vezérigazgatóságtól, majd továbbítja azokat a
+számára kiírt embereknek, akik szintén továbbadják azt. Azon emberek, akiknek nincs kijelölve
+senki, természetesen nem adják tovább az üzenetet senkinek.
+A társaság az üzenetközvetítés hatékonyságáról szeretne informálódni, megadott lánc esetén.
+Készíts programot, amely kiszámítja, hogy
+    1.) egy embernek maximum hány másiknak kell közvetlenül átadnia az üzenetet;
+    2.) legfeljebb hány emberen keresztül jut el az üzenet valakihez;
+    3.) hány olyan ember van, akinek nem kell továbbítania az üzenetet?
+Bemenet
+A standard bemenet első sora tartalmazza a szabályzatot, melyben maximum 5000 ember
+neve szerepel. A neveket az angol abc kis és nagy betűi jelölik, a szabályzat nem tartalmaz szóköz
+karaktert. A szabályzatban legalább egy ember szerepel. A szabályzatot leíró karaktersorozatot a #
+karakter zárja.
+Kimenet
+A standard kimenet három sorába rendre az első, a második és harmadik kérdésre adott
+választ kell írni!
+Példa
+Bemenet
+Miklos(Peter(Balazs,Zsoka),Eva,Ferenc(Agi(Teri,Zsuzsa),Laci,Ma
+gdi,Dora))#
+Kimenet
+4                         (mert Ferenc 4 embernek adja)
+3                         (mert Terihez Mikloson, Ferencen es Agin keresztul jut el)
+8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a nevek száma≤20
+
+                                               1. oldal
+

@@ -1,0 +1,44 @@
+
+
+                                           Csoport
+Egy kiránduláson részvevő tanulókból két csapatot kell képezni. A két csapatot úgy kell képezni,
+hogy ha X és Y barátok, akkor azonos csapatba kerüljenek, de ha nem kedvelik egymást, akkor
+nem kerülhetnek egy csapatba.
+Készíts programot, amely kiszámít egy, a feltételeknek megfelelő csapatbeosztást!
+Bemenet
+A standard bemenet első sorában a tanulók száma (1≤N≤10000) és a baráti párok száma
+és azon párok száma van, akik nem kedvelik egymást (1≤M+K≤4000000). A következő M sor a
+baráti párokat, az azt követő K sor pedig azon párokat tartalmazza, akik nem kedvelik egymást.
+Kimenet
+A standard kimenet első sorába az egyik, a második sorába a másik csapatba sorolt tanu-
+lók azonosítóit kell írni egy-egy szóközzel elválasztva, tetszőleges sorrendben. Több megoldás
+esetén bármelyik megadható. Ha nincs megoldás, akkor a kimenet első és egyetlen sorába a -1
+számot kell írni.
+Példa
+Bemenet                                          Kimenet
+11 7 4                                           1 2 5 6 7 8
+1 2                                              3 4 9 10 11
+3 4
+                                                                    1
+5 6
+9 10                                                                                 3
+10 11                                                               2
+11 9
+7 8                                                                                  4
+2 3                                                                 8
+6 9
+8 4                                                                                  11
+7 11
+                                                                    7
+Korlátok
+                                                                                           10
+Időlimit: 1.3 mp.                                                   6
+Memórialimit: 32 MB
+                                                                                      9
+                                                                    5
+
+
+
+
+                                             1. oldal
+

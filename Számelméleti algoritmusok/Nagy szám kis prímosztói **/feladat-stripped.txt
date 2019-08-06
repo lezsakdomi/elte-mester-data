@@ -1,0 +1,23 @@
+
+
+                            Nagy szám kis prímosztói
+Készíts programot, amely megadja egy természetes szám 2 és 40 közötti összes prímosztóját!
+Bemenet
+A standard bemenet egyetlen sorában egy természetes számok értéke (2≤S<1010 000) van.
+Kimenet
+A standard kimenet első sorába az S 2 és 40 közötti prímosztói K számát, a második so-
+rába pedig a K prímosztót kell írni, növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+551                                            2
+                                               19 29
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 20%-ában a számok legfeljebb 12 számjegyből állnak.
+
+
+
+
+                                           1. oldal
+

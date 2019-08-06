@@ -1,0 +1,48 @@
+
+
+                                Duplán elérhető pontok
+Egy számítógépes hálózat csomópontokat és bizonyos csomópont-párokat közvetlenül összekötő
+kétirányú adatátvitelt biztosító adatátviteli vonalakat tartalmaz. A hálózat tartalmaz egy kitüntetett
+csomópontot, a központi csomópontot. A hálózat üzemeltetői tudni akarják, hogy melyek azok a
+csomópontok, amelyek akkor is elérhetőek a központból, ha bármely egyedi közvetlen vonal
+meghibásodik.
+Írj programot, amely kiszámítja azokat a csomópontokat, amelyek akkor is elérhetők a központi
+csomópontból, ha bármely egyedi közvetlen vonal meghibásodik!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1<N100 000), a közvetlen
+vonalak száma (1<M1 000 000) és a központi csomópont K sorszáma van. A további M sor
+mindegyike egy számpárt (1u≠vN) tartalmaz, ami azt jelenti, hogy az u és v csomópontot
+közvetlen vonal köti össze, amin u-ból v-be és v-ből u-ba lehet adatot átvinni. Bármely két cso-
+mópont között legfeljebb egy közvetlen vonal van.
+Kimenet
+A standard kimenet első sorába azon csomópontok C számát kell írni, amelyek bármely
+egyedi vonal meghibásodása esetén is elérhetők a központi csomópontból! A második sor ponto-
+san C egész számot tartalmazzon, az 1-meghibásodás esetén is elérhető csomópontok sorszámait,
+tetszőleges sorrendben!
+Példa
+Bemenet                                           Kimenet
+11 12 3                                           5
+3 2                                               3 2 4 6 11
+2 4
+4 3                                                                                       1
+1 3
+2 6
+6 10                                                                             2                3
+6 11
+2 11
+5 7                                                       11             6                        4
+5 8
+5 4
+7 8
+                                                                        10            5           7
+Korlátok
+Időlimit: 0.1 mp.
+                                                                                                  8
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában a N≤100
+
+
+
+
+                                               1. oldal
+

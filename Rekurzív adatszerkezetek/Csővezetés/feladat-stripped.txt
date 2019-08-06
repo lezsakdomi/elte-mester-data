@@ -1,0 +1,47 @@
+
+
+                                    Csapok nyitása
+Egy csővezeték hálózatban a fő csőtől bármely másik csomópontba egyértelmű úton lehet eljutni.
+Minden cső (az első kivételével) két csomópontot köt össze, a csapot azzal a csomóponttal azo-
+nosíjuk, ahova a cső vége csatlakozik. Minden cső végén egy csap található, amely nyitható és
+zárható. Kezdetben minden csap zárva van, kivétel néhány – a csőhálózat végén –, amelyeken
+vizet szeretnénk kapni.
+Készíts programot, amely megadja, hogy mely csapokat kell még kinyitnunk!
+Bemenet
+A standard bemenet első sorában a csapok száma van (2≤N≤100 000). A következő N-1
+sorban az egyes csövek kezdő- és végcsomópontja szerepel (1≤Kezdi<Végi≤N ). A következő
+sorban azon csapok száma van (1≤Cs≤N), amelyeken víznek kell kifolyni, amit a Cs ilyen csap
+sorszáma követ (1≤Csapi≤N ).
+Kimenet
+A standard kimenet első sorába azon további csapok számát kell írni, amelyeknek nyitva
+kell lenni, hogy pontosan a bemenetben megadott Cs csapon keresztül kapjunk vizet! A második
+sorba ezen csapok sorszámai kerüljenek, növekvő sorrendben!
+Példa
+Bemenet                                        Kimenet
+14                                             4
+1 2                                            1 3 4 8
+1 3
+1 4
+2 5                                                             1
+2 6                                   5
+3 14
+                                                                                          9
+3 7                                               2
+7 10
+                                                                3            4
+7 11
+4 8                                  6                14            7                 8
+4 9
+8 12
+8 13
+                                                                                 13           12
+3 12 13 14                                                 10           11
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

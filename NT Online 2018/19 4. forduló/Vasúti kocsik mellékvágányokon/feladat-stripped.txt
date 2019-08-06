@@ -1,0 +1,39 @@
+
+
+                        Vasúti kocsik mellékvágányokon
+Egy vasútállomáson a fő vágányról kitérő vágányt építettek, mindegyiken csak jobbról balra lehet
+haladni. A kitérőn akárhány kocsit elhelyezhetünk, a fő vágányon azonban nem állhat meg kocsi.
+Egy szerelvény érkezik jobbról, sorszámozott, összekevert kocsikkal. A kocsikat 1 és K közötti
+különböző sorszámokkal azonosítjuk.
+
+
+
+
+Készíts programot, amely megadja, hogy maximum hány kocsit tudunk sorba rendezni a kitérő
+segítségével és elküldeni balra úgy, hogy a kitérőn végül nem marad kocsi!
+Bemenet
+A standard bemenet első sorában a kocsik száma van (1≤K≤100 000). A következő K
+sorban a kocsik sorszámai következnek az érkező szerelvényen belüli sorrendben (1≤Si≤K).
+Kimenet
+A standard kimenet egyetlen sorába azt kell kiírni, hogy maximum mennyi kocsit lehet így
+sorba rendezni!
+Példa
+Bemenet                                         Kimenet
+6                                               5
+4
+                                                Magyarázat: a kocsik 2,3,4,5,6 sorrendben me-
+5                                               hetnek ki balra.
+2
+6
+3
+1
+
+Korlátok
+Időlimit: 0.0 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                            1. oldal
+

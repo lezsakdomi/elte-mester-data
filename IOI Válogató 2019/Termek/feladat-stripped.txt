@@ -1,0 +1,68 @@
+
+
+                                            Termek
+Egy labirintusban folyosók kötnek össze termeket. Az 1-es sorszámú teremből indulhatunk. Min-
+den további terembe egyetlen ajtón keresztül lehet bejutni, és mindegyikből kettőbe lehet to-
+vábbmenni, az oda vezető ajtók lehetnek zártak, illetve nyitottak. Minden terembe egyetlen útvo-
+nal vezet az 1-es teremből. A termeket „bal kéz a falon” elven járjuk be, azaz minden teremből
+először a baloldali ajtón megyünk tovább, majd ha visszatértünk, akkor a jobboldalin folytatjuk a
+bejárást.
+Kéréseket kell teljesíteni:
+  1.    Az A és a B terem közül melyiket érjük el előbb az 1-es teremből indulva?
+  2.    Az A terem egyik kivezető ajtaját nyissuk ki (ha még soha nem volt nyitva, akkor új te-
+        remre nyílik, amelynek mindkét kivezető ajtaja zárva van és ezzel a termek száma nő)!
+  3.    Az A terem egyik kivezető ajtaját zárjuk be (ekkor az A azon ajtaján keresztül elérhető
+        termek egyike sem lesz elérhető)!
+Készíts programot, amelyek megvalósítják a háromféle kérést!
+Bemenet
+A standard bemenet első sorában van a termek száma kezdetben (2≤N≤150 000). A to-
+vábbi N sorban egy-egy terem két kivezető ajtajának leírása található (i<Bali≠Jobbi≤N vagy
+Bali=0 vagy Jobbi=0), ahol 0 jelenti azt, hogy az az ajtó zárva van. Minden terembe vezet
+legfeljebb 32 termen áthaladó útvonal.
+A következő sorban a kérések száma (2≤K≤100 000) található. Az utolsó K sorban az egyes ké-
+rések szerepelnek. A sorok első száma a kérés típusa (1, 2 vagy 3 lehet), a következő 2 szám pedig
+az egyes kérések 2 bemenő paramétere. 1-es típusú kérésnél a két terem sorszáma (1≤A≠B≤N), a
+többinél a terem sorszáma (1≤A≤N), valamint 1, ha a kérésben a bal oldali ajtóról van szó, illetve
+2, ha a jobb oldaliról.
+Kimenet
+A standard kimenet soraiba az 1-es típusú kérésekre kapott eredményeket kell kiírni, a ké-
+rések sorrendjében! A kiírt érték -1 legyen, ha A-t; +1 legyen, ha B-t lehet elérni előbb; illetve 0,
+ha egyikbe sem lehet eljutni!
+Példa
+bemenet                                           kimenet                    A kiinduló termek:
+6                                                 1                                             6
+2 3                                               -1                         4          5
+4 5                                               0
+6 0                                               -1                              2                 3
+0 0                                               -1                                        1
+0 0                                               1
+0 0
+10                                                A 2 6 2 hatására keletkezett a 7. terem.
+1 3    4                                          Ugyanez a kérések teljesítése után:
+3 2    1
+1 3    4                                                             7
+3 1    2
+1 3    4                                            4        5       6
+2 1    2
+1 3    4                                                 2               3
+2 6    2                                                         1
+
+
+                                              1. oldal
+Diákolimpiai Válogatóverseny 2019                                                       1. forduló
+
+1 5 7
+1 4 7
+
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás
+A pontok 20%-a szerezhető olyan tesztekkel, ahol sem ajtónyitás, sem ajtózárás nincs.
+További 20% szerezhető olyan tesztekkel, ahol nincs ajtózárás.
+
+
+
+
+                                            2. oldal
+

@@ -1,0 +1,50 @@
+
+
+                Az árvizek áradása vagy apadása a gyorsabb?
+Egy folyón N helyen mérik a vízállást, amit egy referenciamagassághoz képest centiméterben ad-
+nak meg. Elsőfokú árvízvédelmi készültséget kell elrendelni, ha a magasság meghaladja a 800 cen-
+timétert, másodfokút, ha meghaladja a 900 centimétert és harmadfokút, ha meghaladja a 10 mé-
+tert. Folyószakasznak nevezzük a leghosszabb egymás mellett levő egyforma tulajdonságú méré-
+sekből álló sorozatokat. Árvíznek nevezzük azt a szakaszt, ahol minden hely legalább elsőfokú
+készültségű.
+Készíts programot, amely meghatározza az árvizeket, majd minden árvízre, hogy az áradása vagy
+az apadása a gyorsabb! Az árvíz áradása az árvíz kezdetén lévő szigorúan monoton növekvő sza-
+kasz hossza, apadása pedig az árvíz végén lévő szigorúan monoton csökkenő szakasz hossza. Az
+a gyorsabb, amelyiknek a hossza kisebb.
+
+
+Bemenet
+A standard bemenet első sorában a mérési pontok száma szerepel (1N10 000), a kö-
+vetkező N sor mindegyike egy egész számot tartalmaz, a mérési eredményt (0Ai3000).
+Kimenet
+A standard kimenet első sorába az árvizek K darabszámát kell írni (0, ha nincs ilyen, eb-
+ben az esetben nincsenek további sorok)! A második sorba ennek a K árvíznek a kezdete és vége
+kerüljön, növekvő sorrendben! A 3. sorba minden árvízre az 1, -1 vagy 0 értékek valamelyikét írja
+annak megfelelően, hogy az adott árvíz áradása vagy apadása a gyorsabb, illetve egyforma intenzi-
+tású az áradás és apadás!
+Példa
+Bemenet              Kimenet
+13                   4
+1100                 1 2 4 6 8 8 10 13
+950                  1 0 0 -1
+700
+850                         1300
+1200                        1200
+900                         1100
+800                         1000
+1200                         900
+600                          800
+850                          700
+1200                         600
+900                          500
+1200                         400
+                             300
+Korlátok                           1   2   3     4   5    6   7   8   9   10 11 12 13
+Időlimit: 0,1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                               1. oldal
+

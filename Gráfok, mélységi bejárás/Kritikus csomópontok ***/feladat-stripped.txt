@@ -1,0 +1,45 @@
+
+
+                               Kritikus csomópontok
+Minden számítógépes hálózat csomópontokból és bizonyos csomópontpárok között kiépített
+közvetlen kétirányú adatátvitelt biztosító kommunikációs vonalakból épül fel. Adott A és B cso-
+mópont esetén az olyan P csomópontot (PA és PB), amely meghibásodása esetén nem lehet
+adatátvitel A és B között, A−B-kritikus csomópontnak nevezzük.
+Írj programot, amely adott A és B csomópontra kiszámítja a hálózat összes A−B-kritikus csomó-
+pontját!
+Bemenet
+A standard bemenet első sorában a csomópontok száma (1N20 000), azon csomó-
+pontpárok száma (1M200 000), amelyek között közvetlen adatátvitel van kiépítve, valamint
+az A és a B csomópont sorszáma van. A további M sor mindegyike egy u v számpárt tartalmaz
+(1uvN), amely azt jelenti, hogy az u és v csomópont között közvetlen kétirányú adatátviteli
+vonal van kiépítve. Bármely két csomópont között legfeljebb egy közvetlen vonal van.
+Kimenet
+A standard kimenet első sorába az A−B-kritikus csomópontok K számát kell írni! A má-
+sodik sor pontosan K egész számot tartalmazzon, az A−B-kritikus csomópontokat, tetszőleges
+sorrendben! Ha nem lehetséges adatátvitel az A és a B csomópont között, akkor az első és egyet-
+len sorba a -1 értéket kell kiírni!
+Példa
+Bemenet                                        Kimenet
+9   11 1 9                                     1                                   2
+1   2                                          3
+1   3
+2   4
+                                                                           1                4
+4   3
+3   5                                                                              3
+7   3
+5   6                                                                      5                7
+8   6
+5   9                                                             6                9
+5   7
+7   9
+                                                                           8
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

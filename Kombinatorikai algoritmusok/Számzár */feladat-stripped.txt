@@ -1,0 +1,34 @@
+
+
+                                            Számzár
+Pisti táskáján olyan számzár van, amely N tárcsából áll. A tárcsák különböző nagyságúak, így az
+egyes tárcsákon különböző számok közül lehet választani. (Pl. két tárcsa közül az egyiken 0-tól 9-
+ig haladnak a számok, a másikon pedig csak 0-tól 5-ig.) Sajnos, Pisti elfelejtette a kódot.
+Segíts Pistinek, írj programot, amely választ ad az alábbi kérdésekre!
+A. A tárcsák száma és az egyes tárcsákon előforduló számjegyek száma alapján legfeljebb hány
+kombinációt kell Pistinek kipróbálnia a táska kinyitásához?
+B. Legfeljebb hány próbát kell tennie Pistinek abban az esetben, ha emlékszik arra, hogy az egyik
+tárcsa valahogyan elromlott, azaz minden lehetséges számot elfogadott? Arra Pisti sajnos nem
+emlékszik, hogy melyik a hibás tárcsa.
+C. Maximálisan hány kombinációt kell kipróbálnia Pistinek azon a táskán, amelyikről azt tudja,
+hogy a kódban van legalább két azonos számjegy?
+Bemenet
+A standard bemenet első sorában szerepel a tárcsák száma (1N10). A második sorban
+pontosan N darab pozitív egész szám van: az egyes tárcsákon előforduló számjegyek száma. Min-
+den tárcsa legfeljebb 10 számjegyből áll.
+Kimenet
+A standard kimenetre összesen három sort kell írni: a három kérdésre adott választ!
+Példa
+Bemenet                                           Kimenet
+4                                                 2592
+9 9 4 8                                           648
+                                                  1416
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                              1. oldal
+

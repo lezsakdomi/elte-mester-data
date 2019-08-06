@@ -1,0 +1,47 @@
+
+
+                                       Bankbetét
+Az OKB (Országos Kuporgató Bank) új betétformát vezetett be. Kerek százas összeget lehet be-
+tenni a bankba, melyre havonta S% kamatot fizetnek. Ezer forintot elérő összegnél még P%
+prémium is jár. A kerek százasokon felül maradó részt a bank havonta kifizeti, amit otthon őr-
+zünk. Ha az otthon őrzött pénz eléri vagy meghaladja a 100 forintot, akkor abból 100-at bete-
+szünk a bankba.
+Írj programot, amely megadja, hogy X betett összeg esetén H hónapon keresztül mennyi pénzünk
+lesz a bankban és mennyi lesz otthon!
+Bemenet
+A standard bemenet első és egyetlen sorában négy egész szám van egymástól szóközzel el-
+választva: a betett összeg (100≤X≤100000, X osztható 100-zal), a havi kamat (1≤S≤10), a
+prémiumkamat (0≤P≤S), valamint a vizsgálandó hónapok száma (1≤H≤48).
+Kimenet
+A standard kimenetre H darab sort kell kiírni, mindegyik sorban két egész számmal, a
+bankban és az otthon lévő pénzünk értékeivel, egymástól szóközzel elválasztva! Az i. sor az i.
+hónap utáni állapotot mutassa!
+Példa1
+Bemenet                                       Kimenet
+100 10 0 11                                   100     10
+                                              100     20
+                                              100     30
+                                              100     40
+                                              100     50
+                                              100     60
+                                              100     70
+                                              100     80
+                                              100     90
+                                              200     0
+                                              200     20
+Példa2
+Bemenet                                       Kimenet
+800 10 5 5                                    800 80
+                                              900 60
+                                              1000 50
+                                              1200 0
+                                              1300 80
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

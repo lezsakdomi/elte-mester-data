@@ -1,0 +1,45 @@
+
+
+                                Születésnap paradoxon
+Ellenőrizd az úgynevezett „születésnap paradoxont”! E szerint bármely iskolai osztályban, vagy
+egyéb, véletlenszerűen összegyűlt, kb. 30 fős társaságban nagyon jó eséllyel található legalább 2
+olyan ember, akik az év ugyanazon a napján ünneplik a születésnapjukat.
+Írj programot, amely
+   1. növekvő sorrendben listázza a megadott születési dátumokat,
+   2. megadja azokat a születésnapokat, amelyek többszörösen szerepelnek!
+Bemenet
+A standard bemenet első sorában a társaság létszáma (1≤N≤200) található, a következő
+N sorban pedig a társaság tagjainak születési dátumai. Egy-egy sor tartalmazza egy személy születé-
+sének évét (1900≤év≤2100), hónapját és napját. A megadott dátumok biztosan megfelelnek a
+hagyományos (gregorián) naptárnak.
+Kimenet
+A standard kimenetre minden részfeladat eredménye előtt egy-egy, egyetlen # karaktert
+tartalmazó sort kell kiírni, amelyet a részfeladat eredményét tartalmazó egy vagy több sor követ! Ha
+egy részfeladatot nem tudsz megoldani, akkor csak a # karaktert kell kiírni! Ha a kimenet formailag
+nem felel meg ennek a követelménynek (pl. kevesebb/több # karaktert ír ki) akkor „Output for-
+mátum hiba” üzenetet ad az értékelő (akkor is, ha van helyes részfeladat megoldás).
+1. részfeladat: A megadott dátumokat növekvő sorrendben kell kiírni, elsősorban év, másodsorban
+hónap, harmadsorban nap szerint rendezve, külön sorokba!
+2. részfeladat: A többször szereplő születésnapokat és az előfordulásaik számát kell kiírni, külön
+sorokba! A születésnapot "hh.nn." formátumban kell kiírni, elsősorban hónap, másodsorban
+nap szerint rendezve! Ha nincs többször szereplő születésnap, akkor egyetlen -1-et kell kiírni!
+Példa
+ Bemenet                                           Kimenet
+ 4                                                 #
+ 1989    3 17                                      1985 12 23
+ 1985    12 23                                     1989 3 17
+ 1995    3 17                                      1990 12 23
+ 1990    12 23                                     1995 3 17
+                                                   #
+                                                   03.17. 2
+                                                   12.23. 2
+
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                              1. oldal
+

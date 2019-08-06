@@ -1,0 +1,61 @@
+
+
+                                   LOGO optimalizálás
+A LOGO programozási nyelv utasításai közül az alábbiakat használjuk:
+Mozgások:
+     FORWARD x, BACK x —              az aktuális irányba előre, illetve hátra lép x egységgel;
+Forgások:
+     LEFT x, RIGHT x           —      az aktuális iránytól balra, illetve jobbra fordul x fokot;
+                                      közben nem rajzol
+Toll helyzet állítások:
+     UP, DOWN                  —      felemeli, illetve leteszi a tollat, felemelt tollal haladás
+                                      közben nem rajzol, kezdetben a toll a papíron van.
+Az utasítások x és y paramétere lehet pozitív vagy negatív egész állandó.
+Készíts olyan kódoptimalizáló programot, amely a következő átalakításokra képes:
+FORWARD x FORWARD y                  FORWARD x+y               (azonos előjelű x és y,
+                                                                vagy felemelt toll esetén)
+BACK x BACK y                        BACK x+y                  (azonos előjelű x és y,
+                                                                vagy felemelt toll esetén)
+FORWARD x BACK y                     FORWARD x–y               (ellenkező előjelű x és y,
+                                                                vagy felemelt toll esetén)
+BACK x FORWARD y                     BACK x–y                  (ellenkező előjelű x és y,
+                                                                vagy felemelt toll esetén)
+LEFT x LEFT y                 LEFT x+y
+RIGHT x RIGHT y               RIGHT x+y
+LEFT x RIGHT y                LEFT x–y
+RIGHT x LEFT y                RIGHT x–y
+DOWN forgások UP              forgások    (kezdetben felemelt toll esetén)
+UP forgások DOWN              forgások    (kezdetben leengedett toll esetén)
+DOWN mozgás, forgás DOWN                     DOWN mozgás, forgás
+UP mozgás, forgás UP          UP mozgás, forgás
+Az átalakítások közben a műveleteket el is kell végezni (LEFT 30+30 helyett LEFT 60)! A 0 fo-
+kos fordulatokat és a 0 elmozdulásokat törölni kell! A kód egy pontján csak akkor szabad átalakí-
+tani, ha a megelőző részben már nincs több átalakítási lehetőség.
+Bemenet
+Az átalakítandó LOGO program a standard bemeneten található, sorvégekkel, szóközök-
+kel tetszőlegesen tördelve.
+Kimenet
+Az eredményt a standard kimenetre kell írni, minden utasítást külön sorba, paraméterétől
+egyetlen szóközzel elválasztva!
+
+
+                                              1. oldal
+
+
+Példa
+Bemenet                                   Kimenet
+LEFT -68   LEFT -39                       LEFT   -189
+  UP RIGHT 22 DOWN BACK -13               BACK   -13
+ DOWN DOWN BACK 1   BACK -40              DOWN
+                                          DOWN
+                                          BACK   1
+                                          BACK   -40
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                               2. oldal
+

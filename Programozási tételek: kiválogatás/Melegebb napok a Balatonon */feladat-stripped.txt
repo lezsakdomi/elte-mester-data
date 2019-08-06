@@ -1,0 +1,31 @@
+
+
+                          Melegebb napok a Balatonon
+N nap során minden délben megmértük a Balaton hőmérsékletét Siófoknál.
+Írj programot, amely megadja a K foknál melegebb napokat!
+Bemenet
+A standard bemenet első sorában a napok száma van (1N100) és egy hőmérséklet
+(20K30). A következő N sor mindegyike egy-egy egész számot tartalmaz, az egyes napok hő-
+mérsékletét (0Hi40).
+Kimenet
+A standard kimenet első sorába a K foknál melegebb napok darabszámát, illetve a napok
+sorszámait kell kiírni, növekvő sorrendben!
+Példa
+Bemenet                                       Kimenet
+6 20                                          4 2 3 4 6
+18
+21
+21
+22
+20
+23
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                          1. oldal
+

@@ -1,0 +1,34 @@
+
+
+                                        Nyaklánc
+Egy körbefűzött nyakláncon N darab (N páros), különböző értékű gyöngy van. A nyakláncot az i-
+edik gyöngy után elvághatjuk. Az egyes gyöngyök értéke a vágás helyétől vett kisebb távolsággal
+megszorzódik (a két közvetlen szomszéd értéke egyszeres, az eggyel távolabbiak kétszeres, a még
+eggyel távolabbiak háromszoros értékűek lesznek, és így tovább).
+Készíts programot, amely megadja, hogy hol vágjuk el a nyakláncot, hogy az összérték a lehető
+legnagyobb legyen!
+Bemenet
+A standard bemenet első sorában a gyöngyök száma (4≤N≤1 000 000) van. A következő
+N sor mindegyike egy egész számot tartalmaz, közülük az i-edik az i-edik gyöngy értéke
+(1≤értéki≤100).
+Kimenet
+A standard kimenet első sorába annak a gyöngynek a sorszámát kell írni, amely után el-
+vágva a nyakláncot, a gyöngyök összértéke a lehető legnagyobb lesz! Több megoldás esetén bár-
+melyik megadható.
+Példa
+Bemenet                                        Kimenet                        20
+4                                              3                                         30
+30
+30
+10
+                                                                         10
+20                                                                                  30
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

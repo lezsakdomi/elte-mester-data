@@ -1,0 +1,40 @@
+
+
+                             Vitorlás verseny kezdő napja
+A vitorlás versenyek rendezői megmérték N napon át Balatonfüreden a szélsebességet. Vitorlás
+versenyt szélcsendben nem lehet rendezni, de nagyobb viharban sem célszerű. Egy versenyen na-
+ponta egy fordulót rendeznek, s legalább K fordulóra van szükség.
+Írj programot, amely beolvassa a napok számát, a versenynapok számát és az egyes napok szélse-
+bességeit! Ezekből számolja ki, hogy melyik napon kezdhető meg a verseny (elkezdhető, ha volt
+olyan egymás utáni K nap, ahol a szélsebesség legalább 10 és legfeljebb 100 km/óra)!
+Bemenet
+A standard bemenet első sorában a napok száma (1≤N≤1000) és a versenynapok száma
+(1≤K≤10) szerepel. A következő N sorban az egyes napokon mért szélsebességek (0≤S≤200)
+szerepelnek.
+Kimenet
+A standard kimenet első sorába a verseny kezdő napját kell kiírni, ha több ilyen is van, ak-
+kor az elsőt, ha nincs ilyen, akkor pedig -1-et kell kiírni (elkezdhető, ha volt olyan egymás utáni K
+nap, ahol a szélsebesség legalább 10 és legfeljebb 100 km/óra)!
+Példa
+Bemenet                                           Kimenet
+10 3                                              6
+50
+40
+0
+5
+0
+80
+70
+90
+100
+120
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                              1. oldal
+

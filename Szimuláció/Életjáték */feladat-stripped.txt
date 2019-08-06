@@ -1,0 +1,47 @@
+
+
+                                          Életjáték
+Egy N*N-es négyzetrács mezőit celláknak, vagy sejteknek nevezzük. Egy cella környezete a hozzá
+legközelebb eső 8 mező (tehát a cellához képest „átlósan” elhelyezkedő cellákat is figyelembe
+vesszük). Egy sejt/cella szomszédjai a környezetében lévő sejtek. A játék körökre osztott, a kezdő
+állapotban tetszőleges számú cellába sejteket helyezünk. Egy sejttel (cellával) egy körben a követ-
+kező három dolog történhet:
+       A sejt túléli a kört, ha két vagy három sejt szomszédja van.
+       A sejt elpusztul, ha kettőnél kevesebb (elszigetelődés), vagy háromnál több (túlnépesedés)
+        sejt szomszédja van.
+       Új sejt születik minden olyan cellában, melynek környezetében pontosan három sejt talál-
+        ható.
+Fontos, hogy a változások csak a kör végén következnek be, tehát az „elhalálozók” nem akadá-
+lyozzák a születést és a túlélést (legalábbis az adott körben), és a születések nem mentik meg az
+„elhalálozókat”.
+Írj programot, amely kiszámítja egy játék lejátszását a megadott paraméterekkel, minden körben
+visszaadja a sejtek számát, majd a végeredményt!
+Bemenet
+A standard bemenet első sorában három, szóközzel elválasztott szám, a négyzetrács mére-
+te (2≤N≤10), a kezdeti sejtek száma (2≤M≤10) és a lépések száma (1≤L≤100) van. A követke-
+ző M sor mindegyike két egész számot tartalmaz, egy szóközzel elválasztva, a kezdeti sejtek sor- és
+oszlopindexét (1≤S≤N,1≤O≤N).
+Kimenet
+A standard kimenet első L sorába a lejátszott i. körben lévő sejtek számát kell kiírni
+(1≤i≤L), majd a következő sorokban az utolsó körben lévő megmaradt sejtek (sor, és oszlopin-
+dex – 1≤S≤N,1≤O≤N) pozícióját!
+Példa
+Bemenet                                          Kimenet
+6   5 4                                          5
+4   4                                            5
+5   4                                            5
+6   4                                            5
+4   5                                            3   3
+5   6                                            3   4
+                                                 4   3
+                                                 4   5
+                                                 5   3
+Korlátok
+Időlimit: 0.5 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

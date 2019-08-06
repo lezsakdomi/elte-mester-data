@@ -1,0 +1,33 @@
+
+
+                                      Könyvbírálók
+N könyvet 2 bírálónak (A és B) adnak ki, hogy mindegyikről bírálatot készítsenek. Az i. könyv el-
+olvasása az A bírálónak Ai, a B bírálónak pedig Bi ideig tart. A két bíráló egyszerre ugyanazt a
+könyvet nem olvashatja, és egyszerre mindegyikük legfeljebb 1 könyvet olvashat. Egy könyv olva-
+sását bármelyikük abbahagyhatja, s egy későbbi időpontban onnan folytathatja. A könyvek között
+az első K fontos könyv. Ezekre teljesülni kell, hogy bármelyik csak akkor olvasható, ha mindkét
+bíráló elolvasta már az összes, nála kisebb sorszámú könyvet.
+Készíts programot, amely megadja, hogy a két bíráló mikor végezhet a lehető leghamarabb!
+Bemenet
+A standard bemenet első sorában a könyvek száma (1N1000) és a fontos könyvek
+száma (1KN) van. A következő sorok A és B számára az egyes könyvek elolvasásához szüksé-
+ges időt tartalmazzák, egy szóközzel elválasztva (1Ai,Bi100).
+Kimenet
+A standard kimenetbe azt az időtartamot kell írni, ami alatt a két bíráló a leghamarabb
+végezhet!
+Példa
+Bemenet                                         Kimenet
+3   2                                           15
+5   5
+4   1
+3   4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+Pontozás: A tesztek 40%-ában a bemenet hossza≤20
+
+
+
+
+                                            1. oldal
+

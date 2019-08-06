@@ -1,0 +1,36 @@
+
+
+                                         Szókereső
+Egy rejtvényben az angol ábécé kisbetűit helyezik el egy mátrixban. Szavak a mátrix tetszőleges
+pozíciójából kezdődően olvashatók ki úgy, hogy minden karakterük után felfelé, balra, lefelé vagy
+jobbra lépünk egyet. A karaktermátrix bármely pozíciója csak egyszer használható fel.
+Készíts programot, amely meghatározza, hogy adott szó hol helyezkedik el egy karaktermátrix-
+ban!
+Bemenet
+A standard bemenet első sorában a mátrix sorai és oszlopai száma van (1≤N≤10). A kö-
+vetkező N sor mindegyikében N karakter írja le a karaktermátrix adott sorát. Az utolsó sorban a
+keresett szó található (legfeljebb 12 karakter, az angol ábécé kisbetűiből).
+Kimenet
+A standard kimenet első sorába a 0 0 számpárt kell írni, ha a keresett szó nem található
+meg a karaktermátrixban! Ha megtalálható, akkor az első karaktere sor- és oszlopindexét kell kiír-
+ni! A második sorban a keresett szó hosszánál eggyel kevesebb betű legyen, rendre az F,B,L,J be-
+tűk, attól függően, hogy a következő betűhöz a karaktermátrixban merre kell eljutni! Több meg-
+oldás esetén bármelyik megadható.
+Példa
+Bemenet                                          Kimenet
+4                                                2 2
+alfa                                             LJF
+baal
+blmg
+alom
+alma
+
+Korlátok
+Időlimit: 0.2 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                             1. oldal
+

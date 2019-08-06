@@ -1,0 +1,60 @@
+
+
+                                   Molekula szerkezet
+Kutatók egy speciális molekulát vizsgálnak. Tudják, hogy a molekula N különböző atomot
+tartalmaz, amelyek egy lineáris láncot alkotnak. A kutatóknak van egy olyan mérőműszerük, amely
+meg tudja határozni, hogy a molekulában két adott atom között középen melyik atom van. Ha az
+a és b sorszámú atomra alkalmazzuk a mérést, akkor azt a c atomot adja, amelyre az alábbi
+feltételek teljesülnek.
+                  Táv(a,b)=Táv(a,c)+Táv(c,b) és Táv(a,c)≤Táv(c,b)≤Táv(a,c)+1
+Ahol Táv(x,y) az x és y atomok molekulabeli pozíciói különbségének abszolút értéke.
+Például az ábrán látható molekula esetén az 1 és 4 atomokra a mérés eredménye 5, az 1 és 2
+atomra az eredmény 3, de a 2 és 1 atomokra az eredmény 5.
+
+
+
+
+Írj programot, amely meghatározza a molekula szerkezetét, azaz minden atom pozícióját a
+molekulában!
+Könyvtár
+A mérőműszer használatát a meter könyvtár három művelete biztosítja:
+    meret: A program elején kell hívni, az atomok számát adja (5≤meret≤100 000).
+    kozepen(a,b): Két atom sorszámát kell argumentumként megadni (1≤a,b≤N), a
+     visszaadott érték a két atom között középen lévő atom sorszáma.
+    holvan(x,i): A program végén kell hívni, a kiszámított eredmény közléséhez: az x-
+     sorszámú atom a molekulában az i-edik! Minden x-re (1≤x≤N) pontosan egyszer kell
+     hívni, tetszőleges sorrendben! A megoldás tükörkép erejéig egyértelmű, a két megoldás
+     közül bármelyiket meg lehet adni. A holvan művelet utolsó végrehajtásával a program
+     automatikusan befejeződik.
+A műveletek Pascal deklarációja:
+   uses meter;
+   function meret: longint;
+   function kozepen(x,y: longint): longint;
+   procedure holvan(x: longint; i: longint);
+A műveletek C/C++ deklarációja:
+   #include ”meter.h”
+   long meret(void);
+   long kozepen(long x, long y);
+   void holvan(long x, long i);
+Használat
+Letölthető egy minta meter modul C++ és Pascal programja.
+Használatához a standard bemenet első sorába az atomok számát kell írni! A második sor
+pontosan N különböző számot tartalmazzon, az atomok sorszámait!
+Korlátok
+A megoldás program nem olvashat, és nem írhat semmilyen állományt!
+
+                                             1. oldal
+
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: Ha a végrehajtott kozepen műveletek száma K, akkor az alábbiak szerinti pont jár:
+      K≤(3*N)/2               5 pont,
+      (3*N)/2 <K≤2*N          4 pont,
+      2*N<K≤N* log2N          3 pont,
+      N*log2N<K               1 pont,
+
+
+
+
+                                             2. oldal
+

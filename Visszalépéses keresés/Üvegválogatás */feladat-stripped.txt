@@ -1,0 +1,38 @@
+
+
+                                     Üvegválogatás
+Egy palackozó üzembe N ládában érkeznek be az üvegek. Alakjuk szerint K fajta üveget külön-
+böztetnek meg. Ismert, hogy az egyes ládákban hány darab üveg van az egyes fajtákból. A palac-
+kozáshoz az üvegeket a fajtájuk szerint szét kell válogatni. Minden üvegfajta számára kijelölnek
+egy ládát (a meglévő N közül), és a többi ládából az adott fajta üveget ebbe a ládába rakják át.
+Készíts programot, amely kiszámítja, hogy legkevesebb hány üveget kell átrakni, és ez mely ládák
+kijelölésével érhető el!
+Bemenet
+A standard bemenet állomány első sorában a ládák (2N10) és a fajták (2KN) száma
+van. A következő N sor mindegyike egy-egy láda tartalmát írja le. Mindegyik pontosan K egész
+számot tartalmaz egy-egy szóközzel elválasztva, az i-edik ládában található j-edik üvegfajta da-
+rabszámát (0DBi,j1000). A ládák elég nagyok ahhoz, hogy mindegyikbe tetszőleges számú
+üveg beleférjen.
+Kimenet
+A standard kimenet első sorában a válogatáshoz minimálisan szükséges átrakások száma
+legyen! A második sor pontosan K egész számot tartalmazzon egy-egy szóközzel elválasztva, ahol
+az i-edik szám annak a ládának a sorszáma legyen, amelyet az i-edik üvegfajta számára kijelöl-
+tünk! Több megoldás esetén bármelyik megadható.
+Példa
+Bemenet                                         Kimenet
+5   4                                           58
+1   7   2   6                                   5 1 3 4
+3   1   2   4
+3   1   5   6
+6   4   7   8
+6   7   1   4
+Korlátok
+Időlimit: 0.3 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 40%-ában a ládák száma N≤5
+
+
+
+
+                                            1. oldal
+

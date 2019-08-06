@@ -1,0 +1,37 @@
+
+
+                             Tejkimérés négy kannával
+Egy gazdának négy tejeskannája van: A, B, C és D. Az A, B és C kannák űrtartalmát ismeri, a D-ét
+nem, csak azt tudja, hogy ez a legnagyobb kannája. Kezdetben az A kanna tele van, a többi pedig
+üres. A gazda egyik kannából másik kannába áttöltéseket végezve azt szeretné elérni, hogy a D
+kannában adott mennyiségű tej legyen. Ezért csak olyan áttöltést végezhet, hogy mindig tudnia
+kell, hogy az egyes kannákban mennyi tej van. Tehát ha az X kannából az Y kannába tölt át, ak-
+kor vagy mindet át kell töltenie az Y-ba, ha belefér, vagy annyit kell áttöltenie Y-ba, hogy az Y
+kanna tele legyen. Tehát a kimérés során végrehajtott lépés egyértelműen meghatározott azzal,
+hogy melyik kannából melyik kannába tölt át. A lehetséges lépések: AB, AC, AD, BA, BC, BD, CA,
+CB, CD, DA, DB, DC. Az XY betűpár azt jelenti, hogy az X jelű kannából az Y jelű kannába tölt át.
+Írj programot, amely kiszámít egy legkevesebb lépésből álló öntögetési sorozatot, amelynek
+eredményeként a D kannában a kívánt mennyiségű tej lesz!
+Bemenet
+A standard bemenet első sorában a három ismert méretű kanna A, B és C űrtartalma van
+(100≥A>B>C≥1). A második sorban a D kannában előállítandó L mennyiség van (1LA).
+Kimenet
+A standard kimenet első sorába a megoldás lépéseinek K számát kell írni! Ha nincs meg-
+oldás, akkor ez a szám a -1 legyen! A további K sor tartalmazza azt az öntögetési lépéssort (so-
+ronként egy-egy lépés), amelyet végrehajtva a D kannában L liter tej lesz!
+Példa
+Bemenet                                         Kimenet
+13 11 5                                         4
+3                                               AC
+                                                CB
+                                                AC
+                                                AD
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                            1. oldal
+

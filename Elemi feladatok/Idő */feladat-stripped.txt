@@ -1,0 +1,31 @@
+
+
+                                              Idő
+Az időt (óra, perc, másodperc, századmásodperc) formában tároljuk. Olyan típusú kérdéseket
+szeretnénk feltenni, hogy ha most 8 óra 10 perc 12 másodperc 3 századmásodperc van, akkor
+mennyi lesz az idő 80 másodperc múlva, illetve hogy mennyi volt az idő ezelőtt 2 óra 15 perccel.
+Azaz az idő típusú adatokra el kell készíteni az összeadás és a kivonás műveletet.
+Írj programot, amely kiírja, hogy mennyi volt az idő időtávolságnyival korábban, illetve későbben!
+Bemenet
+A standard bemenet első sorában négy egész szám van szóközökkel elválasztva, az idő-
+pont óra, perc, másodperc és századmásodperc része (0≤O≤23, 0≤P≤59, 0≤MP≤59,
+0≤SZMP≤99). A második sorban ugyancsak négy egész szám található szóközökkel elválasztva,
+az időtávolság óra, perc, másodperc és századmásodperc része (0≤A,B,C,D≤32 000).
+Kimenet
+A standard kimenet első, illetve második sorába azt az időpontot kell írni, amely a beolva-
+sott O, P, MP, SZMP időponthoz képest A óra B perc C másodperc D századmásodperccel koráb-
+ban, illetve későbben volt (ebben a sorrendben)! Mindkét sorba négy egész számot kell írni szó-
+közzel elválasztva, az adott időpont óra, perc, másodperc és századmásodperc értékét!
+Példa
+Bemenet                                          Kimenet
+8 10 12 93                                       6 49 52 83
+0 80 20 10                                       9 30 33 3
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

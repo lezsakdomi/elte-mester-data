@@ -1,0 +1,28 @@
+
+
+                                Heti eső mennyisége
+Az elmúlt N hétben minden nap megmértük a lehullott csapadék mennyiségét, milliméterben.
+Írj programot, amely megadja minden hétre a lehullott csapadék mennyiségét!
+Bemenet
+A standard bemenet első sora a hetek számát tartalmazza (2≤N≤1000). A következő N
+sorban egy-egy hét 7 csapadékmennyisége található (0≤Ci,j≤1000).
+Kimenet
+A standard kimenet első sor N száma az N hét csapadék mennyisége legyen!
+Példa
+Bemenet                                        Kimenet
+6                                              140 2 4 21 9 0
+5   10 15   20 25 30 35
+0   2 0 0   0 0 0
+0   0 0 1   0 3 0
+0   1 2 3   4 5 6
+5   1 0 0   2 1 0
+0   0 0 0   0 0 0
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                           1. oldal
+

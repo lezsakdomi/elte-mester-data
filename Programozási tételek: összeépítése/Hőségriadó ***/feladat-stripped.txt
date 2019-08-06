@@ -1,0 +1,38 @@
+
+
+                                       Hőségriadó
+Ismerjük az elmúlt N napra a napi átlaghőmérsékleteket. Hőségriadót rendelnek el, ha a napi át-
+laghőmérséklet egymás után legalább K napon meghaladja a H fokot. Két hőségriadó távolsága a
+később kezdődő első napja és a korábban kezdődő utolsó napja közötti napok száma.
+Készíts programot, amely megadja az egymáshoz legközelebbi két hőségriadó távolságát!
+Bemenet
+A standard bemenet első sorában a napok száma (2≤N≤100 000), a hőségriadóhoz szük-
+séges egymás utáni napok száma (2≤K≤100) és a hozzá tartozó hőmérséklet (20≤H≤30) van. A
+következő N sorban soronként egy-egy nap átlaghőmérséklete található (-50≤Ai≤50).
+Kimenet
+A standard kimenet egyetlen sorába a két legközelebbi hőségriadó távolságát kell írni! Ha
+nem volt hőségriadó, akkor -1-et kell kiírni, ha pedig csak egy hőségriadó volt, akkor -2-t!
+Példa
+Bemenet                                        Kimenet
+12 2 25                                        1
+20
+26
+24
+26
+27
+20
+20
+28
+28
+25
+28
+29
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MB
+
+
+
+
+                                           1. oldal
+

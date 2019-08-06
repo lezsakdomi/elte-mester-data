@@ -1,0 +1,39 @@
+
+
+                                           Poligon
+Adott a síkon egy N csúcspontot tartalmazó zárt, nem metsző törtvonal a csúcsok felsorolásával.
+A felsorolásban az i-edik és i+1-edik pont van összekötve egyenes szakasszal, illetve az N-edik az
+elsővel. A pontok biztosan nem esnek egy egyenesre.
+Készíts programot, amely megadja azokat az A,B csúcspárokat, amelyekre teljesül, hogy a törtvo-
+nal minden A-tól és B-től különböző pontja szigorúan balra van, ha A-ból B-felé nézünk!
+Bemenet
+A standard bemenet első sorában a csúcspontok száma (3≤N≤50 000) van. A következő
+N sor mindegyike egy-egy csúcspont x- és y-koordinátáját (-1 000 000≤X,Y≤1 000 000) tar-
+talmazza.
+Kimenet
+A standard kimenet első sorába azon csúcspárok M számát kell írni, amelyekre teljesül a
+kívánt feltétel! A következő M sor mindegyike egy megfelelő csúcspár A és B sorszámát tartalmaz-
+za! A csúcspárokat tetszőleges sorrendben ki lehet írni. A pontpár A és B sorrendje lényeges!
+Példa
+Bemenet                                         Kimenet
+11                                              4
+6 6                                             10 11
+10 6                                            11 4
+7 4                                             4 9
+12 4                                            9 10
+10 8
+6 7
+7 10
+8 9
+8 13
+3 4
+5 2
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+
+
+
+
+                                             1. oldal
+

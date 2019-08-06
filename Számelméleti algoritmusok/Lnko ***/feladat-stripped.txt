@@ -1,0 +1,26 @@
+
+
+                                         Lnko
+Készíts programot, amely kiszámítja, hogy adott N-ek és M-ek mellett mi 2N-1 és 2M-1 legna-
+gyobb közös osztója!
+Bemenet
+A standard bemenet első sorában az esetek száma található (K 5 000), a következő K db
+sorban pedig Ni és Mi értékek vannak szóközzel elválasztva. (1  Ni, M i  830).
+Kimenet
+A standard kimenete pontosan K sorból álljon, az i. sorában add meg azt a számot,
+amely az adott Ni-re és Mi-re 2N-1 és 2M-1 legnagyobb közös osztója (iϵ[1..K])!
+Példa
+Bemenet                                       Kimenet
+2                                             1
+1 2                                           3
+2 4
+Korlátok
+Időlimit: 0.1 mp.
+Memórialimit: 32 MiB
+Pontozás: A tesztek 30%-ában 1≤Ni , Mi≤100.
+
+
+
+
+                                          1. oldal
+
