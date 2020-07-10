@@ -5,7 +5,7 @@ const preferences = new Proxy({
     ghRepo: "elte-mester-data",
     ghTag: "master",
     useCdn: true,
-    useRawgitEverywhere: true,
+    useRawgit: false,
     preferredCodeLang: "cpp",
     searchLimit: 50
 }, {
@@ -160,14 +160,15 @@ class Thing {
     }
 
     static get _ghFetchBase() {
-        return "https://" + (preferences.useCdn ? "rawcdn.githack.com" : "raw.githack.com") + "/" +
+        const domain = preferences.useRawgit
+            ? (preferences.useCdn ? "rawcdn.githack.com" : "raw.githack.com")
+            : "raw.githubusercontent.com";
+        return "https://" + domain + "/" +
             preferences.ghUser + "/" + preferences.ghRepo + "/" + preferences.ghTag + "/";
     }
 
     static get _rawBaseUrl() {
-        return preferences.useRawgitEverywhere
-            ? Thing._ghFetchBase
-            : "https://raw.githubusercontent.com/lezsakdomi/elte-mester-data/master";
+        return Thing._ghFetchBase;
     }
 
     static async fetchFile(path) {
